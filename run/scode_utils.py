@@ -8,30 +8,32 @@ such as reading, vector concetanation and so on.
 """
 
 from nlp_utils import fopen
-from collections import Counter
+from collections import Counter, defaultdict as dd
 import numpy as np
 import sys
 import gzip
 
-def read_scode_vectors(scode_f, sw, word_set=None):
+def read_scode_vectors(scode_f, wordset=None):
     """ word_set is a set that indicates the tokens to fetch
         from scode file.
     """
-    d = dict()
+    assert isinstance(wordset, set), "wordset should be a set"
+
+    d = dd(lambda: dict())
     for line in fopen(scode_f):
-        if line.startswith(sw):
-           line = line.split()
-           w = line[0][2:]
-           if word_set is None or w in word_set :
-               d[w] = (np.array(line[2:], dtype='float64'), int(line[1]))
+       line = line.split()
+       typ = int(line[0][0])
+       w = line[0][2:]
+       if wordset is None or w in wordset :
+           d[typ][w] = (np.array(line[2:], dtype='float64'), int(line[1]))
     return d
 
 def concat_XY(scode_d, subs):
-    d = dict()
+    d = dd(lambda : dict())
     for X, s in subs.viewitems():
         Xs = Counter(s)
         for Y, count in Xs.viewitems():
-            d[X] = (np.concatenate([scode_d[X][0], scode_d[Y][0]]), count)
+            d[X][Y] = (np.concatenate([scode_d[0][X][0], scode_d[1][Y][0]]), count)
     return d
 
 def concat_XYbar(scode_d, subs, dim=25):
@@ -40,9 +42,9 @@ def concat_XYbar(scode_d, subs, dim=25):
         Y_bar = np.zeros(dim)
         Xs = Counter(s)
         for Y, count in Xs.viewitems():
-            Y_bar += scode_d[Y][0] * count
+            Y_bar += scode_d[1][Y][0] * count
         Y_bar /= (Y_bar.dot(Y_bar) ** 0.5)
-        d[X] = (Y_bar, 1)
+        d[X] = (np.concatenate(scode_d[0][X][0], Y_bar), 1)
     return d
 
 def write_vec(scode_d, fn=None):
@@ -54,4 +56,3 @@ def write_vec(scode_d, fn=None):
 
     if fn is not None:
         f.close()
-
