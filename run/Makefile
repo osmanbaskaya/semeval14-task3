@@ -10,6 +10,8 @@ export PATH:=.:/scratch/1/obaskaya/tools/bin/:${SRILM_PATH}:${PATH}
 SEED=1
 CPU=8
 
+SCORER= java -jar ../data/evaluation/task-3-scorer.jar
+
 bin:
 	cd ../bin; make
 
@@ -30,8 +32,19 @@ CNLP_OPTIONS=${ANNOTATORS} -replaceExtension -threads ${CPU} -outputDirectory .
 	${CORE_NLP} ${CNLP_OPTIONS} -file $<
 
 TRIAL="../data/trial-data/paragraph2sentence.trial.input.txt"
-x_exp: rcv1.scode.gz
-	x_exp.py $< ${TRIAL}
+GOLD="../data/evaluation/paragraph2sentence.trial.gs.txt"
+#ans/x_exp.scale.ans: rcv1.scode.gz
+	#x_exp.py $< ${TRIAL} | scale.py 0 4 > $@
+
+ans/x_exp.ans: rcv1.scode.gz
+	x_exp.py $< ${TRIAL} > $@
+
+ans/%-scale.ans: ans/%.ans
+	cat $< | scale.py 0 4 > $@
+
+score/%.ans: ans/%.ans
+	${SCORER} -c 0 ${GOLD} $< 
+
 
 
 

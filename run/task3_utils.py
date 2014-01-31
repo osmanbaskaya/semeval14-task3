@@ -7,7 +7,6 @@ __author__ = "Osman Baskaya"
 """
 
 import sys
-import os
 from nlp_utils import fopen
 
 def get_sentences(fn):
@@ -31,3 +30,5 @@ def get_wordset(sentences):
         map(s.add, s2.split())
     sys.stderr.write("{} unique tokens.\n".format(len(s)))
     return s
+
+
