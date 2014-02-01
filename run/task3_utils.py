@@ -15,12 +15,14 @@ def get_sentences(fn):
             - sentence2phrase
             - phrase2word
     """
+    f = fopen(fn) if isinstance(fn, str) else fn
+
     sentences = []
-    for line in fopen(fn):
+    for line in f:
         line = line.split('\t')
         s1, s2 = line[0], line[1].strip()
         sentences.append((s1, s2))
-    sys.stderr.write("{} sentences fetched.\n".format(len(sentences)))
+    sys.stderr.write("{} sentences fetched.\n".format(len(sentences)*2))
     return sentences
 
 def get_wordset(sentences):

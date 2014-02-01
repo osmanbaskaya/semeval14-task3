@@ -21,11 +21,12 @@ def read_scode_vectors(scode_f, wordset=None):
 
     d = dd(lambda: dict())
     for line in fopen(scode_f):
-       line = line.split()
-       typ = int(line[0][0])
-       w = line[0][2:]
-       if wordset is None or w in wordset :
-           d[typ][w] = (np.array(line[2:], dtype='float64'), int(line[1]))
+        line = line.split()
+        print line
+        typ = int(line[0][0])
+        w = line[0][2:]
+        if wordset is None or w in wordset :
+            d[typ][w] = (np.array(line[2:], dtype='float64'), int(line[1]))
     return d
 
 def concat_XY(scode_d, subs):
