@@ -15,3 +15,5 @@ for i, (s1, s2) in enumerate(sentences):
     s1 = set(s1.split())
     s2 = set(s2.split())
     print len(s1.intersection(s2)) / float(len(s1.union(s2)))
+
+print >> sys.stderr, "{} line processed".format(i+1)
