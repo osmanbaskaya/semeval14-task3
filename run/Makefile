@@ -9,7 +9,7 @@ CORE_NLP_PATH=../../tools/src/stanford-corenlp
 export PATH:=.:../../tools/bin/:${SRILM_PATH}:${PATH}
 
 SEED=1
-CPU=8
+CPU=2
 
 LM=enw.lm.gz
 
@@ -26,7 +26,7 @@ SC_OPTIONS=-s ${SEED} -v
 	zcat $< | scode ${SC_OPTIONS} | gzip > $@
 
 # Stanford CoreNLP is used for tokenization, tagging, and dependency parsing
-CORE_NLP=java -mx8g -cp "${CORE_NLP_PATH}/*" edu.stanford.nlp.pipeline.StanfordCoreNLP 
+CORE_NLP=java -mx2g -cp "${CORE_NLP_PATH}/*" edu.stanford.nlp.pipeline.StanfordCoreNLP 
 ANNOTATORS=-annotators "tokenize, ssplit, pos, lemma, parse"
 CNLP_OPTIONS=${ANNOTATORS} -replaceExtension -threads ${CPU} 
 corenlp-%: ../data/data-files/%.input.tsv
@@ -39,9 +39,17 @@ corenlp-%: ../data/data-files/%.input.tsv
 ans/ji-baseline-%.ans: ../data/data-files/%.input.tsv
 	cat $< | ji-baseline.py > $@
 
+ans/wn-baseline-%-sentence2phrase.ans: data/sentence2phrase.train.lem.tsv
+	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
+
+ans/wn-baseline-%-paragraph2sentence.ans: data/paragraph2sentence.train.lem.tsv
+	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
+
 #SVEC=rcv1.scode.gz
 SVEC=wsj.scode.gz
-GOLD=../data/keys/paragraph2sentence.train.gs.tsv
+GOLD_P2S=../data/keys/paragraph2sentence.train.gs.tsv
+GOLD_S2P=../data/keys/sentence2phrase.train.gs.tsv
+GOLD_P2W=../data/keys/phrase2word.train.gs.tsv
 
 ans/x_exp-%-lemma.ans: %.tsv
 	cat $< | x_exp.py ${SVEC} > $@
@@ -52,8 +60,14 @@ ans/x_exp-%-base.ans: ../data/data-files/%.input.tsv ${SVEC}
 ans/%-scale.ans: ans/%.ans
 	cat $< | scale.py 0 4 > $@
 
-score/%.sc: ans/%.ans
-	${SCORER} -c 0 ${GOLD} $< 
+score/p2s-%.sc: ans/%.ans
+	${SCORER} -c 0 ${GOLD_P2S} $< 
+
+score/s2p-%.sc: ans/%.ans
+	${SCORER} -c 0 ${GOLD_S2P} $< 
+
+score/p2w-%.sc: ans/%.ans
+	${SCORER} -c 0 ${GOLD_P2W} $< 
 
 data/%.tok.tsv data/%.lem.tsv: corenlp-%.train
 	-mkdir data

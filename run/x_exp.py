@@ -10,6 +10,7 @@ from scode_utils import *
 import task3_utils
 from itertools import product
 from scipy.spatial.distance import cosine, euclidean, correlation
+from collections import defaultdict as dd
 
 scode_f = sys.argv[1]
 test_f = sys.stdin
