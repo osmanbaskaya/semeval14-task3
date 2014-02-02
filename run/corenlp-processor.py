@@ -24,7 +24,7 @@ def lemma_process(sentences):
         if i != last:
             L.append(u' '.join(lemmas))
         else:
-            L.append(u'\t{}\n'.format(' '.join(lemmas)))
+            L.append(u'\t%s\n' % (' '.join(lemmas)))
     return L
 
 def token_process(sentence):
@@ -36,15 +36,15 @@ def token_process(sentence):
         if i != last:
             T.append(u' '.join(words))
         else:
-            T.append(u'\t{}\n'.format(' '.join(words)))
+            T.append(u'\t%s\n' % (' '.join(words)))
     return T
 
 #TODO: implement
 def dep_parse_process(sentence):
     pass
     
-out_files = map(lambda x: open("data/{}.{}.tsv".format(output_fn, x), 'w'),
-                                                     "lem tok".split())
+out_files = map(lambda x: open("data/%s.%s.tsv" % (output_fn, x), 'w'), "lem tok".split())
+
 for fn in files:
     sys.stderr.write("%s processing.\n" % fn)
     f = open(os.path.join(input_dir, fn))

@@ -4,9 +4,9 @@ SHELL := /bin/bash
 
 ### PATH
 SRILM_PATH=/opt/srilm/bin/i686-m64
-CORE_NLP_PATH=/scratch/1/obaskaya/tools/src/stanford-corenlp
+CORE_NLP_PATH=../../tools/src/stanford-corenlp
 
-export PATH:=.:/scratch/1/obaskaya/tools/bin/:${SRILM_PATH}:${PATH}
+export PATH:=.:../../tools/bin/:${SRILM_PATH}:${PATH}
 
 SEED=1
 CPU=8
@@ -56,6 +56,7 @@ score/%.sc: ans/%.ans
 	${SCORER} -c 0 ${GOLD} $< 
 
 data/%.tok.tsv data/%.lem.tsv: corenlp-%.train
+	-mkdir data
 	corenlp-processor.py $<
 
 export OMP_NUM_THREADS=10
