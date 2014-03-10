@@ -41,7 +41,19 @@ def token_process(sentence):
 
 #TODO: implement
 def dep_parse_process(sentence):
-    pass
+    D = []
+    last = len(sentences) - 1
+    for i, sentence in enumerate(sentences):
+        deps = sentence.findAll('dependencies')
+        for dependency in deps:
+            if dependency['type'] == 'basic-dependencies': # skip others.
+                break
+            for dep in dependency:
+                gov = dep.find('governor')
+                dept = dep.find('dependent') 
+                app = u'{} {} {} {} {}'
+                L.append(app.format(dep['type'], gov.text, gov['idx'], \
+                                                dept.text, dept['idx']))
     
 out_files = map(lambda x: open("data/%s.%s.tsv" % (output_fn, x), 'w'), "lem tok".split())
 

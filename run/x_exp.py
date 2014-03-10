@@ -6,25 +6,25 @@ __author__ = "Osman Baskaya"
 
 """
 import sys
-from scode_utils import *
+from embedding_utils import *
 import task3_utils
 from itertools import product
 from scipy.spatial.distance import cosine, euclidean, correlation
 from collections import defaultdict as dd
 
-scode_f = sys.argv[1]
+embedding_f = sys.argv[1]
 test_f = sys.stdin
 if len(sys.argv) == 3:
     test_f = sys.argv[2]
 
-#scode_f = 'rcv1.scode.gz'
+#embedding_f = 'rcv1.scode.gz'
 #test_f = '../data/trial-data/sentence2phrase.trial.input.txt'
 
 sentences = task3_utils.get_sentences(test_f)
 wordset = task3_utils.get_wordset(sentences)
 
-sc_vecs = read_scode_vectors(scode_f, wordset)
-sys.stderr.write("S-CODE output reading done.\n")
+sc_vecs = read_embedding_vectors(embedding_f, wordset)
+sys.stderr.write("Embedding file reading done.\n")
 
 def score1(closest):
     """ average of all distances """
@@ -55,6 +55,6 @@ for i, (s1, s2) in enumerate(sentences):
     score = score1(closest)
     scores.append(score)
 
-sys.stderr.write("{}/{} (miss/attempt).\n".format(miss, comparison))
+sys.stderr.write("{}\t{}/{} (miss/attempt).\n".format(embedding_f, miss, comparison))
 scores = np.array(scores)
 print '\n'.join(scores.astype(str))

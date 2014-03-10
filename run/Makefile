@@ -10,9 +10,7 @@ export PATH:=.:../../tools/bin/:${SRILM_PATH}:${PATH}
 
 SEED=1
 CPU=2
-
 LM=enw.lm.gz
-
 SCORER= java -jar ../data/evaluation/task-3-scorer.jar
 
 bin:
@@ -45,17 +43,15 @@ ans/wn-baseline-%-sentence2phrase.ans: data/sentence2phrase.train.lem.tsv
 ans/wn-baseline-%-paragraph2sentence.ans: data/paragraph2sentence.train.lem.tsv
 	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
 
-#SVEC=rcv1.scode.gz
-SVEC=wsj.scode.gz
 GOLD_P2S=../data/keys/paragraph2sentence.train.gs.tsv
 GOLD_S2P=../data/keys/sentence2phrase.train.gs.tsv
 GOLD_P2W=../data/keys/phrase2word.train.gs.tsv
 
-ans/x_exp-%-lemma.ans: %.tsv
-	cat $< | x_exp.py ${SVEC} > $@
+ans/x_exp-p2s-tr-%-base.ans: ../data/data-files/paragraph2sentence.train.input.tsv embeddings/%
+	cat $< | x_exp.py embeddings/$* > $@
 
-ans/x_exp-%-base.ans: ../data/data-files/%.input.tsv ${SVEC}
-	cat $< | x_exp.py ${SVEC} > $@
+ans/x_exp-s2p-tr-%-base.ans: ../data/data-files/sentence2phrase.train.input.tsv embeddings/%
+	cat $< | x_exp.py embeddings/$* > $@
 
 ans/%-scale.ans: ans/%.ans
 	cat $< | scale.py 0 4 > $@

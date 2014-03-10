@@ -61,6 +61,7 @@ for i, (s1, s2) in enumerate(syns_sents):
             if p1 == p2 and p1 not in unav and p2 not in unav:
                 sim = metric(syn1, syn2, IC)
                 d[syn1.offset][syn2.offset] = (sim, syn1, syn2)
+    #FIXME bu hatali olabilir
     closest = [(t1, max(d[t1].viewitems(), key=lambda t: t[1][0])) for t1 in d]
     score = score1(closest)
     scores.append(score)
