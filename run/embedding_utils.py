@@ -21,7 +21,7 @@ def read_embedding_vectors(embedding_f, wordset=None):
     if 'scode' in embedding_f:
         is_scode_f = True
 
-    assert isinstance(wordset, set), "wordset should be a set"
+    assert isinstance(wordset, set) or wordset == None, "wordset should be a set"
 
     d = dd(lambda: dict())
     for line in fopen(embedding_f):

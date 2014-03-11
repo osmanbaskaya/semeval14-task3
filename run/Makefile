@@ -19,7 +19,7 @@ bin:
 enw.lm.gz:
 	ln -s /scratch/1/myatbaz/upos_new/run/enw_ukvac2/enw.lm.gz
 
-SC_OPTIONS=-s ${SEED} -v
+SC_OPTIONS=-s ${SEED} -v -d 25 
 %.scode.gz: %.pairs.gz
 	zcat $< | scode ${SC_OPTIONS} | gzip > $@
 
@@ -39,7 +39,7 @@ ans/ji-baseline-%.ans: ../data/data-files/%.input.tsv
 
 ans/wn-baseline-%-sentence2phrase.ans: data/sentence2phrase.train.lem.tsv
 	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
-
+ 
 ans/wn-baseline-%-paragraph2sentence.ans: data/paragraph2sentence.train.lem.tsv
 	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
 
@@ -77,6 +77,32 @@ FS_OPTIONS=-n ${FS_NSUB} -p ${FS_PSUB}
 train.sub.gz: ${TRAIN} # wc = 3000   67463  371790
 	cat $^ | cut -f1,2 | tr '\t' '\n' | upenn_tokenizer.sed |\
 	fastsubs-omp ${FS_OPTIONS} ${LM} | gzip > $@
+
+### SCODE GLOBAL
+
+tr-p2s.pairs.gz: data/paragraph2sentence.train.lem.tsv 
+	sent_pairs.py <(cat $< | tr -cd "[:alpha:] [:space:]" | tr 'A-Z' 'a-z' |\
+	remove-stop.py) | gzip > $@
+
+tr-s2p.pairs.gz: data/sentence2phrase.train.lem.tsv 
+	sent_pairs.py <(cat $< | tr -cd "[:alpha:] [:space:]" | tr 'A-Z' 'a-z' |\
+	remove-stop.py) | gzip > $@
+
+corpora.gz:
+	corpora-sent.fetch.py | gzip > $@
+
+enrichment.gz: corpora.gz
+	zcat $< | tr -cd "[:alpha:] [:space:]" | tr 'A-Z' 'a-z' | remove-stop.py |\
+	sent_enrich_pairs.py | gzip > $@
+
+%.pairs.gz: tr-%.pairs.gz # enrichment.gz
+	zcat $^ | gzip > $@
+
+ans/sc_sent-%-tr.ans: %.scode.gz
+	scode_sent_exp.py <(zcat $< | perl -ne 'print if s/^0://' | grep -P "^[LR]\d+" | cut -f1,3-) > $@
+
+ans/sc_sent-%-tr.ans: %.scode.gz
+	scode_sent_exp.py <(zcat $< | perl -ne 'print if s/^0://' | grep -P "^[LR]\d+" | cut -f1,3-) > $@
 
 .PRECIOUS:
 	rcv1.scode.gz
