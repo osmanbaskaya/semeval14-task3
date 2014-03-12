@@ -19,7 +19,7 @@ bin:
 enw.lm.gz:
 	ln -s /scratch/1/myatbaz/upos_new/run/enw_ukvac2/enw.lm.gz
 
-SC_OPTIONS=-s ${SEED} -v -d 25 
+SC_OPTIONS=-s ${SEED} -v -d 25
 %.scode.gz: %.pairs.gz
 	zcat $< | scode ${SC_OPTIONS} | gzip > $@
 
@@ -103,6 +103,14 @@ ans/sc_sent-%-tr.ans: %.scode.gz
 
 ans/sc_sent-%-tr.ans: %.scode.gz
 	scode_sent_exp.py <(zcat $< | perl -ne 'print if s/^0://' | grep -P "^[LR]\d+" | cut -f1,3-) > $@
+
+### Corpus Generation model experiments
+gen-p2s-input: data/paragraph2sentence.train.lem.tsv 
+	corp_gen_inp_create.py <(cat $< | tr -cd "[:alpha:] [:space:]" | tr 'A-Z' 'a-z' |\
+	remove-stop.py) $@ > $@
+
+clean-%: 
+	-rm -rf ans/sc_sent-$*-tr.ans tr-$*.pairs.gz $*.pairs.gz $*.scode.gz
 
 .PRECIOUS:
 	rcv1.scode.gz
