@@ -109,6 +109,13 @@ gen-p2s-input: data/paragraph2sentence.train.lem.tsv
 	corp_gen_inp_create.py <(cat $< | tr -cd "[:alpha:] [:space:]" | tr 'A-Z' 'a-z' |\
 	remove-stop.py) $@ > $@
 
+gen-p2s-input-uniq: gen-p2s-input
+	cat $< | sort | uniq > $@
+
+gen-p2s-prob.gz: rcv1.sub.gz all.stem gen-p2s-input-uniq
+	zcat $< | head -1000000 | features.py all.stem gen-p2s-input-uniq |\
+	uniq2pairs.gz gen-p2s-input | gzip > $@
+
 clean-%: 
 	-rm -rf ans/sc_sent-$*-tr.ans tr-$*.pairs.gz $*.pairs.gz $*.scode.gz
 

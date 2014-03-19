@@ -19,7 +19,7 @@ for left, right in data:
     right = right.split()
     start = c 
     for tok_left, tok_right in product(left, right):
-        print "{}\t{}".format(tok_left, tok_right)
+        print "{}\t{}\t0".format(tok_left, tok_right)
         c += 1
     f.write("{}\t{}\n".format(start, c-1))
 

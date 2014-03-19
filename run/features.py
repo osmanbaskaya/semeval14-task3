@@ -8,13 +8,18 @@ def get_wf_lemma(stem_file):
         return dict([l.strip().split('\t') for l in src])
 
 def get_test_vocab(test_file):
+    s = set()
     with open(test_file) as src:
-        return set(reduce(lambda x,y:x+y, [l.strip().split('\t')[:-1] for l in src]))
+        for line in src:
+            line = line.split('\t')[:-1]
+            map(s.add, map(str.strip, line))
+    return s
 
 def get_pairs(test_file):
     pairs = ddict(set)
     with open(test_file) as src:
-        for lem1, lem2 in [l.strip().split('\t')[:-1] for l in src]:
+        for line in src:
+            lem1, lem2 = line.strip().split('\t')[:-1]
             pair = ' '.join([lem1,lem2])
             pairs[lem1].add(pair)
             pairs[lem2].add(pair)
@@ -57,7 +62,7 @@ def main(args):
             sys.stderr.write('.')
 
     print >> sys.stderr
-    
+    print >> sys.stderr, "done"
     with open(args.test_file) as src:
         for lem1, lem2, y in [l.strip().split('\t') for l in src]:
             pair = ' '.join([lem1,lem2])
