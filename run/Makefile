@@ -3,7 +3,7 @@ SHELL := /bin/bash
 .SECONDARY:
 
 ### PATH
-SRILM_PATH=/opt/srilm/bin/i686-m64
+SRILM_PATH=/ai/opt/srilm/bin/i686-m64
 CORE_NLP_PATH=../../tools/src/stanford-corenlp
 
 export PATH:=.:../../tools/bin/:${SRILM_PATH}:${PATH}
@@ -69,7 +69,7 @@ data/%.tok.tsv data/%.lem.tsv: corenlp-%.train
 	-mkdir data
 	corenlp-processor.py $<
 
-export OMP_NUM_THREADS=10
+export OMP_NUM_THREADS=15
 TRAIN=../data/data-files/paragraph2sentence.train.input.tsv ../data/data-files/sentence2phrase.train.input.tsv ../data/data-files/phrase2word.train.input.tsv
 FS_NSUB=100 # go until you have this many substitutes
 FS_PSUB=1.0 # or this much cumulative probability
@@ -77,6 +77,14 @@ FS_OPTIONS=-n ${FS_NSUB} -p ${FS_PSUB}
 train.sub.gz: ${TRAIN} # wc = 3000   67463  371790
 	cat $^ | cut -f1,2 | tr '\t' '\n' | upenn_tokenizer.sed |\
 	fastsubs-omp ${FS_OPTIONS} ${LM} | gzip > $@
+
+train-%.sub: ../data/data-files/%.train.input.tsv
+	cat $< | cut -f${FIELD} | upenn_tokenizer.sed |\
+	fastsubs-omp ${FS_OPTIONS} ${LM} | gzip > $@.f${FIELD}.gz
+
+test-%.sub: ../data/data-files/%.test.input.tsv
+	cat $< | cut -f${FIELD} | upenn_tokenizer.sed |\
+	fastsubs-omp ${FS_OPTIONS} ${LM} | gzip > $@.f${FIELD}.gz
 
 ### SCODE GLOBAL
 
