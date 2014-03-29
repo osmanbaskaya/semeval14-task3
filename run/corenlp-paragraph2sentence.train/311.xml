@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>wan</word>
+            <lemma>wan</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>na</word>
+            <lemma>na</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>if</word>
+            <lemma>if</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>JaveScript</word>
+            <lemma>JaveScript</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>turned</word>
+            <lemma>turn</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="9">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBP wan) (S (VP (TO na) (VP (VB know) (SBAR (IN if) (S (NP (NNP JaveScript)) (VP (VBZ is) (VP (VBN turned) (PRT (RP on)))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">wan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">wan</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">know</governor>
+            <dependent idx="3">na</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">wan</governor>
+            <dependent idx="4">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">turned</governor>
+            <dependent idx="5">if</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">turned</governor>
+            <dependent idx="6">JaveScript</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">turned</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">know</governor>
+            <dependent idx="8">turned</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="8">turned</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">wan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">wan</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">know</governor>
+            <dependent idx="3">na</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">wan</governor>
+            <dependent idx="4">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">turned</governor>
+            <dependent idx="5">if</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">turned</governor>
+            <dependent idx="6">JaveScript</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">turned</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">know</governor>
+            <dependent idx="8">turned</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="8">turned</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">wan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">wan</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">know</governor>
+            <dependent idx="3">na</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">wan</governor>
+            <dependent idx="4">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">turned</governor>
+            <dependent idx="5">if</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="8">turned</governor>
+            <dependent idx="6">JaveScript</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="8">turned</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">know</governor>
+            <dependent idx="8">turned</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="8">turned</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>check</word>
+            <lemma>check</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="6">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB How)) (SQ (MD can) (NP (PRP I)) (VP (VB check) (NP (PRP it)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">check</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">check</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">check</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">check</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">check</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">check</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">check</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">check</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">check</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">check</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">check</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">check</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">check</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">check</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">check</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+          </token>
+          <token id="2">
+            <word>&lt;</word>
+            <lemma>&lt;</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="3">
+            <word>-</word>
+            <lemma>-</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>:</POS>
+          </token>
+          <token id="4">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>mozilla</word>
+            <lemma>mozillum</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>firefox</word>
+            <lemma>firefox</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+          </token>
+          <token id="8">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="9">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="10">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="11">
+            <word>tell</word>
+            <lemma>tell</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="12">
+            <word>if</word>
+            <lemma>if</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>JavaScript</word>
+            <lemma>JavaScript</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="14">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="15">
+            <word>enabled</word>
+            <lemma>enable</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="16">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (-LRB- -LRB-) (NP (NP (JJR &lt;)) (PRN (: -) (ADVP (IN on)) (NP (NN mozilla) (NN firefox)) (-RRB- -RRB-)) (SBAR (WHADVP (WRB How)) (S (VP (MD can) (NP (PRP I)) (S (VP (VB tell) (PP (IN if) (NP (NNP JavaScript))))))))) (VP (VBZ is) (VP (VBN enabled))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="15">enabled</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="15">enabled</governor>
+            <dependent idx="2">&lt;</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">firefox</governor>
+            <dependent idx="4">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">firefox</governor>
+            <dependent idx="5">mozilla</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">&lt;</governor>
+            <dependent idx="6">firefox</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">can</governor>
+            <dependent idx="8">How</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">&lt;</governor>
+            <dependent idx="9">can</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">can</governor>
+            <dependent idx="10">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">can</governor>
+            <dependent idx="11">tell</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">tell</governor>
+            <dependent idx="12">if</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">if</governor>
+            <dependent idx="13">JavaScript</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="15">enabled</governor>
+            <dependent idx="14">is</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="15">enabled</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="15">enabled</governor>
+            <dependent idx="2">&lt;</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">firefox</governor>
+            <dependent idx="4">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">firefox</governor>
+            <dependent idx="5">mozilla</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">&lt;</governor>
+            <dependent idx="6">firefox</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">can</governor>
+            <dependent idx="8">How</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">&lt;</governor>
+            <dependent idx="9">can</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">can</governor>
+            <dependent idx="10">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">can</governor>
+            <dependent idx="11">tell</dependent>
+          </dep>
+          <dep type="prep_if">
+            <governor idx="11">tell</governor>
+            <dependent idx="13">JavaScript</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="15">enabled</governor>
+            <dependent idx="14">is</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="15">enabled</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="15">enabled</governor>
+            <dependent idx="2">&lt;</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">firefox</governor>
+            <dependent idx="4">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">firefox</governor>
+            <dependent idx="5">mozilla</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">&lt;</governor>
+            <dependent idx="6">firefox</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">can</governor>
+            <dependent idx="8">How</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">&lt;</governor>
+            <dependent idx="9">can</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">can</governor>
+            <dependent idx="10">I</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">can</governor>
+            <dependent idx="11">tell</dependent>
+          </dep>
+          <dep type="prep_if">
+            <governor idx="11">tell</governor>
+            <dependent idx="13">JavaScript</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="15">enabled</governor>
+            <dependent idx="14">is</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

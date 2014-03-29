@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>'d</word>
+            <lemma>would</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>sites</word>
+            <lemma>site</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="9">
+            <word>download</word>
+            <lemma>download</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="10">
+            <word>files</word>
+            <lemma>file</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>such</word>
+            <lemma>such</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>videos</word>
+            <lemma>video</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="15">
+            <word>music</word>
+            <lemma>music</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (MD 'd) (VP (VB like) (S (VP (TO to) (VP (VB know) (NP (JJ good) (NNS sites)) (S (VP (TO to) (VP (VB download) (NP (NP (NNS files)) (PP (JJ such) (IN as) (NP (NNS videos) (CC or) (NN music)))))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">'d</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">know</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">know</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">sites</governor>
+            <dependent idx="6">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">know</governor>
+            <dependent idx="7">sites</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">download</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">know</governor>
+            <dependent idx="9">download</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">download</governor>
+            <dependent idx="10">files</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="12">as</governor>
+            <dependent idx="11">such</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">files</governor>
+            <dependent idx="12">as</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">as</governor>
+            <dependent idx="13">videos</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="13">videos</governor>
+            <dependent idx="14">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="13">videos</governor>
+            <dependent idx="15">music</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">'d</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">know</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">know</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">sites</governor>
+            <dependent idx="6">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">know</governor>
+            <dependent idx="7">sites</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">download</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">know</governor>
+            <dependent idx="9">download</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">download</governor>
+            <dependent idx="10">files</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="10">files</governor>
+            <dependent idx="13">videos</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="13">videos</governor>
+            <dependent idx="15">music</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">'d</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">know</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">know</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">sites</governor>
+            <dependent idx="6">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">know</governor>
+            <dependent idx="7">sites</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">download</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">know</governor>
+            <dependent idx="9">download</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">download</governor>
+            <dependent idx="10">files</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="10">files</governor>
+            <dependent idx="13">videos</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="10">files</governor>
+            <dependent idx="15">music</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="13">videos</governor>
+            <dependent idx="15">music</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>recommendations</word>
+            <lemma>recommendation</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (DT Any) (NNS recommendations) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recommendations</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">recommendations</governor>
+            <dependent idx="1">Any</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recommendations</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">recommendations</governor>
+            <dependent idx="1">Any</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recommendations</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">recommendations</governor>
+            <dependent idx="1">Any</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="2">
+            <word>sites</word>
+            <lemma>site</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>downloading</word>
+            <lemma>download</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="7">
+            <word>stuff</word>
+            <lemma>stuff</lemma>
+            <CharacterOffsetBegin>129</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>135</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHNP (WDT Which) (NNS sites)) (SQ (VP (VBP are) (ADVP (RB best) (PP (IN for) (S (VP (VBG downloading) (NP (NN stuff)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">sites</governor>
+            <dependent idx="1">Which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">are</governor>
+            <dependent idx="2">sites</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">are</governor>
+            <dependent idx="4">best</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">best</governor>
+            <dependent idx="5">for</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="5">for</governor>
+            <dependent idx="6">downloading</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">downloading</governor>
+            <dependent idx="7">stuff</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">sites</governor>
+            <dependent idx="1">Which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">are</governor>
+            <dependent idx="2">sites</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">are</governor>
+            <dependent idx="4">best</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="4">best</governor>
+            <dependent idx="6">downloading</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">downloading</governor>
+            <dependent idx="7">stuff</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">sites</governor>
+            <dependent idx="1">Which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">are</governor>
+            <dependent idx="2">sites</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">are</governor>
+            <dependent idx="4">best</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="4">best</governor>
+            <dependent idx="6">downloading</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">downloading</governor>
+            <dependent idx="7">stuff</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

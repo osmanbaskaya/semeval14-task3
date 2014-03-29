@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>charged</word>
+            <lemma>charge</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>terrorism</word>
+            <lemma>terrorism</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>accused</word>
+            <lemma>accuse</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN charged) (PP (IN with) (NP (NP (NN terrorism)) (VP (VBD accused)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">charged</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">charged</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="3">terrorism</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">terrorism</governor>
+            <dependent idx="4">accused</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">charged</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">charged</governor>
+            <dependent idx="3">terrorism</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">terrorism</governor>
+            <dependent idx="4">accused</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">charged</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">charged</governor>
+            <dependent idx="3">terrorism</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">terrorism</governor>
+            <dependent idx="4">accused</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

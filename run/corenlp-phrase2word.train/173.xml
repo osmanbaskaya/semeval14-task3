@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>before</word>
+            <lemma>before</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="4">
+            <word>say</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>knife</word>
+            <lemma>knife</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>finished</word>
+            <lemma>finish</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBAR (IN before) (S (NP (PRP you)) (VP (MD can) (VP (VB say) (SBAR (S (NP (NN knife)) (VP (VBD finished))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">say</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">say</governor>
+            <dependent idx="1">before</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">say</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">say</governor>
+            <dependent idx="3">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">finished</governor>
+            <dependent idx="5">knife</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">say</governor>
+            <dependent idx="6">finished</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">say</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">say</governor>
+            <dependent idx="1">before</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">say</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">say</governor>
+            <dependent idx="3">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">finished</governor>
+            <dependent idx="5">knife</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">say</governor>
+            <dependent idx="6">finished</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">say</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">say</governor>
+            <dependent idx="1">before</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">say</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">say</governor>
+            <dependent idx="3">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">finished</governor>
+            <dependent idx="5">knife</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">say</governor>
+            <dependent idx="6">finished</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

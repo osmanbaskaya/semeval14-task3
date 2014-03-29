@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>50</word>
+            <lemma>50</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="4">
+            <word>cents</word>
+            <lemma>cent</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="6">
+            <word>buy</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>cup</word>
+            <lemma>cup</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>coffee</word>
+            <lemma>coffee</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>degree</word>
+            <lemma>degree</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT that)) (CC and) (NP (CD 50) (NNS cents))) (VP (MD will) (VP (VB buy) (S (NP (PRP you)) (NP (NP (DT a) (NN cup)) (PP (IN of) (NP (NN coffee) (NN degree))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">buy</governor>
+            <dependent idx="1">that</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">that</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">cents</governor>
+            <dependent idx="3">50</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">that</governor>
+            <dependent idx="4">cents</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">buy</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">cup</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">cup</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">cup</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">cup</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">degree</governor>
+            <dependent idx="11">coffee</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="12">degree</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">buy</governor>
+            <dependent idx="1">that</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">cents</governor>
+            <dependent idx="3">50</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">that</governor>
+            <dependent idx="4">cents</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">buy</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">cup</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">cup</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">cup</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">degree</governor>
+            <dependent idx="11">coffee</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">cup</governor>
+            <dependent idx="12">degree</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">buy</governor>
+            <dependent idx="1">that</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">cents</governor>
+            <dependent idx="3">50</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">that</governor>
+            <dependent idx="4">cents</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">buy</governor>
+            <dependent idx="4">cents</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">buy</governor>
+            <dependent idx="5">will</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">cup</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">cup</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">cup</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">degree</governor>
+            <dependent idx="11">coffee</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">cup</governor>
+            <dependent idx="12">degree</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

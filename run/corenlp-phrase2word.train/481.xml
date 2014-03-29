@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>strengthening</word>
+            <lemma>strengthen</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>family</word>
+            <lemma>family</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>relationships</word>
+            <lemma>relationship</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>through</word>
+            <lemma>through</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>reading</word>
+            <lemma>reading</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>bonding</word>
+            <lemma>bonding</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG strengthening) (NP (NN family) (NNS relationships)) (PP (IN through) (NP (NN reading) (NN bonding)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">strengthening</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">relationships</governor>
+            <dependent idx="2">family</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">strengthening</governor>
+            <dependent idx="3">relationships</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">strengthening</governor>
+            <dependent idx="4">through</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">bonding</governor>
+            <dependent idx="5">reading</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">through</governor>
+            <dependent idx="6">bonding</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">strengthening</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">relationships</governor>
+            <dependent idx="2">family</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">strengthening</governor>
+            <dependent idx="3">relationships</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">bonding</governor>
+            <dependent idx="5">reading</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="1">strengthening</governor>
+            <dependent idx="6">bonding</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">strengthening</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">relationships</governor>
+            <dependent idx="2">family</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">strengthening</governor>
+            <dependent idx="3">relationships</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">bonding</governor>
+            <dependent idx="5">reading</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="1">strengthening</governor>
+            <dependent idx="6">bonding</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

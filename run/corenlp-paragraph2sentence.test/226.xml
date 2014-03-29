@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>pig</word>
+            <lemma>pig</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>roots</word>
+            <lemma>root</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>earth</word>
+            <lemma>earth</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>truffles</word>
+            <lemma>truffle</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT A) (NN pig) (NNS roots)) (NP (NP (DT the) (NN earth)) (PP (IN for) (NP (NNS truffles)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">roots</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">roots</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">roots</governor>
+            <dependent idx="2">pig</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">earth</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">roots</governor>
+            <dependent idx="5">earth</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">earth</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="7">truffles</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">roots</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">roots</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">roots</governor>
+            <dependent idx="2">pig</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">earth</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">roots</governor>
+            <dependent idx="5">earth</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">earth</governor>
+            <dependent idx="7">truffles</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">roots</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">roots</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">roots</governor>
+            <dependent idx="2">pig</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">earth</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">roots</governor>
+            <dependent idx="5">earth</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">earth</governor>
+            <dependent idx="7">truffles</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>expensive</word>
+            <lemma>expensive</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>chocolate</word>
+            <lemma>chocolate</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>truffles</word>
+            <lemma>truffle</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ expensive) (NN chocolate) (NNS truffles))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">truffles</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">truffles</governor>
+            <dependent idx="1">expensive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">truffles</governor>
+            <dependent idx="2">chocolate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">truffles</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">truffles</governor>
+            <dependent idx="1">expensive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">truffles</governor>
+            <dependent idx="2">chocolate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">truffles</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">truffles</governor>
+            <dependent idx="1">expensive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">truffles</governor>
+            <dependent idx="2">chocolate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>left</word>
+            <lemma>left</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>coast</word>
+            <lemma>coast</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>wrecked</word>
+            <lemma>wreck</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB left)) (NP (NP (NN coast)) (SBAR (S (VP (VBD wrecked))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">coast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">coast</governor>
+            <dependent idx="1">left</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">coast</governor>
+            <dependent idx="3">wrecked</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">coast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">coast</governor>
+            <dependent idx="1">left</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">coast</governor>
+            <dependent idx="3">wrecked</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">coast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">coast</governor>
+            <dependent idx="1">left</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">coast</governor>
+            <dependent idx="3">wrecked</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

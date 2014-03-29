@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>recommended</word>
+            <lemma>recommend</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>distances</word>
+            <lemma>distance</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>furniture</word>
+            <lemma>furniture</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>placement</word>
+            <lemma>placement</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>meter</word>
+            <lemma>meter</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (VBN recommended) (NNS distances)) (PP (IN for) (NP (NN furniture) (NN placement) (NN meter)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">distances</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">distances</governor>
+            <dependent idx="1">recommended</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">distances</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">meter</governor>
+            <dependent idx="4">furniture</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">meter</governor>
+            <dependent idx="5">placement</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">for</governor>
+            <dependent idx="6">meter</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">distances</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">distances</governor>
+            <dependent idx="1">recommended</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">meter</governor>
+            <dependent idx="4">furniture</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">meter</governor>
+            <dependent idx="5">placement</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">distances</governor>
+            <dependent idx="6">meter</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">distances</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">distances</governor>
+            <dependent idx="1">recommended</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">meter</governor>
+            <dependent idx="4">furniture</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">meter</governor>
+            <dependent idx="5">placement</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">distances</governor>
+            <dependent idx="6">meter</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

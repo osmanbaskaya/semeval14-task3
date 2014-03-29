@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Scituate</word>
+            <lemma>Scituate</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Lighthouse</word>
+            <lemma>Lighthouse</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>Scituate</word>
+            <lemma>Scituate</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Harbor</word>
+            <lemma>Harbor</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>beacon</word>
+            <lemma>beacon</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Scituate) (NNP Lighthouse)) (, ,) (NP (NNP Scituate) (NNP Harbor) (NN beacon)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Lighthouse</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Lighthouse</governor>
+            <dependent idx="1">Scituate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">beacon</governor>
+            <dependent idx="4">Scituate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">beacon</governor>
+            <dependent idx="5">Harbor</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Lighthouse</governor>
+            <dependent idx="6">beacon</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Lighthouse</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Lighthouse</governor>
+            <dependent idx="1">Scituate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">beacon</governor>
+            <dependent idx="4">Scituate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">beacon</governor>
+            <dependent idx="5">Harbor</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Lighthouse</governor>
+            <dependent idx="6">beacon</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Lighthouse</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Lighthouse</governor>
+            <dependent idx="1">Scituate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">beacon</governor>
+            <dependent idx="4">Scituate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">beacon</governor>
+            <dependent idx="5">Harbor</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Lighthouse</governor>
+            <dependent idx="6">beacon</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

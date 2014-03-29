@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>final</word>
+            <lemma>final</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>straw</word>
+            <lemma>straw</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>fierce</word>
+            <lemma>fierce</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ final) (NN straw)) (NP (JJ fierce)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">straw</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">straw</governor>
+            <dependent idx="1">final</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">straw</governor>
+            <dependent idx="3">fierce</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">straw</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">straw</governor>
+            <dependent idx="1">final</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">straw</governor>
+            <dependent idx="3">fierce</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">straw</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">straw</governor>
+            <dependent idx="1">final</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">straw</governor>
+            <dependent idx="3">fierce</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

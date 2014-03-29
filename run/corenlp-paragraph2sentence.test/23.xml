@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>really</word>
+            <lemma>really</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>Need</word>
+            <lemma>need</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="5">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>explorer</word>
+            <lemma>explorer</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="9">
+            <word>windows</word>
+            <lemma>window</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (VP (VB Do) (SBAR (S (NP (PRP I)) (ADVP (RB really)) (VP (VBD Need) (NP (NN internet) (NN explorer)) (PP (IN in) (NP (PRP$ my) (NNS windows))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Need</governor>
+            <dependent idx="2">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">Need</governor>
+            <dependent idx="3">really</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Do</governor>
+            <dependent idx="4">Need</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">explorer</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">Need</governor>
+            <dependent idx="6">explorer</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">Need</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">windows</governor>
+            <dependent idx="8">my</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="9">windows</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Need</governor>
+            <dependent idx="2">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">Need</governor>
+            <dependent idx="3">really</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Do</governor>
+            <dependent idx="4">Need</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">explorer</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">Need</governor>
+            <dependent idx="6">explorer</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">windows</governor>
+            <dependent idx="8">my</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">Need</governor>
+            <dependent idx="9">windows</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">Need</governor>
+            <dependent idx="2">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">Need</governor>
+            <dependent idx="3">really</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Do</governor>
+            <dependent idx="4">Need</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">explorer</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">Need</governor>
+            <dependent idx="6">explorer</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">windows</governor>
+            <dependent idx="8">my</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">Need</governor>
+            <dependent idx="9">windows</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>use</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>firefox</word>
+            <lemma>firefox</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="5">
+            <word>than</word>
+            <lemma>than</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>often</word>
+            <lemma>often</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="7">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+          </token>
+          <token id="8">
+            <word>safer</word>
+            <lemma>safer</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="9">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBP use) (ADJP (ADJP (RB firefox) (JJR more) (PP (IN than) (ADVP (RB often)))) (PRN (-LRB- -LRB-) (ADJP (JJR safer)) (-RRB- -RRB-)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">use</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">use</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">more</governor>
+            <dependent idx="3">firefox</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="2">use</governor>
+            <dependent idx="4">more</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">more</governor>
+            <dependent idx="5">than</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="5">than</governor>
+            <dependent idx="6">often</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">more</governor>
+            <dependent idx="8">safer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">use</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">use</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">more</governor>
+            <dependent idx="3">firefox</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="2">use</governor>
+            <dependent idx="4">more</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">more</governor>
+            <dependent idx="5">than</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="5">than</governor>
+            <dependent idx="6">often</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">more</governor>
+            <dependent idx="8">safer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">use</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">use</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">more</governor>
+            <dependent idx="3">firefox</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="2">use</governor>
+            <dependent idx="4">more</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">more</governor>
+            <dependent idx="5">than</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="5">than</governor>
+            <dependent idx="6">often</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">more</governor>
+            <dependent idx="8">safer</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="2">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>ok</word>
+            <lemma>ok</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>just</word>
+            <lemma>just</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>deinstall</word>
+            <lemma>deinstall</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>explorer</word>
+            <lemma>explorer</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (VBZ Is) (NP (PRP it)) (NP (NP (NN ok)) (PP (TO to) (NP (ADJP (RB just) (JJ deinstall)) (NN internet) (NN explorer)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ok</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">ok</governor>
+            <dependent idx="1">Is</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">ok</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">ok</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">deinstall</governor>
+            <dependent idx="5">just</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">explorer</governor>
+            <dependent idx="6">deinstall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">explorer</governor>
+            <dependent idx="7">internet</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="8">explorer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ok</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">ok</governor>
+            <dependent idx="1">Is</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">ok</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">deinstall</governor>
+            <dependent idx="5">just</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">explorer</governor>
+            <dependent idx="6">deinstall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">explorer</governor>
+            <dependent idx="7">internet</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">ok</governor>
+            <dependent idx="8">explorer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ok</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="3">ok</governor>
+            <dependent idx="1">Is</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">ok</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">deinstall</governor>
+            <dependent idx="5">just</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">explorer</governor>
+            <dependent idx="6">deinstall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">explorer</governor>
+            <dependent idx="7">internet</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">ok</governor>
+            <dependent idx="8">explorer</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>When</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>135</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>using</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>145</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>146</CharacterOffsetBegin>
+            <CharacterOffsetEnd>147</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>safer</word>
+            <lemma>safer</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>153</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>153</CharacterOffsetBegin>
+            <CharacterOffsetEnd>154</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>better</word>
+            <lemma>better</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>161</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="7">
+            <word>web</word>
+            <lemma>web</lemma>
+            <CharacterOffsetBegin>162</CharacterOffsetBegin>
+            <CharacterOffsetEnd>165</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>166</CharacterOffsetBegin>
+            <CharacterOffsetEnd>173</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>such</word>
+            <lemma>such</lemma>
+            <CharacterOffsetBegin>174</CharacterOffsetBegin>
+            <CharacterOffsetEnd>178</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>179</CharacterOffsetBegin>
+            <CharacterOffsetEnd>181</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>Firefox</word>
+            <lemma>Firefox</lemma>
+            <CharacterOffsetBegin>182</CharacterOffsetBegin>
+            <CharacterOffsetEnd>189</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>189</CharacterOffsetBegin>
+            <CharacterOffsetEnd>190</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="13">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>191</CharacterOffsetBegin>
+            <CharacterOffsetEnd>193</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="14">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>194</CharacterOffsetBegin>
+            <CharacterOffsetEnd>196</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="15">
+            <word>possible</word>
+            <lemma>possible</lemma>
+            <CharacterOffsetBegin>197</CharacterOffsetBegin>
+            <CharacterOffsetEnd>205</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="16">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>206</CharacterOffsetBegin>
+            <CharacterOffsetEnd>208</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="17">
+            <word>uninstall</word>
+            <lemma>uninstall</lemma>
+            <CharacterOffsetBegin>209</CharacterOffsetBegin>
+            <CharacterOffsetEnd>218</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="18">
+            <word>others</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>219</CharacterOffsetBegin>
+            <CharacterOffsetEnd>225</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="19">
+            <word>such</word>
+            <lemma>such</lemma>
+            <CharacterOffsetBegin>226</CharacterOffsetBegin>
+            <CharacterOffsetEnd>230</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="20">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>231</CharacterOffsetBegin>
+            <CharacterOffsetEnd>233</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="21">
+            <word>Internet</word>
+            <lemma>Internet</lemma>
+            <CharacterOffsetBegin>234</CharacterOffsetBegin>
+            <CharacterOffsetEnd>242</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="22">
+            <word>Explorer</word>
+            <lemma>Explorer</lemma>
+            <CharacterOffsetBegin>243</CharacterOffsetBegin>
+            <CharacterOffsetEnd>251</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="23">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>251</CharacterOffsetBegin>
+            <CharacterOffsetEnd>252</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (SBAR (WHADVP (WRB When)) (S (VP (VBG using) (NP (NP (DT a) (ADJP (JJR safer) (, ,) (JJR better)) (NN web) (NN browser)) (PP (JJ such) (IN as) (NP (NNP Firefox))))))) (, ,) (SQ (VBZ is) (NP (PRP it)) (ADJP (JJ possible) (PP (TO to) (NP (NP (JJ uninstall) (NNS others)) (PP (JJ such) (IN as) (NP (NNP Internet) (NNP Explorer))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="15">possible</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">using</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">possible</governor>
+            <dependent idx="2">using</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">browser</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">better</governor>
+            <dependent idx="4">safer</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">browser</governor>
+            <dependent idx="6">better</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">browser</governor>
+            <dependent idx="7">web</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">using</governor>
+            <dependent idx="8">browser</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="10">as</governor>
+            <dependent idx="9">such</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">browser</governor>
+            <dependent idx="10">as</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">as</governor>
+            <dependent idx="11">Firefox</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="15">possible</governor>
+            <dependent idx="13">is</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">possible</governor>
+            <dependent idx="14">it</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="15">possible</governor>
+            <dependent idx="16">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">others</governor>
+            <dependent idx="17">uninstall</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="16">to</governor>
+            <dependent idx="18">others</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="20">as</governor>
+            <dependent idx="19">such</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="18">others</governor>
+            <dependent idx="20">as</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Explorer</governor>
+            <dependent idx="21">Internet</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="20">as</governor>
+            <dependent idx="22">Explorer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="15">possible</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">using</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">possible</governor>
+            <dependent idx="2">using</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">browser</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">better</governor>
+            <dependent idx="4">safer</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">browser</governor>
+            <dependent idx="6">better</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">browser</governor>
+            <dependent idx="7">web</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">using</governor>
+            <dependent idx="8">browser</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="8">browser</governor>
+            <dependent idx="11">Firefox</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="15">possible</governor>
+            <dependent idx="13">is</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">possible</governor>
+            <dependent idx="14">it</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">others</governor>
+            <dependent idx="17">uninstall</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="15">possible</governor>
+            <dependent idx="18">others</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Explorer</governor>
+            <dependent idx="21">Internet</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="18">others</governor>
+            <dependent idx="22">Explorer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="15">possible</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">using</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">possible</governor>
+            <dependent idx="2">using</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">browser</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">better</governor>
+            <dependent idx="4">safer</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">browser</governor>
+            <dependent idx="6">better</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">browser</governor>
+            <dependent idx="7">web</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">using</governor>
+            <dependent idx="8">browser</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="8">browser</governor>
+            <dependent idx="11">Firefox</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="15">possible</governor>
+            <dependent idx="13">is</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">possible</governor>
+            <dependent idx="14">it</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="18">others</governor>
+            <dependent idx="17">uninstall</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="15">possible</governor>
+            <dependent idx="18">others</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="22">Explorer</governor>
+            <dependent idx="21">Internet</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="18">others</governor>
+            <dependent idx="22">Explorer</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

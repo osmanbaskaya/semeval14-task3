@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Demonstration</word>
+            <lemma>demonstration</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Nagorno-Karabakh</word>
+            <lemma>Nagorno-Karabakh</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Cyprus</word>
+            <lemma>Cyprus</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>1993</word>
+            <lemma>1993</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>protest</word>
+            <lemma>protest</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN Demonstration)) (PP (IN on) (NP (DT the) (NNP Nagorno-Karabakh)))) (PP (IN in) (NP (NNP Cyprus))) (PP (IN in) (NP (CD 1993) (NN protest))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Demonstration</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="2">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Nagorno-Karabakh</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">on</governor>
+            <dependent idx="4">Nagorno-Karabakh</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="6">Cyprus</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">protest</governor>
+            <dependent idx="8">1993</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="9">protest</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Demonstration</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Nagorno-Karabakh</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="4">Nagorno-Karabakh</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="6">Cyprus</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">protest</governor>
+            <dependent idx="8">1993</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="9">protest</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Demonstration</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Nagorno-Karabakh</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="4">Nagorno-Karabakh</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="6">Cyprus</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">protest</governor>
+            <dependent idx="8">1993</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">Demonstration</governor>
+            <dependent idx="9">protest</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

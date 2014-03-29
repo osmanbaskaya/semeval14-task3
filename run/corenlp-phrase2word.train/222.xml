@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Apartment</word>
+            <lemma>apartment</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>building</word>
+            <lemma>building</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>where</word>
+            <lemma>where</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="4">
+            <word>Oswald</word>
+            <lemma>Oswald</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>lived</word>
+            <lemma>live</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Minsk</word>
+            <lemma>Minsk</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="9">
+            <word>Belarus</word>
+            <lemma>Belarus</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>babirusa</word>
+            <lemma>babirusa</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN Apartment) (NN building)) (SBAR (WHADVP (WRB where)) (S (NP (NNP Oswald)) (VP (VBD lived) (PP (IN in) (NP (NP (NNP Minsk)) (, ,) (NP (NNP Belarus) (NN babirusa))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">building</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">building</governor>
+            <dependent idx="1">Apartment</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">lived</governor>
+            <dependent idx="3">where</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lived</governor>
+            <dependent idx="4">Oswald</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">building</governor>
+            <dependent idx="5">lived</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">lived</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="7">Minsk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">babirusa</governor>
+            <dependent idx="9">Belarus</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="7">Minsk</governor>
+            <dependent idx="10">babirusa</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">building</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">building</governor>
+            <dependent idx="1">Apartment</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">lived</governor>
+            <dependent idx="3">where</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lived</governor>
+            <dependent idx="4">Oswald</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">building</governor>
+            <dependent idx="5">lived</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">lived</governor>
+            <dependent idx="7">Minsk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">babirusa</governor>
+            <dependent idx="9">Belarus</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="7">Minsk</governor>
+            <dependent idx="10">babirusa</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">building</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">building</governor>
+            <dependent idx="1">Apartment</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">lived</governor>
+            <dependent idx="3">where</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lived</governor>
+            <dependent idx="4">Oswald</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">building</governor>
+            <dependent idx="5">lived</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">lived</governor>
+            <dependent idx="7">Minsk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">babirusa</governor>
+            <dependent idx="9">Belarus</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="7">Minsk</governor>
+            <dependent idx="10">babirusa</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Bank</word>
+            <lemma>Bank</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>America</word>
+            <lemma>America</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>leads</word>
+            <lemma>lead</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>Consumer</word>
+            <lemma>Consumer</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Financial</word>
+            <lemma>Financial</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Protection</word>
+            <lemma>Protection</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Bureau</word>
+            <lemma>Bureau</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>complaints</word>
+            <lemma>complaint</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>mortgages</word>
+            <lemma>mortgage</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Bank)) (PP (IN of) (NP (NNP America)))) (VP (VBZ leads) (NP (NP (NNP Consumer) (NNP Financial) (NNP Protection) (NNP Bureau) (NNS complaints)) (PP (IN about) (NP (NNS mortgages))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">leads</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">leads</governor>
+            <dependent idx="1">Bank</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Bank</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="5">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="6">Financial</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="7">Protection</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="8">Bureau</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">leads</governor>
+            <dependent idx="9">complaints</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">complaints</governor>
+            <dependent idx="10">about</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">about</governor>
+            <dependent idx="11">mortgages</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">leads</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">leads</governor>
+            <dependent idx="1">Bank</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Bank</governor>
+            <dependent idx="3">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="5">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="6">Financial</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="7">Protection</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="8">Bureau</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">leads</governor>
+            <dependent idx="9">complaints</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="9">complaints</governor>
+            <dependent idx="11">mortgages</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">leads</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">leads</governor>
+            <dependent idx="1">Bank</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Bank</governor>
+            <dependent idx="3">America</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="5">Consumer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="6">Financial</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="7">Protection</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">complaints</governor>
+            <dependent idx="8">Bureau</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">leads</governor>
+            <dependent idx="9">complaints</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="9">complaints</governor>
+            <dependent idx="11">mortgages</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>rising</word>
+            <lemma>rise</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>mortgages</word>
+            <lemma>mortgage</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG rising) (NP (NNS mortgages))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rising</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">rising</governor>
+            <dependent idx="2">mortgages</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rising</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">rising</governor>
+            <dependent idx="2">mortgages</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rising</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">rising</governor>
+            <dependent idx="2">mortgages</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

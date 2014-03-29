@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>thing</word>
+            <lemma>thing</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>since</word>
+            <lemma>since</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>sliced</word>
+            <lemma>slice</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>bread</word>
+            <lemma>bread</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>vertically</word>
+            <lemma>vertically</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB best)) (NP (NP (NP (NN thing)) (PP (IN since))) (VP (VBN sliced) (NP (NN bread)) (ADVP (RB vertically)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">thing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">thing</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">thing</governor>
+            <dependent idx="3">since</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">thing</governor>
+            <dependent idx="4">sliced</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">sliced</governor>
+            <dependent idx="5">bread</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">sliced</governor>
+            <dependent idx="6">vertically</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">thing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">thing</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">thing</governor>
+            <dependent idx="3">since</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">thing</governor>
+            <dependent idx="4">sliced</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">sliced</governor>
+            <dependent idx="5">bread</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">sliced</governor>
+            <dependent idx="6">vertically</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">thing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">thing</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">thing</governor>
+            <dependent idx="3">since</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">thing</governor>
+            <dependent idx="4">sliced</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">sliced</governor>
+            <dependent idx="5">bread</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">sliced</governor>
+            <dependent idx="6">vertically</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

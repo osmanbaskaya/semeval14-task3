@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>send</word>
+            <lemma>send</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>photos</word>
+            <lemma>photo</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="9">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="10">
+            <word>iPhone</word>
+            <lemma>iPhone</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHNP (WRB How)) (S (VP (TO to) (VP (VB send) (NP (NNS photos)) (PP (IN from) (NP (NP (DT the) (NN internet)) (PP (TO to) (NP (PRP$ your) (NNP iPhone)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">send</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">send</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">send</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">send</governor>
+            <dependent idx="4">photos</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">send</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">internet</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">from</governor>
+            <dependent idx="7">internet</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">internet</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">iPhone</governor>
+            <dependent idx="9">your</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">to</governor>
+            <dependent idx="10">iPhone</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">send</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">send</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">send</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">send</governor>
+            <dependent idx="4">photos</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">internet</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">send</governor>
+            <dependent idx="7">internet</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">iPhone</governor>
+            <dependent idx="9">your</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">internet</governor>
+            <dependent idx="10">iPhone</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">send</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">send</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">send</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">send</governor>
+            <dependent idx="4">photos</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">internet</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">send</governor>
+            <dependent idx="7">internet</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">iPhone</governor>
+            <dependent idx="9">your</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">internet</governor>
+            <dependent idx="10">iPhone</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>computer</word>
+            <lemma>computer</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>mobile</word>
+            <lemma>mobile</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>photo</word>
+            <lemma>photo</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>sharing</word>
+            <lemma>sharing</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN computer)) (PP (TO to) (NP (JJ mobile) (NN photo) (NN sharing))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">computer</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">computer</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sharing</governor>
+            <dependent idx="3">mobile</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">sharing</governor>
+            <dependent idx="4">photo</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="5">sharing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">computer</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sharing</governor>
+            <dependent idx="3">mobile</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">sharing</governor>
+            <dependent idx="4">photo</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">computer</governor>
+            <dependent idx="5">sharing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">computer</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sharing</governor>
+            <dependent idx="3">mobile</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">sharing</governor>
+            <dependent idx="4">photo</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">computer</governor>
+            <dependent idx="5">sharing</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

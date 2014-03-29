@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Malaysia-Singapore</word>
+            <lemma>Malaysia-Singapore</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Airlines</word>
+            <lemma>Airlines</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="3">
+            <word>Comet</word>
+            <lemma>Comet</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>4</word>
+            <lemma>4</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Kai</word>
+            <lemma>Kai</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Tak</word>
+            <lemma>Tak</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Airport</word>
+            <lemma>Airport</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>1966</word>
+            <lemma>1966</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>airplane</word>
+            <lemma>airplane</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Malaysia-Singapore) (NNPS Airlines) (NNP Comet)) (NP (NP (CD 4)) (PP (IN at) (NP (NP (NNP Kai) (NNP Tak) (NNP Airport)) (PP (IN in) (NP (CD 1966) (NN airplane)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Comet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Comet</governor>
+            <dependent idx="1">Malaysia-Singapore</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Comet</governor>
+            <dependent idx="2">Airlines</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Comet</governor>
+            <dependent idx="4">4</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">4</governor>
+            <dependent idx="5">at</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Airport</governor>
+            <dependent idx="6">Kai</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Airport</governor>
+            <dependent idx="7">Tak</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">at</governor>
+            <dependent idx="8">Airport</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">Airport</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">airplane</governor>
+            <dependent idx="10">1966</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="11">airplane</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Comet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Comet</governor>
+            <dependent idx="1">Malaysia-Singapore</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Comet</governor>
+            <dependent idx="2">Airlines</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Comet</governor>
+            <dependent idx="4">4</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Airport</governor>
+            <dependent idx="6">Kai</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Airport</governor>
+            <dependent idx="7">Tak</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="4">4</governor>
+            <dependent idx="8">Airport</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">airplane</governor>
+            <dependent idx="10">1966</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">Airport</governor>
+            <dependent idx="11">airplane</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Comet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Comet</governor>
+            <dependent idx="1">Malaysia-Singapore</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Comet</governor>
+            <dependent idx="2">Airlines</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Comet</governor>
+            <dependent idx="4">4</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Airport</governor>
+            <dependent idx="6">Kai</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Airport</governor>
+            <dependent idx="7">Tak</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="4">4</governor>
+            <dependent idx="8">Airport</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">airplane</governor>
+            <dependent idx="10">1966</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">Airport</governor>
+            <dependent idx="11">airplane</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

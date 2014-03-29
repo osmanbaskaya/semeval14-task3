@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="2">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="3">
+            <word>watch</word>
+            <lemma>watch</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>4od</word>
+            <lemma>4od</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>bbc</word>
+            <lemma>bbc</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>iplayer</word>
+            <lemma>iplayer</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>etc</word>
+            <lemma>etc</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>10GB</word>
+            <lemma>10gb</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>useage</word>
+            <lemma>useage</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>allowence</word>
+            <lemma>allowence</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (VP (MD can))) (NP (FW i)) (VP (VBP watch) (NP (NP (JJ 4od) (NN bbc) (NN iplayer) (NN etc)) (PP (IN with) (NP (NN 10GB) (NN useage) (NN allowence))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">watch</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">watch</governor>
+            <dependent idx="1">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">watch</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">etc</governor>
+            <dependent idx="4">4od</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">etc</governor>
+            <dependent idx="5">bbc</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">etc</governor>
+            <dependent idx="6">iplayer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">watch</governor>
+            <dependent idx="7">etc</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">etc</governor>
+            <dependent idx="8">with</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">allowence</governor>
+            <dependent idx="9">10GB</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">allowence</governor>
+            <dependent idx="10">useage</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">with</governor>
+            <dependent idx="11">allowence</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">watch</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">watch</governor>
+            <dependent idx="1">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">watch</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">etc</governor>
+            <dependent idx="4">4od</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">etc</governor>
+            <dependent idx="5">bbc</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">etc</governor>
+            <dependent idx="6">iplayer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">watch</governor>
+            <dependent idx="7">etc</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">allowence</governor>
+            <dependent idx="9">10GB</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">allowence</governor>
+            <dependent idx="10">useage</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">etc</governor>
+            <dependent idx="11">allowence</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">watch</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">watch</governor>
+            <dependent idx="1">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">watch</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">etc</governor>
+            <dependent idx="4">4od</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">etc</governor>
+            <dependent idx="5">bbc</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">etc</governor>
+            <dependent idx="6">iplayer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">watch</governor>
+            <dependent idx="7">etc</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">allowence</governor>
+            <dependent idx="9">10GB</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">allowence</governor>
+            <dependent idx="10">useage</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">etc</governor>
+            <dependent idx="11">allowence</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>online</word>
+            <lemma>online</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>television</word>
+            <lemma>television</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>streaming</word>
+            <lemma>streaming</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>bbc</word>
+            <lemma>bbc</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ online) (NN television) (NN streaming)) (PP (IN for) (NP (NN bbc))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">streaming</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">streaming</governor>
+            <dependent idx="1">online</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">streaming</governor>
+            <dependent idx="2">television</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">streaming</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">for</governor>
+            <dependent idx="5">bbc</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">streaming</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">streaming</governor>
+            <dependent idx="1">online</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">streaming</governor>
+            <dependent idx="2">television</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">streaming</governor>
+            <dependent idx="5">bbc</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">streaming</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">streaming</governor>
+            <dependent idx="1">online</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">streaming</governor>
+            <dependent idx="2">television</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">streaming</governor>
+            <dependent idx="5">bbc</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

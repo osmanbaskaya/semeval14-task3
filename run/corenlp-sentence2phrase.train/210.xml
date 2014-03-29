@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>cant</word>
+            <lemma>cant</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>send</word>
+            <lemma>send</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>mail</word>
+            <lemma>mail</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="7">
+            <word>alternative</word>
+            <lemma>alternative</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>address</word>
+            <lemma>address</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="10">
+            <word>any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>Yahoo</word>
+            <lemma>Yahoo</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>address</word>
+            <lemma>address</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBP cant) (VP (VB send) (NP (NN mail)) (PP (IN from) (NP (PRP$ my) (JJ alternative) (NN address))) (PP (TO to) (NP (DT any) (NNP Yahoo) (NN address))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cant</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">cant</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">cant</governor>
+            <dependent idx="3">send</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">send</governor>
+            <dependent idx="4">mail</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">send</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">address</governor>
+            <dependent idx="6">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">address</governor>
+            <dependent idx="7">alternative</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">from</governor>
+            <dependent idx="8">address</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">send</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">address</governor>
+            <dependent idx="10">any</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">address</governor>
+            <dependent idx="11">Yahoo</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">to</governor>
+            <dependent idx="12">address</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cant</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">cant</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">cant</governor>
+            <dependent idx="3">send</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">send</governor>
+            <dependent idx="4">mail</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">address</governor>
+            <dependent idx="6">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">address</governor>
+            <dependent idx="7">alternative</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">send</governor>
+            <dependent idx="8">address</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">address</governor>
+            <dependent idx="10">any</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">address</governor>
+            <dependent idx="11">Yahoo</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">send</governor>
+            <dependent idx="12">address</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cant</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">cant</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">cant</governor>
+            <dependent idx="3">send</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">send</governor>
+            <dependent idx="4">mail</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">address</governor>
+            <dependent idx="6">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">address</governor>
+            <dependent idx="7">alternative</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">send</governor>
+            <dependent idx="8">address</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">address</governor>
+            <dependent idx="10">any</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">address</governor>
+            <dependent idx="11">Yahoo</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">send</governor>
+            <dependent idx="12">address</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>blocked</word>
+            <lemma>block</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="2">
+            <word>email</word>
+            <lemma>email</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>address</word>
+            <lemma>address</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (VP (VBD blocked) (NP (NN email))) (NP (NN address)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">blocked</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">blocked</governor>
+            <dependent idx="2">email</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">blocked</governor>
+            <dependent idx="3">address</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">blocked</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">blocked</governor>
+            <dependent idx="2">email</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">blocked</governor>
+            <dependent idx="3">address</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">blocked</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">blocked</governor>
+            <dependent idx="2">email</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">blocked</governor>
+            <dependent idx="3">address</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

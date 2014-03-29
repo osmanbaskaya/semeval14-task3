@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>tramp</word>
+            <lemma>tramp</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>stamp</word>
+            <lemma>stamp</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>wealthy</word>
+            <lemma>wealthy</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN tramp) (NN stamp)) (NP (JJ wealthy)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">stamp</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">stamp</governor>
+            <dependent idx="1">tramp</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">stamp</governor>
+            <dependent idx="3">wealthy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">stamp</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">stamp</governor>
+            <dependent idx="1">tramp</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">stamp</governor>
+            <dependent idx="3">wealthy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">stamp</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">stamp</governor>
+            <dependent idx="1">tramp</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">stamp</governor>
+            <dependent idx="3">wealthy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

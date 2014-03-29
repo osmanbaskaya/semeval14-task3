@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>careful</word>
+            <lemma>careful</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>when</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="4">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>work</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="6">
+            <word>near</word>
+            <lemma>near</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>him</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="8">
+            <word>;</word>
+            <lemma>;</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>:</POS>
+          </token>
+          <token id="9">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="10">
+            <word>'s</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="11">
+            <word>trigger-happy</word>
+            <lemma>trigger-happy</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>chain-saw</word>
+            <lemma>chain-saw</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (VP (VB Be) (ADJP (JJ careful) (SBAR (WHADVP (WRB when)) (S (NP (PRP you)) (VP (VBP work) (PP (IN near) (NP (PRP him))))))))) (: ;) (S (NP (PRP he)) (VP (VBZ 's) (ADJP (JJ trigger-happy) (PP (IN with) (NP (DT that) (NN chain-saw)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">careful</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="2">careful</governor>
+            <dependent idx="1">Be</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">work</governor>
+            <dependent idx="3">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">work</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">careful</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">work</governor>
+            <dependent idx="6">near</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">near</governor>
+            <dependent idx="7">him</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="9">he</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="10">'s</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">careful</governor>
+            <dependent idx="11">trigger-happy</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="12">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">chain-saw</governor>
+            <dependent idx="13">that</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">with</governor>
+            <dependent idx="14">chain-saw</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">careful</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="2">careful</governor>
+            <dependent idx="1">Be</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">work</governor>
+            <dependent idx="3">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">work</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">careful</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="prep_near">
+            <governor idx="5">work</governor>
+            <dependent idx="7">him</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="9">he</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="10">'s</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">careful</governor>
+            <dependent idx="11">trigger-happy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">chain-saw</governor>
+            <dependent idx="13">that</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="14">chain-saw</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">careful</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="2">careful</governor>
+            <dependent idx="1">Be</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">work</governor>
+            <dependent idx="3">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">work</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">careful</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="prep_near">
+            <governor idx="5">work</governor>
+            <dependent idx="7">him</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="9">he</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="10">'s</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="2">careful</governor>
+            <dependent idx="11">trigger-happy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">chain-saw</governor>
+            <dependent idx="13">that</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="11">trigger-happy</governor>
+            <dependent idx="14">chain-saw</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>dangerous</word>
+            <lemma>dangerous</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>workplace</word>
+            <lemma>workplace</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>accidents</word>
+            <lemma>accident</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ dangerous) (NN workplace) (NNS accidents))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">accidents</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">accidents</governor>
+            <dependent idx="1">dangerous</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">accidents</governor>
+            <dependent idx="2">workplace</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">accidents</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">accidents</governor>
+            <dependent idx="1">dangerous</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">accidents</governor>
+            <dependent idx="2">workplace</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">accidents</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">accidents</governor>
+            <dependent idx="1">dangerous</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">accidents</governor>
+            <dependent idx="2">workplace</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

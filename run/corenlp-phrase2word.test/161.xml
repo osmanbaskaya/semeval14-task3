@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>car</word>
+            <lemma>car</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>accident</word>
+            <lemma>accident</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>infrastructure</word>
+            <lemma>infrastructure</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NN car)) (NP (NN accident) (NN infrastructure)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">car</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">car</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">infrastructure</governor>
+            <dependent idx="3">accident</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">car</governor>
+            <dependent idx="4">infrastructure</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">car</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">car</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">infrastructure</governor>
+            <dependent idx="3">accident</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">car</governor>
+            <dependent idx="4">infrastructure</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">car</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">car</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">infrastructure</governor>
+            <dependent idx="3">accident</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">car</governor>
+            <dependent idx="4">infrastructure</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

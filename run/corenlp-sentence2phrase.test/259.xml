@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>wind</word>
+            <lemma>wind</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>lifted</word>
+            <lemma>lift</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="5">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="6">
+            <word>skirt</word>
+            <lemma>skirt</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="9">
+            <word>caught</word>
+            <lemma>catch</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="10">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>glimpse</word>
+            <lemma>glimpse</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="14">
+            <word>downstairs</word>
+            <lemma>downstairs</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (DT The) (NN wind)) (VP (VBD lifted) (PRT (RP up)) (NP (PRP$ her) (NN skirt)))) (CC and) (S (NP (PRP I)) (VP (VBD caught) (NP (NP (DT a) (NN glimpse)) (PP (IN of) (NP (PRP$ her) (NNS downstairs)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">lifted</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">wind</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">lifted</governor>
+            <dependent idx="2">wind</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">lifted</governor>
+            <dependent idx="4">up</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">skirt</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">lifted</governor>
+            <dependent idx="6">skirt</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">lifted</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">caught</governor>
+            <dependent idx="8">I</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">lifted</governor>
+            <dependent idx="9">caught</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">glimpse</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">caught</governor>
+            <dependent idx="11">glimpse</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">glimpse</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">downstairs</governor>
+            <dependent idx="13">her</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="14">downstairs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">lifted</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">wind</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">lifted</governor>
+            <dependent idx="2">wind</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">lifted</governor>
+            <dependent idx="4">up</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">skirt</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">lifted</governor>
+            <dependent idx="6">skirt</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">caught</governor>
+            <dependent idx="8">I</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">lifted</governor>
+            <dependent idx="9">caught</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">glimpse</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">caught</governor>
+            <dependent idx="11">glimpse</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">downstairs</governor>
+            <dependent idx="13">her</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">glimpse</governor>
+            <dependent idx="14">downstairs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">lifted</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">wind</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">lifted</governor>
+            <dependent idx="2">wind</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">lifted</governor>
+            <dependent idx="4">up</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">skirt</governor>
+            <dependent idx="5">her</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">lifted</governor>
+            <dependent idx="6">skirt</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">caught</governor>
+            <dependent idx="8">I</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">lifted</governor>
+            <dependent idx="9">caught</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">glimpse</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">caught</governor>
+            <dependent idx="11">glimpse</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">downstairs</governor>
+            <dependent idx="13">her</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">glimpse</governor>
+            <dependent idx="14">downstairs</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>fleeting</word>
+            <lemma>fleeting</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>voyeuristic</word>
+            <lemma>voyeuristic</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>glance</word>
+            <lemma>glance</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>due</word>
+            <lemma>due</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>opportune</word>
+            <lemma>opportune</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>gust</word>
+            <lemma>gust</lemma>
+            <CharacterOffsetBegin>122</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (DT a) (JJ fleeting) (, ,) (JJ voyeuristic) (NN glance)) (ADJP (JJ due) (PP (TO to) (NP (DT an) (JJ opportune) (NN gust))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">glance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">glance</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">glance</governor>
+            <dependent idx="2">fleeting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">glance</governor>
+            <dependent idx="4">voyeuristic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">glance</governor>
+            <dependent idx="6">due</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">due</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">gust</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">gust</governor>
+            <dependent idx="9">opportune</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">to</governor>
+            <dependent idx="10">gust</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">glance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">glance</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">glance</governor>
+            <dependent idx="2">fleeting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">glance</governor>
+            <dependent idx="4">voyeuristic</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">gust</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">gust</governor>
+            <dependent idx="9">opportune</dependent>
+          </dep>
+          <dep type="prep_due_to">
+            <governor idx="5">glance</governor>
+            <dependent idx="10">gust</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">glance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">glance</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">glance</governor>
+            <dependent idx="2">fleeting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">glance</governor>
+            <dependent idx="4">voyeuristic</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">gust</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">gust</governor>
+            <dependent idx="9">opportune</dependent>
+          </dep>
+          <dep type="prep_due_to">
+            <governor idx="5">glance</governor>
+            <dependent idx="10">gust</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

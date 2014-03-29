@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Australian</word>
+            <lemma>australian</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>team</word>
+            <lemma>team</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>known</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>Steelers</word>
+            <lemma>Steelers</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="11">
+            <word>ranked</word>
+            <lemma>rank</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="12">
+            <word>second</word>
+            <lemma>second</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="15">
+            <word>world</word>
+            <lemma>world</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (JJ Australian) (NN team)) (, ,) (VP (VBN known) (PP (IN as) (NP (DT the) (NNPS Steelers)))) (, ,)) (VP (VBZ is) (VP (VBN ranked) (ADJP (JJ second)) (PP (IN in) (NP (DT the) (NN world))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">ranked</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">team</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">team</governor>
+            <dependent idx="2">Australian</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="11">ranked</governor>
+            <dependent idx="3">team</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">team</governor>
+            <dependent idx="5">known</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">known</governor>
+            <dependent idx="6">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Steelers</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">as</governor>
+            <dependent idx="8">Steelers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">ranked</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="11">ranked</governor>
+            <dependent idx="12">second</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">ranked</governor>
+            <dependent idx="13">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">world</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">in</governor>
+            <dependent idx="15">world</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">ranked</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">team</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">team</governor>
+            <dependent idx="2">Australian</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="11">ranked</governor>
+            <dependent idx="3">team</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">team</governor>
+            <dependent idx="5">known</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Steelers</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="5">known</governor>
+            <dependent idx="8">Steelers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">ranked</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="11">ranked</governor>
+            <dependent idx="12">second</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">world</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="11">ranked</governor>
+            <dependent idx="15">world</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">ranked</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">team</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">team</governor>
+            <dependent idx="2">Australian</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="11">ranked</governor>
+            <dependent idx="3">team</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">team</governor>
+            <dependent idx="5">known</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Steelers</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="5">known</governor>
+            <dependent idx="8">Steelers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">ranked</governor>
+            <dependent idx="10">is</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="11">ranked</governor>
+            <dependent idx="12">second</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">world</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="11">ranked</governor>
+            <dependent idx="15">world</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Steelers</word>
+            <lemma>Steelers</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="3">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>#</word>
+            <lemma>#</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>#</POS>
+          </token>
+          <token id="5">
+            <word>2</word>
+            <lemma>2</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="6">
+            <word>worldwide</word>
+            <lemma>worldwide</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>team</word>
+            <lemma>team</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>ranking</word>
+            <lemma>ranking</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT the) (NNPS Steelers) (POS ')) (NP (# #) (CD 2))) (NP (JJ worldwide) (NN team) (NN ranking)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Steelers</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">2</governor>
+            <dependent idx="4">#</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="5">2</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">ranking</governor>
+            <dependent idx="6">worldwide</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">ranking</governor>
+            <dependent idx="7">team</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="8">ranking</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Steelers</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">2</governor>
+            <dependent idx="4">#</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="5">2</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">ranking</governor>
+            <dependent idx="6">worldwide</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">ranking</governor>
+            <dependent idx="7">team</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="8">ranking</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Steelers</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">2</governor>
+            <dependent idx="4">#</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="5">2</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">ranking</governor>
+            <dependent idx="6">worldwide</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">ranking</governor>
+            <dependent idx="7">team</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Steelers</governor>
+            <dependent idx="8">ranking</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

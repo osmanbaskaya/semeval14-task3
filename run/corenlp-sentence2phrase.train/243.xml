@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Mr</word>
+            <lemma>Mr</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>President</word>
+            <lemma>President</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="6">
+            <word>Mr</word>
+            <lemma>Mr</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Nicholson</word>
+            <lemma>Nicholson</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="9">
+            <word>problem</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>even</word>
+            <lemma>even</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="13">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>RBR</POS>
+          </token>
+          <token id="14">
+            <word>acute</word>
+            <lemma>acute</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>form</word>
+            <lemma>form</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Mr) (NNP President)) (, ,) (NP (PRP I)) (VP (VBP have) (NP (NP (NP (NNP Mr) (NNP Nicholson) (POS 's)) (NN problem)) (PP (IN in) (NP (DT an) (ADJP (RB even) (RBR more) (JJ acute)) (NN form))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="4">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Nicholson</governor>
+            <dependent idx="6">Mr</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">problem</governor>
+            <dependent idx="7">Nicholson</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="7">Nicholson</governor>
+            <dependent idx="8">'s</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="9">problem</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">problem</governor>
+            <dependent idx="10">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">form</governor>
+            <dependent idx="11">an</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">acute</governor>
+            <dependent idx="12">even</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">acute</governor>
+            <dependent idx="13">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">form</governor>
+            <dependent idx="14">acute</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">in</governor>
+            <dependent idx="15">form</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="4">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Nicholson</governor>
+            <dependent idx="6">Mr</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">problem</governor>
+            <dependent idx="7">Nicholson</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="9">problem</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">form</governor>
+            <dependent idx="11">an</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">acute</governor>
+            <dependent idx="12">even</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">acute</governor>
+            <dependent idx="13">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">form</governor>
+            <dependent idx="14">acute</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">problem</governor>
+            <dependent idx="15">form</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="4">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Nicholson</governor>
+            <dependent idx="6">Mr</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">problem</governor>
+            <dependent idx="7">Nicholson</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="9">problem</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">form</governor>
+            <dependent idx="11">an</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">acute</governor>
+            <dependent idx="12">even</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">acute</governor>
+            <dependent idx="13">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">form</governor>
+            <dependent idx="14">acute</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">problem</governor>
+            <dependent idx="15">form</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>political</word>
+            <lemma>political</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>sector</word>
+            <lemma>sector</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (PP (IN in) (NP (DT the) (JJ political) (NN sector)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">sector</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">sector</governor>
+            <dependent idx="3">political</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">in</governor>
+            <dependent idx="4">sector</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">sector</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">sector</governor>
+            <dependent idx="3">political</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">in</governor>
+            <dependent idx="4">sector</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">sector</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">sector</governor>
+            <dependent idx="3">political</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">in</governor>
+            <dependent idx="4">sector</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

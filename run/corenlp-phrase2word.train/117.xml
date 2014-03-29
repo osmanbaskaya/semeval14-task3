@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RBR</POS>
+          </token>
+          <token id="2">
+            <word>quickly</word>
+            <lemma>quickly</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>than</word>
+            <lemma>than</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>others</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>fast</word>
+            <lemma>fast</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (ADVP (RBR more) (RB quickly)) (PP (IN than) (NP (NNS others)))) (ADVP (RB fast)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">quickly</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">quickly</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">quickly</governor>
+            <dependent idx="3">than</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">than</governor>
+            <dependent idx="4">others</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">quickly</governor>
+            <dependent idx="5">fast</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">quickly</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">quickly</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="prep_than">
+            <governor idx="2">quickly</governor>
+            <dependent idx="4">others</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">quickly</governor>
+            <dependent idx="5">fast</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">quickly</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">quickly</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="prep_than">
+            <governor idx="2">quickly</governor>
+            <dependent idx="4">others</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">quickly</governor>
+            <dependent idx="5">fast</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

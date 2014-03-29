@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>We</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>must</word>
+            <lemma>must</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>therefore</word>
+            <lemma>therefore</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>support</word>
+            <lemma>support</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>PDT</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>measures</word>
+            <lemma>measure</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>designed</word>
+            <lemma>design</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="10">
+            <word>boost</word>
+            <lemma>boost</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="11">
+            <word>small</word>
+            <lemma>small</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="13">
+            <word>medium-sized</word>
+            <lemma>medium-sized</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>enterprises</word>
+            <lemma>enterprise</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP We)) (VP (MD must) (ADVP (RB therefore)) (VP (VB support) (NP (NP (PDT all) (DT the) (NNS measures)) (VP (VBN designed) (S (VP (TO to) (VP (VB boost) (NP (ADJP (JJ small) (CC and) (JJ medium-sized)) (NNS enterprises))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">support</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">support</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">support</governor>
+            <dependent idx="2">must</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">support</governor>
+            <dependent idx="3">therefore</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="7">measures</governor>
+            <dependent idx="5">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">measures</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">support</governor>
+            <dependent idx="7">measures</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">measures</governor>
+            <dependent idx="8">designed</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">boost</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">designed</governor>
+            <dependent idx="10">boost</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">enterprises</governor>
+            <dependent idx="11">small</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">small</governor>
+            <dependent idx="12">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="11">small</governor>
+            <dependent idx="13">medium-sized</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">boost</governor>
+            <dependent idx="14">enterprises</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">support</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">support</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">support</governor>
+            <dependent idx="2">must</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">support</governor>
+            <dependent idx="3">therefore</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="7">measures</governor>
+            <dependent idx="5">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">measures</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">support</governor>
+            <dependent idx="7">measures</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">measures</governor>
+            <dependent idx="8">designed</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">boost</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">designed</governor>
+            <dependent idx="10">boost</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">enterprises</governor>
+            <dependent idx="11">small</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">small</governor>
+            <dependent idx="13">medium-sized</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">boost</governor>
+            <dependent idx="14">enterprises</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">support</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">support</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">support</governor>
+            <dependent idx="2">must</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">support</governor>
+            <dependent idx="3">therefore</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="7">measures</governor>
+            <dependent idx="5">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">measures</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">support</governor>
+            <dependent idx="7">measures</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">measures</governor>
+            <dependent idx="8">designed</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">boost</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">designed</governor>
+            <dependent idx="10">boost</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">enterprises</governor>
+            <dependent idx="11">small</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">small</governor>
+            <dependent idx="13">medium-sized</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">enterprises</governor>
+            <dependent idx="13">medium-sized</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">boost</governor>
+            <dependent idx="14">enterprises</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>small</word>
+            <lemma>small</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>businesses</word>
+            <lemma>business</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>measures</word>
+            <lemma>measure</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ small) (NNS businesses)) (NP (NNS measures)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">businesses</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">businesses</governor>
+            <dependent idx="1">small</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">businesses</governor>
+            <dependent idx="3">measures</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">businesses</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">businesses</governor>
+            <dependent idx="1">small</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">businesses</governor>
+            <dependent idx="3">measures</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">businesses</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">businesses</governor>
+            <dependent idx="1">small</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">businesses</governor>
+            <dependent idx="3">measures</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

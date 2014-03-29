@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Looking</word>
+            <lemma>look</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>Advice</word>
+            <lemma>Advice</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>eBayer</word>
+            <lemma>eBayer</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Seller</word>
+            <lemma>Seller</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="9">
+            <word>sending</word>
+            <lemma>send</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="10">
+            <word>me</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="11">
+            <word>empty</word>
+            <lemma>empty</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>boxes</word>
+            <lemma>box</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VP (VBG Looking) (PP (IN for) (NP (NNP Advice))) (PP (IN about) (NP (DT an) (NNP eBayer) (NNP Seller)))) (, ,) (VP (VBG sending) (NP (PRP me)) (NP (JJ empty) (NNS boxes)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Looking</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Looking</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">for</governor>
+            <dependent idx="3">Advice</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Looking</governor>
+            <dependent idx="4">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Seller</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Seller</governor>
+            <dependent idx="6">eBayer</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">about</governor>
+            <dependent idx="7">Seller</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Looking</governor>
+            <dependent idx="9">sending</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="9">sending</governor>
+            <dependent idx="10">me</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">boxes</governor>
+            <dependent idx="11">empty</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">sending</governor>
+            <dependent idx="12">boxes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Looking</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">Looking</governor>
+            <dependent idx="3">Advice</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Seller</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Seller</governor>
+            <dependent idx="6">eBayer</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="1">Looking</governor>
+            <dependent idx="7">Seller</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Looking</governor>
+            <dependent idx="9">sending</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="9">sending</governor>
+            <dependent idx="10">me</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">boxes</governor>
+            <dependent idx="11">empty</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">sending</governor>
+            <dependent idx="12">boxes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Looking</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">Looking</governor>
+            <dependent idx="3">Advice</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Seller</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Seller</governor>
+            <dependent idx="6">eBayer</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="1">Looking</governor>
+            <dependent idx="7">Seller</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Looking</governor>
+            <dependent idx="9">sending</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="9">sending</governor>
+            <dependent idx="10">me</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">boxes</governor>
+            <dependent idx="11">empty</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">sending</governor>
+            <dependent idx="12">boxes</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (. ?))) </parse>
+        <dependencies type="basic-dependencies"/>
+        <dependencies type="collapsed-dependencies"/>
+        <dependencies type="collapsed-ccprocessed-dependencies"/>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>advice</word>
+            <lemma>advice</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>empty</word>
+            <lemma>empty</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>boxes</word>
+            <lemma>box</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>sent</word>
+            <lemma>send</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>eBay</word>
+            <lemma>eBay</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>seller</word>
+            <lemma>seller</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN advice)) (PP (IN on) (NP (NP (JJ empty) (NNS boxes)) (VP (VBN sent) (PP (IN by) (NP (NNP eBay) (NN seller)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">advice</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">advice</governor>
+            <dependent idx="2">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">boxes</governor>
+            <dependent idx="3">empty</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">on</governor>
+            <dependent idx="4">boxes</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">boxes</governor>
+            <dependent idx="5">sent</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">sent</governor>
+            <dependent idx="6">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">seller</governor>
+            <dependent idx="7">eBay</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">by</governor>
+            <dependent idx="8">seller</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">advice</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">boxes</governor>
+            <dependent idx="3">empty</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">advice</governor>
+            <dependent idx="4">boxes</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">boxes</governor>
+            <dependent idx="5">sent</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">seller</governor>
+            <dependent idx="7">eBay</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="5">sent</governor>
+            <dependent idx="8">seller</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">advice</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">boxes</governor>
+            <dependent idx="3">empty</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">advice</governor>
+            <dependent idx="4">boxes</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">boxes</governor>
+            <dependent idx="5">sent</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">seller</governor>
+            <dependent idx="7">eBay</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="5">sent</governor>
+            <dependent idx="8">seller</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

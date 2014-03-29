@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Where</word>
+            <lemma>where</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>find</word>
+            <lemma>find</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>low-size</word>
+            <lemma>low-size</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+          </token>
+          <token id="7">
+            <word>1</word>
+            <lemma>1</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="8">
+            <word>GB</word>
+            <lemma>gb</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="10">
+            <word>so</word>
+            <lemma>so</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="11">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+          </token>
+          <token id="12">
+            <word>torrent</word>
+            <lemma>torrent</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>movies</word>
+            <lemma>movie</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (MD can) (NP (PRP I)) (VP (VB find) (NP (ADJP (ADJP (JJ low-size)) (PRN (-LRB- -LRB-) (ADJP (NP (CD 1) (NN GB)) (CC or) (ADJP (RB so))) (-RRB- -RRB-))) (NN torrent) (NNS movies)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">find</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">find</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">find</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">find</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">movies</governor>
+            <dependent idx="5">low-size</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">GB</governor>
+            <dependent idx="7">1</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">low-size</governor>
+            <dependent idx="8">GB</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">GB</governor>
+            <dependent idx="9">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="8">GB</governor>
+            <dependent idx="10">so</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">movies</governor>
+            <dependent idx="12">torrent</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">find</governor>
+            <dependent idx="13">movies</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">find</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">find</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">find</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">find</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">movies</governor>
+            <dependent idx="5">low-size</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">GB</governor>
+            <dependent idx="7">1</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">low-size</governor>
+            <dependent idx="8">GB</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="8">GB</governor>
+            <dependent idx="10">so</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">movies</governor>
+            <dependent idx="12">torrent</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">find</governor>
+            <dependent idx="13">movies</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">find</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">find</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">find</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">find</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">movies</governor>
+            <dependent idx="5">low-size</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">GB</governor>
+            <dependent idx="7">1</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">low-size</governor>
+            <dependent idx="8">GB</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">low-size</governor>
+            <dependent idx="10">so</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="8">GB</governor>
+            <dependent idx="10">so</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">movies</governor>
+            <dependent idx="12">torrent</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">find</governor>
+            <dependent idx="13">movies</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>downloading</word>
+            <lemma>download</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>movies</word>
+            <lemma>movie</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>small</word>
+            <lemma>small</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>file</word>
+            <lemma>file</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>size</word>
+            <lemma>size</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG downloading) (NP (NNS movies)) (PP (IN with) (NP (JJ small) (NN file) (NN size)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">downloading</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">downloading</governor>
+            <dependent idx="2">movies</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">downloading</governor>
+            <dependent idx="3">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">size</governor>
+            <dependent idx="4">small</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">size</governor>
+            <dependent idx="5">file</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">with</governor>
+            <dependent idx="6">size</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">downloading</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">downloading</governor>
+            <dependent idx="2">movies</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">size</governor>
+            <dependent idx="4">small</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">size</governor>
+            <dependent idx="5">file</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">downloading</governor>
+            <dependent idx="6">size</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">downloading</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">downloading</governor>
+            <dependent idx="2">movies</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">size</governor>
+            <dependent idx="4">small</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">size</governor>
+            <dependent idx="5">file</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">downloading</governor>
+            <dependent idx="6">size</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

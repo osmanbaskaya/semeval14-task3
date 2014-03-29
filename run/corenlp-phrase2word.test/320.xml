@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>estuary</word>
+            <lemma>estuary</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>River</word>
+            <lemma>river</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>Camel</word>
+            <lemma>Camel</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>looking</word>
+            <lemma>look</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="8">
+            <word>seaward</word>
+            <lemma>seaward</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>Padstow</word>
+            <lemma>Padstow</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>lens</word>
+            <lemma>lens</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN estuary)) (PP (IN of) (NP (NP (DT the) (NN River) (NNP Camel)) (VP (VBG looking) (NP (NN seaward)) (PP (IN from) (NP (NNP Padstow) (NN lens)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">estuary</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">estuary</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">estuary</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Camel</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Camel</governor>
+            <dependent idx="5">River</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="6">Camel</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Camel</governor>
+            <dependent idx="7">looking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">looking</governor>
+            <dependent idx="8">seaward</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">looking</governor>
+            <dependent idx="9">from</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">lens</governor>
+            <dependent idx="10">Padstow</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">from</governor>
+            <dependent idx="11">lens</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">estuary</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">estuary</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Camel</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Camel</governor>
+            <dependent idx="5">River</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">estuary</governor>
+            <dependent idx="6">Camel</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Camel</governor>
+            <dependent idx="7">looking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">looking</governor>
+            <dependent idx="8">seaward</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">lens</governor>
+            <dependent idx="10">Padstow</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="7">looking</governor>
+            <dependent idx="11">lens</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">estuary</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">estuary</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Camel</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Camel</governor>
+            <dependent idx="5">River</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">estuary</governor>
+            <dependent idx="6">Camel</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Camel</governor>
+            <dependent idx="7">looking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">looking</governor>
+            <dependent idx="8">seaward</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">lens</governor>
+            <dependent idx="10">Padstow</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="7">looking</governor>
+            <dependent idx="11">lens</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

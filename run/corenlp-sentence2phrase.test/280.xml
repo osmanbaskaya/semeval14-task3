@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Man</word>
+            <lemma>man</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>got</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="5">
+            <word>totally</word>
+            <lemma>totally</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>fried</word>
+            <lemma>fry</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>weed</word>
+            <lemma>weed</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>Chad</word>
+            <lemma>Chad</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="12">
+            <word>party</word>
+            <lemma>party</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN Man)) (, ,) (NP (PRP I)) (VP (VBD got) (ADJP (RB totally) (VBN fried) (PP (IN on) (NP (NP (NN weed)) (PP (IN at) (NP (NP (NNP Chad) (POS 's)) (NN party))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">fried</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="1">Man</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">fried</governor>
+            <dependent idx="5">totally</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">fried</governor>
+            <dependent idx="7">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">on</governor>
+            <dependent idx="8">weed</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">weed</governor>
+            <dependent idx="9">at</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">party</governor>
+            <dependent idx="10">Chad</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="10">Chad</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">at</governor>
+            <dependent idx="12">party</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">fried</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="1">Man</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">fried</governor>
+            <dependent idx="5">totally</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">fried</governor>
+            <dependent idx="8">weed</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">party</governor>
+            <dependent idx="10">Chad</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="8">weed</governor>
+            <dependent idx="12">party</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">fried</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="1">Man</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">fried</governor>
+            <dependent idx="4">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">fried</governor>
+            <dependent idx="5">totally</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">fried</governor>
+            <dependent idx="8">weed</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">party</governor>
+            <dependent idx="10">Chad</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="8">weed</governor>
+            <dependent idx="12">party</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>hungry</word>
+            <lemma>hungry</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>smoking</word>
+            <lemma>smoke</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="5">
+            <word>so</word>
+            <lemma>so</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>much</word>
+            <lemma>much</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="7">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>party</word>
+            <lemma>party</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ hungry) (PP (IN from) (S (VP (VBG smoking) (PRT (RP up)) (ADVP (RB so) (RB much)) (PP (IN at) (NP (DT the) (NN party)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hungry</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">hungry</governor>
+            <dependent idx="2">from</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">from</governor>
+            <dependent idx="3">smoking</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">smoking</governor>
+            <dependent idx="4">up</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">much</governor>
+            <dependent idx="5">so</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">smoking</governor>
+            <dependent idx="6">much</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">smoking</governor>
+            <dependent idx="7">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">party</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">at</governor>
+            <dependent idx="9">party</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hungry</dependent>
+          </dep>
+          <dep type="prepc_from">
+            <governor idx="1">hungry</governor>
+            <dependent idx="3">smoking</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">smoking</governor>
+            <dependent idx="4">up</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">much</governor>
+            <dependent idx="5">so</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">smoking</governor>
+            <dependent idx="6">much</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">party</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="3">smoking</governor>
+            <dependent idx="9">party</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hungry</dependent>
+          </dep>
+          <dep type="prepc_from">
+            <governor idx="1">hungry</governor>
+            <dependent idx="3">smoking</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">smoking</governor>
+            <dependent idx="4">up</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">much</governor>
+            <dependent idx="5">so</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">smoking</governor>
+            <dependent idx="6">much</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">party</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="3">smoking</governor>
+            <dependent idx="9">party</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

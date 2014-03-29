@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>close</word>
+            <lemma>close</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>cigar</word>
+            <lemma>cigar</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>unqualified</word>
+            <lemma>unqualified</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB close)) (PP (CC but) (NP (DT no) (NN cigar) (JJ unqualified))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">close</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">close</governor>
+            <dependent idx="2">but</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">cigar</governor>
+            <dependent idx="3">no</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">but</governor>
+            <dependent idx="4">cigar</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">cigar</governor>
+            <dependent idx="5">unqualified</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">close</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">close</governor>
+            <dependent idx="2">but</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">cigar</governor>
+            <dependent idx="3">no</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">but</governor>
+            <dependent idx="4">cigar</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">cigar</governor>
+            <dependent idx="5">unqualified</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">close</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">close</governor>
+            <dependent idx="2">but</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">cigar</governor>
+            <dependent idx="3">no</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">but</governor>
+            <dependent idx="4">cigar</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">cigar</governor>
+            <dependent idx="5">unqualified</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

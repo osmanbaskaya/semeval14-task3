@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>HOW</word>
+            <lemma>HOW</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>TO</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>MAKE</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>CALLS</word>
+            <lemma>CALLS</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="5">
+            <word>TO</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>MOBILE</word>
+            <lemma>MOBILE</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>&amp;</word>
+            <lemma>&amp;</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>LAND</word>
+            <lemma>LAND</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>LINE</word>
+            <lemma>LINE</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>PHONES</word>
+            <lemma>PHONES</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>USING</word>
+            <lemma>USING</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>INTERNET</word>
+            <lemma>INTERNET</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="13">
+            <word>BROAD</word>
+            <lemma>BROAD</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="14">
+            <word>BAND</word>
+            <lemma>BAND</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="15">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NNP HOW)) (S (VP (TO TO) (VP (VB MAKE) (NP (NP (NNPS CALLS)) (S (VP (TO TO)))) (NP-TMP (NP (NP (NNP MOBILE) (CC &amp;) (NNP LAND)) (NNP LINE)) (NP (NNP PHONES) (NNP USING) (NNP INTERNET) (NNP BROAD) (NNP BAND)))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">HOW</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="2">TO</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">HOW</governor>
+            <dependent idx="3">MAKE</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="4">CALLS</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">CALLS</governor>
+            <dependent idx="5">TO</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">LINE</governor>
+            <dependent idx="6">MOBILE</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">MOBILE</governor>
+            <dependent idx="7">&amp;</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">MOBILE</governor>
+            <dependent idx="8">LAND</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="9">LINE</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="10">PHONES</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="11">USING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="12">INTERNET</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="13">BROAD</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">LINE</governor>
+            <dependent idx="14">BAND</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">HOW</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="2">TO</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">HOW</governor>
+            <dependent idx="3">MAKE</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="4">CALLS</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">CALLS</governor>
+            <dependent idx="5">TO</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">LINE</governor>
+            <dependent idx="6">MOBILE</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">MOBILE</governor>
+            <dependent idx="8">LAND</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="9">LINE</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="10">PHONES</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="11">USING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="12">INTERNET</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="13">BROAD</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">LINE</governor>
+            <dependent idx="14">BAND</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">HOW</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="2">TO</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">HOW</governor>
+            <dependent idx="3">MAKE</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="4">CALLS</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">CALLS</governor>
+            <dependent idx="5">TO</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">LINE</governor>
+            <dependent idx="6">MOBILE</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">MOBILE</governor>
+            <dependent idx="8">LAND</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">LINE</governor>
+            <dependent idx="8">LAND</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="3">MAKE</governor>
+            <dependent idx="9">LINE</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="10">PHONES</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="11">USING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="12">INTERNET</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">BAND</governor>
+            <dependent idx="13">BROAD</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">LINE</governor>
+            <dependent idx="14">BAND</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>VoIP</word>
+            <lemma>voip</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>phone</word>
+            <lemma>phone</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NN VoIP) (NN phone))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">phone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">phone</governor>
+            <dependent idx="1">VoIP</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">phone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">phone</governor>
+            <dependent idx="1">VoIP</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">phone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">phone</governor>
+            <dependent idx="1">VoIP</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

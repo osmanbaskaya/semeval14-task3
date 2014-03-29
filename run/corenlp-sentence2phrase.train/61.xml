@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>battlements</word>
+            <lemma>battlements</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>afford</word>
+            <lemma>afford</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>views</word>
+            <lemma>view</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>over</word>
+            <lemma>over</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>harbor</word>
+            <lemma>harbor</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="11">
+            <word>there</word>
+            <lemma>there</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>EX</POS>
+          </token>
+          <token id="12">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="13">
+            <word>craft</word>
+            <lemma>craft</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>shops</word>
+            <lemma>shop</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="15">
+            <word>upstairs</word>
+            <lemma>upstairs</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (DT The) (NNS battlements)) (VP (VBP afford) (NP (NP (JJ good) (NNS views)) (PP (IN over) (NP (DT the) (NN harbor)))))) (, ,) (CC and) (S (NP (EX there)) (VP (VBP are) (NP (NN craft) (NNS shops)) (ADVP (RB upstairs)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">afford</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">battlements</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">afford</governor>
+            <dependent idx="2">battlements</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">views</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">afford</governor>
+            <dependent idx="5">views</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">views</governor>
+            <dependent idx="6">over</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">harbor</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">over</governor>
+            <dependent idx="8">harbor</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">afford</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="12">are</governor>
+            <dependent idx="11">there</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">afford</governor>
+            <dependent idx="12">are</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">shops</governor>
+            <dependent idx="13">craft</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">are</governor>
+            <dependent idx="14">shops</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">are</governor>
+            <dependent idx="15">upstairs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">afford</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">battlements</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">afford</governor>
+            <dependent idx="2">battlements</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">views</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">afford</governor>
+            <dependent idx="5">views</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">harbor</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="5">views</governor>
+            <dependent idx="8">harbor</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="12">are</governor>
+            <dependent idx="11">there</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">afford</governor>
+            <dependent idx="12">are</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">shops</governor>
+            <dependent idx="13">craft</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">are</governor>
+            <dependent idx="14">shops</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">are</governor>
+            <dependent idx="15">upstairs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">afford</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">battlements</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">afford</governor>
+            <dependent idx="2">battlements</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">views</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">afford</governor>
+            <dependent idx="5">views</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">harbor</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="5">views</governor>
+            <dependent idx="8">harbor</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="12">are</governor>
+            <dependent idx="11">there</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">afford</governor>
+            <dependent idx="12">are</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">shops</governor>
+            <dependent idx="13">craft</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">are</governor>
+            <dependent idx="14">shops</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">are</governor>
+            <dependent idx="15">upstairs</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>gift</word>
+            <lemma>gift</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>shop</word>
+            <lemma>shop</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>basement</word>
+            <lemma>basement</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN gift)) (NP (NP (NN shop)) (PP (IN in) (NP (DT the) (NN basement)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">gift</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">gift</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">gift</governor>
+            <dependent idx="3">shop</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">shop</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">basement</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">basement</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">gift</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">gift</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">gift</governor>
+            <dependent idx="3">shop</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">basement</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">shop</governor>
+            <dependent idx="6">basement</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">gift</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">gift</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">gift</governor>
+            <dependent idx="3">shop</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">basement</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">shop</governor>
+            <dependent idx="6">basement</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

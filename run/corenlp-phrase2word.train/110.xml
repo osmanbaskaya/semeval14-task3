@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>above</word>
+            <lemma>above</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>consideration</word>
+            <lemma>consideration</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>countries</word>
+            <lemma>country</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (PP (IN above) (NP (NN consideration) (NNS countries)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">above</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">countries</governor>
+            <dependent idx="2">consideration</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">above</governor>
+            <dependent idx="3">countries</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">above</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">countries</governor>
+            <dependent idx="2">consideration</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">above</governor>
+            <dependent idx="3">countries</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">above</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">countries</governor>
+            <dependent idx="2">consideration</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">above</governor>
+            <dependent idx="3">countries</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

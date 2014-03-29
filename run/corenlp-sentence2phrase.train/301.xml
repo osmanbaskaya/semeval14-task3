@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Duke</word>
+            <lemma>Duke</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Edinburgh</word>
+            <lemma>Edinburgh</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>missed</word>
+            <lemma>miss</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="6">
+            <word>numerous</word>
+            <lemma>numerous</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>royal</word>
+            <lemma>royal</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>occasions</word>
+            <lemma>occasion</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>while</word>
+            <lemma>while</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="11">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="12">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>private</word>
+            <lemma>private</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>building</word>
+            <lemma>building</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (NNP Duke)) (PP (IN of) (NP (NNP Edinburgh)))) (VP (VBD missed) (NP (JJ numerous) (JJ royal) (NNS occasions)) (SBAR (IN while) (S (NP (PRP he)) (VP (VBD was) (PP (IN in) (NP (DT the) (JJ private) (NN building))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">missed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Duke</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">missed</governor>
+            <dependent idx="2">Duke</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Duke</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">Edinburgh</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">occasions</governor>
+            <dependent idx="6">numerous</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">occasions</governor>
+            <dependent idx="7">royal</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">missed</governor>
+            <dependent idx="8">occasions</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">was</governor>
+            <dependent idx="9">while</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">was</governor>
+            <dependent idx="10">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="5">missed</governor>
+            <dependent idx="11">was</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">was</governor>
+            <dependent idx="12">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">building</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">building</governor>
+            <dependent idx="14">private</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">in</governor>
+            <dependent idx="15">building</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">missed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Duke</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">missed</governor>
+            <dependent idx="2">Duke</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Duke</governor>
+            <dependent idx="4">Edinburgh</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">occasions</governor>
+            <dependent idx="6">numerous</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">occasions</governor>
+            <dependent idx="7">royal</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">missed</governor>
+            <dependent idx="8">occasions</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">was</governor>
+            <dependent idx="9">while</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">was</governor>
+            <dependent idx="10">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="5">missed</governor>
+            <dependent idx="11">was</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">building</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">building</governor>
+            <dependent idx="14">private</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="11">was</governor>
+            <dependent idx="15">building</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">missed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Duke</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">missed</governor>
+            <dependent idx="2">Duke</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Duke</governor>
+            <dependent idx="4">Edinburgh</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">occasions</governor>
+            <dependent idx="6">numerous</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">occasions</governor>
+            <dependent idx="7">royal</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">missed</governor>
+            <dependent idx="8">occasions</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">was</governor>
+            <dependent idx="9">while</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">was</governor>
+            <dependent idx="10">he</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="5">missed</governor>
+            <dependent idx="11">was</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">building</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">building</governor>
+            <dependent idx="14">private</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="11">was</governor>
+            <dependent idx="15">building</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Justice</word>
+            <lemma>Justice</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Minister</word>
+            <lemma>Minister</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Tzipi</word>
+            <lemma>Tzipi</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Livni</word>
+            <lemma>Livni</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>notes</word>
+            <lemma>note</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Saudi</word>
+            <lemma>Saudi</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>135</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Arabia</word>
+            <lemma>Arabia</lemma>
+            <CharacterOffsetBegin>136</CharacterOffsetBegin>
+            <CharacterOffsetEnd>142</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Justice) (NNP Minister) (NNP Tzipi) (NNP Livni)) (VP (VBZ notes) (PP (IN on) (NP (NNP Saudi) (NNP Arabia)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">notes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="1">Justice</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="2">Minister</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="3">Tzipi</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">notes</governor>
+            <dependent idx="4">Livni</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">notes</governor>
+            <dependent idx="6">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Arabia</governor>
+            <dependent idx="7">Saudi</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">on</governor>
+            <dependent idx="8">Arabia</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">notes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="1">Justice</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="2">Minister</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="3">Tzipi</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">notes</governor>
+            <dependent idx="4">Livni</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Arabia</governor>
+            <dependent idx="7">Saudi</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="5">notes</governor>
+            <dependent idx="8">Arabia</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">notes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="1">Justice</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="2">Minister</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Livni</governor>
+            <dependent idx="3">Tzipi</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">notes</governor>
+            <dependent idx="4">Livni</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Arabia</governor>
+            <dependent idx="7">Saudi</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="5">notes</governor>
+            <dependent idx="8">Arabia</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

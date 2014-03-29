@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>undelivered</word>
+            <lemma>undelivered</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>checks</word>
+            <lemma>check</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>bounced</word>
+            <lemma>bounce</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (JJ undelivered) (NNS checks)) (VP (VBD bounced)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">bounced</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">checks</governor>
+            <dependent idx="1">undelivered</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">bounced</governor>
+            <dependent idx="2">checks</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">bounced</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">checks</governor>
+            <dependent idx="1">undelivered</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">bounced</governor>
+            <dependent idx="2">checks</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">bounced</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">checks</governor>
+            <dependent idx="1">undelivered</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">bounced</governor>
+            <dependent idx="2">checks</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

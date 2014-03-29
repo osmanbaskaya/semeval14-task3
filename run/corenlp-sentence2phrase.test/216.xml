@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>think</word>
+            <lemma>think</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>cookie-cutter</word>
+            <lemma>cookie-cutter</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>solution</word>
+            <lemma>solution</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="9">
+            <word>work</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="10">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>cases</word>
+            <lemma>case</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBP do) (RB n't) (VP (VB think) (SBAR (S (NP (DT a) (JJ cookie-cutter) (NN solution)) (VP (MD will) (VP (VB work) (PP (IN in) (NP (DT all) (NNS cases))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">think</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">think</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">think</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">think</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">solution</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">solution</governor>
+            <dependent idx="6">cookie-cutter</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">work</governor>
+            <dependent idx="7">solution</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">work</governor>
+            <dependent idx="8">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">think</governor>
+            <dependent idx="9">work</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">work</governor>
+            <dependent idx="10">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">cases</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">in</governor>
+            <dependent idx="12">cases</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">think</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">think</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">think</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">think</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">solution</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">solution</governor>
+            <dependent idx="6">cookie-cutter</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">work</governor>
+            <dependent idx="7">solution</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">work</governor>
+            <dependent idx="8">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">think</governor>
+            <dependent idx="9">work</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">cases</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">work</governor>
+            <dependent idx="12">cases</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">think</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">think</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">think</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">think</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">solution</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">solution</governor>
+            <dependent idx="6">cookie-cutter</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">work</governor>
+            <dependent idx="7">solution</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">work</governor>
+            <dependent idx="8">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">think</governor>
+            <dependent idx="9">work</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">cases</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">work</governor>
+            <dependent idx="12">cases</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>off</word>
+            <lemma>off</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>shelf</word>
+            <lemma>shelf</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>fixes</word>
+            <lemma>fix</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (PP (IN off) (NP (DT the) (NN shelf) (NNS fixes)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">fixes</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">fixes</governor>
+            <dependent idx="3">shelf</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">off</governor>
+            <dependent idx="4">fixes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">fixes</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">fixes</governor>
+            <dependent idx="3">shelf</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">off</governor>
+            <dependent idx="4">fixes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">fixes</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">fixes</governor>
+            <dependent idx="3">shelf</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">off</governor>
+            <dependent idx="4">fixes</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

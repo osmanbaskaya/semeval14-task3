@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>nailing</word>
+            <lemma>nail</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>jello</word>
+            <lemma>jello</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>wall</word>
+            <lemma>wall</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>laborious</word>
+            <lemma>laborious</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (PP (IN like) (S (VP (VBG nailing) (S (NP (NP (NN jello)) (PP (TO to) (NP (DT the) (NN wall)))) (ADJP (JJ laborious))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">like</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="1">like</governor>
+            <dependent idx="2">nailing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">laborious</governor>
+            <dependent idx="3">jello</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">jello</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">wall</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="6">wall</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">nailing</governor>
+            <dependent idx="7">laborious</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">like</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="1">like</governor>
+            <dependent idx="2">nailing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">laborious</governor>
+            <dependent idx="3">jello</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">wall</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">jello</governor>
+            <dependent idx="6">wall</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">nailing</governor>
+            <dependent idx="7">laborious</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">like</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="1">like</governor>
+            <dependent idx="2">nailing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">laborious</governor>
+            <dependent idx="3">jello</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">wall</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">jello</governor>
+            <dependent idx="6">wall</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">nailing</governor>
+            <dependent idx="7">laborious</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

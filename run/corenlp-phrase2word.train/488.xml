@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>workouts</word>
+            <lemma>workout</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>strengthen</word>
+            <lemma>strengthen</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>abdominal</word>
+            <lemma>abdominal</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>muscles</word>
+            <lemma>muscle</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>fractions</word>
+            <lemma>fraction</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS workouts)) (VP (TO to) (VP (VB strengthen) (NP (JJ abdominal) (NNS muscles) (NNS fractions)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">strengthen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="1">workouts</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">fractions</governor>
+            <dependent idx="4">abdominal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">fractions</governor>
+            <dependent idx="5">muscles</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="6">fractions</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">strengthen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="1">workouts</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">fractions</governor>
+            <dependent idx="4">abdominal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">fractions</governor>
+            <dependent idx="5">muscles</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="6">fractions</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">strengthen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="1">workouts</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">fractions</governor>
+            <dependent idx="4">abdominal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">fractions</governor>
+            <dependent idx="5">muscles</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">strengthen</governor>
+            <dependent idx="6">fractions</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

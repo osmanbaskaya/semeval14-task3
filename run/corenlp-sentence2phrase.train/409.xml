@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>BOCHK</word>
+            <lemma>BOCHK</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>chief</word>
+            <lemma>chief</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>executive</word>
+            <lemma>executive</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>Liu</word>
+            <lemma>Liu</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Jinbao</word>
+            <lemma>Jinbao</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="7">
+            <word>transferred</word>
+            <lemma>transfer</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>abruptly</word>
+            <lemma>abruptly</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="10">
+            <word>Beijing</word>
+            <lemma>Beijing</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>last</word>
+            <lemma>last</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>month</word>
+            <lemma>month</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP BOCHK) (JJ chief) (NN executive)) (NP (NNP Liu) (NNP Jinbao))) (VP (VBD was) (VP (VBN transferred) (ADVP (RB abruptly)) (PP (TO to) (NP (NNP Beijing))) (NP-TMP (JJ last) (NN month)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">transferred</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">executive</governor>
+            <dependent idx="1">BOCHK</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">executive</governor>
+            <dependent idx="2">chief</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">transferred</governor>
+            <dependent idx="3">executive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Jinbao</governor>
+            <dependent idx="4">Liu</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">executive</governor>
+            <dependent idx="5">Jinbao</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">transferred</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">transferred</governor>
+            <dependent idx="8">abruptly</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">transferred</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">to</governor>
+            <dependent idx="10">Beijing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">month</governor>
+            <dependent idx="11">last</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="7">transferred</governor>
+            <dependent idx="12">month</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">transferred</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">executive</governor>
+            <dependent idx="1">BOCHK</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">executive</governor>
+            <dependent idx="2">chief</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">transferred</governor>
+            <dependent idx="3">executive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Jinbao</governor>
+            <dependent idx="4">Liu</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">executive</governor>
+            <dependent idx="5">Jinbao</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">transferred</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">transferred</governor>
+            <dependent idx="8">abruptly</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">transferred</governor>
+            <dependent idx="10">Beijing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">month</governor>
+            <dependent idx="11">last</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="7">transferred</governor>
+            <dependent idx="12">month</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">transferred</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">executive</governor>
+            <dependent idx="1">BOCHK</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">executive</governor>
+            <dependent idx="2">chief</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">transferred</governor>
+            <dependent idx="3">executive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Jinbao</governor>
+            <dependent idx="4">Liu</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">executive</governor>
+            <dependent idx="5">Jinbao</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">transferred</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">transferred</governor>
+            <dependent idx="8">abruptly</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">transferred</governor>
+            <dependent idx="10">Beijing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">month</governor>
+            <dependent idx="11">last</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="7">transferred</governor>
+            <dependent idx="12">month</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>abrupt</word>
+            <lemma>abrupt</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>transfer</word>
+            <lemma>transfer</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>BOCHK</word>
+            <lemma>BOCHK</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>CEO</word>
+            <lemma>CEO</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Liu</word>
+            <lemma>Liu</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Jinbao</word>
+            <lemma>Jinbao</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT an) (JJ abrupt) (NN transfer)) (PP (IN of) (NP (NNP BOCHK) (NNP CEO) (NNP Liu) (NNP Jinbao))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">transfer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">transfer</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">transfer</governor>
+            <dependent idx="2">abrupt</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">transfer</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="5">BOCHK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="6">CEO</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="7">Liu</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="8">Jinbao</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">transfer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">transfer</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">transfer</governor>
+            <dependent idx="2">abrupt</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="5">BOCHK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="6">CEO</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="7">Liu</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">transfer</governor>
+            <dependent idx="8">Jinbao</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">transfer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">transfer</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">transfer</governor>
+            <dependent idx="2">abrupt</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="5">BOCHK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="6">CEO</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Jinbao</governor>
+            <dependent idx="7">Liu</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">transfer</governor>
+            <dependent idx="8">Jinbao</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Letting</word>
+            <lemma>let</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>white</word>
+            <lemma>white</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>three</word>
+            <lemma>three</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>extra</word>
+            <lemma>extra</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>queens</word>
+            <lemma>queen</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>would</word>
+            <lemma>would</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="8">
+            <word>break</word>
+            <lemma>break</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="9">
+            <word>chess</word>
+            <lemma>chess</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (VP (VBG Letting) (ADJP (JJ white)))) (VP (VBP have) (NP (NP (CD three) (JJ extra) (NNS queens)) (SBAR (S (VP (MD would) (VP (VB break) (NP (NN chess)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="csubj">
+            <governor idx="3">have</governor>
+            <dependent idx="1">Letting</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="1">Letting</governor>
+            <dependent idx="2">white</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">queens</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">queens</governor>
+            <dependent idx="5">extra</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">have</governor>
+            <dependent idx="6">queens</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">break</governor>
+            <dependent idx="7">would</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">queens</governor>
+            <dependent idx="8">break</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">break</governor>
+            <dependent idx="9">chess</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="csubj">
+            <governor idx="3">have</governor>
+            <dependent idx="1">Letting</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="1">Letting</governor>
+            <dependent idx="2">white</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">queens</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">queens</governor>
+            <dependent idx="5">extra</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">have</governor>
+            <dependent idx="6">queens</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">break</governor>
+            <dependent idx="7">would</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">queens</governor>
+            <dependent idx="8">break</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">break</governor>
+            <dependent idx="9">chess</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="csubj">
+            <governor idx="3">have</governor>
+            <dependent idx="1">Letting</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="1">Letting</governor>
+            <dependent idx="2">white</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">queens</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">queens</governor>
+            <dependent idx="5">extra</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">have</governor>
+            <dependent idx="6">queens</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">break</governor>
+            <dependent idx="7">would</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">queens</governor>
+            <dependent idx="8">break</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">break</governor>
+            <dependent idx="9">chess</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>rules</word>
+            <lemma>rule</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>chess</word>
+            <lemma>chess</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NNS rules)) (PP (IN of) (NP (NN chess))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rules</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">rules</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">rules</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">chess</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rules</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">rules</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">rules</governor>
+            <dependent idx="4">chess</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rules</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">rules</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">rules</governor>
+            <dependent idx="4">chess</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Bradford</word>
+            <lemma>Bradford</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>City</word>
+            <lemma>City</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Hall</word>
+            <lemma>Hall</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Tower</word>
+            <lemma>Tower</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>Flagpole</word>
+            <lemma>Flagpole</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>flag</word>
+            <lemma>flag</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Bradford) (NNP City) (NNP Hall) (NNP Tower)) (CC and) (NP (NNP Flagpole) (NN flag)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Tower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="1">Bradford</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="2">City</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="3">Hall</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">Tower</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">flag</governor>
+            <dependent idx="6">Flagpole</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">Tower</governor>
+            <dependent idx="7">flag</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Tower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="1">Bradford</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="2">City</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="3">Hall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">flag</governor>
+            <dependent idx="6">Flagpole</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Tower</governor>
+            <dependent idx="7">flag</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Tower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="1">Bradford</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="2">City</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Tower</governor>
+            <dependent idx="3">Hall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">flag</governor>
+            <dependent idx="6">Flagpole</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Tower</governor>
+            <dependent idx="7">flag</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

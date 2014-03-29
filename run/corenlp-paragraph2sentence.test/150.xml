@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Does</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="2">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="3">
+            <word>activity</word>
+            <lemma>activity</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Limewire</word>
+            <lemma>Limewire</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>show</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="7">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="9">
+            <word>Internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>History</word>
+            <lemma>history</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (VP (VBZ Does) (NP (PRP$ your) (NN activity)) (PP (IN on) (NP (NNP Limewire))))) (VP (VBP show) (PP (IN on) (NP (PRP$ your) (NN Internet) (NN History)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">show</dependent>
+          </dep>
+          <dep type="csubj">
+            <governor idx="6">show</governor>
+            <dependent idx="1">Does</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">activity</governor>
+            <dependent idx="2">your</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Does</governor>
+            <dependent idx="3">activity</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Does</governor>
+            <dependent idx="4">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">on</governor>
+            <dependent idx="5">Limewire</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">show</governor>
+            <dependent idx="7">on</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">History</governor>
+            <dependent idx="8">your</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">History</governor>
+            <dependent idx="9">Internet</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">on</governor>
+            <dependent idx="10">History</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">show</dependent>
+          </dep>
+          <dep type="csubj">
+            <governor idx="6">show</governor>
+            <dependent idx="1">Does</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">activity</governor>
+            <dependent idx="2">your</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Does</governor>
+            <dependent idx="3">activity</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Does</governor>
+            <dependent idx="5">Limewire</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">History</governor>
+            <dependent idx="8">your</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">History</governor>
+            <dependent idx="9">Internet</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">show</governor>
+            <dependent idx="10">History</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">show</dependent>
+          </dep>
+          <dep type="csubj">
+            <governor idx="6">show</governor>
+            <dependent idx="1">Does</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">activity</governor>
+            <dependent idx="2">your</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Does</governor>
+            <dependent idx="3">activity</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Does</governor>
+            <dependent idx="5">Limewire</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">History</governor>
+            <dependent idx="8">your</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">History</governor>
+            <dependent idx="9">Internet</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">show</governor>
+            <dependent idx="10">History</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>music</word>
+            <lemma>music</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>piracy</word>
+            <lemma>piracy</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>evidence</word>
+            <lemma>evidence</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Limewire</word>
+            <lemma>Limewire</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN music)) (NP (NP (NN piracy) (NN evidence)) (PP (IN in) (NP (NNP Limewire)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">music</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">evidence</governor>
+            <dependent idx="2">piracy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">music</governor>
+            <dependent idx="3">evidence</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">evidence</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">Limewire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">music</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">evidence</governor>
+            <dependent idx="2">piracy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">music</governor>
+            <dependent idx="3">evidence</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">evidence</governor>
+            <dependent idx="5">Limewire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">music</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">evidence</governor>
+            <dependent idx="2">piracy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">music</governor>
+            <dependent idx="3">evidence</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">evidence</governor>
+            <dependent idx="5">Limewire</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

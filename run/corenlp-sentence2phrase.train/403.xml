@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Ms.</word>
+            <lemma>Ms.</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Kethley</word>
+            <lemma>Kethley</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="5">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>repeatedly</word>
+            <lemma>repeatedly</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="7">
+            <word>denied</word>
+            <lemma>deny</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>infidelity</word>
+            <lemma>infidelity</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="11">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="12">
+            <word>recounted</word>
+            <lemma>recount</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="13">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>similar</word>
+            <lemma>similar</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>story</word>
+            <lemma>story</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Ms.) (NNP Kethley)) (, ,) (SBAR (WHNP (WP who)) (S (VP (VBZ has) (ADVP (RB repeatedly)) (VP (VBN denied) (NP (DT any) (NN infidelity)))))) (, ,)) (VP (VBZ has) (VP (VBN recounted) (NP (DT a) (JJ similar) (NN story)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">recounted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Kethley</governor>
+            <dependent idx="1">Ms.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">recounted</governor>
+            <dependent idx="2">Kethley</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">denied</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">denied</governor>
+            <dependent idx="5">has</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">denied</governor>
+            <dependent idx="6">repeatedly</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">Kethley</governor>
+            <dependent idx="7">denied</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">infidelity</governor>
+            <dependent idx="8">any</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">denied</governor>
+            <dependent idx="9">infidelity</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">recounted</governor>
+            <dependent idx="11">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">story</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">story</governor>
+            <dependent idx="14">similar</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">recounted</governor>
+            <dependent idx="15">story</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">recounted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Kethley</governor>
+            <dependent idx="1">Ms.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">recounted</governor>
+            <dependent idx="2">Kethley</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">denied</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">denied</governor>
+            <dependent idx="5">has</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">denied</governor>
+            <dependent idx="6">repeatedly</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">Kethley</governor>
+            <dependent idx="7">denied</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">infidelity</governor>
+            <dependent idx="8">any</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">denied</governor>
+            <dependent idx="9">infidelity</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">recounted</governor>
+            <dependent idx="11">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">story</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">story</governor>
+            <dependent idx="14">similar</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">recounted</governor>
+            <dependent idx="15">story</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">recounted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Kethley</governor>
+            <dependent idx="1">Ms.</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">recounted</governor>
+            <dependent idx="2">Kethley</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">denied</governor>
+            <dependent idx="4">who</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">denied</governor>
+            <dependent idx="5">has</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">denied</governor>
+            <dependent idx="6">repeatedly</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">Kethley</governor>
+            <dependent idx="7">denied</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">infidelity</governor>
+            <dependent idx="8">any</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">denied</governor>
+            <dependent idx="9">infidelity</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">recounted</governor>
+            <dependent idx="11">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">story</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">story</governor>
+            <dependent idx="14">similar</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">recounted</governor>
+            <dependent idx="15">story</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>testimony</word>
+            <lemma>testimony</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>before</word>
+            <lemma>before</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>senate</word>
+            <lemma>senate</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN testimony)) (PP (IN before) (NP (DT the) (NN senate))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">testimony</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">testimony</governor>
+            <dependent idx="2">before</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">senate</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">before</governor>
+            <dependent idx="4">senate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">testimony</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">senate</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_before">
+            <governor idx="1">testimony</governor>
+            <dependent idx="4">senate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">testimony</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">senate</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_before">
+            <governor idx="1">testimony</governor>
+            <dependent idx="4">senate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

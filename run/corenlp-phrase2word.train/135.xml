@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>wear</word>
+            <lemma>wear</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>out</word>
+            <lemma>out</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="5">
+            <word>welcome</word>
+            <lemma>welcome</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>exhaust</word>
+            <lemma>exhaust</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB wear) (PRT (RP out)) (NP (NP (NN one) (POS 's)) (JJ welcome) (NN exhaust))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wear</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">wear</governor>
+            <dependent idx="2">out</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">exhaust</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="3">one</governor>
+            <dependent idx="4">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">exhaust</governor>
+            <dependent idx="5">welcome</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">wear</governor>
+            <dependent idx="6">exhaust</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wear</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">wear</governor>
+            <dependent idx="2">out</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">exhaust</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">exhaust</governor>
+            <dependent idx="5">welcome</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">wear</governor>
+            <dependent idx="6">exhaust</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wear</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">wear</governor>
+            <dependent idx="2">out</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">exhaust</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">exhaust</governor>
+            <dependent idx="5">welcome</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">wear</governor>
+            <dependent idx="6">exhaust</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

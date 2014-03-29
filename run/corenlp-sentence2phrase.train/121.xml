@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>He</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>made</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>few</word>
+            <lemma>few</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>off-the-cuff</word>
+            <lemma>off-the-cuff</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>remarks</word>
+            <lemma>remark</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>before</word>
+            <lemma>before</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>launching</word>
+            <lemma>launch</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="9">
+            <word>into</word>
+            <lemma>into</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="11">
+            <word>prepared</word>
+            <lemma>prepared</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>speech</word>
+            <lemma>speech</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP He)) (VP (VBD made) (NP (DT a) (JJ few) (JJ off-the-cuff) (NNS remarks)) (PP (IN before) (S (VP (VBG launching) (PP (IN into) (NP (PRP$ his) (JJ prepared) (NN speech))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">made</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">made</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">remarks</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">remarks</governor>
+            <dependent idx="4">few</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">remarks</governor>
+            <dependent idx="5">off-the-cuff</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">made</governor>
+            <dependent idx="6">remarks</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">made</governor>
+            <dependent idx="7">before</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="7">before</governor>
+            <dependent idx="8">launching</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">launching</governor>
+            <dependent idx="9">into</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">speech</governor>
+            <dependent idx="10">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">speech</governor>
+            <dependent idx="11">prepared</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">into</governor>
+            <dependent idx="12">speech</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">made</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">made</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">remarks</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">remarks</governor>
+            <dependent idx="4">few</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">remarks</governor>
+            <dependent idx="5">off-the-cuff</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">made</governor>
+            <dependent idx="6">remarks</dependent>
+          </dep>
+          <dep type="prepc_before">
+            <governor idx="2">made</governor>
+            <dependent idx="8">launching</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">speech</governor>
+            <dependent idx="10">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">speech</governor>
+            <dependent idx="11">prepared</dependent>
+          </dep>
+          <dep type="prep_into">
+            <governor idx="8">launching</governor>
+            <dependent idx="12">speech</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">made</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">made</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">remarks</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">remarks</governor>
+            <dependent idx="4">few</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">remarks</governor>
+            <dependent idx="5">off-the-cuff</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">made</governor>
+            <dependent idx="6">remarks</dependent>
+          </dep>
+          <dep type="prepc_before">
+            <governor idx="2">made</governor>
+            <dependent idx="8">launching</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">speech</governor>
+            <dependent idx="10">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">speech</governor>
+            <dependent idx="11">prepared</dependent>
+          </dep>
+          <dep type="prep_into">
+            <governor idx="8">launching</governor>
+            <dependent idx="12">speech</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>precipitated</word>
+            <lemma>precipitated</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>into</word>
+            <lemma>into</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>riot</word>
+            <lemma>riot</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ precipitated) (PP (IN into) (NP (DT a) (NN riot))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">precipitated</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">precipitated</governor>
+            <dependent idx="2">into</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">riot</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">into</governor>
+            <dependent idx="4">riot</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">precipitated</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">riot</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="prep_into">
+            <governor idx="1">precipitated</governor>
+            <dependent idx="4">riot</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">precipitated</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">riot</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="prep_into">
+            <governor idx="1">precipitated</governor>
+            <dependent idx="4">riot</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

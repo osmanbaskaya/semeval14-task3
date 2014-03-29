@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>pull</word>
+            <lemma>pull</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>down</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>shades</word>
+            <lemma>shades</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>darken</word>
+            <lemma>darken</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB pull) (PRT (RP down)) (NP (NP (DT the) (NNS shades)) (SBAR (S (VP (VBP darken)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pull</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">pull</governor>
+            <dependent idx="2">down</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">shades</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">pull</governor>
+            <dependent idx="4">shades</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">shades</governor>
+            <dependent idx="5">darken</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pull</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">pull</governor>
+            <dependent idx="2">down</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">shades</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">pull</governor>
+            <dependent idx="4">shades</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">shades</governor>
+            <dependent idx="5">darken</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pull</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">pull</governor>
+            <dependent idx="2">down</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">shades</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">pull</governor>
+            <dependent idx="4">shades</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">shades</governor>
+            <dependent idx="5">darken</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

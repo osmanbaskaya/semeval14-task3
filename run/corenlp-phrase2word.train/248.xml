@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>limited-edition</word>
+            <lemma>limited-edition</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>black</word>
+            <lemma>black</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="5">
+            <word>Sega</word>
+            <lemma>Sega</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Sports</word>
+            <lemma>Sports</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="7">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>''</POS>
+          </token>
+          <token id="8">
+            <word>model</word>
+            <lemma>model</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>Dreamcast</word>
+            <lemma>Dreamcast</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT The) (JJ limited-edition) (JJ black)) (NP (`` ``) (NP (NNP Sega) (NNPS Sports)) ('' '') (PP (NN model) (NP (NNP Dreamcast)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">black</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">black</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">black</governor>
+            <dependent idx="2">limited-edition</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sports</governor>
+            <dependent idx="5">Sega</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">black</governor>
+            <dependent idx="6">Sports</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">Sports</governor>
+            <dependent idx="8">model</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">model</governor>
+            <dependent idx="9">Dreamcast</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">black</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">black</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">black</governor>
+            <dependent idx="2">limited-edition</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sports</governor>
+            <dependent idx="5">Sega</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">black</governor>
+            <dependent idx="6">Sports</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">Sports</governor>
+            <dependent idx="8">model</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">model</governor>
+            <dependent idx="9">Dreamcast</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">black</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">black</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">black</governor>
+            <dependent idx="2">limited-edition</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sports</governor>
+            <dependent idx="5">Sega</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">black</governor>
+            <dependent idx="6">Sports</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">Sports</governor>
+            <dependent idx="8">model</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">model</governor>
+            <dependent idx="9">Dreamcast</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>He</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>never</word>
+            <lemma>never</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>got</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>used</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>cut-and-thrust</word>
+            <lemma>cut-and-thrust</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>political</word>
+            <lemma>political</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>debate</word>
+            <lemma>debate</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP He)) (ADVP (RB never)) (VP (VBD got) (VP (VBN used) (PP (TO to) (NP (NP (DT the) (NN cut-and-thrust)) (PP (IN of) (NP (JJ political) (NN debate))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">used</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">used</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">used</governor>
+            <dependent idx="2">never</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">used</governor>
+            <dependent idx="3">got</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">used</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">cut-and-thrust</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">to</governor>
+            <dependent idx="7">cut-and-thrust</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">cut-and-thrust</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">debate</governor>
+            <dependent idx="9">political</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="10">debate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">used</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">used</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">used</governor>
+            <dependent idx="2">never</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">used</governor>
+            <dependent idx="3">got</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">cut-and-thrust</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">used</governor>
+            <dependent idx="7">cut-and-thrust</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">debate</governor>
+            <dependent idx="9">political</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">cut-and-thrust</governor>
+            <dependent idx="10">debate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">used</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">used</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">used</governor>
+            <dependent idx="2">never</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">used</governor>
+            <dependent idx="3">got</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">cut-and-thrust</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">used</governor>
+            <dependent idx="7">cut-and-thrust</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">debate</governor>
+            <dependent idx="9">political</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">cut-and-thrust</governor>
+            <dependent idx="10">debate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>objective</word>
+            <lemma>objective</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>political</word>
+            <lemma>political</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>discussion</word>
+            <lemma>discussion</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ objective) (JJ political) (NN discussion)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">discussion</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discussion</governor>
+            <dependent idx="1">objective</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discussion</governor>
+            <dependent idx="2">political</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">discussion</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discussion</governor>
+            <dependent idx="1">objective</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discussion</governor>
+            <dependent idx="2">political</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">discussion</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discussion</governor>
+            <dependent idx="1">objective</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discussion</governor>
+            <dependent idx="2">political</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

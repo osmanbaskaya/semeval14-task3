@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="3">
+            <word>herbal</word>
+            <lemma>herbal</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>product</word>
+            <lemma>product</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>boost</word>
+            <lemma>boost</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>immune</word>
+            <lemma>immune</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>system</word>
+            <lemma>system</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>immune</word>
+            <lemma>immune</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>system</word>
+            <lemma>system</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT the) (JJS best) (JJ herbal) (NN product)) (VP (TO to) (VP (VB boost) (NP (DT the) (JJ immune) (NN system) (JJ immune) (NN system)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">boost</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">product</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">product</governor>
+            <dependent idx="2">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">product</governor>
+            <dependent idx="3">herbal</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">boost</governor>
+            <dependent idx="4">product</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">boost</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">system</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">system</governor>
+            <dependent idx="8">immune</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">system</governor>
+            <dependent idx="9">system</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">system</governor>
+            <dependent idx="10">immune</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">boost</governor>
+            <dependent idx="11">system</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">boost</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">product</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">product</governor>
+            <dependent idx="2">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">product</governor>
+            <dependent idx="3">herbal</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">boost</governor>
+            <dependent idx="4">product</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">boost</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">system</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">system</governor>
+            <dependent idx="8">immune</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">system</governor>
+            <dependent idx="9">system</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">system</governor>
+            <dependent idx="10">immune</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">boost</governor>
+            <dependent idx="11">system</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">boost</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">product</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">product</governor>
+            <dependent idx="2">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">product</governor>
+            <dependent idx="3">herbal</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">boost</governor>
+            <dependent idx="4">product</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">boost</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">system</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">system</governor>
+            <dependent idx="8">immune</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">system</governor>
+            <dependent idx="9">system</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">system</governor>
+            <dependent idx="10">immune</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">boost</governor>
+            <dependent idx="11">system</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

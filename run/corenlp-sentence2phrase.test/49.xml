@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>In</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>mechanics</word>
+            <lemma>mechanic</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>Kinetics</word>
+            <lemma>kinetics</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>deduced</word>
+            <lemma>deduce</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>Kinematics</word>
+            <lemma>kinematic</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>introduction</word>
+            <lemma>introduction</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="15">
+            <word>concept</word>
+            <lemma>concept</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="17">
+            <word>mass</word>
+            <lemma>mass</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="18">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN In) (NP (NNS mechanics))) (, ,) (NP (DT the) (NNS Kinetics)) (VP (VBZ is) (VP (VBN deduced) (PP (IN from) (NP (NNS Kinematics))) (PP (IN by) (NP (NP (DT the) (NN introduction)) (PP (IN of) (NP (NP (DT the) (NN concept)) (PP (IN of) (NP (NN mass))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">deduced</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">deduced</governor>
+            <dependent idx="1">In</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">In</governor>
+            <dependent idx="2">mechanics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">Kinetics</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">deduced</governor>
+            <dependent idx="5">Kinetics</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">deduced</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">deduced</governor>
+            <dependent idx="8">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">from</governor>
+            <dependent idx="9">Kinematics</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">deduced</governor>
+            <dependent idx="10">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">introduction</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">by</governor>
+            <dependent idx="12">introduction</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">introduction</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">concept</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">of</governor>
+            <dependent idx="15">concept</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="15">concept</governor>
+            <dependent idx="16">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="16">of</governor>
+            <dependent idx="17">mass</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">deduced</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="7">deduced</governor>
+            <dependent idx="2">mechanics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">Kinetics</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">deduced</governor>
+            <dependent idx="5">Kinetics</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">deduced</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="7">deduced</governor>
+            <dependent idx="9">Kinematics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">introduction</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="7">deduced</governor>
+            <dependent idx="12">introduction</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">concept</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">introduction</governor>
+            <dependent idx="15">concept</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="15">concept</governor>
+            <dependent idx="17">mass</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">deduced</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="7">deduced</governor>
+            <dependent idx="2">mechanics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">Kinetics</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">deduced</governor>
+            <dependent idx="5">Kinetics</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">deduced</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="7">deduced</governor>
+            <dependent idx="9">Kinematics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">introduction</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="7">deduced</governor>
+            <dependent idx="12">introduction</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">concept</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">introduction</governor>
+            <dependent idx="15">concept</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="15">concept</governor>
+            <dependent idx="17">mass</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>falsifiable</word>
+            <lemma>falsifiable</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>predictions</word>
+            <lemma>prediction</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ falsifiable) (NNS predictions))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">predictions</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">predictions</governor>
+            <dependent idx="1">falsifiable</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">predictions</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">predictions</governor>
+            <dependent idx="1">falsifiable</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">predictions</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">predictions</governor>
+            <dependent idx="1">falsifiable</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

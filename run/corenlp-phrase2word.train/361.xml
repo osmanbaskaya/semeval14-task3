@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Christian</word>
+            <lemma>Christian</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>monastery</word>
+            <lemma>monastery</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="5">
+            <word>convent</word>
+            <lemma>convent</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>abbey</word>
+            <lemma>abbey</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NNP Christian) (NN monastery)) (CC or) (NP (NN convent) (NN abbey)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">monastery</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">monastery</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">monastery</governor>
+            <dependent idx="2">Christian</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">monastery</governor>
+            <dependent idx="4">or</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">abbey</governor>
+            <dependent idx="5">convent</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">monastery</governor>
+            <dependent idx="6">abbey</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">monastery</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">monastery</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">monastery</governor>
+            <dependent idx="2">Christian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">abbey</governor>
+            <dependent idx="5">convent</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">monastery</governor>
+            <dependent idx="6">abbey</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">monastery</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">monastery</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">monastery</governor>
+            <dependent idx="2">Christian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">abbey</governor>
+            <dependent idx="5">convent</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">monastery</governor>
+            <dependent idx="6">abbey</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

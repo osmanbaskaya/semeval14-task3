@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>rain</word>
+            <lemma>rain</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>cats</word>
+            <lemma>cat</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>dogs</word>
+            <lemma>dog</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>storm</word>
+            <lemma>storm</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN rain) (NNS cats) (CC and) (NNS dogs)) (NP (NN storm)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cats</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">cats</governor>
+            <dependent idx="1">rain</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">cats</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">cats</governor>
+            <dependent idx="4">dogs</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">cats</governor>
+            <dependent idx="5">storm</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cats</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">cats</governor>
+            <dependent idx="1">rain</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">cats</governor>
+            <dependent idx="4">dogs</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">cats</governor>
+            <dependent idx="5">storm</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cats</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">cats</governor>
+            <dependent idx="1">rain</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">cats</governor>
+            <dependent idx="4">dogs</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">cats</governor>
+            <dependent idx="5">storm</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

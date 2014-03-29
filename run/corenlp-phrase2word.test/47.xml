@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>lay</word>
+            <lemma>lay</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>smack</word>
+            <lemma>smack</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>down</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="5">
+            <word>encouragement</word>
+            <lemma>encouragement</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (VP (VBD lay) (SBAR (S (NP (DT the)) (VP (VBP smack) (PRT (RP down)))))) (NP (NN encouragement)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">smack</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">lay</governor>
+            <dependent idx="3">smack</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">smack</governor>
+            <dependent idx="4">down</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">lay</governor>
+            <dependent idx="5">encouragement</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">smack</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">lay</governor>
+            <dependent idx="3">smack</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">smack</governor>
+            <dependent idx="4">down</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">lay</governor>
+            <dependent idx="5">encouragement</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">smack</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">lay</governor>
+            <dependent idx="3">smack</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">smack</governor>
+            <dependent idx="4">down</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">lay</governor>
+            <dependent idx="5">encouragement</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

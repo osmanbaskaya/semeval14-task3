@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>War</word>
+            <lemma>war</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>1812</word>
+            <lemma>1812</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="6">
+            <word>fostered</word>
+            <lemma>foster</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>accumulated</word>
+            <lemma>accumulate</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="9">
+            <word>American</word>
+            <lemma>american</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>grievances</word>
+            <lemma>grievance</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (NN War)) (PP (IN of) (NP (CD 1812)))) (VP (VBD was) (VP (VBN fostered) (PP (IN by) (NP (VBN accumulated) (JJ American) (NNS grievances))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">fostered</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">War</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fostered</governor>
+            <dependent idx="2">War</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">War</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">1812</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">fostered</governor>
+            <dependent idx="5">was</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">fostered</governor>
+            <dependent idx="7">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">grievances</governor>
+            <dependent idx="8">accumulated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">grievances</governor>
+            <dependent idx="9">American</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">by</governor>
+            <dependent idx="10">grievances</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">fostered</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">War</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fostered</governor>
+            <dependent idx="2">War</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">War</governor>
+            <dependent idx="4">1812</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">fostered</governor>
+            <dependent idx="5">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">grievances</governor>
+            <dependent idx="8">accumulated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">grievances</governor>
+            <dependent idx="9">American</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="6">fostered</governor>
+            <dependent idx="10">grievances</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">fostered</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">War</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">fostered</governor>
+            <dependent idx="2">War</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">War</governor>
+            <dependent idx="4">1812</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">fostered</governor>
+            <dependent idx="5">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">grievances</governor>
+            <dependent idx="8">accumulated</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">grievances</governor>
+            <dependent idx="9">American</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="6">fostered</governor>
+            <dependent idx="10">grievances</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>War</word>
+            <lemma>War</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>1812</word>
+            <lemma>1812</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NNP War)) (PP (IN of) (NP (CD 1812))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">War</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">War</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">War</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">1812</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">War</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">War</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">War</governor>
+            <dependent idx="4">1812</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">War</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">War</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">War</governor>
+            <dependent idx="4">1812</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

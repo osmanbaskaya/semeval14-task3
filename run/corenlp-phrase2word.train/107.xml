@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>what</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>vivid</word>
+            <lemma>vivid</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>imagination</word>
+            <lemma>imagination</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>insipid</word>
+            <lemma>insipid</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (X (WP what)) (NP (DT a) (JJ vivid) (NN imagination) (NN insipid)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">insipid</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">insipid</governor>
+            <dependent idx="1">what</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">insipid</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">insipid</governor>
+            <dependent idx="3">vivid</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">insipid</governor>
+            <dependent idx="4">imagination</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">insipid</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">insipid</governor>
+            <dependent idx="1">what</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">insipid</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">insipid</governor>
+            <dependent idx="3">vivid</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">insipid</governor>
+            <dependent idx="4">imagination</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">insipid</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">insipid</governor>
+            <dependent idx="1">what</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">insipid</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">insipid</governor>
+            <dependent idx="3">vivid</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">insipid</governor>
+            <dependent idx="4">imagination</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

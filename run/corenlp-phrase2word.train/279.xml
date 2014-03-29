@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>bluespotted</word>
+            <lemma>bluespotted</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>trevally</word>
+            <lemma>trevally</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>taken</word>
+            <lemma>take</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>northern</word>
+            <lemma>northern</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>Queensland</word>
+            <lemma>Queensland</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>bird</word>
+            <lemma>bird</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (NP (DT A) (JJ bluespotted)) (VP (ADVP (RB trevally)) (VBN taken) (PP (IN from) (NP (JJ northern) (NNP Queensland) (NN bird)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">taken</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">bluespotted</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">taken</governor>
+            <dependent idx="2">bluespotted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">taken</governor>
+            <dependent idx="3">trevally</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">taken</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">bird</governor>
+            <dependent idx="6">northern</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">bird</governor>
+            <dependent idx="7">Queensland</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">from</governor>
+            <dependent idx="8">bird</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">taken</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">bluespotted</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">taken</governor>
+            <dependent idx="2">bluespotted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">taken</governor>
+            <dependent idx="3">trevally</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">bird</governor>
+            <dependent idx="6">northern</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">bird</governor>
+            <dependent idx="7">Queensland</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">taken</governor>
+            <dependent idx="8">bird</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">taken</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">bluespotted</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">taken</governor>
+            <dependent idx="2">bluespotted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">taken</governor>
+            <dependent idx="3">trevally</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">bird</governor>
+            <dependent idx="6">northern</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">bird</governor>
+            <dependent idx="7">Queensland</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">taken</governor>
+            <dependent idx="8">bird</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

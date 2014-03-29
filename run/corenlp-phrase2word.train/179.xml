@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>mom</word>
+            <lemma>mom</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>pop</word>
+            <lemma>pop</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>regional</word>
+            <lemma>regional</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN mom)) (CC and) (NP (NN pop))) (ADJP (JJ regional)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">regional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">regional</governor>
+            <dependent idx="1">mom</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">mom</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">mom</governor>
+            <dependent idx="3">pop</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">regional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">regional</governor>
+            <dependent idx="1">mom</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">mom</governor>
+            <dependent idx="3">pop</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">regional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">regional</governor>
+            <dependent idx="1">mom</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">mom</governor>
+            <dependent idx="3">pop</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">regional</governor>
+            <dependent idx="3">pop</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

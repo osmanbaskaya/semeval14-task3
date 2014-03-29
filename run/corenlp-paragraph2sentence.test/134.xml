@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>much</word>
+            <lemma>much</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>does</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>allow</word>
+            <lemma>allow</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>rapidshare</word>
+            <lemma>rapidshare</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>premium</word>
+            <lemma>premium</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>user</word>
+            <lemma>user</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="12">
+            <word>download</word>
+            <lemma>download</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="13">
+            <word>perday</word>
+            <lemma>perday</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHNP (WRB How) (RB much)) (SQ (VBZ does) (NP (PRP it)) (VP (VB allow) (PP (IN for) (NP (DT a) (JJ rapidshare) (NN premium) (NN user))) (S (VP (TO to) (VP (VB download) (NP (NN perday))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">allow</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">much</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">allow</governor>
+            <dependent idx="2">much</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">allow</governor>
+            <dependent idx="3">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">allow</governor>
+            <dependent idx="4">it</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">allow</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">user</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">user</governor>
+            <dependent idx="8">rapidshare</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">user</governor>
+            <dependent idx="9">premium</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="10">user</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">download</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">allow</governor>
+            <dependent idx="12">download</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">download</governor>
+            <dependent idx="13">perday</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">allow</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">much</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">allow</governor>
+            <dependent idx="2">much</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">allow</governor>
+            <dependent idx="3">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">allow</governor>
+            <dependent idx="4">it</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">user</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">user</governor>
+            <dependent idx="8">rapidshare</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">user</governor>
+            <dependent idx="9">premium</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">allow</governor>
+            <dependent idx="10">user</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">download</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">allow</governor>
+            <dependent idx="12">download</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">download</governor>
+            <dependent idx="13">perday</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">allow</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">much</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">allow</governor>
+            <dependent idx="2">much</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">allow</governor>
+            <dependent idx="3">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">allow</governor>
+            <dependent idx="4">it</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">user</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">user</governor>
+            <dependent idx="8">rapidshare</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">user</governor>
+            <dependent idx="9">premium</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">allow</governor>
+            <dependent idx="10">user</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">download</governor>
+            <dependent idx="11">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">allow</governor>
+            <dependent idx="12">download</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">download</governor>
+            <dependent idx="13">perday</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="3">
+            <word>free</word>
+            <lemma>free</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>email</word>
+            <lemma>email</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>service</word>
+            <lemma>service</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="8">
+            <word>young</word>
+            <lemma>young</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>children</word>
+            <lemma>child</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (JJS best) (JJ free) (NN email)) (NP (NP (NN service)) (PP (IN for) (NP (PRP$ my) (JJ young) (NNS children)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">email</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">email</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">email</governor>
+            <dependent idx="2">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">email</governor>
+            <dependent idx="3">free</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">email</governor>
+            <dependent idx="5">service</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">service</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">children</governor>
+            <dependent idx="7">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">children</governor>
+            <dependent idx="8">young</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="9">children</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">email</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">email</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">email</governor>
+            <dependent idx="2">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">email</governor>
+            <dependent idx="3">free</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">email</governor>
+            <dependent idx="5">service</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">children</governor>
+            <dependent idx="7">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">children</governor>
+            <dependent idx="8">young</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">service</governor>
+            <dependent idx="9">children</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">email</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">email</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">email</governor>
+            <dependent idx="2">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">email</governor>
+            <dependent idx="3">free</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">email</governor>
+            <dependent idx="5">service</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">children</governor>
+            <dependent idx="7">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">children</governor>
+            <dependent idx="8">young</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">service</governor>
+            <dependent idx="9">children</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

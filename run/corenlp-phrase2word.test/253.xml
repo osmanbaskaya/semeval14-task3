@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>would</word>
+            <lemma>would</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="2">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>touch</word>
+            <lemma>touch</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>ten-foot</word>
+            <lemma>ten-foot</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>pole</word>
+            <lemma>pole</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>comment</word>
+            <lemma>comment</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (VP (MD would) (RB n't) (VP (VB touch) (NP (PRP it)) (PP (IN with) (NP (DT a) (JJ ten-foot) (NN pole))))) (NP (NN comment)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">touch</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">touch</governor>
+            <dependent idx="1">would</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="3">touch</governor>
+            <dependent idx="2">n't</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">touch</governor>
+            <dependent idx="4">it</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">touch</governor>
+            <dependent idx="5">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">pole</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">pole</governor>
+            <dependent idx="7">ten-foot</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">with</governor>
+            <dependent idx="8">pole</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">touch</governor>
+            <dependent idx="9">comment</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">touch</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">touch</governor>
+            <dependent idx="1">would</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="3">touch</governor>
+            <dependent idx="2">n't</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">touch</governor>
+            <dependent idx="4">it</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">pole</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">pole</governor>
+            <dependent idx="7">ten-foot</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">touch</governor>
+            <dependent idx="8">pole</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">touch</governor>
+            <dependent idx="9">comment</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">touch</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">touch</governor>
+            <dependent idx="1">would</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="3">touch</governor>
+            <dependent idx="2">n't</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">touch</governor>
+            <dependent idx="4">it</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">pole</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">pole</governor>
+            <dependent idx="7">ten-foot</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">touch</governor>
+            <dependent idx="8">pole</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">touch</governor>
+            <dependent idx="9">comment</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

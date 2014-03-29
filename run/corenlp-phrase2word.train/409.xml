@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>workplace</word>
+            <lemma>workplace</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>smith</word>
+            <lemma>smith</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>blacksmith</word>
+            <lemma>blacksmith</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>office</word>
+            <lemma>office</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN workplace)) (PP (IN of) (NP (NP (DT a) (NN smith)) (CC or) (NP (DT a) (NN blacksmith) (NN office)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">workplace</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">workplace</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">workplace</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">smith</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">smith</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">smith</governor>
+            <dependent idx="6">or</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">office</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">office</governor>
+            <dependent idx="8">blacksmith</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">smith</governor>
+            <dependent idx="9">office</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">workplace</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">workplace</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">smith</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">workplace</governor>
+            <dependent idx="5">smith</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">office</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">office</governor>
+            <dependent idx="8">blacksmith</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="5">smith</governor>
+            <dependent idx="9">office</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">workplace</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">workplace</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">smith</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">workplace</governor>
+            <dependent idx="5">smith</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">office</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">office</governor>
+            <dependent idx="8">blacksmith</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">workplace</governor>
+            <dependent idx="9">office</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="5">smith</governor>
+            <dependent idx="9">office</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>physical</word>
+            <lemma>physical</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>therapy</word>
+            <lemma>therapy</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>exercises</word>
+            <lemma>exercise</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>acute</word>
+            <lemma>acute</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>rotator</word>
+            <lemma>rotator</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>cuff</word>
+            <lemma>cuff</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>tears</word>
+            <lemma>tear</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>exercises</word>
+            <lemma>exercise</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (JJ physical) (NN therapy) (NNS exercises)) (PP (IN for) (NP (JJ acute) (NN rotator) (NN cuff) (NNS tears)))) (NP (NNS exercises)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">exercises</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">exercises</governor>
+            <dependent idx="1">physical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">exercises</governor>
+            <dependent idx="2">therapy</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">exercises</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">tears</governor>
+            <dependent idx="5">acute</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tears</governor>
+            <dependent idx="6">rotator</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tears</governor>
+            <dependent idx="7">cuff</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">for</governor>
+            <dependent idx="8">tears</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">exercises</governor>
+            <dependent idx="9">exercises</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">exercises</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">exercises</governor>
+            <dependent idx="1">physical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">exercises</governor>
+            <dependent idx="2">therapy</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">tears</governor>
+            <dependent idx="5">acute</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tears</governor>
+            <dependent idx="6">rotator</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tears</governor>
+            <dependent idx="7">cuff</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">exercises</governor>
+            <dependent idx="8">tears</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">exercises</governor>
+            <dependent idx="9">exercises</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">exercises</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">exercises</governor>
+            <dependent idx="1">physical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">exercises</governor>
+            <dependent idx="2">therapy</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">tears</governor>
+            <dependent idx="5">acute</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tears</governor>
+            <dependent idx="6">rotator</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tears</governor>
+            <dependent idx="7">cuff</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">exercises</governor>
+            <dependent idx="8">tears</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">exercises</governor>
+            <dependent idx="9">exercises</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

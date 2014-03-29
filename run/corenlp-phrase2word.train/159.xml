@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>cow</word>
+            <lemma>cow</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>lose</word>
+            <lemma>lose</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="5">
+            <word>control</word>
+            <lemma>control</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB have) (S (NP (DT a) (NN cow)) (VP (VBP lose) (NP (NN control))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cow</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">lose</governor>
+            <dependent idx="3">cow</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">have</governor>
+            <dependent idx="4">lose</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">lose</governor>
+            <dependent idx="5">control</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cow</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">lose</governor>
+            <dependent idx="3">cow</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">have</governor>
+            <dependent idx="4">lose</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">lose</governor>
+            <dependent idx="5">control</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cow</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">lose</governor>
+            <dependent idx="3">cow</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">have</governor>
+            <dependent idx="4">lose</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">lose</governor>
+            <dependent idx="5">control</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

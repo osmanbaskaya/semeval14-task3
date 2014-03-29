@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>big</word>
+            <lemma>big</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>step</word>
+            <lemma>step</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>forward</word>
+            <lemma>forward</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>program</word>
+            <lemma>program</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (JJ big) (NN step)) (NP (RB forward) (NN program)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">step</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">step</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">step</governor>
+            <dependent idx="2">big</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">program</governor>
+            <dependent idx="4">forward</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">step</governor>
+            <dependent idx="5">program</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">step</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">step</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">step</governor>
+            <dependent idx="2">big</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">program</governor>
+            <dependent idx="4">forward</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">step</governor>
+            <dependent idx="5">program</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">step</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">step</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">step</governor>
+            <dependent idx="2">big</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">program</governor>
+            <dependent idx="4">forward</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">step</governor>
+            <dependent idx="5">program</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

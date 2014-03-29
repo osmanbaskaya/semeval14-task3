@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Seven</word>
+            <lemma>Seven</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Air</word>
+            <lemma>Air</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Force</word>
+            <lemma>Force</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Academy</word>
+            <lemma>Academy</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>cadets</word>
+            <lemma>cadet</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>face</word>
+            <lemma>face</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="7">
+            <word>punishment</word>
+            <lemma>punishment</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>allegedly</word>
+            <lemma>allegedly</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>drinking</word>
+            <lemma>drink</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="11">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="13">
+            <word>high</word>
+            <lemma>high</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>school</word>
+            <lemma>school</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>girls</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Seven) (NNP Air) (NNP Force) (NNP Academy) (NNS cadets)) (VP (VBP face) (NP (NN punishment)) (PP (IN for) (S (ADVP (RB allegedly)) (VP (VBG drinking) (PP (IN with) (NP (CD two) (JJ high) (NN school) (NNS girls))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">face</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="1">Seven</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="2">Air</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="3">Force</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="4">Academy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">face</governor>
+            <dependent idx="5">cadets</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">face</governor>
+            <dependent idx="7">punishment</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">face</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">drinking</governor>
+            <dependent idx="9">allegedly</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="8">for</governor>
+            <dependent idx="10">drinking</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">drinking</governor>
+            <dependent idx="11">with</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="15">girls</governor>
+            <dependent idx="12">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">girls</governor>
+            <dependent idx="13">high</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">girls</governor>
+            <dependent idx="14">school</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">with</governor>
+            <dependent idx="15">girls</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">face</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="1">Seven</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="2">Air</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="3">Force</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="4">Academy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">face</governor>
+            <dependent idx="5">cadets</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">face</governor>
+            <dependent idx="7">punishment</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">drinking</governor>
+            <dependent idx="9">allegedly</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="6">face</governor>
+            <dependent idx="10">drinking</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="15">girls</governor>
+            <dependent idx="12">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">girls</governor>
+            <dependent idx="13">high</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">girls</governor>
+            <dependent idx="14">school</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="10">drinking</governor>
+            <dependent idx="15">girls</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">face</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="1">Seven</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="2">Air</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="3">Force</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">cadets</governor>
+            <dependent idx="4">Academy</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">face</governor>
+            <dependent idx="5">cadets</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">face</governor>
+            <dependent idx="7">punishment</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">drinking</governor>
+            <dependent idx="9">allegedly</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="6">face</governor>
+            <dependent idx="10">drinking</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="15">girls</governor>
+            <dependent idx="12">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">girls</governor>
+            <dependent idx="13">high</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">girls</governor>
+            <dependent idx="14">school</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="10">drinking</governor>
+            <dependent idx="15">girls</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>meeting</word>
+            <lemma>meeting</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>cadets</word>
+            <lemma>cadet</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN meeting)) (PP (IN with) (NP (DT the) (NNS cadets))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">meeting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">meeting</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">cadets</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="4">cadets</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">meeting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">cadets</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">meeting</governor>
+            <dependent idx="4">cadets</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">meeting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">cadets</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">meeting</governor>
+            <dependent idx="4">cadets</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

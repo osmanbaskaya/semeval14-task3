@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>bummed</word>
+            <lemma>bum</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>out</word>
+            <lemma>out</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>depressed</word>
+            <lemma>depressed</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBN bummed) (PRT (RP out)) (NP (JJ depressed))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bummed</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">bummed</governor>
+            <dependent idx="2">out</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">bummed</governor>
+            <dependent idx="3">depressed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bummed</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">bummed</governor>
+            <dependent idx="2">out</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">bummed</governor>
+            <dependent idx="3">depressed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bummed</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">bummed</governor>
+            <dependent idx="2">out</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">bummed</governor>
+            <dependent idx="3">depressed</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

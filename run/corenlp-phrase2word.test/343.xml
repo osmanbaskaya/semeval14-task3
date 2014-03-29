@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>battles</word>
+            <lemma>battle</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="3">
+            <word>army</word>
+            <lemma>army</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>posts</word>
+            <lemma>post</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>general</word>
+            <lemma>general</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>location</word>
+            <lemma>location</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>tribes</word>
+            <lemma>tribe</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>photograph</word>
+            <lemma>photograph</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNS battles)) (, ,) (NP (NN army) (NNS posts)) (, ,) (CC and) (NP (DT the) (JJ general) (NN location))) (PP (IN of) (NP (NNS tribes) (NN photograph))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">battles</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">posts</governor>
+            <dependent idx="3">army</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">battles</governor>
+            <dependent idx="4">posts</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">battles</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">location</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">location</governor>
+            <dependent idx="8">general</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">battles</governor>
+            <dependent idx="9">location</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">battles</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">photograph</governor>
+            <dependent idx="11">tribes</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="12">photograph</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">battles</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">posts</governor>
+            <dependent idx="3">army</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">battles</governor>
+            <dependent idx="4">posts</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">location</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">location</governor>
+            <dependent idx="8">general</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">battles</governor>
+            <dependent idx="9">location</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">photograph</governor>
+            <dependent idx="11">tribes</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">battles</governor>
+            <dependent idx="12">photograph</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">battles</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">posts</governor>
+            <dependent idx="3">army</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">battles</governor>
+            <dependent idx="4">posts</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">location</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">location</governor>
+            <dependent idx="8">general</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">battles</governor>
+            <dependent idx="9">location</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">photograph</governor>
+            <dependent idx="11">tribes</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">battles</governor>
+            <dependent idx="12">photograph</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

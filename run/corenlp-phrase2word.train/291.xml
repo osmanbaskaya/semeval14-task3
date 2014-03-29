@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Typical</word>
+            <lemma>typical</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>T-shaped</word>
+            <lemma>t-shaped</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>doorway</word>
+            <lemma>doorway</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>junction</word>
+            <lemma>junction</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Typical) (JJ T-shaped) (NN doorway)) (NP (NN junction)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">doorway</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">doorway</governor>
+            <dependent idx="1">Typical</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">doorway</governor>
+            <dependent idx="2">T-shaped</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">doorway</governor>
+            <dependent idx="4">junction</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">doorway</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">doorway</governor>
+            <dependent idx="1">Typical</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">doorway</governor>
+            <dependent idx="2">T-shaped</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">doorway</governor>
+            <dependent idx="4">junction</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">doorway</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">doorway</governor>
+            <dependent idx="1">Typical</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">doorway</governor>
+            <dependent idx="2">T-shaped</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">doorway</governor>
+            <dependent idx="4">junction</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

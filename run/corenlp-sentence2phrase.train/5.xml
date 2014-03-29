@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Each</word>
+            <lemma>each</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>spring</word>
+            <lemma>spring</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>provided</word>
+            <lemma>provide</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="5">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>weather</word>
+            <lemma>weather</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>conditions</word>
+            <lemma>condition</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="9">
+            <word>favorable</word>
+            <lemma>favorable</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="11">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="12">
+            <word>becomes</word>
+            <lemma>become</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="13">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>home</word>
+            <lemma>home</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="16">
+            <word>flamingos</word>
+            <lemma>flamingo</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="17">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT Each) (NN spring)) (, ,) (S (VP (VBD provided) (SBAR (IN that) (S (NP (NN weather) (NNS conditions)) (VP (VBP are) (ADJP (JJ favorable))))))) (, ,) (NP (PRP it)) (VP (VBZ becomes) (NP (DT a) (NN home)) (PP (TO to) (NP (NNS flamingos)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">home</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">spring</governor>
+            <dependent idx="1">Each</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="14">home</governor>
+            <dependent idx="2">spring</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="14">home</governor>
+            <dependent idx="4">provided</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">favorable</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conditions</governor>
+            <dependent idx="6">weather</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">favorable</governor>
+            <dependent idx="7">conditions</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">favorable</governor>
+            <dependent idx="8">are</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">provided</governor>
+            <dependent idx="9">favorable</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">home</governor>
+            <dependent idx="11">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">home</governor>
+            <dependent idx="12">becomes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">home</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="14">home</governor>
+            <dependent idx="15">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">to</governor>
+            <dependent idx="16">flamingos</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">home</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">spring</governor>
+            <dependent idx="1">Each</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="14">home</governor>
+            <dependent idx="2">spring</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="14">home</governor>
+            <dependent idx="4">provided</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">favorable</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conditions</governor>
+            <dependent idx="6">weather</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">favorable</governor>
+            <dependent idx="7">conditions</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">favorable</governor>
+            <dependent idx="8">are</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">provided</governor>
+            <dependent idx="9">favorable</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">home</governor>
+            <dependent idx="11">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">home</governor>
+            <dependent idx="12">becomes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">home</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="14">home</governor>
+            <dependent idx="16">flamingos</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">home</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">spring</governor>
+            <dependent idx="1">Each</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="14">home</governor>
+            <dependent idx="2">spring</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="14">home</governor>
+            <dependent idx="4">provided</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">favorable</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">conditions</governor>
+            <dependent idx="6">weather</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">favorable</governor>
+            <dependent idx="7">conditions</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">favorable</governor>
+            <dependent idx="8">are</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">provided</governor>
+            <dependent idx="9">favorable</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">home</governor>
+            <dependent idx="11">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">home</governor>
+            <dependent idx="12">becomes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">home</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="14">home</governor>
+            <dependent idx="16">flamingos</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>spring</word>
+            <lemma>spring</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>home</word>
+            <lemma>home</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>flamingos</word>
+            <lemma>flamingo</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>122</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>123</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>weather</word>
+            <lemma>weather</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>135</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NN spring)) (NP (NP (NN home)) (PP (TO to) (NP (NP (NNS flamingos)) (PP (IN in) (NP (JJ good) (NN weather)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">spring</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">spring</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">spring</governor>
+            <dependent idx="3">home</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">home</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="5">flamingos</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">flamingos</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">weather</governor>
+            <dependent idx="7">good</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="8">weather</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">spring</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">spring</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">spring</governor>
+            <dependent idx="3">home</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">home</governor>
+            <dependent idx="5">flamingos</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">weather</governor>
+            <dependent idx="7">good</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">flamingos</governor>
+            <dependent idx="8">weather</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">spring</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">spring</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">spring</governor>
+            <dependent idx="3">home</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">home</governor>
+            <dependent idx="5">flamingos</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">weather</governor>
+            <dependent idx="7">good</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">flamingos</governor>
+            <dependent idx="8">weather</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

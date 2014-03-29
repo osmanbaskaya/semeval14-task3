@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>between</word>
+            <lemma>between</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>us</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>fighting</word>
+            <lemma>fight</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ good) (PP (IN between) (S (NP (PRP us)) (VP (VBG fighting)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">good</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">good</governor>
+            <dependent idx="2">between</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">fighting</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">between</governor>
+            <dependent idx="4">fighting</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">good</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">fighting</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="prepc_between">
+            <governor idx="1">good</governor>
+            <dependent idx="4">fighting</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">good</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">fighting</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="prepc_between">
+            <governor idx="1">good</governor>
+            <dependent idx="4">fighting</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

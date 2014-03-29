@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>wet</word>
+            <lemma>wet</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>behind</word>
+            <lemma>behind</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>ears</word>
+            <lemma>ear</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>childish</word>
+            <lemma>childish</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADJP (JJ wet) (PP (IN behind) (NP (DT the) (NNS ears)))) (ADJP (JJ childish)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wet</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">wet</governor>
+            <dependent idx="2">behind</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">ears</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">behind</governor>
+            <dependent idx="4">ears</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">wet</governor>
+            <dependent idx="5">childish</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wet</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">ears</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_behind">
+            <governor idx="1">wet</governor>
+            <dependent idx="4">ears</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">wet</governor>
+            <dependent idx="5">childish</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wet</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">ears</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_behind">
+            <governor idx="1">wet</governor>
+            <dependent idx="4">ears</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">wet</governor>
+            <dependent idx="5">childish</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

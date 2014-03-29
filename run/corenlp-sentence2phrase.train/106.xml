@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>My</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="2">
+            <word>wife</word>
+            <lemma>wife</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>makes</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="6">
+            <word>little</word>
+            <lemma>little</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>old</word>
+            <lemma>old</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>apple</word>
+            <lemma>apple</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>pie</word>
+            <lemma>pie</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>Texas</word>
+            <lemma>Texas</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP$ My) (NN wife)) (VP (VBZ makes) (NP (NP (DT the) (ADJP (JJS best) (JJ little)) (JJ old) (NN apple) (NN pie)) (PP (IN in) (NP (NNP Texas))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">makes</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">wife</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">makes</governor>
+            <dependent idx="2">wife</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">pie</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">little</governor>
+            <dependent idx="5">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">pie</governor>
+            <dependent idx="6">little</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">pie</governor>
+            <dependent idx="7">old</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">pie</governor>
+            <dependent idx="8">apple</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">makes</governor>
+            <dependent idx="9">pie</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">pie</governor>
+            <dependent idx="10">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">in</governor>
+            <dependent idx="11">Texas</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">makes</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">wife</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">makes</governor>
+            <dependent idx="2">wife</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">pie</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">little</governor>
+            <dependent idx="5">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">pie</governor>
+            <dependent idx="6">little</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">pie</governor>
+            <dependent idx="7">old</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">pie</governor>
+            <dependent idx="8">apple</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">makes</governor>
+            <dependent idx="9">pie</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">pie</governor>
+            <dependent idx="11">Texas</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">makes</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">wife</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">makes</governor>
+            <dependent idx="2">wife</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">pie</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">little</governor>
+            <dependent idx="5">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">pie</governor>
+            <dependent idx="6">little</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">pie</governor>
+            <dependent idx="7">old</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">pie</governor>
+            <dependent idx="8">apple</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">makes</governor>
+            <dependent idx="9">pie</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">pie</governor>
+            <dependent idx="11">Texas</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>hammer</word>
+            <lemma>hammer</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>home</word>
+            <lemma>home</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB hammer) (NP (NN home))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hammer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">hammer</governor>
+            <dependent idx="2">home</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hammer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">hammer</governor>
+            <dependent idx="2">home</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hammer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">hammer</governor>
+            <dependent idx="2">home</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

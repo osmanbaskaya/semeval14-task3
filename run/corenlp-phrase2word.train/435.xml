@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>mechanical</word>
+            <lemma>mechanical</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>device</word>
+            <lemma>device</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="5">
+            <word>produces</word>
+            <lemma>produce</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>form</word>
+            <lemma>form</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>output</word>
+            <lemma>output</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>given</word>
+            <lemma>give</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="13">
+            <word>input</word>
+            <lemma>input</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>machine</word>
+            <lemma>machine</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT a) (JJ mechanical) (NN device)) (SBAR (WHNP (WDT that)) (S (VP (VBZ produces) (NP (NP (DT some) (NN form)) (PP (IN of) (NP (NN output)))))))) (PP (IN from) (NP (DT a) (VBN given) (NN input) (NN machine))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">device</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">device</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">device</governor>
+            <dependent idx="2">mechanical</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">produces</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">device</governor>
+            <dependent idx="5">produces</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">form</governor>
+            <dependent idx="6">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">produces</governor>
+            <dependent idx="7">form</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">form</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="9">output</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">device</governor>
+            <dependent idx="10">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">machine</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">machine</governor>
+            <dependent idx="12">given</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">machine</governor>
+            <dependent idx="13">input</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">from</governor>
+            <dependent idx="14">machine</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">device</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">device</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">device</governor>
+            <dependent idx="2">mechanical</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">produces</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">device</governor>
+            <dependent idx="5">produces</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">form</governor>
+            <dependent idx="6">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">produces</governor>
+            <dependent idx="7">form</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">form</governor>
+            <dependent idx="9">output</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">machine</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">machine</governor>
+            <dependent idx="12">given</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">machine</governor>
+            <dependent idx="13">input</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">device</governor>
+            <dependent idx="14">machine</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">device</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">device</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">device</governor>
+            <dependent idx="2">mechanical</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">produces</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">device</governor>
+            <dependent idx="5">produces</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">form</governor>
+            <dependent idx="6">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">produces</governor>
+            <dependent idx="7">form</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">form</governor>
+            <dependent idx="9">output</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">machine</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">machine</governor>
+            <dependent idx="12">given</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">machine</governor>
+            <dependent idx="13">input</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">device</governor>
+            <dependent idx="14">machine</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

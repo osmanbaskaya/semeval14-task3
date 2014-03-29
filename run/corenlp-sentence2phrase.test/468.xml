@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>action</word>
+            <lemma>action</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="6">
+            <word>governments</word>
+            <lemma>government</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>concerned</word>
+            <lemma>concern</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="9">
+            <word>therefore</word>
+            <lemma>therefore</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>limited</word>
+            <lemma>limit</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="11">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="13">
+            <word>international</word>
+            <lemma>international</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>law</word>
+            <lemma>law</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT Any) (NN action)) (PP (IN by) (NP (NP (DT the) (CD two) (NNS governments)) (VP (VBN concerned))))) (VP (VBZ is) (ADVP (RB therefore)) (VP (VBN limited) (PP (IN by) (NP (DT this) (JJ international) (NN law))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">limited</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">action</governor>
+            <dependent idx="1">Any</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">limited</governor>
+            <dependent idx="2">action</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">action</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">governments</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">governments</governor>
+            <dependent idx="5">two</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">by</governor>
+            <dependent idx="6">governments</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">governments</governor>
+            <dependent idx="7">concerned</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">limited</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">limited</governor>
+            <dependent idx="9">therefore</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">limited</governor>
+            <dependent idx="11">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">law</governor>
+            <dependent idx="12">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">law</governor>
+            <dependent idx="13">international</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">by</governor>
+            <dependent idx="14">law</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">limited</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">action</governor>
+            <dependent idx="1">Any</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">limited</governor>
+            <dependent idx="2">action</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">governments</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">governments</governor>
+            <dependent idx="5">two</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">action</governor>
+            <dependent idx="6">governments</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">governments</governor>
+            <dependent idx="7">concerned</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">limited</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">limited</governor>
+            <dependent idx="9">therefore</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">law</governor>
+            <dependent idx="12">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">law</governor>
+            <dependent idx="13">international</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="10">limited</governor>
+            <dependent idx="14">law</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">limited</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">action</governor>
+            <dependent idx="1">Any</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">limited</governor>
+            <dependent idx="2">action</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">governments</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">governments</governor>
+            <dependent idx="5">two</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">action</governor>
+            <dependent idx="6">governments</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">governments</governor>
+            <dependent idx="7">concerned</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">limited</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">limited</governor>
+            <dependent idx="9">therefore</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">law</governor>
+            <dependent idx="12">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">law</governor>
+            <dependent idx="13">international</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="10">limited</governor>
+            <dependent idx="14">law</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>international</word>
+            <lemma>international</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>limitations</word>
+            <lemma>limitation</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>law</word>
+            <lemma>law</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ international) (NNS limitations)) (PP (IN of) (NP (DT the) (NN law))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">limitations</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">limitations</governor>
+            <dependent idx="1">international</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">limitations</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">law</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">law</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">limitations</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">limitations</governor>
+            <dependent idx="1">international</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">law</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">limitations</governor>
+            <dependent idx="5">law</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">limitations</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">limitations</governor>
+            <dependent idx="1">international</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">law</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">limitations</governor>
+            <dependent idx="5">law</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

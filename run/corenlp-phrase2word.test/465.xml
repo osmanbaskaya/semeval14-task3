@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>term</word>
+            <lemma>term</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>ammunition</word>
+            <lemma>ammunition</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>used</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>crossbow</word>
+            <lemma>crossbow</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>journey</word>
+            <lemma>journey</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN term)) (PP (IN for) (NP (NP (DT the) (NN ammunition)) (VP (VBN used) (PP (IN in) (NP (DT a) (NN crossbow) (NN journey)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">term</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">term</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">term</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">ammunition</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">for</governor>
+            <dependent idx="5">ammunition</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">ammunition</governor>
+            <dependent idx="6">used</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">used</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">journey</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">journey</governor>
+            <dependent idx="9">crossbow</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="10">journey</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">term</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">term</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">ammunition</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">term</governor>
+            <dependent idx="5">ammunition</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">ammunition</governor>
+            <dependent idx="6">used</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">journey</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">journey</governor>
+            <dependent idx="9">crossbow</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">used</governor>
+            <dependent idx="10">journey</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">term</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">term</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">ammunition</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">term</governor>
+            <dependent idx="5">ammunition</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">ammunition</governor>
+            <dependent idx="6">used</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">journey</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">journey</governor>
+            <dependent idx="9">crossbow</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">used</governor>
+            <dependent idx="10">journey</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

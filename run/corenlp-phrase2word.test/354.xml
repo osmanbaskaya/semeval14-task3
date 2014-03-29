@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Liberty</word>
+            <lemma>Liberty</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Bank</word>
+            <lemma>Bank</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Stadium</word>
+            <lemma>Stadium</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>formerly</word>
+            <lemma>formerly</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>known</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>Indian</word>
+            <lemma>indian</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>Stadium</word>
+            <lemma>stadium</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>shoes</word>
+            <lemma>shoe</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NNP Liberty) (NNP Bank) (NNP Stadium)) (, ,) (VP (ADVP (RB formerly)) (VBN known) (PP (IN as) (NP (JJ Indian) (NN Stadium) (NNS shoes))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Stadium</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="1">Liberty</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="2">Bank</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">known</governor>
+            <dependent idx="5">formerly</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="6">known</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">known</governor>
+            <dependent idx="7">as</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">shoes</governor>
+            <dependent idx="8">Indian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shoes</governor>
+            <dependent idx="9">Stadium</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">as</governor>
+            <dependent idx="10">shoes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Stadium</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="1">Liberty</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="2">Bank</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">known</governor>
+            <dependent idx="5">formerly</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="6">known</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">shoes</governor>
+            <dependent idx="8">Indian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shoes</governor>
+            <dependent idx="9">Stadium</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="6">known</governor>
+            <dependent idx="10">shoes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Stadium</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="1">Liberty</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="2">Bank</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">known</governor>
+            <dependent idx="5">formerly</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">Stadium</governor>
+            <dependent idx="6">known</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">shoes</governor>
+            <dependent idx="8">Indian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shoes</governor>
+            <dependent idx="9">Stadium</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="6">known</governor>
+            <dependent idx="10">shoes</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

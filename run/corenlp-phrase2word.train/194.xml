@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>keep</word>
+            <lemma>keep</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>eye</word>
+            <lemma>eye</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>contractors</word>
+            <lemma>contractor</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB keep) (NP (DT an) (NN eye)) (PP (IN on) (NP (NNS contractors)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">keep</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">eye</governor>
+            <dependent idx="2">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">keep</governor>
+            <dependent idx="3">eye</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">keep</governor>
+            <dependent idx="4">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">on</governor>
+            <dependent idx="5">contractors</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">keep</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">eye</governor>
+            <dependent idx="2">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">keep</governor>
+            <dependent idx="3">eye</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">keep</governor>
+            <dependent idx="5">contractors</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">keep</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">eye</governor>
+            <dependent idx="2">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">keep</governor>
+            <dependent idx="3">eye</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">keep</governor>
+            <dependent idx="5">contractors</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

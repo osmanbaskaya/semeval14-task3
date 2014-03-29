@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>sets</word>
+            <lemma>set</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Blofeld</word>
+            <lemma>Blofeld</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="6">
+            <word>hideout</word>
+            <lemma>hideout</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>Pinewood</word>
+            <lemma>Pinewood</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>Studios</word>
+            <lemma>Studios</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>shot</word>
+            <lemma>shot</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NNS sets)) (PP (IN of) (NP (NP (NNP Blofeld) (POS 's)) (NN hideout))) (PP (IN at) (NP (NNP Pinewood) (NNP Studios) (NN shot))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">sets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">sets</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">sets</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">hideout</governor>
+            <dependent idx="4">Blofeld</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="4">Blofeld</governor>
+            <dependent idx="5">'s</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="6">hideout</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">sets</governor>
+            <dependent idx="7">at</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shot</governor>
+            <dependent idx="8">Pinewood</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shot</governor>
+            <dependent idx="9">Studios</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">at</governor>
+            <dependent idx="10">shot</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">sets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">sets</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">hideout</governor>
+            <dependent idx="4">Blofeld</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">sets</governor>
+            <dependent idx="6">hideout</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shot</governor>
+            <dependent idx="8">Pinewood</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shot</governor>
+            <dependent idx="9">Studios</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="2">sets</governor>
+            <dependent idx="10">shot</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">sets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">sets</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">hideout</governor>
+            <dependent idx="4">Blofeld</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">sets</governor>
+            <dependent idx="6">hideout</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shot</governor>
+            <dependent idx="8">Pinewood</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">shot</governor>
+            <dependent idx="9">Studios</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="2">sets</governor>
+            <dependent idx="10">shot</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

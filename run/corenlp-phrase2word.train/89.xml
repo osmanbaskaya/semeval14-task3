@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>tax-shelter</word>
+            <lemma>tax-shelter</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>development</word>
+            <lemma>development</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>marketing</word>
+            <lemma>marketing</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>achievement</word>
+            <lemma>achievement</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ tax-shelter) (NN development)) (CC and) (NP (NN marketing) (NN achievement)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">development</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">development</governor>
+            <dependent idx="1">tax-shelter</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">development</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">achievement</governor>
+            <dependent idx="4">marketing</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">development</governor>
+            <dependent idx="5">achievement</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">development</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">development</governor>
+            <dependent idx="1">tax-shelter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">achievement</governor>
+            <dependent idx="4">marketing</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">development</governor>
+            <dependent idx="5">achievement</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">development</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">development</governor>
+            <dependent idx="1">tax-shelter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">achievement</governor>
+            <dependent idx="4">marketing</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">development</governor>
+            <dependent idx="5">achievement</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

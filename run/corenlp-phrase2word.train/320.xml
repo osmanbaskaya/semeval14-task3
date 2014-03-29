@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Image</word>
+            <lemma>image</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>original</word>
+            <lemma>original</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>Tetris</word>
+            <lemma>Tetris</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>game</word>
+            <lemma>game</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>covers</word>
+            <lemma>cover</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="10">
+            <word>video</word>
+            <lemma>video</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>game</word>
+            <lemma>game</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN Image)) (PP (IN of) (NP (NP (CD one)) (PP (IN of) (NP (DT the) (JJ original) (NNP Tetris) (NN game)))))) (VP (VBZ covers) (NP (NN video) (NN game))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">covers</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">covers</governor>
+            <dependent idx="1">Image</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Image</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">one</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">game</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">game</governor>
+            <dependent idx="6">original</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">game</governor>
+            <dependent idx="7">Tetris</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="8">game</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">game</governor>
+            <dependent idx="10">video</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">covers</governor>
+            <dependent idx="11">game</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">covers</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">covers</governor>
+            <dependent idx="1">Image</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Image</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">game</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">game</governor>
+            <dependent idx="6">original</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">game</governor>
+            <dependent idx="7">Tetris</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">one</governor>
+            <dependent idx="8">game</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">game</governor>
+            <dependent idx="10">video</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">covers</governor>
+            <dependent idx="11">game</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">covers</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">covers</governor>
+            <dependent idx="1">Image</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Image</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">game</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">game</governor>
+            <dependent idx="6">original</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">game</governor>
+            <dependent idx="7">Tetris</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">one</governor>
+            <dependent idx="8">game</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">game</governor>
+            <dependent idx="10">video</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">covers</governor>
+            <dependent idx="11">game</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

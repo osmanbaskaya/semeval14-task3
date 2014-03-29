@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>LuLu</word>
+            <lemma>LuLu</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>International</word>
+            <lemma>International</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Shopping</word>
+            <lemma>Shopping</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Mall</word>
+            <lemma>mall</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>Edapally</word>
+            <lemma>Edapally</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="8">
+            <word>Kochi</word>
+            <lemma>Kochi</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>India</word>
+            <lemma>India</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NNP LuLu) (NNP International) (NNP Shopping)) (NP (NP (NN Mall)) (, ,) (NP (NNP Edapally)) (, ,) (NP (NNP Kochi) (NNP India))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Shopping</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="1">LuLu</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="2">International</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="4">Mall</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Mall</governor>
+            <dependent idx="6">Edapally</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">India</governor>
+            <dependent idx="8">Kochi</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Mall</governor>
+            <dependent idx="9">India</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Shopping</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="1">LuLu</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="2">International</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="4">Mall</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Mall</governor>
+            <dependent idx="6">Edapally</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">India</governor>
+            <dependent idx="8">Kochi</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Mall</governor>
+            <dependent idx="9">India</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Shopping</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="1">LuLu</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="2">International</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Shopping</governor>
+            <dependent idx="4">Mall</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Mall</governor>
+            <dependent idx="6">Edapally</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">India</governor>
+            <dependent idx="8">Kochi</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Mall</governor>
+            <dependent idx="9">India</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

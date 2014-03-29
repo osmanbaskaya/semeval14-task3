@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>too</word>
+            <lemma>too</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>would</word>
+            <lemma>would</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="4">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>welcome</word>
+            <lemma>welcome</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>Mr</word>
+            <lemma>Mr</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Prodi</word>
+            <lemma>Prodi</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="10">
+            <word>s</word>
+            <lemma>s</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>forceful</word>
+            <lemma>forceful</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="13">
+            <word>meaningful</word>
+            <lemma>meaningful</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>intervention</word>
+            <lemma>intervention</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (ADVP (RB too)) (VP (MD would) (VP (VB like) (S (VP (TO to) (VP (VB welcome) (S (NP (NP (NP (NNP Mr) (NNP Prodi) (POS ')) (NNS s)) (ADJP (JJ forceful) (CC and) (JJ meaningful))) (NP (NN intervention)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">like</governor>
+            <dependent idx="2">too</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">like</governor>
+            <dependent idx="3">would</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">welcome</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">like</governor>
+            <dependent idx="6">welcome</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Prodi</governor>
+            <dependent idx="7">Mr</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">s</governor>
+            <dependent idx="8">Prodi</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">intervention</governor>
+            <dependent idx="10">s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">s</governor>
+            <dependent idx="11">forceful</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">forceful</governor>
+            <dependent idx="12">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="11">forceful</governor>
+            <dependent idx="13">meaningful</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">welcome</governor>
+            <dependent idx="14">intervention</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">like</governor>
+            <dependent idx="2">too</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">like</governor>
+            <dependent idx="3">would</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">welcome</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">like</governor>
+            <dependent idx="6">welcome</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Prodi</governor>
+            <dependent idx="7">Mr</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">s</governor>
+            <dependent idx="8">Prodi</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">intervention</governor>
+            <dependent idx="10">s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">s</governor>
+            <dependent idx="11">forceful</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">forceful</governor>
+            <dependent idx="13">meaningful</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">welcome</governor>
+            <dependent idx="14">intervention</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">like</governor>
+            <dependent idx="2">too</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">like</governor>
+            <dependent idx="3">would</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">welcome</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">like</governor>
+            <dependent idx="6">welcome</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Prodi</governor>
+            <dependent idx="7">Mr</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">s</governor>
+            <dependent idx="8">Prodi</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">intervention</governor>
+            <dependent idx="10">s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">s</governor>
+            <dependent idx="11">forceful</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">s</governor>
+            <dependent idx="13">meaningful</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">forceful</governor>
+            <dependent idx="13">meaningful</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">welcome</governor>
+            <dependent idx="14">intervention</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Prodi</word>
+            <lemma>Prodi</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="3">
+            <word>s</word>
+            <lemma>s</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>welcome</word>
+            <lemma>welcome</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>intervention</word>
+            <lemma>intervention</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NNP Prodi) (POS ')) (NNS s)) (ADJP (JJ welcome) (NN intervention)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">s</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">s</governor>
+            <dependent idx="1">Prodi</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">intervention</governor>
+            <dependent idx="4">welcome</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">s</governor>
+            <dependent idx="5">intervention</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">s</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">s</governor>
+            <dependent idx="1">Prodi</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">intervention</governor>
+            <dependent idx="4">welcome</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">s</governor>
+            <dependent idx="5">intervention</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">s</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">s</governor>
+            <dependent idx="1">Prodi</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">intervention</governor>
+            <dependent idx="4">welcome</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">s</governor>
+            <dependent idx="5">intervention</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

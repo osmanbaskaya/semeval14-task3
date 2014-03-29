@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>think</word>
+            <lemma>think</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="6">
+            <word>'ll</word>
+            <lemma>'ll</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="7">
+            <word>ever</word>
+            <lemma>ever</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="8">
+            <word>totally</word>
+            <lemma>totally</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="9">
+            <word>recover</word>
+            <lemma>recover</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="10">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VBP do) (RB n't) (VP (VB think) (SBAR (S (NP (PRP he)) (VP (MD 'll) (ADVP (RB ever) (RB totally)) (VP (VB recover) (PP (IN from) (NP (DT this))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">think</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">think</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">think</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">think</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">recover</governor>
+            <dependent idx="5">he</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">recover</governor>
+            <dependent idx="6">'ll</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">totally</governor>
+            <dependent idx="7">ever</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">recover</governor>
+            <dependent idx="8">totally</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">think</governor>
+            <dependent idx="9">recover</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">recover</governor>
+            <dependent idx="10">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">from</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">think</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">think</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">think</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">think</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">recover</governor>
+            <dependent idx="5">he</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">recover</governor>
+            <dependent idx="6">'ll</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">totally</governor>
+            <dependent idx="7">ever</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">recover</governor>
+            <dependent idx="8">totally</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">think</governor>
+            <dependent idx="9">recover</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="9">recover</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">think</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">think</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">think</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">think</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">recover</governor>
+            <dependent idx="5">he</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">recover</governor>
+            <dependent idx="6">'ll</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">totally</governor>
+            <dependent idx="7">ever</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">recover</governor>
+            <dependent idx="8">totally</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">think</governor>
+            <dependent idx="9">recover</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="9">recover</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>personal</word>
+            <lemma>personal</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>recovery</word>
+            <lemma>recovery</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ personal) (NN recovery))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recovery</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">recovery</governor>
+            <dependent idx="1">personal</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recovery</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">recovery</governor>
+            <dependent idx="1">personal</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recovery</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">recovery</governor>
+            <dependent idx="1">personal</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

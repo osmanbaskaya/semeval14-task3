@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Adoration</word>
+            <lemma>Adoration</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Tomato</word>
+            <lemma>Tomato</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>being</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>grown</word>
+            <lemma>grow</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>trellis</word>
+            <lemma>trellis</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>tomatoes</word>
+            <lemma>tomato</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Adoration) (NNP Tomato)) (VP (VBG being) (VP (VBN grown) (PP (IN on) (NP (NN trellis) (NNS tomatoes)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Tomato</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Tomato</governor>
+            <dependent idx="1">Adoration</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">grown</governor>
+            <dependent idx="3">being</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">Tomato</governor>
+            <dependent idx="4">grown</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">grown</governor>
+            <dependent idx="5">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">tomatoes</governor>
+            <dependent idx="6">trellis</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">on</governor>
+            <dependent idx="7">tomatoes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Tomato</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Tomato</governor>
+            <dependent idx="1">Adoration</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">grown</governor>
+            <dependent idx="3">being</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">Tomato</governor>
+            <dependent idx="4">grown</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">tomatoes</governor>
+            <dependent idx="6">trellis</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">grown</governor>
+            <dependent idx="7">tomatoes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Tomato</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Tomato</governor>
+            <dependent idx="1">Adoration</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">grown</governor>
+            <dependent idx="3">being</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">Tomato</governor>
+            <dependent idx="4">grown</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">tomatoes</governor>
+            <dependent idx="6">trellis</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">grown</governor>
+            <dependent idx="7">tomatoes</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

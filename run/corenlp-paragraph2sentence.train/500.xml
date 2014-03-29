@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>bought</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Mr.</word>
+            <lemma>Mr.</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Coffee</word>
+            <lemma>Coffee</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Frappe</word>
+            <lemma>Frappe</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>maker</word>
+            <lemma>maker</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="9">
+            <word>use</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>blended</word>
+            <lemma>blended</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>coffee</word>
+            <lemma>coffee</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VP (VBD bought) (NP (DT a) (NNP Mr.) (NNP Coffee) (NNP Frappe) (NN maker))) (CC and) (VP (VB use) (NP (DT the) (JJ blended) (NN coffee)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">bought</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">bought</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">maker</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="4">Mr.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="5">Coffee</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="6">Frappe</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">bought</governor>
+            <dependent idx="7">maker</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">bought</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">bought</governor>
+            <dependent idx="9">use</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">coffee</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">coffee</governor>
+            <dependent idx="11">blended</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">use</governor>
+            <dependent idx="12">coffee</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">bought</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">bought</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">maker</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="4">Mr.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="5">Coffee</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="6">Frappe</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">bought</governor>
+            <dependent idx="7">maker</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">bought</governor>
+            <dependent idx="9">use</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">coffee</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">coffee</governor>
+            <dependent idx="11">blended</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">use</governor>
+            <dependent idx="12">coffee</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">bought</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">bought</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">use</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">maker</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="4">Mr.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="5">Coffee</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">maker</governor>
+            <dependent idx="6">Frappe</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">bought</governor>
+            <dependent idx="7">maker</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">bought</governor>
+            <dependent idx="9">use</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">coffee</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">coffee</governor>
+            <dependent idx="11">blended</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">use</governor>
+            <dependent idx="12">coffee</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>It</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>makes</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>first</word>
+            <lemma>first</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>class</word>
+            <lemma>class</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>frappe</word>
+            <lemma>frappe</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="8">
+            <word>albeit</word>
+            <lemma>albeit</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>little</word>
+            <lemma>little</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>expensive</word>
+            <lemma>expensive</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP It)) (VP (VBZ makes) (NP (NP (DT a) (JJ first) (NN class) (NN frappe)) (, ,) (RRC (ADVP (ADVP (IN albeit)) (NP (DT a) (JJ little))) (ADJP (JJ expensive))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">makes</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">makes</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">frappe</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">frappe</governor>
+            <dependent idx="4">first</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">frappe</governor>
+            <dependent idx="5">class</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">makes</governor>
+            <dependent idx="6">frappe</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">expensive</governor>
+            <dependent idx="8">albeit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">little</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">albeit</governor>
+            <dependent idx="10">little</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">frappe</governor>
+            <dependent idx="11">expensive</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">makes</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">makes</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">frappe</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">frappe</governor>
+            <dependent idx="4">first</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">frappe</governor>
+            <dependent idx="5">class</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">makes</governor>
+            <dependent idx="6">frappe</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">expensive</governor>
+            <dependent idx="8">albeit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">little</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">albeit</governor>
+            <dependent idx="10">little</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">frappe</governor>
+            <dependent idx="11">expensive</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">makes</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">makes</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">frappe</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">frappe</governor>
+            <dependent idx="4">first</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">frappe</governor>
+            <dependent idx="5">class</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">makes</governor>
+            <dependent idx="6">frappe</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">expensive</governor>
+            <dependent idx="8">albeit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">little</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">albeit</governor>
+            <dependent idx="10">little</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">frappe</governor>
+            <dependent idx="11">expensive</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>Though</word>
+            <lemma>though</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>bit</word>
+            <lemma>bit</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>expensive</word>
+            <lemma>expensive</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>143</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>143</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>145</CharacterOffsetBegin>
+            <CharacterOffsetEnd>149</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>Mr.</word>
+            <lemma>Mr.</lemma>
+            <CharacterOffsetBegin>150</CharacterOffsetBegin>
+            <CharacterOffsetEnd>153</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Coffee</word>
+            <lemma>Coffee</lemma>
+            <CharacterOffsetBegin>154</CharacterOffsetBegin>
+            <CharacterOffsetEnd>160</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>frappe</word>
+            <lemma>frappe</lemma>
+            <CharacterOffsetBegin>161</CharacterOffsetBegin>
+            <CharacterOffsetEnd>167</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>maker</word>
+            <lemma>maker</lemma>
+            <CharacterOffsetBegin>168</CharacterOffsetBegin>
+            <CharacterOffsetEnd>173</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>makes</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>174</CharacterOffsetBegin>
+            <CharacterOffsetEnd>179</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="12">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>180</CharacterOffsetBegin>
+            <CharacterOffsetEnd>181</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="13">
+            <word>great</word>
+            <lemma>great</lemma>
+            <CharacterOffsetBegin>182</CharacterOffsetBegin>
+            <CharacterOffsetEnd>187</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>frappe</word>
+            <lemma>frappe</lemma>
+            <CharacterOffsetBegin>188</CharacterOffsetBegin>
+            <CharacterOffsetEnd>194</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>195</CharacterOffsetBegin>
+            <CharacterOffsetEnd>199</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="16">
+            <word>blended</word>
+            <lemma>blended</lemma>
+            <CharacterOffsetBegin>200</CharacterOffsetBegin>
+            <CharacterOffsetEnd>207</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="17">
+            <word>coffee</word>
+            <lemma>coffee</lemma>
+            <CharacterOffsetBegin>208</CharacterOffsetBegin>
+            <CharacterOffsetEnd>214</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="18">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>214</CharacterOffsetBegin>
+            <CharacterOffsetEnd>215</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (SBAR (IN Though) (S (NP (DT a) (NN bit)) (ADJP (JJ expensive)))) (, ,) (NP (DT this) (NNP Mr.) (NNP Coffee) (NN frappe) (NN maker)) (VP (VBZ makes) (NP (DT a) (JJ great) (NN frappe)) (PP (IN with) (NP (JJ blended) (NN coffee)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">makes</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">expensive</governor>
+            <dependent idx="1">Though</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bit</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">expensive</governor>
+            <dependent idx="3">bit</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="11">makes</governor>
+            <dependent idx="4">expensive</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">maker</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="7">Mr.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="8">Coffee</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="9">frappe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">makes</governor>
+            <dependent idx="10">maker</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">frappe</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">frappe</governor>
+            <dependent idx="13">great</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">makes</governor>
+            <dependent idx="14">frappe</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">makes</governor>
+            <dependent idx="15">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">coffee</governor>
+            <dependent idx="16">blended</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">with</governor>
+            <dependent idx="17">coffee</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">makes</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">expensive</governor>
+            <dependent idx="1">Though</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bit</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">expensive</governor>
+            <dependent idx="3">bit</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="11">makes</governor>
+            <dependent idx="4">expensive</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">maker</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="7">Mr.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="8">Coffee</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="9">frappe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">makes</governor>
+            <dependent idx="10">maker</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">frappe</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">frappe</governor>
+            <dependent idx="13">great</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">makes</governor>
+            <dependent idx="14">frappe</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">coffee</governor>
+            <dependent idx="16">blended</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="11">makes</governor>
+            <dependent idx="17">coffee</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">makes</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="4">expensive</governor>
+            <dependent idx="1">Though</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bit</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">expensive</governor>
+            <dependent idx="3">bit</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="11">makes</governor>
+            <dependent idx="4">expensive</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">maker</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="7">Mr.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="8">Coffee</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">maker</governor>
+            <dependent idx="9">frappe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">makes</governor>
+            <dependent idx="10">maker</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">frappe</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">frappe</governor>
+            <dependent idx="13">great</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">makes</governor>
+            <dependent idx="14">frappe</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">coffee</governor>
+            <dependent idx="16">blended</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="11">makes</governor>
+            <dependent idx="17">coffee</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

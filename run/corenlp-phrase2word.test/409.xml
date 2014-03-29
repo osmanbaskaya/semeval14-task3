@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>phenomena</word>
+            <lemma>phenomenon</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="7">
+            <word>materials</word>
+            <lemma>material</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>exert</word>
+            <lemma>exert</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="9">
+            <word>attractive</word>
+            <lemma>attractive</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="11">
+            <word>repulsive</word>
+            <lemma>repulsive</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>forces</word>
+            <lemma>force</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="13">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>materials</word>
+            <lemma>material</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="16">
+            <word>metal</word>
+            <lemma>metal</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (CD one)) (PP (IN of) (NP (DT the) (NNS phenomena)))) (PP (IN by) (SBAR (WHNP (WDT which)) (S (NP (NNS materials)) (VP (VBP exert) (NP (NP (ADJP (JJ attractive) (CC or) (JJ repulsive)) (NNS forces)) (PP (IN on) (NP (JJ other) (NNS materials) (NN metal)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">one</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">one</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">phenomena</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="4">phenomena</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">one</governor>
+            <dependent idx="5">by</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">exert</governor>
+            <dependent idx="6">which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">exert</governor>
+            <dependent idx="7">materials</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="5">by</governor>
+            <dependent idx="8">exert</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">forces</governor>
+            <dependent idx="9">attractive</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">attractive</governor>
+            <dependent idx="10">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="9">attractive</governor>
+            <dependent idx="11">repulsive</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">exert</governor>
+            <dependent idx="12">forces</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">forces</governor>
+            <dependent idx="13">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">metal</governor>
+            <dependent idx="14">other</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">metal</governor>
+            <dependent idx="15">materials</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">on</governor>
+            <dependent idx="16">metal</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">phenomena</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">one</governor>
+            <dependent idx="4">phenomena</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">exert</governor>
+            <dependent idx="6">which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">exert</governor>
+            <dependent idx="7">materials</dependent>
+          </dep>
+          <dep type="prepc_by">
+            <governor idx="1">one</governor>
+            <dependent idx="8">exert</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">forces</governor>
+            <dependent idx="9">attractive</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="9">attractive</governor>
+            <dependent idx="11">repulsive</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">exert</governor>
+            <dependent idx="12">forces</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">metal</governor>
+            <dependent idx="14">other</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">metal</governor>
+            <dependent idx="15">materials</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="12">forces</governor>
+            <dependent idx="16">metal</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">phenomena</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">one</governor>
+            <dependent idx="4">phenomena</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">exert</governor>
+            <dependent idx="6">which</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">exert</governor>
+            <dependent idx="7">materials</dependent>
+          </dep>
+          <dep type="prepc_by">
+            <governor idx="1">one</governor>
+            <dependent idx="8">exert</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">forces</governor>
+            <dependent idx="9">attractive</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="9">attractive</governor>
+            <dependent idx="11">repulsive</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">forces</governor>
+            <dependent idx="11">repulsive</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">exert</governor>
+            <dependent idx="12">forces</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">metal</governor>
+            <dependent idx="14">other</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">metal</governor>
+            <dependent idx="15">materials</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="12">forces</governor>
+            <dependent idx="16">metal</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

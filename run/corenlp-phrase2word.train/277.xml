@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Coronation</word>
+            <lemma>coronation</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>icon</word>
+            <lemma>icon</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Pope</word>
+            <lemma>Pope</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Pius</word>
+            <lemma>Pius</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>XII</word>
+            <lemma>XII</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>1954</word>
+            <lemma>1954</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>Coronation</word>
+            <lemma>Coronation</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NN Coronation)) (PP (IN of) (NP (NP (DT the) (NN icon)) (PP (IN by) (NP (NP (NNP Pope) (NNP Pius) (NNP XII)) (PP (IN in) (NP (CD 1954)))))))) (NP (NNP Coronation)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Coronation</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Coronation</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">icon</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="4">icon</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">icon</governor>
+            <dependent idx="5">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">XII</governor>
+            <dependent idx="6">Pope</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">XII</governor>
+            <dependent idx="7">Pius</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">by</governor>
+            <dependent idx="8">XII</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">XII</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="10">1954</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Coronation</governor>
+            <dependent idx="11">Coronation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Coronation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">icon</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Coronation</governor>
+            <dependent idx="4">icon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">XII</governor>
+            <dependent idx="6">Pope</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">XII</governor>
+            <dependent idx="7">Pius</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="4">icon</governor>
+            <dependent idx="8">XII</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">XII</governor>
+            <dependent idx="10">1954</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Coronation</governor>
+            <dependent idx="11">Coronation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Coronation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">icon</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Coronation</governor>
+            <dependent idx="4">icon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">XII</governor>
+            <dependent idx="6">Pope</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">XII</governor>
+            <dependent idx="7">Pius</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="4">icon</governor>
+            <dependent idx="8">XII</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">XII</governor>
+            <dependent idx="10">1954</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Coronation</governor>
+            <dependent idx="11">Coronation</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

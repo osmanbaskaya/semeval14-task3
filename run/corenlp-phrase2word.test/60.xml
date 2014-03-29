@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>room-temperature</word>
+            <lemma>room-temperature</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>IQ</word>
+            <lemma>IQ</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>dumb</word>
+            <lemma>dumb</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (NP (JJ room-temperature) (NNP IQ)) (JJ dumb))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">dumb</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">IQ</governor>
+            <dependent idx="1">room-temperature</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">dumb</governor>
+            <dependent idx="2">IQ</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">dumb</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">IQ</governor>
+            <dependent idx="1">room-temperature</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">dumb</governor>
+            <dependent idx="2">IQ</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">dumb</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">IQ</governor>
+            <dependent idx="1">room-temperature</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">dumb</governor>
+            <dependent idx="2">IQ</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

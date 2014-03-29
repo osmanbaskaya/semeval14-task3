@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Why</word>
+            <lemma>why</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>girls</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>always</word>
+            <lemma>always</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>next</word>
+            <lemma>next</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>girls</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>immediately</word>
+            <lemma>immediately</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="9">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>chat</word>
+            <lemma>chat</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>roulette</word>
+            <lemma>roulette</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB Why)) (SQ (VBP do) (PP (NP (NP (NNS girls)) (ADVP (RB always) (PP (IN next) (NP (JJ other) (NNS girls)) (ADVP (RB immediately))))) (IN on) (NP (NN chat) (NN roulette)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">do</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="9">on</governor>
+            <dependent idx="3">girls</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">girls</governor>
+            <dependent idx="4">always</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">always</governor>
+            <dependent idx="5">next</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">girls</governor>
+            <dependent idx="6">other</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">next</governor>
+            <dependent idx="7">girls</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">next</governor>
+            <dependent idx="8">immediately</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">do</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">roulette</governor>
+            <dependent idx="10">chat</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">on</governor>
+            <dependent idx="11">roulette</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">do</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="2">do</governor>
+            <dependent idx="3">girls</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">girls</governor>
+            <dependent idx="4">always</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">girls</governor>
+            <dependent idx="6">other</dependent>
+          </dep>
+          <dep type="prep_next">
+            <governor idx="4">always</governor>
+            <dependent idx="7">girls</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">always</governor>
+            <dependent idx="8">immediately</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">roulette</governor>
+            <dependent idx="10">chat</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">do</governor>
+            <dependent idx="11">roulette</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">do</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="2">do</governor>
+            <dependent idx="3">girls</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">girls</governor>
+            <dependent idx="4">always</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">girls</governor>
+            <dependent idx="6">other</dependent>
+          </dep>
+          <dep type="prep_next">
+            <governor idx="4">always</governor>
+            <dependent idx="7">girls</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">always</governor>
+            <dependent idx="8">immediately</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">roulette</governor>
+            <dependent idx="10">chat</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">do</governor>
+            <dependent idx="11">roulette</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>girls</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="3">
+            <word>skip</word>
+            <lemma>skip</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>chatting</word>
+            <lemma>chat</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>girls</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>chatroulette</word>
+            <lemma>chatroulette</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNS girls)) (SBAR (WHNP (WDT that)) (S (VP (VBP skip) (S (VP (VBG chatting) (PP (IN with) (NP (JJ other) (NNS girls))))))))) (PP (IN on) (NP (NN chatroulette))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">girls</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">skip</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="1">girls</governor>
+            <dependent idx="3">skip</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">skip</governor>
+            <dependent idx="4">chatting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">chatting</governor>
+            <dependent idx="5">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">girls</governor>
+            <dependent idx="6">other</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">with</governor>
+            <dependent idx="7">girls</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">girls</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">on</governor>
+            <dependent idx="9">chatroulette</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">girls</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">skip</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="1">girls</governor>
+            <dependent idx="3">skip</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">skip</governor>
+            <dependent idx="4">chatting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">girls</governor>
+            <dependent idx="6">other</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">chatting</governor>
+            <dependent idx="7">girls</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">girls</governor>
+            <dependent idx="9">chatroulette</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">girls</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">skip</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="1">girls</governor>
+            <dependent idx="3">skip</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">skip</governor>
+            <dependent idx="4">chatting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">girls</governor>
+            <dependent idx="6">other</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">chatting</governor>
+            <dependent idx="7">girls</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">girls</governor>
+            <dependent idx="9">chatroulette</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

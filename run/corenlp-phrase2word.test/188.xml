@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>environmental</word>
+            <lemma>environmental</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>improvement</word>
+            <lemma>improvement</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>projects</word>
+            <lemma>project</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>campaigning</word>
+            <lemma>campaigning</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ environmental) (NN improvement) (NNS projects)) (NP (NN campaigning)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">projects</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">projects</governor>
+            <dependent idx="1">environmental</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">projects</governor>
+            <dependent idx="2">improvement</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">projects</governor>
+            <dependent idx="4">campaigning</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">projects</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">projects</governor>
+            <dependent idx="1">environmental</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">projects</governor>
+            <dependent idx="2">improvement</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">projects</governor>
+            <dependent idx="4">campaigning</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">projects</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">projects</governor>
+            <dependent idx="1">environmental</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">projects</governor>
+            <dependent idx="2">improvement</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">projects</governor>
+            <dependent idx="4">campaigning</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

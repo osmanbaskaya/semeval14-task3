@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>archaeological</word>
+            <lemma>archaeological</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>discoveries</word>
+            <lemma>discovery</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>toothbrush</word>
+            <lemma>toothbrush</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ archaeological) (NNS discoveries)) (NP (NN toothbrush)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discoveries</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discoveries</governor>
+            <dependent idx="1">archaeological</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">discoveries</governor>
+            <dependent idx="3">toothbrush</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discoveries</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discoveries</governor>
+            <dependent idx="1">archaeological</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">discoveries</governor>
+            <dependent idx="3">toothbrush</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discoveries</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discoveries</governor>
+            <dependent idx="1">archaeological</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">discoveries</governor>
+            <dependent idx="3">toothbrush</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>someone</word>
+            <lemma>someone</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="3">
+            <word>writes</word>
+            <lemma>write</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>computer</word>
+            <lemma>computer</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>software</word>
+            <lemma>software</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN someone)) (SBAR (WHNP (WP who)) (S (VP (VBZ writes) (NP (NN computer) (NN software) (NN film))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">someone</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">writes</governor>
+            <dependent idx="2">who</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">someone</governor>
+            <dependent idx="3">writes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">film</governor>
+            <dependent idx="4">computer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">film</governor>
+            <dependent idx="5">software</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">writes</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">someone</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">writes</governor>
+            <dependent idx="2">who</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">someone</governor>
+            <dependent idx="3">writes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">film</governor>
+            <dependent idx="4">computer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">film</governor>
+            <dependent idx="5">software</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">writes</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">someone</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">writes</governor>
+            <dependent idx="2">who</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">someone</governor>
+            <dependent idx="3">writes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">film</governor>
+            <dependent idx="4">computer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">film</governor>
+            <dependent idx="5">software</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">writes</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

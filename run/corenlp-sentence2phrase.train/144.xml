@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>INTERNET</word>
+            <lemma>INTERNET</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>CONNECTED</word>
+            <lemma>CONNECTED</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>BUT</word>
+            <lemma>BUT</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>BROWSING</word>
+            <lemma>BROWSING</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>TROUGH</word>
+            <lemma>TROUGH</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>EXPLORER</word>
+            <lemma>EXPLORER</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>WONT</word>
+            <lemma>WONT</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>WORK</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="10">
+            <word>--</word>
+            <lemma>--</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>:</POS>
+          </token>
+          <token id="11">
+            <word>help</word>
+            <lemma>help</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="12">
+            <word>plz</word>
+            <lemma>plz</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>!?</word>
+            <lemma>!?</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP INTERNET) (NNP CONNECTED) (, ,) (NNP BUT) (NNP BROWSING) (NNP TROUGH) (NNP EXPLORER) (NNP WONT)) (VP (VBP WORK) (: --) (NP (NP (VB help) (NN plz)) (ADJP (IN !?)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">WORK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="1">INTERNET</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="2">CONNECTED</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">WONT</governor>
+            <dependent idx="4">BUT</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="5">BROWSING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="6">TROUGH</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="7">EXPLORER</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">WORK</governor>
+            <dependent idx="8">WONT</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="12">plz</governor>
+            <dependent idx="11">help</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">WORK</governor>
+            <dependent idx="12">plz</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">plz</governor>
+            <dependent idx="13">!?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">WORK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="1">INTERNET</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="2">CONNECTED</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">WONT</governor>
+            <dependent idx="4">BUT</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="5">BROWSING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="6">TROUGH</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="7">EXPLORER</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">WORK</governor>
+            <dependent idx="8">WONT</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="12">plz</governor>
+            <dependent idx="11">help</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">WORK</governor>
+            <dependent idx="12">plz</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">plz</governor>
+            <dependent idx="13">!?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">WORK</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="1">INTERNET</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="2">CONNECTED</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">WONT</governor>
+            <dependent idx="4">BUT</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="5">BROWSING</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="6">TROUGH</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">WONT</governor>
+            <dependent idx="7">EXPLORER</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">WORK</governor>
+            <dependent idx="8">WONT</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="12">plz</governor>
+            <dependent idx="11">help</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">WORK</governor>
+            <dependent idx="12">plz</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">plz</governor>
+            <dependent idx="13">!?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>problems</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>connecting</word>
+            <lemma>connect</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNS problems)) (VP (VBG connecting) (PP (TO to) (NP (NN internet))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">problems</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">problems</governor>
+            <dependent idx="2">connecting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">connecting</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">to</governor>
+            <dependent idx="4">internet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">problems</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">problems</governor>
+            <dependent idx="2">connecting</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="2">connecting</governor>
+            <dependent idx="4">internet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">problems</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">problems</governor>
+            <dependent idx="2">connecting</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="2">connecting</governor>
+            <dependent idx="4">internet</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

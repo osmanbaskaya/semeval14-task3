@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>volcanic</word>
+            <lemma>volcanic</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>feature</word>
+            <lemma>feature</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>formed</word>
+            <lemma>form</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>collapse</word>
+            <lemma>collapse</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>land</word>
+            <lemma>land</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>following</word>
+            <lemma>follow</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="11">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>volcanic</word>
+            <lemma>volcanic</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>eruption</word>
+            <lemma>eruption</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>caldera</word>
+            <lemma>caldera</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT a) (JJ volcanic) (NN feature)) (VP (VBN formed) (PP (IN by) (NP (NP (DT the) (NN collapse)) (PP (IN of) (NP (NN land))))))) (PP (VBG following) (NP (DT a) (JJ volcanic) (NN eruption) (NN caldera))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">feature</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">feature</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">feature</governor>
+            <dependent idx="2">volcanic</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">feature</governor>
+            <dependent idx="4">formed</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">formed</governor>
+            <dependent idx="5">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">collapse</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">by</governor>
+            <dependent idx="7">collapse</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">collapse</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="9">land</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">feature</governor>
+            <dependent idx="10">following</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">caldera</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">caldera</governor>
+            <dependent idx="12">volcanic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">caldera</governor>
+            <dependent idx="13">eruption</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">following</governor>
+            <dependent idx="14">caldera</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">feature</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">feature</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">feature</governor>
+            <dependent idx="2">volcanic</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">feature</governor>
+            <dependent idx="4">formed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">collapse</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="4">formed</governor>
+            <dependent idx="7">collapse</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">collapse</governor>
+            <dependent idx="9">land</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">caldera</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">caldera</governor>
+            <dependent idx="12">volcanic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">caldera</governor>
+            <dependent idx="13">eruption</dependent>
+          </dep>
+          <dep type="prep_following">
+            <governor idx="3">feature</governor>
+            <dependent idx="14">caldera</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">feature</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">feature</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">feature</governor>
+            <dependent idx="2">volcanic</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">feature</governor>
+            <dependent idx="4">formed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">collapse</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="4">formed</governor>
+            <dependent idx="7">collapse</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">collapse</governor>
+            <dependent idx="9">land</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">caldera</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">caldera</governor>
+            <dependent idx="12">volcanic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">caldera</governor>
+            <dependent idx="13">eruption</dependent>
+          </dep>
+          <dep type="prep_following">
+            <governor idx="3">feature</governor>
+            <dependent idx="14">caldera</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

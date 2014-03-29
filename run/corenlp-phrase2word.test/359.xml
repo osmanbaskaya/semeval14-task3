@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Nassfeld</word>
+            <lemma>nassfeld</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>ski</word>
+            <lemma>ski</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>area</word>
+            <lemma>area</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>winter</word>
+            <lemma>winter</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>slopes</word>
+            <lemma>slope</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Nassfeld) (NN ski) (NN area)) (PP (IN in) (NP (NN winter) (NNS slopes))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">area</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">area</governor>
+            <dependent idx="1">Nassfeld</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">area</governor>
+            <dependent idx="2">ski</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">area</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">slopes</governor>
+            <dependent idx="5">winter</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">slopes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">area</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">area</governor>
+            <dependent idx="1">Nassfeld</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">area</governor>
+            <dependent idx="2">ski</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">slopes</governor>
+            <dependent idx="5">winter</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">area</governor>
+            <dependent idx="6">slopes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">area</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">area</governor>
+            <dependent idx="1">Nassfeld</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">area</governor>
+            <dependent idx="2">ski</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">slopes</governor>
+            <dependent idx="5">winter</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">area</governor>
+            <dependent idx="6">slopes</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

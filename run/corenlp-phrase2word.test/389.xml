@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="3">
+            <word>Every</word>
+            <lemma>every</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Thing</word>
+            <lemma>thing</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>Goes</word>
+            <lemma>go</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>Book</word>
+            <lemma>book</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>Cafe</word>
+            <lemma>Cafe</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>''</POS>
+          </token>
+          <token id="9">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>Staten</word>
+            <lemma>Staten</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Island</word>
+            <lemma>Island</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>cafe</word>
+            <lemma>cafe</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (X (X (DT the)) (NP (NP (`` ``) (DT Every) (NN Thing)) (SBAR (S (VP (VBZ Goes) (VP (VB Book) (NP (NP (NNP Cafe)) ('' '') (PP (IN on) (NP (NNP Staten) (NNP Island) (NN cafe))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Thing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">Thing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Thing</governor>
+            <dependent idx="3">Every</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">Thing</governor>
+            <dependent idx="5">Goes</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">Goes</governor>
+            <dependent idx="6">Book</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">Book</governor>
+            <dependent idx="7">Cafe</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">Cafe</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cafe</governor>
+            <dependent idx="10">Staten</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cafe</governor>
+            <dependent idx="11">Island</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">on</governor>
+            <dependent idx="12">cafe</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Thing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">Thing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Thing</governor>
+            <dependent idx="3">Every</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">Thing</governor>
+            <dependent idx="5">Goes</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">Goes</governor>
+            <dependent idx="6">Book</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">Book</governor>
+            <dependent idx="7">Cafe</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cafe</governor>
+            <dependent idx="10">Staten</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cafe</governor>
+            <dependent idx="11">Island</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">Cafe</governor>
+            <dependent idx="12">cafe</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Thing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">Thing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Thing</governor>
+            <dependent idx="3">Every</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">Thing</governor>
+            <dependent idx="5">Goes</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">Goes</governor>
+            <dependent idx="6">Book</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">Book</governor>
+            <dependent idx="7">Cafe</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cafe</governor>
+            <dependent idx="10">Staten</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cafe</governor>
+            <dependent idx="11">Island</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">Cafe</governor>
+            <dependent idx="12">cafe</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

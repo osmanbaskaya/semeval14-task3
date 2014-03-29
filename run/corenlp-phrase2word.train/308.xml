@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>ex-Cilgwyn</word>
+            <lemma>ex-cilgwyn</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>steam</word>
+            <lemma>steam</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>locomotive</word>
+            <lemma>locomotive</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="5">
+            <word>Lilla</word>
+            <lemma>Lilla</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>''</POS>
+          </token>
+          <token id="7">
+            <word>shown</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>visiting</word>
+            <lemma>visit</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="9">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>Llanberis</word>
+            <lemma>Llanberis</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Lake</word>
+            <lemma>Lake</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>Railway</word>
+            <lemma>Railway</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="13">
+            <word>console</word>
+            <lemma>console</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (JJ ex-Cilgwyn) (NN steam) (NN locomotive) (`` ``) (NNP Lilla) ('' '')) (VP (VBN shown) (S (VP (VBG visiting) (NP (DT the) (NNP Llanberis) (NNP Lake) (NNP Railway) (NN console)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">Lilla</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="1">ex-Cilgwyn</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="2">steam</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="3">locomotive</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="7">shown</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">shown</governor>
+            <dependent idx="8">visiting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">console</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="10">Llanberis</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="11">Lake</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="12">Railway</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">visiting</governor>
+            <dependent idx="13">console</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">Lilla</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="1">ex-Cilgwyn</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="2">steam</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="3">locomotive</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="7">shown</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">shown</governor>
+            <dependent idx="8">visiting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">console</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="10">Llanberis</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="11">Lake</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="12">Railway</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">visiting</governor>
+            <dependent idx="13">console</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">Lilla</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="1">ex-Cilgwyn</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="2">steam</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="3">locomotive</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">Lilla</governor>
+            <dependent idx="7">shown</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">shown</governor>
+            <dependent idx="8">visiting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">console</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="10">Llanberis</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="11">Lake</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">console</governor>
+            <dependent idx="12">Railway</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">visiting</governor>
+            <dependent idx="13">console</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

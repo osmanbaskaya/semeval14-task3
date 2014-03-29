@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>1961</word>
+            <lemma>1961</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>Chrysler</word>
+            <lemma>Chrysler</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Yorker</word>
+            <lemma>Yorker</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>convertible</word>
+            <lemma>convertible</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>carp</word>
+            <lemma>carp</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (CD 1961)) (NP (NNP Chrysler) (NNP New) (NNP Yorker)) (NP (JJ convertible) (NN carp)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">1961</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorker</governor>
+            <dependent idx="2">Chrysler</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorker</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">1961</governor>
+            <dependent idx="4">Yorker</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">carp</governor>
+            <dependent idx="5">convertible</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">1961</governor>
+            <dependent idx="6">carp</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">1961</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorker</governor>
+            <dependent idx="2">Chrysler</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorker</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">1961</governor>
+            <dependent idx="4">Yorker</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">carp</governor>
+            <dependent idx="5">convertible</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">1961</governor>
+            <dependent idx="6">carp</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">1961</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorker</governor>
+            <dependent idx="2">Chrysler</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Yorker</governor>
+            <dependent idx="3">New</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">1961</governor>
+            <dependent idx="4">Yorker</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">carp</governor>
+            <dependent idx="5">convertible</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">1961</governor>
+            <dependent idx="6">carp</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>wacky</word>
+            <lemma>wacky</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>tabaccy</word>
+            <lemma>tabaccy</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>cannabis</word>
+            <lemma>cannabis</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ wacky) (NN tabaccy) (NN cannabis)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cannabis</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">cannabis</governor>
+            <dependent idx="1">wacky</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cannabis</governor>
+            <dependent idx="2">tabaccy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cannabis</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">cannabis</governor>
+            <dependent idx="1">wacky</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cannabis</governor>
+            <dependent idx="2">tabaccy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cannabis</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">cannabis</governor>
+            <dependent idx="1">wacky</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cannabis</governor>
+            <dependent idx="2">tabaccy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>bag</word>
+            <lemma>bag</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>chips</word>
+            <lemma>chip</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>additionally</word>
+            <lemma>additionally</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT all)) (NP (NP (DT that)) (CC and) (NP (NP (DT a) (NN bag)) (PP (IN of) (NP (NP (NNS chips)) (ADVP (RB additionally)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">all</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">all</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">that</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">bag</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">that</governor>
+            <dependent idx="5">bag</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">bag</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="7">chips</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">chips</governor>
+            <dependent idx="8">additionally</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">all</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">all</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">bag</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">that</governor>
+            <dependent idx="5">bag</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">bag</governor>
+            <dependent idx="7">chips</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">chips</governor>
+            <dependent idx="8">additionally</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">all</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">all</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">bag</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">all</governor>
+            <dependent idx="5">bag</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">that</governor>
+            <dependent idx="5">bag</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">bag</governor>
+            <dependent idx="7">chips</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">chips</governor>
+            <dependent idx="8">additionally</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

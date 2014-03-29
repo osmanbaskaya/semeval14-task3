@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>streaker</word>
+            <lemma>streaker</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>wet</word>
+            <lemma>wet</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>dream</word>
+            <lemma>dream</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="9">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>TV</word>
+            <lemma>tv</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>butt-naked</word>
+            <lemma>butt-naked</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>rainy</word>
+            <lemma>rainy</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>day</word>
+            <lemma>day</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (NN streaker) (POS 's)) (JJ wet) (NN dream)) (VP (VBD was) (S (VP (TO to) (VP (VB be) (PP (IN on) (NP (NP (NN TV) (JJ butt-naked)) (PP (IN on) (NP (DT a) (JJ rainy) (NN day))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">streaker</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">dream</governor>
+            <dependent idx="2">streaker</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">streaker</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">dream</governor>
+            <dependent idx="4">wet</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">was</governor>
+            <dependent idx="5">dream</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">be</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">was</governor>
+            <dependent idx="8">be</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">be</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">on</governor>
+            <dependent idx="10">TV</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">TV</governor>
+            <dependent idx="11">butt-naked</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">TV</governor>
+            <dependent idx="12">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">day</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">day</governor>
+            <dependent idx="14">rainy</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">on</governor>
+            <dependent idx="15">day</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">streaker</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">dream</governor>
+            <dependent idx="2">streaker</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">dream</governor>
+            <dependent idx="4">wet</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">was</governor>
+            <dependent idx="5">dream</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">be</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">was</governor>
+            <dependent idx="8">be</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">be</governor>
+            <dependent idx="10">TV</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">TV</governor>
+            <dependent idx="11">butt-naked</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">day</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">day</governor>
+            <dependent idx="14">rainy</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="10">TV</governor>
+            <dependent idx="15">day</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">streaker</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">dream</governor>
+            <dependent idx="2">streaker</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">dream</governor>
+            <dependent idx="4">wet</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">was</governor>
+            <dependent idx="5">dream</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">be</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">was</governor>
+            <dependent idx="8">be</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">be</governor>
+            <dependent idx="10">TV</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">TV</governor>
+            <dependent idx="11">butt-naked</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="15">day</governor>
+            <dependent idx="13">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">day</governor>
+            <dependent idx="14">rainy</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="10">TV</governor>
+            <dependent idx="15">day</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>personal</word>
+            <lemma>personal</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>best-case</word>
+            <lemma>best-case</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>scenario</word>
+            <lemma>scenario</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ personal) (JJ best-case) (NN scenario)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">scenario</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">scenario</governor>
+            <dependent idx="1">personal</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">scenario</governor>
+            <dependent idx="2">best-case</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">scenario</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">scenario</governor>
+            <dependent idx="1">personal</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">scenario</governor>
+            <dependent idx="2">best-case</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">scenario</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">scenario</governor>
+            <dependent idx="1">personal</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">scenario</governor>
+            <dependent idx="2">best-case</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

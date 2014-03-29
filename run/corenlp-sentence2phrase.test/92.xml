@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>accidentally</word>
+            <lemma>accidentally</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>disabled</word>
+            <lemma>disabled</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="5">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>connection</word>
+            <lemma>connection</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="9">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="11">
+            <word>how</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="12">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="13">
+            <word>bring</word>
+            <lemma>bring</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="14">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="15">
+            <word>back</word>
+            <lemma>back</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="16">
+            <word>!?</word>
+            <lemma>!?</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (VP (ADVP (RB accidentally)) (JJ disabled) (NP (NP (PRP$ my) (NN internet)) (NP (NN connection)))) (CC and) (VP (VBP do) (RB n't) (VP (VB know) (SBAR (WHADVP (WRB how)) (S (VP (TO to) (VP (VB bring) (SBAR (S (NP (PRP it)) (ADVP (RB back)) (VP (VBP !?))))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">disabled</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">disabled</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">disabled</governor>
+            <dependent idx="2">accidentally</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">my</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">disabled</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="6">connection</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">disabled</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">know</governor>
+            <dependent idx="8">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="10">know</governor>
+            <dependent idx="9">n't</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">disabled</governor>
+            <dependent idx="10">know</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="13">bring</governor>
+            <dependent idx="11">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">bring</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">know</governor>
+            <dependent idx="13">bring</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="16">!?</governor>
+            <dependent idx="14">it</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="16">!?</governor>
+            <dependent idx="15">back</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="13">bring</governor>
+            <dependent idx="16">!?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">disabled</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">disabled</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">disabled</governor>
+            <dependent idx="2">accidentally</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">my</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">disabled</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="6">connection</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">know</governor>
+            <dependent idx="8">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="10">know</governor>
+            <dependent idx="9">n't</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">disabled</governor>
+            <dependent idx="10">know</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="13">bring</governor>
+            <dependent idx="11">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">bring</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">know</governor>
+            <dependent idx="13">bring</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="16">!?</governor>
+            <dependent idx="14">it</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="16">!?</governor>
+            <dependent idx="15">back</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="13">bring</governor>
+            <dependent idx="16">!?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">disabled</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">disabled</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">know</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">disabled</governor>
+            <dependent idx="2">accidentally</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">my</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">disabled</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="6">connection</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">know</governor>
+            <dependent idx="8">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="10">know</governor>
+            <dependent idx="9">n't</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">disabled</governor>
+            <dependent idx="10">know</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="13">bring</governor>
+            <dependent idx="11">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">bring</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">know</governor>
+            <dependent idx="13">bring</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="16">!?</governor>
+            <dependent idx="14">it</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="16">!?</governor>
+            <dependent idx="15">back</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="13">bring</governor>
+            <dependent idx="16">!?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>broken</word>
+            <lemma>broken</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>picture</word>
+            <lemma>picture</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>telephone</word>
+            <lemma>telephone</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ broken) (NN picture) (NN telephone)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">telephone</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">telephone</governor>
+            <dependent idx="1">broken</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">telephone</governor>
+            <dependent idx="2">picture</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">telephone</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">telephone</governor>
+            <dependent idx="1">broken</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">telephone</governor>
+            <dependent idx="2">picture</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">telephone</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">telephone</governor>
+            <dependent idx="1">broken</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">telephone</governor>
+            <dependent idx="2">picture</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

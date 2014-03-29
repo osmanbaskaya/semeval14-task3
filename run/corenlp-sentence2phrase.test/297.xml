@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>You</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>cheese</word>
+            <lemma>cheese</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>most</word>
+            <lemma>most</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>game</word>
+            <lemma>game</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>using</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="9">
+            <word>certain</word>
+            <lemma>certain</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>exploits</word>
+            <lemma>exploit</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP You)) (VP (MD can) (VP (NP (NN cheese)) (NP (NP (JJS most)) (PP (IN of) (NP (DT the) (NN game)))) (S (VP (VBG using) (NP (JJ certain) (NNS exploits)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cheese</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">cheese</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">cheese</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">cheese</governor>
+            <dependent idx="4">most</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">most</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">game</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="7">game</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">cheese</governor>
+            <dependent idx="8">using</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">exploits</governor>
+            <dependent idx="9">certain</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">using</governor>
+            <dependent idx="10">exploits</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cheese</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">cheese</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">cheese</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">cheese</governor>
+            <dependent idx="4">most</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">game</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">most</governor>
+            <dependent idx="7">game</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">cheese</governor>
+            <dependent idx="8">using</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">exploits</governor>
+            <dependent idx="9">certain</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">using</governor>
+            <dependent idx="10">exploits</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cheese</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">cheese</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">cheese</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">cheese</governor>
+            <dependent idx="4">most</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">game</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">most</governor>
+            <dependent idx="7">game</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">cheese</governor>
+            <dependent idx="8">using</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">exploits</governor>
+            <dependent idx="9">certain</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">using</governor>
+            <dependent idx="10">exploits</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>banning</word>
+            <lemma>ban</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>cheaters</word>
+            <lemma>cheater</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>online</word>
+            <lemma>online</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>gaming</word>
+            <lemma>gaming</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG banning) (NP (NNS cheaters)) (PP (IN in) (NP (JJ online) (NN gaming)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">banning</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">banning</governor>
+            <dependent idx="2">cheaters</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">banning</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">gaming</governor>
+            <dependent idx="4">online</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="5">gaming</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">banning</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">banning</governor>
+            <dependent idx="2">cheaters</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">gaming</governor>
+            <dependent idx="4">online</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">banning</governor>
+            <dependent idx="5">gaming</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">banning</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">banning</governor>
+            <dependent idx="2">cheaters</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">gaming</governor>
+            <dependent idx="4">online</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">banning</governor>
+            <dependent idx="5">gaming</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="2">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>give</word>
+            <lemma>give</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>me</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>feedback</word>
+            <lemma>feedback</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>make</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="9">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="10">
+            <word>blog</word>
+            <lemma>blog</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>better</word>
+            <lemma>better</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (MD Can) (NP (PRP you)) (VP (VB give) (NP (PRP me)) (NP (DT some) (NN feedback) (S (VP (TO to) (VP (VB make) (S (NP (PRP$ my) (NN blog)) (ADJP (JJR better)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">give</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">give</governor>
+            <dependent idx="1">Can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">give</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="3">give</governor>
+            <dependent idx="4">me</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">feedback</governor>
+            <dependent idx="5">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">give</governor>
+            <dependent idx="6">feedback</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">make</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">feedback</governor>
+            <dependent idx="8">make</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">blog</governor>
+            <dependent idx="9">my</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">better</governor>
+            <dependent idx="10">blog</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">make</governor>
+            <dependent idx="11">better</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">give</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">give</governor>
+            <dependent idx="1">Can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">give</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="3">give</governor>
+            <dependent idx="4">me</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">feedback</governor>
+            <dependent idx="5">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">give</governor>
+            <dependent idx="6">feedback</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">make</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">feedback</governor>
+            <dependent idx="8">make</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">blog</governor>
+            <dependent idx="9">my</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">better</governor>
+            <dependent idx="10">blog</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">make</governor>
+            <dependent idx="11">better</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">give</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">give</governor>
+            <dependent idx="1">Can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">give</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="3">give</governor>
+            <dependent idx="4">me</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">feedback</governor>
+            <dependent idx="5">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">give</governor>
+            <dependent idx="6">feedback</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">make</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">feedback</governor>
+            <dependent idx="8">make</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">blog</governor>
+            <dependent idx="9">my</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">better</governor>
+            <dependent idx="10">blog</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">make</governor>
+            <dependent idx="11">better</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>improvements</word>
+            <lemma>improvement</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="4">
+            <word>blog</word>
+            <lemma>blog</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS improvements)) (PP (TO to) (NP (PRP$ my) (NN blog))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">improvements</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">improvements</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">blog</governor>
+            <dependent idx="3">my</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="4">blog</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">improvements</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">blog</governor>
+            <dependent idx="3">my</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">improvements</governor>
+            <dependent idx="4">blog</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">improvements</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">blog</governor>
+            <dependent idx="3">my</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">improvements</governor>
+            <dependent idx="4">blog</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

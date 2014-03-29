@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>compact</word>
+            <lemma>compact</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>straw</word>
+            <lemma>straw</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="5">
+            <word>vegetable</word>
+            <lemma>vegetable</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>market</word>
+            <lemma>market</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>sits</word>
+            <lemma>sit</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>main</word>
+            <lemma>main</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>crossroads</word>
+            <lemma>crossroads</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT A) (JJ compact) (NN straw)) (CC and) (NP (NN vegetable) (NN market))) (VP (VBZ sits) (PP (IN at) (NP (DT the) (JJ main) (NNS crossroads)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">sits</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">straw</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">straw</governor>
+            <dependent idx="2">compact</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">sits</governor>
+            <dependent idx="3">straw</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">straw</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">market</governor>
+            <dependent idx="5">vegetable</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">straw</governor>
+            <dependent idx="6">market</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">sits</governor>
+            <dependent idx="8">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">crossroads</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">crossroads</governor>
+            <dependent idx="10">main</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">at</governor>
+            <dependent idx="11">crossroads</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">sits</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">straw</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">straw</governor>
+            <dependent idx="2">compact</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">sits</governor>
+            <dependent idx="3">straw</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">market</governor>
+            <dependent idx="5">vegetable</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">straw</governor>
+            <dependent idx="6">market</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">crossroads</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">crossroads</governor>
+            <dependent idx="10">main</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="7">sits</governor>
+            <dependent idx="11">crossroads</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">sits</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">straw</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">straw</governor>
+            <dependent idx="2">compact</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">sits</governor>
+            <dependent idx="3">straw</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">market</governor>
+            <dependent idx="5">vegetable</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">straw</governor>
+            <dependent idx="6">market</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">sits</governor>
+            <dependent idx="6">market</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">crossroads</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">crossroads</governor>
+            <dependent idx="10">main</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="7">sits</governor>
+            <dependent idx="11">crossroads</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>businesses</word>
+            <lemma>business</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>intersection</word>
+            <lemma>intersection</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS businesses)) (PP (IN at) (NP (DT the) (NN intersection))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">businesses</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">businesses</governor>
+            <dependent idx="2">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">intersection</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">at</governor>
+            <dependent idx="4">intersection</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">businesses</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">intersection</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="1">businesses</governor>
+            <dependent idx="4">intersection</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">businesses</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">intersection</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="1">businesses</governor>
+            <dependent idx="4">intersection</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

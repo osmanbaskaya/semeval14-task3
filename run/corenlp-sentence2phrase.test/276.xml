@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Stop</word>
+            <lemma>stop</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>talking</word>
+            <lemma>talk</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>cobblers</word>
+            <lemma>cobbler</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Stop) (NP (VBG talking) (NNS cobblers))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Stop</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">cobblers</governor>
+            <dependent idx="2">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Stop</governor>
+            <dependent idx="3">cobblers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Stop</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">cobblers</governor>
+            <dependent idx="2">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Stop</governor>
+            <dependent idx="3">cobblers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Stop</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">cobblers</governor>
+            <dependent idx="2">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Stop</governor>
+            <dependent idx="3">cobblers</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>talking</word>
+            <lemma>talk</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>nonsense</word>
+            <lemma>nonsense</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG talking) (NP (NN nonsense))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">talking</governor>
+            <dependent idx="2">nonsense</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">talking</governor>
+            <dependent idx="2">nonsense</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">talking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">talking</governor>
+            <dependent idx="2">nonsense</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

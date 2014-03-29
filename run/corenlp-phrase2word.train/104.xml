@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>RBR</POS>
+          </token>
+          <token id="3">
+            <word>reliable</word>
+            <lemma>reliable</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>nation</word>
+            <lemma>nation</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="6">
+            <word>electrical</word>
+            <lemma>electrical</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>system</word>
+            <lemma>system</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>plug</word>
+            <lemma>plug</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT a) (ADJP (RBR more) (JJ reliable))) (NP (NP (NN nation) (POS 's)) (JJ electrical) (NN system))) (NP (NN plug)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">reliable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">reliable</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">reliable</governor>
+            <dependent idx="2">more</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">system</governor>
+            <dependent idx="4">nation</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="4">nation</governor>
+            <dependent idx="5">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">system</governor>
+            <dependent idx="6">electrical</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">reliable</governor>
+            <dependent idx="7">system</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">reliable</governor>
+            <dependent idx="8">plug</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">reliable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">reliable</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">reliable</governor>
+            <dependent idx="2">more</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">system</governor>
+            <dependent idx="4">nation</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">system</governor>
+            <dependent idx="6">electrical</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">reliable</governor>
+            <dependent idx="7">system</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">reliable</governor>
+            <dependent idx="8">plug</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">reliable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">reliable</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">reliable</governor>
+            <dependent idx="2">more</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">system</governor>
+            <dependent idx="4">nation</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">system</governor>
+            <dependent idx="6">electrical</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">reliable</governor>
+            <dependent idx="7">system</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">reliable</governor>
+            <dependent idx="8">plug</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

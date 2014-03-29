@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>entrance</word>
+            <lemma>entrance</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>Raytheon</word>
+            <lemma>Raytheon</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="5">
+            <word>secure</word>
+            <lemma>secure</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>headquarters</word>
+            <lemma>headquarters</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>complex</word>
+            <lemma>complex</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>Waltham</word>
+            <lemma>Waltham</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>entrance</word>
+            <lemma>entrance</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN entrance)) (PP (TO to) (NP (NP (NNP Raytheon) (POS 's)) (JJ secure) (NN headquarters) (NN complex))) (PP (IN in) (NP (NNP Waltham) (NN entrance))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">entrance</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">entrance</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">complex</governor>
+            <dependent idx="3">Raytheon</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="3">Raytheon</governor>
+            <dependent idx="4">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">complex</governor>
+            <dependent idx="5">secure</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">complex</governor>
+            <dependent idx="6">headquarters</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="7">complex</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">entrance</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">entrance</governor>
+            <dependent idx="9">Waltham</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="10">entrance</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">entrance</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">complex</governor>
+            <dependent idx="3">Raytheon</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">complex</governor>
+            <dependent idx="5">secure</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">complex</governor>
+            <dependent idx="6">headquarters</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">entrance</governor>
+            <dependent idx="7">complex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">entrance</governor>
+            <dependent idx="9">Waltham</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">entrance</governor>
+            <dependent idx="10">entrance</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">entrance</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">complex</governor>
+            <dependent idx="3">Raytheon</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">complex</governor>
+            <dependent idx="5">secure</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">complex</governor>
+            <dependent idx="6">headquarters</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">entrance</governor>
+            <dependent idx="7">complex</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">entrance</governor>
+            <dependent idx="9">Waltham</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">entrance</governor>
+            <dependent idx="10">entrance</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

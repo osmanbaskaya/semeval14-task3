@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>We</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>clambaked</word>
+            <lemma>clambake</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>car</word>
+            <lemma>car</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>last</word>
+            <lemma>last</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>night</word>
+            <lemma>night</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>!</word>
+            <lemma>!</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP We)) (VP (VBD clambaked) (NP (DT the) (NN car)) (NP-TMP (JJ last) (NN night))) (. !))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">clambaked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">car</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="4">car</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">night</governor>
+            <dependent idx="5">last</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="6">night</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">clambaked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">car</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="4">car</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">night</governor>
+            <dependent idx="5">last</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="6">night</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">clambaked</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">car</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="4">car</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">night</governor>
+            <dependent idx="5">last</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="2">clambaked</governor>
+            <dependent idx="6">night</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>burned</word>
+            <lemma>burn</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>tyre</word>
+            <lemma>tyre</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>rubber</word>
+            <lemma>rubber</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN burned) (NP (NN tyre) (NN rubber)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">burned</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">rubber</governor>
+            <dependent idx="2">tyre</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">burned</governor>
+            <dependent idx="3">rubber</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">burned</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">rubber</governor>
+            <dependent idx="2">tyre</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">burned</governor>
+            <dependent idx="3">rubber</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">burned</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">rubber</governor>
+            <dependent idx="2">tyre</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">burned</governor>
+            <dependent idx="3">rubber</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

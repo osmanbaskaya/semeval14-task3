@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Map</word>
+            <lemma>map</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Lusatias</word>
+            <lemma>Lusatias</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="5">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Sorbian</word>
+            <lemma>sorbian</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>languages</word>
+            <lemma>language</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="9">
+            <word>German</word>
+            <lemma>german</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>names</word>
+            <lemma>name</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>hand-written</word>
+            <lemma>hand-written</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN Map)) (PP (IN of) (NP (NP (DT the) (NNPS Lusatias)) (PP (IN with) (NP (NP (JJ Sorbian) (NNS languages)) (CC and) (NP (JJ German) (NNS names))))))) (ADJP (JJ hand-written)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">hand-written</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="11">hand-written</governor>
+            <dependent idx="1">Map</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Map</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Lusatias</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="4">Lusatias</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">Lusatias</governor>
+            <dependent idx="5">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">languages</governor>
+            <dependent idx="6">Sorbian</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">with</governor>
+            <dependent idx="7">languages</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">languages</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">names</governor>
+            <dependent idx="9">German</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">languages</governor>
+            <dependent idx="10">names</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">hand-written</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="11">hand-written</governor>
+            <dependent idx="1">Map</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Lusatias</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Map</governor>
+            <dependent idx="4">Lusatias</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">languages</governor>
+            <dependent idx="6">Sorbian</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">Lusatias</governor>
+            <dependent idx="7">languages</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">names</governor>
+            <dependent idx="9">German</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">languages</governor>
+            <dependent idx="10">names</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">hand-written</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="11">hand-written</governor>
+            <dependent idx="1">Map</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Lusatias</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Map</governor>
+            <dependent idx="4">Lusatias</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">languages</governor>
+            <dependent idx="6">Sorbian</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">Lusatias</governor>
+            <dependent idx="7">languages</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">names</governor>
+            <dependent idx="9">German</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">Lusatias</governor>
+            <dependent idx="10">names</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">languages</governor>
+            <dependent idx="10">names</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

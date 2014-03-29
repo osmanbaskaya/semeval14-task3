@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>broken</word>
+            <lemma>broken</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>window</word>
+            <lemma>window</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="5">
+            <word>overturned</word>
+            <lemma>overturn</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="6">
+            <word>plant</word>
+            <lemma>plant</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>pots</word>
+            <lemma>pot</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>were</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>tip-off</word>
+            <lemma>tip-off</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="12">
+            <word>something</word>
+            <lemma>something</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="14">
+            <word>wrong</word>
+            <lemma>wrong</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (JJ broken) (NN window)) (ADVP (CC and)) (VP (VBD overturned) (SBAR (S (NP (NN plant) (NNS pots)) (VP (VBD were) (NP (NP (DT a) (NN tip-off)) (SBAR (WHNP (WDT that)) (S (NP (NN something)) (VP (VBD was) (ADJP (JJ wrong)))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">overturned</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">window</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">window</governor>
+            <dependent idx="2">broken</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">overturned</governor>
+            <dependent idx="3">window</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">overturned</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">pots</governor>
+            <dependent idx="6">plant</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="7">pots</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="8">were</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">overturned</governor>
+            <dependent idx="10">tip-off</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">wrong</governor>
+            <dependent idx="11">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">wrong</governor>
+            <dependent idx="12">something</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">wrong</governor>
+            <dependent idx="13">was</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="14">wrong</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">overturned</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">window</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">window</governor>
+            <dependent idx="2">broken</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">overturned</governor>
+            <dependent idx="3">window</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">overturned</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">pots</governor>
+            <dependent idx="6">plant</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="7">pots</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="8">were</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">overturned</governor>
+            <dependent idx="10">tip-off</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">wrong</governor>
+            <dependent idx="11">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">wrong</governor>
+            <dependent idx="12">something</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">wrong</governor>
+            <dependent idx="13">was</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="14">wrong</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">overturned</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">window</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">window</governor>
+            <dependent idx="2">broken</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">overturned</governor>
+            <dependent idx="3">window</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">overturned</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">pots</governor>
+            <dependent idx="6">plant</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="7">pots</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="8">were</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="5">overturned</governor>
+            <dependent idx="10">tip-off</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">wrong</governor>
+            <dependent idx="11">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">wrong</governor>
+            <dependent idx="12">something</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">wrong</governor>
+            <dependent idx="13">was</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">tip-off</governor>
+            <dependent idx="14">wrong</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>hints</word>
+            <lemma>hint</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>break-in</word>
+            <lemma>break-in</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS hints)) (PP (IN of) (NP (DT a) (NN break-in))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hints</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">hints</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">break-in</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="4">break-in</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hints</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">break-in</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">hints</governor>
+            <dependent idx="4">break-in</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hints</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">break-in</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">hints</governor>
+            <dependent idx="4">break-in</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

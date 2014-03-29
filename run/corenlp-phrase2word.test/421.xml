@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>described</word>
+            <lemma>describe</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>number</word>
+            <lemma>number</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>separating</word>
+            <lemma>separate</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>higher</word>
+            <lemma>higher</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="8">
+            <word>half</word>
+            <lemma>half</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>sample</word>
+            <lemma>sample</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>quarter</word>
+            <lemma>quarter</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN described) (PP (IN as) (NP (NP (DT the) (NN number)) (VP (VBG separating) (NP (NP (DT the) (JJR higher) (NN half)) (PP (IN of) (NP (DT a) (NN sample) (NN quarter))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">described</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">described</governor>
+            <dependent idx="2">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">number</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">as</governor>
+            <dependent idx="4">number</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">number</governor>
+            <dependent idx="5">separating</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">half</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">half</governor>
+            <dependent idx="7">higher</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">separating</governor>
+            <dependent idx="8">half</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">half</governor>
+            <dependent idx="9">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">quarter</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">quarter</governor>
+            <dependent idx="11">sample</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">of</governor>
+            <dependent idx="12">quarter</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">described</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">number</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="1">described</governor>
+            <dependent idx="4">number</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">number</governor>
+            <dependent idx="5">separating</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">half</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">half</governor>
+            <dependent idx="7">higher</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">separating</governor>
+            <dependent idx="8">half</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">quarter</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">quarter</governor>
+            <dependent idx="11">sample</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">half</governor>
+            <dependent idx="12">quarter</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">described</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">number</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="1">described</governor>
+            <dependent idx="4">number</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">number</governor>
+            <dependent idx="5">separating</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">half</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">half</governor>
+            <dependent idx="7">higher</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">separating</governor>
+            <dependent idx="8">half</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">quarter</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">quarter</governor>
+            <dependent idx="11">sample</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">half</governor>
+            <dependent idx="12">quarter</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

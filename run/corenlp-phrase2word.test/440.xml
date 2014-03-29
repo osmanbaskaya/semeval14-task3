@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>collection</word>
+            <lemma>collection</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>inter-breeding</word>
+            <lemma>inter-breeding</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>organisms</word>
+            <lemma>organism</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>particular</word>
+            <lemma>particular</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>species</word>
+            <lemma>species</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>salt</word>
+            <lemma>salt</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN collection)) (PP (IN of) (NP (JJ inter-breeding) (NNS organisms))) (PP (IN of) (NP (DT a) (JJ particular) (NNS species) (NN salt))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">collection</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">collection</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">collection</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">organisms</governor>
+            <dependent idx="4">inter-breeding</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">organisms</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">collection</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">salt</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">salt</governor>
+            <dependent idx="8">particular</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">salt</governor>
+            <dependent idx="9">species</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="10">salt</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">collection</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">collection</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">organisms</governor>
+            <dependent idx="4">inter-breeding</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">collection</governor>
+            <dependent idx="5">organisms</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">salt</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">salt</governor>
+            <dependent idx="8">particular</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">salt</governor>
+            <dependent idx="9">species</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">collection</governor>
+            <dependent idx="10">salt</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">collection</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">collection</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">organisms</governor>
+            <dependent idx="4">inter-breeding</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">collection</governor>
+            <dependent idx="5">organisms</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">salt</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">salt</governor>
+            <dependent idx="8">particular</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">salt</governor>
+            <dependent idx="9">species</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">collection</governor>
+            <dependent idx="10">salt</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

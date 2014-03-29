@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>removing</word>
+            <lemma>remove</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>moisture</word>
+            <lemma>moisture</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>refrigerator</word>
+            <lemma>refrigerator</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>dehydration</word>
+            <lemma>dehydration</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG removing) (NP (NN moisture)) (PP (IN from) (NP (NN refrigerator) (NN dehydration)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">removing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">removing</governor>
+            <dependent idx="2">moisture</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">removing</governor>
+            <dependent idx="3">from</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">dehydration</governor>
+            <dependent idx="4">refrigerator</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">from</governor>
+            <dependent idx="5">dehydration</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">removing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">removing</governor>
+            <dependent idx="2">moisture</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">dehydration</governor>
+            <dependent idx="4">refrigerator</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="1">removing</governor>
+            <dependent idx="5">dehydration</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">removing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">removing</governor>
+            <dependent idx="2">moisture</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">dehydration</governor>
+            <dependent idx="4">refrigerator</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="1">removing</governor>
+            <dependent idx="5">dehydration</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

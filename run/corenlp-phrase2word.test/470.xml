@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>physician</word>
+            <lemma>physician</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="4">
+            <word>specializes</word>
+            <lemma>specialize</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>psychiatry</word>
+            <lemma>psychiatry</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="9">
+            <word>certified</word>
+            <lemma>certify</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="10">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>treating</word>
+            <lemma>treat</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="12">
+            <word>mental</word>
+            <lemma>mental</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>disorders</word>
+            <lemma>disorder</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>episode</word>
+            <lemma>episode</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (NN physician)) (SBAR (WHNP (WP who)) (S (VP (VP (VBZ specializes) (PP (IN in) (NP (NN psychiatry)))) (CC and) (VP (VBZ is) (VP (VBN certified) (PP (IN in) (S (VP (VBG treating) (NP (JJ mental) (NNS disorders) (NN episode))))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">physician</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">physician</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">specializes</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">physician</governor>
+            <dependent idx="4">specializes</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">specializes</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="6">psychiatry</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">specializes</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">certified</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">specializes</governor>
+            <dependent idx="9">certified</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">certified</governor>
+            <dependent idx="10">in</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="10">in</governor>
+            <dependent idx="11">treating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">episode</governor>
+            <dependent idx="12">mental</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">episode</governor>
+            <dependent idx="13">disorders</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">treating</governor>
+            <dependent idx="14">episode</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">physician</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">physician</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">specializes</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">physician</governor>
+            <dependent idx="4">specializes</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">specializes</governor>
+            <dependent idx="6">psychiatry</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">certified</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">specializes</governor>
+            <dependent idx="9">certified</dependent>
+          </dep>
+          <dep type="prepc_in">
+            <governor idx="9">certified</governor>
+            <dependent idx="11">treating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">episode</governor>
+            <dependent idx="12">mental</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">episode</governor>
+            <dependent idx="13">disorders</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">treating</governor>
+            <dependent idx="14">episode</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">physician</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">physician</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">specializes</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">certified</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">physician</governor>
+            <dependent idx="4">specializes</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">specializes</governor>
+            <dependent idx="6">psychiatry</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">certified</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">physician</governor>
+            <dependent idx="9">certified</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">specializes</governor>
+            <dependent idx="9">certified</dependent>
+          </dep>
+          <dep type="prepc_in">
+            <governor idx="9">certified</governor>
+            <dependent idx="11">treating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">episode</governor>
+            <dependent idx="12">mental</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">episode</governor>
+            <dependent idx="13">disorders</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">treating</governor>
+            <dependent idx="14">episode</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

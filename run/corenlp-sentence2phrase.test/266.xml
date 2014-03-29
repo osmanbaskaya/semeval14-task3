@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>We</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>blew</word>
+            <lemma>blow</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="3">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>opportunity</word>
+            <lemma>opportunity</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>benign</word>
+            <lemma>benign</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>corporate</word>
+            <lemma>corporate</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>sponsorship</word>
+            <lemma>sponsorship</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP We)) (VP (VBD blew) (NP (DT an) (NN opportunity) (S (VP (TO to) (VP (VB get) (NP (JJ benign) (JJ corporate) (NN sponsorship))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">blew</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">blew</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">opportunity</governor>
+            <dependent idx="3">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">blew</governor>
+            <dependent idx="4">opportunity</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">get</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">opportunity</governor>
+            <dependent idx="6">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">sponsorship</governor>
+            <dependent idx="7">benign</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">sponsorship</governor>
+            <dependent idx="8">corporate</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">get</governor>
+            <dependent idx="9">sponsorship</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">blew</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">blew</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">opportunity</governor>
+            <dependent idx="3">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">blew</governor>
+            <dependent idx="4">opportunity</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">get</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">opportunity</governor>
+            <dependent idx="6">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">sponsorship</governor>
+            <dependent idx="7">benign</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">sponsorship</governor>
+            <dependent idx="8">corporate</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">get</governor>
+            <dependent idx="9">sponsorship</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">blew</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">blew</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">opportunity</governor>
+            <dependent idx="3">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">blew</governor>
+            <dependent idx="4">opportunity</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">get</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">opportunity</governor>
+            <dependent idx="6">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">sponsorship</governor>
+            <dependent idx="7">benign</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">sponsorship</governor>
+            <dependent idx="8">corporate</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">get</governor>
+            <dependent idx="9">sponsorship</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>ruined</word>
+            <lemma>ruin</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>opportunities</word>
+            <lemma>opportunity</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN ruined) (NP (NNS opportunities)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ruined</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">ruined</governor>
+            <dependent idx="2">opportunities</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ruined</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">ruined</governor>
+            <dependent idx="2">opportunities</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ruined</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">ruined</governor>
+            <dependent idx="2">opportunities</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

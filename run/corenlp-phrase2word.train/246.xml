@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Charles</word>
+            <lemma>Charles</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Fletcher</word>
+            <lemma>Fletcher</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Johnson</word>
+            <lemma>Johnson</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>served</word>
+            <lemma>serve</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="5">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>4th</word>
+            <lemma>4th</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>mayor</word>
+            <lemma>mayor</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>1893</word>
+            <lemma>1893</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>mayor</word>
+            <lemma>mayor</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Charles) (NNP Fletcher) (NNP Johnson)) (VP (VBD served) (PP (IN as) (NP (DT the) (JJ 4th) (NN mayor))) (PP (IN in) (NP (CD 1893) (NN mayor)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">served</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Johnson</governor>
+            <dependent idx="1">Charles</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Johnson</governor>
+            <dependent idx="2">Fletcher</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">served</governor>
+            <dependent idx="3">Johnson</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">served</governor>
+            <dependent idx="5">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">mayor</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">mayor</governor>
+            <dependent idx="7">4th</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">as</governor>
+            <dependent idx="8">mayor</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">served</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">mayor</governor>
+            <dependent idx="10">1893</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="11">mayor</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">served</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Johnson</governor>
+            <dependent idx="1">Charles</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Johnson</governor>
+            <dependent idx="2">Fletcher</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">served</governor>
+            <dependent idx="3">Johnson</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">mayor</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">mayor</governor>
+            <dependent idx="7">4th</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="4">served</governor>
+            <dependent idx="8">mayor</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">mayor</governor>
+            <dependent idx="10">1893</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">served</governor>
+            <dependent idx="11">mayor</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">served</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Johnson</governor>
+            <dependent idx="1">Charles</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Johnson</governor>
+            <dependent idx="2">Fletcher</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">served</governor>
+            <dependent idx="3">Johnson</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">mayor</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">mayor</governor>
+            <dependent idx="7">4th</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="4">served</governor>
+            <dependent idx="8">mayor</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">mayor</governor>
+            <dependent idx="10">1893</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">served</governor>
+            <dependent idx="11">mayor</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

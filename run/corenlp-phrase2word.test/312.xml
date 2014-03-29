@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>villagers</word>
+            <lemma>villager</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>waiting</word>
+            <lemma>wait</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>open-air</word>
+            <lemma>open-air</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>show</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="8">
+            <word>drive-in</word>
+            <lemma>drive-in</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNS villagers)) (VP (VBG waiting) (PP (IN for) (NP (DT an) (JJ open-air) (NN film))))) (VP (VBP show) (NP (NN drive-in))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">show</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">show</governor>
+            <dependent idx="1">villagers</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">villagers</governor>
+            <dependent idx="2">waiting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">waiting</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">film</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">film</governor>
+            <dependent idx="5">open-air</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">for</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">show</governor>
+            <dependent idx="8">drive-in</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">show</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">show</governor>
+            <dependent idx="1">villagers</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">villagers</governor>
+            <dependent idx="2">waiting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">film</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">film</governor>
+            <dependent idx="5">open-air</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">waiting</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">show</governor>
+            <dependent idx="8">drive-in</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">show</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">show</governor>
+            <dependent idx="1">villagers</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">villagers</governor>
+            <dependent idx="2">waiting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">film</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">film</governor>
+            <dependent idx="5">open-air</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">waiting</governor>
+            <dependent idx="6">film</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">show</governor>
+            <dependent idx="8">drive-in</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

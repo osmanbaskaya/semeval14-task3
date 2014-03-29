@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="2">
+            <word>www.listia.com</word>
+            <lemma>www.listia.com</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>scam</word>
+            <lemma>scam</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="8">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="9">
+            <word>really</word>
+            <lemma>really</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>stuff</word>
+            <lemma>stuff</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="14">
+            <word>win</word>
+            <lemma>win</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="15">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (SQ (VBZ is) (NP (NNP www.listia.com) (DT a) (NN scam))) (, ,) (CC or) (SQ (VB do) (NP (PRP you)) (VP (ADVP (RB really)) (VB get) (NP (NP (DT the) (NN stuff)) (SBAR (S (NP (PRP you)) (VP (VB win))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">is</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">scam</governor>
+            <dependent idx="2">www.listia.com</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">scam</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">is</governor>
+            <dependent idx="4">scam</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">is</governor>
+            <dependent idx="6">or</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">get</governor>
+            <dependent idx="7">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">get</governor>
+            <dependent idx="8">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">get</governor>
+            <dependent idx="9">really</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">is</governor>
+            <dependent idx="10">get</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">stuff</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">get</governor>
+            <dependent idx="12">stuff</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">win</governor>
+            <dependent idx="13">you</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="12">stuff</governor>
+            <dependent idx="14">win</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">is</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">scam</governor>
+            <dependent idx="2">www.listia.com</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">scam</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">is</governor>
+            <dependent idx="4">scam</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">get</governor>
+            <dependent idx="7">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">get</governor>
+            <dependent idx="8">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">get</governor>
+            <dependent idx="9">really</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">is</governor>
+            <dependent idx="10">get</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">stuff</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">get</governor>
+            <dependent idx="12">stuff</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">win</governor>
+            <dependent idx="13">you</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="12">stuff</governor>
+            <dependent idx="14">win</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">is</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">scam</governor>
+            <dependent idx="2">www.listia.com</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">scam</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">is</governor>
+            <dependent idx="4">scam</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">get</governor>
+            <dependent idx="7">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">get</governor>
+            <dependent idx="8">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">get</governor>
+            <dependent idx="9">really</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">is</governor>
+            <dependent idx="10">get</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">stuff</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">get</governor>
+            <dependent idx="12">stuff</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">win</governor>
+            <dependent idx="13">you</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="12">stuff</governor>
+            <dependent idx="14">win</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>taking</word>
+            <lemma>take</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>forever</word>
+            <lemma>forever</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>load</word>
+            <lemma>load</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG taking) (ADVP (RB forever)) (PP (TO to) (NP (NN load)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">taking</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">taking</governor>
+            <dependent idx="2">forever</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">taking</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">to</governor>
+            <dependent idx="4">load</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">taking</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">taking</governor>
+            <dependent idx="2">forever</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">taking</governor>
+            <dependent idx="4">load</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">taking</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">taking</governor>
+            <dependent idx="2">forever</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">taking</governor>
+            <dependent idx="4">load</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

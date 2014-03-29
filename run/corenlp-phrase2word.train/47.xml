@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>cost</word>
+            <lemma>cost</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>doing</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>business</word>
+            <lemma>business</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>expenses</word>
+            <lemma>expense</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN cost)) (PP (IN of) (S (VP (VBG doing) (NP (NN business) (NNS expenses))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cost</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">cost</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">of</governor>
+            <dependent idx="3">doing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">expenses</governor>
+            <dependent idx="4">business</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">doing</governor>
+            <dependent idx="5">expenses</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cost</dependent>
+          </dep>
+          <dep type="prepc_of">
+            <governor idx="1">cost</governor>
+            <dependent idx="3">doing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">expenses</governor>
+            <dependent idx="4">business</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">doing</governor>
+            <dependent idx="5">expenses</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cost</dependent>
+          </dep>
+          <dep type="prepc_of">
+            <governor idx="1">cost</governor>
+            <dependent idx="3">doing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">expenses</governor>
+            <dependent idx="4">business</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">doing</governor>
+            <dependent idx="5">expenses</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Telephone</word>
+            <lemma>Telephone</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Directory</word>
+            <lemma>Directory</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>business</word>
+            <lemma>business</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>residence</word>
+            <lemma>residence</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>listings</word>
+            <lemma>listing</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>Yellow</word>
+            <lemma>Yellow</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Pages</word>
+            <lemma>Pages</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NNP Telephone) (NNP Directory)) (PRN (, ,) (PP (IN with) (NP (NP (NN business) (CC and) (NN residence)) (NNS listings)))) (NP (NNP Yellow) (NNP Pages)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Directory</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Directory</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Directory</governor>
+            <dependent idx="2">Telephone</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Directory</governor>
+            <dependent idx="5">with</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">listings</governor>
+            <dependent idx="6">business</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">business</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">business</governor>
+            <dependent idx="8">residence</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">with</governor>
+            <dependent idx="9">listings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pages</governor>
+            <dependent idx="10">Yellow</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Directory</governor>
+            <dependent idx="11">Pages</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Directory</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Directory</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Directory</governor>
+            <dependent idx="2">Telephone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">listings</governor>
+            <dependent idx="6">business</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">business</governor>
+            <dependent idx="8">residence</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">Directory</governor>
+            <dependent idx="9">listings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pages</governor>
+            <dependent idx="10">Yellow</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Directory</governor>
+            <dependent idx="11">Pages</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Directory</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Directory</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Directory</governor>
+            <dependent idx="2">Telephone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">listings</governor>
+            <dependent idx="6">business</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">business</governor>
+            <dependent idx="8">residence</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">listings</governor>
+            <dependent idx="8">residence</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">Directory</governor>
+            <dependent idx="9">listings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pages</governor>
+            <dependent idx="10">Yellow</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Directory</governor>
+            <dependent idx="11">Pages</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

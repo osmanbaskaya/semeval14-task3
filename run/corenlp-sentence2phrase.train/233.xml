@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>course</word>
+            <lemma>course</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>inform</word>
+            <lemma>inform</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>President</word>
+            <lemma>President</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>what</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="12">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="13">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="14">
+            <word>said</word>
+            <lemma>say</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (MD will) (, ,) (PP (IN of) (NP (NN course))) (, ,) (VP (VBP inform) (NP (NP (DT the) (NNP President)) (PP (IN of) (SBAR (WHNP (WP what)) (S (NP (PRP you)) (VP (VBP have) (VP (VBN said))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">inform</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">inform</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">inform</governor>
+            <dependent idx="2">will</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">inform</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="5">course</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">President</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">inform</governor>
+            <dependent idx="9">President</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">President</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">said</governor>
+            <dependent idx="11">what</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">said</governor>
+            <dependent idx="12">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="14">said</governor>
+            <dependent idx="13">have</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="10">of</governor>
+            <dependent idx="14">said</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">inform</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">inform</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">inform</governor>
+            <dependent idx="2">will</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">inform</governor>
+            <dependent idx="5">course</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">President</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">inform</governor>
+            <dependent idx="9">President</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">said</governor>
+            <dependent idx="11">what</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">said</governor>
+            <dependent idx="12">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="14">said</governor>
+            <dependent idx="13">have</dependent>
+          </dep>
+          <dep type="prepc_of">
+            <governor idx="9">President</governor>
+            <dependent idx="14">said</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">inform</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">inform</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">inform</governor>
+            <dependent idx="2">will</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">inform</governor>
+            <dependent idx="5">course</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">President</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">inform</governor>
+            <dependent idx="9">President</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">said</governor>
+            <dependent idx="11">what</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">said</governor>
+            <dependent idx="12">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="14">said</governor>
+            <dependent idx="13">have</dependent>
+          </dep>
+          <dep type="prepc_of">
+            <governor idx="9">President</governor>
+            <dependent idx="14">said</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>espionage</word>
+            <lemma>espionage</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>within</word>
+            <lemma>within</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>government</word>
+            <lemma>government</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN espionage)) (PP (IN within) (NP (NN government))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">espionage</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">espionage</governor>
+            <dependent idx="2">within</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">within</governor>
+            <dependent idx="3">government</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">espionage</dependent>
+          </dep>
+          <dep type="prep_within">
+            <governor idx="1">espionage</governor>
+            <dependent idx="3">government</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">espionage</dependent>
+          </dep>
+          <dep type="prep_within">
+            <governor idx="1">espionage</governor>
+            <dependent idx="3">government</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

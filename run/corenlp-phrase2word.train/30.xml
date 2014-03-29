@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>contract</word>
+            <lemma>contract</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>employees</word>
+            <lemma>employee</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>CIA</word>
+            <lemma>CIA</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>inquire</word>
+            <lemma>inquire</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN contract) (NNS employees)) (PP (IN of) (NP (DT the) (NNP CIA) (NN inquire))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">employees</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">employees</governor>
+            <dependent idx="1">contract</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">employees</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">inquire</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">inquire</governor>
+            <dependent idx="5">CIA</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="6">inquire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">employees</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">employees</governor>
+            <dependent idx="1">contract</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">inquire</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">inquire</governor>
+            <dependent idx="5">CIA</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">employees</governor>
+            <dependent idx="6">inquire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">employees</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">employees</governor>
+            <dependent idx="1">contract</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">inquire</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">inquire</governor>
+            <dependent idx="5">CIA</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">employees</governor>
+            <dependent idx="6">inquire</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

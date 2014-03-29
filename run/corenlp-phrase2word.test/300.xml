@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>cutting</word>
+            <lemma>cut</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>edge</word>
+            <lemma>edge</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (PP (IN on) (NP (NP (DT the) (VBG cutting) (NN edge)) (ADJP (JJ new))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">edge</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">edge</governor>
+            <dependent idx="3">cutting</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">on</governor>
+            <dependent idx="4">edge</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">edge</governor>
+            <dependent idx="5">new</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">edge</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">edge</governor>
+            <dependent idx="3">cutting</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">on</governor>
+            <dependent idx="4">edge</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">edge</governor>
+            <dependent idx="5">new</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">edge</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">edge</governor>
+            <dependent idx="3">cutting</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">on</governor>
+            <dependent idx="4">edge</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">edge</governor>
+            <dependent idx="5">new</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

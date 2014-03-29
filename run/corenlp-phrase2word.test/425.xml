@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>form</word>
+            <lemma>form</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>jet</word>
+            <lemma>jet</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>engine</word>
+            <lemma>engine</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="7">
+            <word>contains</word>
+            <lemma>contain</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>major</word>
+            <lemma>major</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>moving</word>
+            <lemma>move</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="11">
+            <word>parts</word>
+            <lemma>part</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>politician</word>
+            <lemma>politician</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NN form)) (PP (IN of) (NP (NP (NN jet) (NN engine)) (SBAR (WHNP (WDT that)) (S (VP (VBZ contains) (NP (DT no) (JJ major)) (S (VP (VBG moving) (NP (NNS parts) (NN politician))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">form</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">engine</governor>
+            <dependent idx="4">jet</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">engine</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">contains</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">engine</governor>
+            <dependent idx="7">contains</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">major</governor>
+            <dependent idx="8">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">contains</governor>
+            <dependent idx="9">major</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">contains</governor>
+            <dependent idx="10">moving</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">politician</governor>
+            <dependent idx="11">parts</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">moving</governor>
+            <dependent idx="12">politician</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">engine</governor>
+            <dependent idx="4">jet</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">form</governor>
+            <dependent idx="5">engine</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">contains</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">engine</governor>
+            <dependent idx="7">contains</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">major</governor>
+            <dependent idx="8">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">contains</governor>
+            <dependent idx="9">major</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">contains</governor>
+            <dependent idx="10">moving</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">politician</governor>
+            <dependent idx="11">parts</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">moving</governor>
+            <dependent idx="12">politician</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">engine</governor>
+            <dependent idx="4">jet</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">form</governor>
+            <dependent idx="5">engine</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">contains</governor>
+            <dependent idx="6">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">engine</governor>
+            <dependent idx="7">contains</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">major</governor>
+            <dependent idx="8">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">contains</governor>
+            <dependent idx="9">major</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="7">contains</governor>
+            <dependent idx="10">moving</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">politician</governor>
+            <dependent idx="11">parts</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">moving</governor>
+            <dependent idx="12">politician</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

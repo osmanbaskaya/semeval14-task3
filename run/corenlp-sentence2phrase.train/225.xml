@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Suggest</word>
+            <lemma>suggest</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>me</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>wireless</word>
+            <lemma>wireless</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>connection</word>
+            <lemma>connection</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>unlimited</word>
+            <lemma>unlimited</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>usage</word>
+            <lemma>usage</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (VP (VB Suggest) (S (NP (PRP me)) (NP (NP (DT a) (JJ good) (JJ wireless) (NN internet) (NN connection)) (PP (IN with) (NP (JJ unlimited) (NN usage)))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Suggest</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">connection</governor>
+            <dependent idx="2">me</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">connection</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">connection</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">connection</governor>
+            <dependent idx="5">wireless</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">connection</governor>
+            <dependent idx="6">internet</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Suggest</governor>
+            <dependent idx="7">connection</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">connection</governor>
+            <dependent idx="8">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">usage</governor>
+            <dependent idx="9">unlimited</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">with</governor>
+            <dependent idx="10">usage</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Suggest</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">connection</governor>
+            <dependent idx="2">me</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">connection</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">connection</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">connection</governor>
+            <dependent idx="5">wireless</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">connection</governor>
+            <dependent idx="6">internet</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Suggest</governor>
+            <dependent idx="7">connection</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">usage</governor>
+            <dependent idx="9">unlimited</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">connection</governor>
+            <dependent idx="10">usage</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Suggest</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">connection</governor>
+            <dependent idx="2">me</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">connection</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">connection</governor>
+            <dependent idx="4">good</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">connection</governor>
+            <dependent idx="5">wireless</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">connection</governor>
+            <dependent idx="6">internet</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Suggest</governor>
+            <dependent idx="7">connection</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">usage</governor>
+            <dependent idx="9">unlimited</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="7">connection</governor>
+            <dependent idx="10">usage</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>unlimited</word>
+            <lemma>unlimited</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>wireless</word>
+            <lemma>wireless</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>provider</word>
+            <lemma>provider</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ unlimited) (JJ wireless) (NN internet)) (NP (NN provider)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">internet</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">internet</governor>
+            <dependent idx="1">unlimited</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">internet</governor>
+            <dependent idx="2">wireless</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">internet</governor>
+            <dependent idx="4">provider</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">internet</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">internet</governor>
+            <dependent idx="1">unlimited</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">internet</governor>
+            <dependent idx="2">wireless</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">internet</governor>
+            <dependent idx="4">provider</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">internet</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">internet</governor>
+            <dependent idx="1">unlimited</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">internet</governor>
+            <dependent idx="2">wireless</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">internet</governor>
+            <dependent idx="4">provider</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

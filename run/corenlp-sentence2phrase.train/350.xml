@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>NATO</word>
+            <lemma>NATO</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>war</word>
+            <lemma>war</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>destroyed</word>
+            <lemma>destroy</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="5">
+            <word>too</word>
+            <lemma>too</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>much</word>
+            <lemma>much</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>left</word>
+            <lemma>leave</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="9">
+            <word>too</word>
+            <lemma>too</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>much</word>
+            <lemma>much</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>suffering</word>
+            <lemma>suffering</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="14">
+            <word>wake</word>
+            <lemma>wake</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNP NATO) (NN war)) (VP (VP (VBD destroyed) (ADJP (RB too) (JJ much))) (CC and) (VP (VBD left) (NP (ADJP (RB too) (JJ much)) (NN suffering)) (PP (IN in) (NP (PRP$ its) (NN wake))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">destroyed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">war</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">war</governor>
+            <dependent idx="2">NATO</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="3">war</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">much</governor>
+            <dependent idx="5">too</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="6">much</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="8">left</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">much</governor>
+            <dependent idx="9">too</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">suffering</governor>
+            <dependent idx="10">much</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">left</governor>
+            <dependent idx="11">suffering</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">left</governor>
+            <dependent idx="12">in</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">wake</governor>
+            <dependent idx="13">its</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">in</governor>
+            <dependent idx="14">wake</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">destroyed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">war</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">war</governor>
+            <dependent idx="2">NATO</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="3">war</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">much</governor>
+            <dependent idx="5">too</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="6">much</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="8">left</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">much</governor>
+            <dependent idx="9">too</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">suffering</governor>
+            <dependent idx="10">much</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">left</governor>
+            <dependent idx="11">suffering</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">wake</governor>
+            <dependent idx="13">its</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">left</governor>
+            <dependent idx="14">wake</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">destroyed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">war</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">war</governor>
+            <dependent idx="2">NATO</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="3">war</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">left</governor>
+            <dependent idx="3">war</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">much</governor>
+            <dependent idx="5">too</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="6">much</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">destroyed</governor>
+            <dependent idx="8">left</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">much</governor>
+            <dependent idx="9">too</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">suffering</governor>
+            <dependent idx="10">much</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">left</governor>
+            <dependent idx="11">suffering</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">wake</governor>
+            <dependent idx="13">its</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">left</governor>
+            <dependent idx="14">wake</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>gigantic</word>
+            <lemma>gigantic</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>finance</word>
+            <lemma>finance</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>pumps</word>
+            <lemma>pump</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ gigantic) (NN finance) (NNS pumps))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">pumps</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">pumps</governor>
+            <dependent idx="1">gigantic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">pumps</governor>
+            <dependent idx="2">finance</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">pumps</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">pumps</governor>
+            <dependent idx="1">gigantic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">pumps</governor>
+            <dependent idx="2">finance</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">pumps</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">pumps</governor>
+            <dependent idx="1">gigantic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">pumps</governor>
+            <dependent idx="2">finance</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

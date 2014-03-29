@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>example</word>
+            <lemma>example</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Poblenou</word>
+            <lemma>Poblenou</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="6">
+            <word>fading</word>
+            <lemma>fading</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>industrial</word>
+            <lemma>industrial</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>heritage</word>
+            <lemma>heritage</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>Carrer</word>
+            <lemma>Carrer</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>de</word>
+            <lemma>de</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>Pujades</word>
+            <lemma>Pujades</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT an) (NN example)) (PP (IN of) (NP (NP (NNP Poblenou) (POS 's)) (JJ fading) (JJ industrial) (NN heritage)))) (NP (NNP Carrer) (IN de) (NNP Pujades)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">example</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">example</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">example</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">heritage</governor>
+            <dependent idx="4">Poblenou</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="4">Poblenou</governor>
+            <dependent idx="5">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">heritage</governor>
+            <dependent idx="6">fading</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">heritage</governor>
+            <dependent idx="7">industrial</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="8">heritage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pujades</governor>
+            <dependent idx="9">Carrer</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">Pujades</governor>
+            <dependent idx="10">de</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">example</governor>
+            <dependent idx="11">Pujades</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">example</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">example</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">heritage</governor>
+            <dependent idx="4">Poblenou</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">heritage</governor>
+            <dependent idx="6">fading</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">heritage</governor>
+            <dependent idx="7">industrial</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">example</governor>
+            <dependent idx="8">heritage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pujades</governor>
+            <dependent idx="9">Carrer</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">Pujades</governor>
+            <dependent idx="10">de</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">example</governor>
+            <dependent idx="11">Pujades</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">example</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">example</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">heritage</governor>
+            <dependent idx="4">Poblenou</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">heritage</governor>
+            <dependent idx="6">fading</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">heritage</governor>
+            <dependent idx="7">industrial</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">example</governor>
+            <dependent idx="8">heritage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pujades</governor>
+            <dependent idx="9">Carrer</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">Pujades</governor>
+            <dependent idx="10">de</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">example</governor>
+            <dependent idx="11">Pujades</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

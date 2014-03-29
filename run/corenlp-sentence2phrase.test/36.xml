@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>AOPs</word>
+            <lemma>aop</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>rely</word>
+            <lemma>rely</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>in-situ</word>
+            <lemma>in-situ</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="5">
+            <word>production</word>
+            <lemma>production</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>highly</word>
+            <lemma>highly</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="8">
+            <word>reactive</word>
+            <lemma>reactive</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>hydroxyl</word>
+            <lemma>hydroxyl</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>radicals</word>
+            <lemma>radical</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+          </token>
+          <token id="12">
+            <word>·</word>
+            <lemma>·</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="13">
+            <word>OH</word>
+            <lemma>oh</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS AOPs)) (VP (VBP rely) (PP (IN on) (NP (FW in-situ))) (NP (NP (NN production)) (PP (IN of) (NP (ADJP (RB highly) (JJ reactive)) (NN hydroxyl) (NNS radicals)))) (PRN (-LRB- -LRB-) (NP (CD ·) (NN OH)) (-RRB- -RRB-))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rely</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">rely</governor>
+            <dependent idx="1">AOPs</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">rely</governor>
+            <dependent idx="3">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">on</governor>
+            <dependent idx="4">in-situ</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">rely</governor>
+            <dependent idx="5">production</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">production</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">reactive</governor>
+            <dependent idx="7">highly</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">radicals</governor>
+            <dependent idx="8">reactive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">radicals</governor>
+            <dependent idx="9">hydroxyl</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="10">radicals</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">OH</governor>
+            <dependent idx="12">·</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">rely</governor>
+            <dependent idx="13">OH</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rely</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">rely</governor>
+            <dependent idx="1">AOPs</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">rely</governor>
+            <dependent idx="4">in-situ</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">rely</governor>
+            <dependent idx="5">production</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">reactive</governor>
+            <dependent idx="7">highly</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">radicals</governor>
+            <dependent idx="8">reactive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">radicals</governor>
+            <dependent idx="9">hydroxyl</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">production</governor>
+            <dependent idx="10">radicals</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">OH</governor>
+            <dependent idx="12">·</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">rely</governor>
+            <dependent idx="13">OH</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rely</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">rely</governor>
+            <dependent idx="1">AOPs</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">rely</governor>
+            <dependent idx="4">in-situ</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">rely</governor>
+            <dependent idx="5">production</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">reactive</governor>
+            <dependent idx="7">highly</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">radicals</governor>
+            <dependent idx="8">reactive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">radicals</governor>
+            <dependent idx="9">hydroxyl</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">production</governor>
+            <dependent idx="10">radicals</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">OH</governor>
+            <dependent idx="12">·</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">rely</governor>
+            <dependent idx="13">OH</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>reliance</word>
+            <lemma>reliance</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>AOPs</word>
+            <lemma>aop</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>OH</word>
+            <lemma>oh</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>production</word>
+            <lemma>production</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN reliance)) (PP (IN of) (NP (NP (NNS AOPs)) (PP (IN on) (NP (NN OH) (NN production))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">reliance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">reliance</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">reliance</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">AOPs</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">AOPs</governor>
+            <dependent idx="5">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">production</governor>
+            <dependent idx="6">OH</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">on</governor>
+            <dependent idx="7">production</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">reliance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">reliance</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">reliance</governor>
+            <dependent idx="4">AOPs</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">production</governor>
+            <dependent idx="6">OH</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">AOPs</governor>
+            <dependent idx="7">production</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">reliance</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">reliance</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">reliance</governor>
+            <dependent idx="4">AOPs</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">production</governor>
+            <dependent idx="6">OH</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">AOPs</governor>
+            <dependent idx="7">production</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

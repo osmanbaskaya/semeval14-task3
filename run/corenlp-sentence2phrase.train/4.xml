@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Herring</word>
+            <lemma>Herring</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Cove</word>
+            <lemma>Cove</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>gives</word>
+            <lemma>give</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>view</word>
+            <lemma>view</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="9">
+            <word>detailed</word>
+            <lemma>detailed</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>explanations</word>
+            <lemma>explanation</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="13">
+            <word>tides</word>
+            <lemma>tide</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Herring) (NNP Cove)) (VP (VBZ gives) (NP (PRP you)) (NP (NP (DT a) (JJ good) (NN view)) (CC and) (NP (NP (JJ detailed) (NNS explanations)) (PP (IN of) (NP (DT the) (NNS tides)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">gives</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Cove</governor>
+            <dependent idx="1">Herring</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">gives</governor>
+            <dependent idx="2">Cove</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="3">gives</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">view</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">view</governor>
+            <dependent idx="6">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">gives</governor>
+            <dependent idx="7">view</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">view</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">explanations</governor>
+            <dependent idx="9">detailed</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">view</governor>
+            <dependent idx="10">explanations</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">explanations</governor>
+            <dependent idx="11">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">tides</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">of</governor>
+            <dependent idx="13">tides</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">gives</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Cove</governor>
+            <dependent idx="1">Herring</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">gives</governor>
+            <dependent idx="2">Cove</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="3">gives</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">view</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">view</governor>
+            <dependent idx="6">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">gives</governor>
+            <dependent idx="7">view</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">explanations</governor>
+            <dependent idx="9">detailed</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">view</governor>
+            <dependent idx="10">explanations</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">tides</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">explanations</governor>
+            <dependent idx="13">tides</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">gives</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Cove</governor>
+            <dependent idx="1">Herring</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">gives</governor>
+            <dependent idx="2">Cove</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="3">gives</governor>
+            <dependent idx="4">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">view</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">view</governor>
+            <dependent idx="6">good</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">gives</governor>
+            <dependent idx="7">view</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">explanations</governor>
+            <dependent idx="9">detailed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">gives</governor>
+            <dependent idx="10">explanations</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">view</governor>
+            <dependent idx="10">explanations</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">tides</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">explanations</governor>
+            <dependent idx="13">tides</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>100</word>
+            <lemma>100</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>%</word>
+            <lemma>%</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>operated</word>
+            <lemma>operate</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>tidal</word>
+            <lemma>tidal</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>power</word>
+            <lemma>power</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (CD 100) (NN %)) (VP (VBN operated) (PP (IN by) (NP (JJ tidal) (NN power)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">operated</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">%</governor>
+            <dependent idx="1">100</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">operated</governor>
+            <dependent idx="2">%</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">operated</governor>
+            <dependent idx="4">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">power</governor>
+            <dependent idx="5">tidal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">by</governor>
+            <dependent idx="6">power</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">operated</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">%</governor>
+            <dependent idx="1">100</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">operated</governor>
+            <dependent idx="2">%</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">power</governor>
+            <dependent idx="5">tidal</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="3">operated</governor>
+            <dependent idx="6">power</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">operated</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">%</governor>
+            <dependent idx="1">100</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">operated</governor>
+            <dependent idx="2">%</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">power</governor>
+            <dependent idx="5">tidal</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="3">operated</governor>
+            <dependent idx="6">power</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

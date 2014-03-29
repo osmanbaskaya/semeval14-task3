@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>negative</word>
+            <lemma>negative</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>impact</word>
+            <lemma>impact</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>students</word>
+            <lemma>student</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>overcrowded</word>
+            <lemma>overcrowded</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>high</word>
+            <lemma>high</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>schools</word>
+            <lemma>school</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>overcrowding</word>
+            <lemma>overcrowding</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (JJ negative) (NN impact)) (PP (IN on) (NP (NP (NNS students)) (PP (IN in) (NP (ADJP (JJ overcrowded) (JJ high)) (NNS schools)))))) (NP (NN overcrowding)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">impact</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">impact</governor>
+            <dependent idx="1">negative</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">impact</governor>
+            <dependent idx="3">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">on</governor>
+            <dependent idx="4">students</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">students</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">high</governor>
+            <dependent idx="6">overcrowded</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">schools</governor>
+            <dependent idx="7">high</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="8">schools</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">impact</governor>
+            <dependent idx="9">overcrowding</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">impact</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">impact</governor>
+            <dependent idx="1">negative</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">impact</governor>
+            <dependent idx="4">students</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">high</governor>
+            <dependent idx="6">overcrowded</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">schools</governor>
+            <dependent idx="7">high</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">students</governor>
+            <dependent idx="8">schools</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">impact</governor>
+            <dependent idx="9">overcrowding</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">impact</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">impact</governor>
+            <dependent idx="1">negative</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">impact</governor>
+            <dependent idx="4">students</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">high</governor>
+            <dependent idx="6">overcrowded</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">schools</governor>
+            <dependent idx="7">high</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">students</governor>
+            <dependent idx="8">schools</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">impact</governor>
+            <dependent idx="9">overcrowding</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

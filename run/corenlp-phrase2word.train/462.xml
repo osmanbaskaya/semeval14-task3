@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="2">
+            <word>whole</word>
+            <lemma>whole</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>hereditary</word>
+            <lemma>hereditary</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>information</word>
+            <lemma>information</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>encoded</word>
+            <lemma>encode</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>DNA</word>
+            <lemma>dna</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>RNA</word>
+            <lemma>rna</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP$ its) (JJ whole) (NX (NX (JJ hereditary) (NN information)) (CC and))) (VP (VBZ is) (VP (VBN encoded) (PP (IN in) (NP (DT the) (NN DNA) (NN RNA))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">encoded</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">information</governor>
+            <dependent idx="1">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">information</governor>
+            <dependent idx="2">whole</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">information</governor>
+            <dependent idx="3">hereditary</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">encoded</governor>
+            <dependent idx="4">information</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">information</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">encoded</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">encoded</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">RNA</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">RNA</governor>
+            <dependent idx="10">DNA</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="11">RNA</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">encoded</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">information</governor>
+            <dependent idx="1">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">information</governor>
+            <dependent idx="2">whole</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">information</governor>
+            <dependent idx="3">hereditary</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">encoded</governor>
+            <dependent idx="4">information</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">information</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">encoded</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">RNA</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">RNA</governor>
+            <dependent idx="10">DNA</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="7">encoded</governor>
+            <dependent idx="11">RNA</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">encoded</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">information</governor>
+            <dependent idx="1">its</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">information</governor>
+            <dependent idx="2">whole</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">information</governor>
+            <dependent idx="3">hereditary</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="7">encoded</governor>
+            <dependent idx="4">information</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">information</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="7">encoded</governor>
+            <dependent idx="6">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">RNA</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">RNA</governor>
+            <dependent idx="10">DNA</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="7">encoded</governor>
+            <dependent idx="11">RNA</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

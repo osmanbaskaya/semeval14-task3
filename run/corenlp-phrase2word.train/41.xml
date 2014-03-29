@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>waiting</word>
+            <lemma>wait</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>take</word>
+            <lemma>take</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>action</word>
+            <lemma>action</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>meditation</word>
+            <lemma>meditation</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG waiting) (S (VP (TO to) (VP (VB take) (NP (NN action) (NN meditation)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">waiting</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">take</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">waiting</governor>
+            <dependent idx="3">take</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">meditation</governor>
+            <dependent idx="4">action</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">take</governor>
+            <dependent idx="5">meditation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">waiting</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">take</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">waiting</governor>
+            <dependent idx="3">take</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">meditation</governor>
+            <dependent idx="4">action</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">take</governor>
+            <dependent idx="5">meditation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">waiting</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">take</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">waiting</governor>
+            <dependent idx="3">take</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">meditation</governor>
+            <dependent idx="4">action</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">take</governor>
+            <dependent idx="5">meditation</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

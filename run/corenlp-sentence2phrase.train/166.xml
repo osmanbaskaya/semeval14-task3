@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Could</word>
+            <lemma>could</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="2">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>girl</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>lying</word>
+            <lemma>lie</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>she</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="9">
+            <word>really</word>
+            <lemma>really</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>telling</word>
+            <lemma>tell</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>truth</word>
+            <lemma>truth</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (MD Could) (NP (DT this) (NN girl)) (VP (VP (VB be) (VP (VBG lying))) (CC or) (VP (VBZ is) (NP (PRP she)) (S (VP (ADVP (RB really)) (VBG telling) (NP (DT the) (NN truth)))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">lying</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">lying</governor>
+            <dependent idx="1">Could</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">girl</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lying</governor>
+            <dependent idx="3">girl</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">lying</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">lying</governor>
+            <dependent idx="6">or</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">she</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">lying</governor>
+            <dependent idx="8">she</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">telling</governor>
+            <dependent idx="9">really</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">she</governor>
+            <dependent idx="10">telling</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">truth</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">telling</governor>
+            <dependent idx="12">truth</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">lying</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">lying</governor>
+            <dependent idx="1">Could</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">girl</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lying</governor>
+            <dependent idx="3">girl</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">lying</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">she</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="5">lying</governor>
+            <dependent idx="8">she</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">telling</governor>
+            <dependent idx="9">really</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">she</governor>
+            <dependent idx="10">telling</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">truth</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">telling</governor>
+            <dependent idx="12">truth</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">lying</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">lying</governor>
+            <dependent idx="1">Could</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">girl</governor>
+            <dependent idx="2">this</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">lying</governor>
+            <dependent idx="3">girl</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">lying</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="8">she</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="5">lying</governor>
+            <dependent idx="8">she</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">telling</governor>
+            <dependent idx="9">really</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">she</governor>
+            <dependent idx="10">telling</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">truth</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">telling</governor>
+            <dependent idx="12">truth</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Buy</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>Now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>button</word>
+            <lemma>button</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Buy) (NP (RB Now)) (NP (NN button))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Buy</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="1">Buy</governor>
+            <dependent idx="2">Now</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Buy</governor>
+            <dependent idx="3">button</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Buy</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="1">Buy</governor>
+            <dependent idx="2">Now</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Buy</governor>
+            <dependent idx="3">button</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Buy</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="1">Buy</governor>
+            <dependent idx="2">Now</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Buy</governor>
+            <dependent idx="3">button</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

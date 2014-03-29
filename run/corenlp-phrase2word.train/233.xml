@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Lord</word>
+            <lemma>Lord</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Trenchard</word>
+            <lemma>Trenchard</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>presenting</word>
+            <lemma>present</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>trophy</word>
+            <lemma>trophy</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="7">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>RAF</word>
+            <lemma>raf</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>Halton</word>
+            <lemma>halton</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>apprentice</word>
+            <lemma>apprentice</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>presentation</word>
+            <lemma>presentation</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NNP Lord) (NNP Trenchard)) (S (VP (VBG presenting) (NP (DT a) (NN trophy)) (PP (TO to) (NP (DT an) (NN RAF) (JJ Halton) (NN apprentice) (NN presentation))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Trenchard</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Trenchard</governor>
+            <dependent idx="1">Lord</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Trenchard</governor>
+            <dependent idx="3">presenting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">trophy</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">presenting</governor>
+            <dependent idx="5">trophy</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">presenting</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">presentation</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">presentation</governor>
+            <dependent idx="8">RAF</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">presentation</governor>
+            <dependent idx="9">Halton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">presentation</governor>
+            <dependent idx="10">apprentice</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">to</governor>
+            <dependent idx="11">presentation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Trenchard</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Trenchard</governor>
+            <dependent idx="1">Lord</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Trenchard</governor>
+            <dependent idx="3">presenting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">trophy</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">presenting</governor>
+            <dependent idx="5">trophy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">presentation</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">presentation</governor>
+            <dependent idx="8">RAF</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">presentation</governor>
+            <dependent idx="9">Halton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">presentation</governor>
+            <dependent idx="10">apprentice</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">presenting</governor>
+            <dependent idx="11">presentation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Trenchard</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Trenchard</governor>
+            <dependent idx="1">Lord</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Trenchard</governor>
+            <dependent idx="3">presenting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">trophy</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">presenting</governor>
+            <dependent idx="5">trophy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">presentation</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">presentation</governor>
+            <dependent idx="8">RAF</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">presentation</governor>
+            <dependent idx="9">Halton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">presentation</governor>
+            <dependent idx="10">apprentice</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">presenting</governor>
+            <dependent idx="11">presentation</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

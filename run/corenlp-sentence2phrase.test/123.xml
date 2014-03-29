@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Why</word>
+            <lemma>why</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>does</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="3">
+            <word>Paypal</word>
+            <lemma>Paypal</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>deduct</word>
+            <lemma>deduct</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>four</word>
+            <lemma>four</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="6">
+            <word>extra</word>
+            <lemma>extra</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>dollars</word>
+            <lemma>dollar</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>each</word>
+            <lemma>each</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>payment</word>
+            <lemma>payment</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="12">
+            <word>make</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB Why)) (SQ (VBZ does) (NP (NNP Paypal)) (VP (VB deduct) (NP (CD four) (JJ extra) (NNS dollars)) (PP (IN for) (NP (NP (DT each) (NN payment)) (SBAR (S (NP (PRP you)) (VP (VB make)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">deduct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deduct</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">deduct</governor>
+            <dependent idx="2">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">deduct</governor>
+            <dependent idx="3">Paypal</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">dollars</governor>
+            <dependent idx="5">four</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">dollars</governor>
+            <dependent idx="6">extra</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">deduct</governor>
+            <dependent idx="7">dollars</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">deduct</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">payment</governor>
+            <dependent idx="9">each</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">for</governor>
+            <dependent idx="10">payment</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">make</governor>
+            <dependent idx="11">you</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">payment</governor>
+            <dependent idx="12">make</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">deduct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deduct</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">deduct</governor>
+            <dependent idx="2">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">deduct</governor>
+            <dependent idx="3">Paypal</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">dollars</governor>
+            <dependent idx="5">four</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">dollars</governor>
+            <dependent idx="6">extra</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">deduct</governor>
+            <dependent idx="7">dollars</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">payment</governor>
+            <dependent idx="9">each</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">deduct</governor>
+            <dependent idx="10">payment</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">make</governor>
+            <dependent idx="11">you</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">payment</governor>
+            <dependent idx="12">make</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">deduct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deduct</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">deduct</governor>
+            <dependent idx="2">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">deduct</governor>
+            <dependent idx="3">Paypal</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="7">dollars</governor>
+            <dependent idx="5">four</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">dollars</governor>
+            <dependent idx="6">extra</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">deduct</governor>
+            <dependent idx="7">dollars</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">payment</governor>
+            <dependent idx="9">each</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">deduct</governor>
+            <dependent idx="10">payment</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">make</governor>
+            <dependent idx="11">you</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">payment</governor>
+            <dependent idx="12">make</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>e-snips</word>
+            <lemma>e-snip</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>homepage</word>
+            <lemma>homepage</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NNS e-snips)) (NP (NN homepage)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">e-snips</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">e-snips</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">e-snips</governor>
+            <dependent idx="3">homepage</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">e-snips</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">e-snips</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">e-snips</governor>
+            <dependent idx="3">homepage</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">e-snips</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">e-snips</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">e-snips</governor>
+            <dependent idx="3">homepage</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>cleats</word>
+            <lemma>cleat</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>drive</word>
+            <lemma>drive</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>wheel</word>
+            <lemma>wheel</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>Farmall</word>
+            <lemma>Farmall</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>tractor</word>
+            <lemma>tractor</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>features</word>
+            <lemma>feature</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS cleats)) (PP (IN on) (NP (DT the) (NN drive) (NN wheel))) (PP (IN of) (NP (DT a) (NNP Farmall) (NN tractor) (NNS features))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cleats</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">cleats</governor>
+            <dependent idx="2">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">wheel</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">wheel</governor>
+            <dependent idx="4">drive</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">on</governor>
+            <dependent idx="5">wheel</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">cleats</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">features</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">features</governor>
+            <dependent idx="8">Farmall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">features</governor>
+            <dependent idx="9">tractor</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="10">features</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cleats</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">wheel</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">wheel</governor>
+            <dependent idx="4">drive</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">cleats</governor>
+            <dependent idx="5">wheel</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">features</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">features</governor>
+            <dependent idx="8">Farmall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">features</governor>
+            <dependent idx="9">tractor</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">cleats</governor>
+            <dependent idx="10">features</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cleats</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">wheel</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">wheel</governor>
+            <dependent idx="4">drive</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">cleats</governor>
+            <dependent idx="5">wheel</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">features</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">features</governor>
+            <dependent idx="8">Farmall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">features</governor>
+            <dependent idx="9">tractor</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">cleats</governor>
+            <dependent idx="10">features</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

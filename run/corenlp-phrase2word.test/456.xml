@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>boat</word>
+            <lemma>boat</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>wing-like</word>
+            <lemma>wing-like</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>foils</word>
+            <lemma>foil</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>mounted</word>
+            <lemma>mount</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>struts</word>
+            <lemma>strut</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>below</word>
+            <lemma>below</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>hull</word>
+            <lemma>hull</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>sailing</word>
+            <lemma>sailing</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (DT a) (NN boat)) (PP (IN with) (NP (NP (JJ wing-like) (NNS foils)) (VP (VBN mounted) (PP (IN on) (NP (NNS struts))) (PP (IN below) (NP (DT the) (JJ hull) (NN sailing)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">boat</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">boat</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">boat</governor>
+            <dependent idx="3">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">foils</governor>
+            <dependent idx="4">wing-like</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">with</governor>
+            <dependent idx="5">foils</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">foils</governor>
+            <dependent idx="6">mounted</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">mounted</governor>
+            <dependent idx="7">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">on</governor>
+            <dependent idx="8">struts</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">mounted</governor>
+            <dependent idx="9">below</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">sailing</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">sailing</governor>
+            <dependent idx="11">hull</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">below</governor>
+            <dependent idx="12">sailing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">boat</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">boat</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">foils</governor>
+            <dependent idx="4">wing-like</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="2">boat</governor>
+            <dependent idx="5">foils</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">foils</governor>
+            <dependent idx="6">mounted</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">mounted</governor>
+            <dependent idx="8">struts</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">sailing</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">sailing</governor>
+            <dependent idx="11">hull</dependent>
+          </dep>
+          <dep type="prep_below">
+            <governor idx="6">mounted</governor>
+            <dependent idx="12">sailing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">boat</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">boat</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">foils</governor>
+            <dependent idx="4">wing-like</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="2">boat</governor>
+            <dependent idx="5">foils</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">foils</governor>
+            <dependent idx="6">mounted</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">mounted</governor>
+            <dependent idx="8">struts</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">sailing</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">sailing</governor>
+            <dependent idx="11">hull</dependent>
+          </dep>
+          <dep type="prep_below">
+            <governor idx="6">mounted</governor>
+            <dependent idx="12">sailing</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

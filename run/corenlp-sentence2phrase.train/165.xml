@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>make</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="6">
+            <word>money</word>
+            <lemma>money</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>webcam</word>
+            <lemma>webcam</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>girl</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB How)) (SQ (MD can) (NP (PRP I)) (VP (VB make) (NP (JJR more) (NN money)) (PP (IN as) (NP (DT a) (NN webcam) (NN girl))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">make</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">make</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">make</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">make</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">money</governor>
+            <dependent idx="5">more</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">make</governor>
+            <dependent idx="6">money</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">make</governor>
+            <dependent idx="7">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">girl</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">girl</governor>
+            <dependent idx="9">webcam</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">as</governor>
+            <dependent idx="10">girl</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">make</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">make</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">make</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">make</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">money</governor>
+            <dependent idx="5">more</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">make</governor>
+            <dependent idx="6">money</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">girl</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">girl</governor>
+            <dependent idx="9">webcam</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="4">make</governor>
+            <dependent idx="10">girl</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">make</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">make</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">make</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">make</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">money</governor>
+            <dependent idx="5">more</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">make</governor>
+            <dependent idx="6">money</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">girl</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">girl</governor>
+            <dependent idx="9">webcam</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="4">make</governor>
+            <dependent idx="10">girl</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>website</word>
+            <lemma>website</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="4">
+            <word>looks</word>
+            <lemma>look</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Twitter</word>
+            <lemma>Twitter</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (X (X (IN that)) (NP (NP (NN website)) (SBAR (WHNP (WDT that)) (S (VP (VBZ looks) (PP (IN like) (NP (NNP Twitter))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">website</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">website</governor>
+            <dependent idx="1">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">looks</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">website</governor>
+            <dependent idx="4">looks</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">looks</governor>
+            <dependent idx="5">like</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">like</governor>
+            <dependent idx="6">Twitter</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">website</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">website</governor>
+            <dependent idx="1">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">looks</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">website</governor>
+            <dependent idx="4">looks</dependent>
+          </dep>
+          <dep type="prep_like">
+            <governor idx="4">looks</governor>
+            <dependent idx="6">Twitter</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">website</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">website</governor>
+            <dependent idx="1">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">looks</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">website</governor>
+            <dependent idx="4">looks</dependent>
+          </dep>
+          <dep type="prep_like">
+            <governor idx="4">looks</governor>
+            <dependent idx="6">Twitter</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

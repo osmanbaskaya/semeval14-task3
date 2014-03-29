@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>We</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>'re</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>doomed</word>
+            <lemma>doom</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>if</word>
+            <lemma>if</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>wee</word>
+            <lemma>wee</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>jumped-up</word>
+            <lemma>jumped-up</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>monkey</word>
+            <lemma>monkey</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>gets</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="10">
+            <word>Gordon</word>
+            <lemma>Gordon</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Smith</word>
+            <lemma>Smith</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="13">
+            <word>blessing</word>
+            <lemma>blessing</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP We)) (VP (VBP 're) (ADJP (VBN doomed) (SBAR (IN if) (S (NP (DT this) (NN wee) (JJ jumped-up) (NN monkey)) (VP (VBZ gets) (NP (NP (NNP Gordon) (NNP Smith) (POS 's)) (NN blessing))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">doomed</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">doomed</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">doomed</governor>
+            <dependent idx="2">'re</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">gets</governor>
+            <dependent idx="4">if</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">monkey</governor>
+            <dependent idx="5">this</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">monkey</governor>
+            <dependent idx="6">wee</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">monkey</governor>
+            <dependent idx="7">jumped-up</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">gets</governor>
+            <dependent idx="8">monkey</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">doomed</governor>
+            <dependent idx="9">gets</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Smith</governor>
+            <dependent idx="10">Gordon</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="13">blessing</governor>
+            <dependent idx="11">Smith</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="11">Smith</governor>
+            <dependent idx="12">'s</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">gets</governor>
+            <dependent idx="13">blessing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">doomed</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">doomed</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">doomed</governor>
+            <dependent idx="2">'re</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">gets</governor>
+            <dependent idx="4">if</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">monkey</governor>
+            <dependent idx="5">this</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">monkey</governor>
+            <dependent idx="6">wee</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">monkey</governor>
+            <dependent idx="7">jumped-up</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">gets</governor>
+            <dependent idx="8">monkey</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">doomed</governor>
+            <dependent idx="9">gets</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Smith</governor>
+            <dependent idx="10">Gordon</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="13">blessing</governor>
+            <dependent idx="11">Smith</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">gets</governor>
+            <dependent idx="13">blessing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">doomed</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">doomed</governor>
+            <dependent idx="1">We</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">doomed</governor>
+            <dependent idx="2">'re</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="9">gets</governor>
+            <dependent idx="4">if</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">monkey</governor>
+            <dependent idx="5">this</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">monkey</governor>
+            <dependent idx="6">wee</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">monkey</governor>
+            <dependent idx="7">jumped-up</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">gets</governor>
+            <dependent idx="8">monkey</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">doomed</governor>
+            <dependent idx="9">gets</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Smith</governor>
+            <dependent idx="10">Gordon</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="13">blessing</governor>
+            <dependent idx="11">Smith</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">gets</governor>
+            <dependent idx="13">blessing</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>bad</word>
+            <lemma>bad</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>planning</word>
+            <lemma>planning</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ bad) (NN planning))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">planning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">planning</governor>
+            <dependent idx="1">bad</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">planning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">planning</governor>
+            <dependent idx="1">bad</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">planning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">planning</governor>
+            <dependent idx="1">bad</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

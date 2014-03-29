@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>tomb</word>
+            <lemma>tomb</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Khoja</word>
+            <lemma>Khoja</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Afāq</word>
+            <lemma>Afāq</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>near</word>
+            <lemma>near</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>Kashgar</word>
+            <lemma>Kashgar</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>China</word>
+            <lemma>China</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Vatican</word>
+            <lemma>Vatican</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>City</word>
+            <lemma>City</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT The) (NN tomb)) (PP (IN of) (NP (NNP Khoja) (NNP Afāq))) (, ,) (PP (IN near) (NP (NNP Kashgar) (, ,) (NNP China) (NNP Vatican) (NNP City))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">tomb</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">tomb</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">tomb</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Afāq</governor>
+            <dependent idx="4">Khoja</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">Afāq</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">tomb</governor>
+            <dependent idx="7">near</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">City</governor>
+            <dependent idx="8">Kashgar</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="12">City</governor>
+            <dependent idx="10">China</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">City</governor>
+            <dependent idx="11">Vatican</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">near</governor>
+            <dependent idx="12">City</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">tomb</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">tomb</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Afāq</governor>
+            <dependent idx="4">Khoja</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">tomb</governor>
+            <dependent idx="5">Afāq</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">City</governor>
+            <dependent idx="8">Kashgar</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="12">City</governor>
+            <dependent idx="10">China</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">City</governor>
+            <dependent idx="11">Vatican</dependent>
+          </dep>
+          <dep type="prep_near">
+            <governor idx="2">tomb</governor>
+            <dependent idx="12">City</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">tomb</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">tomb</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Afāq</governor>
+            <dependent idx="4">Khoja</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">tomb</governor>
+            <dependent idx="5">Afāq</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">City</governor>
+            <dependent idx="8">Kashgar</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="12">City</governor>
+            <dependent idx="10">China</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">City</governor>
+            <dependent idx="11">Vatican</dependent>
+          </dep>
+          <dep type="prep_near">
+            <governor idx="2">tomb</governor>
+            <dependent idx="12">City</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

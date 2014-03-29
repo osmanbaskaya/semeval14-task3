@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>go</word>
+            <lemma>go</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>batshit</word>
+            <lemma>batshit</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>batman</word>
+            <lemma>batman</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB go) (NP (NN batshit) (NN batman))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">go</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">batman</governor>
+            <dependent idx="2">batshit</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">go</governor>
+            <dependent idx="3">batman</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">go</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">batman</governor>
+            <dependent idx="2">batshit</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">go</governor>
+            <dependent idx="3">batman</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">go</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">batman</governor>
+            <dependent idx="2">batshit</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">go</governor>
+            <dependent idx="3">batman</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

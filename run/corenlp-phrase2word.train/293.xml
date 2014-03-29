@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>motorcycle</word>
+            <lemma>motorcycle</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>taxi</word>
+            <lemma>taxi</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>waiting</word>
+            <lemma>wait</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>passenger</word>
+            <lemma>passenger</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>London</word>
+            <lemma>London</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>RPG-7</word>
+            <lemma>rpg-7</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (DT A) (NN motorcycle) (NN taxi)) (S (VP (VBG waiting) (PP (IN for) (NP (NP (NN passenger)) (PP (IN in) (NP (NNP London) (NN RPG-7))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">taxi</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">taxi</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">taxi</governor>
+            <dependent idx="2">motorcycle</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">taxi</governor>
+            <dependent idx="4">waiting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">waiting</governor>
+            <dependent idx="5">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">for</governor>
+            <dependent idx="6">passenger</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">passenger</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">RPG-7</governor>
+            <dependent idx="8">London</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="9">RPG-7</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">taxi</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">taxi</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">taxi</governor>
+            <dependent idx="2">motorcycle</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">taxi</governor>
+            <dependent idx="4">waiting</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">waiting</governor>
+            <dependent idx="6">passenger</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">RPG-7</governor>
+            <dependent idx="8">London</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">passenger</governor>
+            <dependent idx="9">RPG-7</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">taxi</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">taxi</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">taxi</governor>
+            <dependent idx="2">motorcycle</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">taxi</governor>
+            <dependent idx="4">waiting</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">waiting</governor>
+            <dependent idx="6">passenger</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">RPG-7</governor>
+            <dependent idx="8">London</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">passenger</governor>
+            <dependent idx="9">RPG-7</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>nod</word>
+            <lemma>nod</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>confirm</word>
+            <lemma>confirm</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB get) (SBAR (S (NP (DT the) (NN nod)) (VP (VBP confirm))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">get</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">nod</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">confirm</governor>
+            <dependent idx="3">nod</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">get</governor>
+            <dependent idx="4">confirm</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">get</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">nod</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">confirm</governor>
+            <dependent idx="3">nod</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">get</governor>
+            <dependent idx="4">confirm</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">get</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">nod</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">confirm</governor>
+            <dependent idx="3">nod</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">get</governor>
+            <dependent idx="4">confirm</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

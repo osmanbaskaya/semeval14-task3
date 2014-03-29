@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Congress</word>
+            <lemma>Congress</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>frequently</word>
+            <lemma>frequently</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>meets</word>
+            <lemma>meet</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>behind</word>
+            <lemma>behind</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>closed</word>
+            <lemma>closed</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>doors</word>
+            <lemma>door</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>avoid</word>
+            <lemma>avoid</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="9">
+            <word>public</word>
+            <lemma>public</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>scrutiny</word>
+            <lemma>scrutiny</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>their</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="13">
+            <word>bargaining</word>
+            <lemma>bargaining</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>process</word>
+            <lemma>process</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Congress)) (ADVP (RB frequently)) (VP (VBZ meets) (PP (IN behind) (NP (JJ closed) (NNS doors))) (S (VP (TO to) (VP (VB avoid) (NP (NP (JJ public) (NN scrutiny)) (PP (IN of) (NP (PRP$ their) (NN bargaining) (NN process)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">meets</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">meets</governor>
+            <dependent idx="1">Congress</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">meets</governor>
+            <dependent idx="2">frequently</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">meets</governor>
+            <dependent idx="4">behind</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">doors</governor>
+            <dependent idx="5">closed</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">behind</governor>
+            <dependent idx="6">doors</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">avoid</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">meets</governor>
+            <dependent idx="8">avoid</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">scrutiny</governor>
+            <dependent idx="9">public</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">avoid</governor>
+            <dependent idx="10">scrutiny</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">scrutiny</governor>
+            <dependent idx="11">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">process</governor>
+            <dependent idx="12">their</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">process</governor>
+            <dependent idx="13">bargaining</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">of</governor>
+            <dependent idx="14">process</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">meets</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">meets</governor>
+            <dependent idx="1">Congress</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">meets</governor>
+            <dependent idx="2">frequently</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">doors</governor>
+            <dependent idx="5">closed</dependent>
+          </dep>
+          <dep type="prep_behind">
+            <governor idx="3">meets</governor>
+            <dependent idx="6">doors</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">avoid</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">meets</governor>
+            <dependent idx="8">avoid</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">scrutiny</governor>
+            <dependent idx="9">public</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">avoid</governor>
+            <dependent idx="10">scrutiny</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">process</governor>
+            <dependent idx="12">their</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">process</governor>
+            <dependent idx="13">bargaining</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">scrutiny</governor>
+            <dependent idx="14">process</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">meets</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">meets</governor>
+            <dependent idx="1">Congress</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">meets</governor>
+            <dependent idx="2">frequently</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">doors</governor>
+            <dependent idx="5">closed</dependent>
+          </dep>
+          <dep type="prep_behind">
+            <governor idx="3">meets</governor>
+            <dependent idx="6">doors</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">avoid</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">meets</governor>
+            <dependent idx="8">avoid</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">scrutiny</governor>
+            <dependent idx="9">public</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">avoid</governor>
+            <dependent idx="10">scrutiny</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">process</governor>
+            <dependent idx="12">their</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">process</governor>
+            <dependent idx="13">bargaining</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">scrutiny</governor>
+            <dependent idx="14">process</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>congress</word>
+            <lemma>congress</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>dodging</word>
+            <lemma>dodge</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>criticism</word>
+            <lemma>criticism</lemma>
+            <CharacterOffsetBegin>117</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>using</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>secret</word>
+            <lemma>secret</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>meetings</word>
+            <lemma>meeting</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>148</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN congress) (VBG dodging) (NN criticism)) (VP (VBG using) (NP (JJ secret) (NNS meetings)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">criticism</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">criticism</governor>
+            <dependent idx="1">congress</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">criticism</governor>
+            <dependent idx="2">dodging</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">criticism</governor>
+            <dependent idx="4">using</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">meetings</governor>
+            <dependent idx="5">secret</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">using</governor>
+            <dependent idx="6">meetings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">criticism</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">criticism</governor>
+            <dependent idx="1">congress</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">criticism</governor>
+            <dependent idx="2">dodging</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">criticism</governor>
+            <dependent idx="4">using</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">meetings</governor>
+            <dependent idx="5">secret</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">using</governor>
+            <dependent idx="6">meetings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">criticism</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">criticism</governor>
+            <dependent idx="1">congress</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">criticism</governor>
+            <dependent idx="2">dodging</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">criticism</governor>
+            <dependent idx="4">using</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">meetings</governor>
+            <dependent idx="5">secret</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">using</governor>
+            <dependent idx="6">meetings</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

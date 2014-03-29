@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>basic</word>
+            <lemma>basic</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>human</word>
+            <lemma>human</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>right</word>
+            <lemma>right</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>privilege</word>
+            <lemma>privilege</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (DT a) (JJ basic) (JJ human) (JJ right) (NN privilege)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">privilege</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">privilege</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="2">basic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="3">human</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="4">right</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">privilege</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">privilege</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="2">basic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="3">human</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="4">right</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">privilege</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">privilege</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="2">basic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="3">human</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">privilege</governor>
+            <dependent idx="4">right</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

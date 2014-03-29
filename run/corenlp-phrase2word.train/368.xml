@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>manufacturing</word>
+            <lemma>manufacturing</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>good</word>
+            <lemma>good</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>service</word>
+            <lemma>service</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>within</word>
+            <lemma>within</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>category</word>
+            <lemma>category</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>seller</word>
+            <lemma>seller</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN manufacturing)) (PP (IN of) (NP (NP (DT a) (JJ good)) (CC or) (NP (NN service)))) (PP (IN within) (NP (DT a) (NN category) (NN seller))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">manufacturing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">good</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">good</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">good</governor>
+            <dependent idx="6">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">good</governor>
+            <dependent idx="7">service</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="8">within</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">seller</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">seller</governor>
+            <dependent idx="10">category</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">within</governor>
+            <dependent idx="11">seller</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">manufacturing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">good</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="5">good</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="5">good</governor>
+            <dependent idx="7">service</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">seller</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">seller</governor>
+            <dependent idx="10">category</dependent>
+          </dep>
+          <dep type="prep_within">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="11">seller</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">manufacturing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">good</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="5">good</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="7">service</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="5">good</governor>
+            <dependent idx="7">service</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">seller</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">seller</governor>
+            <dependent idx="10">category</dependent>
+          </dep>
+          <dep type="prep_within">
+            <governor idx="2">manufacturing</governor>
+            <dependent idx="11">seller</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

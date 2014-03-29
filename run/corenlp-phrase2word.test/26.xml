@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>pray</word>
+            <lemma>pray</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>porcelain</word>
+            <lemma>porcelain</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>god</word>
+            <lemma>god</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>vomiting</word>
+            <lemma>vomit</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN pray)) (PP (TO to) (NP (DT the) (NN porcelain) (NN god) (VBG vomiting))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pray</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">pray</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">god</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">god</governor>
+            <dependent idx="4">porcelain</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="5">god</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">god</governor>
+            <dependent idx="6">vomiting</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pray</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">god</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">god</governor>
+            <dependent idx="4">porcelain</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">pray</governor>
+            <dependent idx="5">god</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">god</governor>
+            <dependent idx="6">vomiting</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pray</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">god</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">god</governor>
+            <dependent idx="4">porcelain</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">pray</governor>
+            <dependent idx="5">god</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">god</governor>
+            <dependent idx="6">vomiting</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

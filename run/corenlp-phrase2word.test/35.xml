@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Jesus</word>
+            <lemma>Jesus</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>piece</word>
+            <lemma>piece</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>crucifix</word>
+            <lemma>crucifix</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Jesus)) (NP (NN piece) (NN crucifix)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Jesus</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">crucifix</governor>
+            <dependent idx="2">piece</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Jesus</governor>
+            <dependent idx="3">crucifix</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Jesus</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">crucifix</governor>
+            <dependent idx="2">piece</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Jesus</governor>
+            <dependent idx="3">crucifix</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Jesus</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">crucifix</governor>
+            <dependent idx="2">piece</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Jesus</governor>
+            <dependent idx="3">crucifix</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

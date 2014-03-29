@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>hanging</word>
+            <lemma>hanging</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>`</word>
+            <lemma>`</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="5">
+            <word>Saint</word>
+            <lemma>Saint</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>John</word>
+            <lemma>John</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Ogilvie</word>
+            <lemma>Ogilvie</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="9">
+            <word>SJ</word>
+            <lemma>sj</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>battle</word>
+            <lemma>battle</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT The) (NN hanging)) (PP (IN of) (NP (`` `) (NP (NNP Saint) (NNP John) (NNP Ogilvie) (POS ')) (NN SJ) (NN battle))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">hanging</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">hanging</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">hanging</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ogilvie</governor>
+            <dependent idx="5">Saint</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ogilvie</governor>
+            <dependent idx="6">John</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">battle</governor>
+            <dependent idx="7">Ogilvie</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">battle</governor>
+            <dependent idx="9">SJ</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="10">battle</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">hanging</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">hanging</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ogilvie</governor>
+            <dependent idx="5">Saint</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ogilvie</governor>
+            <dependent idx="6">John</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">battle</governor>
+            <dependent idx="7">Ogilvie</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">battle</governor>
+            <dependent idx="9">SJ</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">hanging</governor>
+            <dependent idx="10">battle</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">hanging</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">hanging</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ogilvie</governor>
+            <dependent idx="5">Saint</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ogilvie</governor>
+            <dependent idx="6">John</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">battle</governor>
+            <dependent idx="7">Ogilvie</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">battle</governor>
+            <dependent idx="9">SJ</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">hanging</governor>
+            <dependent idx="10">battle</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

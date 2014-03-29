@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>close</word>
+            <lemma>close</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>enough</word>
+            <lemma>enough</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>government</word>
+            <lemma>government</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>work</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>brilliant</word>
+            <lemma>brilliant</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADJP (ADJP (RB close) (RB enough)) (PP (IN for) (NP (NN government) (NN work)))) (ADJP (JJ brilliant)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">enough</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">enough</governor>
+            <dependent idx="1">close</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">enough</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">work</governor>
+            <dependent idx="4">government</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">for</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">enough</governor>
+            <dependent idx="6">brilliant</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">enough</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">enough</governor>
+            <dependent idx="1">close</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">work</governor>
+            <dependent idx="4">government</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">enough</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">enough</governor>
+            <dependent idx="6">brilliant</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">enough</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">enough</governor>
+            <dependent idx="1">close</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">work</governor>
+            <dependent idx="4">government</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">enough</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">enough</governor>
+            <dependent idx="6">brilliant</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

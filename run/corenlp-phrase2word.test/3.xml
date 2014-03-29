@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>four</word>
+            <lemma>four</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="4">
+            <word>natty</word>
+            <lemma>natty</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (CD four)) (NP (CD one) (CD one)) (NP (JJ natty)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">four</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">one</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">four</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">four</governor>
+            <dependent idx="4">natty</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">four</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">one</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">four</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">four</governor>
+            <dependent idx="4">natty</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">four</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">one</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">four</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">four</governor>
+            <dependent idx="4">natty</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

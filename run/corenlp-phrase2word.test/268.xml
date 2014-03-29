@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>mad</word>
+            <lemma>mad</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>hornet</word>
+            <lemma>hornet</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>upset</word>
+            <lemma>upset</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ mad) (PP (IN as) (NP (DT a) (NN hornet) (NN upset))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">mad</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">mad</governor>
+            <dependent idx="2">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">upset</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">upset</governor>
+            <dependent idx="4">hornet</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">as</governor>
+            <dependent idx="5">upset</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">mad</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">upset</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">upset</governor>
+            <dependent idx="4">hornet</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="1">mad</governor>
+            <dependent idx="5">upset</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">mad</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">upset</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">upset</governor>
+            <dependent idx="4">hornet</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="1">mad</governor>
+            <dependent idx="5">upset</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

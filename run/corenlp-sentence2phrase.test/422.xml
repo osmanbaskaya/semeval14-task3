@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>collection</word>
+            <lemma>collection</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>images</word>
+            <lemma>image</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>ideas</word>
+            <lemma>idea</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>representing</word>
+            <lemma>represent</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="8">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>economic</word>
+            <lemma>economic</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>producer</word>
+            <lemma>producer</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>symbols</word>
+            <lemma>symbol</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NN collection)) (PP (IN of) (NP (NP (NNS images) (CC and) (NNS ideas)) (VP (VBG representing) (NP (DT an) (JJ economic) (NN producer) (NNS symbols))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">collection</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">collection</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">collection</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">images</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">images</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">images</governor>
+            <dependent idx="6">ideas</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">images</governor>
+            <dependent idx="7">representing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">symbols</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">symbols</governor>
+            <dependent idx="9">economic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">symbols</governor>
+            <dependent idx="10">producer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">representing</governor>
+            <dependent idx="11">symbols</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">collection</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">collection</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">collection</governor>
+            <dependent idx="4">images</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">images</governor>
+            <dependent idx="6">ideas</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">images</governor>
+            <dependent idx="7">representing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">symbols</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">symbols</governor>
+            <dependent idx="9">economic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">symbols</governor>
+            <dependent idx="10">producer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">representing</governor>
+            <dependent idx="11">symbols</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">collection</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">collection</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">collection</governor>
+            <dependent idx="4">images</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">collection</governor>
+            <dependent idx="6">ideas</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">images</governor>
+            <dependent idx="6">ideas</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">images</governor>
+            <dependent idx="7">representing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">symbols</governor>
+            <dependent idx="8">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">symbols</governor>
+            <dependent idx="9">economic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">symbols</governor>
+            <dependent idx="10">producer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">representing</governor>
+            <dependent idx="11">symbols</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

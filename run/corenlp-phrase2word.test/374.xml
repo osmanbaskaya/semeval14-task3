@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>memorial</word>
+            <lemma>memorial</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>plaque</word>
+            <lemma>plaque</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Grittleton</word>
+            <lemma>Grittleton</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>church</word>
+            <lemma>church</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>Grittleton</word>
+            <lemma>Grittleton</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN memorial) (NN plaque)) (PP (IN in) (NP (NNP Grittleton) (NN church) (NNP Grittleton))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">plaque</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">plaque</governor>
+            <dependent idx="1">memorial</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">plaque</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Grittleton</governor>
+            <dependent idx="4">Grittleton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Grittleton</governor>
+            <dependent idx="5">church</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="6">Grittleton</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">plaque</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">plaque</governor>
+            <dependent idx="1">memorial</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Grittleton</governor>
+            <dependent idx="4">Grittleton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Grittleton</governor>
+            <dependent idx="5">church</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">plaque</governor>
+            <dependent idx="6">Grittleton</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">plaque</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">plaque</governor>
+            <dependent idx="1">memorial</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Grittleton</governor>
+            <dependent idx="4">Grittleton</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Grittleton</governor>
+            <dependent idx="5">church</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">plaque</governor>
+            <dependent idx="6">Grittleton</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

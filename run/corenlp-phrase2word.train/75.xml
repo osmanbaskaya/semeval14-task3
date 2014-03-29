@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>falling</word>
+            <lemma>fall</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>incomes</word>
+            <lemma>income</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>minimum</word>
+            <lemma>minimum</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>wages</word>
+            <lemma>wages</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>cuts</word>
+            <lemma>cut</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG falling) (NP (NP (NNS incomes)) (CC and) (NP (JJ minimum) (NNS wages) (NNS cuts)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">falling</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">falling</governor>
+            <dependent idx="2">incomes</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">incomes</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">cuts</governor>
+            <dependent idx="4">minimum</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cuts</governor>
+            <dependent idx="5">wages</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">incomes</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">falling</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">falling</governor>
+            <dependent idx="2">incomes</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">cuts</governor>
+            <dependent idx="4">minimum</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cuts</governor>
+            <dependent idx="5">wages</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">incomes</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">falling</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">falling</governor>
+            <dependent idx="2">incomes</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">cuts</governor>
+            <dependent idx="4">minimum</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cuts</governor>
+            <dependent idx="5">wages</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">falling</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">incomes</governor>
+            <dependent idx="6">cuts</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

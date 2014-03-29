@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>cuts</word>
+            <lemma>cut</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>down</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>trees</word>
+            <lemma>tree</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>chainsaw</word>
+            <lemma>chainsaw</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNS cuts)) (PP (IN down) (NP (NNS trees)))) (VP (VBP chainsaw)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">chainsaw</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">chainsaw</governor>
+            <dependent idx="1">cuts</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">cuts</governor>
+            <dependent idx="2">down</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">down</governor>
+            <dependent idx="3">trees</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">chainsaw</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">chainsaw</governor>
+            <dependent idx="1">cuts</dependent>
+          </dep>
+          <dep type="prep_down">
+            <governor idx="1">cuts</governor>
+            <dependent idx="3">trees</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">chainsaw</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">chainsaw</governor>
+            <dependent idx="1">cuts</dependent>
+          </dep>
+          <dep type="prep_down">
+            <governor idx="1">cuts</governor>
+            <dependent idx="3">trees</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

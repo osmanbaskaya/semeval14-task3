@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>weapon</word>
+            <lemma>weapon</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>consisting</word>
+            <lemma>consist</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>bow</word>
+            <lemma>bow</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>mounted</word>
+            <lemma>mount</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="8">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>stock</word>
+            <lemma>stock</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="12">
+            <word>shoots</word>
+            <lemma>shoot</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="13">
+            <word>projectiles</word>
+            <lemma>projectile</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>bow</word>
+            <lemma>bow</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (NN weapon)) (VP (VBG consisting) (PP (IN of) (NP (DT a) (NN bow))))) (VP (VBD mounted) (PP (IN on) (NP (NP (DT a) (NN stock)) (SBAR (WHNP (WDT that)) (S (VP (VBZ shoots) (S (NP (NNS projectiles)) (VP (VB bow))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">mounted</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">weapon</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">mounted</governor>
+            <dependent idx="2">weapon</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">weapon</governor>
+            <dependent idx="3">consisting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">consisting</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">bow</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">bow</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">mounted</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">stock</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">on</governor>
+            <dependent idx="10">stock</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">shoots</governor>
+            <dependent idx="11">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">stock</governor>
+            <dependent idx="12">shoots</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">bow</governor>
+            <dependent idx="13">projectiles</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="12">shoots</governor>
+            <dependent idx="14">bow</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">mounted</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">weapon</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">mounted</governor>
+            <dependent idx="2">weapon</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">weapon</governor>
+            <dependent idx="3">consisting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">bow</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">consisting</governor>
+            <dependent idx="6">bow</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">stock</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">mounted</governor>
+            <dependent idx="10">stock</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">shoots</governor>
+            <dependent idx="11">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">stock</governor>
+            <dependent idx="12">shoots</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">bow</governor>
+            <dependent idx="13">projectiles</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="12">shoots</governor>
+            <dependent idx="14">bow</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">mounted</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">weapon</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">mounted</governor>
+            <dependent idx="2">weapon</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">weapon</governor>
+            <dependent idx="3">consisting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">bow</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">consisting</governor>
+            <dependent idx="6">bow</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">stock</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">mounted</governor>
+            <dependent idx="10">stock</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">shoots</governor>
+            <dependent idx="11">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="10">stock</governor>
+            <dependent idx="12">shoots</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">bow</governor>
+            <dependent idx="13">projectiles</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="12">shoots</governor>
+            <dependent idx="14">bow</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

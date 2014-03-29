@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>newer</word>
+            <lemma>newer</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="3">
+            <word>stage</word>
+            <lemma>stage</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>pin</word>
+            <lemma>pin</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>connector</word>
+            <lemma>connector</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>chip</word>
+            <lemma>chip</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT A) (JJR newer) (NN stage) (NN pin)) (NP (NN connector) (NN chip)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">pin</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">pin</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pin</governor>
+            <dependent idx="2">newer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">pin</governor>
+            <dependent idx="3">stage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">chip</governor>
+            <dependent idx="5">connector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">pin</governor>
+            <dependent idx="6">chip</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">pin</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">pin</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pin</governor>
+            <dependent idx="2">newer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">pin</governor>
+            <dependent idx="3">stage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">chip</governor>
+            <dependent idx="5">connector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">pin</governor>
+            <dependent idx="6">chip</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">pin</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">pin</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pin</governor>
+            <dependent idx="2">newer</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">pin</governor>
+            <dependent idx="3">stage</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">chip</governor>
+            <dependent idx="5">connector</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">pin</governor>
+            <dependent idx="6">chip</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>banana</word>
+            <lemma>banana</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>hammock</word>
+            <lemma>hammock</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>fruit</word>
+            <lemma>fruit</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN banana)) (NP (NN hammock) (NN fruit)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">banana</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">fruit</governor>
+            <dependent idx="2">hammock</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">banana</governor>
+            <dependent idx="3">fruit</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">banana</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">fruit</governor>
+            <dependent idx="2">hammock</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">banana</governor>
+            <dependent idx="3">fruit</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">banana</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">fruit</governor>
+            <dependent idx="2">hammock</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">banana</governor>
+            <dependent idx="3">fruit</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

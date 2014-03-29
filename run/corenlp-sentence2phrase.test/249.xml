@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="2">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>clocked</word>
+            <lemma>clock</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>game</word>
+            <lemma>game</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>yet</word>
+            <lemma>yet</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="7">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (VBP Have) (NP (PRP you)) (VP (VBN clocked) (SBAR (IN that) (FRAG (NP (NN game) (RB yet))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">clocked</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">clocked</governor>
+            <dependent idx="1">Have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">clocked</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">game</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">clocked</governor>
+            <dependent idx="5">game</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">game</governor>
+            <dependent idx="6">yet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">clocked</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">clocked</governor>
+            <dependent idx="1">Have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">clocked</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">game</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">clocked</governor>
+            <dependent idx="5">game</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">game</governor>
+            <dependent idx="6">yet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">clocked</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">clocked</governor>
+            <dependent idx="1">Have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">clocked</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">game</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">clocked</governor>
+            <dependent idx="5">game</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">game</governor>
+            <dependent idx="6">yet</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>never-ending</word>
+            <lemma>never-ending</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>Monopoly</word>
+            <lemma>Monopoly</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>game</word>
+            <lemma>game</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (X (NP (DT a) (JJ never-ending) (NNP Monopoly) (NN game)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">game</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">game</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">game</governor>
+            <dependent idx="2">never-ending</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">game</governor>
+            <dependent idx="3">Monopoly</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">game</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">game</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">game</governor>
+            <dependent idx="2">never-ending</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">game</governor>
+            <dependent idx="3">Monopoly</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">game</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">game</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">game</governor>
+            <dependent idx="2">never-ending</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">game</governor>
+            <dependent idx="3">Monopoly</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

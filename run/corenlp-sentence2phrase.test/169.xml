@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>would</word>
+            <lemma>would</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>day-to-day</word>
+            <lemma>day-to-day</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>workings</word>
+            <lemma>workings</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>business</word>
+            <lemma>business</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (MD would) (VP (VB like) (S (VP (TO to) (VP (VB know) (PP (IN about) (NP (NP (DT the) (JJ day-to-day) (NNS workings)) (PP (IN of) (NP (DT the) (NN business)))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">would</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">know</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">know</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">know</governor>
+            <dependent idx="6">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">workings</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">workings</governor>
+            <dependent idx="8">day-to-day</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">about</governor>
+            <dependent idx="9">workings</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">workings</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">business</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="12">business</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">would</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">know</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">know</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">workings</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">workings</governor>
+            <dependent idx="8">day-to-day</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="5">know</governor>
+            <dependent idx="9">workings</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">business</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">workings</governor>
+            <dependent idx="12">business</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">would</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">know</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">know</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">workings</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">workings</governor>
+            <dependent idx="8">day-to-day</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="5">know</governor>
+            <dependent idx="9">workings</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">business</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">workings</governor>
+            <dependent idx="12">business</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>showing</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>interest</word>
+            <lemma>interest</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>company</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="7">
+            <word>office</word>
+            <lemma>office</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>culture</word>
+            <lemma>culture</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG showing) (NP (NN interest)) (PP (IN in) (NP (NP (DT a) (NN company) (POS 's)) (NN office) (NN culture)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">showing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">showing</governor>
+            <dependent idx="2">interest</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">showing</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">company</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">culture</governor>
+            <dependent idx="5">company</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="5">company</governor>
+            <dependent idx="6">'s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">culture</governor>
+            <dependent idx="7">office</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="8">culture</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">showing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">showing</governor>
+            <dependent idx="2">interest</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">company</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">culture</governor>
+            <dependent idx="5">company</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">culture</governor>
+            <dependent idx="7">office</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">showing</governor>
+            <dependent idx="8">culture</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">showing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">showing</governor>
+            <dependent idx="2">interest</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">company</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">culture</governor>
+            <dependent idx="5">company</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">culture</governor>
+            <dependent idx="7">office</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">showing</governor>
+            <dependent idx="8">culture</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

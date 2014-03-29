@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>plain</word>
+            <lemma>plain</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>pikestaff</word>
+            <lemma>pikestaff</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>evident</word>
+            <lemma>evident</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADJP (RB plain) (PP (IN as) (NP (DT a) (NN pikestaff)))) (ADJP (JJ evident)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">plain</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">plain</governor>
+            <dependent idx="2">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">pikestaff</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">as</governor>
+            <dependent idx="4">pikestaff</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">plain</governor>
+            <dependent idx="5">evident</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">plain</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">pikestaff</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="1">plain</governor>
+            <dependent idx="4">pikestaff</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">plain</governor>
+            <dependent idx="5">evident</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">plain</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">pikestaff</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="1">plain</governor>
+            <dependent idx="4">pikestaff</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">plain</governor>
+            <dependent idx="5">evident</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

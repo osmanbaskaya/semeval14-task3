@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>ability</word>
+            <lemma>ability</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>sustain</word>
+            <lemma>sustain</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>fueled</word>
+            <lemma>fuel</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN ability)) (S (VP (TO to) (VP (VB sustain) (VP (VBN fueled))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ability</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">sustain</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">ability</governor>
+            <dependent idx="3">sustain</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">sustain</governor>
+            <dependent idx="4">fueled</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ability</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">sustain</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">ability</governor>
+            <dependent idx="3">sustain</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">sustain</governor>
+            <dependent idx="4">fueled</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">ability</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">sustain</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">ability</governor>
+            <dependent idx="3">sustain</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">sustain</governor>
+            <dependent idx="4">fueled</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

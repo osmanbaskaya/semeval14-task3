@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>front</word>
+            <lemma>front</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>center</word>
+            <lemma>center</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>week</word>
+            <lemma>week</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>prominent</word>
+            <lemma>prominent</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN front) (CC and) (NN center)) (NP-TMP (DT this) (NN week))) (ADJP (JJ prominent)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">prominent</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">prominent</governor>
+            <dependent idx="1">front</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">front</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">front</governor>
+            <dependent idx="3">center</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">week</governor>
+            <dependent idx="4">this</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">front</governor>
+            <dependent idx="5">week</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">prominent</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">prominent</governor>
+            <dependent idx="1">front</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">front</governor>
+            <dependent idx="3">center</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">week</governor>
+            <dependent idx="4">this</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">front</governor>
+            <dependent idx="5">week</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">prominent</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">prominent</governor>
+            <dependent idx="1">front</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">front</governor>
+            <dependent idx="3">center</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">prominent</governor>
+            <dependent idx="3">center</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">week</governor>
+            <dependent idx="4">this</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">front</governor>
+            <dependent idx="5">week</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

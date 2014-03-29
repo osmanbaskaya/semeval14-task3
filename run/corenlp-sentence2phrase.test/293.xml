@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Did</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="2">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>score</word>
+            <lemma>score</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>tickets</word>
+            <lemma>ticket</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>concert</word>
+            <lemma>concert</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBD Did) (SBAR (S (NP (PRP you)) (VP (VBP score) (NP (NP (NNS tickets)) (PP (IN for) (NP (DT the) (NN concert)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Did</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">score</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Did</governor>
+            <dependent idx="3">score</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">score</governor>
+            <dependent idx="4">tickets</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">tickets</governor>
+            <dependent idx="5">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">concert</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">for</governor>
+            <dependent idx="7">concert</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Did</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">score</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Did</governor>
+            <dependent idx="3">score</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">score</governor>
+            <dependent idx="4">tickets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">concert</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">tickets</governor>
+            <dependent idx="7">concert</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Did</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">score</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Did</governor>
+            <dependent idx="3">score</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">score</governor>
+            <dependent idx="4">tickets</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">concert</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">tickets</governor>
+            <dependent idx="7">concert</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>sold-out</word>
+            <lemma>sold-out</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>concert</word>
+            <lemma>concert</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>tickets</word>
+            <lemma>ticket</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ sold-out) (NN concert) (NNS tickets))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">tickets</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">tickets</governor>
+            <dependent idx="1">sold-out</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">tickets</governor>
+            <dependent idx="2">concert</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">tickets</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">tickets</governor>
+            <dependent idx="1">sold-out</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">tickets</governor>
+            <dependent idx="2">concert</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">tickets</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">tickets</governor>
+            <dependent idx="1">sold-out</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">tickets</governor>
+            <dependent idx="2">concert</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

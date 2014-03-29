@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>life</word>
+            <lemma>life</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="4">
+            <word>hand</word>
+            <lemma>hand</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>longevity</word>
+            <lemma>longevity</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN life)) (PP (IN in) (NP (PRP$ her) (NN hand) (NN longevity))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">life</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">life</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">longevity</governor>
+            <dependent idx="3">her</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">longevity</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">in</governor>
+            <dependent idx="5">longevity</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">life</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">longevity</governor>
+            <dependent idx="3">her</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">longevity</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">life</governor>
+            <dependent idx="5">longevity</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">life</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">longevity</governor>
+            <dependent idx="3">her</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">longevity</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">life</governor>
+            <dependent idx="5">longevity</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

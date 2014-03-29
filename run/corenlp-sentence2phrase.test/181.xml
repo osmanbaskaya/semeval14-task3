@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>critics</word>
+            <lemma>critic</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>described</word>
+            <lemma>describe</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>pop</word>
+            <lemma>pop</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>star</word>
+            <lemma>star</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="8">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>album</word>
+            <lemma>album</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>very</word>
+            <lemma>very</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="12">
+            <word>off-color</word>
+            <lemma>off-color</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNS critics)) (VP (VBD described) (NP (NP (DT the) (NN pop) (NN star) (POS 's)) (JJ new) (NN album)) (PP (IN as) (ADJP (RB very) (JJ off-color)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">described</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">critics</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">described</governor>
+            <dependent idx="2">critics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">star</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">star</governor>
+            <dependent idx="5">pop</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">album</governor>
+            <dependent idx="6">star</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="6">star</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">album</governor>
+            <dependent idx="8">new</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">described</governor>
+            <dependent idx="9">album</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">described</governor>
+            <dependent idx="10">as</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">off-color</governor>
+            <dependent idx="11">very</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">as</governor>
+            <dependent idx="12">off-color</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">described</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">critics</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">described</governor>
+            <dependent idx="2">critics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">star</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">star</governor>
+            <dependent idx="5">pop</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">album</governor>
+            <dependent idx="6">star</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">album</governor>
+            <dependent idx="8">new</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">described</governor>
+            <dependent idx="9">album</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">off-color</governor>
+            <dependent idx="11">very</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="3">described</governor>
+            <dependent idx="12">off-color</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">described</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">critics</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">described</governor>
+            <dependent idx="2">critics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">star</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">star</governor>
+            <dependent idx="5">pop</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">album</governor>
+            <dependent idx="6">star</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">album</governor>
+            <dependent idx="8">new</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">described</governor>
+            <dependent idx="9">album</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">off-color</governor>
+            <dependent idx="11">very</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="3">described</governor>
+            <dependent idx="12">off-color</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>usual</word>
+            <lemma>usual</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>suspects</word>
+            <lemma>suspect</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (DT the) (JJ usual) (NNS suspects)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">suspects</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">suspects</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">suspects</governor>
+            <dependent idx="2">usual</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">suspects</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">suspects</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">suspects</governor>
+            <dependent idx="2">usual</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">suspects</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">suspects</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">suspects</governor>
+            <dependent idx="2">usual</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

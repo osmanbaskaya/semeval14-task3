@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>OV-1D</word>
+            <lemma>ov-1d</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>Mohawk</word>
+            <lemma>mohawk</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>Evergreen</word>
+            <lemma>Evergreen</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Aviation</word>
+            <lemma>Aviation</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Museum</word>
+            <lemma>Museum</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>McMinnville</word>
+            <lemma>McMinnville</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="11">
+            <word>Oregon</word>
+            <lemma>Oregon</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>airshow</word>
+            <lemma>airshow</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN OV-1D) (NN Mohawk)) (PP (IN at) (NP (DT the) (NNP Evergreen) (NNP Aviation) (NNP Museum)))) (PP (IN in) (NP (NNP McMinnville) (, ,) (NNP Oregon))) (PP (IN airshow)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Mohawk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="1">OV-1D</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="3">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Museum</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Museum</governor>
+            <dependent idx="5">Evergreen</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Museum</governor>
+            <dependent idx="6">Aviation</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">at</governor>
+            <dependent idx="7">Museum</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Oregon</governor>
+            <dependent idx="9">McMinnville</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="11">Oregon</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="12">airshow</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Mohawk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="1">OV-1D</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Museum</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Museum</governor>
+            <dependent idx="5">Evergreen</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Museum</governor>
+            <dependent idx="6">Aviation</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="7">Museum</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Oregon</governor>
+            <dependent idx="9">McMinnville</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="11">Oregon</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="12">airshow</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Mohawk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="1">OV-1D</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Museum</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Museum</governor>
+            <dependent idx="5">Evergreen</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Museum</governor>
+            <dependent idx="6">Aviation</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="7">Museum</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Oregon</governor>
+            <dependent idx="9">McMinnville</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="11">Oregon</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Mohawk</governor>
+            <dependent idx="12">airshow</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>structure</word>
+            <lemma>structure</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>found</word>
+            <lemma>find</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>many</word>
+            <lemma>many</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>animals</word>
+            <lemma>animal</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="8">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="9">
+            <word>used</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="10">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>locomotion</word>
+            <lemma>locomotion</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>feet</word>
+            <lemma>foot</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (NN structure)) (VP (VBN found) (PP (IN in) (NP (NP (JJ many) (NNS animals)) (SBAR (WHNP (WDT that)) (S (VP (VBZ is) (VP (VBN used) (PP (IN for) (NP (NN locomotion) (NNS feet)))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">found</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">structure</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">found</governor>
+            <dependent idx="2">structure</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">found</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">animals</governor>
+            <dependent idx="5">many</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">animals</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">used</governor>
+            <dependent idx="7">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">used</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">animals</governor>
+            <dependent idx="9">used</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">used</governor>
+            <dependent idx="10">for</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">feet</governor>
+            <dependent idx="11">locomotion</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">for</governor>
+            <dependent idx="12">feet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">found</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">structure</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">found</governor>
+            <dependent idx="2">structure</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">animals</governor>
+            <dependent idx="5">many</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">found</governor>
+            <dependent idx="6">animals</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">used</governor>
+            <dependent idx="7">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">used</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">animals</governor>
+            <dependent idx="9">used</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">feet</governor>
+            <dependent idx="11">locomotion</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="9">used</governor>
+            <dependent idx="12">feet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">found</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">structure</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">found</governor>
+            <dependent idx="2">structure</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">animals</governor>
+            <dependent idx="5">many</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">found</governor>
+            <dependent idx="6">animals</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">used</governor>
+            <dependent idx="7">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">used</governor>
+            <dependent idx="8">is</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">animals</governor>
+            <dependent idx="9">used</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">feet</governor>
+            <dependent idx="11">locomotion</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="9">used</governor>
+            <dependent idx="12">feet</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

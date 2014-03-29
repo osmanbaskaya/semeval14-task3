@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Just</word>
+            <lemma>just</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>look</word>
+            <lemma>look</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>huge</word>
+            <lemma>huge</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>cruise</word>
+            <lemma>cruise</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>ships</word>
+            <lemma>ship</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="9">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="10">
+            <word>dwarf</word>
+            <lemma>dwarf</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>surrounding</word>
+            <lemma>surround</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="13">
+            <word>buildings</word>
+            <lemma>building</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB Just)) (VP (VB look) (PP (IN for) (NP (NP (DT the) (JJ huge) (NN cruise) (NNS ships)) (, ,) (SBAR (WHNP (WDT which)) (S (VP (VBP dwarf) (NP (DT the) (VBG surrounding) (NNS buildings)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">look</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">look</governor>
+            <dependent idx="1">Just</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">look</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ships</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">ships</governor>
+            <dependent idx="5">huge</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">ships</governor>
+            <dependent idx="6">cruise</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">for</governor>
+            <dependent idx="7">ships</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">dwarf</governor>
+            <dependent idx="9">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">ships</governor>
+            <dependent idx="10">dwarf</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">buildings</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">buildings</governor>
+            <dependent idx="12">surrounding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">dwarf</governor>
+            <dependent idx="13">buildings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">look</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">look</governor>
+            <dependent idx="1">Just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ships</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">ships</governor>
+            <dependent idx="5">huge</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">ships</governor>
+            <dependent idx="6">cruise</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">look</governor>
+            <dependent idx="7">ships</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">dwarf</governor>
+            <dependent idx="9">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">ships</governor>
+            <dependent idx="10">dwarf</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">buildings</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">buildings</governor>
+            <dependent idx="12">surrounding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">dwarf</governor>
+            <dependent idx="13">buildings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">look</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">look</governor>
+            <dependent idx="1">Just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">ships</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">ships</governor>
+            <dependent idx="5">huge</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">ships</governor>
+            <dependent idx="6">cruise</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">look</governor>
+            <dependent idx="7">ships</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">dwarf</governor>
+            <dependent idx="9">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">ships</governor>
+            <dependent idx="10">dwarf</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">buildings</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">buildings</governor>
+            <dependent idx="12">surrounding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">dwarf</governor>
+            <dependent idx="13">buildings</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>massive</word>
+            <lemma>massive</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>cruise</word>
+            <lemma>cruise</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>ships</word>
+            <lemma>ship</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ massive) (NN cruise) (NNS ships))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ships</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">ships</governor>
+            <dependent idx="1">massive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">ships</governor>
+            <dependent idx="2">cruise</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ships</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">ships</governor>
+            <dependent idx="1">massive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">ships</governor>
+            <dependent idx="2">cruise</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">ships</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">ships</governor>
+            <dependent idx="1">massive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">ships</governor>
+            <dependent idx="2">cruise</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

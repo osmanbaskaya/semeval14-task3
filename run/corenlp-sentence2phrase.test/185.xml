@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>lower</word>
+            <lemma>lower</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="2">
+            <word>OPEC</word>
+            <lemma>OPEC</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>output</word>
+            <lemma>output</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>ceiling</word>
+            <lemma>ceiling</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>oil</word>
+            <lemma>oil</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJR lower) (NNP OPEC) (NN output)) (NP (NN ceiling) (NN oil)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">output</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">output</governor>
+            <dependent idx="1">lower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">output</governor>
+            <dependent idx="2">OPEC</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">oil</governor>
+            <dependent idx="4">ceiling</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">output</governor>
+            <dependent idx="5">oil</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">output</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">output</governor>
+            <dependent idx="1">lower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">output</governor>
+            <dependent idx="2">OPEC</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">oil</governor>
+            <dependent idx="4">ceiling</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">output</governor>
+            <dependent idx="5">oil</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">output</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">output</governor>
+            <dependent idx="1">lower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">output</governor>
+            <dependent idx="2">OPEC</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">oil</governor>
+            <dependent idx="4">ceiling</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">output</governor>
+            <dependent idx="5">oil</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

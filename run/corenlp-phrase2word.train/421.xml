@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>biological</word>
+            <lemma>biological</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>agent</word>
+            <lemma>agent</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="5">
+            <word>causes</word>
+            <lemma>cause</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>disease</word>
+            <lemma>disease</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>illness</word>
+            <lemma>illness</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="10">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="11">
+            <word>host</word>
+            <lemma>host</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>spear</word>
+            <lemma>spear</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (JJ biological) (NN agent)) (SBAR (WHNP (WDT that)) (S (VP (VBZ causes) (NP (NN disease) (CC or) (NN illness)) (PP (TO to) (NP (PRP$ its) (NN host) (NN spear))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">agent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">agent</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">agent</governor>
+            <dependent idx="2">biological</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">causes</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">agent</governor>
+            <dependent idx="5">causes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">causes</governor>
+            <dependent idx="6">disease</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">disease</governor>
+            <dependent idx="7">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">disease</governor>
+            <dependent idx="8">illness</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">causes</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">spear</governor>
+            <dependent idx="10">its</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">spear</governor>
+            <dependent idx="11">host</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">to</governor>
+            <dependent idx="12">spear</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">agent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">agent</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">agent</governor>
+            <dependent idx="2">biological</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">causes</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">agent</governor>
+            <dependent idx="5">causes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">causes</governor>
+            <dependent idx="6">disease</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="6">disease</governor>
+            <dependent idx="8">illness</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">spear</governor>
+            <dependent idx="10">its</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">spear</governor>
+            <dependent idx="11">host</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">causes</governor>
+            <dependent idx="12">spear</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">agent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">agent</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">agent</governor>
+            <dependent idx="2">biological</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">causes</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">agent</governor>
+            <dependent idx="5">causes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">causes</governor>
+            <dependent idx="6">disease</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">causes</governor>
+            <dependent idx="8">illness</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="6">disease</governor>
+            <dependent idx="8">illness</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">spear</governor>
+            <dependent idx="10">its</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">spear</governor>
+            <dependent idx="11">host</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="5">causes</governor>
+            <dependent idx="12">spear</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>theater</word>
+            <lemma>theater</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>likes</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>feature</word>
+            <lemma>feature</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>up-and-coming</word>
+            <lemma>up-and-coming</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>singers</word>
+            <lemma>singer</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="9">
+            <word>comedians</word>
+            <lemma>comedian</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN theater)) (VP (VBZ likes) (S (VP (TO to) (VP (VB feature) (NP (JJ up-and-coming) (NNS singers) (CC and) (NNS comedians)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">likes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">theater</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">likes</governor>
+            <dependent idx="2">theater</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">feature</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">likes</governor>
+            <dependent idx="5">feature</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">singers</governor>
+            <dependent idx="6">up-and-coming</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">feature</governor>
+            <dependent idx="7">singers</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">singers</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">singers</governor>
+            <dependent idx="9">comedians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">likes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">theater</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">likes</governor>
+            <dependent idx="2">theater</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">feature</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">likes</governor>
+            <dependent idx="5">feature</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">singers</governor>
+            <dependent idx="6">up-and-coming</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">feature</governor>
+            <dependent idx="7">singers</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">singers</governor>
+            <dependent idx="9">comedians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">likes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">theater</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">likes</governor>
+            <dependent idx="2">theater</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">feature</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">likes</governor>
+            <dependent idx="5">feature</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">singers</governor>
+            <dependent idx="6">up-and-coming</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">feature</governor>
+            <dependent idx="7">singers</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">feature</governor>
+            <dependent idx="9">comedians</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">singers</governor>
+            <dependent idx="9">comedians</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>big</word>
+            <lemma>big</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>break</word>
+            <lemma>break</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>performers</word>
+            <lemma>performer</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>theater</word>
+            <lemma>theater</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ big) (NN break)) (PP (IN for) (NP (NP (NNS performers)) (PP (IN from) (NP (DT the) (NN theater))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">break</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">break</governor>
+            <dependent idx="1">big</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">break</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">for</governor>
+            <dependent idx="4">performers</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">performers</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">theater</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">from</governor>
+            <dependent idx="7">theater</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">break</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">break</governor>
+            <dependent idx="1">big</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">break</governor>
+            <dependent idx="4">performers</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">theater</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">performers</governor>
+            <dependent idx="7">theater</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">break</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">break</governor>
+            <dependent idx="1">big</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">break</governor>
+            <dependent idx="4">performers</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">theater</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">performers</governor>
+            <dependent idx="7">theater</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

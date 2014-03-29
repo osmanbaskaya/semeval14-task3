@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>state</word>
+            <lemma>state</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="4">
+            <word>extends</word>
+            <lemma>extend</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>dominion</word>
+            <lemma>dominion</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>over</word>
+            <lemma>over</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>populations</word>
+            <lemma>population</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>distinct</word>
+            <lemma>distinct</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>culturally</word>
+            <lemma>culturally</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="11">
+            <word>ethnically</word>
+            <lemma>ethnically</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="12">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>culture</word>
+            <lemma>culture</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>kingdom</word>
+            <lemma>kingdom</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (NN state)) (SBAR (WHNP (WDT that)) (S (VP (VBZ extends) (NP (NN dominion)) (PP (IN over) (NP (NP (NP (NNS populations)) (ADJP (JJ distinct) (RB culturally))) (CC and) (NP (ADJP (RB ethnically) (PP (IN from) (NP (DT the) (NN culture)))) (NN kingdom)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">state</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">state</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">extends</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">state</governor>
+            <dependent idx="4">extends</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">extends</governor>
+            <dependent idx="5">dominion</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">extends</governor>
+            <dependent idx="6">over</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">over</governor>
+            <dependent idx="7">populations</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">populations</governor>
+            <dependent idx="8">distinct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">distinct</governor>
+            <dependent idx="9">culturally</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">populations</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">kingdom</governor>
+            <dependent idx="11">ethnically</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">ethnically</governor>
+            <dependent idx="12">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">culture</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">from</governor>
+            <dependent idx="14">culture</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">populations</governor>
+            <dependent idx="15">kingdom</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">state</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">state</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">extends</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">state</governor>
+            <dependent idx="4">extends</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">extends</governor>
+            <dependent idx="5">dominion</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="4">extends</governor>
+            <dependent idx="7">populations</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">populations</governor>
+            <dependent idx="8">distinct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">distinct</governor>
+            <dependent idx="9">culturally</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">kingdom</governor>
+            <dependent idx="11">ethnically</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">culture</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="11">ethnically</governor>
+            <dependent idx="14">culture</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">populations</governor>
+            <dependent idx="15">kingdom</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">state</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">state</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">extends</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">state</governor>
+            <dependent idx="4">extends</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">extends</governor>
+            <dependent idx="5">dominion</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="4">extends</governor>
+            <dependent idx="7">populations</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">populations</governor>
+            <dependent idx="8">distinct</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">distinct</governor>
+            <dependent idx="9">culturally</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">kingdom</governor>
+            <dependent idx="11">ethnically</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">culture</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="11">ethnically</governor>
+            <dependent idx="14">culture</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="4">extends</governor>
+            <dependent idx="15">kingdom</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="7">populations</governor>
+            <dependent idx="15">kingdom</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

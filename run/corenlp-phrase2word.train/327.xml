@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Fanny</word>
+            <lemma>Fanny</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Ardant</word>
+            <lemma>Ardant</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>2005</word>
+            <lemma>2005</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>Cannes</word>
+            <lemma>Cannes</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Film</word>
+            <lemma>Film</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Festival</word>
+            <lemma>Festival</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>treasury</word>
+            <lemma>treasury</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>note</word>
+            <lemma>note</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Fanny) (NNP Ardant)) (, ,) (NP (CD 2005) (NNP Cannes) (NNP Film) (NNP Festival) (NN treasury) (NN note)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Ardant</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Ardant</governor>
+            <dependent idx="1">Fanny</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">note</governor>
+            <dependent idx="4">2005</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="5">Cannes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="6">Film</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="7">Festival</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="8">treasury</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Ardant</governor>
+            <dependent idx="9">note</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Ardant</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Ardant</governor>
+            <dependent idx="1">Fanny</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">note</governor>
+            <dependent idx="4">2005</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="5">Cannes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="6">Film</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="7">Festival</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="8">treasury</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Ardant</governor>
+            <dependent idx="9">note</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Ardant</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Ardant</governor>
+            <dependent idx="1">Fanny</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">note</governor>
+            <dependent idx="4">2005</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="5">Cannes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="6">Film</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="7">Festival</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">note</governor>
+            <dependent idx="8">treasury</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Ardant</governor>
+            <dependent idx="9">note</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

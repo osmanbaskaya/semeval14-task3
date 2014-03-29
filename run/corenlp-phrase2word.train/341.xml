@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>structural</word>
+            <lemma>structural</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>functional</word>
+            <lemma>functional</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>unit</word>
+            <lemma>unit</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>known</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="9">
+            <word>living</word>
+            <lemma>living</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>organisms</word>
+            <lemma>organism</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>DNA</word>
+            <lemma>dna</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT the) (ADJP (JJ structural) (CC and) (JJ functional)) (NN unit)) (PP (IN of) (NP (NP (DT all)) (VP (VBN known) (NP (NN living) (NNS organisms) (NN DNA)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">unit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">unit</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">unit</governor>
+            <dependent idx="2">structural</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">structural</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">structural</governor>
+            <dependent idx="4">functional</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">unit</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="7">all</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">all</governor>
+            <dependent idx="8">known</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">DNA</governor>
+            <dependent idx="9">living</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">DNA</governor>
+            <dependent idx="10">organisms</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">known</governor>
+            <dependent idx="11">DNA</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">unit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">unit</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">unit</governor>
+            <dependent idx="2">structural</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">structural</governor>
+            <dependent idx="4">functional</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">unit</governor>
+            <dependent idx="7">all</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">all</governor>
+            <dependent idx="8">known</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">DNA</governor>
+            <dependent idx="9">living</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">DNA</governor>
+            <dependent idx="10">organisms</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">known</governor>
+            <dependent idx="11">DNA</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">unit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">unit</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">unit</governor>
+            <dependent idx="2">structural</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">structural</governor>
+            <dependent idx="4">functional</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">unit</governor>
+            <dependent idx="4">functional</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">unit</governor>
+            <dependent idx="7">all</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">all</governor>
+            <dependent idx="8">known</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">DNA</governor>
+            <dependent idx="9">living</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">DNA</governor>
+            <dependent idx="10">organisms</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">known</governor>
+            <dependent idx="11">DNA</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

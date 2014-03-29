@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>developing</word>
+            <lemma>develop</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>mammal</word>
+            <lemma>mammal</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="5">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>viviparous</word>
+            <lemma>viviparous</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>vertebrate</word>
+            <lemma>vertebrate</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>baby</word>
+            <lemma>baby</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (VBG developing) (NN mammal)) (CC or) (NP (JJ other) (JJ viviparous) (NN vertebrate) (NN baby))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">mammal</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">mammal</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">mammal</governor>
+            <dependent idx="2">developing</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">mammal</governor>
+            <dependent idx="4">or</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">baby</governor>
+            <dependent idx="5">other</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">baby</governor>
+            <dependent idx="6">viviparous</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">baby</governor>
+            <dependent idx="7">vertebrate</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">mammal</governor>
+            <dependent idx="8">baby</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">mammal</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">mammal</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">mammal</governor>
+            <dependent idx="2">developing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">baby</governor>
+            <dependent idx="5">other</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">baby</governor>
+            <dependent idx="6">viviparous</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">baby</governor>
+            <dependent idx="7">vertebrate</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">mammal</governor>
+            <dependent idx="8">baby</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">mammal</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">mammal</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">mammal</governor>
+            <dependent idx="2">developing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">baby</governor>
+            <dependent idx="5">other</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">baby</governor>
+            <dependent idx="6">viviparous</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">baby</governor>
+            <dependent idx="7">vertebrate</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">mammal</governor>
+            <dependent idx="8">baby</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

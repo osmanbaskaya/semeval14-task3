@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>interior</word>
+            <lemma>interior</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>factory</word>
+            <lemma>factory</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>store</word>
+            <lemma>store</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Givat</word>
+            <lemma>Givat</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Shaul</word>
+            <lemma>Shaul</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>baked</word>
+            <lemma>baked</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>goods</word>
+            <lemma>goods</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NN interior)) (PP (IN of) (NP (NP (NN factory) (NN store)) (PP (IN in) (NP (NNP Givat) (NNP Shaul)))))) (NP (JJ baked) (NNS goods)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">interior</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">interior</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">store</governor>
+            <dependent idx="3">factory</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="4">store</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">store</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Shaul</governor>
+            <dependent idx="6">Givat</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="7">Shaul</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">goods</governor>
+            <dependent idx="8">baked</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">interior</governor>
+            <dependent idx="9">goods</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">interior</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">store</governor>
+            <dependent idx="3">factory</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">interior</governor>
+            <dependent idx="4">store</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Shaul</governor>
+            <dependent idx="6">Givat</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">store</governor>
+            <dependent idx="7">Shaul</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">goods</governor>
+            <dependent idx="8">baked</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">interior</governor>
+            <dependent idx="9">goods</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">interior</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">store</governor>
+            <dependent idx="3">factory</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">interior</governor>
+            <dependent idx="4">store</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Shaul</governor>
+            <dependent idx="6">Givat</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">store</governor>
+            <dependent idx="7">Shaul</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">goods</governor>
+            <dependent idx="8">baked</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">interior</governor>
+            <dependent idx="9">goods</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

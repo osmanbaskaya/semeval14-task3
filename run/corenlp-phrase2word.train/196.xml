@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>bite</word>
+            <lemma>bite</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>bullet</word>
+            <lemma>bullet</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>begin</word>
+            <lemma>begin</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB bite) (S (NP (DT the) (NN bullet)) (VP (VB begin)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bite</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bullet</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">begin</governor>
+            <dependent idx="3">bullet</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">bite</governor>
+            <dependent idx="4">begin</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bite</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bullet</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">begin</governor>
+            <dependent idx="3">bullet</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">bite</governor>
+            <dependent idx="4">begin</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bite</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bullet</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">begin</governor>
+            <dependent idx="3">bullet</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">bite</governor>
+            <dependent idx="4">begin</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

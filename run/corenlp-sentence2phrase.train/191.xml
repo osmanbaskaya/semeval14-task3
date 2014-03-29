@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>how</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="4">
+            <word>watch</word>
+            <lemma>watch</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>show</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>thats</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>restricted</word>
+            <lemma>restricted</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="10">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>certain</word>
+            <lemma>certain</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>country</word>
+            <lemma>country</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB how)) (SQ (VBP do) (NP (FW i)) (VP (VBP watch) (SBAR (S (NP (DT a) (NN show)) (VP (VBZ thats) (ADJP (JJ restricted) (PP (TO to) (NP (DT a) (JJ certain) (NN country))))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">watch</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">watch</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">watch</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">watch</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">show</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">thats</governor>
+            <dependent idx="6">show</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">watch</governor>
+            <dependent idx="7">thats</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="7">thats</governor>
+            <dependent idx="8">restricted</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">restricted</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">country</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">country</governor>
+            <dependent idx="11">certain</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">to</governor>
+            <dependent idx="12">country</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">watch</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">watch</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">watch</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">watch</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">show</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">thats</governor>
+            <dependent idx="6">show</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">watch</governor>
+            <dependent idx="7">thats</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="7">thats</governor>
+            <dependent idx="8">restricted</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">country</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">country</governor>
+            <dependent idx="11">certain</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="8">restricted</governor>
+            <dependent idx="12">country</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">watch</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">watch</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">watch</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">watch</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">show</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">thats</governor>
+            <dependent idx="6">show</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">watch</governor>
+            <dependent idx="7">thats</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="7">thats</governor>
+            <dependent idx="8">restricted</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">country</governor>
+            <dependent idx="10">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">country</governor>
+            <dependent idx="11">certain</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="8">restricted</governor>
+            <dependent idx="12">country</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>located</word>
+            <lemma>located</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>UK</word>
+            <lemma>UK</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ located) (PP (IN in) (NP (DT the) (NNP UK))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">located</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">located</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">UK</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">in</governor>
+            <dependent idx="4">UK</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">located</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">UK</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">located</governor>
+            <dependent idx="4">UK</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">located</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">UK</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">located</governor>
+            <dependent idx="4">UK</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

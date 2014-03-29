@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Ryanair</word>
+            <lemma>Ryanair</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>had</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="3">
+            <word>told</word>
+            <lemma>tell</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>pilots</word>
+            <lemma>pilot</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>anybody</word>
+            <lemma>anybody</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>signing</word>
+            <lemma>sign</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="9">
+            <word>so-called</word>
+            <lemma>so-called</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>safety</word>
+            <lemma>safety</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>petition</word>
+            <lemma>petition</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>''</POS>
+          </token>
+          <token id="13">
+            <word>might</word>
+            <lemma>might</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="14">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="15">
+            <word>dismissed</word>
+            <lemma>dismiss</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Ryanair)) (VP (VBD had) (VP (VBN told) (NP (NNS pilots) (NN anybody)) (S (VP (VBG signing) (SBAR (S (NP (DT a) (`` ``) (JJ so-called) (NN safety) (NN petition) ('' '')) (VP (MD might) (VP (VB be) (VP (VBN dismissed)))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">told</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">told</governor>
+            <dependent idx="1">Ryanair</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">told</governor>
+            <dependent idx="2">had</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">anybody</governor>
+            <dependent idx="4">pilots</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">told</governor>
+            <dependent idx="5">anybody</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">told</governor>
+            <dependent idx="6">signing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">petition</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">petition</governor>
+            <dependent idx="9">so-called</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">petition</governor>
+            <dependent idx="10">safety</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="11">petition</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="13">might</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="14">be</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">signing</governor>
+            <dependent idx="15">dismissed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">told</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">told</governor>
+            <dependent idx="1">Ryanair</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">told</governor>
+            <dependent idx="2">had</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">anybody</governor>
+            <dependent idx="4">pilots</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">told</governor>
+            <dependent idx="5">anybody</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">told</governor>
+            <dependent idx="6">signing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">petition</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">petition</governor>
+            <dependent idx="9">so-called</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">petition</governor>
+            <dependent idx="10">safety</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="11">petition</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="13">might</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="14">be</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">signing</governor>
+            <dependent idx="15">dismissed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">told</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">told</governor>
+            <dependent idx="1">Ryanair</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">told</governor>
+            <dependent idx="2">had</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">anybody</governor>
+            <dependent idx="4">pilots</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">told</governor>
+            <dependent idx="5">anybody</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">told</governor>
+            <dependent idx="6">signing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">petition</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">petition</governor>
+            <dependent idx="9">so-called</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">petition</governor>
+            <dependent idx="10">safety</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="11">petition</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="13">might</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="15">dismissed</governor>
+            <dependent idx="14">be</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">signing</governor>
+            <dependent idx="15">dismissed</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>aeroplane</word>
+            <lemma>aeroplane</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>food</word>
+            <lemma>food</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NN aeroplane) (NN food))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">food</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">food</governor>
+            <dependent idx="1">aeroplane</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">food</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">food</governor>
+            <dependent idx="1">aeroplane</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">food</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">food</governor>
+            <dependent idx="1">aeroplane</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>organism</word>
+            <lemma>organism</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="4">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>microscopic</word>
+            <lemma>microscopic</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>science</word>
+            <lemma>science</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT an) (NN organism)) (SBAR (WHNP (WDT that)) (S (VP (VBZ is) (NP (JJ microscopic) (NN science)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">organism</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">organism</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">science</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">science</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">science</governor>
+            <dependent idx="5">microscopic</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">organism</governor>
+            <dependent idx="6">science</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">organism</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">organism</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">science</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">science</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">science</governor>
+            <dependent idx="5">microscopic</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">organism</governor>
+            <dependent idx="6">science</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">organism</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">organism</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">science</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">science</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">science</governor>
+            <dependent idx="5">microscopic</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">organism</governor>
+            <dependent idx="6">science</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

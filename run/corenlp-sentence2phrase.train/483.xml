@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>His</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="2">
+            <word>family</word>
+            <lemma>family</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>devastated</word>
+            <lemma>devastate</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>ask</word>
+            <lemma>ask</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>privacy</word>
+            <lemma>privacy</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>difficult</word>
+            <lemma>difficult</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>time</word>
+            <lemma>time</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP$ His) (NN family)) (VP (VP (VBP are) (VP (VBN devastated))) (, ,) (CC and) (VP (VB ask) (PP (IN for) (NP (NN privacy))) (PP (IN at) (NP (DT this) (JJ difficult) (NN time))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">devastated</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">family</governor>
+            <dependent idx="1">His</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">devastated</governor>
+            <dependent idx="2">family</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">devastated</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">devastated</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">devastated</governor>
+            <dependent idx="7">ask</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">ask</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">for</governor>
+            <dependent idx="9">privacy</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">ask</governor>
+            <dependent idx="10">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">time</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">time</governor>
+            <dependent idx="12">difficult</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">at</governor>
+            <dependent idx="13">time</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">devastated</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">family</governor>
+            <dependent idx="1">His</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">devastated</governor>
+            <dependent idx="2">family</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">devastated</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">devastated</governor>
+            <dependent idx="7">ask</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">ask</governor>
+            <dependent idx="9">privacy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">time</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">time</governor>
+            <dependent idx="12">difficult</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="7">ask</governor>
+            <dependent idx="13">time</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">devastated</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">family</governor>
+            <dependent idx="1">His</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="4">devastated</governor>
+            <dependent idx="2">family</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">ask</governor>
+            <dependent idx="2">family</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="4">devastated</governor>
+            <dependent idx="3">are</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">devastated</governor>
+            <dependent idx="7">ask</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">ask</governor>
+            <dependent idx="9">privacy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">time</governor>
+            <dependent idx="11">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">time</governor>
+            <dependent idx="12">difficult</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="7">ask</governor>
+            <dependent idx="13">time</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>family</word>
+            <lemma>family</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>reunion</word>
+            <lemma>reunion</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NN family) (NN reunion))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">reunion</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">reunion</governor>
+            <dependent idx="1">family</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">reunion</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">reunion</governor>
+            <dependent idx="1">family</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">reunion</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">reunion</governor>
+            <dependent idx="1">family</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

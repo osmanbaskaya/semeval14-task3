@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>kid</word>
+            <lemma>kid</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>block</word>
+            <lemma>block</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>neophyte</word>
+            <lemma>neophyte</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (JJ new) (NN kid)) (PP (IN on) (NP (DT the) (NN block)))) (ADJP (JJ neophyte)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">neophyte</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">kid</governor>
+            <dependent idx="1">new</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">neophyte</governor>
+            <dependent idx="2">kid</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">kid</governor>
+            <dependent idx="3">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">block</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">on</governor>
+            <dependent idx="5">block</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">neophyte</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">kid</governor>
+            <dependent idx="1">new</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">neophyte</governor>
+            <dependent idx="2">kid</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">block</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">kid</governor>
+            <dependent idx="5">block</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">neophyte</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">kid</governor>
+            <dependent idx="1">new</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">neophyte</governor>
+            <dependent idx="2">kid</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">block</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">kid</governor>
+            <dependent idx="5">block</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>set</word>
+            <lemma>set</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>guidelines</word>
+            <lemma>guideline</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>rules</word>
+            <lemma>rule</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>constellation</word>
+            <lemma>constellation</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (NN set)) (PP (IN of) (NP (NNS guidelines) (CC or) (NNS rules)))) (ADJP (NN constellation)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">constellation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">set</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">constellation</governor>
+            <dependent idx="2">set</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">set</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">guidelines</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">guidelines</governor>
+            <dependent idx="5">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">guidelines</governor>
+            <dependent idx="6">rules</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">constellation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">set</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">constellation</governor>
+            <dependent idx="2">set</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">set</governor>
+            <dependent idx="4">guidelines</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="4">guidelines</governor>
+            <dependent idx="6">rules</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">constellation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">set</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">constellation</governor>
+            <dependent idx="2">set</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">set</governor>
+            <dependent idx="4">guidelines</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">set</governor>
+            <dependent idx="6">rules</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="4">guidelines</governor>
+            <dependent idx="6">rules</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

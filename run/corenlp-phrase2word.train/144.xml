@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>barking</word>
+            <lemma>bark</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>wrong</word>
+            <lemma>wrong</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>tree</word>
+            <lemma>tree</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>problem</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG barking) (PRT (RP up)) (NP (DT the) (JJ wrong) (NN tree) (NN problem))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">barking</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">barking</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">problem</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">problem</governor>
+            <dependent idx="4">wrong</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">problem</governor>
+            <dependent idx="5">tree</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">barking</governor>
+            <dependent idx="6">problem</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">barking</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">barking</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">problem</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">problem</governor>
+            <dependent idx="4">wrong</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">problem</governor>
+            <dependent idx="5">tree</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">barking</governor>
+            <dependent idx="6">problem</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">barking</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">barking</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">problem</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">problem</governor>
+            <dependent idx="4">wrong</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">problem</governor>
+            <dependent idx="5">tree</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">barking</governor>
+            <dependent idx="6">problem</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

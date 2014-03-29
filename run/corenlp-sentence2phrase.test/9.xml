@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Dietitians</word>
+            <lemma>dietitian</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>recommend</word>
+            <lemma>recommend</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>ingesting</word>
+            <lemma>ingest</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>specific</word>
+            <lemma>specific</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>foods</word>
+            <lemma>food</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>rich</word>
+            <lemma>rich</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>dietary</word>
+            <lemma>dietary</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>elements</word>
+            <lemma>element</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS Dietitians)) (VP (VBP recommend) (S (VP (VBG ingesting) (S (NP (JJ specific) (NNS foods)) (ADJP (JJ rich) (PP (IN with) (NP (DT that) (JJ dietary) (NNS elements)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recommend</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">recommend</governor>
+            <dependent idx="1">Dietitians</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">recommend</governor>
+            <dependent idx="3">ingesting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">foods</governor>
+            <dependent idx="4">specific</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">rich</governor>
+            <dependent idx="5">foods</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">ingesting</governor>
+            <dependent idx="6">rich</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">rich</governor>
+            <dependent idx="7">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">elements</governor>
+            <dependent idx="8">that</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">elements</governor>
+            <dependent idx="9">dietary</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">with</governor>
+            <dependent idx="10">elements</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recommend</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">recommend</governor>
+            <dependent idx="1">Dietitians</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">recommend</governor>
+            <dependent idx="3">ingesting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">foods</governor>
+            <dependent idx="4">specific</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">rich</governor>
+            <dependent idx="5">foods</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">ingesting</governor>
+            <dependent idx="6">rich</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">elements</governor>
+            <dependent idx="8">that</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">elements</governor>
+            <dependent idx="9">dietary</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="6">rich</governor>
+            <dependent idx="10">elements</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">recommend</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">recommend</governor>
+            <dependent idx="1">Dietitians</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">recommend</governor>
+            <dependent idx="3">ingesting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">foods</governor>
+            <dependent idx="4">specific</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">rich</governor>
+            <dependent idx="5">foods</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">ingesting</governor>
+            <dependent idx="6">rich</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">elements</governor>
+            <dependent idx="8">that</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">elements</governor>
+            <dependent idx="9">dietary</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="6">rich</governor>
+            <dependent idx="10">elements</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>dietitians</word>
+            <lemma>dietitian</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="3">
+            <word>recommendations</word>
+            <lemma>recommendation</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>eating</word>
+            <lemma>eat</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>certain</word>
+            <lemma>certain</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>foods</word>
+            <lemma>food</lemma>
+            <CharacterOffsetBegin>126</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>full</word>
+            <lemma>full</lemma>
+            <CharacterOffsetBegin>132</CharacterOffsetBegin>
+            <CharacterOffsetEnd>136</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>137</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>dietary</word>
+            <lemma>dietary</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>147</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>elements</word>
+            <lemma>element</lemma>
+            <CharacterOffsetBegin>148</CharacterOffsetBegin>
+            <CharacterOffsetEnd>156</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NP (NNS dietitians) (POS ')) (NNS recommendations)) (PP (IN for) (S (VP (VBG eating) (NP (NP (JJ certain) (NNS foods)) (PP (JJ full) (IN of) (NP (JJ dietary) (NNS elements)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">recommendations</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">recommendations</governor>
+            <dependent idx="1">dietitians</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">recommendations</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="4">for</governor>
+            <dependent idx="5">eating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">foods</governor>
+            <dependent idx="6">certain</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">eating</governor>
+            <dependent idx="7">foods</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">of</governor>
+            <dependent idx="8">full</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">foods</governor>
+            <dependent idx="9">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">elements</governor>
+            <dependent idx="10">dietary</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">of</governor>
+            <dependent idx="11">elements</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">recommendations</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">recommendations</governor>
+            <dependent idx="1">dietitians</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="3">recommendations</governor>
+            <dependent idx="5">eating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">foods</governor>
+            <dependent idx="6">certain</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">eating</governor>
+            <dependent idx="7">foods</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">foods</governor>
+            <dependent idx="8">full</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">elements</governor>
+            <dependent idx="10">dietary</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">foods</governor>
+            <dependent idx="11">elements</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">recommendations</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">recommendations</governor>
+            <dependent idx="1">dietitians</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="3">recommendations</governor>
+            <dependent idx="5">eating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">foods</governor>
+            <dependent idx="6">certain</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">eating</governor>
+            <dependent idx="7">foods</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">foods</governor>
+            <dependent idx="8">full</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">elements</governor>
+            <dependent idx="10">dietary</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">foods</governor>
+            <dependent idx="11">elements</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

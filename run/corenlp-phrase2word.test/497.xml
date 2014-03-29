@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>willy</word>
+            <lemma>willy</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>wonka</word>
+            <lemma>wonka</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>chocolate</word>
+            <lemma>chocolate</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>factory</word>
+            <lemma>factory</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>birthday</word>
+            <lemma>birthday</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>supplies</word>
+            <lemma>supplies</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>birthday</word>
+            <lemma>birthday</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (ADVP (RB willy)) (NP (NN wonka)) (CC and) (NP (DT the) (NN chocolate))) (NP (NN factory) (NN birthday) (NNS supplies) (NN birthday)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">wonka</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">wonka</governor>
+            <dependent idx="1">willy</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">wonka</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">chocolate</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">wonka</governor>
+            <dependent idx="5">chocolate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="6">factory</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="7">birthday</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="8">supplies</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">wonka</governor>
+            <dependent idx="9">birthday</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">wonka</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">wonka</governor>
+            <dependent idx="1">willy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">chocolate</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">wonka</governor>
+            <dependent idx="5">chocolate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="6">factory</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="7">birthday</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="8">supplies</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">wonka</governor>
+            <dependent idx="9">birthday</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">wonka</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">wonka</governor>
+            <dependent idx="1">willy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">chocolate</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">wonka</governor>
+            <dependent idx="5">chocolate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="6">factory</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="7">birthday</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">birthday</governor>
+            <dependent idx="8">supplies</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">wonka</governor>
+            <dependent idx="9">birthday</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

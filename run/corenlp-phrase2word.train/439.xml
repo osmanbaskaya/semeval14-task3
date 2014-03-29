@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>alcoholic</word>
+            <lemma>alcoholic</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>beverage</word>
+            <lemma>beverage</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>made</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>fermented</word>
+            <lemma>fermented</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>juice</word>
+            <lemma>juice</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>apples</word>
+            <lemma>apple</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>mainly</word>
+            <lemma>mainly</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="12">
+            <word>cider</word>
+            <lemma>cider</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT an) (JJ alcoholic) (NN beverage)) (VP (VBN made) (PP (IN from) (NP (NP (DT the) (JJ fermented) (NN juice)) (PP (IN of) (NP (NNS apples))))))) (VP (ADVP (RB mainly)) (VBP cider)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">cider</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">beverage</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">beverage</governor>
+            <dependent idx="2">alcoholic</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">cider</governor>
+            <dependent idx="3">beverage</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">beverage</governor>
+            <dependent idx="4">made</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">made</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">juice</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">juice</governor>
+            <dependent idx="7">fermented</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">from</governor>
+            <dependent idx="8">juice</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">juice</governor>
+            <dependent idx="9">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">of</governor>
+            <dependent idx="10">apples</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">cider</governor>
+            <dependent idx="11">mainly</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">cider</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">beverage</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">beverage</governor>
+            <dependent idx="2">alcoholic</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">cider</governor>
+            <dependent idx="3">beverage</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">beverage</governor>
+            <dependent idx="4">made</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">juice</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">juice</governor>
+            <dependent idx="7">fermented</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">made</governor>
+            <dependent idx="8">juice</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">juice</governor>
+            <dependent idx="10">apples</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">cider</governor>
+            <dependent idx="11">mainly</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">cider</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">beverage</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">beverage</governor>
+            <dependent idx="2">alcoholic</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">cider</governor>
+            <dependent idx="3">beverage</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">beverage</governor>
+            <dependent idx="4">made</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">juice</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">juice</governor>
+            <dependent idx="7">fermented</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">made</governor>
+            <dependent idx="8">juice</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">juice</governor>
+            <dependent idx="10">apples</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">cider</governor>
+            <dependent idx="11">mainly</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>recurring</word>
+            <lemma>recur</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>problem</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>repeating</word>
+            <lemma>repeat</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (VBG recurring) (NN problem)) (VP (VBG repeating))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">problem</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">problem</governor>
+            <dependent idx="1">recurring</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">problem</governor>
+            <dependent idx="3">repeating</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">problem</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">problem</governor>
+            <dependent idx="1">recurring</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">problem</governor>
+            <dependent idx="3">repeating</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">problem</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">problem</governor>
+            <dependent idx="1">recurring</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">problem</governor>
+            <dependent idx="3">repeating</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

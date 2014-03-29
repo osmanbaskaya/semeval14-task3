@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>flying</word>
+            <lemma>fly</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>tethered</word>
+            <lemma>tethered</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>object</word>
+            <lemma>object</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="6">
+            <word>depends</word>
+            <lemma>depend</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>upon</word>
+            <lemma>upon</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>tension</word>
+            <lemma>tension</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>tethering</word>
+            <lemma>tethering</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>system</word>
+            <lemma>system</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>tail</word>
+            <lemma>tail</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT a) (VBG flying) (JJ tethered) (NN object)) (SBAR (WHNP (WDT that)) (S (VP (VBZ depends) (PP (IN upon) (NP (DT the) (NN tension))))))) (PP (IN of) (NP (DT a) (NN tethering) (NN system) (NN tail))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">object</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">object</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">object</governor>
+            <dependent idx="2">flying</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">object</governor>
+            <dependent idx="3">tethered</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">depends</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">object</governor>
+            <dependent idx="6">depends</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">depends</governor>
+            <dependent idx="7">upon</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">tension</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">upon</governor>
+            <dependent idx="9">tension</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">object</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">tail</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">tail</governor>
+            <dependent idx="12">tethering</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">tail</governor>
+            <dependent idx="13">system</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="14">tail</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">object</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">object</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">object</governor>
+            <dependent idx="2">flying</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">object</governor>
+            <dependent idx="3">tethered</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">depends</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">object</governor>
+            <dependent idx="6">depends</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">tension</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="prep_upon">
+            <governor idx="6">depends</governor>
+            <dependent idx="9">tension</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">tail</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">tail</governor>
+            <dependent idx="12">tethering</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">tail</governor>
+            <dependent idx="13">system</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">object</governor>
+            <dependent idx="14">tail</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">object</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">object</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">object</governor>
+            <dependent idx="2">flying</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">object</governor>
+            <dependent idx="3">tethered</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">depends</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">object</governor>
+            <dependent idx="6">depends</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">tension</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="prep_upon">
+            <governor idx="6">depends</governor>
+            <dependent idx="9">tension</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">tail</governor>
+            <dependent idx="11">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">tail</governor>
+            <dependent idx="12">tethering</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">tail</governor>
+            <dependent idx="13">system</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">object</governor>
+            <dependent idx="14">tail</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

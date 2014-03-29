@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Coat</word>
+            <lemma>coat</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>arms</word>
+            <lemma>arm</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>Ragusan</word>
+            <lemma>ragusan</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>families</word>
+            <lemma>family</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>Sherlock</word>
+            <lemma>Sherlock</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NN Coat)) (PP (IN of) (NP (NP (NNS arms)) (PP (IN of) (NP (DT the) (JJ Ragusan) (NNS families)))))) (NP (NNP Sherlock)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Coat</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Coat</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">arms</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">arms</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">families</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">families</governor>
+            <dependent idx="6">Ragusan</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="7">families</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Coat</governor>
+            <dependent idx="8">Sherlock</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Coat</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Coat</governor>
+            <dependent idx="3">arms</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">families</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">families</governor>
+            <dependent idx="6">Ragusan</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">arms</governor>
+            <dependent idx="7">families</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Coat</governor>
+            <dependent idx="8">Sherlock</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Coat</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Coat</governor>
+            <dependent idx="3">arms</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">families</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">families</governor>
+            <dependent idx="6">Ragusan</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">arms</governor>
+            <dependent idx="7">families</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">Coat</governor>
+            <dependent idx="8">Sherlock</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

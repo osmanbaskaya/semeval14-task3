@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>repeated</word>
+            <lemma>repeat</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>warnings</word>
+            <lemma>warning</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>hazardous</word>
+            <lemma>hazardous</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBN repeated) (S (NP (NNS warnings)) (ADJP (JJ hazardous)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">repeated</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">hazardous</governor>
+            <dependent idx="2">warnings</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">repeated</governor>
+            <dependent idx="3">hazardous</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">repeated</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">hazardous</governor>
+            <dependent idx="2">warnings</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">repeated</governor>
+            <dependent idx="3">hazardous</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">repeated</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">hazardous</governor>
+            <dependent idx="2">warnings</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">repeated</governor>
+            <dependent idx="3">hazardous</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

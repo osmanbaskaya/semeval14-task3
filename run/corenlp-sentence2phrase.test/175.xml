@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>They</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>sat</word>
+            <lemma>sit</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="3">
+            <word>through</word>
+            <lemma>through</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>back-to-back</word>
+            <lemma>back-to-back</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>movies</word>
+            <lemma>movie</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP They)) (VP (VBD sat) (PP (IN through) (NP (CD two) (JJ back-to-back) (NNS movies)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">sat</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">sat</governor>
+            <dependent idx="1">They</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">sat</governor>
+            <dependent idx="3">through</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">movies</governor>
+            <dependent idx="4">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">movies</governor>
+            <dependent idx="5">back-to-back</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">through</governor>
+            <dependent idx="6">movies</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">sat</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">sat</governor>
+            <dependent idx="1">They</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">movies</governor>
+            <dependent idx="4">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">movies</governor>
+            <dependent idx="5">back-to-back</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="2">sat</governor>
+            <dependent idx="6">movies</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">sat</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">sat</governor>
+            <dependent idx="1">They</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">movies</governor>
+            <dependent idx="4">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">movies</governor>
+            <dependent idx="5">back-to-back</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="2">sat</governor>
+            <dependent idx="6">movies</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>movies</word>
+            <lemma>movie</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>row</word>
+            <lemma>row</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (CD two) (NNS movies)) (PP (IN in) (NP (DT a) (NN row))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">movies</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">movies</governor>
+            <dependent idx="1">two</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">movies</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">row</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="5">row</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">movies</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">movies</governor>
+            <dependent idx="1">two</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">row</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">movies</governor>
+            <dependent idx="5">row</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">movies</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">movies</governor>
+            <dependent idx="1">two</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">row</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">movies</governor>
+            <dependent idx="5">row</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

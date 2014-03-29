@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>flexible</word>
+            <lemma>flexible</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>bag</word>
+            <lemma>bag</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>filled</word>
+            <lemma>fill</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>type</word>
+            <lemma>type</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>gas</word>
+            <lemma>gas</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>balloon</word>
+            <lemma>balloon</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (JJ flexible) (NN bag)) (VP (VBN filled) (PP (IN with) (NP (NP (DT a) (NN type)) (PP (IN of) (NP (NN gas) (NN balloon)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">filled</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bag</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">bag</governor>
+            <dependent idx="2">flexible</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">filled</governor>
+            <dependent idx="3">bag</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">filled</governor>
+            <dependent idx="5">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">type</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">with</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">type</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">balloon</governor>
+            <dependent idx="9">gas</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="10">balloon</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">filled</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bag</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">bag</governor>
+            <dependent idx="2">flexible</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">filled</governor>
+            <dependent idx="3">bag</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">type</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">filled</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">balloon</governor>
+            <dependent idx="9">gas</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">type</governor>
+            <dependent idx="10">balloon</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">filled</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">bag</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">bag</governor>
+            <dependent idx="2">flexible</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">filled</governor>
+            <dependent idx="3">bag</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">type</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">filled</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">balloon</governor>
+            <dependent idx="9">gas</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">type</governor>
+            <dependent idx="10">balloon</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

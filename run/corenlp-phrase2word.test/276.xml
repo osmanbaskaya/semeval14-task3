@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>gum</word>
+            <lemma>gum</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>tree</word>
+            <lemma>tree</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>troubled</word>
+            <lemma>trouble</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (IN up)) (NP (NP (DT a) (NN gum) (NN tree)) (SBAR (S (VP (VBD troubled))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">tree</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">tree</governor>
+            <dependent idx="1">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">tree</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tree</governor>
+            <dependent idx="3">gum</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">tree</governor>
+            <dependent idx="5">troubled</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">tree</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">tree</governor>
+            <dependent idx="1">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">tree</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tree</governor>
+            <dependent idx="3">gum</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">tree</governor>
+            <dependent idx="5">troubled</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">tree</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">tree</governor>
+            <dependent idx="1">up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">tree</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tree</governor>
+            <dependent idx="3">gum</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">tree</governor>
+            <dependent idx="5">troubled</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

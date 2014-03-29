@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>answering</word>
+            <lemma>answer</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="4">
+            <word>phone</word>
+            <lemma>phone</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>ignoring</word>
+            <lemma>ignore</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (S (RB not) (VP (VBG answering) (NP (PRP$ your) (NN phone)) (S (VP (VBG ignoring))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">answering</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="2">answering</governor>
+            <dependent idx="1">not</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">phone</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">answering</governor>
+            <dependent idx="4">phone</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">answering</governor>
+            <dependent idx="5">ignoring</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">answering</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="2">answering</governor>
+            <dependent idx="1">not</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">phone</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">answering</governor>
+            <dependent idx="4">phone</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">answering</governor>
+            <dependent idx="5">ignoring</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">answering</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="2">answering</governor>
+            <dependent idx="1">not</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">phone</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">answering</governor>
+            <dependent idx="4">phone</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">answering</governor>
+            <dependent idx="5">ignoring</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

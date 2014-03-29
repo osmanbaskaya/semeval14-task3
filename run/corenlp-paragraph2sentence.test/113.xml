@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Craigslist</word>
+            <lemma>Craigslist</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>website</word>
+            <lemma>website</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>working</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="10">
+            <word>web</word>
+            <lemma>web</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>!?</word>
+            <lemma>!?</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Craigslist) (NN website)) (VP (VBZ is) (RB not) (VP (VBG working) (ADVP (IN at) (DT all)) (PP (IN in) (NP (NP (PRP$ my) (NN web) (NN browser)) (PP (IN at) (NP (QP (DT all) (CD !?)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">working</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">website</governor>
+            <dependent idx="1">Craigslist</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">working</governor>
+            <dependent idx="2">website</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">working</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="5">working</governor>
+            <dependent idx="4">not</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">working</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">at</governor>
+            <dependent idx="7">all</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">working</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">browser</governor>
+            <dependent idx="9">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">browser</governor>
+            <dependent idx="10">web</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="11">browser</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">browser</governor>
+            <dependent idx="12">at</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="14">!?</governor>
+            <dependent idx="13">all</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">at</governor>
+            <dependent idx="14">!?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">working</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">website</governor>
+            <dependent idx="1">Craigslist</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">working</governor>
+            <dependent idx="2">website</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">working</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="5">working</governor>
+            <dependent idx="4">not</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">working</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">at</governor>
+            <dependent idx="7">all</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">browser</governor>
+            <dependent idx="9">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">browser</governor>
+            <dependent idx="10">web</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">working</governor>
+            <dependent idx="11">browser</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="14">!?</governor>
+            <dependent idx="13">all</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="11">browser</governor>
+            <dependent idx="14">!?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">working</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">website</governor>
+            <dependent idx="1">Craigslist</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">working</governor>
+            <dependent idx="2">website</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">working</governor>
+            <dependent idx="3">is</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="5">working</governor>
+            <dependent idx="4">not</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">working</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">at</governor>
+            <dependent idx="7">all</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">browser</governor>
+            <dependent idx="9">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">browser</governor>
+            <dependent idx="10">web</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">working</governor>
+            <dependent idx="11">browser</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="14">!?</governor>
+            <dependent idx="13">all</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="11">browser</governor>
+            <dependent idx="14">!?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>problems</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>web</word>
+            <lemma>web</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS problems)) (PP (IN with) (NP (NN web) (NN browser))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">problems</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">problems</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">problems</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">problems</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">problems</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">problems</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

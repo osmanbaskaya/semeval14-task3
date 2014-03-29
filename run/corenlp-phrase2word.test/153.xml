@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>last</word>
+            <lemma>last</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>week</word>
+            <lemma>week</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>massive</word>
+            <lemma>massive</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>power</word>
+            <lemma>power</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>blackout</word>
+            <lemma>blackout</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>tornado</word>
+            <lemma>tornado</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NP (JJ last) (NN week) (POS 's)) (JJ massive) (NN power)) (NP (NN blackout))) (NP (NN tornado)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">power</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">week</governor>
+            <dependent idx="1">last</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">power</governor>
+            <dependent idx="2">week</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">week</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">power</governor>
+            <dependent idx="4">massive</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">power</governor>
+            <dependent idx="6">blackout</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">power</governor>
+            <dependent idx="7">tornado</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">power</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">week</governor>
+            <dependent idx="1">last</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">power</governor>
+            <dependent idx="2">week</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">power</governor>
+            <dependent idx="4">massive</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">power</governor>
+            <dependent idx="6">blackout</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">power</governor>
+            <dependent idx="7">tornado</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">power</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">week</governor>
+            <dependent idx="1">last</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">power</governor>
+            <dependent idx="2">week</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">power</governor>
+            <dependent idx="4">massive</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">power</governor>
+            <dependent idx="6">blackout</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">power</governor>
+            <dependent idx="7">tornado</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

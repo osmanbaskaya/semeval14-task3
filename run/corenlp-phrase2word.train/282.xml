@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>church</word>
+            <lemma>church</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>outskirts</word>
+            <lemma>outskirts</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Ziguinchor</word>
+            <lemma>Ziguinchor</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Chaplin</word>
+            <lemma>Chaplin</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT A) (NN church)) (PP (IN on) (NP (DT the) (NNS outskirts))) (PP (IN of) (NP (NNP Ziguinchor) (NNP Chaplin))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">church</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">church</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">church</governor>
+            <dependent idx="3">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">outskirts</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">on</governor>
+            <dependent idx="5">outskirts</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">church</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Chaplin</governor>
+            <dependent idx="7">Ziguinchor</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="8">Chaplin</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">church</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">church</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">outskirts</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">church</governor>
+            <dependent idx="5">outskirts</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Chaplin</governor>
+            <dependent idx="7">Ziguinchor</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">church</governor>
+            <dependent idx="8">Chaplin</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">church</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">church</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">outskirts</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">church</governor>
+            <dependent idx="5">outskirts</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Chaplin</governor>
+            <dependent idx="7">Ziguinchor</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">church</governor>
+            <dependent idx="8">Chaplin</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

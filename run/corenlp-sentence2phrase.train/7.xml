@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>In</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>summer</word>
+            <lemma>summer</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>months</word>
+            <lemma>month</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>there</word>
+            <lemma>there</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>EX</POS>
+          </token>
+          <token id="5">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="6">
+            <word>sightseeing</word>
+            <lemma>sightseeing</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>launches</word>
+            <lemma>launch</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>brave</word>
+            <lemma>brave</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="13">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="14">
+            <word>swimming</word>
+            <lemma>swim</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (PP (IN In) (NP (NN summer) (NNS months))) (NP (EX there)) (VP (VBP are) (NP (NN sightseeing) (NNS launches)))) (CC and) (, ,) (S (NP (IN for) (DT the)) (VP (VBP brave))) (, ,) (S (VP (VBG swimming))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">are</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">are</governor>
+            <dependent idx="1">In</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">months</governor>
+            <dependent idx="2">summer</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">In</governor>
+            <dependent idx="3">months</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="5">are</governor>
+            <dependent idx="4">there</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">launches</governor>
+            <dependent idx="6">sightseeing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">are</governor>
+            <dependent idx="7">launches</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">are</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">the</governor>
+            <dependent idx="10">for</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">brave</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">are</governor>
+            <dependent idx="12">brave</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">are</governor>
+            <dependent idx="14">swimming</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">are</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">months</governor>
+            <dependent idx="2">summer</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">are</governor>
+            <dependent idx="3">months</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="5">are</governor>
+            <dependent idx="4">there</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">launches</governor>
+            <dependent idx="6">sightseeing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">are</governor>
+            <dependent idx="7">launches</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">are</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">the</governor>
+            <dependent idx="10">for</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">brave</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">are</governor>
+            <dependent idx="12">brave</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">are</governor>
+            <dependent idx="14">swimming</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">are</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">months</governor>
+            <dependent idx="2">summer</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">are</governor>
+            <dependent idx="3">months</dependent>
+          </dep>
+          <dep type="expl">
+            <governor idx="5">are</governor>
+            <dependent idx="4">there</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">launches</governor>
+            <dependent idx="6">sightseeing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">are</governor>
+            <dependent idx="7">launches</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">are</governor>
+            <dependent idx="8">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">the</governor>
+            <dependent idx="10">for</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">brave</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">are</governor>
+            <dependent idx="12">brave</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">are</governor>
+            <dependent idx="14">swimming</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>swimming</word>
+            <lemma>swim</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>summer</word>
+            <lemma>summer</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>months</word>
+            <lemma>month</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG swimming) (PP (IN in) (NP (DT the) (NN summer) (NNS months)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">swimming</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">swimming</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">months</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">months</governor>
+            <dependent idx="4">summer</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">in</governor>
+            <dependent idx="5">months</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">swimming</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">months</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">months</governor>
+            <dependent idx="4">summer</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">swimming</governor>
+            <dependent idx="5">months</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">swimming</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">months</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">months</governor>
+            <dependent idx="4">summer</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">swimming</governor>
+            <dependent idx="5">months</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

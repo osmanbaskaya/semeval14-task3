@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>sitting</word>
+            <lemma>sit</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>duck</word>
+            <lemma>duck</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>target</word>
+            <lemma>target</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG sitting) (NP (NN duck) (NN target))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sitting</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">target</governor>
+            <dependent idx="2">duck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">sitting</governor>
+            <dependent idx="3">target</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sitting</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">target</governor>
+            <dependent idx="2">duck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">sitting</governor>
+            <dependent idx="3">target</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sitting</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">target</governor>
+            <dependent idx="2">duck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">sitting</governor>
+            <dependent idx="3">target</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

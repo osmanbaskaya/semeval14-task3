@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Undertaker</word>
+            <lemma>Undertaker</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>executing</word>
+            <lemma>execute</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>chair</word>
+            <lemma>chair</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>shot</word>
+            <lemma>shot</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>Brock</word>
+            <lemma>Brock</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>Lesnar</word>
+            <lemma>Lesnar</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>wrestling</word>
+            <lemma>wrestle</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (DT The) (NNP Undertaker)) (S (VP (VBG executing) (NP (DT a) (NN chair) (NN shot)) (PP (IN on) (NP (NP (NNP Brock) (NNP Lesnar)) (VP (VBG wrestling)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Undertaker</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Undertaker</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Undertaker</governor>
+            <dependent idx="3">executing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">shot</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">shot</governor>
+            <dependent idx="5">chair</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">executing</governor>
+            <dependent idx="6">shot</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">executing</governor>
+            <dependent idx="7">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Lesnar</governor>
+            <dependent idx="8">Brock</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">on</governor>
+            <dependent idx="9">Lesnar</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="9">Lesnar</governor>
+            <dependent idx="10">wrestling</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Undertaker</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Undertaker</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Undertaker</governor>
+            <dependent idx="3">executing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">shot</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">shot</governor>
+            <dependent idx="5">chair</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">executing</governor>
+            <dependent idx="6">shot</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Lesnar</governor>
+            <dependent idx="8">Brock</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">executing</governor>
+            <dependent idx="9">Lesnar</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="9">Lesnar</governor>
+            <dependent idx="10">wrestling</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Undertaker</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Undertaker</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Undertaker</governor>
+            <dependent idx="3">executing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">shot</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">shot</governor>
+            <dependent idx="5">chair</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">executing</governor>
+            <dependent idx="6">shot</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Lesnar</governor>
+            <dependent idx="8">Brock</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">executing</governor>
+            <dependent idx="9">Lesnar</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="9">Lesnar</governor>
+            <dependent idx="10">wrestling</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

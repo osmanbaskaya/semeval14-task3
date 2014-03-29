@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Computer</word>
+            <lemma>computer</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>shows</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="3">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>working</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="7">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="9">
+            <word>DNS</word>
+            <lemma>dns</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>failure</word>
+            <lemma>failure</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>every</word>
+            <lemma>every</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="13">
+            <word>website</word>
+            <lemma>website</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="15">
+            <word>try</word>
+            <lemma>try</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="16">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN Computer)) (VP (VBZ shows) (SBAR (IN that) (S (NP (NN internet)) (VP (VP (VBZ is) (VP (VBG working))) (CC but) (VP (VB get) (NP (JJ DNS) (NN failure)) (PP (IN on) (NP (NP (DT every) (NN website)) (SBAR (S (NP (PRP I)) (VP (VBP try))))))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">shows</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">shows</governor>
+            <dependent idx="1">Computer</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">working</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">working</governor>
+            <dependent idx="4">internet</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">working</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">shows</governor>
+            <dependent idx="6">working</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">working</governor>
+            <dependent idx="7">but</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">working</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">failure</governor>
+            <dependent idx="9">DNS</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">get</governor>
+            <dependent idx="10">failure</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">get</governor>
+            <dependent idx="11">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">website</governor>
+            <dependent idx="12">every</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">on</governor>
+            <dependent idx="13">website</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">try</governor>
+            <dependent idx="14">I</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="13">website</governor>
+            <dependent idx="15">try</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">shows</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">shows</governor>
+            <dependent idx="1">Computer</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">working</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">working</governor>
+            <dependent idx="4">internet</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">working</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">shows</governor>
+            <dependent idx="6">working</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="6">working</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">failure</governor>
+            <dependent idx="9">DNS</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">get</governor>
+            <dependent idx="10">failure</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">website</governor>
+            <dependent idx="12">every</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">get</governor>
+            <dependent idx="13">website</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">try</governor>
+            <dependent idx="14">I</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="13">website</governor>
+            <dependent idx="15">try</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">shows</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">shows</governor>
+            <dependent idx="1">Computer</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">working</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">working</governor>
+            <dependent idx="4">internet</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">get</governor>
+            <dependent idx="4">internet</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">working</governor>
+            <dependent idx="5">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">shows</governor>
+            <dependent idx="6">working</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="2">shows</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="6">working</governor>
+            <dependent idx="8">get</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">failure</governor>
+            <dependent idx="9">DNS</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">get</governor>
+            <dependent idx="10">failure</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">website</governor>
+            <dependent idx="12">every</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">get</governor>
+            <dependent idx="13">website</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="15">try</governor>
+            <dependent idx="14">I</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="13">website</governor>
+            <dependent idx="15">try</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>constant</word>
+            <lemma>constant</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>DNS</word>
+            <lemma>dn</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>failure</word>
+            <lemma>failure</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ constant) (NN DNS) (NN failure)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">failure</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">failure</governor>
+            <dependent idx="1">constant</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">failure</governor>
+            <dependent idx="2">DNS</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">failure</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">failure</governor>
+            <dependent idx="1">constant</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">failure</governor>
+            <dependent idx="2">DNS</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">failure</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">failure</governor>
+            <dependent idx="1">constant</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">failure</governor>
+            <dependent idx="2">DNS</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

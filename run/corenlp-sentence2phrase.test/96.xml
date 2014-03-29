@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>accidently</word>
+            <lemma>accidently</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>deleted</word>
+            <lemma>delete</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>email</word>
+            <lemma>email</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>forever</word>
+            <lemma>forever</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="7">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="9">
+            <word>need</word>
+            <lemma>need</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="10">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="11">
+            <word>back</word>
+            <lemma>back</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (PRP I)) (ADVP (RB accidently)) (VP (VBD deleted) (NP (DT an) (NN email)) (ADVP (RB forever)))) (CC but) (S (NP (FW i)) (VP (VBP need) (NP (PRP it)) (ADVP (RB back)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">deleted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">deleted</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">deleted</governor>
+            <dependent idx="2">accidently</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">email</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">deleted</governor>
+            <dependent idx="5">email</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">deleted</governor>
+            <dependent idx="6">forever</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">deleted</governor>
+            <dependent idx="7">but</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">need</governor>
+            <dependent idx="8">i</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">deleted</governor>
+            <dependent idx="9">need</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">need</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">need</governor>
+            <dependent idx="11">back</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">deleted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">deleted</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">deleted</governor>
+            <dependent idx="2">accidently</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">email</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">deleted</governor>
+            <dependent idx="5">email</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">deleted</governor>
+            <dependent idx="6">forever</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">need</governor>
+            <dependent idx="8">i</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="3">deleted</governor>
+            <dependent idx="9">need</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">need</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">need</governor>
+            <dependent idx="11">back</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">deleted</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">deleted</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">deleted</governor>
+            <dependent idx="2">accidently</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">email</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">deleted</governor>
+            <dependent idx="5">email</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">deleted</governor>
+            <dependent idx="6">forever</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">need</governor>
+            <dependent idx="8">i</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="3">deleted</governor>
+            <dependent idx="9">need</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">need</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">need</governor>
+            <dependent idx="11">back</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>what</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="4">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHNP (WP what)) (SQ (VBP do) (NP (FW i)) (VP (VB do))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">do</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">do</governor>
+            <dependent idx="1">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">do</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">do</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">do</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">do</governor>
+            <dependent idx="1">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">do</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">do</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">do</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">do</governor>
+            <dependent idx="1">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">do</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">do</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>retrieving</word>
+            <lemma>retrieve</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>permanently</word>
+            <lemma>permanently</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>deleted</word>
+            <lemma>delete</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>email</word>
+            <lemma>email</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG retrieving) (NP (DT a) (ADJP (RB permanently) (VBN deleted)) (NN email))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">retrieving</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">email</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deleted</governor>
+            <dependent idx="3">permanently</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">email</governor>
+            <dependent idx="4">deleted</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">retrieving</governor>
+            <dependent idx="5">email</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">retrieving</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">email</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deleted</governor>
+            <dependent idx="3">permanently</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">email</governor>
+            <dependent idx="4">deleted</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">retrieving</governor>
+            <dependent idx="5">email</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">retrieving</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">email</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">deleted</governor>
+            <dependent idx="3">permanently</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">email</governor>
+            <dependent idx="4">deleted</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">retrieving</governor>
+            <dependent idx="5">email</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

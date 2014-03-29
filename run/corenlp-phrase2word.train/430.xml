@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>peripheral</word>
+            <lemma>peripheral</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>partially</word>
+            <lemma>partially</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>modelled</word>
+            <lemma>model</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>after</word>
+            <lemma>after</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>typewriter</word>
+            <lemma>typewriter</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>keyboard</word>
+            <lemma>keyboard</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>mouse</word>
+            <lemma>mouse</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (NP (DT a) (JJ peripheral)) (VP (ADVP (RB partially)) (VBN modelled) (PP (IN after) (NP (DT the) (NN typewriter) (NN keyboard) (NN mouse)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">modelled</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">peripheral</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">modelled</governor>
+            <dependent idx="2">peripheral</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">modelled</governor>
+            <dependent idx="3">partially</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">modelled</governor>
+            <dependent idx="5">after</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">mouse</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">mouse</governor>
+            <dependent idx="7">typewriter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">mouse</governor>
+            <dependent idx="8">keyboard</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">after</governor>
+            <dependent idx="9">mouse</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">modelled</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">peripheral</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">modelled</governor>
+            <dependent idx="2">peripheral</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">modelled</governor>
+            <dependent idx="3">partially</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">mouse</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">mouse</governor>
+            <dependent idx="7">typewriter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">mouse</governor>
+            <dependent idx="8">keyboard</dependent>
+          </dep>
+          <dep type="prep_after">
+            <governor idx="4">modelled</governor>
+            <dependent idx="9">mouse</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">modelled</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">peripheral</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">modelled</governor>
+            <dependent idx="2">peripheral</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">modelled</governor>
+            <dependent idx="3">partially</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">mouse</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">mouse</governor>
+            <dependent idx="7">typewriter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">mouse</governor>
+            <dependent idx="8">keyboard</dependent>
+          </dep>
+          <dep type="prep_after">
+            <governor idx="4">modelled</governor>
+            <dependent idx="9">mouse</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Five</word>
+            <lemma>five</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>Yixing</word>
+            <lemma>yixing</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>clay</word>
+            <lemma>clay</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>teapots</word>
+            <lemma>teapot</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>styles</word>
+            <lemma>style</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>formal</word>
+            <lemma>formal</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="11">
+            <word>whimsical</word>
+            <lemma>whimsical</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>teapots</word>
+            <lemma>teapot</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (CD Five) (JJ Yixing) (NN clay) (NNS teapots)) (PRN (, ,) (PP (IN in) (NP (NP (NNS styles)) (PP (IN from) (NP (NP (JJ formal)) (PP (TO to) (NP (JJ whimsical) (NNS teapots)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">teapots</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">teapots</governor>
+            <dependent idx="1">Five</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">teapots</governor>
+            <dependent idx="2">Yixing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">teapots</governor>
+            <dependent idx="3">clay</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">teapots</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="7">styles</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">styles</governor>
+            <dependent idx="8">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">from</governor>
+            <dependent idx="9">formal</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">formal</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">teapots</governor>
+            <dependent idx="11">whimsical</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">to</governor>
+            <dependent idx="12">teapots</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">teapots</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">teapots</governor>
+            <dependent idx="1">Five</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">teapots</governor>
+            <dependent idx="2">Yixing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">teapots</governor>
+            <dependent idx="3">clay</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">teapots</governor>
+            <dependent idx="7">styles</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="7">styles</governor>
+            <dependent idx="9">formal</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">teapots</governor>
+            <dependent idx="11">whimsical</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="9">formal</governor>
+            <dependent idx="12">teapots</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">teapots</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">teapots</governor>
+            <dependent idx="1">Five</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">teapots</governor>
+            <dependent idx="2">Yixing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">teapots</governor>
+            <dependent idx="3">clay</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">teapots</governor>
+            <dependent idx="7">styles</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="7">styles</governor>
+            <dependent idx="9">formal</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">teapots</governor>
+            <dependent idx="11">whimsical</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="9">formal</governor>
+            <dependent idx="12">teapots</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>comprehensive</word>
+            <lemma>comprehensive</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>collision</word>
+            <lemma>collision</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>auto</word>
+            <lemma>auto</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>insurance</word>
+            <lemma>insurance</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>insurance</word>
+            <lemma>insurance</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (ADJP (JJ comprehensive) (CC and) (NN collision)) (NN auto)) (NP (NN insurance) (NN insurance)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">auto</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">auto</governor>
+            <dependent idx="1">comprehensive</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">comprehensive</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">comprehensive</governor>
+            <dependent idx="3">collision</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">insurance</governor>
+            <dependent idx="5">insurance</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">auto</governor>
+            <dependent idx="6">insurance</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">auto</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">auto</governor>
+            <dependent idx="1">comprehensive</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">comprehensive</governor>
+            <dependent idx="3">collision</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">insurance</governor>
+            <dependent idx="5">insurance</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">auto</governor>
+            <dependent idx="6">insurance</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">auto</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">auto</governor>
+            <dependent idx="1">comprehensive</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">comprehensive</governor>
+            <dependent idx="3">collision</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">auto</governor>
+            <dependent idx="3">collision</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">insurance</governor>
+            <dependent idx="5">insurance</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">auto</governor>
+            <dependent idx="6">insurance</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

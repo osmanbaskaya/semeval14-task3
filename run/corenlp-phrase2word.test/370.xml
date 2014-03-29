@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>South</word>
+            <lemma>South</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>India</word>
+            <lemma>India</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>3rd</word>
+            <lemma>3rd</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>century</word>
+            <lemma>century</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>AD</word>
+            <lemma>ad</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>India</word>
+            <lemma>India</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNP South) (NNP India)) (PP (IN in) (NP (DT the) (JJ 3rd) (NN century) (NN AD)))) (NP (NNP India)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">India</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">India</governor>
+            <dependent idx="1">South</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">India</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">AD</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">AD</governor>
+            <dependent idx="5">3rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">AD</governor>
+            <dependent idx="6">century</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="7">AD</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">India</governor>
+            <dependent idx="8">India</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">India</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">India</governor>
+            <dependent idx="1">South</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">AD</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">AD</governor>
+            <dependent idx="5">3rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">AD</governor>
+            <dependent idx="6">century</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">India</governor>
+            <dependent idx="7">AD</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">India</governor>
+            <dependent idx="8">India</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">India</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">India</governor>
+            <dependent idx="1">South</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">AD</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">AD</governor>
+            <dependent idx="5">3rd</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">AD</governor>
+            <dependent idx="6">century</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">India</governor>
+            <dependent idx="7">AD</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">India</governor>
+            <dependent idx="8">India</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

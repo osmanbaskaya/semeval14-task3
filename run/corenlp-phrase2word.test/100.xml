@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>piss</word>
+            <lemma>piss</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>away</word>
+            <lemma>away</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>urinate</word>
+            <lemma>urinate</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB piss) (VP (ADVP (RB away)) (VBP urinate))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">piss</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">urinate</governor>
+            <dependent idx="2">away</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">piss</governor>
+            <dependent idx="3">urinate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">piss</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">urinate</governor>
+            <dependent idx="2">away</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">piss</governor>
+            <dependent idx="3">urinate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">piss</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">urinate</governor>
+            <dependent idx="2">away</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">piss</governor>
+            <dependent idx="3">urinate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

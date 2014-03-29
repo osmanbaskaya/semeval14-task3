@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Pneumomediastinum</word>
+            <lemma>pneumomediastinum</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>Angel</word>
+            <lemma>Angel</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>wing</word>
+            <lemma>wing</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>sign</word>
+            <lemma>sign</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>evidence</word>
+            <lemma>evidence</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NN Pneumomediastinum)) (PP (IN with) (NP (NNP Angel)))) (NP (NN wing) (NN sign) (NN evidence)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Pneumomediastinum</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Pneumomediastinum</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="3">Angel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">evidence</governor>
+            <dependent idx="4">wing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">evidence</governor>
+            <dependent idx="5">sign</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Pneumomediastinum</governor>
+            <dependent idx="6">evidence</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Pneumomediastinum</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">Pneumomediastinum</governor>
+            <dependent idx="3">Angel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">evidence</governor>
+            <dependent idx="4">wing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">evidence</governor>
+            <dependent idx="5">sign</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Pneumomediastinum</governor>
+            <dependent idx="6">evidence</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Pneumomediastinum</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">Pneumomediastinum</governor>
+            <dependent idx="3">Angel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">evidence</governor>
+            <dependent idx="4">wing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">evidence</governor>
+            <dependent idx="5">sign</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Pneumomediastinum</governor>
+            <dependent idx="6">evidence</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

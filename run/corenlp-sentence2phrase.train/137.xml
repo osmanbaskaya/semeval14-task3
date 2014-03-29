@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>They</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>caught</word>
+            <lemma>catch</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="3">
+            <word>us</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>flat-footed</word>
+            <lemma>flat-footed</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP They)) (VP (VBD caught) (S (NP (PRP us)) (ADJP (RB flat-footed)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">caught</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">caught</governor>
+            <dependent idx="1">They</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">flat-footed</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">caught</governor>
+            <dependent idx="4">flat-footed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">caught</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">caught</governor>
+            <dependent idx="1">They</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">flat-footed</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">caught</governor>
+            <dependent idx="4">flat-footed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">caught</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">caught</governor>
+            <dependent idx="1">They</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">flat-footed</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">caught</governor>
+            <dependent idx="4">flat-footed</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>fiddling</word>
+            <lemma>fiddle</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>while</word>
+            <lemma>while</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>Rome</word>
+            <lemma>Rome</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>burns</word>
+            <lemma>burn</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG fiddling) (PP (IN while) (NP (NNP Rome) (NNS burns)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fiddling</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">fiddling</governor>
+            <dependent idx="2">while</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">burns</governor>
+            <dependent idx="3">Rome</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">while</governor>
+            <dependent idx="4">burns</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fiddling</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">burns</governor>
+            <dependent idx="3">Rome</dependent>
+          </dep>
+          <dep type="prep_while">
+            <governor idx="1">fiddling</governor>
+            <dependent idx="4">burns</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fiddling</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">burns</governor>
+            <dependent idx="3">Rome</dependent>
+          </dep>
+          <dep type="prep_while">
+            <governor idx="1">fiddling</governor>
+            <dependent idx="4">burns</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

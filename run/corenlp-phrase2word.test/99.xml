@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>voodoo</word>
+            <lemma>voodoo</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>economics</word>
+            <lemma>economics</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>untraceable</word>
+            <lemma>untraceable</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN voodoo) (NNS economics)) (ADJP (JJ untraceable))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">economics</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">economics</governor>
+            <dependent idx="1">voodoo</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">economics</governor>
+            <dependent idx="3">untraceable</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">economics</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">economics</governor>
+            <dependent idx="1">voodoo</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">economics</governor>
+            <dependent idx="3">untraceable</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">economics</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">economics</governor>
+            <dependent idx="1">voodoo</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">economics</governor>
+            <dependent idx="3">untraceable</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>CLC</word>
+            <lemma>clc</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>bio</word>
+            <lemma>bio</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>develops</word>
+            <lemma>develop</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>widely</word>
+            <lemma>widely</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>cited</word>
+            <lemma>cite</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>desktop</word>
+            <lemma>desktop</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>backend</word>
+            <lemma>backend</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>server</word>
+            <lemma>server</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>software</word>
+            <lemma>software</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>analysis</word>
+            <lemma>analysis</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>biological</word>
+            <lemma>biological</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>data</word>
+            <lemma>datum</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN CLC) (NN bio)) (VP (VBZ develops) (VP (ADVP (RB widely)) (VBN cited) (NP (NP (NP (NN desktop) (CC and) (JJ backend)) (NN server) (NN software)) (PP (IN for) (NP (NP (NN analysis)) (PP (IN of) (NP (JJ biological) (NNS data)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">develops</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">bio</governor>
+            <dependent idx="1">CLC</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">develops</governor>
+            <dependent idx="2">bio</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">cited</governor>
+            <dependent idx="4">widely</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">develops</governor>
+            <dependent idx="5">cited</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">software</governor>
+            <dependent idx="6">desktop</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">desktop</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">desktop</governor>
+            <dependent idx="8">backend</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">software</governor>
+            <dependent idx="9">server</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">cited</governor>
+            <dependent idx="10">software</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">software</governor>
+            <dependent idx="11">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">for</governor>
+            <dependent idx="12">analysis</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">analysis</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">data</governor>
+            <dependent idx="14">biological</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">of</governor>
+            <dependent idx="15">data</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">develops</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">bio</governor>
+            <dependent idx="1">CLC</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">develops</governor>
+            <dependent idx="2">bio</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">cited</governor>
+            <dependent idx="4">widely</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">develops</governor>
+            <dependent idx="5">cited</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">software</governor>
+            <dependent idx="6">desktop</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">desktop</governor>
+            <dependent idx="8">backend</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">software</governor>
+            <dependent idx="9">server</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">cited</governor>
+            <dependent idx="10">software</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="10">software</governor>
+            <dependent idx="12">analysis</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">data</governor>
+            <dependent idx="14">biological</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">analysis</governor>
+            <dependent idx="15">data</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">develops</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">bio</governor>
+            <dependent idx="1">CLC</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">develops</governor>
+            <dependent idx="2">bio</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">cited</governor>
+            <dependent idx="4">widely</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">develops</governor>
+            <dependent idx="5">cited</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">software</governor>
+            <dependent idx="6">desktop</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">desktop</governor>
+            <dependent idx="8">backend</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">software</governor>
+            <dependent idx="8">backend</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">software</governor>
+            <dependent idx="9">server</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">cited</governor>
+            <dependent idx="10">software</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="10">software</governor>
+            <dependent idx="12">analysis</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="15">data</governor>
+            <dependent idx="14">biological</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">analysis</governor>
+            <dependent idx="15">data</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>computational</word>
+            <lemma>computational</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>models</word>
+            <lemma>model</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>analyzing</word>
+            <lemma>analyze</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>biological</word>
+            <lemma>biological</lemma>
+            <CharacterOffsetBegin>134</CharacterOffsetBegin>
+            <CharacterOffsetEnd>144</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>data</word>
+            <lemma>datum</lemma>
+            <CharacterOffsetBegin>145</CharacterOffsetBegin>
+            <CharacterOffsetEnd>149</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ computational) (NNS models)) (PP (IN for) (S (VP (VBG analyzing) (NP (JJ biological) (NNS data))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">models</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">models</governor>
+            <dependent idx="1">computational</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">models</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="3">for</governor>
+            <dependent idx="4">analyzing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">data</governor>
+            <dependent idx="5">biological</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">analyzing</governor>
+            <dependent idx="6">data</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">models</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">models</governor>
+            <dependent idx="1">computational</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="2">models</governor>
+            <dependent idx="4">analyzing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">data</governor>
+            <dependent idx="5">biological</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">analyzing</governor>
+            <dependent idx="6">data</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">models</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">models</governor>
+            <dependent idx="1">computational</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="2">models</governor>
+            <dependent idx="4">analyzing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">data</governor>
+            <dependent idx="5">biological</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">analyzing</governor>
+            <dependent idx="6">data</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

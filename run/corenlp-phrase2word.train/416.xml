@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>person</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>agency</word>
+            <lemma>agency</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>considered</word>
+            <lemma>consider</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="7">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>source</word>
+            <lemma>source</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>wise</word>
+            <lemma>wise</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>counsel</word>
+            <lemma>counsel</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="14">
+            <word>prophetic</word>
+            <lemma>prophetic</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>opinion</word>
+            <lemma>opinion</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>rhetoric</word>
+            <lemma>rhetoric</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (NN person) (CC or) (NN agency)) (VP (VBN considered) (S (VP (TO to) (VP (VB be) (NP (NP (DT a) (NN source)) (PP (IN of) (NP (NP (JJ wise) (NN counsel)) (CC or) (NP (JJ prophetic) (NN opinion) (NN rhetoric))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">considered</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">person</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">considered</governor>
+            <dependent idx="2">person</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">person</governor>
+            <dependent idx="3">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">person</governor>
+            <dependent idx="4">agency</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">source</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">source</governor>
+            <dependent idx="7">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">source</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">considered</governor>
+            <dependent idx="9">source</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">source</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">counsel</governor>
+            <dependent idx="11">wise</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="12">counsel</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="12">counsel</governor>
+            <dependent idx="13">or</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">rhetoric</governor>
+            <dependent idx="14">prophetic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">rhetoric</governor>
+            <dependent idx="15">opinion</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="12">counsel</governor>
+            <dependent idx="16">rhetoric</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">considered</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">person</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">considered</governor>
+            <dependent idx="2">person</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="2">person</governor>
+            <dependent idx="4">agency</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">source</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">source</governor>
+            <dependent idx="7">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">source</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">considered</governor>
+            <dependent idx="9">source</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">counsel</governor>
+            <dependent idx="11">wise</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">source</governor>
+            <dependent idx="12">counsel</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">rhetoric</governor>
+            <dependent idx="14">prophetic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">rhetoric</governor>
+            <dependent idx="15">opinion</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="12">counsel</governor>
+            <dependent idx="16">rhetoric</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">considered</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">person</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">considered</governor>
+            <dependent idx="2">person</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="2">person</governor>
+            <dependent idx="4">agency</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">considered</governor>
+            <dependent idx="4">agency</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">source</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">source</governor>
+            <dependent idx="7">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">source</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">considered</governor>
+            <dependent idx="9">source</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">counsel</governor>
+            <dependent idx="11">wise</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">source</governor>
+            <dependent idx="12">counsel</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">rhetoric</governor>
+            <dependent idx="14">prophetic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">rhetoric</governor>
+            <dependent idx="15">opinion</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="9">source</governor>
+            <dependent idx="16">rhetoric</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="12">counsel</governor>
+            <dependent idx="16">rhetoric</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

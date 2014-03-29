@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>palm</word>
+            <lemma>palm</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>tree</word>
+            <lemma>tree</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>towel</word>
+            <lemma>towel</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>paper</word>
+            <lemma>paper</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>holder</word>
+            <lemma>holder</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>matching</word>
+            <lemma>match</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="8">
+            <word>napkin</word>
+            <lemma>napkin</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>holder</word>
+            <lemma>holder</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>decorative</word>
+            <lemma>decorative</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NP (NN palm) (NN tree) (NN towel) (NN paper) (NN holder)) (CC and) (NP (VBG matching) (NN napkin) (NN holder))) (NP (JJ decorative))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">holder</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="1">palm</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="2">tree</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="3">towel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="4">paper</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">holder</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">holder</governor>
+            <dependent idx="7">matching</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">holder</governor>
+            <dependent idx="8">napkin</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">holder</governor>
+            <dependent idx="9">holder</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">holder</governor>
+            <dependent idx="10">decorative</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">holder</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="1">palm</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="2">tree</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="3">towel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="4">paper</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">holder</governor>
+            <dependent idx="7">matching</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">holder</governor>
+            <dependent idx="8">napkin</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">holder</governor>
+            <dependent idx="9">holder</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">holder</governor>
+            <dependent idx="10">decorative</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">holder</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="1">palm</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="2">tree</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="3">towel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">holder</governor>
+            <dependent idx="4">paper</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">holder</governor>
+            <dependent idx="7">matching</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">holder</governor>
+            <dependent idx="8">napkin</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">holder</governor>
+            <dependent idx="9">holder</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">holder</governor>
+            <dependent idx="10">decorative</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

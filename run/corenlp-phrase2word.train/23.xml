@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>three</word>
+            <lemma>three</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>months</word>
+            <lemma>month</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>behind</word>
+            <lemma>behind</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>arrears</word>
+            <lemma>arrears</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (PP (ADVP (NP (CD three) (NNS months)) (IN behind)) (IN in) (NP (NNS arrears)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">months</governor>
+            <dependent idx="1">three</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="3">behind</governor>
+            <dependent idx="2">months</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">in</governor>
+            <dependent idx="3">behind</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">arrears</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">months</governor>
+            <dependent idx="1">three</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="3">behind</governor>
+            <dependent idx="2">months</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">in</governor>
+            <dependent idx="3">behind</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">arrears</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">months</governor>
+            <dependent idx="1">three</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="3">behind</governor>
+            <dependent idx="2">months</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">in</governor>
+            <dependent idx="3">behind</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">arrears</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

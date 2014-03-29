@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Sant</word>
+            <lemma>sant</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>`</word>
+            <lemma>`</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="3">
+            <word>Olcese</word>
+            <lemma>olcese</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>style</word>
+            <lemma>style</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>salami</word>
+            <lemma>salami</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>sopressata</word>
+            <lemma>sopressa</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Sant)) (NP (`` `) (JJ Olcese) (NN style) (NN salami)) (NP (NN sopressata)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Sant</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">salami</governor>
+            <dependent idx="3">Olcese</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">salami</governor>
+            <dependent idx="4">style</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Sant</governor>
+            <dependent idx="5">salami</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Sant</governor>
+            <dependent idx="6">sopressata</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Sant</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">salami</governor>
+            <dependent idx="3">Olcese</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">salami</governor>
+            <dependent idx="4">style</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Sant</governor>
+            <dependent idx="5">salami</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Sant</governor>
+            <dependent idx="6">sopressata</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Sant</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">salami</governor>
+            <dependent idx="3">Olcese</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">salami</governor>
+            <dependent idx="4">style</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Sant</governor>
+            <dependent idx="5">salami</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Sant</governor>
+            <dependent idx="6">sopressata</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

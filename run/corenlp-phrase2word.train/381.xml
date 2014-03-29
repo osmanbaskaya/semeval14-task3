@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>typically</word>
+            <lemma>typically</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>apparition</word>
+            <lemma>apparition</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>deceased</word>
+            <lemma>deceased</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>person</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>soul</word>
+            <lemma>soul</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB typically)) (NP (NP (DT the) (NN apparition)) (PP (IN of) (NP (DT a) (JJ deceased) (NN person) (NN soul)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">apparition</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">apparition</governor>
+            <dependent idx="1">typically</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">apparition</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">apparition</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">soul</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">soul</governor>
+            <dependent idx="6">deceased</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">soul</governor>
+            <dependent idx="7">person</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="8">soul</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">apparition</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">apparition</governor>
+            <dependent idx="1">typically</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">apparition</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">soul</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">soul</governor>
+            <dependent idx="6">deceased</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">soul</governor>
+            <dependent idx="7">person</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">apparition</governor>
+            <dependent idx="8">soul</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">apparition</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">apparition</governor>
+            <dependent idx="1">typically</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">apparition</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">soul</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">soul</governor>
+            <dependent idx="6">deceased</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">soul</governor>
+            <dependent idx="7">person</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">apparition</governor>
+            <dependent idx="8">soul</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

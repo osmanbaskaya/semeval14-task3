@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>defined</word>
+            <lemma>define</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>documentation</word>
+            <lemma>documentation</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>outlined</word>
+            <lemma>outline</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN defined) (PP (IN in) (NP (NP (DT the) (NN documentation)) (VP (VBD outlined)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">defined</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">defined</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">documentation</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">in</governor>
+            <dependent idx="4">documentation</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">documentation</governor>
+            <dependent idx="5">outlined</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">defined</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">documentation</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">defined</governor>
+            <dependent idx="4">documentation</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">documentation</governor>
+            <dependent idx="5">outlined</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">defined</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">documentation</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">defined</governor>
+            <dependent idx="4">documentation</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">documentation</governor>
+            <dependent idx="5">outlined</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

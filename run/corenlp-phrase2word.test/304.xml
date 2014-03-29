@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>chow</word>
+            <lemma>chow</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>down</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>ingest</word>
+            <lemma>ingest</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB chow) (PRT (RP down)) (S (VP (VB ingest)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">chow</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">chow</governor>
+            <dependent idx="2">down</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">chow</governor>
+            <dependent idx="3">ingest</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">chow</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">chow</governor>
+            <dependent idx="2">down</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">chow</governor>
+            <dependent idx="3">ingest</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">chow</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">chow</governor>
+            <dependent idx="2">down</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">chow</governor>
+            <dependent idx="3">ingest</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

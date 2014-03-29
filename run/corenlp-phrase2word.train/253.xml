@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Ataulfo</word>
+            <lemma>ataulfo</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>mango</word>
+            <lemma>mango</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Soconusco</word>
+            <lemma>Soconusco</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>tree</word>
+            <lemma>tree</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN Ataulfo) (NN mango)) (PP (IN from) (NP (NNP Soconusco) (NN tree))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mango</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">mango</governor>
+            <dependent idx="1">Ataulfo</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">mango</governor>
+            <dependent idx="3">from</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">tree</governor>
+            <dependent idx="4">Soconusco</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">from</governor>
+            <dependent idx="5">tree</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mango</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">mango</governor>
+            <dependent idx="1">Ataulfo</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">tree</governor>
+            <dependent idx="4">Soconusco</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="2">mango</governor>
+            <dependent idx="5">tree</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mango</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">mango</governor>
+            <dependent idx="1">Ataulfo</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">tree</governor>
+            <dependent idx="4">Soconusco</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="2">mango</governor>
+            <dependent idx="5">tree</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

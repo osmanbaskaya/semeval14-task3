@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>watercraft</word>
+            <lemma>watercraft</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>designed</word>
+            <lemma>design</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>float</word>
+            <lemma>float</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>plane</word>
+            <lemma>plane</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>water</word>
+            <lemma>water</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>hovercraft</word>
+            <lemma>hovercraft</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (NN watercraft)) (VP (VP (VBN designed) (S (VP (TO to) (VP (VB float))))) (CC or) (VP (NP (NN plane)) (PP (IN on) (NP (NN water) (NN hovercraft))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">designed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">watercraft</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">designed</governor>
+            <dependent idx="2">watercraft</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">float</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">designed</governor>
+            <dependent idx="5">float</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">designed</governor>
+            <dependent idx="6">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">designed</governor>
+            <dependent idx="7">plane</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">plane</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">hovercraft</governor>
+            <dependent idx="9">water</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">on</governor>
+            <dependent idx="10">hovercraft</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">designed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">watercraft</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">designed</governor>
+            <dependent idx="2">watercraft</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">float</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">designed</governor>
+            <dependent idx="5">float</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">designed</governor>
+            <dependent idx="7">plane</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">hovercraft</governor>
+            <dependent idx="9">water</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">plane</governor>
+            <dependent idx="10">hovercraft</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">designed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">watercraft</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">designed</governor>
+            <dependent idx="2">watercraft</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">float</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">designed</governor>
+            <dependent idx="5">float</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">designed</governor>
+            <dependent idx="7">plane</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">hovercraft</governor>
+            <dependent idx="9">water</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">plane</governor>
+            <dependent idx="10">hovercraft</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

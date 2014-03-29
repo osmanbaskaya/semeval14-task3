@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>holds</word>
+            <lemma>hold</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="3">
+            <word>barred</word>
+            <lemma>bar</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>unabashed</word>
+            <lemma>unabashed</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT no)) (VP (VBZ holds) (VP (VBN barred) (S (ADJP (JJ unabashed))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">holds</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">holds</governor>
+            <dependent idx="1">no</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">holds</governor>
+            <dependent idx="3">barred</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">barred</governor>
+            <dependent idx="4">unabashed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">holds</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">holds</governor>
+            <dependent idx="1">no</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">holds</governor>
+            <dependent idx="3">barred</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">barred</governor>
+            <dependent idx="4">unabashed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">holds</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">holds</governor>
+            <dependent idx="1">no</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">holds</governor>
+            <dependent idx="3">barred</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">barred</governor>
+            <dependent idx="4">unabashed</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

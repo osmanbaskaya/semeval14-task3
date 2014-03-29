@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>big-ticket</word>
+            <lemma>big-ticket</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>item</word>
+            <lemma>item</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>razzle</word>
+            <lemma>razzle</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>dazzle</word>
+            <lemma>dazzle</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (JJ big-ticket) (NN item) (NN razzle)) (VP (VBP dazzle)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">dazzle</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">razzle</governor>
+            <dependent idx="1">big-ticket</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">razzle</governor>
+            <dependent idx="2">item</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">dazzle</governor>
+            <dependent idx="3">razzle</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">dazzle</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">razzle</governor>
+            <dependent idx="1">big-ticket</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">razzle</governor>
+            <dependent idx="2">item</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">dazzle</governor>
+            <dependent idx="3">razzle</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">dazzle</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">razzle</governor>
+            <dependent idx="1">big-ticket</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">razzle</governor>
+            <dependent idx="2">item</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">dazzle</governor>
+            <dependent idx="3">razzle</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

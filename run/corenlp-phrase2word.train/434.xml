@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>used</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>refer</word>
+            <lemma>refer</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>data</word>
+            <lemma>datum</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>type</word>
+            <lemma>type</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="9">
+            <word>represents</word>
+            <lemma>represent</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="10">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>finite</word>
+            <lemma>finite</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>subset</word>
+            <lemma>subset</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="15">
+            <word>mathematical</word>
+            <lemma>mathematical</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="16">
+            <word>integers</word>
+            <lemma>integer</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="17">
+            <word>numbers</word>
+            <lemma>number</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN used) (S (VP (TO to) (VP (VB refer) (PP (TO to) (NP (NP (DT a) (NN data) (NN type)) (SBAR (WHNP (WDT which)) (S (VP (VBZ represents) (NP (NP (DT some) (JJ finite) (NN subset)) (PP (IN of) (NP (DT the) (JJ mathematical) (NNS integers) (NNS numbers)))))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">used</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">refer</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">used</governor>
+            <dependent idx="3">refer</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">refer</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">type</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">type</governor>
+            <dependent idx="6">data</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">represents</governor>
+            <dependent idx="8">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">type</governor>
+            <dependent idx="9">represents</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">subset</governor>
+            <dependent idx="10">some</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">subset</governor>
+            <dependent idx="11">finite</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">represents</governor>
+            <dependent idx="12">subset</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">subset</governor>
+            <dependent idx="13">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">numbers</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">numbers</governor>
+            <dependent idx="15">mathematical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">numbers</governor>
+            <dependent idx="16">integers</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">of</governor>
+            <dependent idx="17">numbers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">used</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">refer</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">used</governor>
+            <dependent idx="3">refer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">type</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">type</governor>
+            <dependent idx="6">data</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">refer</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">represents</governor>
+            <dependent idx="8">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">type</governor>
+            <dependent idx="9">represents</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">subset</governor>
+            <dependent idx="10">some</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">subset</governor>
+            <dependent idx="11">finite</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">represents</governor>
+            <dependent idx="12">subset</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">numbers</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">numbers</governor>
+            <dependent idx="15">mathematical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">numbers</governor>
+            <dependent idx="16">integers</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">subset</governor>
+            <dependent idx="17">numbers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">used</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">refer</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">used</governor>
+            <dependent idx="3">refer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">type</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">type</governor>
+            <dependent idx="6">data</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">refer</governor>
+            <dependent idx="7">type</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">represents</governor>
+            <dependent idx="8">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">type</governor>
+            <dependent idx="9">represents</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">subset</governor>
+            <dependent idx="10">some</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">subset</governor>
+            <dependent idx="11">finite</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">represents</governor>
+            <dependent idx="12">subset</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">numbers</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">numbers</governor>
+            <dependent idx="15">mathematical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">numbers</governor>
+            <dependent idx="16">integers</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="12">subset</governor>
+            <dependent idx="17">numbers</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

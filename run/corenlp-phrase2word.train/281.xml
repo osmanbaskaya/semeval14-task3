@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Engraving</word>
+            <lemma>Engraving</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>1727</word>
+            <lemma>1727</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>showing</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>east</word>
+            <lemma>east</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>face</word>
+            <lemma>face</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>cloisters</word>
+            <lemma>cloister</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>monastery</word>
+            <lemma>monastery</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Engraving)) (PP (IN of) (NP (NP (CD 1727)) (, ,) (VP (VBG showing) (NP (DT the) (JJ east) (NN face)) (PP (IN with) (NP (NNS cloisters) (NN monastery)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Engraving</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Engraving</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">1727</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">1727</governor>
+            <dependent idx="5">showing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">face</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">face</governor>
+            <dependent idx="7">east</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">showing</governor>
+            <dependent idx="8">face</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">showing</governor>
+            <dependent idx="9">with</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">monastery</governor>
+            <dependent idx="10">cloisters</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">with</governor>
+            <dependent idx="11">monastery</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Engraving</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Engraving</governor>
+            <dependent idx="3">1727</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">1727</governor>
+            <dependent idx="5">showing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">face</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">face</governor>
+            <dependent idx="7">east</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">showing</governor>
+            <dependent idx="8">face</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">monastery</governor>
+            <dependent idx="10">cloisters</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="5">showing</governor>
+            <dependent idx="11">monastery</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Engraving</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Engraving</governor>
+            <dependent idx="3">1727</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">1727</governor>
+            <dependent idx="5">showing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">face</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">face</governor>
+            <dependent idx="7">east</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">showing</governor>
+            <dependent idx="8">face</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">monastery</governor>
+            <dependent idx="10">cloisters</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="5">showing</governor>
+            <dependent idx="11">monastery</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

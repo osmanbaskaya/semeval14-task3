@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>eat</word>
+            <lemma>eat</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>own</word>
+            <lemma>own</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>dog</word>
+            <lemma>dog</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>food</word>
+            <lemma>food</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>demonstrate</word>
+            <lemma>demonstrate</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB eat) (SBAR (S (NP (NP (PRP one) (POS 's)) (JJ own) (NN dog) (NN food)) (VP (VBP demonstrate))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">eat</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">food</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">one</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">food</governor>
+            <dependent idx="4">own</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">food</governor>
+            <dependent idx="5">dog</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">demonstrate</governor>
+            <dependent idx="6">food</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">eat</governor>
+            <dependent idx="7">demonstrate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">eat</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">food</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">food</governor>
+            <dependent idx="4">own</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">food</governor>
+            <dependent idx="5">dog</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">demonstrate</governor>
+            <dependent idx="6">food</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">eat</governor>
+            <dependent idx="7">demonstrate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">eat</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">food</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">food</governor>
+            <dependent idx="4">own</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">food</governor>
+            <dependent idx="5">dog</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">demonstrate</governor>
+            <dependent idx="6">food</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">eat</governor>
+            <dependent idx="7">demonstrate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

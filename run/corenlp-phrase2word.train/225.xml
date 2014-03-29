@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Aerial</word>
+            <lemma>aerial</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>view</word>
+            <lemma>view</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Interstate</word>
+            <lemma>Interstate</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>39</word>
+            <lemma>39</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="6">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="8">
+            <word>passes</word>
+            <lemma>pass</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="9">
+            <word>Minonk</word>
+            <lemma>Minonk</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="11">
+            <word>Illinois</word>
+            <lemma>Illinois</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>cars</word>
+            <lemma>car</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (JJ Aerial) (NN view)) (PP (IN of) (NP (NNP Interstate) (CD 39)))) (SBAR (IN as) (S (NP (PRP it)) (VP (VBZ passes) (NP (NP (NNP Minonk)) (, ,) (NP (NNP Illinois) (NNS cars)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">view</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">view</governor>
+            <dependent idx="1">Aerial</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">view</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">Interstate</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">Interstate</governor>
+            <dependent idx="5">39</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">passes</governor>
+            <dependent idx="6">as</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">passes</governor>
+            <dependent idx="7">it</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">view</governor>
+            <dependent idx="8">passes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">passes</governor>
+            <dependent idx="9">Minonk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cars</governor>
+            <dependent idx="11">Illinois</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="9">Minonk</governor>
+            <dependent idx="12">cars</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">view</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">view</governor>
+            <dependent idx="1">Aerial</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">view</governor>
+            <dependent idx="4">Interstate</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">Interstate</governor>
+            <dependent idx="5">39</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">passes</governor>
+            <dependent idx="6">as</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">passes</governor>
+            <dependent idx="7">it</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">view</governor>
+            <dependent idx="8">passes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">passes</governor>
+            <dependent idx="9">Minonk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cars</governor>
+            <dependent idx="11">Illinois</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="9">Minonk</governor>
+            <dependent idx="12">cars</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">view</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">view</governor>
+            <dependent idx="1">Aerial</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">view</governor>
+            <dependent idx="4">Interstate</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">Interstate</governor>
+            <dependent idx="5">39</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="8">passes</governor>
+            <dependent idx="6">as</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">passes</governor>
+            <dependent idx="7">it</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">view</governor>
+            <dependent idx="8">passes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">passes</governor>
+            <dependent idx="9">Minonk</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">cars</governor>
+            <dependent idx="11">Illinois</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="9">Minonk</governor>
+            <dependent idx="12">cars</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

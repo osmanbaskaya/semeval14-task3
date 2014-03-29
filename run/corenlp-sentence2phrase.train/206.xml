@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>does</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="2">
+            <word>anyone</word>
+            <lemma>anyone</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>untie</word>
+            <lemma>untie</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>filter</word>
+            <lemma>filter</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="8">
+            <word>works</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="9">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>Mozilla</word>
+            <lemma>Mozilla</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>firefox3</word>
+            <lemma>firefox3</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>.6</word>
+            <lemma>.6</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (VBZ does) (NP (NN anyone)) (VP (VB know) (NP (NP (DT an) (NN untie) (NN filter)) (SBAR (WHNP (WDT that)) (S (VP (VBZ works) (PP (IN on) (NP (NP (NNP Mozilla)) (NP (NN firefox3) (CD .6))))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">know</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">know</governor>
+            <dependent idx="1">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">know</governor>
+            <dependent idx="2">anyone</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">filter</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">filter</governor>
+            <dependent idx="5">untie</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">know</governor>
+            <dependent idx="6">filter</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">works</governor>
+            <dependent idx="7">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">filter</governor>
+            <dependent idx="8">works</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">works</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">on</governor>
+            <dependent idx="10">Mozilla</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">Mozilla</governor>
+            <dependent idx="11">firefox3</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">firefox3</governor>
+            <dependent idx="12">.6</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">know</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">know</governor>
+            <dependent idx="1">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">know</governor>
+            <dependent idx="2">anyone</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">filter</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">filter</governor>
+            <dependent idx="5">untie</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">know</governor>
+            <dependent idx="6">filter</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">works</governor>
+            <dependent idx="7">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">filter</governor>
+            <dependent idx="8">works</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">works</governor>
+            <dependent idx="10">Mozilla</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">Mozilla</governor>
+            <dependent idx="11">firefox3</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">firefox3</governor>
+            <dependent idx="12">.6</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">know</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">know</governor>
+            <dependent idx="1">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">know</governor>
+            <dependent idx="2">anyone</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">filter</governor>
+            <dependent idx="4">an</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">filter</governor>
+            <dependent idx="5">untie</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">know</governor>
+            <dependent idx="6">filter</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">works</governor>
+            <dependent idx="7">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="6">filter</governor>
+            <dependent idx="8">works</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">works</governor>
+            <dependent idx="10">Mozilla</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">Mozilla</governor>
+            <dependent idx="11">firefox3</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">firefox3</governor>
+            <dependent idx="12">.6</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>untie</word>
+            <lemma>untie</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>filter</word>
+            <lemma>filter</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>plugin</word>
+            <lemma>plugin</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB untie) (NP (NN filter) (NN browser) (NN plugin))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">untie</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plugin</governor>
+            <dependent idx="2">filter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plugin</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">untie</governor>
+            <dependent idx="4">plugin</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">untie</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plugin</governor>
+            <dependent idx="2">filter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plugin</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">untie</governor>
+            <dependent idx="4">plugin</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">untie</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plugin</governor>
+            <dependent idx="2">filter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">plugin</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">untie</governor>
+            <dependent idx="4">plugin</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

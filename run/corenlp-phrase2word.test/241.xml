@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>read</word>
+            <lemma>read</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>someone</word>
+            <lemma>someone</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>mind</word>
+            <lemma>mind</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>cooperate</word>
+            <lemma>cooperate</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB read) (SBAR (S (NP (NP (NN someone) (POS 's)) (NN mind)) (VP (VBP cooperate))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">read</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">mind</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">someone</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">cooperate</governor>
+            <dependent idx="4">mind</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">read</governor>
+            <dependent idx="5">cooperate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">read</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">mind</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">cooperate</governor>
+            <dependent idx="4">mind</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">read</governor>
+            <dependent idx="5">cooperate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">read</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">mind</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">cooperate</governor>
+            <dependent idx="4">mind</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">read</governor>
+            <dependent idx="5">cooperate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

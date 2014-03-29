@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>It</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>gravity</word>
+            <lemma>gravity</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>dam</word>
+            <lemma>dam</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="8">
+            <word>holds</word>
+            <lemma>hold</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="9">
+            <word>back</word>
+            <lemma>back</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>waters</word>
+            <lemma>water</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>through</word>
+            <lemma>through</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>sheer</word>
+            <lemma>sheer</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>mass</word>
+            <lemma>mass</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP It)) (VP (VBZ is) (NP (NP (DT a) (NN gravity) (NN dam)) (, ,) (SBAR (WHNP (WDT which)) (S (VP (VBZ holds) (PRT (RB back)) (NP (DT the) (NNS waters)) (PP (IN through) (NP (JJ sheer) (NN mass)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">dam</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">dam</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">dam</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">dam</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">dam</governor>
+            <dependent idx="4">gravity</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">holds</governor>
+            <dependent idx="7">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">dam</governor>
+            <dependent idx="8">holds</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="8">holds</governor>
+            <dependent idx="9">back</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">waters</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">holds</governor>
+            <dependent idx="11">waters</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">holds</governor>
+            <dependent idx="12">through</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">mass</governor>
+            <dependent idx="13">sheer</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">through</governor>
+            <dependent idx="14">mass</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">dam</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">dam</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">dam</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">dam</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">dam</governor>
+            <dependent idx="4">gravity</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">holds</governor>
+            <dependent idx="7">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">dam</governor>
+            <dependent idx="8">holds</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="8">holds</governor>
+            <dependent idx="9">back</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">waters</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">holds</governor>
+            <dependent idx="11">waters</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">mass</governor>
+            <dependent idx="13">sheer</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="8">holds</governor>
+            <dependent idx="14">mass</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">dam</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">dam</governor>
+            <dependent idx="1">It</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">dam</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">dam</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">dam</governor>
+            <dependent idx="4">gravity</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">holds</governor>
+            <dependent idx="7">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">dam</governor>
+            <dependent idx="8">holds</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="8">holds</governor>
+            <dependent idx="9">back</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">waters</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">holds</governor>
+            <dependent idx="11">waters</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">mass</governor>
+            <dependent idx="13">sheer</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="8">holds</governor>
+            <dependent idx="14">mass</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>rise</word>
+            <lemma>rise</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>price</word>
+            <lemma>price</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>black</word>
+            <lemma>black</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>tea</word>
+            <lemma>tea</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN rise)) (PP (IN in) (NP (NP (DT the) (NN price)) (PP (IN of) (NP (JJ black) (NN tea))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rise</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">rise</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">price</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">in</governor>
+            <dependent idx="4">price</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">price</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">tea</governor>
+            <dependent idx="6">black</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="7">tea</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rise</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">price</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">rise</governor>
+            <dependent idx="4">price</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">tea</governor>
+            <dependent idx="6">black</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">price</governor>
+            <dependent idx="7">tea</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rise</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">price</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">rise</governor>
+            <dependent idx="4">price</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">tea</governor>
+            <dependent idx="6">black</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">price</governor>
+            <dependent idx="7">tea</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

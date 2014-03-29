@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>police</word>
+            <lemma>police</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>received</word>
+            <lemma>receive</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>tip-off</word>
+            <lemma>tip-off</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>recent</word>
+            <lemma>recent</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>bank</word>
+            <lemma>bank</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>robbery</word>
+            <lemma>robbery</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNS police)) (VP (VBD received) (NP (DT a) (NN tip-off)) (PP (IN about) (NP (DT a) (JJ recent) (NN bank) (NN robbery)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">received</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">police</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">received</governor>
+            <dependent idx="2">police</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">tip-off</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">received</governor>
+            <dependent idx="5">tip-off</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">received</governor>
+            <dependent idx="6">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">robbery</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">robbery</governor>
+            <dependent idx="8">recent</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">robbery</governor>
+            <dependent idx="9">bank</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">about</governor>
+            <dependent idx="10">robbery</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">received</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">police</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">received</governor>
+            <dependent idx="2">police</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">tip-off</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">received</governor>
+            <dependent idx="5">tip-off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">robbery</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">robbery</governor>
+            <dependent idx="8">recent</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">robbery</governor>
+            <dependent idx="9">bank</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="3">received</governor>
+            <dependent idx="10">robbery</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">received</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">police</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">received</governor>
+            <dependent idx="2">police</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">tip-off</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">received</governor>
+            <dependent idx="5">tip-off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">robbery</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">robbery</governor>
+            <dependent idx="8">recent</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">robbery</governor>
+            <dependent idx="9">bank</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="3">received</governor>
+            <dependent idx="10">robbery</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>clues</word>
+            <lemma>clue</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="4">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="5">
+            <word>responsible</word>
+            <lemma>responsible</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>robbery</word>
+            <lemma>robbery</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS clues)) (PP (IN about) (SBAR (WHNP (WP who)) (S (VP (VBD was) (ADJP (JJ responsible) (PP (IN for) (NP (DT a) (NN robbery)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">clues</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">clues</governor>
+            <dependent idx="2">about</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">responsible</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">responsible</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">about</governor>
+            <dependent idx="5">responsible</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">responsible</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">robbery</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="8">robbery</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">clues</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">responsible</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">responsible</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+          <dep type="prepc_about">
+            <governor idx="1">clues</governor>
+            <dependent idx="5">responsible</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">robbery</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">responsible</governor>
+            <dependent idx="8">robbery</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">clues</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">responsible</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">responsible</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+          <dep type="prepc_about">
+            <governor idx="1">clues</governor>
+            <dependent idx="5">responsible</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">robbery</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">responsible</governor>
+            <dependent idx="8">robbery</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

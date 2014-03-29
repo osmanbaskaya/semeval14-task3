@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>pull</word>
+            <lemma>pull</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>somebody</word>
+            <lemma>somebody</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>leg</word>
+            <lemma>leg</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>ridicule</word>
+            <lemma>ridicule</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB pull) (NP (NP (NN somebody) (POS 's)) (NN leg) (NN ridicule))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pull</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">ridicule</governor>
+            <dependent idx="2">somebody</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">somebody</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">ridicule</governor>
+            <dependent idx="4">leg</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">pull</governor>
+            <dependent idx="5">ridicule</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pull</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">ridicule</governor>
+            <dependent idx="2">somebody</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">ridicule</governor>
+            <dependent idx="4">leg</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">pull</governor>
+            <dependent idx="5">ridicule</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pull</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">ridicule</governor>
+            <dependent idx="2">somebody</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">ridicule</governor>
+            <dependent idx="4">leg</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">pull</governor>
+            <dependent idx="5">ridicule</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Jones</word>
+            <lemma>Jones</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>pinch-hit</word>
+            <lemma>pinch-hit</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Smith</word>
+            <lemma>Smith</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>during</word>
+            <lemma>during</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>today</word>
+            <lemma>today</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="8">
+            <word>presentation</word>
+            <lemma>presentation</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Jones) (NN pinch-hit)) (PP (IN for) (NP (NNP Smith))) (PP (IN during) (NP (NP-TMP (NN today) (POS 's)) (NN presentation))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">pinch-hit</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="1">Jones</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">for</governor>
+            <dependent idx="4">Smith</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="5">during</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="8">presentation</governor>
+            <dependent idx="6">today</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="6">today</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">during</governor>
+            <dependent idx="8">presentation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">pinch-hit</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="1">Jones</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="4">Smith</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="8">presentation</governor>
+            <dependent idx="6">today</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="6">today</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="8">presentation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">pinch-hit</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="1">Jones</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="4">Smith</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="8">presentation</governor>
+            <dependent idx="6">today</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="6">today</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="2">pinch-hit</governor>
+            <dependent idx="8">presentation</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>until</word>
+            <lemma>until</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>got</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>high</word>
+            <lemma>high</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>kite</word>
+            <lemma>kite</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBAR (IN until) (S (NP (PRP he)) (VP (VBD got) (ADJP (RB as) (JJ high)) (PP (IN as) (NP (DT a) (NN kite))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">high</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">high</governor>
+            <dependent idx="1">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">high</governor>
+            <dependent idx="2">he</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">high</governor>
+            <dependent idx="3">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">high</governor>
+            <dependent idx="4">as</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">high</governor>
+            <dependent idx="6">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">kite</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">as</governor>
+            <dependent idx="8">kite</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">high</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">high</governor>
+            <dependent idx="1">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">high</governor>
+            <dependent idx="2">he</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">high</governor>
+            <dependent idx="3">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">high</governor>
+            <dependent idx="4">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">kite</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="5">high</governor>
+            <dependent idx="8">kite</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">high</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">high</governor>
+            <dependent idx="1">until</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">high</governor>
+            <dependent idx="2">he</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">high</governor>
+            <dependent idx="3">got</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">high</governor>
+            <dependent idx="4">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">kite</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="5">high</governor>
+            <dependent idx="8">kite</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

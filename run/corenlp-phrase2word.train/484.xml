@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>frozen</word>
+            <lemma>frozen</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>dragon</word>
+            <lemma>dragon</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>found</word>
+            <lemma>find</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>carpthian</word>
+            <lemma>carpthian</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>mountains</word>
+            <lemma>mountain</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>myth</word>
+            <lemma>myth</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (JJ frozen) (NN dragon)) (VP (VBN found) (PP (IN in) (NP (JJ carpthian) (NNS mountains) (NN myth)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">found</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">dragon</governor>
+            <dependent idx="1">frozen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">found</governor>
+            <dependent idx="2">dragon</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">found</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">myth</governor>
+            <dependent idx="5">carpthian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">myth</governor>
+            <dependent idx="6">mountains</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="7">myth</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">found</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">dragon</governor>
+            <dependent idx="1">frozen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">found</governor>
+            <dependent idx="2">dragon</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">myth</governor>
+            <dependent idx="5">carpthian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">myth</governor>
+            <dependent idx="6">mountains</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">found</governor>
+            <dependent idx="7">myth</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">found</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">dragon</governor>
+            <dependent idx="1">frozen</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">found</governor>
+            <dependent idx="2">dragon</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">myth</governor>
+            <dependent idx="5">carpthian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">myth</governor>
+            <dependent idx="6">mountains</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">found</governor>
+            <dependent idx="7">myth</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

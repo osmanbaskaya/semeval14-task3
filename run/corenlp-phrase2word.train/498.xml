@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>pounds</word>
+            <lemma>pound</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>us</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>dollars</word>
+            <lemma>dollar</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>exchange</word>
+            <lemma>exchange</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNS pounds)) (PP (TO to) (NP (PRP us)))) (NP (NNS dollars) (NN exchange)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pounds</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">pounds</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">exchange</governor>
+            <dependent idx="4">dollars</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">pounds</governor>
+            <dependent idx="5">exchange</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pounds</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">pounds</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">exchange</governor>
+            <dependent idx="4">dollars</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">pounds</governor>
+            <dependent idx="5">exchange</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">pounds</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">pounds</governor>
+            <dependent idx="3">us</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">exchange</governor>
+            <dependent idx="4">dollars</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">pounds</governor>
+            <dependent idx="5">exchange</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

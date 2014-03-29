@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>able</word>
+            <lemma>able</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>speak</word>
+            <lemma>speak</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>unavoidable</word>
+            <lemma>unavoidable</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ able) (S (VP (TO to) (VP (VB speak) (ADJP (JJ unavoidable))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">able</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">speak</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">able</governor>
+            <dependent idx="3">speak</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">speak</governor>
+            <dependent idx="4">unavoidable</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">able</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">speak</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">able</governor>
+            <dependent idx="3">speak</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">speak</governor>
+            <dependent idx="4">unavoidable</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">able</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">speak</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">able</governor>
+            <dependent idx="3">speak</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">speak</governor>
+            <dependent idx="4">unavoidable</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

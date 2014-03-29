@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>military</word>
+            <lemma>military</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>aircraft</word>
+            <lemma>aircraft</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>designed</word>
+            <lemma>design</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>attack</word>
+            <lemma>attack</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>ground</word>
+            <lemma>ground</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>targets</word>
+            <lemma>target</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>bomber</word>
+            <lemma>bomber</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (JJ military) (NN aircraft)) (VP (VBN designed) (S (VP (TO to) (VP (VB attack) (NP (NN ground) (NNS targets) (NN bomber)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">designed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">aircraft</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">aircraft</governor>
+            <dependent idx="2">military</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">designed</governor>
+            <dependent idx="3">aircraft</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">attack</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">designed</governor>
+            <dependent idx="6">attack</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bomber</governor>
+            <dependent idx="7">ground</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bomber</governor>
+            <dependent idx="8">targets</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">attack</governor>
+            <dependent idx="9">bomber</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">designed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">aircraft</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">aircraft</governor>
+            <dependent idx="2">military</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">designed</governor>
+            <dependent idx="3">aircraft</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">attack</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">designed</governor>
+            <dependent idx="6">attack</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bomber</governor>
+            <dependent idx="7">ground</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bomber</governor>
+            <dependent idx="8">targets</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">attack</governor>
+            <dependent idx="9">bomber</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">designed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">aircraft</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">aircraft</governor>
+            <dependent idx="2">military</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">designed</governor>
+            <dependent idx="3">aircraft</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">attack</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">designed</governor>
+            <dependent idx="6">attack</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bomber</governor>
+            <dependent idx="7">ground</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bomber</governor>
+            <dependent idx="8">targets</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">attack</governor>
+            <dependent idx="9">bomber</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

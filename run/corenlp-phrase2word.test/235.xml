@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RBR</POS>
+          </token>
+          <token id="2">
+            <word>bang</word>
+            <lemma>bang</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="5">
+            <word>buck</word>
+            <lemma>buck</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>economy</word>
+            <lemma>economy</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (RBR more)) (NP (NP (NN bang)) (PP (IN for) (NP (PRP$ your) (NN buck) (NN economy)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">more</governor>
+            <dependent idx="2">bang</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">bang</governor>
+            <dependent idx="3">for</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">economy</governor>
+            <dependent idx="4">your</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">economy</governor>
+            <dependent idx="5">buck</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">for</governor>
+            <dependent idx="6">economy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">more</governor>
+            <dependent idx="2">bang</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">economy</governor>
+            <dependent idx="4">your</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">economy</governor>
+            <dependent idx="5">buck</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">bang</governor>
+            <dependent idx="6">economy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">more</governor>
+            <dependent idx="2">bang</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">economy</governor>
+            <dependent idx="4">your</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">economy</governor>
+            <dependent idx="5">buck</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">bang</governor>
+            <dependent idx="6">economy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

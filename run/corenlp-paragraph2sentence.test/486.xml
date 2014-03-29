@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Bob</word>
+            <lemma>Bob</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Richter</word>
+            <lemma>Richter</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>spokesman</word>
+            <lemma>spokesman</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>House</word>
+            <lemma>House</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Speaker</word>
+            <lemma>Speaker</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>Tom</word>
+            <lemma>Tom</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Craddick</word>
+            <lemma>Craddick</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="12">
+            <word>had</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="13">
+            <word>no</word>
+            <lemma>no</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>comment</word>
+            <lemma>comment</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="16">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="17">
+            <word>ruling</word>
+            <lemma>ruling</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="18">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Bob) (NNP Richter)) (, ,) (NP (NP (DT a) (NN spokesman)) (PP (IN for) (NP (NNP House) (NNP Speaker) (NNP Tom) (NNP Craddick)))) (, ,)) (VP (VBD had) (NP (NP (DT no) (NN comment)) (PP (IN about) (NP (DT the) (NN ruling))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">had</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Richter</governor>
+            <dependent idx="1">Bob</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">had</governor>
+            <dependent idx="2">Richter</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">spokesman</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Richter</governor>
+            <dependent idx="5">spokesman</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">spokesman</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="7">House</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="8">Speaker</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="9">Tom</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="10">Craddick</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">comment</governor>
+            <dependent idx="13">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">had</governor>
+            <dependent idx="14">comment</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="14">comment</governor>
+            <dependent idx="15">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">ruling</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">about</governor>
+            <dependent idx="17">ruling</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">had</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Richter</governor>
+            <dependent idx="1">Bob</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">had</governor>
+            <dependent idx="2">Richter</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">spokesman</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Richter</governor>
+            <dependent idx="5">spokesman</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="7">House</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="8">Speaker</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="9">Tom</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">spokesman</governor>
+            <dependent idx="10">Craddick</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">comment</governor>
+            <dependent idx="13">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">had</governor>
+            <dependent idx="14">comment</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">ruling</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="14">comment</governor>
+            <dependent idx="17">ruling</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">had</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Richter</governor>
+            <dependent idx="1">Bob</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">had</governor>
+            <dependent idx="2">Richter</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">spokesman</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">Richter</governor>
+            <dependent idx="5">spokesman</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="7">House</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="8">Speaker</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Craddick</governor>
+            <dependent idx="9">Tom</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">spokesman</governor>
+            <dependent idx="10">Craddick</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">comment</governor>
+            <dependent idx="13">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">had</governor>
+            <dependent idx="14">comment</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">ruling</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="14">comment</governor>
+            <dependent idx="17">ruling</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>spokesman</word>
+            <lemma>spokesman</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>politician</word>
+            <lemma>politician</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN spokesman)) (PP (IN for) (NP (DT a) (NN politician))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">spokesman</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">spokesman</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">politician</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">for</governor>
+            <dependent idx="4">politician</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">spokesman</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">politician</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">spokesman</governor>
+            <dependent idx="4">politician</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">spokesman</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">politician</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">spokesman</governor>
+            <dependent idx="4">politician</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

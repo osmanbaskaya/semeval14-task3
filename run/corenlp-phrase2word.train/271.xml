@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>larger</word>
+            <lemma>larger</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="3">
+            <word>turntable</word>
+            <lemma>turntable</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>front</word>
+            <lemma>front</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>roundhouse</word>
+            <lemma>roundhouse</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>1909</word>
+            <lemma>1909</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>cluster</word>
+            <lemma>cluster</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT A) (JJR larger) (NN turntable)) (PP (IN in) (NP (NN front))) (PP (IN of) (NP (NP (DT a) (NN roundhouse)) (, ,) (NP (CD 1909) (NN cluster)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">turntable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">turntable</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">turntable</governor>
+            <dependent idx="2">larger</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">turntable</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">front</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">turntable</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">roundhouse</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="8">roundhouse</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">cluster</governor>
+            <dependent idx="10">1909</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">roundhouse</governor>
+            <dependent idx="11">cluster</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">turntable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">turntable</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">turntable</governor>
+            <dependent idx="2">larger</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">turntable</governor>
+            <dependent idx="5">front</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">roundhouse</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">turntable</governor>
+            <dependent idx="8">roundhouse</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">cluster</governor>
+            <dependent idx="10">1909</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">roundhouse</governor>
+            <dependent idx="11">cluster</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">turntable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">turntable</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">turntable</governor>
+            <dependent idx="2">larger</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">turntable</governor>
+            <dependent idx="5">front</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">roundhouse</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">turntable</governor>
+            <dependent idx="8">roundhouse</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">cluster</governor>
+            <dependent idx="10">1909</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">roundhouse</governor>
+            <dependent idx="11">cluster</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

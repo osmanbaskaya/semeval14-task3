@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>lower</word>
+            <lemma>lower</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="2">
+            <word>government</word>
+            <lemma>government</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>spending</word>
+            <lemma>spending</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>sequestration</word>
+            <lemma>sequestration</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJR lower) (NN government)) (NP (NN spending) (NN sequestration)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">government</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">government</governor>
+            <dependent idx="1">lower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">sequestration</governor>
+            <dependent idx="3">spending</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">government</governor>
+            <dependent idx="4">sequestration</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">government</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">government</governor>
+            <dependent idx="1">lower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">sequestration</governor>
+            <dependent idx="3">spending</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">government</governor>
+            <dependent idx="4">sequestration</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">government</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">government</governor>
+            <dependent idx="1">lower</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">sequestration</governor>
+            <dependent idx="3">spending</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">government</governor>
+            <dependent idx="4">sequestration</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

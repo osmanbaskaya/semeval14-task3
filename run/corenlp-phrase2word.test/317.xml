@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>McCook</word>
+            <lemma>McCook</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Army</word>
+            <lemma>Army</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Airfield</word>
+            <lemma>Airfield</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>1944</word>
+            <lemma>1944</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>looking</word>
+            <lemma>look</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="8">
+            <word>northwest</word>
+            <lemma>northwest</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="9">
+            <word>perspective</word>
+            <lemma>perspective</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (S (NP (NP (NNP McCook) (NNP Army) (NNP Airfield)) (, ,) (NP (CD 1944)) (, ,)) (VP (VBG looking) (ADVP (RB northwest) (NP (NN perspective))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">looking</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="1">McCook</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="2">Army</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">looking</governor>
+            <dependent idx="3">Airfield</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="5">1944</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">looking</governor>
+            <dependent idx="8">northwest</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">northwest</governor>
+            <dependent idx="9">perspective</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">looking</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="1">McCook</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="2">Army</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">looking</governor>
+            <dependent idx="3">Airfield</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="5">1944</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">looking</governor>
+            <dependent idx="8">northwest</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">northwest</governor>
+            <dependent idx="9">perspective</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">looking</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="1">McCook</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="2">Army</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">looking</governor>
+            <dependent idx="3">Airfield</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Airfield</governor>
+            <dependent idx="5">1944</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">looking</governor>
+            <dependent idx="8">northwest</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">northwest</governor>
+            <dependent idx="9">perspective</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

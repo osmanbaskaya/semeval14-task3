@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>comcast</word>
+            <lemma>comcast</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>works</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>then</word>
+            <lemma>then</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>doesnt</word>
+            <lemma>doesnt</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>work</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="9">
+            <word>then</word>
+            <lemma>then</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>works</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="11">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="12">
+            <word>then</word>
+            <lemma>then</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="13">
+            <word>doesnt</word>
+            <lemma>doesnt</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>work</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN comcast) (NN internet)) (VP (VBZ works) (PRN (, ,) (S (ADVP (RB then)) (NP (NP (JJ doesnt) (NN work)) (, ,) (ADVP (RB then))) (VP (VBZ works))) (, ,)) (NP (RB then) (JJ doesnt) (NN work))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">works</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">internet</governor>
+            <dependent idx="1">comcast</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">works</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">works</governor>
+            <dependent idx="5">then</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">work</governor>
+            <dependent idx="6">doesnt</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">works</governor>
+            <dependent idx="7">work</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">work</governor>
+            <dependent idx="9">then</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">works</governor>
+            <dependent idx="10">works</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">work</governor>
+            <dependent idx="12">then</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">work</governor>
+            <dependent idx="13">doesnt</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">works</governor>
+            <dependent idx="14">work</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">works</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">internet</governor>
+            <dependent idx="1">comcast</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">works</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">works</governor>
+            <dependent idx="5">then</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">work</governor>
+            <dependent idx="6">doesnt</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">works</governor>
+            <dependent idx="7">work</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">work</governor>
+            <dependent idx="9">then</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">works</governor>
+            <dependent idx="10">works</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">work</governor>
+            <dependent idx="12">then</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">work</governor>
+            <dependent idx="13">doesnt</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">works</governor>
+            <dependent idx="14">work</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">works</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">internet</governor>
+            <dependent idx="1">comcast</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">works</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">works</governor>
+            <dependent idx="5">then</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">work</governor>
+            <dependent idx="6">doesnt</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">works</governor>
+            <dependent idx="7">work</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">work</governor>
+            <dependent idx="9">then</dependent>
+          </dep>
+          <dep type="parataxis">
+            <governor idx="3">works</governor>
+            <dependent idx="10">works</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">work</governor>
+            <dependent idx="12">then</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">work</governor>
+            <dependent idx="13">doesnt</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">works</governor>
+            <dependent idx="14">work</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (. .))) </parse>
+        <dependencies type="basic-dependencies"/>
+        <dependencies type="collapsed-dependencies"/>
+        <dependencies type="collapsed-ccprocessed-dependencies"/>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (. ?))) </parse>
+        <dependencies type="basic-dependencies"/>
+        <dependencies type="collapsed-dependencies"/>
+        <dependencies type="collapsed-ccprocessed-dependencies"/>
+      </sentence>
+      <sentence id="4">
+        <tokens>
+          <token id="1">
+            <word>Comcast</word>
+            <lemma>Comcast</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>provider</word>
+            <lemma>provider</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Comcast) (NNP internet)) (NP (NN provider)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">internet</governor>
+            <dependent idx="1">Comcast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">internet</governor>
+            <dependent idx="3">provider</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">internet</governor>
+            <dependent idx="1">Comcast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">internet</governor>
+            <dependent idx="3">provider</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">internet</governor>
+            <dependent idx="1">Comcast</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">internet</governor>
+            <dependent idx="3">provider</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

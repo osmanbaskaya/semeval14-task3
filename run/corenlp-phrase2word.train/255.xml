@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>View</word>
+            <lemma>View</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>Nuvsvåg</word>
+            <lemma>Nuvsvåg</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Lopptinden</word>
+            <lemma>Lopptinden</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>landscape</word>
+            <lemma>landscape</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP View)) (PP (IN of) (NP (NNP Nuvsvåg))) (PP (IN from) (NP (NNP Lopptinden) (NN landscape))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">View</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">View</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">Nuvsvåg</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">View</governor>
+            <dependent idx="4">from</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">landscape</governor>
+            <dependent idx="5">Lopptinden</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">from</governor>
+            <dependent idx="6">landscape</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">View</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">View</governor>
+            <dependent idx="3">Nuvsvåg</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">landscape</governor>
+            <dependent idx="5">Lopptinden</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="1">View</governor>
+            <dependent idx="6">landscape</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">View</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">View</governor>
+            <dependent idx="3">Nuvsvåg</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">landscape</governor>
+            <dependent idx="5">Lopptinden</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="1">View</governor>
+            <dependent idx="6">landscape</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

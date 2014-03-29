@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>notch</word>
+            <lemma>notch</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="5">
+            <word>bedpost</word>
+            <lemma>bedpost</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>mattress</word>
+            <lemma>mattress</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN notch)) (PP (IN on) (NP (NP (NN one) (POS 's)) (NN bedpost) (NN mattress))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">notch</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">notch</governor>
+            <dependent idx="2">on</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">mattress</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="3">one</governor>
+            <dependent idx="4">'s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">mattress</governor>
+            <dependent idx="5">bedpost</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">on</governor>
+            <dependent idx="6">mattress</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">notch</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">mattress</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">mattress</governor>
+            <dependent idx="5">bedpost</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">notch</governor>
+            <dependent idx="6">mattress</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">notch</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">mattress</governor>
+            <dependent idx="3">one</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">mattress</governor>
+            <dependent idx="5">bedpost</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">notch</governor>
+            <dependent idx="6">mattress</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

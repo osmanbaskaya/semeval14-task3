@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>restore</word>
+            <lemma>restore</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>previous</word>
+            <lemma>previous</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>websites</word>
+            <lemma>website</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>address</word>
+            <lemma>address</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>bar</word>
+            <lemma>bar</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>Firefox</word>
+            <lemma>Firefox</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB How)) (SQ (VBP do) (NP (PRP I)) (VP (VB restore) (NP (JJ previous) (NNS websites)) (PP (IN in) (NP (NP (DT the) (NN address) (NN bar)) (PP (IN in) (NP (NNP Firefox))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">restore</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">restore</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">restore</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">restore</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">websites</governor>
+            <dependent idx="5">previous</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">restore</governor>
+            <dependent idx="6">websites</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">restore</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">bar</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">bar</governor>
+            <dependent idx="9">address</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="10">bar</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">bar</governor>
+            <dependent idx="11">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">in</governor>
+            <dependent idx="12">Firefox</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">restore</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">restore</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">restore</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">restore</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">websites</governor>
+            <dependent idx="5">previous</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">restore</governor>
+            <dependent idx="6">websites</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">bar</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">bar</governor>
+            <dependent idx="9">address</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">restore</governor>
+            <dependent idx="10">bar</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="10">bar</governor>
+            <dependent idx="12">Firefox</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">restore</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">restore</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">restore</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">restore</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">websites</governor>
+            <dependent idx="5">previous</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">restore</governor>
+            <dependent idx="6">websites</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">bar</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">bar</governor>
+            <dependent idx="9">address</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">restore</governor>
+            <dependent idx="10">bar</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="10">bar</governor>
+            <dependent idx="12">Firefox</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>restoring</word>
+            <lemma>restore</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>Firefox</word>
+            <lemma>Firefox</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>history</word>
+            <lemma>history</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG restoring) (NP (NNP Firefox) (NN browser) (NN history))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">restoring</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">history</governor>
+            <dependent idx="2">Firefox</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">history</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">restoring</governor>
+            <dependent idx="4">history</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">restoring</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">history</governor>
+            <dependent idx="2">Firefox</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">history</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">restoring</governor>
+            <dependent idx="4">history</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">restoring</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">history</governor>
+            <dependent idx="2">Firefox</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">history</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">restoring</governor>
+            <dependent idx="4">history</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

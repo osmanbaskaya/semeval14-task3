@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>open</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>letting</word>
+            <lemma>let</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>carpet</word>
+            <lemma>carpet</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ open) (PP (TO to) (S (VP (VBG letting) (NP (NN carpet))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">open</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">open</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">to</governor>
+            <dependent idx="3">letting</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">letting</governor>
+            <dependent idx="4">carpet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">open</dependent>
+          </dep>
+          <dep type="prepc_to">
+            <governor idx="1">open</governor>
+            <dependent idx="3">letting</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">letting</governor>
+            <dependent idx="4">carpet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">open</dependent>
+          </dep>
+          <dep type="prepc_to">
+            <governor idx="1">open</governor>
+            <dependent idx="3">letting</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">letting</governor>
+            <dependent idx="4">carpet</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

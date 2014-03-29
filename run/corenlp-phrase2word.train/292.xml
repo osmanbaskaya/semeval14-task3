@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Lancaster</word>
+            <lemma>Lancaster</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>House</word>
+            <lemma>House</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>Manchester</word>
+            <lemma>Manchester</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>built</word>
+            <lemma>build</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>1910</word>
+            <lemma>1910</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>building</word>
+            <lemma>building</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NNP Lancaster) (NNP House) (, ,) (NNP Manchester)) (, ,) (VP (VBN built) (PP (IN in) (NP (CD 1910) (NN building))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Manchester</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="1">Lancaster</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="2">House</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="6">built</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">built</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">building</governor>
+            <dependent idx="8">1910</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="9">building</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Manchester</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="1">Lancaster</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="2">House</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="6">built</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">building</governor>
+            <dependent idx="8">1910</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">built</governor>
+            <dependent idx="9">building</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Manchester</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="1">Lancaster</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="2">House</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">Manchester</governor>
+            <dependent idx="6">built</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">building</governor>
+            <dependent idx="8">1910</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">built</governor>
+            <dependent idx="9">building</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

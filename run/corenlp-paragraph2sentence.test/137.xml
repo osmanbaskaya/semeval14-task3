@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Where</word>
+            <lemma>where</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="7">
+            <word>social</word>
+            <lemma>social</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>networking</word>
+            <lemma>networking</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>site</word>
+            <lemma>site</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>accounts</word>
+            <lemma>account</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (MD can) (NP (PRP I)) (VP (VB get) (NP (DT some) (ADJP (JJR more) (JJ social)) (NN networking) (NN site) (NNS accounts)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">get</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">get</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">get</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">get</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">accounts</governor>
+            <dependent idx="5">some</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">social</governor>
+            <dependent idx="6">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">accounts</governor>
+            <dependent idx="7">social</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">accounts</governor>
+            <dependent idx="8">networking</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">accounts</governor>
+            <dependent idx="9">site</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">get</governor>
+            <dependent idx="10">accounts</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">get</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">get</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">get</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">get</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">accounts</governor>
+            <dependent idx="5">some</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">social</governor>
+            <dependent idx="6">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">accounts</governor>
+            <dependent idx="7">social</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">accounts</governor>
+            <dependent idx="8">networking</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">accounts</governor>
+            <dependent idx="9">site</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">get</governor>
+            <dependent idx="10">accounts</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">get</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">get</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">get</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">get</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">accounts</governor>
+            <dependent idx="5">some</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="7">social</governor>
+            <dependent idx="6">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">accounts</governor>
+            <dependent idx="7">social</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">accounts</governor>
+            <dependent idx="8">networking</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">accounts</governor>
+            <dependent idx="9">site</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">get</governor>
+            <dependent idx="10">accounts</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>RBR</POS>
+          </token>
+          <token id="2">
+            <word>social</word>
+            <lemma>social</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>network</word>
+            <lemma>network</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>accounts</word>
+            <lemma>account</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (RBR more)) (NP (JJ social) (NN network) (NNS accounts)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">accounts</governor>
+            <dependent idx="2">social</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">accounts</governor>
+            <dependent idx="3">network</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">more</governor>
+            <dependent idx="4">accounts</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">accounts</governor>
+            <dependent idx="2">social</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">accounts</governor>
+            <dependent idx="3">network</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">more</governor>
+            <dependent idx="4">accounts</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">more</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">accounts</governor>
+            <dependent idx="2">social</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">accounts</governor>
+            <dependent idx="3">network</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">more</governor>
+            <dependent idx="4">accounts</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

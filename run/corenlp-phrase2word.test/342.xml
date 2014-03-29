@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Kiyosu</word>
+            <lemma>Kiyosu</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Castle</word>
+            <lemma>Castle</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>Kiyosu</word>
+            <lemma>Kiyosu</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Castle</word>
+            <lemma>Castle</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Park</word>
+            <lemma>Park</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>Kiyosu</word>
+            <lemma>Kiyosu</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>park</word>
+            <lemma>park</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNP Kiyosu) (NNP Castle)) (CC and) (NP (NNP Kiyosu) (NNP Castle) (NNP Park))) (PP (IN in) (NP (NNP Kiyosu) (NN park))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Castle</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Castle</governor>
+            <dependent idx="1">Kiyosu</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">Castle</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Park</governor>
+            <dependent idx="4">Kiyosu</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Park</governor>
+            <dependent idx="5">Castle</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">Castle</governor>
+            <dependent idx="6">Park</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Castle</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">park</governor>
+            <dependent idx="8">Kiyosu</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="9">park</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Castle</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Castle</governor>
+            <dependent idx="1">Kiyosu</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Park</governor>
+            <dependent idx="4">Kiyosu</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Park</governor>
+            <dependent idx="5">Castle</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Castle</governor>
+            <dependent idx="6">Park</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">park</governor>
+            <dependent idx="8">Kiyosu</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Castle</governor>
+            <dependent idx="9">park</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Castle</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Castle</governor>
+            <dependent idx="1">Kiyosu</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Park</governor>
+            <dependent idx="4">Kiyosu</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Park</governor>
+            <dependent idx="5">Castle</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Castle</governor>
+            <dependent idx="6">Park</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">park</governor>
+            <dependent idx="8">Kiyosu</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Castle</governor>
+            <dependent idx="9">park</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Laurisilva</word>
+            <lemma>laurisilva</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>Garajonay</word>
+            <lemma>Garajonay</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>National</word>
+            <lemma>National</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Park</word>
+            <lemma>Park</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>La</word>
+            <lemma>La</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>Gomera</word>
+            <lemma>Gomera</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>forest</word>
+            <lemma>forest</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN Laurisilva)) (PP (IN of) (NP (NNP Garajonay) (NNP National) (NNP Park))) (, ,) (PP (IN in) (NP (NNP La) (NNP Gomera) (NN forest))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Laurisilva</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Laurisilva</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Park</governor>
+            <dependent idx="3">Garajonay</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Park</governor>
+            <dependent idx="4">National</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="5">Park</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Laurisilva</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">forest</governor>
+            <dependent idx="8">La</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">forest</governor>
+            <dependent idx="9">Gomera</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="10">forest</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Laurisilva</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Park</governor>
+            <dependent idx="3">Garajonay</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Park</governor>
+            <dependent idx="4">National</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Laurisilva</governor>
+            <dependent idx="5">Park</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">forest</governor>
+            <dependent idx="8">La</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">forest</governor>
+            <dependent idx="9">Gomera</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">Laurisilva</governor>
+            <dependent idx="10">forest</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Laurisilva</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Park</governor>
+            <dependent idx="3">Garajonay</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Park</governor>
+            <dependent idx="4">National</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Laurisilva</governor>
+            <dependent idx="5">Park</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">forest</governor>
+            <dependent idx="8">La</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">forest</governor>
+            <dependent idx="9">Gomera</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">Laurisilva</governor>
+            <dependent idx="10">forest</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

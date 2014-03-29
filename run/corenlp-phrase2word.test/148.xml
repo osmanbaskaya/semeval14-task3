@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>time</word>
+            <lemma>time</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>step</word>
+            <lemma>step</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>down</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="5">
+            <word>resignment</word>
+            <lemma>resignment</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN time)) (S (VP (TO to) (VP (VB step) (PRT (RP down)) (NP (NN resignment))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">time</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">step</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">time</governor>
+            <dependent idx="3">step</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">step</governor>
+            <dependent idx="4">down</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">step</governor>
+            <dependent idx="5">resignment</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">time</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">step</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">time</governor>
+            <dependent idx="3">step</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">step</governor>
+            <dependent idx="4">down</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">step</governor>
+            <dependent idx="5">resignment</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">time</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">step</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">time</governor>
+            <dependent idx="3">step</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="3">step</governor>
+            <dependent idx="4">down</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">step</governor>
+            <dependent idx="5">resignment</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>written</word>
+            <lemma>write</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="3">
+            <word>message</word>
+            <lemma>message</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="6">
+            <word>person</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>another</word>
+            <lemma>another</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>post</word>
+            <lemma>post</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>office</word>
+            <lemma>office</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (VBN written) (NN message)) (PP (IN from) (NP (NP (CD one) (NN person)) (PP (TO to) (NP (DT another) (NN post) (NN office)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">message</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">message</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">message</governor>
+            <dependent idx="2">written</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">message</governor>
+            <dependent idx="4">from</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">person</governor>
+            <dependent idx="5">one</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">from</governor>
+            <dependent idx="6">person</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">person</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">office</governor>
+            <dependent idx="8">another</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">office</governor>
+            <dependent idx="9">post</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">to</governor>
+            <dependent idx="10">office</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">message</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">message</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">message</governor>
+            <dependent idx="2">written</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">person</governor>
+            <dependent idx="5">one</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">message</governor>
+            <dependent idx="6">person</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">office</governor>
+            <dependent idx="8">another</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">office</governor>
+            <dependent idx="9">post</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">person</governor>
+            <dependent idx="10">office</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">message</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">message</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">message</governor>
+            <dependent idx="2">written</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">person</governor>
+            <dependent idx="5">one</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">message</governor>
+            <dependent idx="6">person</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">office</governor>
+            <dependent idx="8">another</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">office</governor>
+            <dependent idx="9">post</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">person</governor>
+            <dependent idx="10">office</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

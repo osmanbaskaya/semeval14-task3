@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>She</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>'s</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="3">
+            <word>rather</word>
+            <lemma>rather</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>thin-skinned</word>
+            <lemma>thin-skinned</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>when</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="6">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="7">
+            <word>comes</word>
+            <lemma>come</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="9">
+            <word>comments</word>
+            <lemma>comment</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="12">
+            <word>work</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP She)) (VP (VBZ 's) (ADJP (RB rather) (JJ thin-skinned)) (SBAR (WHADVP (WRB when)) (S (NP (PRP it)) (VP (VBZ comes) (PP (TO to) (NP (NP (NNS comments)) (PP (IN about) (NP (PRP$ her) (NN work))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">thin-skinned</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="3">rather</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">comes</governor>
+            <dependent idx="5">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">comes</governor>
+            <dependent idx="6">it</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="7">comes</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">comes</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">to</governor>
+            <dependent idx="9">comments</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">comments</governor>
+            <dependent idx="10">about</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">work</governor>
+            <dependent idx="11">her</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">about</governor>
+            <dependent idx="12">work</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">thin-skinned</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="3">rather</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">comes</governor>
+            <dependent idx="5">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">comes</governor>
+            <dependent idx="6">it</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="7">comes</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">comes</governor>
+            <dependent idx="9">comments</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">work</governor>
+            <dependent idx="11">her</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="9">comments</governor>
+            <dependent idx="12">work</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">thin-skinned</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="1">She</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="3">rather</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">comes</governor>
+            <dependent idx="5">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">comes</governor>
+            <dependent idx="6">it</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">thin-skinned</governor>
+            <dependent idx="7">comes</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">comes</governor>
+            <dependent idx="9">comments</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">work</governor>
+            <dependent idx="11">her</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="9">comments</governor>
+            <dependent idx="12">work</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>constructive</word>
+            <lemma>constructive</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>criticism</word>
+            <lemma>criticism</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ constructive) (NN criticism))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">criticism</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">criticism</governor>
+            <dependent idx="1">constructive</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">criticism</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">criticism</governor>
+            <dependent idx="1">constructive</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">criticism</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">criticism</governor>
+            <dependent idx="1">constructive</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

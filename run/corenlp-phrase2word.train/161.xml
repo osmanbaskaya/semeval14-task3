@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>beat</word>
+            <lemma>beat</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>around</word>
+            <lemma>around</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>bush</word>
+            <lemma>bush</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>circumscribe</word>
+            <lemma>circumscribe</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB beat) (PP (IN around) (NP (DT the) (JJ bush) (NN circumscribe)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">beat</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">beat</governor>
+            <dependent idx="2">around</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">circumscribe</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">circumscribe</governor>
+            <dependent idx="4">bush</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">around</governor>
+            <dependent idx="5">circumscribe</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">beat</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">circumscribe</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">circumscribe</governor>
+            <dependent idx="4">bush</dependent>
+          </dep>
+          <dep type="prep_around">
+            <governor idx="1">beat</governor>
+            <dependent idx="5">circumscribe</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">beat</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">circumscribe</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">circumscribe</governor>
+            <dependent idx="4">bush</dependent>
+          </dep>
+          <dep type="prep_around">
+            <governor idx="1">beat</governor>
+            <dependent idx="5">circumscribe</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

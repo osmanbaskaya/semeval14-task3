@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>extent</word>
+            <lemma>extent</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Roman</word>
+            <lemma>Roman</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Empire</word>
+            <lemma>Empire</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>under</word>
+            <lemma>under</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Augustus</word>
+            <lemma>Augustus</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>autocracy</word>
+            <lemma>autocracy</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN extent)) (PP (IN of) (NP (DT the) (NNP Roman) (NNP Empire))) (PP (IN under) (NP (NNP Augustus) (NN autocracy))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">extent</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">extent</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">Empire</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Empire</governor>
+            <dependent idx="4">Roman</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="5">Empire</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">extent</governor>
+            <dependent idx="6">under</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">autocracy</governor>
+            <dependent idx="7">Augustus</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">under</governor>
+            <dependent idx="8">autocracy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">extent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">Empire</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Empire</governor>
+            <dependent idx="4">Roman</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">extent</governor>
+            <dependent idx="5">Empire</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">autocracy</governor>
+            <dependent idx="7">Augustus</dependent>
+          </dep>
+          <dep type="prep_under">
+            <governor idx="1">extent</governor>
+            <dependent idx="8">autocracy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">extent</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">Empire</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Empire</governor>
+            <dependent idx="4">Roman</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">extent</governor>
+            <dependent idx="5">Empire</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">autocracy</governor>
+            <dependent idx="7">Augustus</dependent>
+          </dep>
+          <dep type="prep_under">
+            <governor idx="1">extent</governor>
+            <dependent idx="8">autocracy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

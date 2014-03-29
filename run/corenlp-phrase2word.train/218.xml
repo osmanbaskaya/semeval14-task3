@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>trip</word>
+            <lemma>trip</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>light</word>
+            <lemma>light</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>fantastic</word>
+            <lemma>fantastic</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>music</word>
+            <lemma>music</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN trip)) (NP (DT the) (ADJP (JJ light) (JJ fantastic)) (NN music))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">trip</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">music</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">fantastic</governor>
+            <dependent idx="3">light</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">music</governor>
+            <dependent idx="4">fantastic</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">trip</governor>
+            <dependent idx="5">music</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">trip</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">music</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">fantastic</governor>
+            <dependent idx="3">light</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">music</governor>
+            <dependent idx="4">fantastic</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">trip</governor>
+            <dependent idx="5">music</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">trip</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">music</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">fantastic</governor>
+            <dependent idx="3">light</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">music</governor>
+            <dependent idx="4">fantastic</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">trip</governor>
+            <dependent idx="5">music</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

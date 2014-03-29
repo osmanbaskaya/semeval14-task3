@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>arbitrarily</word>
+            <lemma>arbitrarily</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>designated</word>
+            <lemma>designate</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>period</word>
+            <lemma>period</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>time</word>
+            <lemma>time</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>minute</word>
+            <lemma>minute</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT an) (ADJP (ADVP (RB arbitrarily)) (VBN designated)) (NN period)) (PP (IN of) (NP (NN time) (NN minute))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">period</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">period</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">designated</governor>
+            <dependent idx="2">arbitrarily</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">period</governor>
+            <dependent idx="3">designated</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">period</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">minute</governor>
+            <dependent idx="6">time</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="7">minute</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">period</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">period</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">designated</governor>
+            <dependent idx="2">arbitrarily</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">period</governor>
+            <dependent idx="3">designated</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">minute</governor>
+            <dependent idx="6">time</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">period</governor>
+            <dependent idx="7">minute</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">period</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">period</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">designated</governor>
+            <dependent idx="2">arbitrarily</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">period</governor>
+            <dependent idx="3">designated</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">minute</governor>
+            <dependent idx="6">time</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">period</governor>
+            <dependent idx="7">minute</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

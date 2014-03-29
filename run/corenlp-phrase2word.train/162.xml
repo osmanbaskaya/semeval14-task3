@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>fall</word>
+            <lemma>fall</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>off</word>
+            <lemma>off</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>turnip</word>
+            <lemma>turnip</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>truck</word>
+            <lemma>truck</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>yokel</word>
+            <lemma>yokel</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB fall) (PRT (RP off)) (NP (DT the) (NN turnip) (NN truck) (NN yokel))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fall</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">fall</governor>
+            <dependent idx="2">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">yokel</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">yokel</governor>
+            <dependent idx="4">turnip</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">yokel</governor>
+            <dependent idx="5">truck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">fall</governor>
+            <dependent idx="6">yokel</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fall</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">fall</governor>
+            <dependent idx="2">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">yokel</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">yokel</governor>
+            <dependent idx="4">turnip</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">yokel</governor>
+            <dependent idx="5">truck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">fall</governor>
+            <dependent idx="6">yokel</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fall</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">fall</governor>
+            <dependent idx="2">off</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">yokel</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">yokel</governor>
+            <dependent idx="4">turnip</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">yokel</governor>
+            <dependent idx="5">truck</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">fall</governor>
+            <dependent idx="6">yokel</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

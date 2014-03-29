@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>take</word>
+            <lemma>take</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>snapshots</word>
+            <lemma>snapshot</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>person</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="11">
+            <word>talking</word>
+            <lemma>talk</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="12">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="13">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>skype</word>
+            <lemma>skype</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHNP (WRB How)) (S (VP (TO to) (VP (VB take) (NP (NP (NP (NNS snapshots)) (PP (IN of) (NP (PRP you)))) (CC and) (NP (NP (DT the) (NN person)) (NP (PRP$ your)))) (S (VP (VBG talking) (S (VP (TO to))) (PP (IN on) (NP (NN skype)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">take</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">take</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">take</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">take</governor>
+            <dependent idx="4">snapshots</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">snapshots</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="6">you</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">snapshots</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">person</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">snapshots</governor>
+            <dependent idx="9">person</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">person</governor>
+            <dependent idx="10">your</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">take</governor>
+            <dependent idx="11">talking</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">talking</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">talking</governor>
+            <dependent idx="13">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">on</governor>
+            <dependent idx="14">skype</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">take</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">take</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">take</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">take</governor>
+            <dependent idx="4">snapshots</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">snapshots</governor>
+            <dependent idx="6">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">person</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">snapshots</governor>
+            <dependent idx="9">person</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">person</governor>
+            <dependent idx="10">your</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">take</governor>
+            <dependent idx="11">talking</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">talking</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="11">talking</governor>
+            <dependent idx="14">skype</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">take</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">take</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">take</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">take</governor>
+            <dependent idx="4">snapshots</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">snapshots</governor>
+            <dependent idx="6">you</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">person</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">take</governor>
+            <dependent idx="9">person</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">snapshots</governor>
+            <dependent idx="9">person</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">person</governor>
+            <dependent idx="10">your</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">take</governor>
+            <dependent idx="11">talking</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">talking</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="11">talking</governor>
+            <dependent idx="14">skype</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Amazon</word>
+            <lemma>Amazon</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Free</word>
+            <lemma>Free</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Super</word>
+            <lemma>Super</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Shipping</word>
+            <lemma>Shipping</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NNP Amazon) (NNP Free) (NNP Super) (NNP Shipping))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Shipping</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="1">Amazon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="2">Free</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="3">Super</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Shipping</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="1">Amazon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="2">Free</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="3">Super</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">Shipping</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="1">Amazon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="2">Free</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Shipping</governor>
+            <dependent idx="3">Super</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

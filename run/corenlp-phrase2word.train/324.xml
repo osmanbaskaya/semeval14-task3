@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Spanish</word>
+            <lemma>spanish</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>Historical</word>
+            <lemma>historical</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>Center</word>
+            <lemma>center</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Quito</word>
+            <lemma>Quito</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>railway</word>
+            <lemma>railway</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Spanish) (JJ Historical) (NN Center)) (PP (IN in) (NP (NNP Quito) (NN railway))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Center</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Center</governor>
+            <dependent idx="1">Spanish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Center</governor>
+            <dependent idx="2">Historical</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Center</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">railway</governor>
+            <dependent idx="5">Quito</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">railway</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Center</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Center</governor>
+            <dependent idx="1">Spanish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Center</governor>
+            <dependent idx="2">Historical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">railway</governor>
+            <dependent idx="5">Quito</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Center</governor>
+            <dependent idx="6">railway</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Center</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Center</governor>
+            <dependent idx="1">Spanish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Center</governor>
+            <dependent idx="2">Historical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">railway</governor>
+            <dependent idx="5">Quito</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Center</governor>
+            <dependent idx="6">railway</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

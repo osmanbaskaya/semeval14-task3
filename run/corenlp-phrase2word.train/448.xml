@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>data</word>
+            <lemma>datum</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>structure</word>
+            <lemma>structure</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>consisting</word>
+            <lemma>consist</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>group</word>
+            <lemma>group</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>elements</word>
+            <lemma>element</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="11">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="12">
+            <word>accessed</word>
+            <lemma>access</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="13">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>indexing</word>
+            <lemma>indexing</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>array</word>
+            <lemma>array</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT a) (NN data) (NN structure)) (VP (VBG consisting))) (PP (IN of) (NP (NP (DT a) (NN group)) (PP (IN of) (NP (NP (NNS elements)) (SBAR (WHNP (WDT that)) (S (VP (VBP are) (VP (VBN accessed) (PP (IN by) (NP (NN indexing) (NN array))))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">structure</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">structure</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">structure</governor>
+            <dependent idx="2">data</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">structure</governor>
+            <dependent idx="4">consisting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">structure</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">group</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="7">group</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">group</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="9">elements</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="12">accessed</governor>
+            <dependent idx="10">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="12">accessed</governor>
+            <dependent idx="11">are</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="9">elements</governor>
+            <dependent idx="12">accessed</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">accessed</governor>
+            <dependent idx="13">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">array</governor>
+            <dependent idx="14">indexing</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">by</governor>
+            <dependent idx="15">array</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">structure</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">structure</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">structure</governor>
+            <dependent idx="2">data</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">structure</governor>
+            <dependent idx="4">consisting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">group</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">structure</governor>
+            <dependent idx="7">group</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">group</governor>
+            <dependent idx="9">elements</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="12">accessed</governor>
+            <dependent idx="10">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="12">accessed</governor>
+            <dependent idx="11">are</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="9">elements</governor>
+            <dependent idx="12">accessed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">array</governor>
+            <dependent idx="14">indexing</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="12">accessed</governor>
+            <dependent idx="15">array</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">structure</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">structure</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">structure</governor>
+            <dependent idx="2">data</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">structure</governor>
+            <dependent idx="4">consisting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">group</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">structure</governor>
+            <dependent idx="7">group</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">group</governor>
+            <dependent idx="9">elements</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="12">accessed</governor>
+            <dependent idx="10">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="12">accessed</governor>
+            <dependent idx="11">are</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="9">elements</governor>
+            <dependent idx="12">accessed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="15">array</governor>
+            <dependent idx="14">indexing</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="12">accessed</governor>
+            <dependent idx="15">array</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

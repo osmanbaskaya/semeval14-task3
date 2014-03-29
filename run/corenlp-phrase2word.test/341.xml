@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>interior</word>
+            <lemma>interior</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>Remuh</word>
+            <lemma>Remuh</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Synagogue</word>
+            <lemma>Synagogue</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>interior</word>
+            <lemma>interior</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN interior)) (PP (IN of) (NP (NNP Remuh) (NNP Synagogue) (NN interior))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">interior</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">interior</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">interior</governor>
+            <dependent idx="3">Remuh</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">interior</governor>
+            <dependent idx="4">Synagogue</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="5">interior</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">interior</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">interior</governor>
+            <dependent idx="3">Remuh</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">interior</governor>
+            <dependent idx="4">Synagogue</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">interior</governor>
+            <dependent idx="5">interior</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">interior</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">interior</governor>
+            <dependent idx="3">Remuh</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">interior</governor>
+            <dependent idx="4">Synagogue</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">interior</governor>
+            <dependent idx="5">interior</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>social</word>
+            <lemma>social</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>gathering</word>
+            <lemma>gathering</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>celebration</word>
+            <lemma>celebration</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>recreation</word>
+            <lemma>recreation</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>river</word>
+            <lemma>river</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (JJ social) (NN gathering)) (PP (IN for) (NP (NP (NN celebration) (CC and) (NN recreation)) (NN river))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">gathering</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">gathering</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">gathering</governor>
+            <dependent idx="2">social</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">gathering</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">river</governor>
+            <dependent idx="5">celebration</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">celebration</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">celebration</governor>
+            <dependent idx="7">recreation</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">for</governor>
+            <dependent idx="8">river</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">gathering</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">gathering</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">gathering</governor>
+            <dependent idx="2">social</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">river</governor>
+            <dependent idx="5">celebration</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">celebration</governor>
+            <dependent idx="7">recreation</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">gathering</governor>
+            <dependent idx="8">river</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">gathering</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">gathering</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">gathering</governor>
+            <dependent idx="2">social</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">river</governor>
+            <dependent idx="5">celebration</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">celebration</governor>
+            <dependent idx="7">recreation</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">river</governor>
+            <dependent idx="7">recreation</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">gathering</governor>
+            <dependent idx="8">river</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

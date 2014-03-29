@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>renaissance</word>
+            <lemma>renaissance</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>paintings</word>
+            <lemma>painting</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>greek</word>
+            <lemma>greek</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>myth</word>
+            <lemma>myth</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>hercules</word>
+            <lemma>hercule</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN renaissance) (NNS paintings)) (PP (IN of) (NP (JJ greek) (NN myth) (NNS hercules))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">paintings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">paintings</governor>
+            <dependent idx="1">renaissance</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">paintings</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hercules</governor>
+            <dependent idx="4">greek</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">hercules</governor>
+            <dependent idx="5">myth</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="6">hercules</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">paintings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">paintings</governor>
+            <dependent idx="1">renaissance</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hercules</governor>
+            <dependent idx="4">greek</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">hercules</governor>
+            <dependent idx="5">myth</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">paintings</governor>
+            <dependent idx="6">hercules</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">paintings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">paintings</governor>
+            <dependent idx="1">renaissance</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hercules</governor>
+            <dependent idx="4">greek</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">hercules</governor>
+            <dependent idx="5">myth</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">paintings</governor>
+            <dependent idx="6">hercules</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

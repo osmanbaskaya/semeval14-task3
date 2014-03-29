@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="3">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>paypal</word>
+            <lemma>paypal</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>buy</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="9">
+            <word>something</word>
+            <lemma>something</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>e-bay</word>
+            <lemma>e-bay</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (VP (VB do) (SBAR (S (NP (FW i)) (VP (VBP have) (S (VP (TO to) (VP (VB have) (NP (NN paypal)) (S (VP (TO to) (VP (VB buy) (NP (NN something)) (PP (IN on) (NP (NN e-bay))))))))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">have</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">do</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">have</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">have</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="6">paypal</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">buy</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">have</governor>
+            <dependent idx="8">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">buy</governor>
+            <dependent idx="9">something</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">buy</governor>
+            <dependent idx="10">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">on</governor>
+            <dependent idx="11">e-bay</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">have</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">do</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">have</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">have</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="6">paypal</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">buy</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">have</governor>
+            <dependent idx="8">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">buy</governor>
+            <dependent idx="9">something</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">buy</governor>
+            <dependent idx="11">e-bay</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">have</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">do</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">have</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">have</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="6">paypal</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">buy</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="5">have</governor>
+            <dependent idx="8">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">buy</governor>
+            <dependent idx="9">something</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="8">buy</governor>
+            <dependent idx="11">e-bay</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>requirement</word>
+            <lemma>requirement</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>using</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>PayPal</word>
+            <lemma>PayPal</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN requirement)) (PP (IN for) (S (VP (VBG using) (NP (NNP PayPal))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">requirement</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">requirement</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">for</governor>
+            <dependent idx="3">using</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">using</governor>
+            <dependent idx="4">PayPal</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">requirement</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="1">requirement</governor>
+            <dependent idx="3">using</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">using</governor>
+            <dependent idx="4">PayPal</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">requirement</dependent>
+          </dep>
+          <dep type="prepc_for">
+            <governor idx="1">requirement</governor>
+            <dependent idx="3">using</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">using</governor>
+            <dependent idx="4">PayPal</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>$</word>
+            <lemma>$</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>$</POS>
+          </token>
+          <token id="2">
+            <word>50</word>
+            <lemma>50</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>million</word>
+            <lemma>million</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>equal</word>
+            <lemma>equal</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>installments</word>
+            <lemma>installment</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>defending</word>
+            <lemma>defend</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (QP ($ $) (QP (CD 50) (CD million)))) (PP (IN in) (NP (JJ equal) (NNS installments))) (VP (VBG defending))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="3">million</governor>
+            <dependent idx="2">50</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="1">$</governor>
+            <dependent idx="3">million</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">$</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">installments</governor>
+            <dependent idx="5">equal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">installments</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">$</governor>
+            <dependent idx="7">defending</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="3">million</governor>
+            <dependent idx="2">50</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="1">$</governor>
+            <dependent idx="3">million</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">installments</governor>
+            <dependent idx="5">equal</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">$</governor>
+            <dependent idx="6">installments</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">$</governor>
+            <dependent idx="7">defending</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">$</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="3">million</governor>
+            <dependent idx="2">50</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="1">$</governor>
+            <dependent idx="3">million</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">installments</governor>
+            <dependent idx="5">equal</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">$</governor>
+            <dependent idx="6">installments</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">$</governor>
+            <dependent idx="7">defending</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

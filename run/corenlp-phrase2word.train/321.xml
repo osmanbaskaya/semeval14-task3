@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Destroyed</word>
+            <lemma>destroy</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>house</word>
+            <lemma>house</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Sunja</word>
+            <lemma>Sunja</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>war</word>
+            <lemma>war</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>1991-1995</word>
+            <lemma>1991-1995</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>destruction</word>
+            <lemma>destruction</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBN Destroyed) (NP (NP (NN house)) (PP (IN in) (NP (NNP Sunja)))) (, ,) (PP (IN from) (NP (NN war) (CD 1991-1995) (NN destruction)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Destroyed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Destroyed</governor>
+            <dependent idx="2">house</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">house</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="4">Sunja</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Destroyed</governor>
+            <dependent idx="6">from</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">destruction</governor>
+            <dependent idx="7">war</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">destruction</governor>
+            <dependent idx="8">1991-1995</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">from</governor>
+            <dependent idx="9">destruction</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Destroyed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Destroyed</governor>
+            <dependent idx="2">house</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">house</governor>
+            <dependent idx="4">Sunja</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">destruction</governor>
+            <dependent idx="7">war</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">destruction</governor>
+            <dependent idx="8">1991-1995</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="1">Destroyed</governor>
+            <dependent idx="9">destruction</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Destroyed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">Destroyed</governor>
+            <dependent idx="2">house</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">house</governor>
+            <dependent idx="4">Sunja</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">destruction</governor>
+            <dependent idx="7">war</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">destruction</governor>
+            <dependent idx="8">1991-1995</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="1">Destroyed</governor>
+            <dependent idx="9">destruction</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

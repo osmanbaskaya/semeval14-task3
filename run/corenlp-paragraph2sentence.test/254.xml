@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>layout</word>
+            <lemma>layout</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>prose</word>
+            <lemma>prose</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="7">
+            <word>writerly</word>
+            <lemma>writerly</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="9">
+            <word>professional</word>
+            <lemma>professional</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="11">
+            <word>well</word>
+            <lemma>well</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="12">
+            <word>crafted</word>
+            <lemma>craft</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (NN layout)) (PP (IN of) (NP (DT the) (NN prose)))) (VP (VBD was) (ADJP (ADJP (JJ writerly) (, ,) (JJ professional)) (CC and) (VP (ADVP (RB well)) (VBN crafted)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">professional</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">layout</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">professional</governor>
+            <dependent idx="2">layout</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">layout</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">prose</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">prose</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">professional</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">professional</governor>
+            <dependent idx="7">writerly</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">professional</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">crafted</governor>
+            <dependent idx="11">well</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="9">professional</governor>
+            <dependent idx="12">crafted</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">professional</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">layout</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">professional</governor>
+            <dependent idx="2">layout</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">prose</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">layout</governor>
+            <dependent idx="5">prose</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">professional</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">professional</governor>
+            <dependent idx="7">writerly</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">crafted</governor>
+            <dependent idx="11">well</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="9">professional</governor>
+            <dependent idx="12">crafted</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">professional</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">layout</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="9">professional</governor>
+            <dependent idx="2">layout</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="12">crafted</governor>
+            <dependent idx="2">layout</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">prose</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">layout</governor>
+            <dependent idx="5">prose</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="9">professional</governor>
+            <dependent idx="6">was</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">professional</governor>
+            <dependent idx="7">writerly</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">crafted</governor>
+            <dependent idx="11">well</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="9">professional</governor>
+            <dependent idx="12">crafted</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (. .))) </parse>
+        <dependencies type="basic-dependencies"/>
+        <dependencies type="collapsed-dependencies"/>
+        <dependencies type="collapsed-ccprocessed-dependencies"/>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>well-designed</word>
+            <lemma>well-designed</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>prose</word>
+            <lemma>prose</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>organization</word>
+            <lemma>organization</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (JJ well-designed) (NN prose)) (NP (NN organization)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">prose</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">prose</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">prose</governor>
+            <dependent idx="2">well-designed</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">prose</governor>
+            <dependent idx="4">organization</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">prose</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">prose</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">prose</governor>
+            <dependent idx="2">well-designed</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">prose</governor>
+            <dependent idx="4">organization</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">prose</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">prose</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">prose</governor>
+            <dependent idx="2">well-designed</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">prose</governor>
+            <dependent idx="4">organization</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>landscape</word>
+            <lemma>landscape</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>region</word>
+            <lemma>region</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="6">
+            <word>receives</word>
+            <lemma>receive</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>very</word>
+            <lemma>very</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="8">
+            <word>little</word>
+            <lemma>little</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>precipitation</word>
+            <lemma>precipitation</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>desert</word>
+            <lemma>desert</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (X (NP (DT a) (NN landscape) (CC or) (NN region)) (SBAR (WHNP (WDT that)) (S (VP (VBZ receives) (NP (ADJP (RB very) (JJ little)) (NN precipitation) (NN desert))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">landscape</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">landscape</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">landscape</governor>
+            <dependent idx="3">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">landscape</governor>
+            <dependent idx="4">region</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">receives</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">landscape</governor>
+            <dependent idx="6">receives</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">little</governor>
+            <dependent idx="7">very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">desert</governor>
+            <dependent idx="8">little</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">desert</governor>
+            <dependent idx="9">precipitation</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">receives</governor>
+            <dependent idx="10">desert</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">landscape</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">landscape</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="2">landscape</governor>
+            <dependent idx="4">region</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">receives</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">landscape</governor>
+            <dependent idx="6">receives</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">little</governor>
+            <dependent idx="7">very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">desert</governor>
+            <dependent idx="8">little</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">desert</governor>
+            <dependent idx="9">precipitation</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">receives</governor>
+            <dependent idx="10">desert</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">landscape</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">landscape</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="2">landscape</governor>
+            <dependent idx="4">region</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">receives</governor>
+            <dependent idx="5">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">landscape</governor>
+            <dependent idx="6">receives</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">little</governor>
+            <dependent idx="7">very</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">desert</governor>
+            <dependent idx="8">little</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">desert</governor>
+            <dependent idx="9">precipitation</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">receives</governor>
+            <dependent idx="10">desert</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

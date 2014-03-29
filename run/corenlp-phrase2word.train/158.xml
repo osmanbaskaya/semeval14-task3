@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>blow</word>
+            <lemma>blow</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>top</word>
+            <lemma>top</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>take</word>
+            <lemma>take</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN blow)) (NP (NP (CD one) (POS 's)) (JJ top) (NN take))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">blow</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">take</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">one</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">take</governor>
+            <dependent idx="4">top</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">blow</governor>
+            <dependent idx="5">take</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">blow</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">take</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">take</governor>
+            <dependent idx="4">top</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">blow</governor>
+            <dependent idx="5">take</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">blow</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">take</governor>
+            <dependent idx="2">one</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">take</governor>
+            <dependent idx="4">top</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">blow</governor>
+            <dependent idx="5">take</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

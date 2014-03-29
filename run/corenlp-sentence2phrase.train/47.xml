@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>You</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>'ll</word>
+            <lemma>'ll</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>able</word>
+            <lemma>able</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>buy</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>everything</word>
+            <lemma>everything</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>fruit</word>
+            <lemma>fruit</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="11">
+            <word>vegetables</word>
+            <lemma>vegetable</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="13">
+            <word>textiles</word>
+            <lemma>textile</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP You)) (VP (MD 'll) (VP (VB be) (ADJP (JJ able) (S (VP (TO to) (VP (VB buy) (NP (NN everything)) (PP (IN from) (NP (NN fruit) (CC and) (NNS vegetables))) (PP (TO to) (NP (NNS textiles))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">able</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">able</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">able</governor>
+            <dependent idx="2">'ll</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">able</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">buy</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">able</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">buy</governor>
+            <dependent idx="7">everything</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">buy</governor>
+            <dependent idx="8">from</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">from</governor>
+            <dependent idx="9">fruit</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">fruit</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="9">fruit</governor>
+            <dependent idx="11">vegetables</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">buy</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">to</governor>
+            <dependent idx="13">textiles</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">able</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">able</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">able</governor>
+            <dependent idx="2">'ll</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">able</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">buy</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">able</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">buy</governor>
+            <dependent idx="7">everything</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">fruit</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="9">fruit</governor>
+            <dependent idx="11">vegetables</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">buy</governor>
+            <dependent idx="13">textiles</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">able</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">able</governor>
+            <dependent idx="1">You</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">able</governor>
+            <dependent idx="2">'ll</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="4">able</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">buy</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">able</governor>
+            <dependent idx="6">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">buy</governor>
+            <dependent idx="7">everything</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">buy</governor>
+            <dependent idx="9">fruit</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="6">buy</governor>
+            <dependent idx="11">vegetables</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="9">fruit</governor>
+            <dependent idx="11">vegetables</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">buy</governor>
+            <dependent idx="13">textiles</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>availability</word>
+            <lemma>availability</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>fruit</word>
+            <lemma>fruit</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>purchase</word>
+            <lemma>purchase</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN availability)) (PP (IN of) (NP (NN fruit))) (PP (IN for) (NP (NN purchase))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">availability</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">availability</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">fruit</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">availability</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">for</governor>
+            <dependent idx="5">purchase</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">availability</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">availability</governor>
+            <dependent idx="3">fruit</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">availability</governor>
+            <dependent idx="5">purchase</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">availability</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">availability</governor>
+            <dependent idx="3">fruit</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">availability</governor>
+            <dependent idx="5">purchase</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

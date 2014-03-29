@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>1982</word>
+            <lemma>1982</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>paperback</word>
+            <lemma>paperback</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>version</word>
+            <lemma>version</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Granovsky</word>
+            <lemma>Granovsky</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="7">
+            <word>autobiographical</word>
+            <lemma>autobiographical</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>book</word>
+            <lemma>book</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>soldier</word>
+            <lemma>soldier</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (CD 1982) (NN paperback)) (NP (NP (NN version)) (PP (IN of) (NP (NP (NNP Granovsky) (POS 's)) (JJ autobiographical) (NN book) (NN soldier)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">paperback</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">paperback</governor>
+            <dependent idx="1">1982</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">paperback</governor>
+            <dependent idx="3">version</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">version</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">soldier</governor>
+            <dependent idx="5">Granovsky</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="5">Granovsky</governor>
+            <dependent idx="6">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">soldier</governor>
+            <dependent idx="7">autobiographical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">soldier</governor>
+            <dependent idx="8">book</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="9">soldier</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">paperback</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">paperback</governor>
+            <dependent idx="1">1982</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">paperback</governor>
+            <dependent idx="3">version</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">soldier</governor>
+            <dependent idx="5">Granovsky</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">soldier</governor>
+            <dependent idx="7">autobiographical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">soldier</governor>
+            <dependent idx="8">book</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">version</governor>
+            <dependent idx="9">soldier</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">paperback</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">paperback</governor>
+            <dependent idx="1">1982</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">paperback</governor>
+            <dependent idx="3">version</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">soldier</governor>
+            <dependent idx="5">Granovsky</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">soldier</governor>
+            <dependent idx="7">autobiographical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">soldier</governor>
+            <dependent idx="8">book</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">version</governor>
+            <dependent idx="9">soldier</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

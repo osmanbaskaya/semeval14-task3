@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>point</word>
+            <lemma>point</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>entry</word>
+            <lemma>entry</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>space</word>
+            <lemma>space</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>enclosed</word>
+            <lemma>enclose</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="9">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>walls</word>
+            <lemma>wall</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>window</word>
+            <lemma>window</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (DT a) (NN point)) (PP (IN of) (NP (NN entry)))) (PP (TO to) (NP (NP (DT a) (NN space)) (VP (VBN enclosed) (PP (IN by) (NP (NNS walls) (NN window)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">point</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">point</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">point</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">entry</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">point</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">space</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">to</governor>
+            <dependent idx="7">space</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">space</governor>
+            <dependent idx="8">enclosed</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">enclosed</governor>
+            <dependent idx="9">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">window</governor>
+            <dependent idx="10">walls</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">by</governor>
+            <dependent idx="11">window</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">point</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">point</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">point</governor>
+            <dependent idx="4">entry</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">space</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="2">point</governor>
+            <dependent idx="7">space</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">space</governor>
+            <dependent idx="8">enclosed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">window</governor>
+            <dependent idx="10">walls</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="8">enclosed</governor>
+            <dependent idx="11">window</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">point</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">point</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">point</governor>
+            <dependent idx="4">entry</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">space</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="2">point</governor>
+            <dependent idx="7">space</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="7">space</governor>
+            <dependent idx="8">enclosed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">window</governor>
+            <dependent idx="10">walls</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="8">enclosed</governor>
+            <dependent idx="11">window</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>hook</word>
+            <lemma>hook</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>someone</word>
+            <lemma>someone</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>match</word>
+            <lemma>match</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>maker</word>
+            <lemma>maker</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN hook) (NN someone)) (PP (IN up) (NP (NN match) (NN maker))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">someone</governor>
+            <dependent idx="1">hook</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">someone</governor>
+            <dependent idx="3">up</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">maker</governor>
+            <dependent idx="4">match</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">up</governor>
+            <dependent idx="5">maker</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">someone</governor>
+            <dependent idx="1">hook</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">maker</governor>
+            <dependent idx="4">match</dependent>
+          </dep>
+          <dep type="prep_up">
+            <governor idx="2">someone</governor>
+            <dependent idx="5">maker</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">someone</governor>
+            <dependent idx="1">hook</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">maker</governor>
+            <dependent idx="4">match</dependent>
+          </dep>
+          <dep type="prep_up">
+            <governor idx="2">someone</governor>
+            <dependent idx="5">maker</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

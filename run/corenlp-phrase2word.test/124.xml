@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>snowball</word>
+            <lemma>snowball</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="3">
+            <word>chance</word>
+            <lemma>chance</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>hell</word>
+            <lemma>hell</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>sautee</word>
+            <lemma>sautee</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN snowball) (POS 's)) (NN chance)) (PP (IN in) (NP (NN hell) (NN sautee))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">chance</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">chance</governor>
+            <dependent idx="1">snowball</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="1">snowball</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">chance</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">sautee</governor>
+            <dependent idx="5">hell</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">sautee</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">chance</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">chance</governor>
+            <dependent idx="1">snowball</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">sautee</governor>
+            <dependent idx="5">hell</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">chance</governor>
+            <dependent idx="6">sautee</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">chance</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">chance</governor>
+            <dependent idx="1">snowball</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">sautee</governor>
+            <dependent idx="5">hell</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">chance</governor>
+            <dependent idx="6">sautee</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Mr</word>
+            <lemma>Mr</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>President</word>
+            <lemma>President</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>March</word>
+            <lemma>March</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>year</word>
+            <lemma>year</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="9">
+            <word>adopted</word>
+            <lemma>adopt</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>directive</word>
+            <lemma>directive</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>cableway</word>
+            <lemma>cableway</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>installations</word>
+            <lemma>installation</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="15">
+            <word>designed</word>
+            <lemma>design</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="16">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="17">
+            <word>carry</word>
+            <lemma>carry</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="18">
+            <word>persons</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="19">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Mr) (NNP President)) (, ,) (PP (IN in) (NP (NNP March))) (NP-TMP (DT this) (NN year)) (NP (PRP we)) (VP (VBD adopted) (NP (DT the) (NN directive)) (PP (IN on) (NP (NP (NN cableway) (NNS installations)) (VP (VBN designed) (S (VP (TO to) (VP (VB carry) (NP (NNS persons))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">adopted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">adopted</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">March</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">year</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="9">adopted</governor>
+            <dependent idx="7">year</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="8">we</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">directive</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="11">directive</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">adopted</governor>
+            <dependent idx="12">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">installations</governor>
+            <dependent idx="13">cableway</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">on</governor>
+            <dependent idx="14">installations</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="14">installations</governor>
+            <dependent idx="15">designed</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="17">carry</governor>
+            <dependent idx="16">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="15">designed</governor>
+            <dependent idx="17">carry</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="17">carry</governor>
+            <dependent idx="18">persons</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">adopted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">adopted</governor>
+            <dependent idx="5">March</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">year</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="9">adopted</governor>
+            <dependent idx="7">year</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="8">we</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">directive</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="11">directive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">installations</governor>
+            <dependent idx="13">cableway</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="9">adopted</governor>
+            <dependent idx="14">installations</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="14">installations</governor>
+            <dependent idx="15">designed</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="17">carry</governor>
+            <dependent idx="16">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="15">designed</governor>
+            <dependent idx="17">carry</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="17">carry</governor>
+            <dependent idx="18">persons</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">adopted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">adopted</governor>
+            <dependent idx="5">March</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">year</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="9">adopted</governor>
+            <dependent idx="7">year</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="8">we</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">directive</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">adopted</governor>
+            <dependent idx="11">directive</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">installations</governor>
+            <dependent idx="13">cableway</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="9">adopted</governor>
+            <dependent idx="14">installations</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="14">installations</governor>
+            <dependent idx="15">designed</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="17">carry</governor>
+            <dependent idx="16">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="15">designed</governor>
+            <dependent idx="17">carry</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="17">carry</governor>
+            <dependent idx="18">persons</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>connectivity</word>
+            <lemma>connectivity</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>cables</word>
+            <lemma>cable</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>134</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NN connectivity) (CC and) (NNS cables))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">connectivity</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">connectivity</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">connectivity</governor>
+            <dependent idx="3">cables</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">connectivity</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">connectivity</governor>
+            <dependent idx="3">cables</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">connectivity</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">connectivity</governor>
+            <dependent idx="3">cables</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

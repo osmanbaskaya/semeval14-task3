@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Why</word>
+            <lemma>why</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>am</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>getting</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>referrers</word>
+            <lemma>referrer</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>wordpress</word>
+            <lemma>wordpress</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>random</word>
+            <lemma>random</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>facebook</word>
+            <lemma>facebook</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>links</word>
+            <lemma>link</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB Why)) (SQ (VBP am) (NP (PRP I)) (VP (VBG getting) (NP (NP (NNS referrers)) (PP (IN on) (NP (NN wordpress)))) (PP (IN from) (NP (JJ random) (NN facebook) (NNS links))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">getting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">getting</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">getting</governor>
+            <dependent idx="2">am</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">getting</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">getting</governor>
+            <dependent idx="5">referrers</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">referrers</governor>
+            <dependent idx="6">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">on</governor>
+            <dependent idx="7">wordpress</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">getting</governor>
+            <dependent idx="8">from</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">links</governor>
+            <dependent idx="9">random</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">links</governor>
+            <dependent idx="10">facebook</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">from</governor>
+            <dependent idx="11">links</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">getting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">getting</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">getting</governor>
+            <dependent idx="2">am</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">getting</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">getting</governor>
+            <dependent idx="5">referrers</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="5">referrers</governor>
+            <dependent idx="7">wordpress</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">links</governor>
+            <dependent idx="9">random</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">links</governor>
+            <dependent idx="10">facebook</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">getting</governor>
+            <dependent idx="11">links</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">getting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">getting</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">getting</governor>
+            <dependent idx="2">am</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">getting</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">getting</governor>
+            <dependent idx="5">referrers</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="5">referrers</governor>
+            <dependent idx="7">wordpress</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">links</governor>
+            <dependent idx="9">random</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">links</governor>
+            <dependent idx="10">facebook</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="4">getting</governor>
+            <dependent idx="11">links</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>answer</word>
+            <lemma>answer</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="3">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="4">
+            <word>points</word>
+            <lemma>point</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (ADVP (RB best)) (VP (VB answer) (NP (JJS best) (NNS points))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">answer</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">answer</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">points</governor>
+            <dependent idx="3">best</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">answer</governor>
+            <dependent idx="4">points</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">answer</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">answer</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">points</governor>
+            <dependent idx="3">best</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">answer</governor>
+            <dependent idx="4">points</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">answer</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">answer</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">points</governor>
+            <dependent idx="3">best</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">answer</governor>
+            <dependent idx="4">points</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

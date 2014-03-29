@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="2">
+            <word>Fighting</word>
+            <lemma>fighting</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>Solidarity</word>
+            <lemma>Solidarity</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>''</POS>
+          </token>
+          <token id="5">
+            <word>poster</word>
+            <lemma>poster</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>modeled</word>
+            <lemma>model</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>after</word>
+            <lemma>after</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>World</word>
+            <lemma>World</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>War</word>
+            <lemma>War</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>II</word>
+            <lemma>II</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>``</word>
+            <lemma>``</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="13">
+            <word>Kotwica</word>
+            <lemma>Kotwica</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="14">
+            <word>''</word>
+            <lemma>''</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>''</POS>
+          </token>
+          <token id="15">
+            <word>emblem</word>
+            <lemma>emblem</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>propaganda</word>
+            <lemma>propaganda</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (`` ``) (NP (NN Fighting) (NNP Solidarity)) ('' '') (VP (PP (NN poster)) (, ,) (VBN modeled) (PP (IN after) (NP (NP (NNP World) (NNP War) (NNP II) (`` ``) (NNP Kotwica) ('' '')) (NP (NN emblem) (NN propaganda)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Solidarity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Solidarity</governor>
+            <dependent idx="2">Fighting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">modeled</governor>
+            <dependent idx="5">poster</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">Solidarity</governor>
+            <dependent idx="7">modeled</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">modeled</governor>
+            <dependent idx="8">after</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="9">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="10">War</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="11">II</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">after</governor>
+            <dependent idx="13">Kotwica</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">propaganda</governor>
+            <dependent idx="15">emblem</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="16">propaganda</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Solidarity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Solidarity</governor>
+            <dependent idx="2">Fighting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">modeled</governor>
+            <dependent idx="5">poster</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">Solidarity</governor>
+            <dependent idx="7">modeled</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="9">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="10">War</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="11">II</dependent>
+          </dep>
+          <dep type="prep_after">
+            <governor idx="7">modeled</governor>
+            <dependent idx="13">Kotwica</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">propaganda</governor>
+            <dependent idx="15">emblem</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="16">propaganda</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Solidarity</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Solidarity</governor>
+            <dependent idx="2">Fighting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">modeled</governor>
+            <dependent idx="5">poster</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="3">Solidarity</governor>
+            <dependent idx="7">modeled</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="9">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="10">War</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="11">II</dependent>
+          </dep>
+          <dep type="prep_after">
+            <governor idx="7">modeled</governor>
+            <dependent idx="13">Kotwica</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">propaganda</governor>
+            <dependent idx="15">emblem</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="13">Kotwica</governor>
+            <dependent idx="16">propaganda</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

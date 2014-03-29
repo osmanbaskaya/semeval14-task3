@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>process</word>
+            <lemma>process</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>recording</word>
+            <lemma>recording</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>replacing</word>
+            <lemma>replace</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="7">
+            <word>voices</word>
+            <lemma>voice</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>motion</word>
+            <lemma>motion</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>picture</word>
+            <lemma>picture</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>recording</word>
+            <lemma>recording</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN process)) (PP (IN of) (NP (NP (NN recording)) (CC or) (S (VP (VBG replacing) (NP (NNS voices)) (PP (IN for) (NP (DT a) (NN motion) (NN picture) (NN recording))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">process</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">process</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">process</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">recording</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">recording</governor>
+            <dependent idx="5">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">recording</governor>
+            <dependent idx="6">replacing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">replacing</governor>
+            <dependent idx="7">voices</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">replacing</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">recording</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">recording</governor>
+            <dependent idx="10">motion</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">recording</governor>
+            <dependent idx="11">picture</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">for</governor>
+            <dependent idx="12">recording</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">process</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">process</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">process</governor>
+            <dependent idx="4">recording</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="4">recording</governor>
+            <dependent idx="6">replacing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">replacing</governor>
+            <dependent idx="7">voices</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">recording</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">recording</governor>
+            <dependent idx="10">motion</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">recording</governor>
+            <dependent idx="11">picture</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="6">replacing</governor>
+            <dependent idx="12">recording</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">process</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">process</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">process</governor>
+            <dependent idx="4">recording</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">process</governor>
+            <dependent idx="6">replacing</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="4">recording</governor>
+            <dependent idx="6">replacing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">replacing</governor>
+            <dependent idx="7">voices</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">recording</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">recording</governor>
+            <dependent idx="10">motion</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">recording</governor>
+            <dependent idx="11">picture</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="6">replacing</governor>
+            <dependent idx="12">recording</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

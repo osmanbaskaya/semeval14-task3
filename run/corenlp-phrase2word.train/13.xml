@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>facing</word>
+            <lemma>face</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>years</word>
+            <lemma>year</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>prison</word>
+            <lemma>prison</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>fisheries</word>
+            <lemma>fishery</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG facing) (PRT (RP up)) (PP (TO to) (NP (NP (CD two) (NNS years)) (PP (IN in) (NP (NN prison) (NNS fisheries)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">facing</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">facing</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">facing</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">years</governor>
+            <dependent idx="4">two</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">to</governor>
+            <dependent idx="5">years</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">years</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">fisheries</governor>
+            <dependent idx="7">prison</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="8">fisheries</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">facing</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">facing</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">years</governor>
+            <dependent idx="4">two</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">facing</governor>
+            <dependent idx="5">years</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">fisheries</governor>
+            <dependent idx="7">prison</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">years</governor>
+            <dependent idx="8">fisheries</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">facing</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">facing</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">years</governor>
+            <dependent idx="4">two</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">facing</governor>
+            <dependent idx="5">years</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">fisheries</governor>
+            <dependent idx="7">prison</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">years</governor>
+            <dependent idx="8">fisheries</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

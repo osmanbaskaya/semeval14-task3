@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Bulgarian</word>
+            <lemma>bulgarian</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>people</word>
+            <lemma>people</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>Kebab</word>
+            <lemma>kebab</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Rice</word>
+            <lemma>Rice</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>culture</word>
+            <lemma>culture</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Bulgarian) (NNS people)) (NP (NP (NN Kebab)) (PP (IN with) (NP (NNP Rice) (NN culture)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">people</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">people</governor>
+            <dependent idx="1">Bulgarian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">people</governor>
+            <dependent idx="3">Kebab</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Kebab</governor>
+            <dependent idx="4">with</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">culture</governor>
+            <dependent idx="5">Rice</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">with</governor>
+            <dependent idx="6">culture</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">people</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">people</governor>
+            <dependent idx="1">Bulgarian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">people</governor>
+            <dependent idx="3">Kebab</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">culture</governor>
+            <dependent idx="5">Rice</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">Kebab</governor>
+            <dependent idx="6">culture</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">people</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">people</governor>
+            <dependent idx="1">Bulgarian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">people</governor>
+            <dependent idx="3">Kebab</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">culture</governor>
+            <dependent idx="5">Rice</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">Kebab</governor>
+            <dependent idx="6">culture</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

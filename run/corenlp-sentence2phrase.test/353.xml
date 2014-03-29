@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Lt.</word>
+            <lemma>Lt.</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Scotty</word>
+            <lemma>Scotty</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Smither</word>
+            <lemma>Smither</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>county</word>
+            <lemma>county</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>firefighter</word>
+            <lemma>firefighter</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="9">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="10">
+            <word>struck</word>
+            <lemma>strike</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="11">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>lightning</word>
+            <lemma>lightning</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Lt.) (NNP Scotty) (NNP Smither)) (, ,) (NP (DT a) (NN county) (NN firefighter)) (, ,)) (VP (VBD was) (VP (VBN struck) (PP (IN by) (NP (NN lightning))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">struck</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Smither</governor>
+            <dependent idx="1">Lt.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Smither</governor>
+            <dependent idx="2">Scotty</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">struck</governor>
+            <dependent idx="3">Smither</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">firefighter</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">firefighter</governor>
+            <dependent idx="6">county</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Smither</governor>
+            <dependent idx="7">firefighter</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">struck</governor>
+            <dependent idx="9">was</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">struck</governor>
+            <dependent idx="11">by</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">by</governor>
+            <dependent idx="12">lightning</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">struck</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Smither</governor>
+            <dependent idx="1">Lt.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Smither</governor>
+            <dependent idx="2">Scotty</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">struck</governor>
+            <dependent idx="3">Smither</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">firefighter</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">firefighter</governor>
+            <dependent idx="6">county</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Smither</governor>
+            <dependent idx="7">firefighter</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">struck</governor>
+            <dependent idx="9">was</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="10">struck</governor>
+            <dependent idx="12">lightning</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">struck</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Smither</governor>
+            <dependent idx="1">Lt.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Smither</governor>
+            <dependent idx="2">Scotty</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">struck</governor>
+            <dependent idx="3">Smither</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">firefighter</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">firefighter</governor>
+            <dependent idx="6">county</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">Smither</governor>
+            <dependent idx="7">firefighter</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">struck</governor>
+            <dependent idx="9">was</dependent>
+          </dep>
+          <dep type="agent">
+            <governor idx="10">struck</governor>
+            <dependent idx="12">lightning</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>electrostatic</word>
+            <lemma>electrostatic</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>discharge</word>
+            <lemma>discharge</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ electrostatic) (NN discharge))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discharge</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discharge</governor>
+            <dependent idx="1">electrostatic</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discharge</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discharge</governor>
+            <dependent idx="1">electrostatic</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discharge</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discharge</governor>
+            <dependent idx="1">electrostatic</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

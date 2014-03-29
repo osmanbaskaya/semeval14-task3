@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>barrier</word>
+            <lemma>barrier</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>device</word>
+            <lemma>device</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>most</word>
+            <lemma>most</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>RBS</POS>
+          </token>
+          <token id="5">
+            <word>commonly</word>
+            <lemma>commonly</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>used</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>during</word>
+            <lemma>during</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>sexual</word>
+            <lemma>sexual</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>intercourse</word>
+            <lemma>intercourse</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>prophylactic</word>
+            <lemma>prophylactic</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (NN barrier) (NN device)) (VP (ADVP (RBS most) (RB commonly)) (VBN used) (PP (IN during) (NP (JJ sexual) (NN intercourse) (NN prophylactic)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">used</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">device</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">device</governor>
+            <dependent idx="2">barrier</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">used</governor>
+            <dependent idx="3">device</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">commonly</governor>
+            <dependent idx="4">most</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">used</governor>
+            <dependent idx="5">commonly</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">used</governor>
+            <dependent idx="7">during</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">prophylactic</governor>
+            <dependent idx="8">sexual</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">prophylactic</governor>
+            <dependent idx="9">intercourse</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">during</governor>
+            <dependent idx="10">prophylactic</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">used</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">device</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">device</governor>
+            <dependent idx="2">barrier</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">used</governor>
+            <dependent idx="3">device</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">commonly</governor>
+            <dependent idx="4">most</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">used</governor>
+            <dependent idx="5">commonly</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">prophylactic</governor>
+            <dependent idx="8">sexual</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">prophylactic</governor>
+            <dependent idx="9">intercourse</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="6">used</governor>
+            <dependent idx="10">prophylactic</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">used</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">device</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">device</governor>
+            <dependent idx="2">barrier</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">used</governor>
+            <dependent idx="3">device</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">commonly</governor>
+            <dependent idx="4">most</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">used</governor>
+            <dependent idx="5">commonly</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">prophylactic</governor>
+            <dependent idx="8">sexual</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">prophylactic</governor>
+            <dependent idx="9">intercourse</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="6">used</governor>
+            <dependent idx="10">prophylactic</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

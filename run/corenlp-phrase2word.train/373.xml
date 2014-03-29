@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>isolated</word>
+            <lemma>isolate</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="3">
+            <word>area</word>
+            <lemma>area</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>vegetation</word>
+            <lemma>vegetation</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>desert</word>
+            <lemma>desert</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>ski</word>
+            <lemma>ski</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT an) (VBN isolated) (NN area)) (PP (IN of) (NP (NP (NN vegetation)) (PP (IN in) (NP (DT a) (NN desert) (NN ski)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">area</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">area</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">area</governor>
+            <dependent idx="2">isolated</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">area</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="5">vegetation</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">vegetation</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">ski</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">ski</governor>
+            <dependent idx="8">desert</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="9">ski</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">area</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">area</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">area</governor>
+            <dependent idx="2">isolated</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">area</governor>
+            <dependent idx="5">vegetation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">ski</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">ski</governor>
+            <dependent idx="8">desert</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">vegetation</governor>
+            <dependent idx="9">ski</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">area</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">area</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">area</governor>
+            <dependent idx="2">isolated</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">area</governor>
+            <dependent idx="5">vegetation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">ski</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">ski</governor>
+            <dependent idx="8">desert</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">vegetation</governor>
+            <dependent idx="9">ski</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>An</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>amendment</word>
+            <lemma>amendment</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>remove</word>
+            <lemma>remove</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>such</word>
+            <lemma>such</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>protections</word>
+            <lemma>protection</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>failed</word>
+            <lemma>fail</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>vote</word>
+            <lemma>vote</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>186</word>
+            <lemma>186</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="13">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="14">
+            <word>237</word>
+            <lemma>237</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT An) (NN amendment) (S (VP (TO to) (VP (VB remove) (NP (JJ such) (NNS protections)))))) (VP (VBN failed) (PP (IN by) (NP (NP (DT a) (NN vote)) (PP (IN of) (NP (QP (CD 186) (TO to) (CD 237))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">failed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">amendment</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">failed</governor>
+            <dependent idx="2">amendment</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">remove</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">amendment</governor>
+            <dependent idx="4">remove</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">protections</governor>
+            <dependent idx="5">such</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">remove</governor>
+            <dependent idx="6">protections</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">failed</governor>
+            <dependent idx="8">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">vote</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">by</governor>
+            <dependent idx="10">vote</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">vote</governor>
+            <dependent idx="11">of</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="14">237</governor>
+            <dependent idx="12">186</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="14">237</governor>
+            <dependent idx="13">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">of</governor>
+            <dependent idx="14">237</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">failed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">amendment</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">failed</governor>
+            <dependent idx="2">amendment</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">remove</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">amendment</governor>
+            <dependent idx="4">remove</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">protections</governor>
+            <dependent idx="5">such</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">remove</governor>
+            <dependent idx="6">protections</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">vote</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="7">failed</governor>
+            <dependent idx="10">vote</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="14">237</governor>
+            <dependent idx="12">186</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="14">237</governor>
+            <dependent idx="13">to</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">vote</governor>
+            <dependent idx="14">237</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">failed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">amendment</governor>
+            <dependent idx="1">An</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">failed</governor>
+            <dependent idx="2">amendment</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">remove</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">amendment</governor>
+            <dependent idx="4">remove</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">protections</governor>
+            <dependent idx="5">such</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">remove</governor>
+            <dependent idx="6">protections</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">vote</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="7">failed</governor>
+            <dependent idx="10">vote</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="14">237</governor>
+            <dependent idx="12">186</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="14">237</governor>
+            <dependent idx="13">to</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">vote</governor>
+            <dependent idx="14">237</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>failure</word>
+            <lemma>failure</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>removing</word>
+            <lemma>remove</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>protections</word>
+            <lemma>protection</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN failure)) (PP (IN in) (S (VP (VBG removing) (NP (NNS protections))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">failure</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">failure</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">in</governor>
+            <dependent idx="3">removing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">removing</governor>
+            <dependent idx="4">protections</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">failure</dependent>
+          </dep>
+          <dep type="prepc_in">
+            <governor idx="1">failure</governor>
+            <dependent idx="3">removing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">removing</governor>
+            <dependent idx="4">protections</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">failure</dependent>
+          </dep>
+          <dep type="prepc_in">
+            <governor idx="1">failure</governor>
+            <dependent idx="3">removing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">removing</governor>
+            <dependent idx="4">protections</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

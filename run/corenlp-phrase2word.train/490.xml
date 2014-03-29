@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>computer</word>
+            <lemma>computer</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>program</word>
+            <lemma>program</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="4">
+            <word>does</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>taxes</word>
+            <lemma>tax</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>small</word>
+            <lemma>small</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>corporations</word>
+            <lemma>corporation</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>TurboTax</word>
+            <lemma>TurboTax</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN computer) (NN program)) (SBAR (WHNP (WDT that)) (S (VP (VBZ does) (S (NP (NP (NNS taxes)) (PP (IN for) (NP (JJ small) (NNS corporations)))) (NP (NNP TurboTax)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">program</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">program</governor>
+            <dependent idx="1">computer</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">does</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">program</governor>
+            <dependent idx="4">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">TurboTax</governor>
+            <dependent idx="5">taxes</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">taxes</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">corporations</governor>
+            <dependent idx="7">small</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="8">corporations</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">does</governor>
+            <dependent idx="9">TurboTax</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">program</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">program</governor>
+            <dependent idx="1">computer</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">does</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">program</governor>
+            <dependent idx="4">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">TurboTax</governor>
+            <dependent idx="5">taxes</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">corporations</governor>
+            <dependent idx="7">small</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">taxes</governor>
+            <dependent idx="8">corporations</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">does</governor>
+            <dependent idx="9">TurboTax</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">program</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">program</governor>
+            <dependent idx="1">computer</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">does</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">program</governor>
+            <dependent idx="4">does</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">TurboTax</governor>
+            <dependent idx="5">taxes</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">corporations</governor>
+            <dependent idx="7">small</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">taxes</governor>
+            <dependent idx="8">corporations</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">does</governor>
+            <dependent idx="9">TurboTax</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

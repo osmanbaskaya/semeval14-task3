@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>caught</word>
+            <lemma>catch</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="4">
+            <word>hand</word>
+            <lemma>hand</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>cookie</word>
+            <lemma>cookie</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>jar</word>
+            <lemma>jar</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>seize</word>
+            <lemma>seize</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN caught) (PP (IN with) (NP (NP (PRP$ your) (NN hand)) (PP (IN in) (NP (DT the) (NN cookie) (NN jar))))) (S (VP (VB seize))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">caught</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">caught</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">hand</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">hand</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">jar</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">jar</governor>
+            <dependent idx="7">cookie</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="8">jar</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">caught</governor>
+            <dependent idx="9">seize</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">caught</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">hand</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">caught</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">jar</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">jar</governor>
+            <dependent idx="7">cookie</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">hand</governor>
+            <dependent idx="8">jar</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">caught</governor>
+            <dependent idx="9">seize</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">caught</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">hand</governor>
+            <dependent idx="3">your</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">caught</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">jar</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">jar</governor>
+            <dependent idx="7">cookie</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">hand</governor>
+            <dependent idx="8">jar</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">caught</governor>
+            <dependent idx="9">seize</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

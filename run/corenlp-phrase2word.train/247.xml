@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Brahminy</word>
+            <lemma>Brahminy</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Kite</word>
+            <lemma>Kite</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>fish</word>
+            <lemma>fish</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Pocharam</word>
+            <lemma>Pocharam</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>lake</word>
+            <lemma>lake</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>Andhra</word>
+            <lemma>Andhra</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Pradesh</word>
+            <lemma>Pradesh</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="13">
+            <word>India</word>
+            <lemma>India</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="14">
+            <word>raptor</word>
+            <lemma>raptor</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNP Brahminy) (NNP Kite)) (PP (IN with) (NP (NP (DT a) (NN fish)) (PP (IN at) (NP (NP (NNP Pocharam) (NN lake)) (, ,) (NP (NNP Andhra) (NNP Pradesh)) (, ,)))))) (NP (NNP India) (NN raptor)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Kite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Kite</governor>
+            <dependent idx="1">Brahminy</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Kite</governor>
+            <dependent idx="3">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fish</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">with</governor>
+            <dependent idx="5">fish</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">fish</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lake</governor>
+            <dependent idx="7">Pocharam</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">at</governor>
+            <dependent idx="8">lake</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pradesh</governor>
+            <dependent idx="10">Andhra</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">lake</governor>
+            <dependent idx="11">Pradesh</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">raptor</governor>
+            <dependent idx="13">India</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Kite</governor>
+            <dependent idx="14">raptor</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Kite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Kite</governor>
+            <dependent idx="1">Brahminy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fish</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="2">Kite</governor>
+            <dependent idx="5">fish</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lake</governor>
+            <dependent idx="7">Pocharam</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="5">fish</governor>
+            <dependent idx="8">lake</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pradesh</governor>
+            <dependent idx="10">Andhra</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">lake</governor>
+            <dependent idx="11">Pradesh</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">raptor</governor>
+            <dependent idx="13">India</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Kite</governor>
+            <dependent idx="14">raptor</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Kite</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Kite</governor>
+            <dependent idx="1">Brahminy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fish</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="2">Kite</governor>
+            <dependent idx="5">fish</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lake</governor>
+            <dependent idx="7">Pocharam</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="5">fish</governor>
+            <dependent idx="8">lake</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Pradesh</governor>
+            <dependent idx="10">Andhra</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">lake</governor>
+            <dependent idx="11">Pradesh</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">raptor</governor>
+            <dependent idx="13">India</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Kite</governor>
+            <dependent idx="14">raptor</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

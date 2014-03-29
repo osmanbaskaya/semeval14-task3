@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>eBay</word>
+            <lemma>eBay</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>seller</word>
+            <lemma>seller</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>cancel</word>
+            <lemma>cancel</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>transaction</word>
+            <lemma>transaction</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>defective</word>
+            <lemma>defective</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>item</word>
+            <lemma>item</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>what</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="11">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="12">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="13">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="14">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP eBay) (NN seller)) (VP (TO to) (VP (VB cancel) (NP (NN transaction)) (PP (IN for) (NP (JJ defective) (NN item))) (, ,) (SBAR (SBARQ (WHNP (WP what)) (SQ (VBP do) (NP (FW i)) (VP (VB do))) (. ?))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">cancel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">seller</governor>
+            <dependent idx="1">eBay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">cancel</governor>
+            <dependent idx="2">seller</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">cancel</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">cancel</governor>
+            <dependent idx="5">transaction</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">cancel</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">item</governor>
+            <dependent idx="7">defective</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="8">item</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">do</governor>
+            <dependent idx="10">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">do</governor>
+            <dependent idx="11">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">do</governor>
+            <dependent idx="12">i</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">cancel</governor>
+            <dependent idx="13">do</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">cancel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">seller</governor>
+            <dependent idx="1">eBay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">cancel</governor>
+            <dependent idx="2">seller</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">cancel</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">cancel</governor>
+            <dependent idx="5">transaction</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">item</governor>
+            <dependent idx="7">defective</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">cancel</governor>
+            <dependent idx="8">item</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">do</governor>
+            <dependent idx="10">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">do</governor>
+            <dependent idx="11">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">do</governor>
+            <dependent idx="12">i</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">cancel</governor>
+            <dependent idx="13">do</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">cancel</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">seller</governor>
+            <dependent idx="1">eBay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">cancel</governor>
+            <dependent idx="2">seller</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">cancel</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">cancel</governor>
+            <dependent idx="5">transaction</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">item</governor>
+            <dependent idx="7">defective</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="4">cancel</governor>
+            <dependent idx="8">item</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">do</governor>
+            <dependent idx="10">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">do</governor>
+            <dependent idx="11">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">do</governor>
+            <dependent idx="12">i</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">cancel</governor>
+            <dependent idx="13">do</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>canceled</word>
+            <lemma>cancel</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>ebay</word>
+            <lemma>ebay</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>transaction</word>
+            <lemma>transaction</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>due</word>
+            <lemma>due</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>broken</word>
+            <lemma>broken</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>item</word>
+            <lemma>item</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBN canceled) (S (NP (JJ ebay) (NN transaction)) (ADJP (JJ due) (PP (TO to) (NP (JJ broken) (NN item)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">canceled</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">transaction</governor>
+            <dependent idx="2">ebay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">due</governor>
+            <dependent idx="3">transaction</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">canceled</governor>
+            <dependent idx="4">due</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">due</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">item</governor>
+            <dependent idx="6">broken</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">to</governor>
+            <dependent idx="7">item</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">canceled</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">transaction</governor>
+            <dependent idx="2">ebay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">due</governor>
+            <dependent idx="3">transaction</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">canceled</governor>
+            <dependent idx="4">due</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">item</governor>
+            <dependent idx="6">broken</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">due</governor>
+            <dependent idx="7">item</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">canceled</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">transaction</governor>
+            <dependent idx="2">ebay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">due</governor>
+            <dependent idx="3">transaction</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">canceled</governor>
+            <dependent idx="4">due</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">item</governor>
+            <dependent idx="6">broken</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">due</governor>
+            <dependent idx="7">item</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

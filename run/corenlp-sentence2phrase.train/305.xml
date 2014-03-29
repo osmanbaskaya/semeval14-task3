@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Before</word>
+            <lemma>before</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>division</word>
+            <lemma>division</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="6">
+            <word>known</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>NASCAR</word>
+            <lemma>NASCAR</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Grand</word>
+            <lemma>Grand</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>National</word>
+            <lemma>National</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>Series</word>
+            <lemma>Series</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (IN Before)) (SBAR (IN that) (S (NP (DT the) (NN division)) (VP (VBD was) (VP (VBN known) (PP (IN as) (NP (DT the) (NNP NASCAR) (NNP Grand) (NNP National) (NNP Series))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Before</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">known</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">division</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">known</governor>
+            <dependent idx="4">division</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">known</governor>
+            <dependent idx="5">was</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Before</governor>
+            <dependent idx="6">known</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">known</governor>
+            <dependent idx="7">as</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">Series</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="9">NASCAR</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="10">Grand</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="11">National</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">as</governor>
+            <dependent idx="12">Series</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Before</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">known</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">division</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">known</governor>
+            <dependent idx="4">division</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">known</governor>
+            <dependent idx="5">was</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Before</governor>
+            <dependent idx="6">known</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">Series</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="9">NASCAR</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="10">Grand</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="11">National</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="6">known</governor>
+            <dependent idx="12">Series</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Before</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="6">known</governor>
+            <dependent idx="2">that</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">division</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="6">known</governor>
+            <dependent idx="4">division</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="6">known</governor>
+            <dependent idx="5">was</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Before</governor>
+            <dependent idx="6">known</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">Series</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="9">NASCAR</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="10">Grand</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">Series</governor>
+            <dependent idx="11">National</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="6">known</governor>
+            <dependent idx="12">Series</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>oath</word>
+            <lemma>oath</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>office</word>
+            <lemma>office</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>ceremony</word>
+            <lemma>ceremony</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN oath)) (PP (IN of) (NP (NN office) (NN ceremony))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">oath</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">oath</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">oath</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">ceremony</governor>
+            <dependent idx="4">office</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">ceremony</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">oath</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">oath</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">ceremony</governor>
+            <dependent idx="4">office</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">oath</governor>
+            <dependent idx="5">ceremony</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">oath</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">oath</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">ceremony</governor>
+            <dependent idx="4">office</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">oath</governor>
+            <dependent idx="5">ceremony</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

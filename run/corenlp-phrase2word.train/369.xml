@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>either</word>
+            <lemma>either</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="4">
+            <word>amphibious</word>
+            <lemma>amphibious</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>reptiles</word>
+            <lemma>reptile</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>related</word>
+            <lemma>relate</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>crocodiles</word>
+            <lemma>crocodile</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="10">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>shorter</word>
+            <lemma>shorter</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="12">
+            <word>broader</word>
+            <lemma>broader</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="13">
+            <word>snouts</word>
+            <lemma>snout</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>caiman</word>
+            <lemma>caiman</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT either)) (PP (IN of) (NP (NP (CD two) (JJ amphibious) (NNS reptiles)) (VP (VBN related) (PP (PP (TO to) (NP (NNS crocodiles))) (CC but) (PP (IN with) (NP (NP (ADJP (JJR shorter)) (JJR broader) (NNS snouts)) (NP (NN caiman)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">either</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">either</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="3">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="4">amphibious</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="5">reptiles</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="6">related</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">related</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">to</governor>
+            <dependent idx="8">crocodiles</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="7">to</governor>
+            <dependent idx="9">but</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="7">to</governor>
+            <dependent idx="10">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">snouts</governor>
+            <dependent idx="11">shorter</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">snouts</governor>
+            <dependent idx="12">broader</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">with</governor>
+            <dependent idx="13">snouts</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="13">snouts</governor>
+            <dependent idx="14">caiman</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">either</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="3">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="4">amphibious</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">either</governor>
+            <dependent idx="5">reptiles</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="6">related</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="6">related</governor>
+            <dependent idx="6" copy="1">related</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">related</governor>
+            <dependent idx="8">crocodiles</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">snouts</governor>
+            <dependent idx="11">shorter</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">snouts</governor>
+            <dependent idx="12">broader</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="6" copy="1">related</governor>
+            <dependent idx="13">snouts</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="13">snouts</governor>
+            <dependent idx="14">caiman</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">either</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="3">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="4">amphibious</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">either</governor>
+            <dependent idx="5">reptiles</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="6">related</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">reptiles</governor>
+            <dependent idx="6" copy="1">related</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="6">related</governor>
+            <dependent idx="6" copy="1">related</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">related</governor>
+            <dependent idx="8">crocodiles</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">snouts</governor>
+            <dependent idx="11">shorter</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">snouts</governor>
+            <dependent idx="12">broader</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="6" copy="1">related</governor>
+            <dependent idx="13">snouts</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="13">snouts</governor>
+            <dependent idx="14">caiman</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

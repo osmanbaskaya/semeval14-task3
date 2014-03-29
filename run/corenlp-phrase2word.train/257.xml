@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Lake</word>
+            <lemma>Lake</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Müritz</word>
+            <lemma>Müritz</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Röbel</word>
+            <lemma>Röbel</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>lake</word>
+            <lemma>lake</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Lake) (NNP Müritz)) (PP (IN in) (NP (NNP Röbel) (NN lake))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Müritz</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Müritz</governor>
+            <dependent idx="1">Lake</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Müritz</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">lake</governor>
+            <dependent idx="4">Röbel</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="5">lake</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Müritz</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Müritz</governor>
+            <dependent idx="1">Lake</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">lake</governor>
+            <dependent idx="4">Röbel</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Müritz</governor>
+            <dependent idx="5">lake</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Müritz</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Müritz</governor>
+            <dependent idx="1">Lake</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">lake</governor>
+            <dependent idx="4">Röbel</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Müritz</governor>
+            <dependent idx="5">lake</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

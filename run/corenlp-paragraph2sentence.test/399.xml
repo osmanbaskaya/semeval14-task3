@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Mr</word>
+            <lemma>Mr</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Blair</word>
+            <lemma>Blair</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>Jack</word>
+            <lemma>Jack</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Straw</word>
+            <lemma>Straw</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>refutted</word>
+            <lemma>refutt</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="7">
+            <word>Ms</word>
+            <lemma>Ms</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Short</word>
+            <lemma>Short</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="10">
+            <word>contention</word>
+            <lemma>contention</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>regarding</word>
+            <lemma>regard</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="12">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="13">
+            <word>reconstruction</word>
+            <lemma>reconstruction</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="15">
+            <word>Iraq</word>
+            <lemma>Iraq</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Mr) (NNP Blair)) (CC and) (NP (NNP Jack) (NNP Straw))) (VP (VBD refutted) (NP (NP (NP (NNP Ms) (NNP Short) (POS 's)) (NN contention)) (PP (VBG regarding) (NP (NP (DT the) (NN reconstruction)) (PP (IN of) (NP (NNP Iraq))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">refutted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Blair</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">refutted</governor>
+            <dependent idx="2">Blair</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">Blair</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Straw</governor>
+            <dependent idx="4">Jack</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">Blair</governor>
+            <dependent idx="5">Straw</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Short</governor>
+            <dependent idx="7">Ms</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">contention</governor>
+            <dependent idx="8">Short</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="8">Short</governor>
+            <dependent idx="9">'s</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">refutted</governor>
+            <dependent idx="10">contention</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">contention</governor>
+            <dependent idx="11">regarding</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">reconstruction</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">regarding</governor>
+            <dependent idx="13">reconstruction</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="13">reconstruction</governor>
+            <dependent idx="14">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="14">of</governor>
+            <dependent idx="15">Iraq</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">refutted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Blair</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">refutted</governor>
+            <dependent idx="2">Blair</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Straw</governor>
+            <dependent idx="4">Jack</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Blair</governor>
+            <dependent idx="5">Straw</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Short</governor>
+            <dependent idx="7">Ms</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">contention</governor>
+            <dependent idx="8">Short</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">refutted</governor>
+            <dependent idx="10">contention</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">reconstruction</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="prep_regarding">
+            <governor idx="10">contention</governor>
+            <dependent idx="13">reconstruction</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="13">reconstruction</governor>
+            <dependent idx="15">Iraq</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">refutted</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Blair</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">refutted</governor>
+            <dependent idx="2">Blair</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Straw</governor>
+            <dependent idx="4">Jack</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Blair</governor>
+            <dependent idx="5">Straw</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">refutted</governor>
+            <dependent idx="5">Straw</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Short</governor>
+            <dependent idx="7">Ms</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">contention</governor>
+            <dependent idx="8">Short</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">refutted</governor>
+            <dependent idx="10">contention</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">reconstruction</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="prep_regarding">
+            <governor idx="10">contention</governor>
+            <dependent idx="13">reconstruction</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="13">reconstruction</governor>
+            <dependent idx="15">Iraq</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>rebuffing</word>
+            <lemma>rebuffing</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Ms</word>
+            <lemma>Ms</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Short</word>
+            <lemma>Short</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="7">
+            <word>comments</word>
+            <lemma>comment</lemma>
+            <CharacterOffsetBegin>121</CharacterOffsetBegin>
+            <CharacterOffsetEnd>129</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>130</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>Iraqi</word>
+            <lemma>iraqi</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>138</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>reconstruction</word>
+            <lemma>reconstruction</lemma>
+            <CharacterOffsetBegin>139</CharacterOffsetBegin>
+            <CharacterOffsetEnd>153</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>efforts</word>
+            <lemma>effort</lemma>
+            <CharacterOffsetBegin>154</CharacterOffsetBegin>
+            <CharacterOffsetEnd>161</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>162</CharacterOffsetBegin>
+            <CharacterOffsetEnd>164</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>Misters</word>
+            <lemma>Misters</lemma>
+            <CharacterOffsetBegin>165</CharacterOffsetBegin>
+            <CharacterOffsetEnd>172</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="14">
+            <word>Blair</word>
+            <lemma>Blair</lemma>
+            <CharacterOffsetBegin>173</CharacterOffsetBegin>
+            <CharacterOffsetEnd>178</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="15">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>179</CharacterOffsetBegin>
+            <CharacterOffsetEnd>182</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="16">
+            <word>Straw</word>
+            <lemma>Straw</lemma>
+            <CharacterOffsetBegin>183</CharacterOffsetBegin>
+            <CharacterOffsetEnd>188</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (DT the) (NN rebuffing)) (PP (IN of) (NP (NP (NNP Ms) (NNP Short) (POS 's)) (NNS comments)))) (PP (IN on) (NP (JJ Iraqi) (NN reconstruction) (NNS efforts))) (PP (IN by) (NP (NNP Misters) (NNP Blair) (CC and) (NNP Straw))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rebuffing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Short</governor>
+            <dependent idx="4">Ms</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">comments</governor>
+            <dependent idx="5">Short</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="5">Short</governor>
+            <dependent idx="6">'s</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="7">comments</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="8">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">efforts</governor>
+            <dependent idx="9">Iraqi</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">efforts</governor>
+            <dependent idx="10">reconstruction</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">on</governor>
+            <dependent idx="11">efforts</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="12">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Blair</governor>
+            <dependent idx="13">Misters</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">by</governor>
+            <dependent idx="14">Blair</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="14">Blair</governor>
+            <dependent idx="15">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="14">Blair</governor>
+            <dependent idx="16">Straw</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rebuffing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Short</governor>
+            <dependent idx="4">Ms</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">comments</governor>
+            <dependent idx="5">Short</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="7">comments</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">efforts</governor>
+            <dependent idx="9">Iraqi</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">efforts</governor>
+            <dependent idx="10">reconstruction</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="11">efforts</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Blair</governor>
+            <dependent idx="13">Misters</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="14">Blair</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="14">Blair</governor>
+            <dependent idx="16">Straw</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">rebuffing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Short</governor>
+            <dependent idx="4">Ms</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">comments</governor>
+            <dependent idx="5">Short</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="7">comments</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">efforts</governor>
+            <dependent idx="9">Iraqi</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">efforts</governor>
+            <dependent idx="10">reconstruction</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="11">efforts</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">Blair</governor>
+            <dependent idx="13">Misters</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="14">Blair</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">rebuffing</governor>
+            <dependent idx="16">Straw</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="14">Blair</governor>
+            <dependent idx="16">Straw</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

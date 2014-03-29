@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>should</word>
+            <lemma>should</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>thank</word>
+            <lemma>thank</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>rapporteur</word>
+            <lemma>rapporteur</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="10">
+            <word>report</word>
+            <lemma>report</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (MD should) (VP (VB like) (S (VP (TO to) (VP (VB thank) (NP (NP (DT the) (NN rapporteur)) (PP (IN for) (NP (PRP$ his) (NN report))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">thank</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">thank</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">rapporteur</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">thank</governor>
+            <dependent idx="7">rapporteur</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">rapporteur</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">report</governor>
+            <dependent idx="9">his</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">for</governor>
+            <dependent idx="10">report</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">thank</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">thank</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">rapporteur</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">thank</governor>
+            <dependent idx="7">rapporteur</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">report</governor>
+            <dependent idx="9">his</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">rapporteur</governor>
+            <dependent idx="10">report</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">like</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">like</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">like</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">thank</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">like</governor>
+            <dependent idx="5">thank</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">rapporteur</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">thank</governor>
+            <dependent idx="7">rapporteur</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">report</governor>
+            <dependent idx="9">his</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">rapporteur</governor>
+            <dependent idx="10">report</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>committee</word>
+            <lemma>committee</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>chaired</word>
+            <lemma>chair</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Mrs</word>
+            <lemma>Mrs</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Palacio</word>
+            <lemma>Palacio</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT the) (NN committee)) (VP (VBN chaired) (PP (IN by) (NP (NNP Mrs) (NNP Palacio)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">chaired</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">committee</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">chaired</governor>
+            <dependent idx="2">committee</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">chaired</governor>
+            <dependent idx="4">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Palacio</governor>
+            <dependent idx="5">Mrs</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">by</governor>
+            <dependent idx="6">Palacio</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">chaired</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">committee</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">chaired</governor>
+            <dependent idx="2">committee</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Palacio</governor>
+            <dependent idx="5">Mrs</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="3">chaired</governor>
+            <dependent idx="6">Palacio</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">chaired</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">committee</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">chaired</governor>
+            <dependent idx="2">committee</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Palacio</governor>
+            <dependent idx="5">Mrs</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="3">chaired</governor>
+            <dependent idx="6">Palacio</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

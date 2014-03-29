@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>set</word>
+            <lemma>set</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>image/gif</word>
+            <lemma>image/gif</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="9">
+            <word>web</word>
+            <lemma>web</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>cam</word>
+            <lemma>cam</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>chatroulette.com</word>
+            <lemma>chatroulette.com</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB How)) (SQ (VBP do) (NP (PRP I)) (VP (VB set) (NP (NP (DT an) (NN image/gif)) (PP (IN for) (NP (PRP$ my) (NN web) (NN cam)))) (PP (IN at) (NP (NNP chatroulette.com))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">set</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">set</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">set</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">set</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">image/gif</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">set</governor>
+            <dependent idx="6">image/gif</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">image/gif</governor>
+            <dependent idx="7">for</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">cam</governor>
+            <dependent idx="8">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">cam</governor>
+            <dependent idx="9">web</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">for</governor>
+            <dependent idx="10">cam</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">set</governor>
+            <dependent idx="11">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">at</governor>
+            <dependent idx="12">chatroulette.com</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">set</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">set</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">set</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">set</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">image/gif</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">set</governor>
+            <dependent idx="6">image/gif</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">cam</governor>
+            <dependent idx="8">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">cam</governor>
+            <dependent idx="9">web</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="6">image/gif</governor>
+            <dependent idx="10">cam</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="4">set</governor>
+            <dependent idx="12">chatroulette.com</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">set</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">set</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">set</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">set</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">image/gif</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">set</governor>
+            <dependent idx="6">image/gif</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">cam</governor>
+            <dependent idx="8">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">cam</governor>
+            <dependent idx="9">web</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="6">image/gif</governor>
+            <dependent idx="10">cam</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="4">set</governor>
+            <dependent idx="12">chatroulette.com</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>web</word>
+            <lemma>web</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>explorer</word>
+            <lemma>explorer</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>8</word>
+            <lemma>8</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="8">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="9">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="10">
+            <word>included</word>
+            <lemma>include</lemma>
+            <CharacterOffsetBegin>110</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="11">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="13">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>130</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>computer</word>
+            <lemma>computer</lemma>
+            <CharacterOffsetBegin>131</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT the) (JJ new) (NN web) (NN browser) (NN internet)) (VP (NN explorer) (NP (NP (CD 8)) (SBAR (WHNP (WDT that)) (S (VP (VBZ is) (VP (VBN included) (PP (IN with) (NP (PRP$ my) (JJ new) (NN computer))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">explorer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">internet</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">internet</governor>
+            <dependent idx="2">new</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">internet</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">explorer</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">explorer</governor>
+            <dependent idx="7">8</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">included</governor>
+            <dependent idx="8">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">included</governor>
+            <dependent idx="9">is</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">8</governor>
+            <dependent idx="10">included</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">included</governor>
+            <dependent idx="11">with</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">computer</governor>
+            <dependent idx="12">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">computer</governor>
+            <dependent idx="13">new</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">with</governor>
+            <dependent idx="14">computer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">explorer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">internet</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">internet</governor>
+            <dependent idx="2">new</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">internet</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">explorer</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">explorer</governor>
+            <dependent idx="7">8</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">included</governor>
+            <dependent idx="8">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">included</governor>
+            <dependent idx="9">is</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">8</governor>
+            <dependent idx="10">included</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">computer</governor>
+            <dependent idx="12">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">computer</governor>
+            <dependent idx="13">new</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="10">included</governor>
+            <dependent idx="14">computer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">explorer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">internet</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">internet</governor>
+            <dependent idx="2">new</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">internet</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">explorer</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">explorer</governor>
+            <dependent idx="7">8</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="10">included</governor>
+            <dependent idx="8">that</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="10">included</governor>
+            <dependent idx="9">is</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="7">8</governor>
+            <dependent idx="10">included</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="14">computer</governor>
+            <dependent idx="12">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">computer</governor>
+            <dependent idx="13">new</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="10">included</governor>
+            <dependent idx="14">computer</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

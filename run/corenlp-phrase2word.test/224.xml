@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>call</word>
+            <lemma>call</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>day</word>
+            <lemma>day</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>work</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB call) (NP (PRP it)) (NP (DT a) (NN day) (NN work))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">call</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="1">call</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">work</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">work</governor>
+            <dependent idx="4">day</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">call</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">call</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="1">call</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">work</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">work</governor>
+            <dependent idx="4">day</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">call</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">call</dependent>
+          </dep>
+          <dep type="iobj">
+            <governor idx="1">call</governor>
+            <dependent idx="2">it</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">work</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">work</governor>
+            <dependent idx="4">day</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">call</governor>
+            <dependent idx="5">work</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

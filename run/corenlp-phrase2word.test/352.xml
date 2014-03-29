@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>covering</word>
+            <lemma>cover</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Seine</word>
+            <lemma>Seine</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>tunnels</word>
+            <lemma>tunnel</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>concrete</word>
+            <lemma>concrete</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG covering) (PP (IN of) (NP (DT the) (NP (NNP Seine) (CC and) (NNS tunnels)) (NN concrete)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">covering</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">covering</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">concrete</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">concrete</governor>
+            <dependent idx="4">Seine</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">Seine</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">Seine</governor>
+            <dependent idx="6">tunnels</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="7">concrete</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">covering</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">concrete</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">concrete</governor>
+            <dependent idx="4">Seine</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Seine</governor>
+            <dependent idx="6">tunnels</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">covering</governor>
+            <dependent idx="7">concrete</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">covering</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">concrete</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">concrete</governor>
+            <dependent idx="4">Seine</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Seine</governor>
+            <dependent idx="6">tunnels</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">concrete</governor>
+            <dependent idx="6">tunnels</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">covering</governor>
+            <dependent idx="7">concrete</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

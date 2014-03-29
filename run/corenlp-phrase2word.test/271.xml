@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>burn</word>
+            <lemma>burn</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>midnight</word>
+            <lemma>midnight</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>oil</word>
+            <lemma>oil</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>grind</word>
+            <lemma>grind</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB burn) (NP (DT the) (NN midnight) (NN oil) (NN grind))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">burn</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">grind</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">grind</governor>
+            <dependent idx="3">midnight</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">grind</governor>
+            <dependent idx="4">oil</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">burn</governor>
+            <dependent idx="5">grind</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">burn</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">grind</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">grind</governor>
+            <dependent idx="3">midnight</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">grind</governor>
+            <dependent idx="4">oil</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">burn</governor>
+            <dependent idx="5">grind</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">burn</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">grind</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">grind</governor>
+            <dependent idx="3">midnight</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">grind</governor>
+            <dependent idx="4">oil</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">burn</governor>
+            <dependent idx="5">grind</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

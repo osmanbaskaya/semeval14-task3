@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Anamniote</word>
+            <lemma>Anamniote</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>eggs</word>
+            <lemma>egg</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>frog</word>
+            <lemma>frog</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>amphibian</word>
+            <lemma>amphibian</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Anamniote)) (NP (NP (NNS eggs)) (PP (IN from) (NP (DT a) (NN frog) (NN amphibian)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Anamniote</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Anamniote</governor>
+            <dependent idx="2">eggs</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">eggs</governor>
+            <dependent idx="3">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">amphibian</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">amphibian</governor>
+            <dependent idx="5">frog</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">from</governor>
+            <dependent idx="6">amphibian</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Anamniote</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Anamniote</governor>
+            <dependent idx="2">eggs</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">amphibian</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">amphibian</governor>
+            <dependent idx="5">frog</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="2">eggs</governor>
+            <dependent idx="6">amphibian</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Anamniote</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Anamniote</governor>
+            <dependent idx="2">eggs</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">amphibian</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">amphibian</governor>
+            <dependent idx="5">frog</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="2">eggs</governor>
+            <dependent idx="6">amphibian</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

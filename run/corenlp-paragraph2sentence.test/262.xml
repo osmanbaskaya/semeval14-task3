@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Hey</word>
+            <lemma>hey</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>UH</POS>
+          </token>
+          <token id="2">
+            <word>man</word>
+            <lemma>man</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>UH</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>prank</word>
+            <lemma>prank</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>me</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="6">
+            <word>when</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="7">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="8">
+            <word>wan</word>
+            <lemma>wan</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="9">
+            <word>na</word>
+            <lemma>na</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="10">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="11">
+            <word>picked</word>
+            <lemma>pick</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="12">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (INTJ (UH Hey) (UH man)) (, ,) (VP (VB prank) (NP (PRP me)) (SBAR (WHADVP (WRB when)) (S (NP (PRP you)) (VP (VBP wan) (S (VP (TO na) (VP (VB get) (VP (VBN picked) (PRT (RP up)))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">prank</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">prank</governor>
+            <dependent idx="1">Hey</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Hey</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">prank</governor>
+            <dependent idx="5">me</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">wan</governor>
+            <dependent idx="6">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">wan</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">prank</governor>
+            <dependent idx="8">wan</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">picked</governor>
+            <dependent idx="9">na</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">picked</governor>
+            <dependent idx="10">get</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">wan</governor>
+            <dependent idx="11">picked</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="11">picked</governor>
+            <dependent idx="12">up</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">prank</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">prank</governor>
+            <dependent idx="1">Hey</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Hey</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">prank</governor>
+            <dependent idx="5">me</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">wan</governor>
+            <dependent idx="6">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">wan</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">prank</governor>
+            <dependent idx="8">wan</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">picked</governor>
+            <dependent idx="9">na</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">picked</governor>
+            <dependent idx="10">get</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">wan</governor>
+            <dependent idx="11">picked</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="11">picked</governor>
+            <dependent idx="12">up</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">prank</dependent>
+          </dep>
+          <dep type="discourse">
+            <governor idx="4">prank</governor>
+            <dependent idx="1">Hey</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Hey</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">prank</governor>
+            <dependent idx="5">me</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">wan</governor>
+            <dependent idx="6">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">wan</governor>
+            <dependent idx="7">you</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">prank</governor>
+            <dependent idx="8">wan</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">picked</governor>
+            <dependent idx="9">na</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">picked</governor>
+            <dependent idx="10">get</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">wan</governor>
+            <dependent idx="11">picked</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="11">picked</governor>
+            <dependent idx="12">up</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>heavy</word>
+            <lemma>heavy</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>lifting</word>
+            <lemma>lifting</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ heavy) (NN lifting))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">lifting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">lifting</governor>
+            <dependent idx="1">heavy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">lifting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">lifting</governor>
+            <dependent idx="1">heavy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">lifting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">lifting</governor>
+            <dependent idx="1">heavy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

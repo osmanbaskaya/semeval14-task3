@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Airports</word>
+            <lemma>airport</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>such</word>
+            <lemma>such</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Orly</word>
+            <lemma>Orly</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>Schiphol</word>
+            <lemma>Schiphol</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>Barcelona</word>
+            <lemma>Barcelona</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>already</word>
+            <lemma>already</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>meet</word>
+            <lemma>meet</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="11">
+            <word>strict</word>
+            <lemma>strict</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>requirements</word>
+            <lemma>requirement</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNS Airports)) (PP (JJ such) (IN as) (NP (NNP Orly) (, ,) (NNP Schiphol) (CC and) (NNP Barcelona)))) (ADVP (RB already)) (VP (VB meet) (NP (JJ strict) (NNS requirements))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">meet</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">meet</governor>
+            <dependent idx="1">Airports</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="3">as</governor>
+            <dependent idx="2">such</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Airports</governor>
+            <dependent idx="3">as</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">as</governor>
+            <dependent idx="4">Orly</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">Orly</governor>
+            <dependent idx="6">Schiphol</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">Orly</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">Orly</governor>
+            <dependent idx="8">Barcelona</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">meet</governor>
+            <dependent idx="9">already</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">requirements</governor>
+            <dependent idx="11">strict</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">meet</governor>
+            <dependent idx="12">requirements</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">meet</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">meet</governor>
+            <dependent idx="1">Airports</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="1">Airports</governor>
+            <dependent idx="4">Orly</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Orly</governor>
+            <dependent idx="6">Schiphol</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Orly</governor>
+            <dependent idx="8">Barcelona</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">meet</governor>
+            <dependent idx="9">already</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">requirements</governor>
+            <dependent idx="11">strict</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">meet</governor>
+            <dependent idx="12">requirements</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">meet</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">meet</governor>
+            <dependent idx="1">Airports</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="1">Airports</governor>
+            <dependent idx="4">Orly</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="1">Airports</governor>
+            <dependent idx="6">Schiphol</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Orly</governor>
+            <dependent idx="6">Schiphol</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="1">Airports</governor>
+            <dependent idx="8">Barcelona</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Orly</governor>
+            <dependent idx="8">Barcelona</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">meet</governor>
+            <dependent idx="9">already</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">requirements</governor>
+            <dependent idx="11">strict</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="10">meet</governor>
+            <dependent idx="12">requirements</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>airport</word>
+            <lemma>airport</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>delays</word>
+            <lemma>delay</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NN airport) (NNS delays))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">delays</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">delays</governor>
+            <dependent idx="1">airport</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">delays</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">delays</governor>
+            <dependent idx="1">airport</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">delays</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">delays</governor>
+            <dependent idx="1">airport</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

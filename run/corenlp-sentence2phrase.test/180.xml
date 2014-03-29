@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Five</word>
+            <lemma>five</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>companies</word>
+            <lemma>company</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>offering</word>
+            <lemma>offer</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>get-rich-quick</word>
+            <lemma>get-rich-quick</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>schemes</word>
+            <lemma>scheme</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="7">
+            <word>property</word>
+            <lemma>property</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>investors</word>
+            <lemma>investor</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="10">
+            <word>been</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="11">
+            <word>shut</word>
+            <lemma>shut</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="12">
+            <word>down</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (CD Five) (NNS companies)) (VP (VBG offering) (NP (JJ get-rich-quick) (NNS schemes)) (PP (TO to) (NP (NN property) (NNS investors))))) (VP (VBP have) (VP (VBN been) (VP (VBN shut) (PRT (RP down))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">shut</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">companies</governor>
+            <dependent idx="1">Five</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="11">shut</governor>
+            <dependent idx="2">companies</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">companies</governor>
+            <dependent idx="3">offering</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">schemes</governor>
+            <dependent idx="4">get-rich-quick</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">offering</governor>
+            <dependent idx="5">schemes</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">offering</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">investors</governor>
+            <dependent idx="7">property</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">to</governor>
+            <dependent idx="8">investors</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">shut</governor>
+            <dependent idx="9">have</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">shut</governor>
+            <dependent idx="10">been</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="11">shut</governor>
+            <dependent idx="12">down</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">shut</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">companies</governor>
+            <dependent idx="1">Five</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="11">shut</governor>
+            <dependent idx="2">companies</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">companies</governor>
+            <dependent idx="3">offering</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">schemes</governor>
+            <dependent idx="4">get-rich-quick</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">offering</governor>
+            <dependent idx="5">schemes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">investors</governor>
+            <dependent idx="7">property</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">offering</governor>
+            <dependent idx="8">investors</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">shut</governor>
+            <dependent idx="9">have</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">shut</governor>
+            <dependent idx="10">been</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="11">shut</governor>
+            <dependent idx="12">down</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">shut</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="2">companies</governor>
+            <dependent idx="1">Five</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="11">shut</governor>
+            <dependent idx="2">companies</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">companies</governor>
+            <dependent idx="3">offering</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">schemes</governor>
+            <dependent idx="4">get-rich-quick</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">offering</governor>
+            <dependent idx="5">schemes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">investors</governor>
+            <dependent idx="7">property</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">offering</governor>
+            <dependent idx="8">investors</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">shut</governor>
+            <dependent idx="9">have</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="11">shut</governor>
+            <dependent idx="10">been</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="11">shut</governor>
+            <dependent idx="12">down</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="2">
+            <word>spend</word>
+            <lemma>spend</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="3">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>time</word>
+            <lemma>time</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>hospital</word>
+            <lemma>hospital</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>124</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (S (VP (TO to) (VP (VB spend) (NP (NP (DT some) (NN time)) (PP (IN in) (NP (DT the) (NN hospital))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">spend</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="2">spend</governor>
+            <dependent idx="1">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">time</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">spend</governor>
+            <dependent idx="4">time</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">time</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">hospital</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="7">hospital</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">spend</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="2">spend</governor>
+            <dependent idx="1">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">time</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">spend</governor>
+            <dependent idx="4">time</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">hospital</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">time</governor>
+            <dependent idx="7">hospital</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">spend</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="2">spend</governor>
+            <dependent idx="1">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">time</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">spend</governor>
+            <dependent idx="4">time</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">hospital</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">time</governor>
+            <dependent idx="7">hospital</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

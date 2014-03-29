@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Film</word>
+            <lemma>Film</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Museum</word>
+            <lemma>Museum</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Vondelpark</word>
+            <lemma>Vondelpark</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>also</word>
+            <lemma>also</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="7">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>special</word>
+            <lemma>special</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>showings</word>
+            <lemma>showing</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="11">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>festivals</word>
+            <lemma>festival</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT The) (NNP Film) (NNP Museum)) (PP (IN in) (NP (NNP Vondelpark)))) (ADVP (RB also)) (VP (VBZ has) (NP (NP (JJ special) (NNS showings)) (CC and) (NP (NN film) (NNS festivals)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Museum</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Museum</governor>
+            <dependent idx="2">Film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">has</governor>
+            <dependent idx="3">Museum</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Museum</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">Vondelpark</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">has</governor>
+            <dependent idx="6">also</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">showings</governor>
+            <dependent idx="8">special</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">has</governor>
+            <dependent idx="9">showings</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">showings</governor>
+            <dependent idx="10">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">festivals</governor>
+            <dependent idx="11">film</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="9">showings</governor>
+            <dependent idx="12">festivals</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Museum</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Museum</governor>
+            <dependent idx="2">Film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">has</governor>
+            <dependent idx="3">Museum</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Museum</governor>
+            <dependent idx="5">Vondelpark</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">has</governor>
+            <dependent idx="6">also</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">showings</governor>
+            <dependent idx="8">special</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">has</governor>
+            <dependent idx="9">showings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">festivals</governor>
+            <dependent idx="11">film</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="9">showings</governor>
+            <dependent idx="12">festivals</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Museum</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Museum</governor>
+            <dependent idx="2">Film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">has</governor>
+            <dependent idx="3">Museum</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Museum</governor>
+            <dependent idx="5">Vondelpark</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">has</governor>
+            <dependent idx="6">also</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">showings</governor>
+            <dependent idx="8">special</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">has</governor>
+            <dependent idx="9">showings</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">festivals</governor>
+            <dependent idx="11">film</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">has</governor>
+            <dependent idx="12">festivals</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="9">showings</governor>
+            <dependent idx="12">festivals</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>film</word>
+            <lemma>film</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>festivals</word>
+            <lemma>festival</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>special</word>
+            <lemma>special</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>movie</word>
+            <lemma>movie</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>showings</word>
+            <lemma>showing</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN film) (NNS festivals)) (CC and) (NP (JJ special) (NN movie) (NNS showings)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">festivals</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">festivals</governor>
+            <dependent idx="1">film</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">festivals</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">showings</governor>
+            <dependent idx="4">special</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">showings</governor>
+            <dependent idx="5">movie</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">festivals</governor>
+            <dependent idx="6">showings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">festivals</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">festivals</governor>
+            <dependent idx="1">film</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">showings</governor>
+            <dependent idx="4">special</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">showings</governor>
+            <dependent idx="5">movie</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">festivals</governor>
+            <dependent idx="6">showings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">festivals</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">festivals</governor>
+            <dependent idx="1">film</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">showings</governor>
+            <dependent idx="4">special</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">showings</governor>
+            <dependent idx="5">movie</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">festivals</governor>
+            <dependent idx="6">showings</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Coast</word>
+            <lemma>Coast</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Parga</word>
+            <lemma>Parga</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="7">
+            <word>castle</word>
+            <lemma>castle</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>Pargian</word>
+            <lemma>Pargian</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Coast</word>
+            <lemma>Coast</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT the) (NNP Coast)) (PP (IN of) (NP (NP (NNP Parga)) (CC and) (NP (PRP$ its) (NN castle))))) (NP (DT The) (NNP Pargian) (NNP Coast)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Coast</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Coast</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Coast</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">Parga</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">Parga</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">castle</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">Parga</governor>
+            <dependent idx="7">castle</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">Coast</governor>
+            <dependent idx="8">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Coast</governor>
+            <dependent idx="9">Pargian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Coast</governor>
+            <dependent idx="10">Coast</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Coast</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Coast</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Coast</governor>
+            <dependent idx="4">Parga</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">castle</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Parga</governor>
+            <dependent idx="7">castle</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">Coast</governor>
+            <dependent idx="8">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Coast</governor>
+            <dependent idx="9">Pargian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Coast</governor>
+            <dependent idx="10">Coast</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Coast</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Coast</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Coast</governor>
+            <dependent idx="4">Parga</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">castle</governor>
+            <dependent idx="6">its</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">Coast</governor>
+            <dependent idx="7">castle</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">Parga</governor>
+            <dependent idx="7">castle</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">Coast</governor>
+            <dependent idx="8">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Coast</governor>
+            <dependent idx="9">Pargian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Coast</governor>
+            <dependent idx="10">Coast</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

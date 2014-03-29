@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>comply</word>
+            <lemma>comply</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>international</word>
+            <lemma>international</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>obligations</word>
+            <lemma>obligation</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>diplomacy</word>
+            <lemma>diplomacy</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB comply) (PP (IN with) (NP (JJ international) (NNS obligations) (NN diplomacy)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">comply</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">comply</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">diplomacy</governor>
+            <dependent idx="3">international</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">diplomacy</governor>
+            <dependent idx="4">obligations</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="5">diplomacy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">comply</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">diplomacy</governor>
+            <dependent idx="3">international</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">diplomacy</governor>
+            <dependent idx="4">obligations</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">comply</governor>
+            <dependent idx="5">diplomacy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">comply</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">diplomacy</governor>
+            <dependent idx="3">international</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">diplomacy</governor>
+            <dependent idx="4">obligations</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">comply</governor>
+            <dependent idx="5">diplomacy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

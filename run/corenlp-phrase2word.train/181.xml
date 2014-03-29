@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>rub</word>
+            <lemma>rub</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>someone</word>
+            <lemma>someone</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>wrong</word>
+            <lemma>wrong</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>way</word>
+            <lemma>way</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>leak</word>
+            <lemma>leak</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN rub) (NN someone)) (NP (DT the) (JJ wrong) (NN way) (NN leak)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">someone</governor>
+            <dependent idx="1">rub</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">leak</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">leak</governor>
+            <dependent idx="4">wrong</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">leak</governor>
+            <dependent idx="5">way</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">someone</governor>
+            <dependent idx="6">leak</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">someone</governor>
+            <dependent idx="1">rub</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">leak</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">leak</governor>
+            <dependent idx="4">wrong</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">leak</governor>
+            <dependent idx="5">way</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">someone</governor>
+            <dependent idx="6">leak</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">someone</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">someone</governor>
+            <dependent idx="1">rub</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">leak</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">leak</governor>
+            <dependent idx="4">wrong</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">leak</governor>
+            <dependent idx="5">way</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">someone</governor>
+            <dependent idx="6">leak</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

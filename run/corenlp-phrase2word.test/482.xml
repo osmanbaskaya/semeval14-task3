@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>religious</word>
+            <lemma>religious</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>discrimination</word>
+            <lemma>discrimination</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>schools</word>
+            <lemma>school</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>discrimination</word>
+            <lemma>discrimination</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ religious) (NN discrimination)) (PP (IN in) (NP (NNS schools) (NN discrimination))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discrimination</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discrimination</governor>
+            <dependent idx="1">religious</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">discrimination</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">discrimination</governor>
+            <dependent idx="4">schools</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="5">discrimination</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discrimination</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discrimination</governor>
+            <dependent idx="1">religious</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">discrimination</governor>
+            <dependent idx="4">schools</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">discrimination</governor>
+            <dependent idx="5">discrimination</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">discrimination</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">discrimination</governor>
+            <dependent idx="1">religious</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">discrimination</governor>
+            <dependent idx="4">schools</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">discrimination</governor>
+            <dependent idx="5">discrimination</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

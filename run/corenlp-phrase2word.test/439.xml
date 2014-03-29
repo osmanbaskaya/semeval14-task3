@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>form</word>
+            <lemma>form</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>government</word>
+            <lemma>government</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="7">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>individual</word>
+            <lemma>individual</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>rules</word>
+            <lemma>rule</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>head</word>
+            <lemma>head</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>state</word>
+            <lemma>state</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>debate</word>
+            <lemma>debate</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT a) (NN form)) (PP (IN of) (NP (NP (NN government)) (WHPP (IN in) (WHNP (WDT which)))))) (NP (NP (DT an) (JJ individual) (NNS rules)) (PP (IN as) (NP (NP (NN head)) (PP (IN of) (NP (NN state) (NN debate)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">form</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">government</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">government</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="6">which</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">rules</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">rules</governor>
+            <dependent idx="8">individual</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">form</governor>
+            <dependent idx="9">rules</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">rules</governor>
+            <dependent idx="10">as</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">as</governor>
+            <dependent idx="11">head</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">head</governor>
+            <dependent idx="12">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">debate</governor>
+            <dependent idx="13">state</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">of</governor>
+            <dependent idx="14">debate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">form</governor>
+            <dependent idx="4">government</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">government</governor>
+            <dependent idx="6">which</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">rules</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">rules</governor>
+            <dependent idx="8">individual</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">form</governor>
+            <dependent idx="9">rules</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="9">rules</governor>
+            <dependent idx="11">head</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">debate</governor>
+            <dependent idx="13">state</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">head</governor>
+            <dependent idx="14">debate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">form</governor>
+            <dependent idx="4">government</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">government</governor>
+            <dependent idx="6">which</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">rules</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">rules</governor>
+            <dependent idx="8">individual</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">form</governor>
+            <dependent idx="9">rules</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="9">rules</governor>
+            <dependent idx="11">head</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">debate</governor>
+            <dependent idx="13">state</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="11">head</governor>
+            <dependent idx="14">debate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

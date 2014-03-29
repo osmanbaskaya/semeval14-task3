@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Braces</word>
+            <lemma>brace</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>pretty</word>
+            <lemma>pretty</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>girl</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>actually</word>
+            <lemma>actually</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="7">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="8">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>turn-off</word>
+            <lemma>turn-off</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>me</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNS Braces)) (PP (IN on) (NP (NP (DT a) (RB pretty) (NN girl)) (ADVP (RB actually))))) (VP (VBP are) (RB n't) (NP (NP (DT a) (NN turn-off)) (PP (IN for) (NP (PRP me))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">turn-off</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="1">Braces</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Braces</governor>
+            <dependent idx="2">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">girl</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">girl</governor>
+            <dependent idx="4">pretty</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">on</governor>
+            <dependent idx="5">girl</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">girl</governor>
+            <dependent idx="6">actually</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="7">are</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="8">n't</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="11">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">for</governor>
+            <dependent idx="12">me</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">turn-off</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="1">Braces</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">girl</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">girl</governor>
+            <dependent idx="4">pretty</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Braces</governor>
+            <dependent idx="5">girl</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">girl</governor>
+            <dependent idx="6">actually</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="7">are</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="8">n't</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="12">me</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">turn-off</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="1">Braces</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">girl</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">girl</governor>
+            <dependent idx="4">pretty</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Braces</governor>
+            <dependent idx="5">girl</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">girl</governor>
+            <dependent idx="6">actually</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="7">are</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="8">n't</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="10">turn-off</governor>
+            <dependent idx="12">me</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>pretty</word>
+            <lemma>pretty</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>girl</word>
+            <lemma>girl</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>braces</word>
+            <lemma>brace</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (RB pretty) (NN girl)) (PP (IN with) (NP (NNS braces))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">girl</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">girl</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">girl</governor>
+            <dependent idx="2">pretty</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">girl</governor>
+            <dependent idx="4">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">with</governor>
+            <dependent idx="5">braces</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">girl</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">girl</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">girl</governor>
+            <dependent idx="2">pretty</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">girl</governor>
+            <dependent idx="5">braces</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">girl</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">girl</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">girl</governor>
+            <dependent idx="2">pretty</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">girl</governor>
+            <dependent idx="5">braces</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

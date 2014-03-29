@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>phrase</word>
+            <lemma>phrase</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="4">
+            <word>deliberately</word>
+            <lemma>deliberately</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>exploits</word>
+            <lemma>exploit</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>confusion</word>
+            <lemma>confusion</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>between</word>
+            <lemma>between</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>similar-sounding</word>
+            <lemma>similar-sounding</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>words</word>
+            <lemma>word</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>humorous</word>
+            <lemma>humorous</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="13">
+            <word>rhetorical</word>
+            <lemma>rhetorical</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>effect</word>
+            <lemma>effect</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>Indian</word>
+            <lemma>indian</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT a) (NN phrase)) (SBAR (WHNP (WDT that)) (S (ADVP (RB deliberately)) (VP (VBZ exploits) (NP (NP (NN confusion)) (PP (IN between) (NP (JJ similar-sounding) (NNS words)))))))) (PP (IN for) (NP (NP (ADJP (JJ humorous) (CC or) (JJ rhetorical)) (NN effect)) (NP-TMP (JJ Indian)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">phrase</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">phrase</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">exploits</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">exploits</governor>
+            <dependent idx="4">deliberately</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">phrase</governor>
+            <dependent idx="5">exploits</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">exploits</governor>
+            <dependent idx="6">confusion</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">confusion</governor>
+            <dependent idx="7">between</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">words</governor>
+            <dependent idx="8">similar-sounding</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">between</governor>
+            <dependent idx="9">words</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">phrase</governor>
+            <dependent idx="10">for</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">effect</governor>
+            <dependent idx="11">humorous</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">humorous</governor>
+            <dependent idx="12">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="11">humorous</governor>
+            <dependent idx="13">rhetorical</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">for</governor>
+            <dependent idx="14">effect</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="14">effect</governor>
+            <dependent idx="15">Indian</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">phrase</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">phrase</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">exploits</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">exploits</governor>
+            <dependent idx="4">deliberately</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">phrase</governor>
+            <dependent idx="5">exploits</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">exploits</governor>
+            <dependent idx="6">confusion</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">words</governor>
+            <dependent idx="8">similar-sounding</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="6">confusion</governor>
+            <dependent idx="9">words</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">effect</governor>
+            <dependent idx="11">humorous</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="11">humorous</governor>
+            <dependent idx="13">rhetorical</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">phrase</governor>
+            <dependent idx="14">effect</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="14">effect</governor>
+            <dependent idx="15">Indian</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">phrase</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">phrase</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">exploits</governor>
+            <dependent idx="3">that</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">exploits</governor>
+            <dependent idx="4">deliberately</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">phrase</governor>
+            <dependent idx="5">exploits</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">exploits</governor>
+            <dependent idx="6">confusion</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">words</governor>
+            <dependent idx="8">similar-sounding</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="6">confusion</governor>
+            <dependent idx="9">words</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">effect</governor>
+            <dependent idx="11">humorous</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="11">humorous</governor>
+            <dependent idx="13">rhetorical</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">effect</governor>
+            <dependent idx="13">rhetorical</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="2">phrase</governor>
+            <dependent idx="14">effect</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="14">effect</governor>
+            <dependent idx="15">Indian</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>separate</word>
+            <lemma>separate</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>concepts</word>
+            <lemma>concept</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>theories</word>
+            <lemma>theory</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ separate) (NNS concepts)) (NP (NNS theories)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">concepts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">concepts</governor>
+            <dependent idx="1">separate</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">concepts</governor>
+            <dependent idx="3">theories</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">concepts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">concepts</governor>
+            <dependent idx="1">separate</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">concepts</governor>
+            <dependent idx="3">theories</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">concepts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">concepts</governor>
+            <dependent idx="1">separate</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">concepts</governor>
+            <dependent idx="3">theories</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

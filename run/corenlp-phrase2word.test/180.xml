@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>accessible</word>
+            <lemma>accessible</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>handicapped</word>
+            <lemma>handicapped</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>persons</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>investment</word>
+            <lemma>investment</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ accessible) (PP (TO to) (NP (JJ handicapped) (NNS persons) (NN investment))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">accessible</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">accessible</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">investment</governor>
+            <dependent idx="3">handicapped</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">investment</governor>
+            <dependent idx="4">persons</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="5">investment</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">accessible</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">investment</governor>
+            <dependent idx="3">handicapped</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">investment</governor>
+            <dependent idx="4">persons</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">accessible</governor>
+            <dependent idx="5">investment</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">accessible</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">investment</governor>
+            <dependent idx="3">handicapped</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">investment</governor>
+            <dependent idx="4">persons</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">accessible</governor>
+            <dependent idx="5">investment</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

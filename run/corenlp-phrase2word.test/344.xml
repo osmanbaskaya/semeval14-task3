@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Christian</word>
+            <lemma>christian</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>Adventist</word>
+            <lemma>Adventist</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Church</word>
+            <lemma>Church</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Novi</word>
+            <lemma>Novi</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Sad</word>
+            <lemma>Sad</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="8">
+            <word>built</word>
+            <lemma>build</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>2001</word>
+            <lemma>2001</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>early</word>
+            <lemma>early</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Christian) (NNP Adventist) (NNP Church)) (PP (IN in) (NP (NP (NNP Novi) (NNP Sad)) (, ,) (VP (VBN built) (PP (IN in) (NP (CD 2001) (RB early)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Church</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Church</governor>
+            <dependent idx="1">Christian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Church</governor>
+            <dependent idx="2">Adventist</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Church</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sad</governor>
+            <dependent idx="5">Novi</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">Sad</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Sad</governor>
+            <dependent idx="8">built</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">built</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="10">2001</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">2001</governor>
+            <dependent idx="11">early</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Church</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Church</governor>
+            <dependent idx="1">Christian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Church</governor>
+            <dependent idx="2">Adventist</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sad</governor>
+            <dependent idx="5">Novi</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Church</governor>
+            <dependent idx="6">Sad</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Sad</governor>
+            <dependent idx="8">built</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">built</governor>
+            <dependent idx="10">2001</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">2001</governor>
+            <dependent idx="11">early</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Church</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">Church</governor>
+            <dependent idx="1">Christian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Church</governor>
+            <dependent idx="2">Adventist</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Sad</governor>
+            <dependent idx="5">Novi</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Church</governor>
+            <dependent idx="6">Sad</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Sad</governor>
+            <dependent idx="8">built</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">built</governor>
+            <dependent idx="10">2001</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">2001</governor>
+            <dependent idx="11">early</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

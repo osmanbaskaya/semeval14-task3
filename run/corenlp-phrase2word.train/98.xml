@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>rubbing</word>
+            <lemma>rub</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>their</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="3">
+            <word>hands</word>
+            <lemma>hand</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>scope</word>
+            <lemma>scope</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>embarrassing</word>
+            <lemma>embarrassing</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>him</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="10">
+            <word>wring</word>
+            <lemma>wring</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG rubbing) (NP (PRP$ their) (NNS hands)) (PP (IN at) (NP (NP (DT the) (NN scope)) (PP (IN for) (NP (NP (JJ embarrassing)) (SBAR (S (NP (PRP him)) (VP (VB wring))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rubbing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">hands</governor>
+            <dependent idx="2">their</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">rubbing</governor>
+            <dependent idx="3">hands</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">rubbing</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">scope</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">at</governor>
+            <dependent idx="6">scope</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">scope</governor>
+            <dependent idx="7">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">for</governor>
+            <dependent idx="8">embarrassing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">wring</governor>
+            <dependent idx="9">him</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="8">embarrassing</governor>
+            <dependent idx="10">wring</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rubbing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">hands</governor>
+            <dependent idx="2">their</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">rubbing</governor>
+            <dependent idx="3">hands</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">scope</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="1">rubbing</governor>
+            <dependent idx="6">scope</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="6">scope</governor>
+            <dependent idx="8">embarrassing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">wring</governor>
+            <dependent idx="9">him</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="8">embarrassing</governor>
+            <dependent idx="10">wring</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rubbing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">hands</governor>
+            <dependent idx="2">their</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">rubbing</governor>
+            <dependent idx="3">hands</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">scope</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="1">rubbing</governor>
+            <dependent idx="6">scope</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="6">scope</governor>
+            <dependent idx="8">embarrassing</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">wring</governor>
+            <dependent idx="9">him</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="8">embarrassing</governor>
+            <dependent idx="10">wring</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

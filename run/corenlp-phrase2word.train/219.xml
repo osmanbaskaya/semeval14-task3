@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>dull</word>
+            <lemma>dull</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>ditchwater</word>
+            <lemma>ditchwater</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>boring</word>
+            <lemma>boring</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ dull) (PP (IN as) (NP (NN ditchwater) (NN boring))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">dull</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">dull</governor>
+            <dependent idx="2">as</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">boring</governor>
+            <dependent idx="3">ditchwater</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">as</governor>
+            <dependent idx="4">boring</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">dull</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">boring</governor>
+            <dependent idx="3">ditchwater</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="1">dull</governor>
+            <dependent idx="4">boring</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">dull</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">boring</governor>
+            <dependent idx="3">ditchwater</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="1">dull</governor>
+            <dependent idx="4">boring</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

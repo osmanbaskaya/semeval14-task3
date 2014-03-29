@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>tube</word>
+            <lemma>tube</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>mirrors</word>
+            <lemma>mirror</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>containing</word>
+            <lemma>contain</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>loose</word>
+            <lemma>loose</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>colored</word>
+            <lemma>color</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="8">
+            <word>beads</word>
+            <lemma>bead</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>children</word>
+            <lemma>child</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SINV (FRAG (NP (NP (DT a) (NN tube)) (PP (IN of)))) (VP (VBZ mirrors) (S (VP (VBG containing) (NP (JJ loose) (VBN colored) (NNS beads))))) (NP (NNS children)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">mirrors</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">tube</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="2">tube</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">tube</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="5">containing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">beads</governor>
+            <dependent idx="6">loose</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">beads</governor>
+            <dependent idx="7">colored</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">containing</governor>
+            <dependent idx="8">beads</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="9">children</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">mirrors</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">tube</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="2">tube</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">tube</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="5">containing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">beads</governor>
+            <dependent idx="6">loose</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">beads</governor>
+            <dependent idx="7">colored</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">containing</governor>
+            <dependent idx="8">beads</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="9">children</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">mirrors</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">tube</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="2">tube</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">tube</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="5">containing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">beads</governor>
+            <dependent idx="6">loose</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">beads</governor>
+            <dependent idx="7">colored</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">containing</governor>
+            <dependent idx="8">beads</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">mirrors</governor>
+            <dependent idx="9">children</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

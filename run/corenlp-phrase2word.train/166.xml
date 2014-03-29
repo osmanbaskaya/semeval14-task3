@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>rain</word>
+            <lemma>rain</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>shine</word>
+            <lemma>shine</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>regardless</word>
+            <lemma>regardless</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN rain)) (CC or) (S (VP (VB shine) (ADVP (RB regardless)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rain</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">rain</governor>
+            <dependent idx="2">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">rain</governor>
+            <dependent idx="3">shine</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">shine</governor>
+            <dependent idx="4">regardless</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rain</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">rain</governor>
+            <dependent idx="3">shine</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">shine</governor>
+            <dependent idx="4">regardless</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rain</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">rain</governor>
+            <dependent idx="3">shine</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">shine</governor>
+            <dependent idx="4">regardless</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>represent</word>
+            <lemma>represent</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>growers</word>
+            <lemma>grower</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="7">
+            <word>am</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="8">
+            <word>thus</word>
+            <lemma>thus</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="9">
+            <word>very</word>
+            <lemma>very</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>concerned</word>
+            <lemma>concerned</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>indeed</word>
+            <lemma>indeed</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (PRP I)) (VP (VBP represent) (NP (DT some) (NNS growers)))) (CC and) (S (NP (PRP I)) (VP (VBP am) (ADVP (RB thus)) (ADJP (RB very) (JJ concerned)) (ADVP (RB indeed)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">represent</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">represent</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">growers</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">represent</governor>
+            <dependent idx="4">growers</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">represent</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">concerned</governor>
+            <dependent idx="6">I</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">concerned</governor>
+            <dependent idx="7">am</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="8">thus</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="9">very</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">represent</governor>
+            <dependent idx="10">concerned</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="11">indeed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">represent</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">represent</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">growers</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">represent</governor>
+            <dependent idx="4">growers</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">concerned</governor>
+            <dependent idx="6">I</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">concerned</governor>
+            <dependent idx="7">am</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="8">thus</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="9">very</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">represent</governor>
+            <dependent idx="10">concerned</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="11">indeed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">represent</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">represent</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">growers</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">represent</governor>
+            <dependent idx="4">growers</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">concerned</governor>
+            <dependent idx="6">I</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="10">concerned</governor>
+            <dependent idx="7">am</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="8">thus</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="9">very</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">represent</governor>
+            <dependent idx="10">concerned</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">concerned</governor>
+            <dependent idx="11">indeed</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>worried</word>
+            <lemma>worried</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>farmers</word>
+            <lemma>farmer</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ worried) (NNS farmers))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">farmers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">farmers</governor>
+            <dependent idx="1">worried</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">farmers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">farmers</governor>
+            <dependent idx="1">worried</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">farmers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">farmers</governor>
+            <dependent idx="1">worried</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

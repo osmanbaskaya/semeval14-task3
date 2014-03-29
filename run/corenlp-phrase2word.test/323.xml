@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Red</word>
+            <lemma>Red</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Burn</word>
+            <lemma>Burn</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>Drukken</word>
+            <lemma>Drukken</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Steps</word>
+            <lemma>step</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>Louisiana</word>
+            <lemma>Louisiana</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT the) (NNP Red) (NNP Burn)) (PP (IN from) (NP (DT the) (NNP Drukken)))) (VP (VBZ Steps) (NP (NNP Louisiana))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">Steps</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Burn</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Burn</governor>
+            <dependent idx="2">Red</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Steps</governor>
+            <dependent idx="3">Burn</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Burn</governor>
+            <dependent idx="4">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Drukken</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">from</governor>
+            <dependent idx="6">Drukken</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">Steps</governor>
+            <dependent idx="8">Louisiana</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">Steps</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Burn</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Burn</governor>
+            <dependent idx="2">Red</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Steps</governor>
+            <dependent idx="3">Burn</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Drukken</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">Burn</governor>
+            <dependent idx="6">Drukken</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">Steps</governor>
+            <dependent idx="8">Louisiana</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">Steps</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Burn</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Burn</governor>
+            <dependent idx="2">Red</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">Steps</governor>
+            <dependent idx="3">Burn</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Drukken</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="3">Burn</governor>
+            <dependent idx="6">Drukken</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">Steps</governor>
+            <dependent idx="8">Louisiana</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

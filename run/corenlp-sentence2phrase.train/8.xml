@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Beijing</word>
+            <lemma>Beijing</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="3">
+            <word>grandest</word>
+            <lemma>grandest</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="4">
+            <word>modern</word>
+            <lemma>modern</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>shopping</word>
+            <lemma>shopping</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>mall</word>
+            <lemma>mall</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>Sun</word>
+            <lemma>Sun</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>Dong</word>
+            <lemma>Dong</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>An</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>Plaza</word>
+            <lemma>Plaza</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNP Beijing) (POS 's)) (ADJP (JJS grandest) (JJ modern)) (NN shopping) (NN mall)) (VP (VBZ is) (NP (NP (NNP Sun) (NNP Dong)) (NP (DT An) (NNP Plaza)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">Dong</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">mall</governor>
+            <dependent idx="1">Beijing</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="1">Beijing</governor>
+            <dependent idx="2">'s</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">modern</governor>
+            <dependent idx="3">grandest</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">mall</governor>
+            <dependent idx="4">modern</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">mall</governor>
+            <dependent idx="5">shopping</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">Dong</governor>
+            <dependent idx="6">mall</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">Dong</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Dong</governor>
+            <dependent idx="8">Sun</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">Plaza</governor>
+            <dependent idx="10">An</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Dong</governor>
+            <dependent idx="11">Plaza</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">Dong</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">mall</governor>
+            <dependent idx="1">Beijing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">modern</governor>
+            <dependent idx="3">grandest</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">mall</governor>
+            <dependent idx="4">modern</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">mall</governor>
+            <dependent idx="5">shopping</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">Dong</governor>
+            <dependent idx="6">mall</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">Dong</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Dong</governor>
+            <dependent idx="8">Sun</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">Plaza</governor>
+            <dependent idx="10">An</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Dong</governor>
+            <dependent idx="11">Plaza</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">Dong</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">mall</governor>
+            <dependent idx="1">Beijing</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">modern</governor>
+            <dependent idx="3">grandest</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">mall</governor>
+            <dependent idx="4">modern</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">mall</governor>
+            <dependent idx="5">shopping</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">Dong</governor>
+            <dependent idx="6">mall</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="9">Dong</governor>
+            <dependent idx="7">is</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">Dong</governor>
+            <dependent idx="8">Sun</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">Plaza</governor>
+            <dependent idx="10">An</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="9">Dong</governor>
+            <dependent idx="11">Plaza</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>both</word>
+            <lemma>both</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>modern</word>
+            <lemma>modern</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>classic</word>
+            <lemma>classic</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>Chinese</word>
+            <lemma>chinese</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>goods</word>
+            <lemma>goods</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT both) (JJ modern)) (CC and) (NP (JJ classic) (JJ Chinese) (NNS goods)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">modern</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">modern</governor>
+            <dependent idx="1">both</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">modern</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">goods</governor>
+            <dependent idx="4">classic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">goods</governor>
+            <dependent idx="5">Chinese</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">modern</governor>
+            <dependent idx="6">goods</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">modern</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">modern</governor>
+            <dependent idx="1">both</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">goods</governor>
+            <dependent idx="4">classic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">goods</governor>
+            <dependent idx="5">Chinese</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">modern</governor>
+            <dependent idx="6">goods</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">modern</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">modern</governor>
+            <dependent idx="1">both</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">goods</governor>
+            <dependent idx="4">classic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">goods</governor>
+            <dependent idx="5">Chinese</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">modern</governor>
+            <dependent idx="6">goods</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

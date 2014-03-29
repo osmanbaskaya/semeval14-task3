@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>improving</word>
+            <lemma>improve</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>daily</word>
+            <lemma>daily</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>lives</word>
+            <lemma>life</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>living</word>
+            <lemma>live</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG improving) (NP (NP (DT the) (JJ daily) (NNS lives)) (VP (VBG living)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">improving</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">lives</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">lives</governor>
+            <dependent idx="3">daily</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">improving</governor>
+            <dependent idx="4">lives</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">lives</governor>
+            <dependent idx="5">living</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">improving</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">lives</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">lives</governor>
+            <dependent idx="3">daily</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">improving</governor>
+            <dependent idx="4">lives</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">lives</governor>
+            <dependent idx="5">living</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">improving</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">lives</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">lives</governor>
+            <dependent idx="3">daily</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">improving</governor>
+            <dependent idx="4">lives</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">lives</governor>
+            <dependent idx="5">living</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

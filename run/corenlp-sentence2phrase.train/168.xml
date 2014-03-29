@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>When</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>close</word>
+            <lemma>close</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>Explorer</word>
+            <lemma>Explorer</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Window</word>
+            <lemma>Window</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>PDT</POS>
+          </token>
+          <token id="9">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>open</word>
+            <lemma>open</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>IE</word>
+            <lemma>ie</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>Windows</word>
+            <lemma>Windows</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="14">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="15">
+            <word>Closed</word>
+            <lemma>closed</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="16">
+            <word>!?</word>
+            <lemma>!?</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB When) (NP (NP (PRP I)) (NP (NP (RB close) (CD one) (NN internet)) (NP (NNP Explorer) (NNP Window)) (NP (PDT all))))) (SQ (NP (DT the) (JJ other) (JJ open) (JJ IE) (NNP Windows)) (VP (VB get) (NP (JJ Closed) (NN !?)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">get</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">get</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">When</governor>
+            <dependent idx="2">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">internet</governor>
+            <dependent idx="3">close</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">I</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Window</governor>
+            <dependent idx="6">Explorer</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="7">Window</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="8">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">Windows</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="10">other</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="11">open</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="12">IE</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">get</governor>
+            <dependent idx="13">Windows</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">!?</governor>
+            <dependent idx="15">Closed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">get</governor>
+            <dependent idx="16">!?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">get</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">get</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">When</governor>
+            <dependent idx="2">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">internet</governor>
+            <dependent idx="3">close</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">I</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Window</governor>
+            <dependent idx="6">Explorer</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="7">Window</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="8">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">Windows</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="10">other</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="11">open</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="12">IE</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">get</governor>
+            <dependent idx="13">Windows</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">!?</governor>
+            <dependent idx="15">Closed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">get</governor>
+            <dependent idx="16">!?</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="14">get</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">get</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">When</governor>
+            <dependent idx="2">I</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">internet</governor>
+            <dependent idx="3">close</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">internet</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">I</governor>
+            <dependent idx="5">internet</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Window</governor>
+            <dependent idx="6">Explorer</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="7">Window</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">internet</governor>
+            <dependent idx="8">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">Windows</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="10">other</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="11">open</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">Windows</governor>
+            <dependent idx="12">IE</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">get</governor>
+            <dependent idx="13">Windows</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">!?</governor>
+            <dependent idx="15">Closed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">get</governor>
+            <dependent idx="16">!?</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>closing</word>
+            <lemma>close</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>IE</word>
+            <lemma>ie</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>windows</word>
+            <lemma>window</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG closing) (NP (JJ IE) (NN browser) (NNS windows))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">closing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">windows</governor>
+            <dependent idx="2">IE</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">windows</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">closing</governor>
+            <dependent idx="4">windows</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">closing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">windows</governor>
+            <dependent idx="2">IE</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">windows</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">closing</governor>
+            <dependent idx="4">windows</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">closing</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">windows</governor>
+            <dependent idx="2">IE</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">windows</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">closing</governor>
+            <dependent idx="4">windows</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

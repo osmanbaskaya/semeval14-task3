@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>writing</word>
+            <lemma>write</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>drawing</word>
+            <lemma>draw</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>instrument</word>
+            <lemma>instrument</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>consisting</word>
+            <lemma>consist</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>thin</word>
+            <lemma>thin</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>stick</word>
+            <lemma>stick</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>pigment</word>
+            <lemma>pigment</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>restaurant</word>
+            <lemma>restaurant</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (NP (VBG writing) (CC or) (VBG drawing)) (NN instrument)) (VP (VBG consisting) (PP (IN of) (NP (NP (DT a) (JJ thin) (NN stick)) (PP (IN of) (NP (NN pigment) (NN restaurant))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">instrument</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">instrument</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">instrument</governor>
+            <dependent idx="2">writing</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">writing</governor>
+            <dependent idx="3">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">writing</governor>
+            <dependent idx="4">drawing</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">instrument</governor>
+            <dependent idx="6">consisting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">consisting</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">stick</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">stick</governor>
+            <dependent idx="9">thin</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">of</governor>
+            <dependent idx="10">stick</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">stick</governor>
+            <dependent idx="11">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">restaurant</governor>
+            <dependent idx="12">pigment</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">of</governor>
+            <dependent idx="13">restaurant</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">instrument</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">instrument</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">instrument</governor>
+            <dependent idx="2">writing</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="2">writing</governor>
+            <dependent idx="4">drawing</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">instrument</governor>
+            <dependent idx="6">consisting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">stick</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">stick</governor>
+            <dependent idx="9">thin</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="6">consisting</governor>
+            <dependent idx="10">stick</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">restaurant</governor>
+            <dependent idx="12">pigment</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">stick</governor>
+            <dependent idx="13">restaurant</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">instrument</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">instrument</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">instrument</governor>
+            <dependent idx="2">writing</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="2">writing</governor>
+            <dependent idx="4">drawing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">instrument</governor>
+            <dependent idx="4">drawing</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">instrument</governor>
+            <dependent idx="6">consisting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">stick</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">stick</governor>
+            <dependent idx="9">thin</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="6">consisting</governor>
+            <dependent idx="10">stick</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">restaurant</governor>
+            <dependent idx="12">pigment</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="10">stick</governor>
+            <dependent idx="13">restaurant</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

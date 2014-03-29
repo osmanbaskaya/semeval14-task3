@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>American</word>
+            <lemma>american</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>Film</word>
+            <lemma>Film</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Institute</word>
+            <lemma>Institute</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>recently</word>
+            <lemma>recently</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>named</word>
+            <lemma>name</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="7">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>top</word>
+            <lemma>top</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>female</word>
+            <lemma>female</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>screen</word>
+            <lemma>screen</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>legend</word>
+            <lemma>legend</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (JJ American) (NNP Film) (NNP Institute)) (ADVP (RB recently)) (VP (VBD named) (NP (PRP$ her) (NP (DT the) (ADJP (JJ top)) (NN female)) (NN screen) (NN legend))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">named</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Institute</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Institute</governor>
+            <dependent idx="2">American</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Institute</governor>
+            <dependent idx="3">Film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">named</governor>
+            <dependent idx="4">Institute</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">named</governor>
+            <dependent idx="5">recently</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">legend</governor>
+            <dependent idx="7">her</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">female</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">female</governor>
+            <dependent idx="9">top</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">legend</governor>
+            <dependent idx="10">female</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">legend</governor>
+            <dependent idx="11">screen</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">named</governor>
+            <dependent idx="12">legend</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">named</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Institute</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Institute</governor>
+            <dependent idx="2">American</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Institute</governor>
+            <dependent idx="3">Film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">named</governor>
+            <dependent idx="4">Institute</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">named</governor>
+            <dependent idx="5">recently</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">legend</governor>
+            <dependent idx="7">her</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">female</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">female</governor>
+            <dependent idx="9">top</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">legend</governor>
+            <dependent idx="10">female</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">legend</governor>
+            <dependent idx="11">screen</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">named</governor>
+            <dependent idx="12">legend</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">named</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">Institute</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Institute</governor>
+            <dependent idx="2">American</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Institute</governor>
+            <dependent idx="3">Film</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">named</governor>
+            <dependent idx="4">Institute</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">named</governor>
+            <dependent idx="5">recently</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="12">legend</governor>
+            <dependent idx="7">her</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">female</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">female</governor>
+            <dependent idx="9">top</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">legend</governor>
+            <dependent idx="10">female</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">legend</governor>
+            <dependent idx="11">screen</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">named</governor>
+            <dependent idx="12">legend</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>female</word>
+            <lemma>female</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>actress</word>
+            <lemma>actress</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB best)) (NP (JJ female) (NN actress)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">actress</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">actress</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">actress</governor>
+            <dependent idx="2">female</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">actress</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">actress</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">actress</governor>
+            <dependent idx="2">female</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">actress</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">actress</governor>
+            <dependent idx="1">best</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">actress</governor>
+            <dependent idx="2">female</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

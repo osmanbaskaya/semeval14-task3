@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Both</word>
+            <lemma>both</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Estrada</word>
+            <lemma>Estrada</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>Honasan</word>
+            <lemma>Honasan</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="6">
+            <word>denied</word>
+            <lemma>deny</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="7">
+            <word>any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>involvement</word>
+            <lemma>involvement</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>failed</word>
+            <lemma>fail</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="12">
+            <word>military</word>
+            <lemma>military</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>rebellion</word>
+            <lemma>rebellion</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT Both) (NNP Estrada) (CC and) (NNP Honasan)) (VP (VBP have) (VP (VBN denied) (NP (NP (DT any) (NN involvement)) (PP (IN in) (NP (DT the) (VBN failed) (JJ military) (NN rebellion)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">denied</dependent>
+          </dep>
+          <dep type="preconj">
+            <governor idx="2">Estrada</governor>
+            <dependent idx="1">Both</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">denied</governor>
+            <dependent idx="2">Estrada</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">Estrada</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">Estrada</governor>
+            <dependent idx="4">Honasan</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">denied</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">involvement</governor>
+            <dependent idx="7">any</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">denied</governor>
+            <dependent idx="8">involvement</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">involvement</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="11">failed</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="12">military</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="13">rebellion</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">denied</dependent>
+          </dep>
+          <dep type="preconj">
+            <governor idx="2">Estrada</governor>
+            <dependent idx="1">Both</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">denied</governor>
+            <dependent idx="2">Estrada</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Estrada</governor>
+            <dependent idx="4">Honasan</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">denied</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">involvement</governor>
+            <dependent idx="7">any</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">denied</governor>
+            <dependent idx="8">involvement</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="11">failed</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="12">military</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">involvement</governor>
+            <dependent idx="13">rebellion</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">denied</dependent>
+          </dep>
+          <dep type="preconj">
+            <governor idx="2">Estrada</governor>
+            <dependent idx="1">Both</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">denied</governor>
+            <dependent idx="2">Estrada</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Estrada</governor>
+            <dependent idx="4">Honasan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">denied</governor>
+            <dependent idx="4">Honasan</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">denied</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">involvement</governor>
+            <dependent idx="7">any</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">denied</governor>
+            <dependent idx="8">involvement</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="10">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="11">failed</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">rebellion</governor>
+            <dependent idx="12">military</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="8">involvement</governor>
+            <dependent idx="13">rebellion</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>claimed</word>
+            <lemma>claim</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>dozens</word>
+            <lemma>dozen</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>lives</word>
+            <lemma>life</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN claimed) (NP (NP (NNS dozens)) (PP (IN of) (NP (NNS lives)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">claimed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">claimed</governor>
+            <dependent idx="2">dozens</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">dozens</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">lives</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">claimed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">claimed</governor>
+            <dependent idx="2">dozens</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">dozens</governor>
+            <dependent idx="4">lives</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">claimed</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">claimed</governor>
+            <dependent idx="2">dozens</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">dozens</governor>
+            <dependent idx="4">lives</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

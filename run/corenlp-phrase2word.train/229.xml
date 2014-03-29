@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Big</word>
+            <lemma>big</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>Show</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>during</word>
+            <lemma>during</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="5">
+            <word>second</word>
+            <lemma>second</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>World</word>
+            <lemma>World</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Heavyweight</word>
+            <lemma>Heavyweight</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Championship</word>
+            <lemma>Championship</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>reign</word>
+            <lemma>reign</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>wrestling</word>
+            <lemma>wrestling</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ Big) (NN Show)) (PP (IN during) (NP (PRP$ his) (JJ second) (NNP World) (NNP Heavyweight) (NNP Championship) (NN reign) (NN wrestling))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Show</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Show</governor>
+            <dependent idx="1">Big</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Show</governor>
+            <dependent idx="3">during</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="4">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="5">second</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="6">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="7">Heavyweight</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="8">Championship</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="9">reign</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">during</governor>
+            <dependent idx="10">wrestling</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Show</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Show</governor>
+            <dependent idx="1">Big</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="4">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="5">second</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="6">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="7">Heavyweight</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="8">Championship</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="9">reign</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="2">Show</governor>
+            <dependent idx="10">wrestling</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Show</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Show</governor>
+            <dependent idx="1">Big</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="4">his</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="5">second</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="6">World</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="7">Heavyweight</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="8">Championship</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">wrestling</governor>
+            <dependent idx="9">reign</dependent>
+          </dep>
+          <dep type="prep_during">
+            <governor idx="2">Show</governor>
+            <dependent idx="10">wrestling</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

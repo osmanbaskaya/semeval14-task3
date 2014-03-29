@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>out</word>
+            <lemma>out</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>hand</word>
+            <lemma>hand</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>escalate</word>
+            <lemma>escalate</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB get) (VP (ADVP (IN out) (PP (IN of) (NP (NN hand)))) (VB escalate))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">escalate</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">escalate</governor>
+            <dependent idx="1">get</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">escalate</governor>
+            <dependent idx="2">out</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">out</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">escalate</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">escalate</governor>
+            <dependent idx="1">get</dependent>
+          </dep>
+          <dep type="prep_out_of">
+            <governor idx="5">escalate</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">escalate</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">escalate</governor>
+            <dependent idx="1">get</dependent>
+          </dep>
+          <dep type="prep_out_of">
+            <governor idx="5">escalate</governor>
+            <dependent idx="4">hand</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

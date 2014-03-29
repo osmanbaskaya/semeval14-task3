@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Moses</word>
+            <lemma>Moses</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Billings</word>
+            <lemma>billing</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>portrait</word>
+            <lemma>portrait</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>former</word>
+            <lemma>former</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>president</word>
+            <lemma>president</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>John</word>
+            <lemma>John</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>Quincy</word>
+            <lemma>Quincy</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Adams</word>
+            <lemma>Adams</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>gastropod</word>
+            <lemma>gastropod</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NP (NNP Moses) (NNS Billings) (POS ')) (NN portrait)) (PP (IN of) (NP (JJ former) (NN president) (NNP John) (NNP Quincy) (NNP Adams)))) (NP (NN gastropod)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">portrait</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Billings</governor>
+            <dependent idx="1">Moses</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">portrait</governor>
+            <dependent idx="2">Billings</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">portrait</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">Adams</governor>
+            <dependent idx="6">former</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="7">president</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="8">John</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="9">Quincy</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="10">Adams</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">portrait</governor>
+            <dependent idx="11">gastropod</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">portrait</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Billings</governor>
+            <dependent idx="1">Moses</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">portrait</governor>
+            <dependent idx="2">Billings</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">Adams</governor>
+            <dependent idx="6">former</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="7">president</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="8">John</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="9">Quincy</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">portrait</governor>
+            <dependent idx="10">Adams</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">portrait</governor>
+            <dependent idx="11">gastropod</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">portrait</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Billings</governor>
+            <dependent idx="1">Moses</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">portrait</governor>
+            <dependent idx="2">Billings</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">Adams</governor>
+            <dependent idx="6">former</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="7">president</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="8">John</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Adams</governor>
+            <dependent idx="9">Quincy</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">portrait</governor>
+            <dependent idx="10">Adams</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">portrait</governor>
+            <dependent idx="11">gastropod</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

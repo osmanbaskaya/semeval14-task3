@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>even</word>
+            <lemma>even</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>dogs</word>
+            <lemma>dog</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>street</word>
+            <lemma>street</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="8">
+            <word>water</word>
+            <lemma>water</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (RB even) (DT the) (NNS dogs)) (PP (IN in) (NP (DT the) (NN street)))) (VP (VBP know) (NP (NN water))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">know</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">dogs</governor>
+            <dependent idx="1">even</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">dogs</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">know</governor>
+            <dependent idx="3">dogs</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">dogs</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">street</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">street</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">know</governor>
+            <dependent idx="8">water</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">know</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">dogs</governor>
+            <dependent idx="1">even</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">dogs</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">know</governor>
+            <dependent idx="3">dogs</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">street</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">dogs</governor>
+            <dependent idx="6">street</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">know</governor>
+            <dependent idx="8">water</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">know</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">dogs</governor>
+            <dependent idx="1">even</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">dogs</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">know</governor>
+            <dependent idx="3">dogs</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">street</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">dogs</governor>
+            <dependent idx="6">street</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">know</governor>
+            <dependent idx="8">water</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

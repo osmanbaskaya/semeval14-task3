@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Princess</word>
+            <lemma>Princess</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Juliana</word>
+            <lemma>Juliana</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>&amp;</word>
+            <lemma>&amp;</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>Prince</word>
+            <lemma>Prince</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Bernhard</word>
+            <lemma>Bernhard</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>celebrate</word>
+            <lemma>celebrate</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>their</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="8">
+            <word>engagement</word>
+            <lemma>engagement</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>Amsterdam</word>
+            <lemma>Amsterdam</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>crown</word>
+            <lemma>crown</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (S (NP (NP (NNP Princess) (NNP Juliana)) (CC &amp;) (NP (NNP Prince) (NNP Bernhard))) (VP (VB celebrate) (NP (PRP$ their) (NN engagement)) (PP (IN in) (NP (NNP Amsterdam) (NN crown))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">celebrate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Juliana</governor>
+            <dependent idx="1">Princess</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="2">Juliana</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">Juliana</governor>
+            <dependent idx="3">&amp;</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Bernhard</governor>
+            <dependent idx="4">Prince</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">Juliana</governor>
+            <dependent idx="5">Bernhard</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">engagement</governor>
+            <dependent idx="7">their</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="8">engagement</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="9">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">crown</governor>
+            <dependent idx="10">Amsterdam</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">in</governor>
+            <dependent idx="11">crown</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">celebrate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Juliana</governor>
+            <dependent idx="1">Princess</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="2">Juliana</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Bernhard</governor>
+            <dependent idx="4">Prince</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Juliana</governor>
+            <dependent idx="5">Bernhard</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">engagement</governor>
+            <dependent idx="7">their</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="8">engagement</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">crown</governor>
+            <dependent idx="10">Amsterdam</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="11">crown</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">celebrate</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Juliana</governor>
+            <dependent idx="1">Princess</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="2">Juliana</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">Bernhard</governor>
+            <dependent idx="4">Prince</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Juliana</governor>
+            <dependent idx="5">Bernhard</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="5">Bernhard</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">engagement</governor>
+            <dependent idx="7">their</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="8">engagement</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">crown</governor>
+            <dependent idx="10">Amsterdam</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">celebrate</governor>
+            <dependent idx="11">crown</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

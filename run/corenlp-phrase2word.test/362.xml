@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Cravath</word>
+            <lemma>Cravath</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>rounding</word>
+            <lemma>round</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>third</word>
+            <lemma>third</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>after</word>
+            <lemma>after</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>hitting</word>
+            <lemma>hit</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>home</word>
+            <lemma>home</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>run</word>
+            <lemma>run</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>1919-1920</word>
+            <lemma>1919-1920</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>baseball</word>
+            <lemma>baseball</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NNP Cravath)) (S (VP (VBG rounding) (NP (JJ third)) (PP (IN after) (S (VP (VBG hitting) (NP (NP (DT a) (NN home) (NN run)) (, ,) (NP (CD 1919-1920) (NN baseball)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Cravath</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Cravath</governor>
+            <dependent idx="2">rounding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">rounding</governor>
+            <dependent idx="3">third</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">rounding</governor>
+            <dependent idx="4">after</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="4">after</governor>
+            <dependent idx="5">hitting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">run</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">run</governor>
+            <dependent idx="7">home</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">hitting</governor>
+            <dependent idx="8">run</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">baseball</governor>
+            <dependent idx="10">1919-1920</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">run</governor>
+            <dependent idx="11">baseball</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Cravath</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Cravath</governor>
+            <dependent idx="2">rounding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">rounding</governor>
+            <dependent idx="3">third</dependent>
+          </dep>
+          <dep type="prepc_after">
+            <governor idx="2">rounding</governor>
+            <dependent idx="5">hitting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">run</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">run</governor>
+            <dependent idx="7">home</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">hitting</governor>
+            <dependent idx="8">run</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">baseball</governor>
+            <dependent idx="10">1919-1920</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">run</governor>
+            <dependent idx="11">baseball</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Cravath</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Cravath</governor>
+            <dependent idx="2">rounding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">rounding</governor>
+            <dependent idx="3">third</dependent>
+          </dep>
+          <dep type="prepc_after">
+            <governor idx="2">rounding</governor>
+            <dependent idx="5">hitting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">run</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">run</governor>
+            <dependent idx="7">home</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">hitting</governor>
+            <dependent idx="8">run</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">baseball</governor>
+            <dependent idx="10">1919-1920</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">run</governor>
+            <dependent idx="11">baseball</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

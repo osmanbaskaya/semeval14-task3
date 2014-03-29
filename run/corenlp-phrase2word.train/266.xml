@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Mural</word>
+            <lemma>Mural</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Wall</word>
+            <lemma>Wall</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>Ship</word>
+            <lemma>ship</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>parking</word>
+            <lemma>parking</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>lot</word>
+            <lemma>lot</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="10">
+            <word>Silverstrand</word>
+            <lemma>Silverstrand</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Beach</word>
+            <lemma>Beach</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>art</word>
+            <lemma>art</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT The) (NNP Mural) (NNP Wall)) (PP (IN at) (NP (NP (DT The) (NN Ship) (NN parking) (NN lot)) (, ,) (NP (NNP Silverstrand) (NNP Beach))))) (NP (NN art)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Wall</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Wall</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Wall</governor>
+            <dependent idx="2">Mural</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Wall</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">lot</governor>
+            <dependent idx="5">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lot</governor>
+            <dependent idx="6">Ship</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lot</governor>
+            <dependent idx="7">parking</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">at</governor>
+            <dependent idx="8">lot</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Beach</governor>
+            <dependent idx="10">Silverstrand</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">lot</governor>
+            <dependent idx="11">Beach</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Wall</governor>
+            <dependent idx="12">art</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Wall</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Wall</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Wall</governor>
+            <dependent idx="2">Mural</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">lot</governor>
+            <dependent idx="5">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lot</governor>
+            <dependent idx="6">Ship</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lot</governor>
+            <dependent idx="7">parking</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="3">Wall</governor>
+            <dependent idx="8">lot</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Beach</governor>
+            <dependent idx="10">Silverstrand</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">lot</governor>
+            <dependent idx="11">Beach</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Wall</governor>
+            <dependent idx="12">art</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Wall</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Wall</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Wall</governor>
+            <dependent idx="2">Mural</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">lot</governor>
+            <dependent idx="5">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lot</governor>
+            <dependent idx="6">Ship</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">lot</governor>
+            <dependent idx="7">parking</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="3">Wall</governor>
+            <dependent idx="8">lot</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Beach</governor>
+            <dependent idx="10">Silverstrand</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="8">lot</governor>
+            <dependent idx="11">Beach</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Wall</governor>
+            <dependent idx="12">art</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

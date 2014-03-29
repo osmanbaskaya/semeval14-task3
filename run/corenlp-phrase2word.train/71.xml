@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>severe</word>
+            <lemma>severe</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>crimp</word>
+            <lemma>crimp</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>reserves</word>
+            <lemma>reserve</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>pinch</word>
+            <lemma>pinch</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (JJ severe)) (SBAR (S (VP (VB crimp) (PP (IN in) (NP (NNS reserves))))))) (VP (VBP pinch)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">pinch</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">severe</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">pinch</governor>
+            <dependent idx="2">severe</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">severe</governor>
+            <dependent idx="3">crimp</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">crimp</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="5">reserves</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">pinch</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">severe</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">pinch</governor>
+            <dependent idx="2">severe</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">severe</governor>
+            <dependent idx="3">crimp</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">crimp</governor>
+            <dependent idx="5">reserves</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">pinch</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">severe</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">pinch</governor>
+            <dependent idx="2">severe</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">severe</governor>
+            <dependent idx="3">crimp</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">crimp</governor>
+            <dependent idx="5">reserves</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

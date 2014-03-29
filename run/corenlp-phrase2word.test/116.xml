@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>cook</word>
+            <lemma>cook</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>prepare</word>
+            <lemma>prepare</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB cook) (PRT (RP up)) (S (VP (VB prepare)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cook</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">cook</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">cook</governor>
+            <dependent idx="3">prepare</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cook</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">cook</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">cook</governor>
+            <dependent idx="3">prepare</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">cook</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">cook</governor>
+            <dependent idx="2">up</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">cook</governor>
+            <dependent idx="3">prepare</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

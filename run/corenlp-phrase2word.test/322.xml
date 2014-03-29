@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Indus</word>
+            <lemma>Indus</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Valley</word>
+            <lemma>Valley</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Alchi</word>
+            <lemma>Alchi</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>Ladakh</word>
+            <lemma>Ladakh</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>guildhall</word>
+            <lemma>guildhall</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT the) (NNP Indus) (NNP Valley)) (PP (IN at) (NP (NNP Alchi) (, ,) (NNP Ladakh)))) (NP (NN guildhall)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Valley</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Valley</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Valley</governor>
+            <dependent idx="2">Indus</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Valley</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ladakh</governor>
+            <dependent idx="5">Alchi</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">at</governor>
+            <dependent idx="7">Ladakh</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Valley</governor>
+            <dependent idx="8">guildhall</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Valley</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Valley</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Valley</governor>
+            <dependent idx="2">Indus</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ladakh</governor>
+            <dependent idx="5">Alchi</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="3">Valley</governor>
+            <dependent idx="7">Ladakh</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Valley</governor>
+            <dependent idx="8">guildhall</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">Valley</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">Valley</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">Valley</governor>
+            <dependent idx="2">Indus</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Ladakh</governor>
+            <dependent idx="5">Alchi</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="3">Valley</governor>
+            <dependent idx="7">Ladakh</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">Valley</governor>
+            <dependent idx="8">guildhall</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

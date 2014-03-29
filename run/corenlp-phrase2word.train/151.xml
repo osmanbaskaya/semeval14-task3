@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>go</word>
+            <lemma>go</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>pear-shaped</word>
+            <lemma>pear-shaped</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>curve</word>
+            <lemma>curve</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB go) (NP (JJ pear-shaped) (NN curve))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">go</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">curve</governor>
+            <dependent idx="2">pear-shaped</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">go</governor>
+            <dependent idx="3">curve</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">go</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">curve</governor>
+            <dependent idx="2">pear-shaped</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">go</governor>
+            <dependent idx="3">curve</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">go</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">curve</governor>
+            <dependent idx="2">pear-shaped</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">go</governor>
+            <dependent idx="3">curve</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

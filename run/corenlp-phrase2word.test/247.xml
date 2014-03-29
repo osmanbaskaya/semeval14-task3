@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>hit</word>
+            <lemma>hit</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>home</word>
+            <lemma>home</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>run</word>
+            <lemma>run</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>succeed</word>
+            <lemma>succeed</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB hit) (S (NP (DT a) (NN home) (NN run)) (VP (VB succeed)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">run</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">run</governor>
+            <dependent idx="3">home</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">succeed</governor>
+            <dependent idx="4">run</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">hit</governor>
+            <dependent idx="5">succeed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">run</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">run</governor>
+            <dependent idx="3">home</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">succeed</governor>
+            <dependent idx="4">run</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">hit</governor>
+            <dependent idx="5">succeed</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hit</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">run</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">run</governor>
+            <dependent idx="3">home</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">succeed</governor>
+            <dependent idx="4">run</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">hit</governor>
+            <dependent idx="5">succeed</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

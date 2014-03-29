@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>strategies</word>
+            <lemma>strategy</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>effective</word>
+            <lemma>effective</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>communication</word>
+            <lemma>communication</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>relationships</word>
+            <lemma>relationship</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>openness</word>
+            <lemma>openness</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS strategies)) (PP (IN for) (NP (JJ effective) (NN communication))) (PP (IN in) (NP (NNS relationships) (NN openness))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">strategies</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">strategies</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">communication</governor>
+            <dependent idx="3">effective</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">for</governor>
+            <dependent idx="4">communication</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">strategies</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">openness</governor>
+            <dependent idx="6">relationships</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="7">openness</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">strategies</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">communication</governor>
+            <dependent idx="3">effective</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">strategies</governor>
+            <dependent idx="4">communication</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">openness</governor>
+            <dependent idx="6">relationships</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">strategies</governor>
+            <dependent idx="7">openness</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">strategies</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">communication</governor>
+            <dependent idx="3">effective</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">strategies</governor>
+            <dependent idx="4">communication</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">openness</governor>
+            <dependent idx="6">relationships</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">strategies</governor>
+            <dependent idx="7">openness</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

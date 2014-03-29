@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Whats</word>
+            <lemma>Whats</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>best</word>
+            <lemma>best</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="4">
+            <word>website</word>
+            <lemma>website</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="6">
+            <word>allows</word>
+            <lemma>allow</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>people</word>
+            <lemma>people</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="9">
+            <word>upload</word>
+            <lemma>upload</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="10">
+            <word>2</word>
+            <lemma>2</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>hour</word>
+            <lemma>hour</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>long</word>
+            <lemma>long</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>vidoes</word>
+            <lemma>vido</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="14">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NNP Whats)) (SBAR (S (NP (NP (DT the) (JJS best) (NN website)) (SBAR (WHNP (WDT which)) (S (VP (VBZ allows) (NP (NNS people)))))) (VP (TO to) (VP (VB upload) (NP (QP (CD 2) (NN hour)) (JJ long) (NNS vidoes))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Whats</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">website</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">website</governor>
+            <dependent idx="3">best</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">upload</governor>
+            <dependent idx="4">website</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">allows</governor>
+            <dependent idx="5">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">website</governor>
+            <dependent idx="6">allows</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">allows</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">upload</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">Whats</governor>
+            <dependent idx="9">upload</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="11">hour</governor>
+            <dependent idx="10">2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">vidoes</governor>
+            <dependent idx="11">hour</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">vidoes</governor>
+            <dependent idx="12">long</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">upload</governor>
+            <dependent idx="13">vidoes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Whats</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">website</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">website</governor>
+            <dependent idx="3">best</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">upload</governor>
+            <dependent idx="4">website</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">allows</governor>
+            <dependent idx="5">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">website</governor>
+            <dependent idx="6">allows</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">allows</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">upload</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">Whats</governor>
+            <dependent idx="9">upload</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="11">hour</governor>
+            <dependent idx="10">2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">vidoes</governor>
+            <dependent idx="11">hour</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">vidoes</governor>
+            <dependent idx="12">long</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">upload</governor>
+            <dependent idx="13">vidoes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Whats</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">website</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">website</governor>
+            <dependent idx="3">best</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">upload</governor>
+            <dependent idx="4">website</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">allows</governor>
+            <dependent idx="5">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">website</governor>
+            <dependent idx="6">allows</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">allows</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">upload</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">Whats</governor>
+            <dependent idx="9">upload</dependent>
+          </dep>
+          <dep type="number">
+            <governor idx="11">hour</governor>
+            <dependent idx="10">2</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="13">vidoes</governor>
+            <dependent idx="11">hour</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">vidoes</governor>
+            <dependent idx="12">long</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">upload</governor>
+            <dependent idx="13">vidoes</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="2">
+            <word>Internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>network</word>
+            <lemma>network</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>92</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (PRP$ my) (NN Internet) (NN network)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">network</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">network</governor>
+            <dependent idx="1">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">network</governor>
+            <dependent idx="2">Internet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">network</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">network</governor>
+            <dependent idx="1">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">network</governor>
+            <dependent idx="2">Internet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">network</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">network</governor>
+            <dependent idx="1">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">network</governor>
+            <dependent idx="2">Internet</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

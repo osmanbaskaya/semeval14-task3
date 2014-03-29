@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>meeting</word>
+            <lemma>meeting</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>coffee</word>
+            <lemma>coffee</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>producers</word>
+            <lemma>producer</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Rio</word>
+            <lemma>Rio</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>de</word>
+            <lemma>de</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>Janeiro</word>
+            <lemma>Janeiro</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>business</word>
+            <lemma>business</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NN meeting)) (PP (IN of) (NP (NN coffee) (NNS producers))) (PP (IN in) (NP (NNP Rio) (IN de) (NNP Janeiro) (NN business))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">meeting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">meeting</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">meeting</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">producers</governor>
+            <dependent idx="4">coffee</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">producers</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">meeting</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">business</governor>
+            <dependent idx="7">Rio</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">business</governor>
+            <dependent idx="8">de</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">business</governor>
+            <dependent idx="9">Janeiro</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="10">business</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">meeting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">meeting</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">producers</governor>
+            <dependent idx="4">coffee</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">meeting</governor>
+            <dependent idx="5">producers</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">business</governor>
+            <dependent idx="7">Rio</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">business</governor>
+            <dependent idx="8">de</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">business</governor>
+            <dependent idx="9">Janeiro</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">meeting</governor>
+            <dependent idx="10">business</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">meeting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">meeting</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">producers</governor>
+            <dependent idx="4">coffee</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">meeting</governor>
+            <dependent idx="5">producers</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">business</governor>
+            <dependent idx="7">Rio</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">business</governor>
+            <dependent idx="8">de</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">business</governor>
+            <dependent idx="9">Janeiro</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">meeting</governor>
+            <dependent idx="10">business</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

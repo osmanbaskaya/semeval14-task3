@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>recent</word>
+            <lemma>recent</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>news</word>
+            <lemma>news</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>illegal</word>
+            <lemma>illegal</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>drag</word>
+            <lemma>drag</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>racing</word>
+            <lemma>racing</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>pennsylvania</word>
+            <lemma>pennsylvanium</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>cars</word>
+            <lemma>car</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ recent) (NN news)) (PP (IN on) (NP (JJ illegal) (NN drag) (NN racing))) (PP (IN in) (NP (NN pennsylvania) (NNS cars))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">news</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">news</governor>
+            <dependent idx="1">recent</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">news</governor>
+            <dependent idx="3">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">racing</governor>
+            <dependent idx="4">illegal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">racing</governor>
+            <dependent idx="5">drag</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">on</governor>
+            <dependent idx="6">racing</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">news</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">cars</governor>
+            <dependent idx="8">pennsylvania</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="9">cars</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">news</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">news</governor>
+            <dependent idx="1">recent</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">racing</governor>
+            <dependent idx="4">illegal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">racing</governor>
+            <dependent idx="5">drag</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">news</governor>
+            <dependent idx="6">racing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">cars</governor>
+            <dependent idx="8">pennsylvania</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">news</governor>
+            <dependent idx="9">cars</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">news</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">news</governor>
+            <dependent idx="1">recent</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">racing</governor>
+            <dependent idx="4">illegal</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">racing</governor>
+            <dependent idx="5">drag</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">news</governor>
+            <dependent idx="6">racing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">cars</governor>
+            <dependent idx="8">pennsylvania</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">news</governor>
+            <dependent idx="9">cars</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

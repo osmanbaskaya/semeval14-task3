@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>pikey</word>
+            <lemma>pikey</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>chawed</word>
+            <lemma>chawed</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="6">
+            <word>bike</word>
+            <lemma>bike</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NP (DT Some) (NN pikey) (POS 's)) (JJ chawed)) (NP (PRP$ my) (NN bike))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">pikey</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">pikey</governor>
+            <dependent idx="1">Some</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">pikey</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">pikey</governor>
+            <dependent idx="4">chawed</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">bike</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">pikey</governor>
+            <dependent idx="6">bike</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">pikey</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">pikey</governor>
+            <dependent idx="1">Some</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">pikey</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">pikey</governor>
+            <dependent idx="4">chawed</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">bike</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">pikey</governor>
+            <dependent idx="6">bike</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">pikey</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">pikey</governor>
+            <dependent idx="1">Some</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">pikey</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">pikey</governor>
+            <dependent idx="4">chawed</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">bike</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">pikey</governor>
+            <dependent idx="6">bike</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>derelicts</word>
+            <lemma>derelict</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>stealing</word>
+            <lemma>steal</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="4">
+            <word>bike</word>
+            <lemma>bike</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NNS derelicts)) (VP (VBG stealing) (NP (PRP$ my) (NN bike)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">derelicts</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">derelicts</governor>
+            <dependent idx="2">stealing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">bike</governor>
+            <dependent idx="3">my</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">stealing</governor>
+            <dependent idx="4">bike</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">derelicts</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">derelicts</governor>
+            <dependent idx="2">stealing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">bike</governor>
+            <dependent idx="3">my</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">stealing</governor>
+            <dependent idx="4">bike</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">derelicts</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">derelicts</governor>
+            <dependent idx="2">stealing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">bike</governor>
+            <dependent idx="3">my</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">stealing</governor>
+            <dependent idx="4">bike</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>In</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>passband</word>
+            <lemma>passband</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>elliptic</word>
+            <lemma>elliptic</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>rational</word>
+            <lemma>rational</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>function</word>
+            <lemma>function</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>varies</word>
+            <lemma>vary</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="10">
+            <word>between</word>
+            <lemma>between</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>zero</word>
+            <lemma>zero</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="12">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="13">
+            <word>unity</word>
+            <lemma>unity</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN In) (NP (DT the) (NN passband))) (, ,) (NP (DT the) (JJ elliptic) (JJ rational) (NN function)) (VP (VBZ varies) (PP (IN between) (NP (NP (CD zero)) (CC and) (NP (NN unity))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">varies</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">varies</governor>
+            <dependent idx="1">In</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">passband</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">In</governor>
+            <dependent idx="3">passband</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">function</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">function</governor>
+            <dependent idx="6">elliptic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">function</governor>
+            <dependent idx="7">rational</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">varies</governor>
+            <dependent idx="8">function</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">varies</governor>
+            <dependent idx="10">between</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">between</governor>
+            <dependent idx="11">zero</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">zero</governor>
+            <dependent idx="12">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="11">zero</governor>
+            <dependent idx="13">unity</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">varies</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">passband</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">varies</governor>
+            <dependent idx="3">passband</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">function</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">function</governor>
+            <dependent idx="6">elliptic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">function</governor>
+            <dependent idx="7">rational</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">varies</governor>
+            <dependent idx="8">function</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="9">varies</governor>
+            <dependent idx="11">zero</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">zero</governor>
+            <dependent idx="13">unity</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">varies</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">passband</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="9">varies</governor>
+            <dependent idx="3">passband</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">function</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">function</governor>
+            <dependent idx="6">elliptic</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">function</governor>
+            <dependent idx="7">rational</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">varies</governor>
+            <dependent idx="8">function</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="9">varies</governor>
+            <dependent idx="11">zero</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="9">varies</governor>
+            <dependent idx="13">unity</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">zero</governor>
+            <dependent idx="13">unity</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>mathematics</word>
+            <lemma>mathematics</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>elliptical</word>
+            <lemma>elliptical</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>108</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>curve</word>
+            <lemma>curve</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>cryptography</word>
+            <lemma>cryptography</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN mathematics)) (PP (IN of) (NP (JJ elliptical) (NN curve) (NN cryptography))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mathematics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">mathematics</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">mathematics</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">cryptography</governor>
+            <dependent idx="4">elliptical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cryptography</governor>
+            <dependent idx="5">curve</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="6">cryptography</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mathematics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">mathematics</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">cryptography</governor>
+            <dependent idx="4">elliptical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cryptography</governor>
+            <dependent idx="5">curve</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">mathematics</governor>
+            <dependent idx="6">cryptography</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mathematics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">mathematics</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">cryptography</governor>
+            <dependent idx="4">elliptical</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cryptography</governor>
+            <dependent idx="5">curve</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">mathematics</governor>
+            <dependent idx="6">cryptography</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

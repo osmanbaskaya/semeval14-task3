@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>In</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>modern</word>
+            <lemma>modern</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>parlance</word>
+            <lemma>parlance</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>bureaucracy</word>
+            <lemma>bureaucracy</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>refers</word>
+            <lemma>refer</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>administrative</word>
+            <lemma>administrative</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>system</word>
+            <lemma>system</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>governing</word>
+            <lemma>govern</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="12">
+            <word>any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="13">
+            <word>large</word>
+            <lemma>large</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="14">
+            <word>institution</word>
+            <lemma>institution</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN In) (NP (JJ modern) (NN parlance))) (, ,) (NP (NN bureaucracy)) (VP (VBZ refers) (PP (TO to) (NP (NP (DT the) (JJ administrative) (NN system)) (VP (VBG governing) (NP (DT any) (JJ large) (NN institution)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">refers</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">refers</governor>
+            <dependent idx="1">In</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">parlance</governor>
+            <dependent idx="2">modern</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">In</governor>
+            <dependent idx="3">parlance</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">refers</governor>
+            <dependent idx="5">bureaucracy</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">refers</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">system</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">system</governor>
+            <dependent idx="9">administrative</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">to</governor>
+            <dependent idx="10">system</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="10">system</governor>
+            <dependent idx="11">governing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">institution</governor>
+            <dependent idx="12">any</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">institution</governor>
+            <dependent idx="13">large</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">governing</governor>
+            <dependent idx="14">institution</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">refers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">parlance</governor>
+            <dependent idx="2">modern</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">refers</governor>
+            <dependent idx="3">parlance</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">refers</governor>
+            <dependent idx="5">bureaucracy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">system</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">system</governor>
+            <dependent idx="9">administrative</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">refers</governor>
+            <dependent idx="10">system</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="10">system</governor>
+            <dependent idx="11">governing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">institution</governor>
+            <dependent idx="12">any</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">institution</governor>
+            <dependent idx="13">large</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">governing</governor>
+            <dependent idx="14">institution</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">refers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">parlance</governor>
+            <dependent idx="2">modern</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">refers</governor>
+            <dependent idx="3">parlance</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">refers</governor>
+            <dependent idx="5">bureaucracy</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">system</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">system</governor>
+            <dependent idx="9">administrative</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">refers</governor>
+            <dependent idx="10">system</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="10">system</governor>
+            <dependent idx="11">governing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">institution</governor>
+            <dependent idx="12">any</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="14">institution</governor>
+            <dependent idx="13">large</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">governing</governor>
+            <dependent idx="14">institution</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>bureaucratic</word>
+            <lemma>bureaucratic</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>processes</word>
+            <lemma>process</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="5">
+            <word>handle</word>
+            <lemma>handle</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>139</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="6">
+            <word>administration</word>
+            <lemma>administration</lemma>
+            <CharacterOffsetBegin>140</CharacterOffsetBegin>
+            <CharacterOffsetEnd>154</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>155</CharacterOffsetBegin>
+            <CharacterOffsetEnd>157</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>large</word>
+            <lemma>large</lemma>
+            <CharacterOffsetBegin>158</CharacterOffsetBegin>
+            <CharacterOffsetEnd>163</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>organization</word>
+            <lemma>organization</lemma>
+            <CharacterOffsetBegin>164</CharacterOffsetBegin>
+            <CharacterOffsetEnd>176</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (DT the) (JJ bureaucratic) (NNS processes)) (SBAR (WHNP (WDT that)) (S (VP (VBP handle) (NP (NP (NN administration)) (PP (IN in) (NP (JJ large) (NN organization))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">processes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">processes</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">processes</governor>
+            <dependent idx="2">bureaucratic</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">handle</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">processes</governor>
+            <dependent idx="5">handle</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">handle</governor>
+            <dependent idx="6">administration</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">administration</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">organization</governor>
+            <dependent idx="8">large</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="9">organization</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">processes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">processes</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">processes</governor>
+            <dependent idx="2">bureaucratic</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">handle</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">processes</governor>
+            <dependent idx="5">handle</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">handle</governor>
+            <dependent idx="6">administration</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">organization</governor>
+            <dependent idx="8">large</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">administration</governor>
+            <dependent idx="9">organization</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">processes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">processes</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">processes</governor>
+            <dependent idx="2">bureaucratic</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">handle</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">processes</governor>
+            <dependent idx="5">handle</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">handle</governor>
+            <dependent idx="6">administration</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">organization</governor>
+            <dependent idx="8">large</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">administration</governor>
+            <dependent idx="9">organization</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

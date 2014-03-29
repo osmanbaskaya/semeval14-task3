@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>block</word>
+            <lemma>block</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>audio</word>
+            <lemma>audio</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>commercial</word>
+            <lemma>commercial</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>webpage</word>
+            <lemma>webpage</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHNP (WRB How)) (S (VP (TO to) (VP (VB block) (NP (NN audio)) (PP (IN on) (NP (NP (JJ commercial)) (PP (IN on) (NP (DT a) (NN webpage)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">block</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">block</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">block</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">block</governor>
+            <dependent idx="4">audio</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">block</governor>
+            <dependent idx="5">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">on</governor>
+            <dependent idx="6">commercial</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">commercial</governor>
+            <dependent idx="7">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">webpage</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">on</governor>
+            <dependent idx="9">webpage</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">block</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">block</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">block</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">block</governor>
+            <dependent idx="4">audio</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">block</governor>
+            <dependent idx="6">commercial</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">webpage</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">commercial</governor>
+            <dependent idx="9">webpage</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">block</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">block</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">block</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">block</governor>
+            <dependent idx="4">audio</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">block</governor>
+            <dependent idx="6">commercial</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">webpage</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="6">commercial</governor>
+            <dependent idx="9">webpage</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>muting</word>
+            <lemma>mute</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>sound</word>
+            <lemma>sound</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG muting) (NP (NN sound))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">muting</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">muting</governor>
+            <dependent idx="2">sound</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">muting</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">muting</governor>
+            <dependent idx="2">sound</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">muting</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">muting</governor>
+            <dependent idx="2">sound</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>kiosks</word>
+            <lemma>kiosk</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>destroyed</word>
+            <lemma>destroy</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="3">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>tsunami</word>
+            <lemma>tsunami</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Pichilemu</word>
+            <lemma>Pichilemu</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Monticello</word>
+            <lemma>Monticello</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS kiosks)) (VP (VBN destroyed) (PP (IN by) (NP (NP (DT the) (NN tsunami)) (PP (IN in) (NP (NNP Pichilemu) (NNP Monticello)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">destroyed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">destroyed</governor>
+            <dependent idx="1">kiosks</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">destroyed</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">tsunami</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">by</governor>
+            <dependent idx="5">tsunami</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">tsunami</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Monticello</governor>
+            <dependent idx="7">Pichilemu</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="8">Monticello</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">destroyed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">destroyed</governor>
+            <dependent idx="1">kiosks</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">tsunami</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">destroyed</governor>
+            <dependent idx="5">tsunami</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Monticello</governor>
+            <dependent idx="7">Pichilemu</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">tsunami</governor>
+            <dependent idx="8">Monticello</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">destroyed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">destroyed</governor>
+            <dependent idx="1">kiosks</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">tsunami</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">destroyed</governor>
+            <dependent idx="5">tsunami</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">Monticello</governor>
+            <dependent idx="7">Pichilemu</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">tsunami</governor>
+            <dependent idx="8">Monticello</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

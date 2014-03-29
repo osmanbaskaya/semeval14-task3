@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Leawood</word>
+            <lemma>Leawood</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>pump</word>
+            <lemma>pump</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>house</word>
+            <lemma>house</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>power</word>
+            <lemma>power</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Leawood)) (NP (NN pump) (NN house) (NN power)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Leawood</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">power</governor>
+            <dependent idx="2">pump</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">power</governor>
+            <dependent idx="3">house</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Leawood</governor>
+            <dependent idx="4">power</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Leawood</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">power</governor>
+            <dependent idx="2">pump</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">power</governor>
+            <dependent idx="3">house</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Leawood</governor>
+            <dependent idx="4">power</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Leawood</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">power</governor>
+            <dependent idx="2">pump</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">power</governor>
+            <dependent idx="3">house</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Leawood</governor>
+            <dependent idx="4">power</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

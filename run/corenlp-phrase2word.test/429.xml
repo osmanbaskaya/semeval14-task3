@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>voluntary</word>
+            <lemma>voluntary</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>compulsory</word>
+            <lemma>compulsory</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>isolation</word>
+            <lemma>isolation</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>sculpture</word>
+            <lemma>sculpture</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ voluntary)) (CC or) (NP (JJ compulsory) (NN isolation) (NN sculpture)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">voluntary</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">voluntary</governor>
+            <dependent idx="2">or</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sculpture</governor>
+            <dependent idx="3">compulsory</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">sculpture</governor>
+            <dependent idx="4">isolation</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">voluntary</governor>
+            <dependent idx="5">sculpture</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">voluntary</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sculpture</governor>
+            <dependent idx="3">compulsory</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">sculpture</governor>
+            <dependent idx="4">isolation</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">voluntary</governor>
+            <dependent idx="5">sculpture</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">voluntary</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">sculpture</governor>
+            <dependent idx="3">compulsory</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">sculpture</governor>
+            <dependent idx="4">isolation</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">voluntary</governor>
+            <dependent idx="5">sculpture</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

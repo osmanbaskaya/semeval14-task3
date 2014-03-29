@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="2">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>use</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>because</word>
+            <lemma>because</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="9">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="10">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="11">
+            <word>want</word>
+            <lemma>want</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="12">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="13">
+            <word>see</word>
+            <lemma>see</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="14">
+            <word>commercials</word>
+            <lemma>commercial</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="15">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (VP (VBP Do) (RB n't))) (NP (PRP we)) (VP (VBP use) (NP (DT the) (NN internet)) (SBAR (IN because) (S (NP (PRP we)) (VP (VBP do) (RB n't) (VP (VB want) (S (VP (TO to) (VP (VB see) (NP (NNS commercials)))))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">use</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">use</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="1">Do</governor>
+            <dependent idx="2">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">use</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">internet</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">use</governor>
+            <dependent idx="6">internet</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">want</governor>
+            <dependent idx="7">because</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">want</governor>
+            <dependent idx="8">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">want</governor>
+            <dependent idx="9">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="11">want</governor>
+            <dependent idx="10">n't</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">use</governor>
+            <dependent idx="11">want</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">see</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">want</governor>
+            <dependent idx="13">see</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">see</governor>
+            <dependent idx="14">commercials</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">use</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">use</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="1">Do</governor>
+            <dependent idx="2">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">use</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">internet</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">use</governor>
+            <dependent idx="6">internet</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">want</governor>
+            <dependent idx="7">because</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">want</governor>
+            <dependent idx="8">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">want</governor>
+            <dependent idx="9">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="11">want</governor>
+            <dependent idx="10">n't</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">use</governor>
+            <dependent idx="11">want</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">see</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">want</governor>
+            <dependent idx="13">see</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">see</governor>
+            <dependent idx="14">commercials</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">use</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">use</governor>
+            <dependent idx="1">Do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="1">Do</governor>
+            <dependent idx="2">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">use</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">internet</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">use</governor>
+            <dependent idx="6">internet</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">want</governor>
+            <dependent idx="7">because</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">want</governor>
+            <dependent idx="8">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">want</governor>
+            <dependent idx="9">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="11">want</governor>
+            <dependent idx="10">n't</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="4">use</governor>
+            <dependent idx="11">want</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="13">see</governor>
+            <dependent idx="12">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="11">want</governor>
+            <dependent idx="13">see</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">see</governor>
+            <dependent idx="14">commercials</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>avoiding</word>
+            <lemma>avoid</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>commercials</word>
+            <lemma>commercial</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG avoiding) (NP (NNS commercials))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">avoiding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">avoiding</governor>
+            <dependent idx="2">commercials</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">avoiding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">avoiding</governor>
+            <dependent idx="2">commercials</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">avoiding</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">avoiding</governor>
+            <dependent idx="2">commercials</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

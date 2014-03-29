@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>transversely</word>
+            <lemma>transversely</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>mounted</word>
+            <lemma>mount</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="3">
+            <word>engine</word>
+            <lemma>engine</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Mini</word>
+            <lemma>Mini</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Cooper</word>
+            <lemma>Cooper</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Corvette</word>
+            <lemma>Corvette</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (ADVP (RB transversely)) (VBN mounted) (NP (NP (NN engine)) (PP (IN in) (NP (NNP Mini) (NNP Cooper) (NNP Corvette)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mounted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">mounted</governor>
+            <dependent idx="1">transversely</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">mounted</governor>
+            <dependent idx="3">engine</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">engine</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Corvette</governor>
+            <dependent idx="5">Mini</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Corvette</governor>
+            <dependent idx="6">Cooper</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="7">Corvette</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mounted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">mounted</governor>
+            <dependent idx="1">transversely</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">mounted</governor>
+            <dependent idx="3">engine</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Corvette</governor>
+            <dependent idx="5">Mini</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Corvette</governor>
+            <dependent idx="6">Cooper</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">engine</governor>
+            <dependent idx="7">Corvette</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mounted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">mounted</governor>
+            <dependent idx="1">transversely</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">mounted</governor>
+            <dependent idx="3">engine</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Corvette</governor>
+            <dependent idx="5">Mini</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Corvette</governor>
+            <dependent idx="6">Cooper</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">engine</governor>
+            <dependent idx="7">Corvette</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

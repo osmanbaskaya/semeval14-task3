@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>poem</word>
+            <lemma>poem</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>usually</word>
+            <lemma>usually</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>set</word>
+            <lemma>set</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>music</word>
+            <lemma>music</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>oratorio</word>
+            <lemma>oratorio</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (NN poem)) (VP (ADVP (RB usually)) (VBN set) (PP (TO to) (NP (NN music) (NN oratorio)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">set</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">poem</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">set</governor>
+            <dependent idx="2">poem</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">set</governor>
+            <dependent idx="3">usually</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">set</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">oratorio</governor>
+            <dependent idx="6">music</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">to</governor>
+            <dependent idx="7">oratorio</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">set</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">poem</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">set</governor>
+            <dependent idx="2">poem</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">set</governor>
+            <dependent idx="3">usually</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">oratorio</governor>
+            <dependent idx="6">music</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">set</governor>
+            <dependent idx="7">oratorio</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">set</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">poem</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">set</governor>
+            <dependent idx="2">poem</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">set</governor>
+            <dependent idx="3">usually</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">oratorio</governor>
+            <dependent idx="6">music</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">set</governor>
+            <dependent idx="7">oratorio</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

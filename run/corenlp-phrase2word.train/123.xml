@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>abject</word>
+            <lemma>abject</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>lesson</word>
+            <lemma>lesson</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>warning</word>
+            <lemma>warning</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ abject) (NN lesson) (NN warning)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">warning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">warning</governor>
+            <dependent idx="1">abject</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">warning</governor>
+            <dependent idx="2">lesson</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">warning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">warning</governor>
+            <dependent idx="1">abject</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">warning</governor>
+            <dependent idx="2">lesson</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">warning</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">warning</governor>
+            <dependent idx="1">abject</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">warning</governor>
+            <dependent idx="2">lesson</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

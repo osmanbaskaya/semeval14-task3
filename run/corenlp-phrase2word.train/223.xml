@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>`</word>
+            <lemma>`</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>``</POS>
+          </token>
+          <token id="3">
+            <word>Magatama</word>
+            <lemma>magatama</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>'</word>
+            <lemma>'</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>''</POS>
+          </token>
+          <token id="5">
+            <word>bridge</word>
+            <lemma>bridge</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Tamatsukuri</word>
+            <lemma>Tamatsukuri</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Onsen</word>
+            <lemma>Onsen</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>bridge</word>
+            <lemma>bridge</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT The) (`` `) (NN Magatama) ('' ') (NN bridge)) (PP (IN of) (NP (NNP Tamatsukuri) (NNP Onsen) (NN bridge))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">bridge</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">bridge</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">bridge</governor>
+            <dependent idx="3">Magatama</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">bridge</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bridge</governor>
+            <dependent idx="7">Tamatsukuri</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bridge</governor>
+            <dependent idx="8">Onsen</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="9">bridge</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">bridge</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">bridge</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">bridge</governor>
+            <dependent idx="3">Magatama</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bridge</governor>
+            <dependent idx="7">Tamatsukuri</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bridge</governor>
+            <dependent idx="8">Onsen</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">bridge</governor>
+            <dependent idx="9">bridge</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">bridge</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">bridge</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">bridge</governor>
+            <dependent idx="3">Magatama</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bridge</governor>
+            <dependent idx="7">Tamatsukuri</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">bridge</governor>
+            <dependent idx="8">Onsen</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">bridge</governor>
+            <dependent idx="9">bridge</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

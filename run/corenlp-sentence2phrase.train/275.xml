@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Budget</word>
+            <lemma>Budget</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>policy</word>
+            <lemma>policy</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>needs</word>
+            <lemma>need</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>instil</word>
+            <lemma>instil</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>public</word>
+            <lemma>public</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>confidence</word>
+            <lemma>confidence</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>European</word>
+            <lemma>european</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>policy</word>
+            <lemma>policy</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Budget) (NN policy)) (VP (VBZ needs) (S (VP (TO to) (VP (VB instil) (NP (JJ public) (NN confidence)) (PP (IN in) (NP (JJ European) (NN policy))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">needs</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">policy</governor>
+            <dependent idx="1">Budget</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">needs</governor>
+            <dependent idx="2">policy</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">instil</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">needs</governor>
+            <dependent idx="5">instil</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">confidence</governor>
+            <dependent idx="6">public</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">instil</governor>
+            <dependent idx="7">confidence</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">instil</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">policy</governor>
+            <dependent idx="9">European</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="10">policy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">needs</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">policy</governor>
+            <dependent idx="1">Budget</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">needs</governor>
+            <dependent idx="2">policy</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">instil</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">needs</governor>
+            <dependent idx="5">instil</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">confidence</governor>
+            <dependent idx="6">public</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">instil</governor>
+            <dependent idx="7">confidence</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">policy</governor>
+            <dependent idx="9">European</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">instil</governor>
+            <dependent idx="10">policy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">needs</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">policy</governor>
+            <dependent idx="1">Budget</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">needs</governor>
+            <dependent idx="2">policy</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">instil</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">needs</governor>
+            <dependent idx="5">instil</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">confidence</governor>
+            <dependent idx="6">public</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">instil</governor>
+            <dependent idx="7">confidence</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">policy</governor>
+            <dependent idx="9">European</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">instil</governor>
+            <dependent idx="10">policy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>public</word>
+            <lemma>public</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>confidence</word>
+            <lemma>confidence</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (JJ public) (NN confidence))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">confidence</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">confidence</governor>
+            <dependent idx="1">public</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">confidence</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">confidence</governor>
+            <dependent idx="1">public</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">confidence</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">confidence</governor>
+            <dependent idx="1">public</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

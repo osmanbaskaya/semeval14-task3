@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Robert</word>
+            <lemma>Robert</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Gordon</word>
+            <lemma>Gordon</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>Hospital</word>
+            <lemma>Hospital</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>Aberdeen</word>
+            <lemma>Aberdeen</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="8">
+            <word>now</word>
+            <lemma>now</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="9">
+            <word>Robert</word>
+            <lemma>Robert</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Gordon</word>
+            <lemma>Gordon</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="12">
+            <word>College</word>
+            <lemma>College</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="13">
+            <word>hospital</word>
+            <lemma>hospital</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Robert)) (NP (NP (NP (NNP Gordon) (POS 's)) (NNP Hospital)) (, ,) (NP (NP (NNP Aberdeen)) (, ,) (ADVP (RB now)) (NP (NP (NNP Robert) (NNP Gordon) (POS 's)) (NNP College) (NN hospital)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Robert</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">Hospital</governor>
+            <dependent idx="2">Gordon</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">Gordon</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Robert</governor>
+            <dependent idx="4">Hospital</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Hospital</governor>
+            <dependent idx="6">Aberdeen</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">Aberdeen</governor>
+            <dependent idx="8">now</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Gordon</governor>
+            <dependent idx="9">Robert</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="13">hospital</governor>
+            <dependent idx="10">Gordon</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="10">Gordon</governor>
+            <dependent idx="11">'s</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">hospital</governor>
+            <dependent idx="12">College</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">Aberdeen</governor>
+            <dependent idx="13">hospital</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Robert</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">Hospital</governor>
+            <dependent idx="2">Gordon</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Robert</governor>
+            <dependent idx="4">Hospital</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Hospital</governor>
+            <dependent idx="6">Aberdeen</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">Aberdeen</governor>
+            <dependent idx="8">now</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Gordon</governor>
+            <dependent idx="9">Robert</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="13">hospital</governor>
+            <dependent idx="10">Gordon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">hospital</governor>
+            <dependent idx="12">College</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">Aberdeen</governor>
+            <dependent idx="13">hospital</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Robert</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">Hospital</governor>
+            <dependent idx="2">Gordon</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Robert</governor>
+            <dependent idx="4">Hospital</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">Hospital</governor>
+            <dependent idx="6">Aberdeen</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">Aberdeen</governor>
+            <dependent idx="8">now</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Gordon</governor>
+            <dependent idx="9">Robert</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="13">hospital</governor>
+            <dependent idx="10">Gordon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">hospital</governor>
+            <dependent idx="12">College</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="6">Aberdeen</governor>
+            <dependent idx="13">hospital</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

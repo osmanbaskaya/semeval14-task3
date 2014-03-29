@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Swedes</word>
+            <lemma>swede</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>celebrated</word>
+            <lemma>celebrate</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>their</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="7">
+            <word>National</word>
+            <lemma>national</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>day</word>
+            <lemma>day</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>much</word>
+            <lemma>much</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="13">
+            <word>compared</word>
+            <lemma>compare</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="14">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="15">
+            <word>e.g.</word>
+            <lemma>e.g.</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="16">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="17">
+            <word>Norwegians</word>
+            <lemma>Norwegians</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="18">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>93</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNS Swedes)) (VP (VBP have) (RB n't) (VP (VBN celebrated) (NP (PRP$ their) (JJ National) (NN day)) (ADVP (RB much) (IN at) (DT all)) (, ,) (PP (VBN compared) (PP (TO to) (NP (NP (FW e.g.)) (NP (DT the) (NNPS Norwegians))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">celebrated</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Swedes</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="2">Swedes</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="4">n't</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">day</governor>
+            <dependent idx="6">their</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">day</governor>
+            <dependent idx="7">National</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="8">day</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">at</governor>
+            <dependent idx="9">much</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="10">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">at</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="13">compared</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="13">compared</governor>
+            <dependent idx="14">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="14">to</governor>
+            <dependent idx="15">e.g.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">Norwegians</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">e.g.</governor>
+            <dependent idx="17">Norwegians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">celebrated</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Swedes</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="2">Swedes</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="4">n't</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">day</governor>
+            <dependent idx="6">their</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">day</governor>
+            <dependent idx="7">National</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="8">day</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">at</governor>
+            <dependent idx="9">much</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="10">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">at</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="prepc_compared_to">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="14">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="15">e.g.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">Norwegians</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">e.g.</governor>
+            <dependent idx="17">Norwegians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">celebrated</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">Swedes</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="2">Swedes</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="4">n't</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">day</governor>
+            <dependent idx="6">their</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">day</governor>
+            <dependent idx="7">National</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="8">day</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">at</governor>
+            <dependent idx="9">much</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="10">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">at</governor>
+            <dependent idx="11">all</dependent>
+          </dep>
+          <dep type="prepc_compared_to">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="14">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">celebrated</governor>
+            <dependent idx="15">e.g.</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="17">Norwegians</governor>
+            <dependent idx="16">the</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="15">e.g.</governor>
+            <dependent idx="17">Norwegians</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>low</word>
+            <lemma>low</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>Swedish</word>
+            <lemma>swedish</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>national</word>
+            <lemma>national</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>pride</word>
+            <lemma>pride</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>121</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (JJ low)) (NP (JJ Swedish) (JJ national) (NN pride)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">pride</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">pride</governor>
+            <dependent idx="1">low</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pride</governor>
+            <dependent idx="2">Swedish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pride</governor>
+            <dependent idx="3">national</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">pride</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">pride</governor>
+            <dependent idx="1">low</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pride</governor>
+            <dependent idx="2">Swedish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pride</governor>
+            <dependent idx="3">national</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">pride</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">pride</governor>
+            <dependent idx="1">low</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pride</governor>
+            <dependent idx="2">Swedish</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">pride</governor>
+            <dependent idx="3">national</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

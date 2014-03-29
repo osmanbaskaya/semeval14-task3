@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>dead</word>
+            <lemma>dead</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>world</word>
+            <lemma>world</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>resting</word>
+            <lemma>rest</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ dead) (PP (TO to) (NP (NP (DT the) (NN world)) (VP (VBG resting)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">dead</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">dead</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">world</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="4">world</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">world</governor>
+            <dependent idx="5">resting</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">dead</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">world</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">dead</governor>
+            <dependent idx="4">world</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">world</governor>
+            <dependent idx="5">resting</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">dead</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">world</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">dead</governor>
+            <dependent idx="4">world</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">world</governor>
+            <dependent idx="5">resting</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

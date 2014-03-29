@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Seneca</word>
+            <lemma>seneca</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="2">
+            <word>creek/Buffalo</word>
+            <lemma>creek/buffalo</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="3">
+            <word>creek</word>
+            <lemma>creek</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="6">
+            <word>flows</word>
+            <lemma>flow</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>through</word>
+            <lemma>through</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>West</word>
+            <lemma>West</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>Seneca</word>
+            <lemma>Seneca</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>water</word>
+            <lemma>water</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (FW Seneca) (FW creek/Buffalo) (NN creek)) (PP (IN as) (NP (PRP it)))) (VP (VBZ flows) (PP (IN through) (NP (NNP West) (NNP Seneca) (NN water)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">flows</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">creek</governor>
+            <dependent idx="1">Seneca</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">creek</governor>
+            <dependent idx="2">creek/Buffalo</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">flows</governor>
+            <dependent idx="3">creek</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">creek</governor>
+            <dependent idx="4">as</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">as</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">flows</governor>
+            <dependent idx="7">through</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">water</governor>
+            <dependent idx="8">West</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">water</governor>
+            <dependent idx="9">Seneca</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">through</governor>
+            <dependent idx="10">water</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">flows</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">creek</governor>
+            <dependent idx="1">Seneca</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">creek</governor>
+            <dependent idx="2">creek/Buffalo</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">flows</governor>
+            <dependent idx="3">creek</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="3">creek</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">water</governor>
+            <dependent idx="8">West</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">water</governor>
+            <dependent idx="9">Seneca</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="6">flows</governor>
+            <dependent idx="10">water</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">flows</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">creek</governor>
+            <dependent idx="1">Seneca</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">creek</governor>
+            <dependent idx="2">creek/Buffalo</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">flows</governor>
+            <dependent idx="3">creek</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="3">creek</governor>
+            <dependent idx="5">it</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">water</governor>
+            <dependent idx="8">West</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">water</governor>
+            <dependent idx="9">Seneca</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="6">flows</governor>
+            <dependent idx="10">water</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

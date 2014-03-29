@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Why</word>
+            <lemma>why</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>does</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="3">
+            <word>Verizon</word>
+            <lemma>Verizon</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>DSL</word>
+            <lemma>dsl</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>offer</word>
+            <lemma>offer</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>promotional</word>
+            <lemma>promotional</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>discounts</word>
+            <lemma>discount</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="10">
+            <word>current</word>
+            <lemma>current</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="11">
+            <word>customers</word>
+            <lemma>customer</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB Why)) (SQ (VBZ does) (NP (NNP Verizon) (NN DSL)) (VP (RB not) (VB offer) (NP (JJ promotional) (NNS discounts)) (PP (TO to) (NP (JJ current) (NNS customers))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">offer</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">offer</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">offer</governor>
+            <dependent idx="2">does</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">DSL</governor>
+            <dependent idx="3">Verizon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">offer</governor>
+            <dependent idx="4">DSL</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="6">offer</governor>
+            <dependent idx="5">not</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">discounts</governor>
+            <dependent idx="7">promotional</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">offer</governor>
+            <dependent idx="8">discounts</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">offer</governor>
+            <dependent idx="9">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">customers</governor>
+            <dependent idx="10">current</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">to</governor>
+            <dependent idx="11">customers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">offer</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">offer</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">offer</governor>
+            <dependent idx="2">does</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">DSL</governor>
+            <dependent idx="3">Verizon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">offer</governor>
+            <dependent idx="4">DSL</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="6">offer</governor>
+            <dependent idx="5">not</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">discounts</governor>
+            <dependent idx="7">promotional</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">offer</governor>
+            <dependent idx="8">discounts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">customers</governor>
+            <dependent idx="10">current</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">offer</governor>
+            <dependent idx="11">customers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">offer</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="6">offer</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">offer</governor>
+            <dependent idx="2">does</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">DSL</governor>
+            <dependent idx="3">Verizon</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">offer</governor>
+            <dependent idx="4">DSL</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="6">offer</governor>
+            <dependent idx="5">not</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">discounts</governor>
+            <dependent idx="7">promotional</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">offer</governor>
+            <dependent idx="8">discounts</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">customers</governor>
+            <dependent idx="10">current</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">offer</governor>
+            <dependent idx="11">customers</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Verizon</word>
+            <lemma>Verizon</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>promotional</word>
+            <lemma>promotional</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>discounts</word>
+            <lemma>discount</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Verizon)) (NP (JJ promotional) (NNS discounts)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Verizon</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discounts</governor>
+            <dependent idx="2">promotional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Verizon</governor>
+            <dependent idx="3">discounts</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Verizon</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discounts</governor>
+            <dependent idx="2">promotional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Verizon</governor>
+            <dependent idx="3">discounts</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Verizon</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">discounts</governor>
+            <dependent idx="2">promotional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Verizon</governor>
+            <dependent idx="3">discounts</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

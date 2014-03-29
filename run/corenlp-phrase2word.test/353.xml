@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Dan</word>
+            <lemma>Dan</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Potash</word>
+            <lemma>Potash</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>talks</word>
+            <lemma>talk</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Chris</word>
+            <lemma>Chris</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Kunitz</word>
+            <lemma>Kunitz</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>interview</word>
+            <lemma>interview</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Dan) (NNP Potash)) (VP (VBZ talks) (PP (IN with) (NP (NNP Chris) (NNP Kunitz) (NN interview)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">talks</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Potash</governor>
+            <dependent idx="1">Dan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">talks</governor>
+            <dependent idx="2">Potash</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">talks</governor>
+            <dependent idx="4">with</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">interview</governor>
+            <dependent idx="5">Chris</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">interview</governor>
+            <dependent idx="6">Kunitz</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">with</governor>
+            <dependent idx="7">interview</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">talks</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Potash</governor>
+            <dependent idx="1">Dan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">talks</governor>
+            <dependent idx="2">Potash</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">interview</governor>
+            <dependent idx="5">Chris</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">interview</governor>
+            <dependent idx="6">Kunitz</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">talks</governor>
+            <dependent idx="7">interview</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">talks</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Potash</governor>
+            <dependent idx="1">Dan</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">talks</governor>
+            <dependent idx="2">Potash</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">interview</governor>
+            <dependent idx="5">Chris</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">interview</governor>
+            <dependent idx="6">Kunitz</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="3">talks</governor>
+            <dependent idx="7">interview</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>Italian</word>
+            <lemma>italian</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>manufacturer</word>
+            <lemma>manufacturer</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>sports</word>
+            <lemma>sport</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>cars</word>
+            <lemma>car</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>BMW</word>
+            <lemma>BMW</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT an) (JJ Italian) (NN manufacturer)) (PP (IN of) (NP (NNS sports) (NNS cars)))) (NP (NNP BMW)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">manufacturer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="2">Italian</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cars</governor>
+            <dependent idx="5">sports</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">cars</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="7">BMW</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">manufacturer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="2">Italian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cars</governor>
+            <dependent idx="5">sports</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="6">cars</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="7">BMW</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">manufacturer</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="2">Italian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">cars</governor>
+            <dependent idx="5">sports</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="6">cars</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="3">manufacturer</governor>
+            <dependent idx="7">BMW</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

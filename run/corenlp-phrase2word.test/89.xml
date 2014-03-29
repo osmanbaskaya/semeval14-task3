@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>basket</word>
+            <lemma>basket</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>case</word>
+            <lemma>case</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>hopeless</word>
+            <lemma>hopeless</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN basket) (NN case)) (ADJP (JJ hopeless))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">case</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">case</governor>
+            <dependent idx="1">basket</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">case</governor>
+            <dependent idx="3">hopeless</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">case</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">case</governor>
+            <dependent idx="1">basket</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">case</governor>
+            <dependent idx="3">hopeless</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">case</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">case</governor>
+            <dependent idx="1">basket</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">case</governor>
+            <dependent idx="3">hopeless</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

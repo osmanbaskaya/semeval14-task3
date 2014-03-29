@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Western</word>
+            <lemma>western</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>Carpathians</word>
+            <lemma>Carpathians</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Poland</word>
+            <lemma>Poland</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Polish</word>
+            <lemma>Polish</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Carpathians</word>
+            <lemma>Carpathians</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Western) (NNPS Carpathians)) (PP (IN in) (NP (NNP Poland) (NNP Polish) (NNPS Carpathians))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Carpathians</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Carpathians</governor>
+            <dependent idx="1">Western</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Carpathians</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Carpathians</governor>
+            <dependent idx="4">Poland</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Carpathians</governor>
+            <dependent idx="5">Polish</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="6">Carpathians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Carpathians</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Carpathians</governor>
+            <dependent idx="1">Western</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Carpathians</governor>
+            <dependent idx="4">Poland</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Carpathians</governor>
+            <dependent idx="5">Polish</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Carpathians</governor>
+            <dependent idx="6">Carpathians</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Carpathians</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Carpathians</governor>
+            <dependent idx="1">Western</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Carpathians</governor>
+            <dependent idx="4">Poland</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Carpathians</governor>
+            <dependent idx="5">Polish</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Carpathians</governor>
+            <dependent idx="6">Carpathians</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>series</word>
+            <lemma>series</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>arsons</word>
+            <lemma>arson</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>against</word>
+            <lemma>against</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>commercial</word>
+            <lemma>commercial</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>entities</word>
+            <lemma>entity</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>ransom</word>
+            <lemma>ransom</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT a) (NN series)) (PP (IN of) (NP (NP (NNS arsons)) (PP (IN against) (NP (JJ commercial) (NNS entities)))))) (NP (NN ransom)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">series</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">series</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">series</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">arsons</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">arsons</governor>
+            <dependent idx="5">against</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">entities</governor>
+            <dependent idx="6">commercial</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">against</governor>
+            <dependent idx="7">entities</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">series</governor>
+            <dependent idx="8">ransom</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">series</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">series</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">series</governor>
+            <dependent idx="4">arsons</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">entities</governor>
+            <dependent idx="6">commercial</dependent>
+          </dep>
+          <dep type="prep_against">
+            <governor idx="4">arsons</governor>
+            <dependent idx="7">entities</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">series</governor>
+            <dependent idx="8">ransom</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">series</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">series</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">series</governor>
+            <dependent idx="4">arsons</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">entities</governor>
+            <dependent idx="6">commercial</dependent>
+          </dep>
+          <dep type="prep_against">
+            <governor idx="4">arsons</governor>
+            <dependent idx="7">entities</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">series</governor>
+            <dependent idx="8">ransom</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

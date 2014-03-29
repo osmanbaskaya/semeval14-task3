@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>terrorism</word>
+            <lemma>terrorism</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>intentional</word>
+            <lemma>intentional</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>release</word>
+            <lemma>release</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>dissemination</word>
+            <lemma>dissemination</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>biological</word>
+            <lemma>biological</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>agents</word>
+            <lemma>agent</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>biowarfare</word>
+            <lemma>biowarfare</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN terrorism)) (PP (IN by) (NP (NP (JJ intentional) (NN release) (CC or) (NN dissemination)) (PP (IN of) (NP (JJ biological) (NNS agents)))))) (VP (VBP biowarfare)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">biowarfare</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">biowarfare</governor>
+            <dependent idx="1">terrorism</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">terrorism</governor>
+            <dependent idx="2">by</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">release</governor>
+            <dependent idx="3">intentional</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">by</governor>
+            <dependent idx="4">release</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">release</governor>
+            <dependent idx="5">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">release</governor>
+            <dependent idx="6">dissemination</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">release</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">agents</governor>
+            <dependent idx="8">biological</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">of</governor>
+            <dependent idx="9">agents</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">biowarfare</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">biowarfare</governor>
+            <dependent idx="1">terrorism</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">release</governor>
+            <dependent idx="3">intentional</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="1">terrorism</governor>
+            <dependent idx="4">release</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="4">release</governor>
+            <dependent idx="6">dissemination</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">agents</governor>
+            <dependent idx="8">biological</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">release</governor>
+            <dependent idx="9">agents</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">biowarfare</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">biowarfare</governor>
+            <dependent idx="1">terrorism</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">release</governor>
+            <dependent idx="3">intentional</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="1">terrorism</governor>
+            <dependent idx="4">release</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="1">terrorism</governor>
+            <dependent idx="6">dissemination</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="4">release</governor>
+            <dependent idx="6">dissemination</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">agents</governor>
+            <dependent idx="8">biological</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">release</governor>
+            <dependent idx="9">agents</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

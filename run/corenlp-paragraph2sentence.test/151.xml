@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>add</word>
+            <lemma>add</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>CNN</word>
+            <lemma>CNN</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Money</word>
+            <lemma>Money</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>RSS</word>
+            <lemma>RSS</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="9">
+            <word>Internet</word>
+            <lemma>Internet</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Explorer</word>
+            <lemma>Explorer</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>8</word>
+            <lemma>8</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB How)) (SQ (VBP do) (NP (PRP I)) (VP (VB add) (NP (NP (NNP CNN) (NNP Money) (NNP RSS)) (PP (TO to) (NP (NNP Internet) (NNP Explorer) (CD 8)))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">add</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">add</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">add</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">add</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">RSS</governor>
+            <dependent idx="5">CNN</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">RSS</governor>
+            <dependent idx="6">Money</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">add</governor>
+            <dependent idx="7">RSS</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">RSS</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Explorer</governor>
+            <dependent idx="9">Internet</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">to</governor>
+            <dependent idx="10">Explorer</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">Explorer</governor>
+            <dependent idx="11">8</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">add</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">add</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">add</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">add</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">RSS</governor>
+            <dependent idx="5">CNN</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">RSS</governor>
+            <dependent idx="6">Money</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">add</governor>
+            <dependent idx="7">RSS</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Explorer</governor>
+            <dependent idx="9">Internet</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">RSS</governor>
+            <dependent idx="10">Explorer</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">Explorer</governor>
+            <dependent idx="11">8</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">add</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">add</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">add</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">add</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">RSS</governor>
+            <dependent idx="5">CNN</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">RSS</governor>
+            <dependent idx="6">Money</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">add</governor>
+            <dependent idx="7">RSS</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Explorer</governor>
+            <dependent idx="9">Internet</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="7">RSS</governor>
+            <dependent idx="10">Explorer</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">Explorer</governor>
+            <dependent idx="11">8</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>RSS</word>
+            <lemma>rss</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>feeds</word>
+            <lemma>feed</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="3">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>IE</word>
+            <lemma>ie</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>8</word>
+            <lemma>8</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN RSS)) (VP (VBZ feeds) (PP (IN on) (NP (JJ IE) (CD 8)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">feeds</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">feeds</governor>
+            <dependent idx="1">RSS</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">feeds</governor>
+            <dependent idx="3">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">8</governor>
+            <dependent idx="4">IE</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">on</governor>
+            <dependent idx="5">8</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">feeds</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">feeds</governor>
+            <dependent idx="1">RSS</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">8</governor>
+            <dependent idx="4">IE</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">feeds</governor>
+            <dependent idx="5">8</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">feeds</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">feeds</governor>
+            <dependent idx="1">RSS</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">8</governor>
+            <dependent idx="4">IE</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">feeds</governor>
+            <dependent idx="5">8</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

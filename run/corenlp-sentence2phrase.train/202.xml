@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>When</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>lockerz</word>
+            <lemma>lockerz</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>Launch</word>
+            <lemma>launch</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>come</word>
+            <lemma>come</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>what</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="8">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="9">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="10">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="11">
+            <word>like</word>
+            <lemma>like</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (SBARQ (WHADVP (WRB When)) (SQ (VP (MD will) (VP (VB lockerz) (S (VP (VB Launch) (VP (VBN come)))))))) (CC and) (SBARQ (WHNP (WP what)) (SQ (MD will) (NP (PRP it)) (VP (VB be) (PP (IN like)))) (. ?)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">lockerz</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="2">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="4">Launch</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">Launch</governor>
+            <dependent idx="5">come</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">be</governor>
+            <dependent idx="7">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">be</governor>
+            <dependent idx="8">will</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">be</governor>
+            <dependent idx="9">it</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="10">be</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">be</governor>
+            <dependent idx="11">like</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">lockerz</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="2">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="4">Launch</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">Launch</governor>
+            <dependent idx="5">come</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">be</governor>
+            <dependent idx="7">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">be</governor>
+            <dependent idx="8">will</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">be</governor>
+            <dependent idx="9">it</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="10">be</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">be</governor>
+            <dependent idx="11">like</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">lockerz</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="1">When</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="2">will</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="4">Launch</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">Launch</governor>
+            <dependent idx="5">come</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="10">be</governor>
+            <dependent idx="7">what</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="10">be</governor>
+            <dependent idx="8">will</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">be</governor>
+            <dependent idx="9">it</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="3">lockerz</governor>
+            <dependent idx="10">be</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">be</governor>
+            <dependent idx="11">like</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>prizes</word>
+            <lemma>prize</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>back</word>
+            <lemma>back</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>stock</word>
+            <lemma>stock</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NNS prizes)) (ADVP (RB back))) (PP (IN in) (NP (NN stock))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">prizes</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">prizes</governor>
+            <dependent idx="2">back</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">prizes</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="4">stock</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">prizes</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">prizes</governor>
+            <dependent idx="2">back</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">prizes</governor>
+            <dependent idx="4">stock</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">prizes</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">prizes</governor>
+            <dependent idx="2">back</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">prizes</governor>
+            <dependent idx="4">stock</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

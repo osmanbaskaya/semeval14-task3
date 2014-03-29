@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>systematic</word>
+            <lemma>systematic</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>assessment</word>
+            <lemma>assessment</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>pop</word>
+            <lemma>pop</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>quiz</word>
+            <lemma>quiz</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ systematic) (NN assessment)) (NP (NN pop) (NN quiz)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">assessment</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">assessment</governor>
+            <dependent idx="1">systematic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">quiz</governor>
+            <dependent idx="3">pop</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">assessment</governor>
+            <dependent idx="4">quiz</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">assessment</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">assessment</governor>
+            <dependent idx="1">systematic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">quiz</governor>
+            <dependent idx="3">pop</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">assessment</governor>
+            <dependent idx="4">quiz</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">assessment</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">assessment</governor>
+            <dependent idx="1">systematic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">quiz</governor>
+            <dependent idx="3">pop</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">assessment</governor>
+            <dependent idx="4">quiz</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

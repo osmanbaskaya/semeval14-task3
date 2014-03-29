@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Apple</word>
+            <lemma>Apple</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>tax</word>
+            <lemma>tax</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>cost</word>
+            <lemma>cost</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Apple)) (NP (NN tax) (NN cost)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Apple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cost</governor>
+            <dependent idx="2">tax</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Apple</governor>
+            <dependent idx="3">cost</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Apple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cost</governor>
+            <dependent idx="2">tax</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Apple</governor>
+            <dependent idx="3">cost</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Apple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cost</governor>
+            <dependent idx="2">tax</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Apple</governor>
+            <dependent idx="3">cost</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Head</word>
+            <lemma>head</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>port</word>
+            <lemma>port</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>large</word>
+            <lemma>large</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>waterfront</word>
+            <lemma>waterfront</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>Plaza</word>
+            <lemma>Plaza</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>del</word>
+            <lemma>del</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Ayuntamiento</word>
+            <lemma>Ayuntamiento</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Head) (PP (IN for) (NP (NP (DT the) (NN port)) (CC and) (NP (NP (DT the) (JJ large) (NN waterfront)) (NP (NNP Plaza) (NNP del) (NNP Ayuntamiento)))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Head</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Head</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">port</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">for</governor>
+            <dependent idx="4">port</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">port</governor>
+            <dependent idx="5">and</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="7">large</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">port</governor>
+            <dependent idx="8">waterfront</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Ayuntamiento</governor>
+            <dependent idx="9">Plaza</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Ayuntamiento</governor>
+            <dependent idx="10">del</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="11">Ayuntamiento</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Head</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">port</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">Head</governor>
+            <dependent idx="4">port</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="7">large</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">port</governor>
+            <dependent idx="8">waterfront</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Ayuntamiento</governor>
+            <dependent idx="9">Plaza</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Ayuntamiento</governor>
+            <dependent idx="10">del</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="11">Ayuntamiento</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Head</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">port</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">Head</governor>
+            <dependent idx="4">port</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="7">large</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">Head</governor>
+            <dependent idx="8">waterfront</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">port</governor>
+            <dependent idx="8">waterfront</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Ayuntamiento</governor>
+            <dependent idx="9">Plaza</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Ayuntamiento</governor>
+            <dependent idx="10">del</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="8">waterfront</governor>
+            <dependent idx="11">Ayuntamiento</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>less</word>
+            <lemma>less</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="2">
+            <word>built</word>
+            <lemma>build</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="3">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="5">
+            <word>frenetic</word>
+            <lemma>frenetic</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>than</word>
+            <lemma>than</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Torremolinos</word>
+            <lemma>Torremolinos</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (UCP (VP (ADVP (JJR less)) (VBN built) (ADVP (RB up))) (CC and) (ADJP (JJ frenetic) (PP (IN than) (NP (NNP Torremolinos)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">built</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">built</governor>
+            <dependent idx="1">less</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">built</governor>
+            <dependent idx="3">up</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">built</governor>
+            <dependent idx="4">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">built</governor>
+            <dependent idx="5">frenetic</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">frenetic</governor>
+            <dependent idx="6">than</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">than</governor>
+            <dependent idx="7">Torremolinos</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">built</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">built</governor>
+            <dependent idx="1">less</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">built</governor>
+            <dependent idx="3">up</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">built</governor>
+            <dependent idx="5">frenetic</dependent>
+          </dep>
+          <dep type="prep_than">
+            <governor idx="5">frenetic</governor>
+            <dependent idx="7">Torremolinos</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">built</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">built</governor>
+            <dependent idx="1">less</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">built</governor>
+            <dependent idx="3">up</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">built</governor>
+            <dependent idx="5">frenetic</dependent>
+          </dep>
+          <dep type="prep_than">
+            <governor idx="5">frenetic</governor>
+            <dependent idx="7">Torremolinos</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

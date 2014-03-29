@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>put</word>
+            <lemma>put</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>cat</word>
+            <lemma>cat</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>among</word>
+            <lemma>among</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>pigeons</word>
+            <lemma>pigeon</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>affect</word>
+            <lemma>affect</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB put) (SBAR (S (NP (NP (DT the) (NN cat)) (PP (IN among) (NP (DT the) (NNS pigeons)))) (VP (VBP affect))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">put</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cat</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">affect</governor>
+            <dependent idx="3">cat</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">cat</governor>
+            <dependent idx="4">among</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">pigeons</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">among</governor>
+            <dependent idx="6">pigeons</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">put</governor>
+            <dependent idx="7">affect</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">put</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cat</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">affect</governor>
+            <dependent idx="3">cat</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">pigeons</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_among">
+            <governor idx="3">cat</governor>
+            <dependent idx="6">pigeons</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">put</governor>
+            <dependent idx="7">affect</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">put</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cat</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">affect</governor>
+            <dependent idx="3">cat</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">pigeons</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="prep_among">
+            <governor idx="3">cat</governor>
+            <dependent idx="6">pigeons</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">put</governor>
+            <dependent idx="7">affect</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

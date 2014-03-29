@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>based</word>
+            <lemma>base</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>sport</word>
+            <lemma>sport</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>table</word>
+            <lemma>table</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>tennis</word>
+            <lemma>tennis</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>subject</word>
+            <lemma>subject</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN based) (PP (IN on) (NP (NP (DT the) (NN sport)) (PP (IN of) (NP (NN table) (NN tennis) (NN subject))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">based</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">based</governor>
+            <dependent idx="2">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">sport</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">on</governor>
+            <dependent idx="4">sport</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">sport</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">subject</governor>
+            <dependent idx="6">table</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">subject</governor>
+            <dependent idx="7">tennis</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="8">subject</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">based</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">sport</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">based</governor>
+            <dependent idx="4">sport</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">subject</governor>
+            <dependent idx="6">table</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">subject</governor>
+            <dependent idx="7">tennis</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">sport</governor>
+            <dependent idx="8">subject</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">based</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">sport</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">based</governor>
+            <dependent idx="4">sport</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">subject</governor>
+            <dependent idx="6">table</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">subject</governor>
+            <dependent idx="7">tennis</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">sport</governor>
+            <dependent idx="8">subject</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

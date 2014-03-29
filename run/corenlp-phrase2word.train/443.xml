@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>interstellar</word>
+            <lemma>interstellar</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>cloud</word>
+            <lemma>cloud</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>dust</word>
+            <lemma>dust</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>statute</word>
+            <lemma>statute</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT an) (NN interstellar)) (NP (NP (NN cloud)) (PP (IN of) (NP (NN dust) (NN statute)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">interstellar</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">interstellar</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">interstellar</governor>
+            <dependent idx="3">cloud</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">cloud</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">statute</governor>
+            <dependent idx="5">dust</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">statute</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">interstellar</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">interstellar</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">interstellar</governor>
+            <dependent idx="3">cloud</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">statute</governor>
+            <dependent idx="5">dust</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">cloud</governor>
+            <dependent idx="6">statute</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">interstellar</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">interstellar</governor>
+            <dependent idx="1">an</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">interstellar</governor>
+            <dependent idx="3">cloud</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">statute</governor>
+            <dependent idx="5">dust</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">cloud</governor>
+            <dependent idx="6">statute</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

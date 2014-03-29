@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>International</word>
+            <lemma>International</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Atomic</word>
+            <lemma>atomic</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>Energy</word>
+            <lemma>Energy</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>Agency</word>
+            <lemma>Agency</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>nuclear</word>
+            <lemma>nuclear</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP International)) (NP (JJ Atomic) (NNP Energy) (NNP Agency)) (NP (JJ nuclear)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Agency</governor>
+            <dependent idx="2">Atomic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Agency</governor>
+            <dependent idx="3">Energy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">International</governor>
+            <dependent idx="4">Agency</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">International</governor>
+            <dependent idx="5">nuclear</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Agency</governor>
+            <dependent idx="2">Atomic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Agency</governor>
+            <dependent idx="3">Energy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">International</governor>
+            <dependent idx="4">Agency</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">International</governor>
+            <dependent idx="5">nuclear</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">International</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">Agency</governor>
+            <dependent idx="2">Atomic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">Agency</governor>
+            <dependent idx="3">Energy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">International</governor>
+            <dependent idx="4">Agency</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">International</governor>
+            <dependent idx="5">nuclear</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

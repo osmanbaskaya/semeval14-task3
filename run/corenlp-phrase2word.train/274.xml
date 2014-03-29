@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>1907</word>
+            <lemma>1907</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>poster</word>
+            <lemma>poster</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>Bullfrog</word>
+            <lemma>Bullfrog</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Mine</word>
+            <lemma>Mine</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>Rhyolite</word>
+            <lemma>Rhyolite</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="11">
+            <word>Nevada</word>
+            <lemma>Nevada</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>poster</word>
+            <lemma>poster</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT A) (CD 1907) (NN poster)) (PP (IN of) (NP (NP (DT the) (NNP Bullfrog) (NNP Mine)) (PP (IN at) (NP (NNP Rhyolite) (, ,) (NNP Nevada)))))) (NP (NN poster)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">poster</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">poster</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">poster</governor>
+            <dependent idx="2">1907</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">poster</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Mine</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Mine</governor>
+            <dependent idx="6">Bullfrog</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="7">Mine</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">Mine</governor>
+            <dependent idx="8">at</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Nevada</governor>
+            <dependent idx="9">Rhyolite</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">at</governor>
+            <dependent idx="11">Nevada</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">poster</governor>
+            <dependent idx="12">poster</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">poster</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">poster</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">poster</governor>
+            <dependent idx="2">1907</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Mine</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Mine</governor>
+            <dependent idx="6">Bullfrog</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">poster</governor>
+            <dependent idx="7">Mine</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Nevada</governor>
+            <dependent idx="9">Rhyolite</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="7">Mine</governor>
+            <dependent idx="11">Nevada</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">poster</governor>
+            <dependent idx="12">poster</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">poster</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">poster</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">poster</governor>
+            <dependent idx="2">1907</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Mine</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Mine</governor>
+            <dependent idx="6">Bullfrog</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">poster</governor>
+            <dependent idx="7">Mine</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Nevada</governor>
+            <dependent idx="9">Rhyolite</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="7">Mine</governor>
+            <dependent idx="11">Nevada</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">poster</governor>
+            <dependent idx="12">poster</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

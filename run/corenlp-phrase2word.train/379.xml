@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>woman</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>who</word>
+            <lemma>who</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="4">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="5">
+            <word>romantically</word>
+            <lemma>romantically</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="7">
+            <word>sexually</word>
+            <lemma>sexually</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="8">
+            <word>attracted</word>
+            <lemma>attract</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="9">
+            <word>only</word>
+            <lemma>only</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="11">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>women</word>
+            <lemma>woman</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="13">
+            <word>marriage</word>
+            <lemma>marriage</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (NN woman)) (SBAR (WHNP (WP who)) (S (VP (VP (VBZ is) (ADVP (RB romantically))) (CC and) (ADVP (RB sexually)) (VP (VBD attracted) (ADVP (RB only)) (PP (TO to) (NP (JJ other) (NNS women) (NN marriage)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">woman</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">woman</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">is</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">woman</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">is</governor>
+            <dependent idx="5">romantically</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="4">is</governor>
+            <dependent idx="6">and</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">is</governor>
+            <dependent idx="7">sexually</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="4">is</governor>
+            <dependent idx="8">attracted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">attracted</governor>
+            <dependent idx="9">only</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">attracted</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">marriage</governor>
+            <dependent idx="11">other</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">marriage</governor>
+            <dependent idx="12">women</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">to</governor>
+            <dependent idx="13">marriage</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">woman</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">woman</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">is</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">woman</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">is</governor>
+            <dependent idx="5">romantically</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">is</governor>
+            <dependent idx="7">sexually</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">is</governor>
+            <dependent idx="8">attracted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">attracted</governor>
+            <dependent idx="9">only</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">marriage</governor>
+            <dependent idx="11">other</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">marriage</governor>
+            <dependent idx="12">women</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="8">attracted</governor>
+            <dependent idx="13">marriage</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">woman</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">woman</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">is</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">attracted</governor>
+            <dependent idx="3">who</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">woman</governor>
+            <dependent idx="4">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">is</governor>
+            <dependent idx="5">romantically</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">is</governor>
+            <dependent idx="7">sexually</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">woman</governor>
+            <dependent idx="8">attracted</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="4">is</governor>
+            <dependent idx="8">attracted</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">attracted</governor>
+            <dependent idx="9">only</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">marriage</governor>
+            <dependent idx="11">other</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="13">marriage</governor>
+            <dependent idx="12">women</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="8">attracted</governor>
+            <dependent idx="13">marriage</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

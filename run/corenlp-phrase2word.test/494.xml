@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>tax</word>
+            <lemma>tax</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>money</word>
+            <lemma>money</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>used</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>politicians</word>
+            <lemma>politician</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>streaming</word>
+            <lemma>streaming</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN tax) (NN money)) (VP (VBN used) (PP (IN for) (NP (NNS politicians) (NN streaming)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">money</governor>
+            <dependent idx="1">tax</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">used</governor>
+            <dependent idx="2">money</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">used</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">streaming</governor>
+            <dependent idx="5">politicians</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">for</governor>
+            <dependent idx="6">streaming</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">money</governor>
+            <dependent idx="1">tax</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">used</governor>
+            <dependent idx="2">money</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">streaming</governor>
+            <dependent idx="5">politicians</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">used</governor>
+            <dependent idx="6">streaming</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">money</governor>
+            <dependent idx="1">tax</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">used</governor>
+            <dependent idx="2">money</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">streaming</governor>
+            <dependent idx="5">politicians</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="3">used</governor>
+            <dependent idx="6">streaming</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Why</word>
+            <lemma>why</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="6">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>six</word>
+            <lemma>six</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="8">
+            <word>month</word>
+            <lemma>month</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>premium</word>
+            <lemma>premium</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>membership</word>
+            <lemma>membership</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>deviantART</word>
+            <lemma>deviantART</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (SBAR (WHADVP (WRB Why)) (S (VP (VBP do) (RB n't)))) (NP (PRP they)) (VP (VBP have) (NP (DT a) (CD six) (NN month) (NN premium) (NN membership)) (PP (IN on) (NP (NNP deviantART)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">do</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="5">have</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="2">do</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="4">they</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">membership</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">membership</governor>
+            <dependent idx="7">six</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">membership</governor>
+            <dependent idx="8">month</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">membership</governor>
+            <dependent idx="9">premium</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="10">membership</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">have</governor>
+            <dependent idx="11">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">on</governor>
+            <dependent idx="12">deviantART</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">do</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="5">have</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="2">do</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="4">they</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">membership</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">membership</governor>
+            <dependent idx="7">six</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">membership</governor>
+            <dependent idx="8">month</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">membership</governor>
+            <dependent idx="9">premium</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="10">membership</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="5">have</governor>
+            <dependent idx="12">deviantART</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">have</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">do</governor>
+            <dependent idx="1">Why</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="5">have</governor>
+            <dependent idx="2">do</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="2">do</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">have</governor>
+            <dependent idx="4">they</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">membership</governor>
+            <dependent idx="6">a</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">membership</governor>
+            <dependent idx="7">six</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">membership</governor>
+            <dependent idx="8">month</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">membership</governor>
+            <dependent idx="9">premium</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">have</governor>
+            <dependent idx="10">membership</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="5">have</governor>
+            <dependent idx="12">deviantART</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>lack</word>
+            <lemma>lack</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>six-month</word>
+            <lemma>six-month</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>premium</word>
+            <lemma>premium</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>deviantART</word>
+            <lemma>deviantART</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>membership</word>
+            <lemma>membership</lemma>
+            <CharacterOffsetBegin>105</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NN lack)) (PP (IN of) (NP (DT a) (JJ six-month) (NN premium)))) (NP (NNP deviantART) (NN membership)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lack</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">lack</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">premium</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">premium</governor>
+            <dependent idx="4">six-month</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="5">premium</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">membership</governor>
+            <dependent idx="6">deviantART</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">lack</governor>
+            <dependent idx="7">membership</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lack</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">premium</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">premium</governor>
+            <dependent idx="4">six-month</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">lack</governor>
+            <dependent idx="5">premium</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">membership</governor>
+            <dependent idx="6">deviantART</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">lack</governor>
+            <dependent idx="7">membership</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lack</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">premium</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">premium</governor>
+            <dependent idx="4">six-month</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">lack</governor>
+            <dependent idx="5">premium</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">membership</governor>
+            <dependent idx="6">deviantART</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">lack</governor>
+            <dependent idx="7">membership</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

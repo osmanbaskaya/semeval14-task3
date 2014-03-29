@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>spherical</word>
+            <lemma>spherical</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>cage</word>
+            <lemma>cage</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>Aviary</word>
+            <lemma>Aviary</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Taman</word>
+            <lemma>Taman</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Mini</word>
+            <lemma>Mini</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Indonesia</word>
+            <lemma>Indonesia</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>Indah</word>
+            <lemma>Indah</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>bird</word>
+            <lemma>bird</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>house</word>
+            <lemma>house</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ spherical) (NN cage)) (NP (NP (NNP Aviary)) (PP (IN in) (NP (NNP Taman) (NNP Mini) (NNP Indonesia) (NNP Indah) (NN bird) (NN house)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">cage</governor>
+            <dependent idx="1">spherical</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">cage</governor>
+            <dependent idx="3">Aviary</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">Aviary</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="5">Taman</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="6">Mini</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="7">Indonesia</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="8">Indah</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="9">bird</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="10">house</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">cage</governor>
+            <dependent idx="1">spherical</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">cage</governor>
+            <dependent idx="3">Aviary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="5">Taman</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="6">Mini</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="7">Indonesia</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="8">Indah</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="9">bird</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Aviary</governor>
+            <dependent idx="10">house</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">cage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">cage</governor>
+            <dependent idx="1">spherical</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">cage</governor>
+            <dependent idx="3">Aviary</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="5">Taman</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="6">Mini</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="7">Indonesia</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="8">Indah</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">house</governor>
+            <dependent idx="9">bird</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">Aviary</governor>
+            <dependent idx="10">house</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

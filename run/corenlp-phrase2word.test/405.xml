@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>control</word>
+            <lemma>control</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>person</word>
+            <lemma>person</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>intentionally</word>
+            <lemma>intentionally</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="6">
+            <word>exercises</word>
+            <lemma>exercise</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="7">
+            <word>toward</word>
+            <lemma>toward</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>thing</word>
+            <lemma>thing</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>sea</word>
+            <lemma>sea</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT the) (NN control)) (ADVP (NP (DT a) (NN person)) (RB intentionally))) (VP (VBZ exercises) (PP (IN toward) (NP (DT a) (NN thing) (NN sea)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">exercises</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">control</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">exercises</governor>
+            <dependent idx="2">control</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">person</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="5">intentionally</governor>
+            <dependent idx="4">person</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">control</governor>
+            <dependent idx="5">intentionally</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">exercises</governor>
+            <dependent idx="7">toward</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">sea</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">sea</governor>
+            <dependent idx="9">thing</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">toward</governor>
+            <dependent idx="10">sea</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">exercises</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">control</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">exercises</governor>
+            <dependent idx="2">control</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">person</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="5">intentionally</governor>
+            <dependent idx="4">person</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">control</governor>
+            <dependent idx="5">intentionally</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">sea</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">sea</governor>
+            <dependent idx="9">thing</dependent>
+          </dep>
+          <dep type="prep_toward">
+            <governor idx="6">exercises</governor>
+            <dependent idx="10">sea</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">exercises</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">control</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">exercises</governor>
+            <dependent idx="2">control</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">person</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="5">intentionally</governor>
+            <dependent idx="4">person</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">control</governor>
+            <dependent idx="5">intentionally</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">sea</governor>
+            <dependent idx="8">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">sea</governor>
+            <dependent idx="9">thing</dependent>
+          </dep>
+          <dep type="prep_toward">
+            <governor idx="6">exercises</governor>
+            <dependent idx="10">sea</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

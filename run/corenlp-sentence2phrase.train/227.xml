@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>My</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="2">
+            <word>twitter</word>
+            <lemma>twitter</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>search</word>
+            <lemma>search</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>tool</word>
+            <lemma>tool</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>works</word>
+            <lemma>work</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>IE</word>
+            <lemma>ie</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="9">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="10">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>Firefox</word>
+            <lemma>Firefox</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP$ My) (NN twitter) (NN search) (NN tool)) (VP (VBZ works) (PP (PP (IN with) (NP (JJ IE))) (CONJP (CC but) (RB not)) (PP (IN with) (NP (NNP Firefox))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">works</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">tool</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tool</governor>
+            <dependent idx="2">twitter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tool</governor>
+            <dependent idx="3">search</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">works</governor>
+            <dependent idx="4">tool</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">works</governor>
+            <dependent idx="6">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">with</governor>
+            <dependent idx="7">IE</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="9">not</governor>
+            <dependent idx="8">but</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">with</governor>
+            <dependent idx="9">not</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">with</governor>
+            <dependent idx="10">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">with</governor>
+            <dependent idx="11">Firefox</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">works</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">tool</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tool</governor>
+            <dependent idx="2">twitter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tool</governor>
+            <dependent idx="3">search</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">works</governor>
+            <dependent idx="4">tool</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="5">works</governor>
+            <dependent idx="7">IE</dependent>
+          </dep>
+          <dep type="conj_negcc">
+            <governor idx="7">IE</governor>
+            <dependent idx="11">Firefox</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">works</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">tool</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tool</governor>
+            <dependent idx="2">twitter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">tool</governor>
+            <dependent idx="3">search</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">works</governor>
+            <dependent idx="4">tool</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="5">works</governor>
+            <dependent idx="7">IE</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="5">works</governor>
+            <dependent idx="11">Firefox</dependent>
+          </dep>
+          <dep type="conj_negcc">
+            <governor idx="7">IE</governor>
+            <dependent idx="11">Firefox</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Twitter</word>
+            <lemma>Twitter</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>search</word>
+            <lemma>search</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>tool</word>
+            <lemma>tool</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNP Twitter)) (NP (NN search) (NN tool)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Twitter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">tool</governor>
+            <dependent idx="2">search</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Twitter</governor>
+            <dependent idx="3">tool</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Twitter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">tool</governor>
+            <dependent idx="2">search</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Twitter</governor>
+            <dependent idx="3">tool</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Twitter</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">tool</governor>
+            <dependent idx="2">search</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">Twitter</governor>
+            <dependent idx="3">tool</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

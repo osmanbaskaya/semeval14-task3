@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Representation</word>
+            <lemma>representation</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Povoan</word>
+            <lemma>Povoan</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>fishermen</word>
+            <lemma>fisherman</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>1868</word>
+            <lemma>1868</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>magazine</word>
+            <lemma>magazine</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>fishing</word>
+            <lemma>fishing</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN Representation)) (PP (IN of) (NP (DT a) (NNP Povoan) (NNS fishermen))) (PP (IN in) (NP (DT an) (CD 1868) (NN magazine) (NN fishing))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Representation</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Representation</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fishermen</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">fishermen</governor>
+            <dependent idx="4">Povoan</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="5">fishermen</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Representation</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">fishing</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">fishing</governor>
+            <dependent idx="8">1868</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">fishing</governor>
+            <dependent idx="9">magazine</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="10">fishing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Representation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fishermen</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">fishermen</governor>
+            <dependent idx="4">Povoan</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Representation</governor>
+            <dependent idx="5">fishermen</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">fishing</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">fishing</governor>
+            <dependent idx="8">1868</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">fishing</governor>
+            <dependent idx="9">magazine</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">Representation</governor>
+            <dependent idx="10">fishing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Representation</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">fishermen</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">fishermen</governor>
+            <dependent idx="4">Povoan</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Representation</governor>
+            <dependent idx="5">fishermen</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">fishing</governor>
+            <dependent idx="7">an</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="10">fishing</governor>
+            <dependent idx="8">1868</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">fishing</governor>
+            <dependent idx="9">magazine</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">Representation</governor>
+            <dependent idx="10">fishing</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

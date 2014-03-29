@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>sleep</word>
+            <lemma>sleep</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>fishes</word>
+            <lemma>fish</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>expire</word>
+            <lemma>expire</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN sleep)) (PP (IN with) (NP (DT the) (NNS fishes)))) (VP (VBP expire)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">expire</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">expire</governor>
+            <dependent idx="1">sleep</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">sleep</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">fishes</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="4">fishes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">expire</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">expire</governor>
+            <dependent idx="1">sleep</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">fishes</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">sleep</governor>
+            <dependent idx="4">fishes</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">expire</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">expire</governor>
+            <dependent idx="1">sleep</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">fishes</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">sleep</governor>
+            <dependent idx="4">fishes</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

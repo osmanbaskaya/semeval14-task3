@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Jagiellonian</word>
+            <lemma>jagiellonian</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>dynasty</word>
+            <lemma>dynasty</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>portraits</word>
+            <lemma>portrait</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Lucas</word>
+            <lemma>Lucas</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Cranach</word>
+            <lemma>Cranach</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>Younger</word>
+            <lemma>Younger</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>cinema</word>
+            <lemma>cinema</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (JJ Jagiellonian) (NN dynasty) (NNS portraits)) (PP (IN by) (NP (NNP Lucas) (NNP Cranach)))) (NP (DT the) (NNP Younger) (NN cinema)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">portraits</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">portraits</governor>
+            <dependent idx="1">Jagiellonian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">portraits</governor>
+            <dependent idx="2">dynasty</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">portraits</governor>
+            <dependent idx="4">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Cranach</governor>
+            <dependent idx="5">Lucas</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">by</governor>
+            <dependent idx="6">Cranach</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">cinema</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">cinema</governor>
+            <dependent idx="8">Younger</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">portraits</governor>
+            <dependent idx="9">cinema</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">portraits</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">portraits</governor>
+            <dependent idx="1">Jagiellonian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">portraits</governor>
+            <dependent idx="2">dynasty</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Cranach</governor>
+            <dependent idx="5">Lucas</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="3">portraits</governor>
+            <dependent idx="6">Cranach</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">cinema</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">cinema</governor>
+            <dependent idx="8">Younger</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">portraits</governor>
+            <dependent idx="9">cinema</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">portraits</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">portraits</governor>
+            <dependent idx="1">Jagiellonian</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">portraits</governor>
+            <dependent idx="2">dynasty</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Cranach</governor>
+            <dependent idx="5">Lucas</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="3">portraits</governor>
+            <dependent idx="6">Cranach</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">cinema</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">cinema</governor>
+            <dependent idx="8">Younger</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">portraits</governor>
+            <dependent idx="9">cinema</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

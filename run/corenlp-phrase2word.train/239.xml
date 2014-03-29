@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>section</word>
+            <lemma>section</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>High</word>
+            <lemma>high</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>Peaks</word>
+            <lemma>Peaks</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Trail</word>
+            <lemma>trail</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>hikers</word>
+            <lemma>hiker</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT A) (NN section)) (PP (IN of) (NP (DT the) (JJ High) (NNP Peaks) (NN Trail) (NNS hikers))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">section</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">section</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">section</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">hikers</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">hikers</governor>
+            <dependent idx="5">High</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">hikers</governor>
+            <dependent idx="6">Peaks</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">hikers</governor>
+            <dependent idx="7">Trail</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="8">hikers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">section</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">section</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">hikers</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">hikers</governor>
+            <dependent idx="5">High</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">hikers</governor>
+            <dependent idx="6">Peaks</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">hikers</governor>
+            <dependent idx="7">Trail</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">section</governor>
+            <dependent idx="8">hikers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">section</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">section</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">hikers</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">hikers</governor>
+            <dependent idx="5">High</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">hikers</governor>
+            <dependent idx="6">Peaks</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">hikers</governor>
+            <dependent idx="7">Trail</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">section</governor>
+            <dependent idx="8">hikers</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

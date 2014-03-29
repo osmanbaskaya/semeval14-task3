@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>off</word>
+            <lemma>off</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>your</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="3">
+            <word>rocker</word>
+            <lemma>rocker</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>laughable</word>
+            <lemma>laughable</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (PP (IN off) (NP (NP (PRP$ your) (NN rocker)) (ADJP (JJ laughable))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">off</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">rocker</governor>
+            <dependent idx="2">your</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">off</governor>
+            <dependent idx="3">rocker</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">rocker</governor>
+            <dependent idx="4">laughable</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">off</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">rocker</governor>
+            <dependent idx="2">your</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">off</governor>
+            <dependent idx="3">rocker</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">rocker</governor>
+            <dependent idx="4">laughable</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">off</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">rocker</governor>
+            <dependent idx="2">your</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">off</governor>
+            <dependent idx="3">rocker</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">rocker</governor>
+            <dependent idx="4">laughable</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

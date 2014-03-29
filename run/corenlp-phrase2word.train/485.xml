@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>translating</word>
+            <lemma>translate</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>english</word>
+            <lemma>english</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>sentences</word>
+            <lemma>sentence</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>spanish</word>
+            <lemma>spanish</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>translating</word>
+            <lemma>translate</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG translating) (NP (JJ english) (NNS sentences)) (PP (TO to) (NP (NP (NNP spanish)) (VP (VBG translating))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">translating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">sentences</governor>
+            <dependent idx="2">english</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">translating</governor>
+            <dependent idx="3">sentences</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">translating</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="5">spanish</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">spanish</governor>
+            <dependent idx="6">translating</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">translating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">sentences</governor>
+            <dependent idx="2">english</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">translating</governor>
+            <dependent idx="3">sentences</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">translating</governor>
+            <dependent idx="5">spanish</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">spanish</governor>
+            <dependent idx="6">translating</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">translating</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">sentences</governor>
+            <dependent idx="2">english</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">translating</governor>
+            <dependent idx="3">sentences</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">translating</governor>
+            <dependent idx="5">spanish</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">spanish</governor>
+            <dependent idx="6">translating</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

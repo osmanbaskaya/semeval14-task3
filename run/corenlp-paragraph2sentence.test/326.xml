@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>On</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>east</word>
+            <lemma>east</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>side</word>
+            <lemma>side</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Plaza</word>
+            <lemma>Plaza</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>San</word>
+            <lemma>San</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>José</word>
+            <lemma>José</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="10">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>important</word>
+            <lemma>important</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="12">
+            <word>buildings</word>
+            <lemma>building</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN On) (NP (NP (DT the) (JJ east) (NN side)) (PP (IN of) (NP (NNP Plaza))))) (NP (NNP San) (NNP José)) (VP (VBP are) (NP (CD two) (JJ important) (NNS buildings))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">buildings</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">buildings</governor>
+            <dependent idx="1">On</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">side</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">side</governor>
+            <dependent idx="3">east</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">On</governor>
+            <dependent idx="4">side</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">side</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="6">Plaza</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">José</governor>
+            <dependent idx="7">San</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">buildings</governor>
+            <dependent idx="8">José</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">buildings</governor>
+            <dependent idx="9">are</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">buildings</governor>
+            <dependent idx="10">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">buildings</governor>
+            <dependent idx="11">important</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">buildings</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">side</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">side</governor>
+            <dependent idx="3">east</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="12">buildings</governor>
+            <dependent idx="4">side</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">side</governor>
+            <dependent idx="6">Plaza</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">José</governor>
+            <dependent idx="7">San</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">buildings</governor>
+            <dependent idx="8">José</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">buildings</governor>
+            <dependent idx="9">are</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">buildings</governor>
+            <dependent idx="10">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">buildings</governor>
+            <dependent idx="11">important</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">buildings</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">side</governor>
+            <dependent idx="2">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">side</governor>
+            <dependent idx="3">east</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="12">buildings</governor>
+            <dependent idx="4">side</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">side</governor>
+            <dependent idx="6">Plaza</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">José</governor>
+            <dependent idx="7">San</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">buildings</governor>
+            <dependent idx="8">José</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="12">buildings</governor>
+            <dependent idx="9">are</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">buildings</governor>
+            <dependent idx="10">two</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="12">buildings</governor>
+            <dependent idx="11">important</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>floor</word>
+            <lemma>floor</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>plans</word>
+            <lemma>plan</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>color</word>
+            <lemma>color</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN floor) (NNS plans)) (PRN (-LRB- -LRB-) (PP (IN in) (NP (NN color))) (-RRB- -RRB-)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">plans</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">plans</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">plans</governor>
+            <dependent idx="2">floor</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">plans</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="6">color</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">plans</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">plans</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">plans</governor>
+            <dependent idx="2">floor</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">plans</governor>
+            <dependent idx="6">color</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">plans</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">plans</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">plans</governor>
+            <dependent idx="2">floor</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">plans</governor>
+            <dependent idx="6">color</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

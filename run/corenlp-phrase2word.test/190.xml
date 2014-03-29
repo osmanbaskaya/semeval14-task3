@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>absolutely</word>
+            <lemma>absolutely</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>ludicrous</word>
+            <lemma>ludicrous</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>infrastructure</word>
+            <lemma>infrastructure</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (X (NP (ADJP (RB absolutely) (JJ ludicrous)) (NN infrastructure)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">infrastructure</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">ludicrous</governor>
+            <dependent idx="1">absolutely</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">infrastructure</governor>
+            <dependent idx="2">ludicrous</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">infrastructure</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">ludicrous</governor>
+            <dependent idx="1">absolutely</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">infrastructure</governor>
+            <dependent idx="2">ludicrous</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">infrastructure</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">ludicrous</governor>
+            <dependent idx="1">absolutely</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">infrastructure</governor>
+            <dependent idx="2">ludicrous</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>complete</word>
+            <lemma>complete</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>appropriate</word>
+            <lemma>appropriate</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>tick</word>
+            <lemma>tick</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (X (NP (ADJP (JJ complete) (CC and) (JJ appropriate)) (NN tick)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">tick</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">tick</governor>
+            <dependent idx="1">complete</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">complete</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">complete</governor>
+            <dependent idx="3">appropriate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">tick</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">tick</governor>
+            <dependent idx="1">complete</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">complete</governor>
+            <dependent idx="3">appropriate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">tick</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">tick</governor>
+            <dependent idx="1">complete</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">complete</governor>
+            <dependent idx="3">appropriate</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">tick</governor>
+            <dependent idx="3">appropriate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

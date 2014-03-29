@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>King</word>
+            <lemma>King</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Zog</word>
+            <lemma>Zog</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>monument</word>
+            <lemma>monument</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>center</word>
+            <lemma>center</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>Burrel</word>
+            <lemma>Burrel</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Albania</word>
+            <lemma>Albania</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NP (NNP King) (NNP Zog) (POS 's)) (NN monument)) (PP (IN in) (NP (DT the) (NN center)))) (PP (IN of) (NP (NNP Burrel) (NNP Albania))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">monument</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Zog</governor>
+            <dependent idx="1">King</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">monument</governor>
+            <dependent idx="2">Zog</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">Zog</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">monument</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">center</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="7">center</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">monument</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Albania</governor>
+            <dependent idx="9">Burrel</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="10">Albania</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">monument</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Zog</governor>
+            <dependent idx="1">King</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">monument</governor>
+            <dependent idx="2">Zog</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">center</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">monument</governor>
+            <dependent idx="7">center</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Albania</governor>
+            <dependent idx="9">Burrel</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">monument</governor>
+            <dependent idx="10">Albania</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">monument</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Zog</governor>
+            <dependent idx="1">King</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="4">monument</governor>
+            <dependent idx="2">Zog</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">center</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">monument</governor>
+            <dependent idx="7">center</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Albania</governor>
+            <dependent idx="9">Burrel</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">monument</governor>
+            <dependent idx="10">Albania</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

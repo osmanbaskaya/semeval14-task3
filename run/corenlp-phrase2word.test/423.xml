@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>married</word>
+            <lemma>marry</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="4">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="5">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="6">
+            <word>husbands</word>
+            <lemma>husband</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>same</word>
+            <lemma>same</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>time</word>
+            <lemma>time</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>satellite</word>
+            <lemma>satellite</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (VP (VBN married) (PP (TO to) (NP (QP (NP (CD two)) (CC or) (NP (JJR more))) (NNS husbands))) (PP (IN at) (NP (DT the) (JJ same) (NN time) (NN satellite))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">married</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">married</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">husbands</governor>
+            <dependent idx="3">two</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">two</governor>
+            <dependent idx="4">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">two</governor>
+            <dependent idx="5">more</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">to</governor>
+            <dependent idx="6">husbands</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">married</governor>
+            <dependent idx="7">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">satellite</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">satellite</governor>
+            <dependent idx="9">same</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">satellite</governor>
+            <dependent idx="10">time</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">at</governor>
+            <dependent idx="11">satellite</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">married</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">husbands</governor>
+            <dependent idx="3">two</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">two</governor>
+            <dependent idx="5">more</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">married</governor>
+            <dependent idx="6">husbands</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">satellite</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">satellite</governor>
+            <dependent idx="9">same</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">satellite</governor>
+            <dependent idx="10">time</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="1">married</governor>
+            <dependent idx="11">satellite</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">married</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">husbands</governor>
+            <dependent idx="3">two</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">two</governor>
+            <dependent idx="5">more</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="6">husbands</governor>
+            <dependent idx="5">more</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="1">married</governor>
+            <dependent idx="6">husbands</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">satellite</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">satellite</governor>
+            <dependent idx="9">same</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">satellite</governor>
+            <dependent idx="10">time</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="1">married</governor>
+            <dependent idx="11">satellite</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

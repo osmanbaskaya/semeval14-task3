@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Front</word>
+            <lemma>front</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>view</word>
+            <lemma>view</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Soekarno-Hatta</word>
+            <lemma>Soekarno-Hatta</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>International</word>
+            <lemma>International</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Airport</word>
+            <lemma>Airport</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>Terminal</word>
+            <lemma>Terminal</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>3</word>
+            <lemma>3</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>airport</word>
+            <lemma>airport</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NN Front) (NN view)) (PP (IN of) (NP (NNP Soekarno-Hatta) (NNP International) (NNP Airport) (NNP Terminal)))) (NP (CD 3) (NN airport)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">view</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">view</governor>
+            <dependent idx="1">Front</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">view</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="4">Soekarno-Hatta</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="5">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="6">Airport</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="7">Terminal</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">airport</governor>
+            <dependent idx="8">3</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">view</governor>
+            <dependent idx="9">airport</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">view</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">view</governor>
+            <dependent idx="1">Front</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="4">Soekarno-Hatta</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="5">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="6">Airport</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">view</governor>
+            <dependent idx="7">Terminal</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">airport</governor>
+            <dependent idx="8">3</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">view</governor>
+            <dependent idx="9">airport</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">view</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">view</governor>
+            <dependent idx="1">Front</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="4">Soekarno-Hatta</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="5">International</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">Terminal</governor>
+            <dependent idx="6">Airport</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">view</governor>
+            <dependent idx="7">Terminal</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">airport</governor>
+            <dependent idx="8">3</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">view</governor>
+            <dependent idx="9">airport</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

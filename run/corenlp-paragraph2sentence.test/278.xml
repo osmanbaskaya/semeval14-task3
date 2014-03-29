@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>ca</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>n't</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>believe</word>
+            <lemma>believe</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>he</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="6">
+            <word>chugged</word>
+            <lemma>chug</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="7">
+            <word>three</word>
+            <lemma>three</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="8">
+            <word>beers</word>
+            <lemma>beer</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP I)) (VP (MD ca) (RB n't) (VP (VB believe) (SBAR (S (NP (PRP he)) (VP (VBD chugged) (NP (CD three) (NNS beers))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">believe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">believe</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">believe</governor>
+            <dependent idx="2">ca</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">believe</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">chugged</governor>
+            <dependent idx="5">he</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">believe</governor>
+            <dependent idx="6">chugged</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">beers</governor>
+            <dependent idx="7">three</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">chugged</governor>
+            <dependent idx="8">beers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">believe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">believe</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">believe</governor>
+            <dependent idx="2">ca</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">believe</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">chugged</governor>
+            <dependent idx="5">he</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">believe</governor>
+            <dependent idx="6">chugged</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">beers</governor>
+            <dependent idx="7">three</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">chugged</governor>
+            <dependent idx="8">beers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">believe</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">believe</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">believe</governor>
+            <dependent idx="2">ca</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">believe</governor>
+            <dependent idx="3">n't</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">chugged</governor>
+            <dependent idx="5">he</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="4">believe</governor>
+            <dependent idx="6">chugged</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="8">beers</governor>
+            <dependent idx="7">three</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">chugged</governor>
+            <dependent idx="8">beers</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>disbelief</word>
+            <lemma>disbelief</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>downing</word>
+            <lemma>down</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>three</word>
+            <lemma>three</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>beers</word>
+            <lemma>beer</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN disbelief)) (PP (IN at) (S (VP (VBG downing) (NP (CD three) (NNS beers))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">disbelief</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">disbelief</governor>
+            <dependent idx="2">at</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">at</governor>
+            <dependent idx="3">downing</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">beers</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">downing</governor>
+            <dependent idx="5">beers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">disbelief</dependent>
+          </dep>
+          <dep type="prepc_at">
+            <governor idx="1">disbelief</governor>
+            <dependent idx="3">downing</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">beers</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">downing</governor>
+            <dependent idx="5">beers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">disbelief</dependent>
+          </dep>
+          <dep type="prepc_at">
+            <governor idx="1">disbelief</governor>
+            <dependent idx="3">downing</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">beers</governor>
+            <dependent idx="4">three</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">downing</governor>
+            <dependent idx="5">beers</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

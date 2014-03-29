@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>contributor</word>
+            <lemma>contributor</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>science</word>
+            <lemma>science</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>geology</word>
+            <lemma>geology</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>mineralogy</word>
+            <lemma>mineralogy</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NN contributor)) (PP (TO to) (NP (DT the) (NN science))) (PP (IN of) (NP (NN geology) (NN mineralogy))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">contributor</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">contributor</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">contributor</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">science</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">to</governor>
+            <dependent idx="5">science</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">contributor</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">mineralogy</governor>
+            <dependent idx="7">geology</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="8">mineralogy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">contributor</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">contributor</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">science</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="2">contributor</governor>
+            <dependent idx="5">science</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">mineralogy</governor>
+            <dependent idx="7">geology</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">contributor</governor>
+            <dependent idx="8">mineralogy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">contributor</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">contributor</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">science</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="2">contributor</governor>
+            <dependent idx="5">science</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">mineralogy</governor>
+            <dependent idx="7">geology</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">contributor</governor>
+            <dependent idx="8">mineralogy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

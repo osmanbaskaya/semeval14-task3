@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>tall</word>
+            <lemma>tall</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>drink</word>
+            <lemma>drink</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>water</word>
+            <lemma>water</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>giant</word>
+            <lemma>giant</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ tall) (NN drink)) (PP (IN of) (NP (NN water) (NN giant))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">drink</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">drink</governor>
+            <dependent idx="1">tall</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">drink</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">giant</governor>
+            <dependent idx="4">water</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">giant</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">drink</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">drink</governor>
+            <dependent idx="1">tall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">giant</governor>
+            <dependent idx="4">water</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">drink</governor>
+            <dependent idx="5">giant</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">drink</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">drink</governor>
+            <dependent idx="1">tall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">giant</governor>
+            <dependent idx="4">water</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">drink</governor>
+            <dependent idx="5">giant</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

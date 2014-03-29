@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>surface</word>
+            <lemma>surface</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>used</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>produce</word>
+            <lemma>produce</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>lift</word>
+            <lemma>lift</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>thrust</word>
+            <lemma>thrust</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="11">
+            <word>steer</word>
+            <lemma>steer</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="12">
+            <word>while</word>
+            <lemma>while</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>traveling</word>
+            <lemma>travel</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="14">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="15">
+            <word>water</word>
+            <lemma>water</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>airfoil</word>
+            <lemma>airfoil</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (NN surface)) (VP (VBN used) (S (VP (VP (TO to) (VP (VB produce) (NP (NN lift) (CC and) (NN thrust)))) (CC or) (VP (TO to) (VP (VB steer) (SBAR (IN while) (S (VP (VBG traveling) (PP (IN in) (NP (NN water) (NN airfoil))))))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">surface</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">used</governor>
+            <dependent idx="2">surface</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">produce</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">used</governor>
+            <dependent idx="5">produce</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">produce</governor>
+            <dependent idx="6">lift</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">lift</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">lift</governor>
+            <dependent idx="8">thrust</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">produce</governor>
+            <dependent idx="9">or</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">steer</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">produce</governor>
+            <dependent idx="11">steer</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="13">traveling</governor>
+            <dependent idx="12">while</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="11">steer</governor>
+            <dependent idx="13">traveling</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="13">traveling</governor>
+            <dependent idx="14">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">airfoil</governor>
+            <dependent idx="15">water</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="14">in</governor>
+            <dependent idx="16">airfoil</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">surface</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">used</governor>
+            <dependent idx="2">surface</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">produce</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">used</governor>
+            <dependent idx="5">produce</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">produce</governor>
+            <dependent idx="6">lift</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">lift</governor>
+            <dependent idx="8">thrust</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">steer</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="5">produce</governor>
+            <dependent idx="11">steer</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="13">traveling</governor>
+            <dependent idx="12">while</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="11">steer</governor>
+            <dependent idx="13">traveling</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">airfoil</governor>
+            <dependent idx="15">water</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="13">traveling</governor>
+            <dependent idx="16">airfoil</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">surface</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">used</governor>
+            <dependent idx="2">surface</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">produce</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">used</governor>
+            <dependent idx="5">produce</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">produce</governor>
+            <dependent idx="6">lift</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">produce</governor>
+            <dependent idx="8">thrust</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">lift</governor>
+            <dependent idx="8">thrust</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="11">steer</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">used</governor>
+            <dependent idx="11">steer</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="5">produce</governor>
+            <dependent idx="11">steer</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="13">traveling</governor>
+            <dependent idx="12">while</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="11">steer</governor>
+            <dependent idx="13">traveling</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">airfoil</governor>
+            <dependent idx="15">water</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="13">traveling</governor>
+            <dependent idx="16">airfoil</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

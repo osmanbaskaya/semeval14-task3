@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Where</word>
+            <lemma>where</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>manually</word>
+            <lemma>manually</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>download</word>
+            <lemma>download</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>virus</word>
+            <lemma>virus</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>defination</word>
+            <lemma>defination</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>updates</word>
+            <lemma>update</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>norton</word>
+            <lemma>norton</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>360</word>
+            <lemma>360</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (SBAR (WHADVP (WRB Where)) (S (VP (TO to) (VP (ADVP (RB manually)) (VB download) (NP (NP (NN virus) (NN defination) (NNS updates)) (PP (IN for) (NP (NN norton) (CD 360)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">download</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">download</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="3">manually</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">updates</governor>
+            <dependent idx="5">virus</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">updates</governor>
+            <dependent idx="6">defination</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">download</governor>
+            <dependent idx="7">updates</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">updates</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">for</governor>
+            <dependent idx="9">norton</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">norton</governor>
+            <dependent idx="10">360</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">download</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">download</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="3">manually</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">updates</governor>
+            <dependent idx="5">virus</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">updates</governor>
+            <dependent idx="6">defination</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">download</governor>
+            <dependent idx="7">updates</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">updates</governor>
+            <dependent idx="9">norton</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">norton</governor>
+            <dependent idx="10">360</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">download</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">download</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="3">manually</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">updates</governor>
+            <dependent idx="5">virus</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">updates</governor>
+            <dependent idx="6">defination</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">download</governor>
+            <dependent idx="7">updates</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">updates</governor>
+            <dependent idx="9">norton</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">norton</governor>
+            <dependent idx="10">360</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Norton</word>
+            <lemma>Norton</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>anti-virus</word>
+            <lemma>anti-virus</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>software</word>
+            <lemma>software</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>update</word>
+            <lemma>update</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="5">
+            <word>downloads</word>
+            <lemma>download</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Norton) (JJ anti-virus) (NN software)) (VP (VBP update) (NP (NNS downloads))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">update</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">software</governor>
+            <dependent idx="1">Norton</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">software</governor>
+            <dependent idx="2">anti-virus</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">update</governor>
+            <dependent idx="3">software</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">update</governor>
+            <dependent idx="5">downloads</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">update</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">software</governor>
+            <dependent idx="1">Norton</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">software</governor>
+            <dependent idx="2">anti-virus</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">update</governor>
+            <dependent idx="3">software</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">update</governor>
+            <dependent idx="5">downloads</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">update</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">software</governor>
+            <dependent idx="1">Norton</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">software</governor>
+            <dependent idx="2">anti-virus</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">update</governor>
+            <dependent idx="3">software</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">update</governor>
+            <dependent idx="5">downloads</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

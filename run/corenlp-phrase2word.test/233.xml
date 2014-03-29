@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>apple</word>
+            <lemma>apple</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>discord</word>
+            <lemma>discord</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>chew</word>
+            <lemma>chew</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN apple)) (PP (IN of) (NP (NN discord)))) (VP (VBP chew)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">chew</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">chew</governor>
+            <dependent idx="1">apple</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">apple</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">discord</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">chew</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">chew</governor>
+            <dependent idx="1">apple</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">apple</governor>
+            <dependent idx="3">discord</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">chew</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">chew</governor>
+            <dependent idx="1">apple</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">apple</governor>
+            <dependent idx="3">discord</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

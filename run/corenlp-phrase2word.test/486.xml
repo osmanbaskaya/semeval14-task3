@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>guy</word>
+            <lemma>guy</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>hitting</word>
+            <lemma>hit</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="4">
+            <word>football</word>
+            <lemma>football</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>helmet</word>
+            <lemma>helmet</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>against</word>
+            <lemma>against</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>wall</word>
+            <lemma>wall</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>divorce</word>
+            <lemma>divorce</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN guy)) (S (VP (VBG hitting) (NP (PRP$ his) (NN football) (NN helmet)) (PP (IN against) (NP (DT a) (NN wall) (NN divorce))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">guy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">guy</governor>
+            <dependent idx="2">hitting</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">helmet</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">helmet</governor>
+            <dependent idx="4">football</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">hitting</governor>
+            <dependent idx="5">helmet</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">hitting</governor>
+            <dependent idx="6">against</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">divorce</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">divorce</governor>
+            <dependent idx="8">wall</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">against</governor>
+            <dependent idx="9">divorce</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">guy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">guy</governor>
+            <dependent idx="2">hitting</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">helmet</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">helmet</governor>
+            <dependent idx="4">football</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">hitting</governor>
+            <dependent idx="5">helmet</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">divorce</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">divorce</governor>
+            <dependent idx="8">wall</dependent>
+          </dep>
+          <dep type="prep_against">
+            <governor idx="2">hitting</governor>
+            <dependent idx="9">divorce</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">guy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">guy</governor>
+            <dependent idx="2">hitting</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">helmet</governor>
+            <dependent idx="3">his</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">helmet</governor>
+            <dependent idx="4">football</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">hitting</governor>
+            <dependent idx="5">helmet</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">divorce</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">divorce</governor>
+            <dependent idx="8">wall</dependent>
+          </dep>
+          <dep type="prep_against">
+            <governor idx="2">hitting</governor>
+            <dependent idx="9">divorce</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>got</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="3">
+            <word>tired</word>
+            <lemma>tire</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="6">
+            <word>trolling</word>
+            <lemma>trolling</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>ad</word>
+            <lemma>ad</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>hominem</word>
+            <lemma>hominem</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>attacks</word>
+            <lemma>attack</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="12">
+            <word>so</word>
+            <lemma>so</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="14">
+            <word>plonked</word>
+            <lemma>plonk</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="15">
+            <word>him</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="16">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (S (NP (PRP I)) (VP (VBD got) (ADJP (VBN tired) (PP (IN of) (NP (NP (PRP$ his) (NN trolling)) (CC and) (NP (NN ad) (NN hominem) (NNS attacks))))))) (, ,) (IN so) (S (NP (PRP I)) (VP (VBD plonked) (NP (PRP him)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">tired</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">tired</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">tired</governor>
+            <dependent idx="2">got</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">tired</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">trolling</governor>
+            <dependent idx="5">his</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">trolling</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">trolling</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">attacks</governor>
+            <dependent idx="8">ad</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">attacks</governor>
+            <dependent idx="9">hominem</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">trolling</governor>
+            <dependent idx="10">attacks</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">tired</governor>
+            <dependent idx="12">so</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">plonked</governor>
+            <dependent idx="13">I</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">tired</governor>
+            <dependent idx="14">plonked</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">plonked</governor>
+            <dependent idx="15">him</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">tired</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">tired</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">tired</governor>
+            <dependent idx="2">got</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">trolling</governor>
+            <dependent idx="5">his</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">tired</governor>
+            <dependent idx="6">trolling</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">attacks</governor>
+            <dependent idx="8">ad</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">attacks</governor>
+            <dependent idx="9">hominem</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">trolling</governor>
+            <dependent idx="10">attacks</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">tired</governor>
+            <dependent idx="12">so</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">plonked</governor>
+            <dependent idx="13">I</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">tired</governor>
+            <dependent idx="14">plonked</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">plonked</governor>
+            <dependent idx="15">him</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">tired</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">tired</governor>
+            <dependent idx="1">I</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">tired</governor>
+            <dependent idx="2">got</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">trolling</governor>
+            <dependent idx="5">his</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">tired</governor>
+            <dependent idx="6">trolling</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">attacks</governor>
+            <dependent idx="8">ad</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">attacks</governor>
+            <dependent idx="9">hominem</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">tired</governor>
+            <dependent idx="10">attacks</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">trolling</governor>
+            <dependent idx="10">attacks</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">tired</governor>
+            <dependent idx="12">so</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">plonked</governor>
+            <dependent idx="13">I</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="3">tired</governor>
+            <dependent idx="14">plonked</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="14">plonked</governor>
+            <dependent idx="15">him</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>fighting</word>
+            <lemma>fight</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>back</word>
+            <lemma>back</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>after</word>
+            <lemma>after</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>listening</word>
+            <lemma>listen</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>incessant</word>
+            <lemma>incessant</lemma>
+            <CharacterOffsetBegin>103</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>verbal</word>
+            <lemma>verbal</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>119</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>attacks</word>
+            <lemma>attack</lemma>
+            <CharacterOffsetBegin>120</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG fighting) (ADVP (RB back)) (PP (IN after) (S (VP (VBG listening) (PP (TO to) (NP (JJ incessant) (JJ verbal) (NNS attacks))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fighting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">fighting</governor>
+            <dependent idx="2">back</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">fighting</governor>
+            <dependent idx="3">after</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="3">after</governor>
+            <dependent idx="4">listening</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">listening</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">attacks</governor>
+            <dependent idx="6">incessant</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">attacks</governor>
+            <dependent idx="7">verbal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">to</governor>
+            <dependent idx="8">attacks</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fighting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">fighting</governor>
+            <dependent idx="2">back</dependent>
+          </dep>
+          <dep type="prepc_after">
+            <governor idx="1">fighting</governor>
+            <dependent idx="4">listening</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">attacks</governor>
+            <dependent idx="6">incessant</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">attacks</governor>
+            <dependent idx="7">verbal</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">listening</governor>
+            <dependent idx="8">attacks</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">fighting</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">fighting</governor>
+            <dependent idx="2">back</dependent>
+          </dep>
+          <dep type="prepc_after">
+            <governor idx="1">fighting</governor>
+            <dependent idx="4">listening</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">attacks</governor>
+            <dependent idx="6">incessant</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">attacks</governor>
+            <dependent idx="7">verbal</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="4">listening</governor>
+            <dependent idx="8">attacks</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

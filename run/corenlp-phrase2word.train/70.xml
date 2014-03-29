@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>eligible</word>
+            <lemma>eligible</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>community</word>
+            <lemma>community</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>financing</word>
+            <lemma>financing</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>community-approved</word>
+            <lemma>community-approved</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN eligible)) (PP (IN for) (NP (NN community) (NN financing)))) (ADJP (JJ community-approved)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">community-approved</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">community-approved</governor>
+            <dependent idx="1">eligible</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">eligible</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">financing</governor>
+            <dependent idx="3">community</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">for</governor>
+            <dependent idx="4">financing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">community-approved</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">community-approved</governor>
+            <dependent idx="1">eligible</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">financing</governor>
+            <dependent idx="3">community</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">eligible</governor>
+            <dependent idx="4">financing</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">community-approved</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">community-approved</governor>
+            <dependent idx="1">eligible</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">financing</governor>
+            <dependent idx="3">community</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">eligible</governor>
+            <dependent idx="4">financing</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

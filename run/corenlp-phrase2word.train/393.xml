@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>figurative</word>
+            <lemma>figurative</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>mode</word>
+            <lemma>mode</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>representation</word>
+            <lemma>representation</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>conveying</word>
+            <lemma>convey</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>meaning</word>
+            <lemma>mean</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="9">
+            <word>other</word>
+            <lemma>other</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>than</word>
+            <lemma>than</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>literal</word>
+            <lemma>literal</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>abstraction</word>
+            <lemma>abstraction</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (JJ figurative) (NN mode)) (PP (IN of) (NP (NP (NN representation)) (VP (VBG conveying) (NP (DT a) (VBG meaning) (JJ other)) (PP (IN than) (NP (DT the) (JJ literal) (NN abstraction)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">mode</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">mode</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">mode</governor>
+            <dependent idx="2">figurative</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">mode</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="5">representation</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">representation</governor>
+            <dependent idx="6">conveying</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">other</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">other</governor>
+            <dependent idx="8">meaning</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">conveying</governor>
+            <dependent idx="9">other</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">conveying</governor>
+            <dependent idx="10">than</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">abstraction</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">abstraction</governor>
+            <dependent idx="12">literal</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">than</governor>
+            <dependent idx="13">abstraction</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">mode</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">mode</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">mode</governor>
+            <dependent idx="2">figurative</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">mode</governor>
+            <dependent idx="5">representation</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">representation</governor>
+            <dependent idx="6">conveying</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">other</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">other</governor>
+            <dependent idx="8">meaning</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">conveying</governor>
+            <dependent idx="9">other</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">abstraction</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">abstraction</governor>
+            <dependent idx="12">literal</dependent>
+          </dep>
+          <dep type="prep_than">
+            <governor idx="6">conveying</governor>
+            <dependent idx="13">abstraction</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">mode</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">mode</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">mode</governor>
+            <dependent idx="2">figurative</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">mode</governor>
+            <dependent idx="5">representation</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">representation</governor>
+            <dependent idx="6">conveying</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">other</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">other</governor>
+            <dependent idx="8">meaning</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">conveying</governor>
+            <dependent idx="9">other</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">abstraction</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="13">abstraction</governor>
+            <dependent idx="12">literal</dependent>
+          </dep>
+          <dep type="prep_than">
+            <governor idx="6">conveying</governor>
+            <dependent idx="13">abstraction</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

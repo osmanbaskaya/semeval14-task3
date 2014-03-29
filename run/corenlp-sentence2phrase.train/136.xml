@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>media</word>
+            <lemma>media</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>published</word>
+            <lemma>publish</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>blow-by-blow</word>
+            <lemma>blow-by-blow</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>trial</word>
+            <lemma>trial</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="11">
+            <word>happened</word>
+            <lemma>happen</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNS media)) (VP (VBD published) (NP (NP (DT a) (NN blow-by-blow)) (PP (IN of) (NP (DT the) (NN trial)))) (SBAR (IN as) (S (NP (PRP it)) (VP (VBD happened))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">published</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">media</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">published</governor>
+            <dependent idx="2">media</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">blow-by-blow</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">published</governor>
+            <dependent idx="5">blow-by-blow</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">blow-by-blow</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">trial</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="8">trial</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">happened</governor>
+            <dependent idx="9">as</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">happened</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">published</governor>
+            <dependent idx="11">happened</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">published</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">media</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">published</governor>
+            <dependent idx="2">media</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">blow-by-blow</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">published</governor>
+            <dependent idx="5">blow-by-blow</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">trial</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">blow-by-blow</governor>
+            <dependent idx="8">trial</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">happened</governor>
+            <dependent idx="9">as</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">happened</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">published</governor>
+            <dependent idx="11">happened</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">published</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">media</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">published</governor>
+            <dependent idx="2">media</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">blow-by-blow</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">published</governor>
+            <dependent idx="5">blow-by-blow</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">trial</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="5">blow-by-blow</governor>
+            <dependent idx="8">trial</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="11">happened</governor>
+            <dependent idx="9">as</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">happened</governor>
+            <dependent idx="10">it</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="3">published</governor>
+            <dependent idx="11">happened</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>extremely</word>
+            <lemma>extremely</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>detailed</word>
+            <lemma>detailed</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>court</word>
+            <lemma>court</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>reporting</word>
+            <lemma>reporting</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADVP (RB extremely)) (NP (JJ detailed) (NN court) (NN reporting)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">reporting</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">reporting</governor>
+            <dependent idx="1">extremely</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">reporting</governor>
+            <dependent idx="2">detailed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">reporting</governor>
+            <dependent idx="3">court</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">reporting</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">reporting</governor>
+            <dependent idx="1">extremely</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">reporting</governor>
+            <dependent idx="2">detailed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">reporting</governor>
+            <dependent idx="3">court</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">reporting</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">reporting</governor>
+            <dependent idx="1">extremely</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">reporting</governor>
+            <dependent idx="2">detailed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">reporting</governor>
+            <dependent idx="3">court</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

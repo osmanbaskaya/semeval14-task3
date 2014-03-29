@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Mr</word>
+            <lemma>Mr</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>President</word>
+            <lemma>President</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="5">
+            <word>thank</word>
+            <lemma>thank</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>Commissioner</word>
+            <lemma>Commissioner</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>her</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="10">
+            <word>continuing</word>
+            <lemma>continue</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="11">
+            <word>commitment</word>
+            <lemma>commitment</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="13">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>field</word>
+            <lemma>field</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="16">
+            <word>maritime</word>
+            <lemma>maritime</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="17">
+            <word>safety</word>
+            <lemma>safety</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="18">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Mr) (NNP President)) (, ,) (NP (PRP I)) (VP (VBP thank) (NP (NP (DT the) (NNP Commissioner)) (PP (IN for) (NP (NP (PRP$ her) (VBG continuing) (NN commitment)) (PP (IN in) (NP (NP (DT the) (NN field)) (PP (IN of) (NP (NN maritime) (NN safety))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">thank</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">thank</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">thank</governor>
+            <dependent idx="4">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Commissioner</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">thank</governor>
+            <dependent idx="7">Commissioner</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">Commissioner</governor>
+            <dependent idx="8">for</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">commitment</governor>
+            <dependent idx="9">her</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">commitment</governor>
+            <dependent idx="10">continuing</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">for</governor>
+            <dependent idx="11">commitment</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">commitment</governor>
+            <dependent idx="12">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">field</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="12">in</governor>
+            <dependent idx="14">field</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="14">field</governor>
+            <dependent idx="15">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">safety</governor>
+            <dependent idx="16">maritime</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="15">of</governor>
+            <dependent idx="17">safety</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">thank</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">thank</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">thank</governor>
+            <dependent idx="4">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Commissioner</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">thank</governor>
+            <dependent idx="7">Commissioner</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">commitment</governor>
+            <dependent idx="9">her</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">commitment</governor>
+            <dependent idx="10">continuing</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">Commissioner</governor>
+            <dependent idx="11">commitment</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">field</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="11">commitment</governor>
+            <dependent idx="14">field</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">safety</governor>
+            <dependent idx="16">maritime</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="14">field</governor>
+            <dependent idx="17">safety</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">thank</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">President</governor>
+            <dependent idx="1">Mr</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">thank</governor>
+            <dependent idx="2">President</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">thank</governor>
+            <dependent idx="4">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">Commissioner</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">thank</governor>
+            <dependent idx="7">Commissioner</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="11">commitment</governor>
+            <dependent idx="9">her</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="11">commitment</governor>
+            <dependent idx="10">continuing</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="7">Commissioner</governor>
+            <dependent idx="11">commitment</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">field</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="11">commitment</governor>
+            <dependent idx="14">field</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="17">safety</governor>
+            <dependent idx="16">maritime</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="14">field</governor>
+            <dependent idx="17">safety</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>application</word>
+            <lemma>application</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>113</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>114</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>membership</word>
+            <lemma>membership</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>128</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN application)) (PP (IN for) (NP (NN membership))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">application</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">application</governor>
+            <dependent idx="2">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">for</governor>
+            <dependent idx="3">membership</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">application</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">application</governor>
+            <dependent idx="3">membership</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">application</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">application</governor>
+            <dependent idx="3">membership</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

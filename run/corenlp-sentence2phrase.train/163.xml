@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>IN</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>opera</word>
+            <lemma>opera</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="5">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="6">
+            <word>tried</word>
+            <lemma>try</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="7">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="8">
+            <word>change</word>
+            <lemma>change</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="9">
+            <word>colour</word>
+            <lemma>colour</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="11">
+            <word>Blue</word>
+            <lemma>Blue</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>but</word>
+            <lemma>but</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="13">
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="14">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="15">
+            <word>still</word>
+            <lemma>still</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="16">
+            <word>grey</word>
+            <lemma>grey</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="17">
+            <word>bars</word>
+            <lemma>bar</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="18">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN IN) (NP (NN opera) (NN browser))) (, ,) (S (NP (FW i)) (VP (VBD tried) (S (VP (TO to) (VP (VB change) (NP (NN colour)) (PP (TO to) (NP (NNP Blue)))))))) (CC but) (S (NP (PRP it)) (VP (VBZ is) (ADVP (RB still)) (NP (JJ grey) (NNS bars)))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">tried</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">tried</governor>
+            <dependent idx="1">IN</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">browser</governor>
+            <dependent idx="2">opera</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">IN</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">tried</governor>
+            <dependent idx="5">i</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">change</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">tried</governor>
+            <dependent idx="8">change</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">change</governor>
+            <dependent idx="9">colour</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">change</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">to</governor>
+            <dependent idx="11">Blue</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">tried</governor>
+            <dependent idx="12">but</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="17">bars</governor>
+            <dependent idx="13">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="17">bars</governor>
+            <dependent idx="14">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="17">bars</governor>
+            <dependent idx="15">still</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">bars</governor>
+            <dependent idx="16">grey</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">tried</governor>
+            <dependent idx="17">bars</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">tried</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">browser</governor>
+            <dependent idx="2">opera</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">tried</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">tried</governor>
+            <dependent idx="5">i</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">change</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">tried</governor>
+            <dependent idx="8">change</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">change</governor>
+            <dependent idx="9">colour</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="8">change</governor>
+            <dependent idx="11">Blue</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="17">bars</governor>
+            <dependent idx="13">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="17">bars</governor>
+            <dependent idx="14">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="17">bars</governor>
+            <dependent idx="15">still</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">bars</governor>
+            <dependent idx="16">grey</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="6">tried</governor>
+            <dependent idx="17">bars</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">tried</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">browser</governor>
+            <dependent idx="2">opera</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">tried</governor>
+            <dependent idx="3">browser</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">tried</governor>
+            <dependent idx="5">i</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">change</governor>
+            <dependent idx="7">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="6">tried</governor>
+            <dependent idx="8">change</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="8">change</governor>
+            <dependent idx="9">colour</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="8">change</governor>
+            <dependent idx="11">Blue</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="17">bars</governor>
+            <dependent idx="13">it</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="17">bars</governor>
+            <dependent idx="14">is</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="17">bars</governor>
+            <dependent idx="15">still</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="17">bars</governor>
+            <dependent idx="16">grey</dependent>
+          </dep>
+          <dep type="conj_but">
+            <governor idx="6">tried</governor>
+            <dependent idx="17">bars</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>change</word>
+            <lemma>change</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>colors</word>
+            <lemma>color</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Opera</word>
+            <lemma>Opera</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN change) (NNS colors)) (PP (IN in) (NP (NNP Opera))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">colors</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">colors</governor>
+            <dependent idx="1">change</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">colors</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="4">Opera</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">colors</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">colors</governor>
+            <dependent idx="1">change</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">colors</governor>
+            <dependent idx="4">Opera</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">colors</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">colors</governor>
+            <dependent idx="1">change</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">colors</governor>
+            <dependent idx="4">Opera</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>freeware</word>
+            <lemma>freeware</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>web</word>
+            <lemma>web</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>browser</word>
+            <lemma>browser</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>developed</word>
+            <lemma>develop</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Google</word>
+            <lemma>Google</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>chrome</word>
+            <lemma>chrome</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT a) (NN freeware) (NN web) (NN browser)) (VP (VBN developed) (PP (IN by) (NP (NNP Google) (NN chrome)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">developed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">browser</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="2">freeware</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">developed</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">developed</governor>
+            <dependent idx="6">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">chrome</governor>
+            <dependent idx="7">Google</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">by</governor>
+            <dependent idx="8">chrome</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">developed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">browser</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="2">freeware</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">developed</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">chrome</governor>
+            <dependent idx="7">Google</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="5">developed</governor>
+            <dependent idx="8">chrome</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">developed</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">browser</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="2">freeware</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">browser</governor>
+            <dependent idx="3">web</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">developed</governor>
+            <dependent idx="4">browser</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">chrome</governor>
+            <dependent idx="7">Google</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="5">developed</governor>
+            <dependent idx="8">chrome</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

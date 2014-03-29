@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Basque</word>
+            <lemma>basque</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>festival</word>
+            <lemma>festival</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Winnemucca</word>
+            <lemma>Winnemucca</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>Nevada</word>
+            <lemma>Nevada</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>party</word>
+            <lemma>party</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (JJ Basque) (NN festival)) (PP (IN in) (NP (NNP Winnemucca) (, ,) (NNP Nevada)))) (NP (NN party)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">festival</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">festival</governor>
+            <dependent idx="1">Basque</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">festival</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Nevada</governor>
+            <dependent idx="4">Winnemucca</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="6">Nevada</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">festival</governor>
+            <dependent idx="7">party</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">festival</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">festival</governor>
+            <dependent idx="1">Basque</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Nevada</governor>
+            <dependent idx="4">Winnemucca</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">festival</governor>
+            <dependent idx="6">Nevada</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">festival</governor>
+            <dependent idx="7">party</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">festival</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">festival</governor>
+            <dependent idx="1">Basque</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Nevada</governor>
+            <dependent idx="4">Winnemucca</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">festival</governor>
+            <dependent idx="6">Nevada</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">festival</governor>
+            <dependent idx="7">party</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

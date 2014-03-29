@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>airline</word>
+            <lemma>airline</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>option</word>
+            <lemma>option</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="7">
+            <word>buy</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="8">
+            <word>380</word>
+            <lemma>380</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="11">
+            <word>split</word>
+            <lemma>split</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="12">
+            <word>evenly</word>
+            <lemma>evenly</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="13">
+            <word>between</word>
+            <lemma>between</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="15">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="16">
+            <word>manufacturers</word>
+            <lemma>manufacturer</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="17">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN airline)) (VP (VP (VBZ has) (NP (DT the) (NN option) (S (VP (TO to) (VP (VB buy) (NP (QP (CD 380) (JJR more)))))))) (, ,) (VP (VBD split) (ADVP (RB evenly)) (PP (IN between) (NP (DT the) (CD two) (NNS manufacturers))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">airline</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">has</governor>
+            <dependent idx="2">airline</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">option</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">has</governor>
+            <dependent idx="5">option</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">buy</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">option</governor>
+            <dependent idx="7">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">buy</governor>
+            <dependent idx="8">380</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="8">380</governor>
+            <dependent idx="9">more</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">has</governor>
+            <dependent idx="11">split</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">split</governor>
+            <dependent idx="12">evenly</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">split</governor>
+            <dependent idx="13">between</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">manufacturers</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">manufacturers</governor>
+            <dependent idx="15">two</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">between</governor>
+            <dependent idx="16">manufacturers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">airline</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">has</governor>
+            <dependent idx="2">airline</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">option</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">has</governor>
+            <dependent idx="5">option</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">buy</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">option</governor>
+            <dependent idx="7">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">buy</governor>
+            <dependent idx="8">380</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="8">380</governor>
+            <dependent idx="9">more</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">has</governor>
+            <dependent idx="11">split</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">split</governor>
+            <dependent idx="12">evenly</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">manufacturers</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">manufacturers</governor>
+            <dependent idx="15">two</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="11">split</governor>
+            <dependent idx="16">manufacturers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">airline</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">has</governor>
+            <dependent idx="2">airline</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">option</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">has</governor>
+            <dependent idx="5">option</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">buy</governor>
+            <dependent idx="6">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="5">option</governor>
+            <dependent idx="7">buy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">buy</governor>
+            <dependent idx="8">380</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="8">380</governor>
+            <dependent idx="9">more</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">has</governor>
+            <dependent idx="11">split</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">split</governor>
+            <dependent idx="12">evenly</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">manufacturers</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="16">manufacturers</governor>
+            <dependent idx="15">two</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="11">split</governor>
+            <dependent idx="16">manufacturers</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>buying</word>
+            <lemma>buy</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>94</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>380</word>
+            <lemma>380</lemma>
+            <CharacterOffsetBegin>95</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="4">
+            <word>planes</word>
+            <lemma>plane</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>110</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>111</CharacterOffsetBegin>
+            <CharacterOffsetEnd>114</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>115</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>airline</word>
+            <lemma>airline</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>125</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>125</CharacterOffsetBegin>
+            <CharacterOffsetEnd>126</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="9">
+            <word>split</word>
+            <lemma>split</lemma>
+            <CharacterOffsetBegin>127</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>between</word>
+            <lemma>between</lemma>
+            <CharacterOffsetBegin>133</CharacterOffsetBegin>
+            <CharacterOffsetEnd>140</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>manufacturers</word>
+            <lemma>manufacturer</lemma>
+            <CharacterOffsetBegin>141</CharacterOffsetBegin>
+            <CharacterOffsetEnd>154</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG buying) (NP (QP (CD 380) (JJR more)) (NNS planes)) (PP (IN for) (NP (NP (DT an) (NN airline)) (, ,) (NP (NP (NN split)) (PP (IN between) (NP (NNS manufacturers))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">buying</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">planes</governor>
+            <dependent idx="2">380</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="2">380</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">buying</governor>
+            <dependent idx="4">planes</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">buying</governor>
+            <dependent idx="5">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">airline</governor>
+            <dependent idx="6">an</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">for</governor>
+            <dependent idx="7">airline</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="7">airline</governor>
+            <dependent idx="9">split</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">split</governor>
+            <dependent idx="10">between</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">between</governor>
+            <dependent idx="11">manufacturers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">buying</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">planes</governor>
+            <dependent idx="2">380</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="2">380</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">buying</governor>
+            <dependent idx="4">planes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">airline</governor>
+            <dependent idx="6">an</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">buying</governor>
+            <dependent idx="7">airline</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="7">airline</governor>
+            <dependent idx="9">split</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="9">split</governor>
+            <dependent idx="11">manufacturers</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">buying</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">planes</governor>
+            <dependent idx="2">380</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="2">380</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">buying</governor>
+            <dependent idx="4">planes</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">airline</governor>
+            <dependent idx="6">an</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">buying</governor>
+            <dependent idx="7">airline</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="7">airline</governor>
+            <dependent idx="9">split</dependent>
+          </dep>
+          <dep type="prep_between">
+            <governor idx="9">split</governor>
+            <dependent idx="11">manufacturers</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

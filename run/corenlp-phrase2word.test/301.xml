@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>catch</word>
+            <lemma>catch</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>Zs</word>
+            <lemma>z</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>nap</word>
+            <lemma>nap</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB catch) (NP (DT some) (NNS Zs) (NN nap))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">catch</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">nap</governor>
+            <dependent idx="2">some</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">nap</governor>
+            <dependent idx="3">Zs</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">catch</governor>
+            <dependent idx="4">nap</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">catch</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">nap</governor>
+            <dependent idx="2">some</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">nap</governor>
+            <dependent idx="3">Zs</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">catch</governor>
+            <dependent idx="4">nap</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">catch</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">nap</governor>
+            <dependent idx="2">some</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">nap</governor>
+            <dependent idx="3">Zs</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">catch</governor>
+            <dependent idx="4">nap</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>observable</word>
+            <lemma>observable</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>characteristic</word>
+            <lemma>characteristic</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>organism</word>
+            <lemma>organism</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>siberian</word>
+            <lemma>siberian</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>tiger</word>
+            <lemma>tiger</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT any) (JJ observable) (NN characteristic)) (PP (IN of) (NP (DT an) (NN organism)))) (NP (JJ siberian) (NN tiger)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">characteristic</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="1">any</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="2">observable</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">organism</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">organism</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">tiger</governor>
+            <dependent idx="7">siberian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="8">tiger</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">characteristic</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="1">any</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="2">observable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">organism</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="6">organism</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">tiger</governor>
+            <dependent idx="7">siberian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="8">tiger</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">characteristic</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="1">any</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="2">observable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">organism</governor>
+            <dependent idx="5">an</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="6">organism</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">tiger</governor>
+            <dependent idx="7">siberian</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">characteristic</governor>
+            <dependent idx="8">tiger</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

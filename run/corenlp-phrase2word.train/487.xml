@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>walkthroughs</word>
+            <lemma>walkthrough</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>strategy</word>
+            <lemma>strategy</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>guides</word>
+            <lemma>guide</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>super</word>
+            <lemma>super</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>smash</word>
+            <lemma>smash</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="8">
+            <word>bros.</word>
+            <lemma>bro.</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>melee</word>
+            <lemma>melee</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>strategies</word>
+            <lemma>strategy</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NP (NNS walkthroughs)) (CC and) (NP (NN strategy) (NNS guides))) (PP (IN for) (NP (JJ super)))) (VP (VBP smash) (NP (NN bros.) (NN melee) (NNS strategies))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">smash</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">smash</governor>
+            <dependent idx="1">walkthroughs</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">walkthroughs</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">guides</governor>
+            <dependent idx="3">strategy</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">walkthroughs</governor>
+            <dependent idx="4">guides</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">walkthroughs</governor>
+            <dependent idx="5">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">for</governor>
+            <dependent idx="6">super</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">strategies</governor>
+            <dependent idx="8">bros.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">strategies</governor>
+            <dependent idx="9">melee</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">smash</governor>
+            <dependent idx="10">strategies</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">smash</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">smash</governor>
+            <dependent idx="1">walkthroughs</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">guides</governor>
+            <dependent idx="3">strategy</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">walkthroughs</governor>
+            <dependent idx="4">guides</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">walkthroughs</governor>
+            <dependent idx="6">super</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">strategies</governor>
+            <dependent idx="8">bros.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">strategies</governor>
+            <dependent idx="9">melee</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">smash</governor>
+            <dependent idx="10">strategies</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">smash</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">smash</governor>
+            <dependent idx="1">walkthroughs</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">guides</governor>
+            <dependent idx="3">strategy</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">walkthroughs</governor>
+            <dependent idx="4">guides</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">smash</governor>
+            <dependent idx="4">guides</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">walkthroughs</governor>
+            <dependent idx="6">super</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">strategies</governor>
+            <dependent idx="8">bros.</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">strategies</governor>
+            <dependent idx="9">melee</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">smash</governor>
+            <dependent idx="10">strategies</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

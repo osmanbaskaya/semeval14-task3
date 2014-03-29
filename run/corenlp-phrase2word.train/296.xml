@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Platforms</word>
+            <lemma>platform</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Regionalbahn</word>
+            <lemma>regionalbahn</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>service</word>
+            <lemma>service</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>towards</word>
+            <lemma>towards</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>Pleinfeld</word>
+            <lemma>Pleinfeld</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>station</word>
+            <lemma>station</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>platform</word>
+            <lemma>platform</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NNS Platforms)) (PP (IN with) (NP (DT a) (NN Regionalbahn) (NN service))) (PP (IN towards) (NP (NNP Pleinfeld) (NN station) (NN platform))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Platforms</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Platforms</governor>
+            <dependent idx="2">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">service</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">service</governor>
+            <dependent idx="4">Regionalbahn</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">with</governor>
+            <dependent idx="5">service</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Platforms</governor>
+            <dependent idx="6">towards</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">platform</governor>
+            <dependent idx="7">Pleinfeld</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">platform</governor>
+            <dependent idx="8">station</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">towards</governor>
+            <dependent idx="9">platform</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Platforms</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">service</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">service</governor>
+            <dependent idx="4">Regionalbahn</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">Platforms</governor>
+            <dependent idx="5">service</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">platform</governor>
+            <dependent idx="7">Pleinfeld</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">platform</governor>
+            <dependent idx="8">station</dependent>
+          </dep>
+          <dep type="prep_towards">
+            <governor idx="1">Platforms</governor>
+            <dependent idx="9">platform</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Platforms</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">service</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">service</governor>
+            <dependent idx="4">Regionalbahn</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="1">Platforms</governor>
+            <dependent idx="5">service</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">platform</governor>
+            <dependent idx="7">Pleinfeld</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">platform</governor>
+            <dependent idx="8">station</dependent>
+          </dep>
+          <dep type="prep_towards">
+            <governor idx="1">Platforms</governor>
+            <dependent idx="9">platform</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

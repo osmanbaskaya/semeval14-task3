@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>major</word>
+            <lemma>major</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>north-flowing</word>
+            <lemma>north-flowing</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>river</word>
+            <lemma>river</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>Africa</word>
+            <lemma>Africa</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>ship</word>
+            <lemma>ship</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (JJ major) (JJ north-flowing) (NN river)) (PP (IN in) (NP (NNP Africa) (NN ship))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">river</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">river</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">river</governor>
+            <dependent idx="2">major</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">river</governor>
+            <dependent idx="3">north-flowing</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">river</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">ship</governor>
+            <dependent idx="6">Africa</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="7">ship</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">river</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">river</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">river</governor>
+            <dependent idx="2">major</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">river</governor>
+            <dependent idx="3">north-flowing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">ship</governor>
+            <dependent idx="6">Africa</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">river</governor>
+            <dependent idx="7">ship</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">river</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">river</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">river</governor>
+            <dependent idx="2">major</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">river</governor>
+            <dependent idx="3">north-flowing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">ship</governor>
+            <dependent idx="6">Africa</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">river</governor>
+            <dependent idx="7">ship</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

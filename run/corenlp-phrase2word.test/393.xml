@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>strongly</word>
+            <lemma>strongly</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>interacting</word>
+            <lemma>interact</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>composite</word>
+            <lemma>composite</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>subatomic</word>
+            <lemma>subatomic</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>particle</word>
+            <lemma>particle</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>quark</word>
+            <lemma>quark</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADJP (DT any)) (S (VP (ADVP (RB strongly)) (VBG interacting) (NP (JJ composite) (JJ subatomic) (NN particle) (NN quark)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">any</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">interacting</governor>
+            <dependent idx="2">strongly</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">any</governor>
+            <dependent idx="3">interacting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">quark</governor>
+            <dependent idx="4">composite</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">quark</governor>
+            <dependent idx="5">subatomic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">quark</governor>
+            <dependent idx="6">particle</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">interacting</governor>
+            <dependent idx="7">quark</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">any</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">interacting</governor>
+            <dependent idx="2">strongly</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">any</governor>
+            <dependent idx="3">interacting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">quark</governor>
+            <dependent idx="4">composite</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">quark</governor>
+            <dependent idx="5">subatomic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">quark</governor>
+            <dependent idx="6">particle</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">interacting</governor>
+            <dependent idx="7">quark</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">any</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">interacting</governor>
+            <dependent idx="2">strongly</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">any</governor>
+            <dependent idx="3">interacting</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">quark</governor>
+            <dependent idx="4">composite</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">quark</governor>
+            <dependent idx="5">subatomic</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">quark</governor>
+            <dependent idx="6">particle</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">interacting</governor>
+            <dependent idx="7">quark</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

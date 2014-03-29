@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>assistance</word>
+            <lemma>assistance</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>farming</word>
+            <lemma>farm</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>areas</word>
+            <lemma>area</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>harvester</word>
+            <lemma>harvester</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NN assistance)) (PP (IN in) (S (VP (VBG farming) (NP (NNS areas) (NN harvester))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">assistance</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">assistance</governor>
+            <dependent idx="2">in</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="2">in</governor>
+            <dependent idx="3">farming</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">harvester</governor>
+            <dependent idx="4">areas</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">farming</governor>
+            <dependent idx="5">harvester</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">assistance</dependent>
+          </dep>
+          <dep type="prepc_in">
+            <governor idx="1">assistance</governor>
+            <dependent idx="3">farming</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">harvester</governor>
+            <dependent idx="4">areas</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">farming</governor>
+            <dependent idx="5">harvester</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">assistance</dependent>
+          </dep>
+          <dep type="prepc_in">
+            <governor idx="1">assistance</governor>
+            <dependent idx="3">farming</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">harvester</governor>
+            <dependent idx="4">areas</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">farming</governor>
+            <dependent idx="5">harvester</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

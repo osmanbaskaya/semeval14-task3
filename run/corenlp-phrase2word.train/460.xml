@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>complete</word>
+            <lemma>complete</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>loss</word>
+            <lemma>loss</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>muscle</word>
+            <lemma>muscle</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>function</word>
+            <lemma>function</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="9">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="10">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="11">
+            <word>muscle</word>
+            <lemma>muscle</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>groups</word>
+            <lemma>group</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="13">
+            <word>song</word>
+            <lemma>song</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (DT the) (JJ complete) (NN loss)) (PP (IN of) (NP (NP (NN muscle) (NN function)) (PP (IN for) (NP (QP (NP (CD one)) (CC or) (NP (JJR more))) (NN muscle) (NNS groups)))))) (NP (NN song)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">loss</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">loss</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">loss</governor>
+            <dependent idx="2">complete</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">loss</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">function</governor>
+            <dependent idx="5">muscle</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="6">function</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">function</governor>
+            <dependent idx="7">for</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">groups</governor>
+            <dependent idx="8">one</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="8">one</governor>
+            <dependent idx="9">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="8">one</governor>
+            <dependent idx="10">more</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">groups</governor>
+            <dependent idx="11">muscle</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">for</governor>
+            <dependent idx="12">groups</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">loss</governor>
+            <dependent idx="13">song</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">loss</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">loss</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">loss</governor>
+            <dependent idx="2">complete</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">function</governor>
+            <dependent idx="5">muscle</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">loss</governor>
+            <dependent idx="6">function</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">groups</governor>
+            <dependent idx="8">one</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="8">one</governor>
+            <dependent idx="10">more</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">groups</governor>
+            <dependent idx="11">muscle</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="6">function</governor>
+            <dependent idx="12">groups</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">loss</governor>
+            <dependent idx="13">song</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">loss</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">loss</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">loss</governor>
+            <dependent idx="2">complete</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">function</governor>
+            <dependent idx="5">muscle</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">loss</governor>
+            <dependent idx="6">function</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">groups</governor>
+            <dependent idx="8">one</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="8">one</governor>
+            <dependent idx="10">more</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="12">groups</governor>
+            <dependent idx="10">more</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="12">groups</governor>
+            <dependent idx="11">muscle</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="6">function</governor>
+            <dependent idx="12">groups</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">loss</governor>
+            <dependent idx="13">song</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

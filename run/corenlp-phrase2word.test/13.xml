@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>wall</word>
+            <lemma>wall</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>text</word>
+            <lemma>text</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>alphabet</word>
+            <lemma>alphabet</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>soup</word>
+            <lemma>soup</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN wall)) (PP (IN of) (NP (NN text) (NN alphabet) (NN soup))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wall</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">wall</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">soup</governor>
+            <dependent idx="3">text</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">soup</governor>
+            <dependent idx="4">alphabet</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="5">soup</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">soup</governor>
+            <dependent idx="3">text</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">soup</governor>
+            <dependent idx="4">alphabet</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">wall</governor>
+            <dependent idx="5">soup</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">wall</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">soup</governor>
+            <dependent idx="3">text</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">soup</governor>
+            <dependent idx="4">alphabet</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">wall</governor>
+            <dependent idx="5">soup</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

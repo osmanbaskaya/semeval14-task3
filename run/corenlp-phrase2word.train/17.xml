@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>latest</word>
+            <lemma>latest</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="2">
+            <word>shooting</word>
+            <lemma>shooting</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>linked</word>
+            <lemma>link</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>spree</word>
+            <lemma>spree</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>victim</word>
+            <lemma>victim</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (JJS latest) (NN shooting)) (VP (VBN linked) (PP (TO to) (NP (DT the) (NN spree) (NN victim)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">linked</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">shooting</governor>
+            <dependent idx="1">latest</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">linked</governor>
+            <dependent idx="2">shooting</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">linked</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">victim</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">victim</governor>
+            <dependent idx="6">spree</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">to</governor>
+            <dependent idx="7">victim</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">linked</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">shooting</governor>
+            <dependent idx="1">latest</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">linked</governor>
+            <dependent idx="2">shooting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">victim</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">victim</governor>
+            <dependent idx="6">spree</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">linked</governor>
+            <dependent idx="7">victim</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">linked</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">shooting</governor>
+            <dependent idx="1">latest</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">linked</governor>
+            <dependent idx="2">shooting</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">victim</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">victim</governor>
+            <dependent idx="6">spree</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="3">linked</governor>
+            <dependent idx="7">victim</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

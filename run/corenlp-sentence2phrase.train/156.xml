@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>virus/trojan/keylogger</word>
+            <lemma>virus/trojan/keylogger</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>ect</word>
+            <lemma>ect</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (MD Can) (VP (NP (DT a) (JJ virus/trojan/keylogger) (NN ect)))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">ect</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">ect</governor>
+            <dependent idx="1">Can</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">ect</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">ect</governor>
+            <dependent idx="3">virus/trojan/keylogger</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">ect</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">ect</governor>
+            <dependent idx="1">Can</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">ect</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">ect</governor>
+            <dependent idx="3">virus/trojan/keylogger</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">ect</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">ect</governor>
+            <dependent idx="1">Can</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">ect</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">ect</governor>
+            <dependent idx="3">virus/trojan/keylogger</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>corrupt</word>
+            <lemma>corrupt</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>into</word>
+            <lemma>into</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="6">
+            <word>connection</word>
+            <lemma>connection</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ corrupt)) (CC or) (S (VP (VB get) (PP (IN into) (NP (PRP$ my) (NN connection))) (. ?))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">corrupt</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">corrupt</governor>
+            <dependent idx="2">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">corrupt</governor>
+            <dependent idx="3">get</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">get</governor>
+            <dependent idx="4">into</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">connection</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">into</governor>
+            <dependent idx="6">connection</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">corrupt</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">corrupt</governor>
+            <dependent idx="3">get</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">connection</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="prep_into">
+            <governor idx="3">get</governor>
+            <dependent idx="6">connection</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">corrupt</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">corrupt</governor>
+            <dependent idx="3">get</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">connection</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="prep_into">
+            <governor idx="3">get</governor>
+            <dependent idx="6">connection</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="3">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>malicious</word>
+            <lemma>malicious</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>program</word>
+            <lemma>program</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>changing</word>
+            <lemma>change</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="5">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="6">
+            <word>computer</word>
+            <lemma>computer</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>109</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>109</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="8">
+            <word>settings</word>
+            <lemma>setting</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>120</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (DT a) (JJ malicious) (NN program)) (S (VP (VBG changing) (NP (NP (PRP$ my) (NN computer) (POS 's)) (NNS settings)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">program</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">program</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">program</governor>
+            <dependent idx="2">malicious</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">program</governor>
+            <dependent idx="4">changing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">computer</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">settings</governor>
+            <dependent idx="6">computer</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="6">computer</governor>
+            <dependent idx="7">'s</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">changing</governor>
+            <dependent idx="8">settings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">program</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">program</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">program</governor>
+            <dependent idx="2">malicious</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">program</governor>
+            <dependent idx="4">changing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">computer</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">settings</governor>
+            <dependent idx="6">computer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">changing</governor>
+            <dependent idx="8">settings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">program</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">program</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">program</governor>
+            <dependent idx="2">malicious</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">program</governor>
+            <dependent idx="4">changing</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">computer</governor>
+            <dependent idx="5">my</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="8">settings</governor>
+            <dependent idx="6">computer</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">changing</governor>
+            <dependent idx="8">settings</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

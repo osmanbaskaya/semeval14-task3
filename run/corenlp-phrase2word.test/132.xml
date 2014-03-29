@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>unreasonable</word>
+            <lemma>unreasonable</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>under</word>
+            <lemma>under</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>circumstances</word>
+            <lemma>circumstance</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>contradictory</word>
+            <lemma>contradictory</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (ADJP (JJ unreasonable) (PP (IN under) (NP (DT the) (NNS circumstances)))) (ADJP (JJ contradictory)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">unreasonable</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">unreasonable</governor>
+            <dependent idx="2">under</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">circumstances</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">under</governor>
+            <dependent idx="4">circumstances</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">unreasonable</governor>
+            <dependent idx="5">contradictory</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">unreasonable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">circumstances</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_under">
+            <governor idx="1">unreasonable</governor>
+            <dependent idx="4">circumstances</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">unreasonable</governor>
+            <dependent idx="5">contradictory</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">unreasonable</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">circumstances</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_under">
+            <governor idx="1">unreasonable</governor>
+            <dependent idx="4">circumstances</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">unreasonable</governor>
+            <dependent idx="5">contradictory</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

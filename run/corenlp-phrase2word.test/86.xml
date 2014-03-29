@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>hot</word>
+            <lemma>hot</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>bothered</word>
+            <lemma>bother</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>fire</word>
+            <lemma>fire</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (ADJP (JJ hot)) (CC and) (VP (VBN bothered) (NP (NN fire))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hot</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">hot</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">hot</governor>
+            <dependent idx="3">bothered</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">bothered</governor>
+            <dependent idx="4">fire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hot</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">hot</governor>
+            <dependent idx="3">bothered</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">bothered</governor>
+            <dependent idx="4">fire</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">hot</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">hot</governor>
+            <dependent idx="3">bothered</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">bothered</governor>
+            <dependent idx="4">fire</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

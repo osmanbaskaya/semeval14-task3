@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>A</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>silver</word>
+            <lemma>silver</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>grass-fed</word>
+            <lemma>grass-fed</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>Murray</word>
+            <lemma>Murray</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>Grey</word>
+            <lemma>Grey</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>heifer</word>
+            <lemma>heifer</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>sheep</word>
+            <lemma>sheep</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>express</word>
+            <lemma>express</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT A) (JJ silver) (JJ grass-fed) (NNP Murray) (NNP Grey) (NN heifer)) (CC and) (NP (NN sheep))) (VP (VBP express)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">express</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">heifer</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">heifer</governor>
+            <dependent idx="2">silver</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">heifer</governor>
+            <dependent idx="3">grass-fed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">heifer</governor>
+            <dependent idx="4">Murray</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">heifer</governor>
+            <dependent idx="5">Grey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">express</governor>
+            <dependent idx="6">heifer</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">heifer</governor>
+            <dependent idx="7">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">heifer</governor>
+            <dependent idx="8">sheep</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">express</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">heifer</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">heifer</governor>
+            <dependent idx="2">silver</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">heifer</governor>
+            <dependent idx="3">grass-fed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">heifer</governor>
+            <dependent idx="4">Murray</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">heifer</governor>
+            <dependent idx="5">Grey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">express</governor>
+            <dependent idx="6">heifer</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">heifer</governor>
+            <dependent idx="8">sheep</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">express</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">heifer</governor>
+            <dependent idx="1">A</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">heifer</governor>
+            <dependent idx="2">silver</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">heifer</governor>
+            <dependent idx="3">grass-fed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">heifer</governor>
+            <dependent idx="4">Murray</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">heifer</governor>
+            <dependent idx="5">Grey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">express</governor>
+            <dependent idx="6">heifer</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="6">heifer</governor>
+            <dependent idx="8">sheep</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">express</governor>
+            <dependent idx="8">sheep</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

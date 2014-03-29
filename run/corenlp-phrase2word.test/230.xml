@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>cut</word>
+            <lemma>cut</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>corners</word>
+            <lemma>corner</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>skimp</word>
+            <lemma>skimp</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN cut) (NNS corners)) (VP (VBP skimp)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">skimp</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">corners</governor>
+            <dependent idx="1">cut</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">skimp</governor>
+            <dependent idx="2">corners</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">skimp</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">corners</governor>
+            <dependent idx="1">cut</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">skimp</governor>
+            <dependent idx="2">corners</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">skimp</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">corners</governor>
+            <dependent idx="1">cut</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">skimp</governor>
+            <dependent idx="2">corners</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

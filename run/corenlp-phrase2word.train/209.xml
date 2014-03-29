@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>bite</word>
+            <lemma>bite</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>off</word>
+            <lemma>off</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="3">
+            <word>more</word>
+            <lemma>more</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJR</POS>
+          </token>
+          <token id="4">
+            <word>than</word>
+            <lemma>than</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="6">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="7">
+            <word>chew</word>
+            <lemma>chew</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="8">
+            <word>begin</word>
+            <lemma>begin</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB bite) (PRT (RP off)) (NP (NP (QP (XS (JJR more) (IN than)) (CD one))) (SBAR (S (VP (MD can) (VP (VB chew) (ADVP (VB begin)))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bite</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">bite</governor>
+            <dependent idx="2">off</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="4">than</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="5">one</governor>
+            <dependent idx="4">than</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">bite</governor>
+            <dependent idx="5">one</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">chew</governor>
+            <dependent idx="6">can</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">one</governor>
+            <dependent idx="7">chew</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">chew</governor>
+            <dependent idx="8">begin</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bite</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">bite</governor>
+            <dependent idx="2">off</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="4">than</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="5">one</governor>
+            <dependent idx="4">than</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">bite</governor>
+            <dependent idx="5">one</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">chew</governor>
+            <dependent idx="6">can</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">one</governor>
+            <dependent idx="7">chew</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">chew</governor>
+            <dependent idx="8">begin</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">bite</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="1">bite</governor>
+            <dependent idx="2">off</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="4">than</governor>
+            <dependent idx="3">more</dependent>
+          </dep>
+          <dep type="quantmod">
+            <governor idx="5">one</governor>
+            <dependent idx="4">than</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">bite</governor>
+            <dependent idx="5">one</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">chew</governor>
+            <dependent idx="6">can</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="5">one</governor>
+            <dependent idx="7">chew</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="7">chew</governor>
+            <dependent idx="8">begin</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

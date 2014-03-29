@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>How</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="4">
+            <word>come</word>
+            <lemma>come</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>know</word>
+            <lemma>know</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>whether</word>
+            <lemma>whether</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>article</word>
+            <lemma>article</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="11">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="12">
+            <word>writing</word>
+            <lemma>write</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="13">
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="14">
+            <word>orignal</word>
+            <lemma>orignal</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="16">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="17">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB How)) (S (NP (PRP we)) (VP (MD can) (VP (VB come) (S (VP (TO to) (VP (VB know) (SBAR (IN whether) (S (NP (NP (DT the) (NN article)) (SBAR (S (NP (PRP we)) (VP (VBP are) (VP (VBG writing)))))) (VP (VBZ is) (ADJP (JJ orignal)))) (CC or) (RB not)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">come</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">come</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">come</governor>
+            <dependent idx="2">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">come</governor>
+            <dependent idx="3">can</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">know</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">come</governor>
+            <dependent idx="6">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="14">orignal</governor>
+            <dependent idx="7">whether</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">article</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">orignal</governor>
+            <dependent idx="9">article</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">writing</governor>
+            <dependent idx="10">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">writing</governor>
+            <dependent idx="11">are</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="9">article</governor>
+            <dependent idx="12">writing</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">orignal</governor>
+            <dependent idx="13">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">know</governor>
+            <dependent idx="14">orignal</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="14">orignal</governor>
+            <dependent idx="15">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="14">orignal</governor>
+            <dependent idx="16">not</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">come</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">come</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">come</governor>
+            <dependent idx="2">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">come</governor>
+            <dependent idx="3">can</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">know</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">come</governor>
+            <dependent idx="6">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="14">orignal</governor>
+            <dependent idx="7">whether</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">article</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">orignal</governor>
+            <dependent idx="9">article</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">writing</governor>
+            <dependent idx="10">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">writing</governor>
+            <dependent idx="11">are</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="9">article</governor>
+            <dependent idx="12">writing</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">orignal</governor>
+            <dependent idx="13">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">know</governor>
+            <dependent idx="14">orignal</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="14">orignal</governor>
+            <dependent idx="16">not</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">come</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">come</governor>
+            <dependent idx="1">How</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">come</governor>
+            <dependent idx="2">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">come</governor>
+            <dependent idx="3">can</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">know</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="4">come</governor>
+            <dependent idx="6">know</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="14">orignal</governor>
+            <dependent idx="7">whether</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">article</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">orignal</governor>
+            <dependent idx="9">article</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">writing</governor>
+            <dependent idx="10">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">writing</governor>
+            <dependent idx="11">are</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="9">article</governor>
+            <dependent idx="12">writing</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">orignal</governor>
+            <dependent idx="13">is</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">know</governor>
+            <dependent idx="14">orignal</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="6">know</governor>
+            <dependent idx="16">not</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="14">orignal</governor>
+            <dependent idx="16">not</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>measuring</word>
+            <lemma>measure</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>writing</word>
+            <lemma>write</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="3">
+            <word>originality</word>
+            <lemma>originality</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG measuring) (S (VP (VBG writing) (NP (NN originality))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">measuring</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">measuring</governor>
+            <dependent idx="2">writing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">writing</governor>
+            <dependent idx="3">originality</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">measuring</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">measuring</governor>
+            <dependent idx="2">writing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">writing</governor>
+            <dependent idx="3">originality</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">measuring</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="1">measuring</governor>
+            <dependent idx="2">writing</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="2">writing</governor>
+            <dependent idx="3">originality</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

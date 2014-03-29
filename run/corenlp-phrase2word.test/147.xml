@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>two</word>
+            <lemma>two</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>weeks</word>
+            <lemma>week</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>later</word>
+            <lemma>later</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>chronology</word>
+            <lemma>chronology</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBAR (IN about) (S (NP-TMP (CD two) (NNS weeks) (RB later)) (VP (VBP chronology))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">chronology</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">chronology</governor>
+            <dependent idx="1">about</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">weeks</governor>
+            <dependent idx="2">two</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">chronology</governor>
+            <dependent idx="3">weeks</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">weeks</governor>
+            <dependent idx="4">later</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">chronology</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">chronology</governor>
+            <dependent idx="1">about</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">weeks</governor>
+            <dependent idx="2">two</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">chronology</governor>
+            <dependent idx="3">weeks</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">weeks</governor>
+            <dependent idx="4">later</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">chronology</dependent>
+          </dep>
+          <dep type="mark">
+            <governor idx="5">chronology</governor>
+            <dependent idx="1">about</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="3">weeks</governor>
+            <dependent idx="2">two</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">chronology</governor>
+            <dependent idx="3">weeks</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">weeks</governor>
+            <dependent idx="4">later</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

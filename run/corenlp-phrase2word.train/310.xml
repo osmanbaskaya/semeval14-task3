@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Poetry</word>
+            <lemma>Poetry</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>stone</word>
+            <lemma>stone</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>Meguti</word>
+            <lemma>Meguti</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>temple</word>
+            <lemma>temple</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>Aihole</word>
+            <lemma>Aihole</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>monk</word>
+            <lemma>monk</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NNP Poetry)) (PP (IN on) (NP (NN stone)))) (PP (IN at) (NP (DT the) (NNP Meguti) (NN temple) (NNP Aihole) (NN monk))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Poetry</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Poetry</governor>
+            <dependent idx="2">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">on</governor>
+            <dependent idx="3">stone</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Poetry</governor>
+            <dependent idx="4">at</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">monk</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="6">Meguti</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="7">temple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="8">Aihole</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">at</governor>
+            <dependent idx="9">monk</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Poetry</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Poetry</governor>
+            <dependent idx="3">stone</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">monk</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="6">Meguti</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="7">temple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="8">Aihole</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="1">Poetry</governor>
+            <dependent idx="9">monk</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Poetry</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">Poetry</governor>
+            <dependent idx="3">stone</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">monk</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="6">Meguti</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="7">temple</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">monk</governor>
+            <dependent idx="8">Aihole</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="1">Poetry</governor>
+            <dependent idx="9">monk</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

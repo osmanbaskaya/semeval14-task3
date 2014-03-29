@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>From</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PDT</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>available</word>
+            <lemma>available</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>statistics</word>
+            <lemma>statistics</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>politician</word>
+            <lemma>politician</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>cherry-picked</word>
+            <lemma>cherry-pick</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="10">
+            <word>only</word>
+            <lemma>only</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="11">
+            <word>those</word>
+            <lemma>those</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="13">
+            <word>backed</word>
+            <lemma>back</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="14">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="15">
+            <word>his</word>
+            <lemma>he</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="16">
+            <word>ideas</word>
+            <lemma>idea</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="17">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (PP (IN From) (NP (PDT all) (DT the) (JJ available) (NNS statistics))) (, ,) (NP (DT the) (NN politician)) (VP (VBD cherry-picked) (NP (NP (RB only) (DT those)) (SBAR (WHNP (WDT that)) (S (VP (VBD backed) (PRT (RP up)) (NP (PRP$ his) (NNS ideas))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">cherry-picked</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="1">From</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="5">statistics</governor>
+            <dependent idx="2">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">statistics</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">statistics</governor>
+            <dependent idx="4">available</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">From</governor>
+            <dependent idx="5">statistics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">politician</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="8">politician</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">those</governor>
+            <dependent idx="10">only</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="11">those</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">backed</governor>
+            <dependent idx="12">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="11">those</governor>
+            <dependent idx="13">backed</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="13">backed</governor>
+            <dependent idx="14">up</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="16">ideas</governor>
+            <dependent idx="15">his</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">backed</governor>
+            <dependent idx="16">ideas</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">cherry-picked</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="5">statistics</governor>
+            <dependent idx="2">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">statistics</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">statistics</governor>
+            <dependent idx="4">available</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="5">statistics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">politician</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="8">politician</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">those</governor>
+            <dependent idx="10">only</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="11">those</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">backed</governor>
+            <dependent idx="12">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="11">those</governor>
+            <dependent idx="13">backed</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="13">backed</governor>
+            <dependent idx="14">up</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="16">ideas</governor>
+            <dependent idx="15">his</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">backed</governor>
+            <dependent idx="16">ideas</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">cherry-picked</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="5">statistics</governor>
+            <dependent idx="2">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">statistics</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">statistics</governor>
+            <dependent idx="4">available</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="5">statistics</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">politician</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="8">politician</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="11">those</governor>
+            <dependent idx="10">only</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="9">cherry-picked</governor>
+            <dependent idx="11">those</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="13">backed</governor>
+            <dependent idx="12">that</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="11">those</governor>
+            <dependent idx="13">backed</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="13">backed</governor>
+            <dependent idx="14">up</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="16">ideas</governor>
+            <dependent idx="15">his</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="13">backed</governor>
+            <dependent idx="16">ideas</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>just</word>
+            <lemma>just</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>regretful</word>
+            <lemma>regretful</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>one-night</word>
+            <lemma>one-night</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>stand</word>
+            <lemma>stand</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>133</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (RB just) (DT a) (JJ regretful) (JJ one-night) (NN stand)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">stand</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">stand</governor>
+            <dependent idx="1">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">stand</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">stand</governor>
+            <dependent idx="3">regretful</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">stand</governor>
+            <dependent idx="4">one-night</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">stand</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">stand</governor>
+            <dependent idx="1">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">stand</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">stand</governor>
+            <dependent idx="3">regretful</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">stand</governor>
+            <dependent idx="4">one-night</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">stand</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">stand</governor>
+            <dependent idx="1">just</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">stand</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">stand</governor>
+            <dependent idx="3">regretful</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">stand</governor>
+            <dependent idx="4">one-night</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

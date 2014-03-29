@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>most</word>
+            <lemma>most</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>RBS</POS>
+          </token>
+          <token id="3">
+            <word>dangerous</word>
+            <lemma>dangerous</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>job</word>
+            <lemma>job</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>world</word>
+            <lemma>world</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>dvd</word>
+            <lemma>dvd</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (DT the) (ADJP (RBS most) (JJ dangerous)) (NN job)) (PP (IN in) (NP (DT the) (NN world) (NN dvd))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">job</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">job</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">dangerous</governor>
+            <dependent idx="2">most</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">job</governor>
+            <dependent idx="3">dangerous</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">job</governor>
+            <dependent idx="5">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">dvd</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">dvd</governor>
+            <dependent idx="7">world</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">in</governor>
+            <dependent idx="8">dvd</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">job</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">job</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">dangerous</governor>
+            <dependent idx="2">most</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">job</governor>
+            <dependent idx="3">dangerous</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">dvd</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">dvd</governor>
+            <dependent idx="7">world</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">job</governor>
+            <dependent idx="8">dvd</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">job</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">job</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="3">dangerous</governor>
+            <dependent idx="2">most</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">job</governor>
+            <dependent idx="3">dangerous</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">dvd</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">dvd</governor>
+            <dependent idx="7">world</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="4">job</governor>
+            <dependent idx="8">dvd</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>necessary</word>
+            <lemma>necessary</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>achieve</word>
+            <lemma>achieve</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>that</word>
+            <lemma>that</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>objective</word>
+            <lemma>objective</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>imperative</word>
+            <lemma>imperative</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (ADJP (JJ necessary) (S (VP (TO to) (VP (VB achieve) (S (NP (DT that) (JJ objective)) (ADJP (JJ imperative)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">necessary</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">achieve</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">necessary</governor>
+            <dependent idx="3">achieve</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">objective</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">imperative</governor>
+            <dependent idx="5">objective</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">achieve</governor>
+            <dependent idx="6">imperative</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">necessary</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">achieve</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">necessary</governor>
+            <dependent idx="3">achieve</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">objective</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">imperative</governor>
+            <dependent idx="5">objective</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">achieve</governor>
+            <dependent idx="6">imperative</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">necessary</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">achieve</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">necessary</governor>
+            <dependent idx="3">achieve</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">objective</governor>
+            <dependent idx="4">that</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">imperative</governor>
+            <dependent idx="5">objective</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">achieve</governor>
+            <dependent idx="6">imperative</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

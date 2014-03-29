@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>refusing</word>
+            <lemma>refuse</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="3">
+            <word>rehire</word>
+            <lemma>rehire</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>rehabilitated</word>
+            <lemma>rehabilitate</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="5">
+            <word>drug</word>
+            <lemma>drug</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>users</word>
+            <lemma>user</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>square</word>
+            <lemma>square</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG refusing) (S (VP (TO to) (VP (VB rehire) (VP (VBN rehabilitated) (NP (NN drug) (NNS users) (NN square))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">refusing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">rehire</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">refusing</governor>
+            <dependent idx="3">rehire</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">rehire</governor>
+            <dependent idx="4">rehabilitated</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">square</governor>
+            <dependent idx="5">drug</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">square</governor>
+            <dependent idx="6">users</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">rehabilitated</governor>
+            <dependent idx="7">square</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">refusing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">rehire</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">refusing</governor>
+            <dependent idx="3">rehire</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">rehire</governor>
+            <dependent idx="4">rehabilitated</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">square</governor>
+            <dependent idx="5">drug</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">square</governor>
+            <dependent idx="6">users</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">rehabilitated</governor>
+            <dependent idx="7">square</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">refusing</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">rehire</governor>
+            <dependent idx="2">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">refusing</governor>
+            <dependent idx="3">rehire</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">rehire</governor>
+            <dependent idx="4">rehabilitated</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">square</governor>
+            <dependent idx="5">drug</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">square</governor>
+            <dependent idx="6">users</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">rehabilitated</governor>
+            <dependent idx="7">square</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

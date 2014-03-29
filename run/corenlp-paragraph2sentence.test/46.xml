@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Lasers</word>
+            <lemma>laser</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>used</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>common</word>
+            <lemma>common</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>consumer</word>
+            <lemma>consumer</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>devices</word>
+            <lemma>device</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>such</word>
+            <lemma>such</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>DVD</word>
+            <lemma>dvd</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>players</word>
+            <lemma>player</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="12">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="13">
+            <word>laser</word>
+            <lemma>laser</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>printers</word>
+            <lemma>printer</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="15">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="16">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>80</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="17">
+            <word>barcode</word>
+            <lemma>barcode</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="18">
+            <word>scanners</word>
+            <lemma>scanner</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="19">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>101</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS Lasers)) (VP (VBP are) (VP (VBN used) (PP (IN in) (NP (NP (JJ common) (NN consumer) (NNS devices)) (PP (JJ such) (IN as) (NP (NP (NN DVD) (NNS players)) (, ,) (NP (NN laser) (NNS printers)) (, ,) (CC and) (NP (NN barcode) (NNS scanners)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">used</governor>
+            <dependent idx="1">Lasers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">used</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">used</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">devices</governor>
+            <dependent idx="5">common</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">devices</governor>
+            <dependent idx="6">consumer</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="7">devices</dependent>
+          </dep>
+          <dep type="mwe">
+            <governor idx="9">as</governor>
+            <dependent idx="8">such</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">devices</governor>
+            <dependent idx="9">as</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">players</governor>
+            <dependent idx="10">DVD</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">as</governor>
+            <dependent idx="11">players</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">printers</governor>
+            <dependent idx="13">laser</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="11">players</governor>
+            <dependent idx="14">printers</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="11">players</governor>
+            <dependent idx="16">and</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="18">scanners</governor>
+            <dependent idx="17">barcode</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="11">players</governor>
+            <dependent idx="18">scanners</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">used</governor>
+            <dependent idx="1">Lasers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">used</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">devices</governor>
+            <dependent idx="5">common</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">devices</governor>
+            <dependent idx="6">consumer</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">used</governor>
+            <dependent idx="7">devices</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">players</governor>
+            <dependent idx="10">DVD</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="7">devices</governor>
+            <dependent idx="11">players</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">printers</governor>
+            <dependent idx="13">laser</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">players</governor>
+            <dependent idx="14">printers</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="18">scanners</governor>
+            <dependent idx="17">barcode</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">players</governor>
+            <dependent idx="18">scanners</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">used</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="3">used</governor>
+            <dependent idx="1">Lasers</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="3">used</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">devices</governor>
+            <dependent idx="5">common</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">devices</governor>
+            <dependent idx="6">consumer</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">used</governor>
+            <dependent idx="7">devices</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">players</governor>
+            <dependent idx="10">DVD</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="7">devices</governor>
+            <dependent idx="11">players</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="14">printers</governor>
+            <dependent idx="13">laser</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="7">devices</governor>
+            <dependent idx="14">printers</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">players</governor>
+            <dependent idx="14">printers</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="18">scanners</governor>
+            <dependent idx="17">barcode</dependent>
+          </dep>
+          <dep type="prep_such_as">
+            <governor idx="7">devices</governor>
+            <dependent idx="18">scanners</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="11">players</governor>
+            <dependent idx="18">scanners</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>102</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>certain</word>
+            <lemma>certain</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>set</word>
+            <lemma>set</lemma>
+            <CharacterOffsetBegin>112</CharacterOffsetBegin>
+            <CharacterOffsetEnd>115</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>116</CharacterOffsetBegin>
+            <CharacterOffsetEnd>118</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>observations</word>
+            <lemma>observation</lemma>
+            <CharacterOffsetBegin>119</CharacterOffsetBegin>
+            <CharacterOffsetEnd>131</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (JJ certain) (NN set)) (PP (IN of) (NP (NNS observations))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">set</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">set</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">set</governor>
+            <dependent idx="2">certain</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">set</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="5">observations</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">set</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">set</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">set</governor>
+            <dependent idx="2">certain</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">set</governor>
+            <dependent idx="5">observations</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">set</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">set</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">set</governor>
+            <dependent idx="2">certain</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">set</governor>
+            <dependent idx="5">observations</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

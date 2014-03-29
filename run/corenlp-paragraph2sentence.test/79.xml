@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="2">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="3">
+            <word>give</word>
+            <lemma>give</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>any</word>
+            <lemma>any</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="7">
+            <word>3</word>
+            <lemma>3</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="8">
+            <word>email</word>
+            <lemma>email</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>addresses</word>
+            <lemma>address</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="11">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="12">
+            <word>paid</word>
+            <lemma>pay</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="13">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="14">
+            <word>paypal</word>
+            <lemma>paypal</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="15">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SQ (MD can) (NP (FW i)) (VP (VB give) (NP (NP (DT any)) (PP (IN of) (NP (PRP$ my) (CD 3) (NN email) (NNS addresses)))) (S (VP (TO to) (VP (VB get) (VP (VBN paid) (PP (IN with) (NP (NN paypal)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">give</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">give</governor>
+            <dependent idx="1">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">give</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">give</governor>
+            <dependent idx="4">any</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">any</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">addresses</governor>
+            <dependent idx="6">my</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">addresses</governor>
+            <dependent idx="7">3</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">addresses</governor>
+            <dependent idx="8">email</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="9">addresses</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">paid</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="12">paid</governor>
+            <dependent idx="11">get</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">give</governor>
+            <dependent idx="12">paid</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">paid</governor>
+            <dependent idx="13">with</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">with</governor>
+            <dependent idx="14">paypal</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">give</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">give</governor>
+            <dependent idx="1">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">give</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">give</governor>
+            <dependent idx="4">any</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">addresses</governor>
+            <dependent idx="6">my</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">addresses</governor>
+            <dependent idx="7">3</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">addresses</governor>
+            <dependent idx="8">email</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">any</governor>
+            <dependent idx="9">addresses</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">paid</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="12">paid</governor>
+            <dependent idx="11">get</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">give</governor>
+            <dependent idx="12">paid</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="12">paid</governor>
+            <dependent idx="14">paypal</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">give</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="3">give</governor>
+            <dependent idx="1">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">give</governor>
+            <dependent idx="2">i</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">give</governor>
+            <dependent idx="4">any</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">addresses</governor>
+            <dependent idx="6">my</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="9">addresses</governor>
+            <dependent idx="7">3</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">addresses</governor>
+            <dependent idx="8">email</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="4">any</governor>
+            <dependent idx="9">addresses</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">paid</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="12">paid</governor>
+            <dependent idx="11">get</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">give</governor>
+            <dependent idx="12">paid</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="12">paid</governor>
+            <dependent idx="14">paypal</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="2">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>history</word>
+            <lemma>history</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (PRP$ my) (NN internet) (NN history)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">history</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">history</governor>
+            <dependent idx="1">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">history</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">history</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">history</governor>
+            <dependent idx="1">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">history</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">history</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="3">history</governor>
+            <dependent idx="1">my</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">history</governor>
+            <dependent idx="2">internet</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

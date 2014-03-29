@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>repetition</word>
+            <lemma>repetition</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="5">
+            <word>expression</word>
+            <lemma>expression</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>as</word>
+            <lemma>as</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>part</word>
+            <lemma>part</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>another</word>
+            <lemma>another</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>one</word>
+            <lemma>one</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="11">
+            <word>pioneer</word>
+            <lemma>pioneer</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN repetition)) (PP (IN of) (NP (NP (CD one) (NN expression)) (PP (IN as) (NP (NN part))))) (PP (IN of) (NP (DT another) (CD one) (NN pioneer))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">repetition</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">repetition</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">repetition</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">expression</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">expression</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">expression</governor>
+            <dependent idx="6">as</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">as</governor>
+            <dependent idx="7">part</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">repetition</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">pioneer</governor>
+            <dependent idx="9">another</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">pioneer</governor>
+            <dependent idx="10">one</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="11">pioneer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">repetition</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">repetition</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">expression</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">repetition</governor>
+            <dependent idx="5">expression</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="5">expression</governor>
+            <dependent idx="7">part</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">pioneer</governor>
+            <dependent idx="9">another</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">pioneer</governor>
+            <dependent idx="10">one</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">repetition</governor>
+            <dependent idx="11">pioneer</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">repetition</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">repetition</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">expression</governor>
+            <dependent idx="4">one</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">repetition</governor>
+            <dependent idx="5">expression</dependent>
+          </dep>
+          <dep type="prep_as">
+            <governor idx="5">expression</governor>
+            <dependent idx="7">part</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">pioneer</governor>
+            <dependent idx="9">another</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="11">pioneer</governor>
+            <dependent idx="10">one</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">repetition</governor>
+            <dependent idx="11">pioneer</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>how</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>much</word>
+            <lemma>much</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>money</word>
+            <lemma>money</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="5">
+            <word>people</word>
+            <lemma>people</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>typically</word>
+            <lemma>typically</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="7">
+            <word>proxy</word>
+            <lemma>proxy</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>bid</word>
+            <lemma>bid</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>ebay</word>
+            <lemma>ebay</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHNP (WHADJP (WRB how) (JJ much)) (NN money)) (SQ (VP (VBP do) (NP (NNS people)) (ADVP (RB typically)) (PP (NP (JJ proxy) (NN bid)) (IN on) (NP (NN ebay))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">much</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">money</governor>
+            <dependent idx="2">much</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">do</governor>
+            <dependent idx="3">money</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">do</governor>
+            <dependent idx="5">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">do</governor>
+            <dependent idx="6">typically</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">bid</governor>
+            <dependent idx="7">proxy</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="9">on</governor>
+            <dependent idx="8">bid</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">do</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">on</governor>
+            <dependent idx="10">ebay</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">much</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">money</governor>
+            <dependent idx="2">much</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">do</governor>
+            <dependent idx="3">money</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">do</governor>
+            <dependent idx="5">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">do</governor>
+            <dependent idx="6">typically</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">bid</governor>
+            <dependent idx="7">proxy</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="4">do</governor>
+            <dependent idx="8">bid</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">do</governor>
+            <dependent idx="10">ebay</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">do</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">much</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">money</governor>
+            <dependent idx="2">much</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">do</governor>
+            <dependent idx="3">money</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">do</governor>
+            <dependent idx="5">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">do</governor>
+            <dependent idx="6">typically</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">bid</governor>
+            <dependent idx="7">proxy</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="4">do</governor>
+            <dependent idx="8">bid</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="4">do</governor>
+            <dependent idx="10">ebay</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>amount</word>
+            <lemma>amount</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>ebay</word>
+            <lemma>ebay</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>proxy</word>
+            <lemma>proxy</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>bids</word>
+            <lemma>bid</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>people</word>
+            <lemma>people</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>90</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>usually</word>
+            <lemma>usually</lemma>
+            <CharacterOffsetBegin>91</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="9">
+            <word>use</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>102</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT the) (NN amount)) (PP (IN of) (NP (NN ebay) (NN proxy) (NNS bids) (NNS people)))) (VP (ADVP (RB usually)) (VBP use)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">use</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">amount</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">use</governor>
+            <dependent idx="2">amount</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">amount</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="4">ebay</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="5">proxy</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="6">bids</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">use</governor>
+            <dependent idx="8">usually</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">use</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">amount</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">use</governor>
+            <dependent idx="2">amount</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="4">ebay</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="5">proxy</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="6">bids</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">amount</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">use</governor>
+            <dependent idx="8">usually</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="9">use</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">amount</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="9">use</governor>
+            <dependent idx="2">amount</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="4">ebay</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="5">proxy</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">people</governor>
+            <dependent idx="6">bids</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">amount</governor>
+            <dependent idx="7">people</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">use</governor>
+            <dependent idx="8">usually</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

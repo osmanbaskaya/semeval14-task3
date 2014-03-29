@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>prizes</word>
+            <lemma>prize</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>lockerz</word>
+            <lemma>lockerz</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>decrease</word>
+            <lemma>decrease</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>points</word>
+            <lemma>point</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="7">
+            <word>over</word>
+            <lemma>over</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>time</word>
+            <lemma>time</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="10">
+            <word>do</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="11">
+            <word>they</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="12">
+            <word>stay</word>
+            <lemma>stay</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="13">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="14">
+            <word>same</word>
+            <lemma>same</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VP (VB do) (NP (NNS prizes)) (PP (IN on) (NP (NP (NN lockerz) (NN decrease) (NNS points)) (PP (IN over) (NP (NN time)))))) (CC or) (VP (VBP do) (S (NP (PRP they)) (VP (VB stay) (NP (DT the) (JJ same)))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">do</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">do</governor>
+            <dependent idx="2">prizes</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">do</governor>
+            <dependent idx="3">on</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">points</governor>
+            <dependent idx="4">lockerz</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">points</governor>
+            <dependent idx="5">decrease</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">on</governor>
+            <dependent idx="6">points</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">points</governor>
+            <dependent idx="7">over</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">over</governor>
+            <dependent idx="8">time</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">do</governor>
+            <dependent idx="9">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">do</governor>
+            <dependent idx="10">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">same</governor>
+            <dependent idx="11">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">same</governor>
+            <dependent idx="12">stay</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">same</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">do</governor>
+            <dependent idx="14">same</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">do</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">do</governor>
+            <dependent idx="2">prizes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">points</governor>
+            <dependent idx="4">lockerz</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">points</governor>
+            <dependent idx="5">decrease</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">do</governor>
+            <dependent idx="6">points</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="6">points</governor>
+            <dependent idx="8">time</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">do</governor>
+            <dependent idx="10">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">same</governor>
+            <dependent idx="11">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">same</governor>
+            <dependent idx="12">stay</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">same</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">do</governor>
+            <dependent idx="14">same</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">do</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">do</governor>
+            <dependent idx="2">prizes</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">points</governor>
+            <dependent idx="4">lockerz</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">points</governor>
+            <dependent idx="5">decrease</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="1">do</governor>
+            <dependent idx="6">points</dependent>
+          </dep>
+          <dep type="prep_over">
+            <governor idx="6">points</governor>
+            <dependent idx="8">time</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="1">do</governor>
+            <dependent idx="10">do</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="14">same</governor>
+            <dependent idx="11">they</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="14">same</governor>
+            <dependent idx="12">stay</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="14">same</governor>
+            <dependent idx="13">the</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="10">do</governor>
+            <dependent idx="14">same</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>lockerz</word>
+            <lemma>lockerz</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>prizes</word>
+            <lemma>prize</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>point</word>
+            <lemma>point</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="4">
+            <word>values</word>
+            <lemma>value</lemma>
+            <CharacterOffsetBegin>94</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NN lockerz) (NNS prizes)) (VP (VBP point) (NP (NNS values))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">point</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">prizes</governor>
+            <dependent idx="1">lockerz</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">point</governor>
+            <dependent idx="2">prizes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">point</governor>
+            <dependent idx="4">values</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">point</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">prizes</governor>
+            <dependent idx="1">lockerz</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">point</governor>
+            <dependent idx="2">prizes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">point</governor>
+            <dependent idx="4">values</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">point</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">prizes</governor>
+            <dependent idx="1">lockerz</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">point</governor>
+            <dependent idx="2">prizes</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">point</governor>
+            <dependent idx="4">values</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

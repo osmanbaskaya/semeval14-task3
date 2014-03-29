@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>underwater</word>
+            <lemma>underwater</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>basket</word>
+            <lemma>basket</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>weaving</word>
+            <lemma>weave</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>sick</word>
+            <lemma>sick</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (JJ underwater) (NN basket)) (VP (VBG weaving) (ADJP (JJ sick)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">basket</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">basket</governor>
+            <dependent idx="1">underwater</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">basket</governor>
+            <dependent idx="3">weaving</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">weaving</governor>
+            <dependent idx="4">sick</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">basket</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">basket</governor>
+            <dependent idx="1">underwater</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">basket</governor>
+            <dependent idx="3">weaving</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">weaving</governor>
+            <dependent idx="4">sick</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">basket</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">basket</governor>
+            <dependent idx="1">underwater</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="2">basket</governor>
+            <dependent idx="3">weaving</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="3">weaving</governor>
+            <dependent idx="4">sick</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>running</word>
+            <lemma>run</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>machine</word>
+            <lemma>machine</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (UCP (ADVP (RB up)) (CC and) (VP (VBG running) (NP (NN machine))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">up</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">up</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">up</governor>
+            <dependent idx="3">running</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">running</governor>
+            <dependent idx="4">machine</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">up</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">up</governor>
+            <dependent idx="3">running</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">running</governor>
+            <dependent idx="4">machine</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">up</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">up</governor>
+            <dependent idx="3">running</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">running</governor>
+            <dependent idx="4">machine</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

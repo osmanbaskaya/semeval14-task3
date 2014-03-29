@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>baby</word>
+            <lemma>baby</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>mama</word>
+            <lemma>mama</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>repulsive</word>
+            <lemma>repulsive</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN baby) (NN mama)) (ADJP (JJ repulsive))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mama</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">mama</governor>
+            <dependent idx="1">baby</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">mama</governor>
+            <dependent idx="3">repulsive</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mama</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">mama</governor>
+            <dependent idx="1">baby</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">mama</governor>
+            <dependent idx="3">repulsive</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">mama</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">mama</governor>
+            <dependent idx="1">baby</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">mama</governor>
+            <dependent idx="3">repulsive</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

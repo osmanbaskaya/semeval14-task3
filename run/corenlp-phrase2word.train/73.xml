@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>alternative</word>
+            <lemma>alternative</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>means</word>
+            <lemma>means</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>transport</word>
+            <lemma>transport</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>seat</word>
+            <lemma>seat</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ alternative) (NNS means)) (PP (IN of) (NP (NN transport) (NN seat))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">means</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">means</governor>
+            <dependent idx="1">alternative</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">means</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">seat</governor>
+            <dependent idx="4">transport</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">seat</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">means</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">means</governor>
+            <dependent idx="1">alternative</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">seat</governor>
+            <dependent idx="4">transport</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">means</governor>
+            <dependent idx="5">seat</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">means</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">means</governor>
+            <dependent idx="1">alternative</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">seat</governor>
+            <dependent idx="4">transport</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">means</governor>
+            <dependent idx="5">seat</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

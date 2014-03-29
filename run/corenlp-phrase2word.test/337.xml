@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>University</word>
+            <lemma>University</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>England</word>
+            <lemma>England</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>Australia</word>
+            <lemma>Australia</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="8">
+            <word>laureate</word>
+            <lemma>laureate</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NNP University)) (PP (IN of) (NP (NP (NNP New) (NNP England)) (, ,) (NP (NNP Australia) (NN laureate)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">University</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">University</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">University</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">England</governor>
+            <dependent idx="4">New</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="5">England</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">laureate</governor>
+            <dependent idx="7">Australia</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">England</governor>
+            <dependent idx="8">laureate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">University</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">University</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">England</governor>
+            <dependent idx="4">New</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">University</governor>
+            <dependent idx="5">England</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">laureate</governor>
+            <dependent idx="7">Australia</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">England</governor>
+            <dependent idx="8">laureate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">University</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">University</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">England</governor>
+            <dependent idx="4">New</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">University</governor>
+            <dependent idx="5">England</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">laureate</governor>
+            <dependent idx="7">Australia</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="5">England</governor>
+            <dependent idx="8">laureate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

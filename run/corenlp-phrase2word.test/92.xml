@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>mac</word>
+            <lemma>mac</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>'n'</word>
+            <lemma>'n'</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>cheese</word>
+            <lemma>cheese</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>emotional</word>
+            <lemma>emotional</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN mac)) (CC 'n') (NP (NN cheese))) (ADJP (JJ emotional)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">emotional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">emotional</governor>
+            <dependent idx="1">mac</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">mac</governor>
+            <dependent idx="2">'n'</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">mac</governor>
+            <dependent idx="3">cheese</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">emotional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">emotional</governor>
+            <dependent idx="1">mac</dependent>
+          </dep>
+          <dep type="conj_'n'">
+            <governor idx="1">mac</governor>
+            <dependent idx="3">cheese</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">emotional</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">emotional</governor>
+            <dependent idx="1">mac</dependent>
+          </dep>
+          <dep type="conj_'n'">
+            <governor idx="1">mac</governor>
+            <dependent idx="3">cheese</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">emotional</governor>
+            <dependent idx="3">cheese</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

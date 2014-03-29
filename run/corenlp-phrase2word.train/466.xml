@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>lands</word>
+            <lemma>land</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>Western</word>
+            <lemma>western</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>hemisphere</word>
+            <lemma>hemisphere</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>New</word>
+            <lemma>New</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>World</word>
+            <lemma>World</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Americas</word>
+            <lemma>Americas</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NNS lands)) (PP (IN of) (NP (NP (DT the) (JJ Western) (NN hemisphere)) (CC or) (NP (NNP New) (NNP World) (NNPS Americas)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">lands</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">lands</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">lands</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="5">Western</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="6">hemisphere</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="7">or</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Americas</governor>
+            <dependent idx="8">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Americas</governor>
+            <dependent idx="9">World</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="10">Americas</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">lands</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">lands</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="5">Western</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">lands</governor>
+            <dependent idx="6">hemisphere</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Americas</governor>
+            <dependent idx="8">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Americas</governor>
+            <dependent idx="9">World</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="10">Americas</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">lands</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">lands</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="5">Western</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">lands</governor>
+            <dependent idx="6">hemisphere</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Americas</governor>
+            <dependent idx="8">New</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">Americas</governor>
+            <dependent idx="9">World</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">lands</governor>
+            <dependent idx="10">Americas</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="6">hemisphere</governor>
+            <dependent idx="10">Americas</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

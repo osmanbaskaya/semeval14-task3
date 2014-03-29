@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>clunking</word>
+            <lemma>clunk</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>noise</word>
+            <lemma>noise</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>when</word>
+            <lemma>when</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="4">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="5">
+            <word>put</word>
+            <lemma>put</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>car</word>
+            <lemma>car</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>drive</word>
+            <lemma>drive</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>noise</word>
+            <lemma>noise</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG clunking) (NP (NN noise)) (SBAR (WHADVP (WRB when)) (S (NP (FW i)) (VP (VBD put) (NP (DT the) (NN car)) (PP (IN in) (NP (NN drive) (NN noise))))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">clunking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">clunking</governor>
+            <dependent idx="2">noise</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="3">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">put</governor>
+            <dependent idx="4">i</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="1">clunking</governor>
+            <dependent idx="5">put</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">car</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">put</governor>
+            <dependent idx="7">car</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">put</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">noise</governor>
+            <dependent idx="9">drive</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="10">noise</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">clunking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">clunking</governor>
+            <dependent idx="2">noise</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="3">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">put</governor>
+            <dependent idx="4">i</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="1">clunking</governor>
+            <dependent idx="5">put</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">car</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">put</governor>
+            <dependent idx="7">car</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">noise</governor>
+            <dependent idx="9">drive</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">put</governor>
+            <dependent idx="10">noise</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">clunking</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">clunking</governor>
+            <dependent idx="2">noise</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">put</governor>
+            <dependent idx="3">when</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">put</governor>
+            <dependent idx="4">i</dependent>
+          </dep>
+          <dep type="advcl">
+            <governor idx="1">clunking</governor>
+            <dependent idx="5">put</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">car</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">put</governor>
+            <dependent idx="7">car</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">noise</governor>
+            <dependent idx="9">drive</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">put</governor>
+            <dependent idx="10">noise</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

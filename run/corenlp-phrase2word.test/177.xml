@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>behind</word>
+            <lemma>behind</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>us</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>by</word>
+            <lemma>by</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>midyear</word>
+            <lemma>midyear</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>waters</word>
+            <lemma>water</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (PP (IN behind) (NP (NP (PRP us)) (PP (IN by) (NP (NN midyear) (NNS waters)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">behind</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">behind</governor>
+            <dependent idx="2">us</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">us</governor>
+            <dependent idx="3">by</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">waters</governor>
+            <dependent idx="4">midyear</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">by</governor>
+            <dependent idx="5">waters</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">behind</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">behind</governor>
+            <dependent idx="2">us</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">waters</governor>
+            <dependent idx="4">midyear</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">us</governor>
+            <dependent idx="5">waters</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">behind</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">behind</governor>
+            <dependent idx="2">us</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">waters</governor>
+            <dependent idx="4">midyear</dependent>
+          </dep>
+          <dep type="prep_by">
+            <governor idx="2">us</governor>
+            <dependent idx="5">waters</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>My</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="2">
+            <word>apartment</word>
+            <lemma>apartment</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>so</word>
+            <lemma>so</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>ghetto</word>
+            <lemma>ghetto</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>rats</word>
+            <lemma>rat</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="9">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="10">
+            <word>cockroaches</word>
+            <lemma>cockroach</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>filed</word>
+            <lemma>file</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="12">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="13">
+            <word>complaint</word>
+            <lemma>complaint</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>73</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="15">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="16">
+            <word>city</word>
+            <lemma>city</lemma>
+            <CharacterOffsetBegin>78</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="17">
+            <word>!</word>
+            <lemma>!</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NP (PRP$ My) (NN apartment) (POS 's)) (RB so) (NN ghetto)) (, ,) (NP (DT the) (NNS rats)) (CC and) (NP (NNS cockroaches))) (VP (VBD filed) (NP (DT a) (NN complaint)) (PP (IN with) (NP (DT the) (NN city)))) (. !))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">filed</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">apartment</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="2">apartment</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">apartment</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="4">so</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">filed</governor>
+            <dependent idx="5">ghetto</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">rats</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="8">rats</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="10">cockroaches</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">complaint</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">filed</governor>
+            <dependent idx="13">complaint</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="11">filed</governor>
+            <dependent idx="14">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">city</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="14">with</governor>
+            <dependent idx="16">city</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">filed</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">apartment</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="2">apartment</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="4">so</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">filed</governor>
+            <dependent idx="5">ghetto</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">rats</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="8">rats</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="10">cockroaches</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">complaint</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">filed</governor>
+            <dependent idx="13">complaint</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">city</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="11">filed</governor>
+            <dependent idx="16">city</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">filed</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="2">apartment</governor>
+            <dependent idx="1">My</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="2">apartment</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="4">so</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">filed</governor>
+            <dependent idx="5">ghetto</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">rats</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="8">rats</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">filed</governor>
+            <dependent idx="8">rats</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="5">ghetto</governor>
+            <dependent idx="10">cockroaches</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">filed</governor>
+            <dependent idx="10">cockroaches</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="13">complaint</governor>
+            <dependent idx="12">a</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="11">filed</governor>
+            <dependent idx="13">complaint</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">city</governor>
+            <dependent idx="15">the</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="11">filed</governor>
+            <dependent idx="16">city</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>leaking</word>
+            <lemma>leak</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>roof</word>
+            <lemma>roof</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>100</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>moldy</word>
+            <lemma>moldy</lemma>
+            <CharacterOffsetBegin>101</CharacterOffsetBegin>
+            <CharacterOffsetEnd>106</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>walls</word>
+            <lemma>wall</lemma>
+            <CharacterOffsetBegin>107</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG leaking) (NP (ADJP (NN roof) (CC and) (JJ moldy)) (NNS walls))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">leaking</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">walls</governor>
+            <dependent idx="2">roof</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">roof</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">roof</governor>
+            <dependent idx="4">moldy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">leaking</governor>
+            <dependent idx="5">walls</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">leaking</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">walls</governor>
+            <dependent idx="2">roof</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">roof</governor>
+            <dependent idx="4">moldy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">leaking</governor>
+            <dependent idx="5">walls</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">leaking</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">walls</governor>
+            <dependent idx="2">roof</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">roof</governor>
+            <dependent idx="4">moldy</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">walls</governor>
+            <dependent idx="4">moldy</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">leaking</governor>
+            <dependent idx="5">walls</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

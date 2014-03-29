@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Let</word>
+            <lemma>let</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>us</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="3">
+            <word>have</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>political</word>
+            <lemma>political</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>courage</word>
+            <lemma>courage</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>our</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="9">
+            <word>ecological</word>
+            <lemma>ecological</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>ambitions</word>
+            <lemma>ambition</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Let) (S (NP (PRP us)) (VP (VB have) (NP (NP (DT the) (JJ political) (NN courage)) (PP (IN of) (NP (PRP$ our) (JJ ecological) (NNS ambitions))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Let</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">have</governor>
+            <dependent idx="2">us</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Let</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">courage</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">courage</governor>
+            <dependent idx="5">political</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">have</governor>
+            <dependent idx="6">courage</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">courage</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">ambitions</governor>
+            <dependent idx="8">our</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">ambitions</governor>
+            <dependent idx="9">ecological</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">of</governor>
+            <dependent idx="10">ambitions</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Let</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">have</governor>
+            <dependent idx="2">us</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Let</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">courage</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">courage</governor>
+            <dependent idx="5">political</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">have</governor>
+            <dependent idx="6">courage</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">ambitions</governor>
+            <dependent idx="8">our</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">ambitions</governor>
+            <dependent idx="9">ecological</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="6">courage</governor>
+            <dependent idx="10">ambitions</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Let</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">have</governor>
+            <dependent idx="2">us</dependent>
+          </dep>
+          <dep type="ccomp">
+            <governor idx="1">Let</governor>
+            <dependent idx="3">have</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">courage</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">courage</governor>
+            <dependent idx="5">political</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">have</governor>
+            <dependent idx="6">courage</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">ambitions</governor>
+            <dependent idx="8">our</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">ambitions</governor>
+            <dependent idx="9">ecological</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="6">courage</governor>
+            <dependent idx="10">ambitions</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>political</word>
+            <lemma>political</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>courage</word>
+            <lemma>courage</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="4">
+            <word>promote</word>
+            <lemma>promote</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>environmental</word>
+            <lemma>environmental</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>protection</word>
+            <lemma>protection</lemma>
+            <CharacterOffsetBegin>106</CharacterOffsetBegin>
+            <CharacterOffsetEnd>116</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (JJ political) (NN courage)) (S (VP (TO to) (VP (VB promote) (NP (JJ environmental) (NN protection))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">courage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">courage</governor>
+            <dependent idx="1">political</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">promote</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">courage</governor>
+            <dependent idx="4">promote</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">protection</governor>
+            <dependent idx="5">environmental</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">promote</governor>
+            <dependent idx="6">protection</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">courage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">courage</governor>
+            <dependent idx="1">political</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">promote</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">courage</governor>
+            <dependent idx="4">promote</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">protection</governor>
+            <dependent idx="5">environmental</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">promote</governor>
+            <dependent idx="6">protection</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">courage</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">courage</governor>
+            <dependent idx="1">political</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">promote</governor>
+            <dependent idx="3">to</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">courage</governor>
+            <dependent idx="4">promote</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">protection</governor>
+            <dependent idx="5">environmental</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">promote</governor>
+            <dependent idx="6">protection</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

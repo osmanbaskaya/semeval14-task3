@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>highly</word>
+            <lemma>highly</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>enriched</word>
+            <lemma>enriched</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>weapons-grade</word>
+            <lemma>weapons-grade</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>uranium</word>
+            <lemma>uranium</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>funding</word>
+            <lemma>funding</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (RB highly) (JJ enriched)) (, ,) (NP (JJ weapons-grade) (NN uranium) (NN funding)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">enriched</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">enriched</governor>
+            <dependent idx="1">highly</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">funding</governor>
+            <dependent idx="4">weapons-grade</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">funding</governor>
+            <dependent idx="5">uranium</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">enriched</governor>
+            <dependent idx="6">funding</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">enriched</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">enriched</governor>
+            <dependent idx="1">highly</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">funding</governor>
+            <dependent idx="4">weapons-grade</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">funding</governor>
+            <dependent idx="5">uranium</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">enriched</governor>
+            <dependent idx="6">funding</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">enriched</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">enriched</governor>
+            <dependent idx="1">highly</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">funding</governor>
+            <dependent idx="4">weapons-grade</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">funding</governor>
+            <dependent idx="5">uranium</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="2">enriched</governor>
+            <dependent idx="6">funding</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

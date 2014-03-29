@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Ruth</word>
+            <lemma>Ruth</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>Gehrig</word>
+            <lemma>Gehrig</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>hit</word>
+            <lemma>hit</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="5">
+            <word>back-to-back</word>
+            <lemma>back-to-back</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>home</word>
+            <lemma>home</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>runs</word>
+            <lemma>run</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Ruth) (CC and) (NNP Gehrig)) (VP (VBD hit) (NP (JJ back-to-back) (NN home) (NNS runs))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">hit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">hit</governor>
+            <dependent idx="1">Ruth</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">Ruth</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">Ruth</governor>
+            <dependent idx="3">Gehrig</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">runs</governor>
+            <dependent idx="5">back-to-back</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">runs</governor>
+            <dependent idx="6">home</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">hit</governor>
+            <dependent idx="7">runs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">hit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">hit</governor>
+            <dependent idx="1">Ruth</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">Ruth</governor>
+            <dependent idx="3">Gehrig</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">runs</governor>
+            <dependent idx="5">back-to-back</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">runs</governor>
+            <dependent idx="6">home</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">hit</governor>
+            <dependent idx="7">runs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">hit</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">hit</governor>
+            <dependent idx="1">Ruth</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">Ruth</governor>
+            <dependent idx="3">Gehrig</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">hit</governor>
+            <dependent idx="3">Gehrig</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">runs</governor>
+            <dependent idx="5">back-to-back</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">runs</governor>
+            <dependent idx="6">home</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">hit</governor>
+            <dependent idx="7">runs</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>home</word>
+            <lemma>home</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>run</word>
+            <lemma>run</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>hitters</word>
+            <lemma>hitter</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN home)) (NP (NN run) (NNS hitters)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">home</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">hitters</governor>
+            <dependent idx="2">run</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">home</governor>
+            <dependent idx="3">hitters</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">home</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">hitters</governor>
+            <dependent idx="2">run</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">home</governor>
+            <dependent idx="3">hitters</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">home</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">hitters</governor>
+            <dependent idx="2">run</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">home</governor>
+            <dependent idx="3">hitters</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

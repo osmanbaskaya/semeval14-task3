@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>local</word>
+            <lemma>local</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>foreign</word>
+            <lemma>foreign</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>aid</word>
+            <lemma>aid</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>workers</word>
+            <lemma>worker</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>missionary</word>
+            <lemma>missionary</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (ADJP (JJ local) (CC and) (JJ foreign)) (NN aid) (NNS workers)) (NP (JJ missionary)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">workers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">workers</governor>
+            <dependent idx="1">local</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">local</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">local</governor>
+            <dependent idx="3">foreign</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">workers</governor>
+            <dependent idx="4">aid</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">workers</governor>
+            <dependent idx="6">missionary</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">workers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">workers</governor>
+            <dependent idx="1">local</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">local</governor>
+            <dependent idx="3">foreign</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">workers</governor>
+            <dependent idx="4">aid</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">workers</governor>
+            <dependent idx="6">missionary</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">workers</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">workers</governor>
+            <dependent idx="1">local</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">local</governor>
+            <dependent idx="3">foreign</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="5">workers</governor>
+            <dependent idx="3">foreign</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">workers</governor>
+            <dependent idx="4">aid</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">workers</governor>
+            <dependent idx="6">missionary</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

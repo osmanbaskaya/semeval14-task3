@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>unexpected</word>
+            <lemma>unexpected</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>sharp</word>
+            <lemma>sharp</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>moves</word>
+            <lemma>move</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>either</word>
+            <lemma>either</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>direction</word>
+            <lemma>direction</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>fluctuations</word>
+            <lemma>fluctuation</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ unexpected) (JJ sharp) (NNS moves)) (PP (IN in) (NP (DT either) (NN direction) (NNS fluctuations))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">moves</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">moves</governor>
+            <dependent idx="1">unexpected</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">moves</governor>
+            <dependent idx="2">sharp</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">moves</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">fluctuations</governor>
+            <dependent idx="5">either</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">fluctuations</governor>
+            <dependent idx="6">direction</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="7">fluctuations</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">moves</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">moves</governor>
+            <dependent idx="1">unexpected</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">moves</governor>
+            <dependent idx="2">sharp</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">fluctuations</governor>
+            <dependent idx="5">either</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">fluctuations</governor>
+            <dependent idx="6">direction</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">moves</governor>
+            <dependent idx="7">fluctuations</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">moves</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">moves</governor>
+            <dependent idx="1">unexpected</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">moves</governor>
+            <dependent idx="2">sharp</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">fluctuations</governor>
+            <dependent idx="5">either</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">fluctuations</governor>
+            <dependent idx="6">direction</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="3">moves</governor>
+            <dependent idx="7">fluctuations</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

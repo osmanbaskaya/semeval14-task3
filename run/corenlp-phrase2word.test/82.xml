@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Mickey</word>
+            <lemma>Mickey</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>D</word>
+            <lemma>D</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>exhausted</word>
+            <lemma>exhaust</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NNP Mickey)) (SBAR (S (NP (NNP D) (POS 's)) (VP (VBN exhausted))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Mickey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">exhausted</governor>
+            <dependent idx="2">D</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">D</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="1">Mickey</governor>
+            <dependent idx="4">exhausted</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Mickey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">exhausted</governor>
+            <dependent idx="2">D</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">D</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="1">Mickey</governor>
+            <dependent idx="4">exhausted</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Mickey</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">exhausted</governor>
+            <dependent idx="2">D</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">D</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="1">Mickey</governor>
+            <dependent idx="4">exhausted</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

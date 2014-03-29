@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>inhumane</word>
+            <lemma>inhumane</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>practices</word>
+            <lemma>practice</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>sensate</word>
+            <lemma>sensate</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (JJ inhumane) (NNS practices)) (VP (VBP sensate)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">sensate</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">practices</governor>
+            <dependent idx="1">inhumane</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">sensate</governor>
+            <dependent idx="2">practices</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">sensate</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">practices</governor>
+            <dependent idx="1">inhumane</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">sensate</governor>
+            <dependent idx="2">practices</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">sensate</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">practices</governor>
+            <dependent idx="1">inhumane</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">sensate</governor>
+            <dependent idx="2">practices</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

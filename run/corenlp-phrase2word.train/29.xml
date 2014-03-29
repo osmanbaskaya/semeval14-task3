@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>sluggish</word>
+            <lemma>sluggish</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>storm</word>
+            <lemma>storm</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>system</word>
+            <lemma>system</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>thunderstorm</word>
+            <lemma>thunderstorm</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (JJ sluggish) (NN storm)) (NP (NN system) (NN thunderstorm)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">storm</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">storm</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">storm</governor>
+            <dependent idx="2">sluggish</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">thunderstorm</governor>
+            <dependent idx="4">system</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">storm</governor>
+            <dependent idx="5">thunderstorm</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">storm</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">storm</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">storm</governor>
+            <dependent idx="2">sluggish</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">thunderstorm</governor>
+            <dependent idx="4">system</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">storm</governor>
+            <dependent idx="5">thunderstorm</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">storm</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">storm</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">storm</governor>
+            <dependent idx="2">sluggish</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">thunderstorm</governor>
+            <dependent idx="4">system</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">storm</governor>
+            <dependent idx="5">thunderstorm</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>she</word>
+            <lemma>she</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="2">
+            <word>'ll</word>
+            <lemma>'ll</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="4">
+            <word>apples</word>
+            <lemma>apple</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>okay</word>
+            <lemma>okay</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP she)) (VP (MD 'll) (VP (VB be) (ADJP (NP (NNS apples)) (JJ okay)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">okay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">okay</governor>
+            <dependent idx="1">she</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">okay</governor>
+            <dependent idx="2">'ll</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">okay</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="5">okay</governor>
+            <dependent idx="4">apples</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">okay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">okay</governor>
+            <dependent idx="1">she</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">okay</governor>
+            <dependent idx="2">'ll</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">okay</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="5">okay</governor>
+            <dependent idx="4">apples</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">okay</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">okay</governor>
+            <dependent idx="1">she</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">okay</governor>
+            <dependent idx="2">'ll</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">okay</governor>
+            <dependent idx="3">be</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="5">okay</governor>
+            <dependent idx="4">apples</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

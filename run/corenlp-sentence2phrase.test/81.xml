@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>From</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="2">
+            <word>experience</word>
+            <lemma>experience</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="4">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="5">
+            <word>delivery</word>
+            <lemma>delivery</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>service</word>
+            <lemma>service</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>does</word>
+            <lemma>do</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="8">
+            <word>Amazon</word>
+            <lemma>Amazon</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>Free</word>
+            <lemma>Free</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>Super</word>
+            <lemma>Super</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Shipping</word>
+            <lemma>Shipping</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>use</word>
+            <lemma>use</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>74</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (PP (IN From) (NP (NN experience))) (, ,) (WHNP (WDT which) (NP (NP (NN delivery)) (NP (NN service)))) (SQ (VBZ does) (NP (NNP Amazon) (NNP Free) (NNP Super) (NNP Shipping)) (VP (VB use))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">use</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">use</governor>
+            <dependent idx="1">From</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="1">From</governor>
+            <dependent idx="2">experience</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">delivery</governor>
+            <dependent idx="4">which</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">use</governor>
+            <dependent idx="5">delivery</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">delivery</governor>
+            <dependent idx="6">service</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">use</governor>
+            <dependent idx="7">does</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="8">Amazon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="9">Free</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="10">Super</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">use</governor>
+            <dependent idx="11">Shipping</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">use</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="12">use</governor>
+            <dependent idx="2">experience</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">delivery</governor>
+            <dependent idx="4">which</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">use</governor>
+            <dependent idx="5">delivery</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">delivery</governor>
+            <dependent idx="6">service</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">use</governor>
+            <dependent idx="7">does</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="8">Amazon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="9">Free</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="10">Super</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">use</governor>
+            <dependent idx="11">Shipping</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="12">use</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="12">use</governor>
+            <dependent idx="2">experience</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">delivery</governor>
+            <dependent idx="4">which</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="12">use</governor>
+            <dependent idx="5">delivery</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="5">delivery</governor>
+            <dependent idx="6">service</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="12">use</governor>
+            <dependent idx="7">does</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="8">Amazon</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="9">Free</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Shipping</governor>
+            <dependent idx="10">Super</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">use</governor>
+            <dependent idx="11">Shipping</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>free</word>
+            <lemma>free</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>7-day</word>
+            <lemma>7-day</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>delivery</word>
+            <lemma>delivery</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>most</word>
+            <lemma>most</lemma>
+            <CharacterOffsetBegin>99</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>JJS</POS>
+          </token>
+          <token id="6">
+            <word>packages</word>
+            <lemma>package</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ free) (JJ 7-day) (NN delivery)) (PP (IN on) (NP (JJS most) (NNS packages))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">delivery</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">delivery</governor>
+            <dependent idx="1">free</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">delivery</governor>
+            <dependent idx="2">7-day</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">delivery</governor>
+            <dependent idx="4">on</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">packages</governor>
+            <dependent idx="5">most</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">on</governor>
+            <dependent idx="6">packages</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">delivery</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">delivery</governor>
+            <dependent idx="1">free</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">delivery</governor>
+            <dependent idx="2">7-day</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">packages</governor>
+            <dependent idx="5">most</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">delivery</governor>
+            <dependent idx="6">packages</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">delivery</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">delivery</governor>
+            <dependent idx="1">free</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">delivery</governor>
+            <dependent idx="2">7-day</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">packages</governor>
+            <dependent idx="5">most</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">delivery</governor>
+            <dependent idx="6">packages</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

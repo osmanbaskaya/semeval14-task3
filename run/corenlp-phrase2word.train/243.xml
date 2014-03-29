@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Park</word>
+            <lemma>park</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>Monsters</word>
+            <lemma>Monsters</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>Mouth</word>
+            <lemma>Mouth</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>Orcus</word>
+            <lemma>Orcus</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>park</word>
+            <lemma>park</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN Park)) (PP (IN of) (NP (DT the) (NNP Monsters) (, ,) (NNP Mouth))) (PP (IN of) (NP (NNP Orcus) (NN park))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Park</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Park</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Mouth</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Mouth</governor>
+            <dependent idx="4">Monsters</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="6">Mouth</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Park</governor>
+            <dependent idx="7">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">park</governor>
+            <dependent idx="8">Orcus</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">of</governor>
+            <dependent idx="9">park</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Park</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Mouth</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Mouth</governor>
+            <dependent idx="4">Monsters</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Park</governor>
+            <dependent idx="6">Mouth</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">park</governor>
+            <dependent idx="8">Orcus</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Park</governor>
+            <dependent idx="9">park</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Park</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Mouth</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Mouth</governor>
+            <dependent idx="4">Monsters</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Park</governor>
+            <dependent idx="6">Mouth</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">park</governor>
+            <dependent idx="8">Orcus</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">Park</governor>
+            <dependent idx="9">park</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

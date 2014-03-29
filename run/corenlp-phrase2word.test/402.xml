@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>stringed</word>
+            <lemma>stringed</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>instrument</word>
+            <lemma>instrument</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>which</word>
+            <lemma>which</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>WDT</POS>
+          </token>
+          <token id="5">
+            <word>has</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>plane</word>
+            <lemma>plane</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="10">
+            <word>strings</word>
+            <lemma>string</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>56</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="11">
+            <word>positioned</word>
+            <lemma>position</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="12">
+            <word>perpendicular</word>
+            <lemma>perpendicular</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="14">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>85</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="15">
+            <word>soundboard</word>
+            <lemma>soundboard</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="16">
+            <word>harp</word>
+            <lemma>harp</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>104</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (JJ stringed) (NN instrument)) (SBAR (WHNP (WDT which)) (S (VP (VBZ has) (NP (NP (DT the) (NN plane)) (PP (IN of) (NP (PRP$ its) (NNS strings)))))))) (VP (VBD positioned) (ADJP (JJ perpendicular) (PP (TO to) (NP (DT the) (NN soundboard) (NN harp))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">positioned</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">instrument</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">instrument</governor>
+            <dependent idx="2">stringed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">positioned</governor>
+            <dependent idx="3">instrument</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">has</governor>
+            <dependent idx="4">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">instrument</governor>
+            <dependent idx="5">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">plane</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">has</governor>
+            <dependent idx="7">plane</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">plane</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">strings</governor>
+            <dependent idx="9">its</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="10">strings</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="11">positioned</governor>
+            <dependent idx="12">perpendicular</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="12">perpendicular</governor>
+            <dependent idx="13">to</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">harp</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">harp</governor>
+            <dependent idx="15">soundboard</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="13">to</governor>
+            <dependent idx="16">harp</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">positioned</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">instrument</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">instrument</governor>
+            <dependent idx="2">stringed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">positioned</governor>
+            <dependent idx="3">instrument</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">has</governor>
+            <dependent idx="4">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">instrument</governor>
+            <dependent idx="5">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">plane</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">has</governor>
+            <dependent idx="7">plane</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">strings</governor>
+            <dependent idx="9">its</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">plane</governor>
+            <dependent idx="10">strings</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="11">positioned</governor>
+            <dependent idx="12">perpendicular</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">harp</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">harp</governor>
+            <dependent idx="15">soundboard</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="12">perpendicular</governor>
+            <dependent idx="16">harp</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="11">positioned</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">instrument</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">instrument</governor>
+            <dependent idx="2">stringed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="11">positioned</governor>
+            <dependent idx="3">instrument</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">has</governor>
+            <dependent idx="4">which</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="3">instrument</governor>
+            <dependent idx="5">has</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">plane</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">has</governor>
+            <dependent idx="7">plane</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="10">strings</governor>
+            <dependent idx="9">its</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">plane</governor>
+            <dependent idx="10">strings</dependent>
+          </dep>
+          <dep type="acomp">
+            <governor idx="11">positioned</governor>
+            <dependent idx="12">perpendicular</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">harp</governor>
+            <dependent idx="14">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="16">harp</governor>
+            <dependent idx="15">soundboard</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="12">perpendicular</governor>
+            <dependent idx="16">harp</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

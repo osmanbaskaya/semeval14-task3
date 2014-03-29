@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Where</word>
+            <lemma>where</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>I</word>
+            <lemma>I</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="4">
+            <word>download</word>
+            <lemma>download</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>bonus</word>
+            <lemma>bonus</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>features</word>
+            <lemma>feature</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="8">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>Avatar</word>
+            <lemma>Avatar</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>movie</word>
+            <lemma>movie</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="12">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB Where)) (SQ (MD can) (NP (PRP I)) (VP (VB download) (NP (NP (DT the) (NN bonus) (NNS features)) (PP (IN of) (NP (DT the) (NNP Avatar) (NN movie)))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">download</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">download</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">download</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">features</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">features</governor>
+            <dependent idx="6">bonus</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">download</governor>
+            <dependent idx="7">features</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">features</governor>
+            <dependent idx="8">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">movie</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">movie</governor>
+            <dependent idx="10">Avatar</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">of</governor>
+            <dependent idx="11">movie</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">download</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">download</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">download</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">features</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">features</governor>
+            <dependent idx="6">bonus</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">download</governor>
+            <dependent idx="7">features</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">movie</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">movie</governor>
+            <dependent idx="10">Avatar</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">features</governor>
+            <dependent idx="11">movie</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">download</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">download</governor>
+            <dependent idx="1">Where</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">download</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">download</governor>
+            <dependent idx="3">I</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="7">features</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">features</governor>
+            <dependent idx="6">bonus</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">download</governor>
+            <dependent idx="7">features</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">movie</governor>
+            <dependent idx="9">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">movie</governor>
+            <dependent idx="10">Avatar</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="7">features</governor>
+            <dependent idx="11">movie</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>downloading</word>
+            <lemma>download</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>bonus</word>
+            <lemma>bonus</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>features</word>
+            <lemma>feature</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="4">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>88</CharacterOffsetBegin>
+            <CharacterOffsetEnd>91</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>Avatar</word>
+            <lemma>Avatar</lemma>
+            <CharacterOffsetBegin>92</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG downloading) (NP (NN bonus) (NNS features)) (PP (IN for) (NP (NNP Avatar)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">downloading</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">features</governor>
+            <dependent idx="2">bonus</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">downloading</governor>
+            <dependent idx="3">features</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">downloading</governor>
+            <dependent idx="4">for</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">for</governor>
+            <dependent idx="5">Avatar</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">downloading</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">features</governor>
+            <dependent idx="2">bonus</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">downloading</governor>
+            <dependent idx="3">features</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">downloading</governor>
+            <dependent idx="5">Avatar</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">downloading</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">features</governor>
+            <dependent idx="2">bonus</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">downloading</governor>
+            <dependent idx="3">features</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="1">downloading</governor>
+            <dependent idx="5">Avatar</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

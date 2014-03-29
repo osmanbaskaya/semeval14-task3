@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>plumber</word>
+            <lemma>plumber</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>had</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="4">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>18</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="5">
+            <word>get</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>19</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>all</word>
+            <lemma>all</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>PDT</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>mank</word>
+            <lemma>mank</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>out</word>
+            <lemma>out</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="12">
+            <word>drain</word>
+            <lemma>drain</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="13">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN plumber)) (VP (VBD had) (S (VP (TO to) (VP (VB get) (NP (PDT all) (DT the) (NN mank)) (ADVP (IN out) (PP (IN of) (NP (DT the) (NN drain)))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">had</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">plumber</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">had</governor>
+            <dependent idx="2">plumber</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">get</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">had</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="8">mank</governor>
+            <dependent idx="6">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">mank</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">get</governor>
+            <dependent idx="8">mank</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">get</governor>
+            <dependent idx="9">out</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="9">out</governor>
+            <dependent idx="10">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">drain</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">of</governor>
+            <dependent idx="12">drain</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">had</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">plumber</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">had</governor>
+            <dependent idx="2">plumber</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">get</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">had</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="8">mank</governor>
+            <dependent idx="6">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">mank</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">get</governor>
+            <dependent idx="8">mank</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">drain</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="prep_out_of">
+            <governor idx="5">get</governor>
+            <dependent idx="12">drain</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">had</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">plumber</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">had</governor>
+            <dependent idx="2">plumber</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">get</governor>
+            <dependent idx="4">to</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="3">had</governor>
+            <dependent idx="5">get</dependent>
+          </dep>
+          <dep type="predet">
+            <governor idx="8">mank</governor>
+            <dependent idx="6">all</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">mank</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="5">get</governor>
+            <dependent idx="8">mank</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="12">drain</governor>
+            <dependent idx="11">the</dependent>
+          </dep>
+          <dep type="prep_out_of">
+            <governor idx="5">get</governor>
+            <dependent idx="12">drain</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>plumber</word>
+            <lemma>plumber</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>cleaning</word>
+            <lemma>cleaning</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>72</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>my</word>
+            <lemma>my</lemma>
+            <CharacterOffsetBegin>73</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="5">
+            <word>dirty</word>
+            <lemma>dirty</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>drain</word>
+            <lemma>drain</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NN plumber) (NN cleaning)) (NP (PRP$ my) (JJ dirty) (NN drain)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cleaning</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="2">plumber</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">drain</governor>
+            <dependent idx="4">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">drain</governor>
+            <dependent idx="5">dirty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="6">drain</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cleaning</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="2">plumber</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">drain</governor>
+            <dependent idx="4">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">drain</governor>
+            <dependent idx="5">dirty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="6">drain</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">cleaning</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="2">plumber</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">drain</governor>
+            <dependent idx="4">my</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">drain</governor>
+            <dependent idx="5">dirty</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="3">cleaning</governor>
+            <dependent idx="6">drain</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

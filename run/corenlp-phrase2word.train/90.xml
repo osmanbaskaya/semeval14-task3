@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>unusually</word>
+            <lemma>unusually</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="2">
+            <word>dry</word>
+            <lemma>dry</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>weather</word>
+            <lemma>weather</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>winter</word>
+            <lemma>winter</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (RB unusually) (JJ dry)) (NP (NN weather) (NN winter)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">dry</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">dry</governor>
+            <dependent idx="1">unusually</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">winter</governor>
+            <dependent idx="3">weather</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">dry</governor>
+            <dependent idx="4">winter</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">dry</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">dry</governor>
+            <dependent idx="1">unusually</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">winter</governor>
+            <dependent idx="3">weather</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">dry</governor>
+            <dependent idx="4">winter</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">dry</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">dry</governor>
+            <dependent idx="1">unusually</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">winter</governor>
+            <dependent idx="3">weather</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">dry</governor>
+            <dependent idx="4">winter</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

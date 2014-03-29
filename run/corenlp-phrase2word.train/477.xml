@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>sliding</word>
+            <lemma>slide</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>door</word>
+            <lemma>door</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>replacement</word>
+            <lemma>replacement</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>parts</word>
+            <lemma>part</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>replacement</word>
+            <lemma>replacement</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG sliding) (ADVP (NN door)) (NP (NN replacement) (NNS parts) (NN replacement))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sliding</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">sliding</governor>
+            <dependent idx="2">door</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">replacement</governor>
+            <dependent idx="3">replacement</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">replacement</governor>
+            <dependent idx="4">parts</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">sliding</governor>
+            <dependent idx="5">replacement</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sliding</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">sliding</governor>
+            <dependent idx="2">door</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">replacement</governor>
+            <dependent idx="3">replacement</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">replacement</governor>
+            <dependent idx="4">parts</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">sliding</governor>
+            <dependent idx="5">replacement</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">sliding</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="1">sliding</governor>
+            <dependent idx="2">door</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">replacement</governor>
+            <dependent idx="3">replacement</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">replacement</governor>
+            <dependent idx="4">parts</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">sliding</governor>
+            <dependent idx="5">replacement</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

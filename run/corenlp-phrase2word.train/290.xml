@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Whiskered</word>
+            <lemma>whiskered</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>Tern</word>
+            <lemma>tern</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>Thommana</word>
+            <lemma>Thommana</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="6">
+            <word>Chalakudy</word>
+            <lemma>Chalakudy</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>tern</word>
+            <lemma>tern</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (JJ Whiskered) (NN Tern)) (PP (IN in) (NP (NNP Thommana) (, ,) (NNP Chalakudy)))) (NP (NN tern)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Tern</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Tern</governor>
+            <dependent idx="1">Whiskered</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">Tern</governor>
+            <dependent idx="3">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Chalakudy</governor>
+            <dependent idx="4">Thommana</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">in</governor>
+            <dependent idx="6">Chalakudy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Tern</governor>
+            <dependent idx="7">tern</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Tern</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Tern</governor>
+            <dependent idx="1">Whiskered</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Chalakudy</governor>
+            <dependent idx="4">Thommana</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Tern</governor>
+            <dependent idx="6">Chalakudy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Tern</governor>
+            <dependent idx="7">tern</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Tern</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">Tern</governor>
+            <dependent idx="1">Whiskered</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Chalakudy</governor>
+            <dependent idx="4">Thommana</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="2">Tern</governor>
+            <dependent idx="6">Chalakudy</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Tern</governor>
+            <dependent idx="7">tern</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

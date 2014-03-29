@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>king</word>
+            <lemma>king</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>might</word>
+            <lemma>might</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="4">
+            <word>be</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>elected</word>
+            <lemma>elect</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>for</word>
+            <lemma>for</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>fixed</word>
+            <lemma>fixed</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>period</word>
+            <lemma>period</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="11">
+            <word>among</word>
+            <lemma>among</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="13">
+            <word>most</word>
+            <lemma>most</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>RBS</POS>
+          </token>
+          <token id="14">
+            <word>deserving</word>
+            <lemma>deserving</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>74</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="15">
+            <word>Finnish</word>
+            <lemma>finnish</lemma>
+            <CharacterOffsetBegin>75</CharacterOffsetBegin>
+            <CharacterOffsetEnd>82</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="16">
+            <word>MEPs</word>
+            <lemma>mep</lemma>
+            <CharacterOffsetBegin>83</CharacterOffsetBegin>
+            <CharacterOffsetEnd>87</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="17">
+            <word>!</word>
+            <lemma>!</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NN king)) (VP (MD might) (VP (VB be) (VP (VBN elected) (PP (IN for) (NP (DT a) (JJ fixed) (NN period))) (PP (IN from) (PP (IN among) (NP (DT the) (ADJP (RBS most) (JJ deserving)) (JJ Finnish) (NNS MEPs))))))) (. !))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">elected</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">king</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">elected</governor>
+            <dependent idx="2">king</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">elected</governor>
+            <dependent idx="3">might</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">elected</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">elected</governor>
+            <dependent idx="6">for</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">period</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">period</governor>
+            <dependent idx="8">fixed</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">for</governor>
+            <dependent idx="9">period</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">elected</governor>
+            <dependent idx="10">from</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="10">from</governor>
+            <dependent idx="11">among</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">deserving</governor>
+            <dependent idx="13">most</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="14">deserving</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="15">Finnish</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">among</governor>
+            <dependent idx="16">MEPs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">elected</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">king</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">elected</governor>
+            <dependent idx="2">king</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">elected</governor>
+            <dependent idx="3">might</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">elected</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">period</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">period</governor>
+            <dependent idx="8">fixed</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">elected</governor>
+            <dependent idx="9">period</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">elected</governor>
+            <dependent idx="10">from</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="10">from</governor>
+            <dependent idx="11">among</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">deserving</governor>
+            <dependent idx="13">most</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="14">deserving</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="15">Finnish</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">among</governor>
+            <dependent idx="16">MEPs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="5">elected</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">king</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nsubjpass">
+            <governor idx="5">elected</governor>
+            <dependent idx="2">king</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">elected</governor>
+            <dependent idx="3">might</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">elected</governor>
+            <dependent idx="4">be</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">period</governor>
+            <dependent idx="7">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="9">period</governor>
+            <dependent idx="8">fixed</dependent>
+          </dep>
+          <dep type="prep_for">
+            <governor idx="5">elected</governor>
+            <dependent idx="9">period</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">elected</governor>
+            <dependent idx="10">from</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="10">from</governor>
+            <dependent idx="11">among</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="12">the</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="14">deserving</governor>
+            <dependent idx="13">most</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="14">deserving</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="16">MEPs</governor>
+            <dependent idx="15">Finnish</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">among</governor>
+            <dependent idx="16">MEPs</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>electing</word>
+            <lemma>elect</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>97</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>98</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>Finnish</word>
+            <lemma>finnish</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>107</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>king</word>
+            <lemma>king</lemma>
+            <CharacterOffsetBegin>108</CharacterOffsetBegin>
+            <CharacterOffsetEnd>112</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>113</CharacterOffsetBegin>
+            <CharacterOffsetEnd>117</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>among</word>
+            <lemma>among</lemma>
+            <CharacterOffsetBegin>118</CharacterOffsetBegin>
+            <CharacterOffsetEnd>123</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>124</CharacterOffsetBegin>
+            <CharacterOffsetEnd>127</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>MEPs</word>
+            <lemma>mep</lemma>
+            <CharacterOffsetBegin>128</CharacterOffsetBegin>
+            <CharacterOffsetEnd>132</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG electing) (NP (DT a) (JJ Finnish) (NN king)) (PP (IN from) (PP (IN among) (NP (DT the) (NNS MEPs))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">electing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">king</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">king</governor>
+            <dependent idx="3">Finnish</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">electing</governor>
+            <dependent idx="4">king</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">electing</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="5">from</governor>
+            <dependent idx="6">among</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">MEPs</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">among</governor>
+            <dependent idx="8">MEPs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">electing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">king</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">king</governor>
+            <dependent idx="3">Finnish</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">electing</governor>
+            <dependent idx="4">king</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">electing</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="5">from</governor>
+            <dependent idx="6">among</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">MEPs</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">among</governor>
+            <dependent idx="8">MEPs</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">electing</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">king</governor>
+            <dependent idx="2">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">king</governor>
+            <dependent idx="3">Finnish</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="1">electing</governor>
+            <dependent idx="4">king</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">electing</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="5">from</governor>
+            <dependent idx="6">among</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">MEPs</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">among</governor>
+            <dependent idx="8">MEPs</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>made</word>
+            <lemma>make</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="2">
+            <word>man</word>
+            <lemma>man</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>preachy</word>
+            <lemma>preachy</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBN made) (S (NP (NN man)) (ADJP (JJ preachy)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">made</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">preachy</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">made</governor>
+            <dependent idx="3">preachy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">made</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">preachy</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">made</governor>
+            <dependent idx="3">preachy</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">made</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="3">preachy</governor>
+            <dependent idx="2">man</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">made</governor>
+            <dependent idx="3">preachy</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

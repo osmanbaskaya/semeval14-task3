@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>breakneck</word>
+            <lemma>breakneck</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>speed</word>
+            <lemma>speed</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>fast</word>
+            <lemma>fast</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (NN breakneck) (NN speed)) (ADVP (RB fast))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">speed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">speed</governor>
+            <dependent idx="1">breakneck</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">speed</governor>
+            <dependent idx="3">fast</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">speed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">speed</governor>
+            <dependent idx="1">breakneck</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">speed</governor>
+            <dependent idx="3">fast</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">speed</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">speed</governor>
+            <dependent idx="1">breakneck</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="2">speed</governor>
+            <dependent idx="3">fast</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

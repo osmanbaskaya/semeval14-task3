@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>2002</word>
+            <lemma>2002</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="2">
+            <word>Steeda</word>
+            <lemma>Steeda</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>Mustang</word>
+            <lemma>Mustang</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>GT</word>
+            <lemma>gt</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>Mustang</word>
+            <lemma>Mustang</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>GT</word>
+            <lemma>gt</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (CD 2002) (NNP Steeda) (NNP Mustang) (NN GT)) (NP (NNP Mustang)) (NP (NN GT)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">GT</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">GT</governor>
+            <dependent idx="1">2002</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">GT</governor>
+            <dependent idx="2">Steeda</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">GT</governor>
+            <dependent idx="3">Mustang</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">GT</governor>
+            <dependent idx="5">Mustang</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">GT</governor>
+            <dependent idx="6">GT</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">GT</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">GT</governor>
+            <dependent idx="1">2002</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">GT</governor>
+            <dependent idx="2">Steeda</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">GT</governor>
+            <dependent idx="3">Mustang</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">GT</governor>
+            <dependent idx="5">Mustang</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">GT</governor>
+            <dependent idx="6">GT</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">GT</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="4">GT</governor>
+            <dependent idx="1">2002</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">GT</governor>
+            <dependent idx="2">Steeda</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">GT</governor>
+            <dependent idx="3">Mustang</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="4">GT</governor>
+            <dependent idx="5">Mustang</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="4">GT</governor>
+            <dependent idx="6">GT</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

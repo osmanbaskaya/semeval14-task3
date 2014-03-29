@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Eli</word>
+            <lemma>Eli</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>Lilly</word>
+            <lemma>Lilly</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>Company</word>
+            <lemma>Company</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="5">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="6">
+            <word>global</word>
+            <lemma>global</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>headquarters</word>
+            <lemma>headquarters</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="9">
+            <word>Indianapolis</word>
+            <lemma>Indianapolis</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="10">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="11">
+            <word>Indiana</word>
+            <lemma>Indiana</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>headquarters</word>
+            <lemma>headquarters</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNP Eli) (NNP Lilly)) (CC and) (NP (NP (NP (NNP Company) (POS 's)) (JJ global) (NN headquarters)) (PP (IN in) (NP (NNP Indianapolis) (, ,) (NNP Indiana))))) (NP (NN headquarters)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Lilly</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="1">Eli</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="4">Company</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="4">Company</governor>
+            <dependent idx="5">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="6">global</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="7">headquarters</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="8">in</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Indiana</governor>
+            <dependent idx="9">Indianapolis</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="8">in</governor>
+            <dependent idx="11">Indiana</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="12">headquarters</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Lilly</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="1">Eli</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="4">Company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="6">global</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="7">headquarters</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Indiana</governor>
+            <dependent idx="9">Indianapolis</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="11">Indiana</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="12">headquarters</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">Lilly</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="1">Eli</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="4">Company</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="6">global</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="7">headquarters</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Indiana</governor>
+            <dependent idx="9">Indianapolis</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="7">headquarters</governor>
+            <dependent idx="11">Indiana</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">Lilly</governor>
+            <dependent idx="12">headquarters</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

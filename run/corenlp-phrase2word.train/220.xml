@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Site</word>
+            <lemma>site</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>plan</word>
+            <lemma>plan</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>Gatehouse</word>
+            <lemma>Gatehouse</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="6">
+            <word>Mausoleum</word>
+            <lemma>Mausoleum</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="7">
+            <word>showing</word>
+            <lemma>show</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="8">
+            <word>site</word>
+            <lemma>site</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>constraints</word>
+            <lemma>constraint</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>61</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="10">
+            <word>marble</word>
+            <lemma>marble</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN Site) (NN plan)) (PP (IN of) (NP (NP (DT the) (NNP Gatehouse) (NNP Mausoleum)) (VP (VBG showing) (NP (NN site) (NNS constraints) (NN marble))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">plan</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">plan</governor>
+            <dependent idx="1">Site</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">plan</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="5">Gatehouse</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="6">Mausoleum</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="7">showing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">marble</governor>
+            <dependent idx="8">site</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">marble</governor>
+            <dependent idx="9">constraints</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">showing</governor>
+            <dependent idx="10">marble</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">plan</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">plan</governor>
+            <dependent idx="1">Site</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="5">Gatehouse</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">plan</governor>
+            <dependent idx="6">Mausoleum</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="7">showing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">marble</governor>
+            <dependent idx="8">site</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">marble</governor>
+            <dependent idx="9">constraints</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">showing</governor>
+            <dependent idx="10">marble</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">plan</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">plan</governor>
+            <dependent idx="1">Site</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="4">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="5">Gatehouse</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">plan</governor>
+            <dependent idx="6">Mausoleum</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="6">Mausoleum</governor>
+            <dependent idx="7">showing</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">marble</governor>
+            <dependent idx="8">site</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">marble</governor>
+            <dependent idx="9">constraints</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="7">showing</governor>
+            <dependent idx="10">marble</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

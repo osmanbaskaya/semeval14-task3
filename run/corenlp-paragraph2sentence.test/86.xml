@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>What</word>
+            <lemma>what</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>WP</POS>
+          </token>
+          <token id="2">
+            <word>are</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>VBP</POS>
+          </token>
+          <token id="3">
+            <word>some</word>
+            <lemma>some</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>places</word>
+            <lemma>place</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="5">
+            <word>where</word>
+            <lemma>where</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="6">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="7">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="8">
+            <word>create</word>
+            <lemma>create</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="9">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="10">
+            <word>Wiki</word>
+            <lemma>Wiki</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>absolutely</word>
+            <lemma>absolutely</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="12">
+            <word>free</word>
+            <lemma>free</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="13">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHNP (WP What)) (VBP are) (NP (NP (DT some) (NNS places)) (SBAR (WHADVP (WRB where)) (S (NP (PRP you)) (VP (MD can) (VP (VB create) (S (NP (DT a) (NNP Wiki)) (ADJP (RB absolutely) (JJ free)))))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">What</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="1">What</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">places</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">What</governor>
+            <dependent idx="4">places</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">create</governor>
+            <dependent idx="5">where</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">create</governor>
+            <dependent idx="6">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">create</governor>
+            <dependent idx="7">can</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">places</governor>
+            <dependent idx="8">create</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">Wiki</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">free</governor>
+            <dependent idx="10">Wiki</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">free</governor>
+            <dependent idx="11">absolutely</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">create</governor>
+            <dependent idx="12">free</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">What</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="1">What</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">places</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">What</governor>
+            <dependent idx="4">places</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">create</governor>
+            <dependent idx="5">where</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">create</governor>
+            <dependent idx="6">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">create</governor>
+            <dependent idx="7">can</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">places</governor>
+            <dependent idx="8">create</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">Wiki</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">free</governor>
+            <dependent idx="10">Wiki</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">free</governor>
+            <dependent idx="11">absolutely</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">create</governor>
+            <dependent idx="12">free</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">What</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="1">What</governor>
+            <dependent idx="2">are</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">places</governor>
+            <dependent idx="3">some</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="1">What</governor>
+            <dependent idx="4">places</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="8">create</governor>
+            <dependent idx="5">where</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="8">create</governor>
+            <dependent idx="6">you</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="8">create</governor>
+            <dependent idx="7">can</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="4">places</governor>
+            <dependent idx="8">create</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">Wiki</governor>
+            <dependent idx="9">a</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="12">free</governor>
+            <dependent idx="10">Wiki</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="12">free</governor>
+            <dependent idx="11">absolutely</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="8">create</governor>
+            <dependent idx="12">free</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>new</word>
+            <lemma>new</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>types</word>
+            <lemma>type</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>78</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>wikis</word>
+            <lemma>wiki</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>84</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ new) (NNS types)) (PP (IN of) (NP (NN wikis))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">types</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">types</governor>
+            <dependent idx="1">new</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">types</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">wikis</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">types</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">types</governor>
+            <dependent idx="1">new</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">types</governor>
+            <dependent idx="4">wikis</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">types</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">types</governor>
+            <dependent idx="1">new</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">types</governor>
+            <dependent idx="4">wikis</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

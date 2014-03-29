@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="2">
+            <word>18</word>
+            <lemma>18</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>percent</word>
+            <lemma>percent</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>alcohol</word>
+            <lemma>alcohol</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>content</word>
+            <lemma>content</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="7">
+            <word>sneak</word>
+            <lemma>sneak</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>40</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="8">
+            <word>up</word>
+            <lemma>up</lemma>
+            <CharacterOffsetBegin>41</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>RP</POS>
+          </token>
+          <token id="9">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>50</CharacterOffsetEnd>
+            <POS>PRP</POS>
+          </token>
+          <token id="11">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>50</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (PRP$ Its) (CD 18) (NN percent) (NN alcohol) (NN content)) (VP (MD can) (VP (VB sneak) (PRT (RP up)) (PP (IN on) (NP (PRP you))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">sneak</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">content</governor>
+            <dependent idx="1">Its</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">content</governor>
+            <dependent idx="2">18</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">content</governor>
+            <dependent idx="3">percent</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">content</governor>
+            <dependent idx="4">alcohol</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">sneak</governor>
+            <dependent idx="5">content</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">sneak</governor>
+            <dependent idx="6">can</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="7">sneak</governor>
+            <dependent idx="8">up</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="7">sneak</governor>
+            <dependent idx="9">on</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">on</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">sneak</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">content</governor>
+            <dependent idx="1">Its</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">content</governor>
+            <dependent idx="2">18</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">content</governor>
+            <dependent idx="3">percent</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">content</governor>
+            <dependent idx="4">alcohol</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">sneak</governor>
+            <dependent idx="5">content</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">sneak</governor>
+            <dependent idx="6">can</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="7">sneak</governor>
+            <dependent idx="8">up</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">sneak</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="7">sneak</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">content</governor>
+            <dependent idx="1">Its</dependent>
+          </dep>
+          <dep type="num">
+            <governor idx="5">content</governor>
+            <dependent idx="2">18</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">content</governor>
+            <dependent idx="3">percent</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="5">content</governor>
+            <dependent idx="4">alcohol</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="7">sneak</governor>
+            <dependent idx="5">content</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="7">sneak</governor>
+            <dependent idx="6">can</dependent>
+          </dep>
+          <dep type="prt">
+            <governor idx="7">sneak</governor>
+            <dependent idx="8">up</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="7">sneak</governor>
+            <dependent idx="10">you</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>surprising</word>
+            <lemma>surprising</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>36</word>
+            <lemma>36</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="3">
+            <word>proof</word>
+            <lemma>proof</lemma>
+            <CharacterOffsetBegin>66</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (X (NP (ADJP (JJ surprising) (NP-TMP (CD 36))) (NN proof)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">proof</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">proof</governor>
+            <dependent idx="1">surprising</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">surprising</governor>
+            <dependent idx="2">36</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">proof</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">proof</governor>
+            <dependent idx="1">surprising</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">surprising</governor>
+            <dependent idx="2">36</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">proof</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">proof</governor>
+            <dependent idx="1">surprising</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="1">surprising</governor>
+            <dependent idx="2">36</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Prambanan</word>
+            <lemma>prambanan</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>temple</word>
+            <lemma>temple</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>complex</word>
+            <lemma>complex</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>temple</word>
+            <lemma>temple</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ Prambanan) (NN temple)) (NP (NN complex) (NN temple)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">temple</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">temple</governor>
+            <dependent idx="1">Prambanan</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">temple</governor>
+            <dependent idx="3">complex</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">temple</governor>
+            <dependent idx="4">temple</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">temple</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">temple</governor>
+            <dependent idx="1">Prambanan</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">temple</governor>
+            <dependent idx="3">complex</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">temple</governor>
+            <dependent idx="4">temple</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">temple</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">temple</governor>
+            <dependent idx="1">Prambanan</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="4">temple</governor>
+            <dependent idx="3">complex</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="2">temple</governor>
+            <dependent idx="4">temple</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

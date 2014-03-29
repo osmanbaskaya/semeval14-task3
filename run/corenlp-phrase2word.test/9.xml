@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>rug</word>
+            <lemma>rug</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>rat</word>
+            <lemma>rat</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>adult</word>
+            <lemma>adult</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN rug)) (NP (NN rat) (NN adult)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rug</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">adult</governor>
+            <dependent idx="2">rat</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">rug</governor>
+            <dependent idx="3">adult</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rug</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">adult</governor>
+            <dependent idx="2">rat</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">rug</governor>
+            <dependent idx="3">adult</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">rug</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">adult</governor>
+            <dependent idx="2">rat</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">rug</governor>
+            <dependent idx="3">adult</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

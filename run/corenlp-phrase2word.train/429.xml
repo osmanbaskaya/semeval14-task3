@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>shortened</word>
+            <lemma>shorten</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>11</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="3">
+            <word>form</word>
+            <lemma>form</lemma>
+            <CharacterOffsetBegin>12</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>word</word>
+            <lemma>word</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="8">
+            <word>phrase</word>
+            <lemma>phrase</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>36</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>abbreviation</word>
+            <lemma>abbreviation</lemma>
+            <CharacterOffsetBegin>37</CharacterOffsetBegin>
+            <CharacterOffsetEnd>49</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (DT a) (VBN shortened) (NN form)) (PP (IN of) (NP (DT a) (NP (NN word) (CC or) (NN phrase)) (NN abbreviation)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">form</governor>
+            <dependent idx="2">shortened</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">form</governor>
+            <dependent idx="4">of</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">abbreviation</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">abbreviation</governor>
+            <dependent idx="6">word</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="6">word</governor>
+            <dependent idx="7">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="6">word</governor>
+            <dependent idx="8">phrase</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">of</governor>
+            <dependent idx="9">abbreviation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">form</governor>
+            <dependent idx="2">shortened</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">abbreviation</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">abbreviation</governor>
+            <dependent idx="6">word</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="6">word</governor>
+            <dependent idx="8">phrase</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">form</governor>
+            <dependent idx="9">abbreviation</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">form</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">form</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">form</governor>
+            <dependent idx="2">shortened</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="9">abbreviation</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">abbreviation</governor>
+            <dependent idx="6">word</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="6">word</governor>
+            <dependent idx="8">phrase</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="9">abbreviation</governor>
+            <dependent idx="8">phrase</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">form</governor>
+            <dependent idx="9">abbreviation</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

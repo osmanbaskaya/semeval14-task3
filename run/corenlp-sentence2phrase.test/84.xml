@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>how</word>
+            <lemma>how</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="2">
+            <word>can</word>
+            <lemma>can</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>7</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>i</word>
+            <lemma>i</lemma>
+            <CharacterOffsetBegin>8</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>FW</POS>
+          </token>
+          <token id="4">
+            <word>connect</word>
+            <lemma>connect</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>21</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>net</word>
+            <lemma>net</lemma>
+            <CharacterOffsetBegin>22</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>with</word>
+            <lemma>with</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="9">
+            <word>mobile</word>
+            <lemma>mobile</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="10">
+            <word>phone</word>
+            <lemma>phone</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="11">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (SBARQ (WHADVP (WRB how)) (SQ (MD can) (NP (FW i)) (VP (VB connect) (NP (DT the) (NN net)) (PP (IN with) (NP (DT the) (JJ mobile) (NN phone))))) (. ?))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">connect</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">connect</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">connect</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">connect</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">net</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">connect</governor>
+            <dependent idx="6">net</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">connect</governor>
+            <dependent idx="7">with</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">phone</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">phone</governor>
+            <dependent idx="9">mobile</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">with</governor>
+            <dependent idx="10">phone</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">connect</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">connect</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">connect</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">connect</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">net</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">connect</governor>
+            <dependent idx="6">net</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">phone</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">phone</governor>
+            <dependent idx="9">mobile</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">connect</governor>
+            <dependent idx="10">phone</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">connect</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="4">connect</governor>
+            <dependent idx="1">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">connect</governor>
+            <dependent idx="2">can</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">connect</governor>
+            <dependent idx="3">i</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">net</governor>
+            <dependent idx="5">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="4">connect</governor>
+            <dependent idx="6">net</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="10">phone</governor>
+            <dependent idx="8">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">phone</governor>
+            <dependent idx="9">mobile</dependent>
+          </dep>
+          <dep type="prep_with">
+            <governor idx="4">connect</governor>
+            <dependent idx="10">phone</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>internet</word>
+            <lemma>internet</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>access</word>
+            <lemma>access</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="5">
+            <word>smartphone</word>
+            <lemma>smartphone</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN internet) (NN access)) (PP (IN on) (NP (DT a) (NN smartphone))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">access</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">access</governor>
+            <dependent idx="1">internet</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">access</governor>
+            <dependent idx="3">on</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">smartphone</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">on</governor>
+            <dependent idx="5">smartphone</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">access</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">access</governor>
+            <dependent idx="1">internet</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">smartphone</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">access</governor>
+            <dependent idx="5">smartphone</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">access</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="2">access</governor>
+            <dependent idx="1">internet</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">smartphone</governor>
+            <dependent idx="4">a</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="2">access</governor>
+            <dependent idx="5">smartphone</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

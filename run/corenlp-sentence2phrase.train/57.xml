@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Walk</word>
+            <lemma>walk</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="2">
+            <word>through</word>
+            <lemma>through</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>loggia</word>
+            <lemma>loggia</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>24</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="6">
+            <word>find</word>
+            <lemma>find</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>31</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="7">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>32</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="8">
+            <word>Church</word>
+            <lemma>Church</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="10">
+            <word>Ágios</word>
+            <lemma>Ágios</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="11">
+            <word>Títos</word>
+            <lemma>Títos</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>57</CharacterOffsetBegin>
+            <CharacterOffsetEnd>58</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VB Walk) (PP (IN through) (NP (DT the) (NN loggia) (S (VP (TO to) (VP (VB find) (NP (NP (DT the) (NNP Church)) (PP (IN of) (NP (NNP Ágios) (NNP Títos)))))))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Walk</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">Walk</governor>
+            <dependent idx="2">through</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">loggia</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">through</governor>
+            <dependent idx="4">loggia</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">find</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">loggia</governor>
+            <dependent idx="6">find</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Church</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">find</governor>
+            <dependent idx="8">Church</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="8">Church</governor>
+            <dependent idx="9">of</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Títos</governor>
+            <dependent idx="10">Ágios</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="9">of</governor>
+            <dependent idx="11">Títos</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Walk</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">loggia</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="1">Walk</governor>
+            <dependent idx="4">loggia</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">find</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">loggia</governor>
+            <dependent idx="6">find</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Church</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">find</governor>
+            <dependent idx="8">Church</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Títos</governor>
+            <dependent idx="10">Ágios</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">Church</governor>
+            <dependent idx="11">Títos</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">Walk</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="4">loggia</governor>
+            <dependent idx="3">the</dependent>
+          </dep>
+          <dep type="prep_through">
+            <governor idx="1">Walk</governor>
+            <dependent idx="4">loggia</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">find</governor>
+            <dependent idx="5">to</dependent>
+          </dep>
+          <dep type="vmod">
+            <governor idx="4">loggia</governor>
+            <dependent idx="6">find</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">Church</governor>
+            <dependent idx="7">the</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="6">find</governor>
+            <dependent idx="8">Church</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="11">Títos</governor>
+            <dependent idx="10">Ágios</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="8">Church</governor>
+            <dependent idx="11">Títos</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>59</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>nation</word>
+            <lemma>nation</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="4">
+            <word>main</word>
+            <lemma>main</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>76</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="5">
+            <word>north-south</word>
+            <lemma>north-south</lemma>
+            <CharacterOffsetBegin>77</CharacterOffsetBegin>
+            <CharacterOffsetEnd>88</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="6">
+            <word>railway</word>
+            <lemma>railway</lemma>
+            <CharacterOffsetBegin>89</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (FRAG (NP (NP (DT the) (NN nation) (POS 's)) (JJ main) (JJ north-south) (NN railway)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">railway</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">nation</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">railway</governor>
+            <dependent idx="2">nation</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="2">nation</governor>
+            <dependent idx="3">'s</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">railway</governor>
+            <dependent idx="4">main</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">railway</governor>
+            <dependent idx="5">north-south</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">railway</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">nation</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">railway</governor>
+            <dependent idx="2">nation</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">railway</governor>
+            <dependent idx="4">main</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">railway</governor>
+            <dependent idx="5">north-south</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">railway</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">nation</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="6">railway</governor>
+            <dependent idx="2">nation</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">railway</governor>
+            <dependent idx="4">main</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">railway</governor>
+            <dependent idx="5">north-south</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

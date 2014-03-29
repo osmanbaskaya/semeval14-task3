@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>United</word>
+            <lemma>United</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="3">
+            <word>States</word>
+            <lemma>States</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>NNPS</POS>
+          </token>
+          <token id="4">
+            <word>will</word>
+            <lemma>will</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="5">
+            <word>remain</word>
+            <lemma>remain</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="6">
+            <word>firm</word>
+            <lemma>firm</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="7">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>its</word>
+            <lemma>its</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>41</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="9">
+            <word>commitment</word>
+            <lemma>commitment</lemma>
+            <CharacterOffsetBegin>42</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="11">
+            <word>Israel</word>
+            <lemma>Israel</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>62</CharacterOffsetBegin>
+            <CharacterOffsetEnd>63</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (DT The) (NNP United) (NNPS States)) (VP (MD will) (VP (VB remain) (ADJP (JJ firm) (PP (IN in) (NP (PRP$ its) (NN commitment)))) (PP (TO to) (NP (NNP Israel))))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">firm</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">States</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">States</governor>
+            <dependent idx="2">United</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">firm</governor>
+            <dependent idx="3">States</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">firm</governor>
+            <dependent idx="4">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">firm</governor>
+            <dependent idx="5">remain</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">firm</governor>
+            <dependent idx="7">in</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">commitment</governor>
+            <dependent idx="8">its</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="7">in</governor>
+            <dependent idx="9">commitment</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="6">firm</governor>
+            <dependent idx="10">to</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="10">to</governor>
+            <dependent idx="11">Israel</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">firm</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">States</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">States</governor>
+            <dependent idx="2">United</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">firm</governor>
+            <dependent idx="3">States</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">firm</governor>
+            <dependent idx="4">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">firm</governor>
+            <dependent idx="5">remain</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">commitment</governor>
+            <dependent idx="8">its</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">firm</governor>
+            <dependent idx="9">commitment</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">firm</governor>
+            <dependent idx="11">Israel</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="6">firm</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">States</governor>
+            <dependent idx="1">The</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="3">States</governor>
+            <dependent idx="2">United</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="6">firm</governor>
+            <dependent idx="3">States</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="6">firm</governor>
+            <dependent idx="4">will</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="6">firm</governor>
+            <dependent idx="5">remain</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="9">commitment</governor>
+            <dependent idx="8">its</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="6">firm</governor>
+            <dependent idx="9">commitment</dependent>
+          </dep>
+          <dep type="prep_to">
+            <governor idx="6">firm</governor>
+            <dependent idx="11">Israel</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>USA</word>
+            <lemma>USA</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>67</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>68</CharacterOffsetBegin>
+            <CharacterOffsetEnd>71</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="3">
+            <word>Israeli</word>
+            <lemma>Israeli</lemma>
+            <CharacterOffsetBegin>72</CharacterOffsetBegin>
+            <CharacterOffsetEnd>79</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="4">
+            <word>'s</word>
+            <lemma>'s</lemma>
+            <CharacterOffsetBegin>79</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>POS</POS>
+          </token>
+          <token id="5">
+            <word>firm</word>
+            <lemma>firm</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>commitments</word>
+            <lemma>commitment</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>98</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NP (NNP USA)) (CC and) (NP (NP (NNP Israeli) (POS 's)) (NN firm))) (NP (NNS commitments)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">USA</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="1">USA</governor>
+            <dependent idx="2">and</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">firm</governor>
+            <dependent idx="3">Israeli</dependent>
+          </dep>
+          <dep type="possessive">
+            <governor idx="3">Israeli</governor>
+            <dependent idx="4">'s</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="1">USA</governor>
+            <dependent idx="5">firm</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">USA</governor>
+            <dependent idx="6">commitments</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">USA</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">firm</governor>
+            <dependent idx="3">Israeli</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">USA</governor>
+            <dependent idx="5">firm</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">USA</governor>
+            <dependent idx="6">commitments</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">USA</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="5">firm</governor>
+            <dependent idx="3">Israeli</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="1">USA</governor>
+            <dependent idx="5">firm</dependent>
+          </dep>
+          <dep type="dep">
+            <governor idx="1">USA</governor>
+            <dependent idx="6">commitments</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

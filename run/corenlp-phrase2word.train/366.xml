@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>long</word>
+            <lemma>long</lemma>
+            <CharacterOffsetBegin>2</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="3">
+            <word>journey</word>
+            <lemma>journey</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>or</word>
+            <lemma>or</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="5">
+            <word>search</word>
+            <lemma>search</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="6">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>great</word>
+            <lemma>great</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>moral</word>
+            <lemma>moral</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="9">
+            <word>significance</word>
+            <lemma>significance</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="10">
+            <word>supervolcano</word>
+            <lemma>supervolcano</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (JJ long) (NN journey) (CC or) (NN search)) (PP (IN of) (NP (JJ great) (JJ moral) (NN significance) (NN supervolcano))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">journey</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">journey</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">journey</governor>
+            <dependent idx="2">long</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="3">journey</governor>
+            <dependent idx="4">or</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="3">journey</governor>
+            <dependent idx="5">search</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">journey</governor>
+            <dependent idx="6">of</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="7">great</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="8">moral</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="9">significance</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">of</governor>
+            <dependent idx="10">supervolcano</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">journey</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">journey</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">journey</governor>
+            <dependent idx="2">long</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">journey</governor>
+            <dependent idx="5">search</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="7">great</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="8">moral</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="9">significance</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">journey</governor>
+            <dependent idx="10">supervolcano</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="3">journey</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="3">journey</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="3">journey</governor>
+            <dependent idx="2">long</dependent>
+          </dep>
+          <dep type="conj_or">
+            <governor idx="3">journey</governor>
+            <dependent idx="5">search</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="7">great</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="8">moral</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="10">supervolcano</governor>
+            <dependent idx="9">significance</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="3">journey</governor>
+            <dependent idx="10">supervolcano</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

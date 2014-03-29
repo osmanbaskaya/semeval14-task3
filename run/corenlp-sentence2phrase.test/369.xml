@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>-LRB-</word>
+            <lemma>-lrb-</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>1</CharacterOffsetEnd>
+            <POS>-LRB-</POS>
+          </token>
+          <token id="2">
+            <word>The</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>1</CharacterOffsetBegin>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="3">
+            <word>sitting</word>
+            <lemma>sit</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>12</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>was</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>13</CharacterOffsetBegin>
+            <CharacterOffsetEnd>16</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="5">
+            <word>suspended</word>
+            <lemma>suspend</lemma>
+            <CharacterOffsetBegin>17</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>27</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>6.55</word>
+            <lemma>6.55</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="8">
+            <word>p.m.</word>
+            <lemma>p.m.</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="10">
+            <word>resumed</word>
+            <lemma>resume</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>VBD</POS>
+          </token>
+          <token id="11">
+            <word>at</word>
+            <lemma>at</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="12">
+            <word>9.00</word>
+            <lemma>9.00</lemma>
+            <CharacterOffsetBegin>55</CharacterOffsetBegin>
+            <CharacterOffsetEnd>59</CharacterOffsetEnd>
+            <POS>CD</POS>
+          </token>
+          <token id="13">
+            <word>p.m.</word>
+            <lemma>p.m.</lemma>
+            <CharacterOffsetBegin>60</CharacterOffsetBegin>
+            <CharacterOffsetEnd>64</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="14">
+            <word>-RRB-</word>
+            <lemma>-rrb-</lemma>
+            <CharacterOffsetBegin>64</CharacterOffsetBegin>
+            <CharacterOffsetEnd>65</CharacterOffsetEnd>
+            <POS>-RRB-</POS>
+          </token>
+          <token id="15">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>65</CharacterOffsetBegin>
+            <CharacterOffsetEnd>66</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (-LRB- -LRB-) (NP (NP (DT The) (VBG sitting)) (SBAR (S (VP (VBD was) (VP (VBN suspended) (PP (IN at) (NP (CD 6.55))) (NP-TMP (NN p.m.))))))) (ADVP (CC and)) (VP (VBD resumed) (PP (IN at) (NP (CD 9.00))) (NP-TMP (NN p.m.))) (-RRB- -RRB-) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">resumed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">resumed</governor>
+            <dependent idx="2">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">The</governor>
+            <dependent idx="3">sitting</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">suspended</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">The</governor>
+            <dependent idx="5">suspended</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">suspended</governor>
+            <dependent idx="6">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">at</governor>
+            <dependent idx="7">6.55</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">suspended</governor>
+            <dependent idx="8">p.m.</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">resumed</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="10">resumed</governor>
+            <dependent idx="11">at</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="11">at</governor>
+            <dependent idx="12">9.00</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="10">resumed</governor>
+            <dependent idx="13">p.m.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">resumed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">resumed</governor>
+            <dependent idx="2">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">The</governor>
+            <dependent idx="3">sitting</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">suspended</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">The</governor>
+            <dependent idx="5">suspended</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="5">suspended</governor>
+            <dependent idx="7">6.55</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">suspended</governor>
+            <dependent idx="8">p.m.</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">resumed</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="10">resumed</governor>
+            <dependent idx="12">9.00</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="10">resumed</governor>
+            <dependent idx="13">p.m.</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="10">resumed</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="10">resumed</governor>
+            <dependent idx="2">The</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="2">The</governor>
+            <dependent idx="3">sitting</dependent>
+          </dep>
+          <dep type="auxpass">
+            <governor idx="5">suspended</governor>
+            <dependent idx="4">was</dependent>
+          </dep>
+          <dep type="rcmod">
+            <governor idx="2">The</governor>
+            <dependent idx="5">suspended</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="5">suspended</governor>
+            <dependent idx="7">6.55</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="5">suspended</governor>
+            <dependent idx="8">p.m.</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="10">resumed</governor>
+            <dependent idx="9">and</dependent>
+          </dep>
+          <dep type="prep_at">
+            <governor idx="10">resumed</governor>
+            <dependent idx="12">9.00</dependent>
+          </dep>
+          <dep type="tmod">
+            <governor idx="10">resumed</governor>
+            <dependent idx="13">p.m.</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>67</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>suspension</word>
+            <lemma>suspension</lemma>
+            <CharacterOffsetBegin>71</CharacterOffsetBegin>
+            <CharacterOffsetEnd>81</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>and</word>
+            <lemma>and</lemma>
+            <CharacterOffsetBegin>82</CharacterOffsetBegin>
+            <CharacterOffsetEnd>85</CharacterOffsetEnd>
+            <POS>CC</POS>
+          </token>
+          <token id="4">
+            <word>resumption</word>
+            <lemma>resumption</lemma>
+            <CharacterOffsetBegin>86</CharacterOffsetBegin>
+            <CharacterOffsetEnd>96</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>97</CharacterOffsetBegin>
+            <CharacterOffsetEnd>99</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>100</CharacterOffsetBegin>
+            <CharacterOffsetEnd>103</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>sitting</word>
+            <lemma>sit</lemma>
+            <CharacterOffsetBegin>104</CharacterOffsetBegin>
+            <CharacterOffsetEnd>111</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT the) (NN suspension) (CC and) (NN resumption)) (PP (IN of) (NP (DT the) (VBG sitting))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">suspension</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">suspension</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="cc">
+            <governor idx="2">suspension</governor>
+            <dependent idx="3">and</dependent>
+          </dep>
+          <dep type="conj">
+            <governor idx="2">suspension</governor>
+            <dependent idx="4">resumption</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">suspension</governor>
+            <dependent idx="5">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">of</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">the</governor>
+            <dependent idx="7">sitting</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">suspension</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">suspension</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">suspension</governor>
+            <dependent idx="4">resumption</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">suspension</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">the</governor>
+            <dependent idx="7">sitting</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">suspension</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">suspension</governor>
+            <dependent idx="1">the</dependent>
+          </dep>
+          <dep type="conj_and">
+            <governor idx="2">suspension</governor>
+            <dependent idx="4">resumption</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">suspension</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="6">the</governor>
+            <dependent idx="7">sitting</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>

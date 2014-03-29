@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="CoreNLP-to-HTML.xsl" type="text/xsl"?>
+<root>
+  <document>
+    <sentences>
+      <sentence id="1">
+        <tokens>
+          <token id="1">
+            <word>Children</word>
+            <lemma>child</lemma>
+            <CharacterOffsetBegin>0</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="2">
+            <word>should</word>
+            <lemma>should</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>MD</POS>
+          </token>
+          <token id="3">
+            <word>not</word>
+            <lemma>not</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>19</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="4">
+            <word>nose-pick</word>
+            <lemma>nose-pick</lemma>
+            <CharacterOffsetBegin>20</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="5">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>29</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNS Children)) (VP (MD should) (RB not) (VP (VB nose-pick))) (. .))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">nose-pick</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="1">Children</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="3">not</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">nose-pick</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="1">Children</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="3">not</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">nose-pick</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="1">Children</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="2">should</dependent>
+          </dep>
+          <dep type="neg">
+            <governor idx="4">nose-pick</governor>
+            <dependent idx="3">not</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>32</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="2">
+            <word>change</word>
+            <lemma>change</lemma>
+            <CharacterOffsetBegin>33</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="3">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>42</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="4">
+            <word>pace</word>
+            <lemma>pace</lemma>
+            <CharacterOffsetBegin>43</CharacterOffsetBegin>
+            <CharacterOffsetEnd>47</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>48</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>57</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>cold</word>
+            <lemma>cold</lemma>
+            <CharacterOffsetBegin>58</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="8">
+            <word>climate</word>
+            <lemma>climate</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>70</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (DT a) (NN change)) (PP (IN of) (NP (NN pace))) (PP (IN from) (NP (DT this) (JJ cold) (NN climate))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">change</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">change</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">change</governor>
+            <dependent idx="3">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="3">of</governor>
+            <dependent idx="4">pace</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="2">change</governor>
+            <dependent idx="5">from</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">climate</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">climate</governor>
+            <dependent idx="7">cold</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">from</governor>
+            <dependent idx="8">climate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">change</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">change</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">change</governor>
+            <dependent idx="4">pace</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">climate</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">climate</governor>
+            <dependent idx="7">cold</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="2">change</governor>
+            <dependent idx="8">climate</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">change</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="2">change</governor>
+            <dependent idx="1">a</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="2">change</governor>
+            <dependent idx="4">pace</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">climate</governor>
+            <dependent idx="6">this</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="8">climate</governor>
+            <dependent idx="7">cold</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="2">change</governor>
+            <dependent idx="8">climate</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+    </sentences>
+  </document>
+</root>
