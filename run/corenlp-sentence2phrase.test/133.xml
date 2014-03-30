@@ -6,87 +6,298 @@
       <sentence id="1">
         <tokens>
           <token id="1">
-            <word>in</word>
-            <lemma>in</lemma>
+            <word>Have</word>
+            <lemma>have</lemma>
             <CharacterOffsetBegin>0</CharacterOffsetBegin>
-            <CharacterOffsetEnd>2</CharacterOffsetEnd>
-            <POS>IN</POS>
+            <CharacterOffsetEnd>4</CharacterOffsetEnd>
+            <POS>VBP</POS>
           </token>
           <token id="2">
-            <word>the</word>
-            <lemma>the</lemma>
-            <CharacterOffsetBegin>3</CharacterOffsetBegin>
-            <CharacterOffsetEnd>6</CharacterOffsetEnd>
-            <POS>DT</POS>
+            <word>you</word>
+            <lemma>you</lemma>
+            <CharacterOffsetBegin>5</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>PRP</POS>
           </token>
           <token id="3">
-            <word>newspaper</word>
-            <lemma>newspaper</lemma>
-            <CharacterOffsetBegin>7</CharacterOffsetBegin>
-            <CharacterOffsetEnd>16</CharacterOffsetEnd>
-            <POS>NN</POS>
+            <word>actually</word>
+            <lemma>actually</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>17</CharacterOffsetEnd>
+            <POS>RB</POS>
           </token>
           <token id="4">
-            <word>marine</word>
-            <lemma>marine</lemma>
-            <CharacterOffsetBegin>17</CharacterOffsetBegin>
-            <CharacterOffsetEnd>23</CharacterOffsetEnd>
+            <word>ever</word>
+            <lemma>ever</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="5">
+            <word>gotten</word>
+            <lemma>get</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>VBN</POS>
+          </token>
+          <token id="6">
+            <word>anything</word>
+            <lemma>anything</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>38</CharacterOffsetEnd>
             <POS>NN</POS>
           </token>
+          <token id="7">
+            <word>from</word>
+            <lemma>from</lemma>
+            <CharacterOffsetBegin>39</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="8">
+            <word>Lockerz</word>
+            <lemma>Lockerz</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="9">
+            <word>?</word>
+            <lemma>?</lemma>
+            <CharacterOffsetBegin>51</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
         </tokens>
-        <parse>(ROOT (PP (IN in) (NP (DT the) (NN newspaper) (NN marine)))) </parse>
+        <parse>(ROOT (SQ (VBP Have) (NP (PRP you)) (VP (ADVP (RB actually)) (ADVP (RB ever)) (VBN gotten) (PP (NP (NN anything)) (IN from) (NP (NNP Lockerz)))) (. ?))) </parse>
         <dependencies type="basic-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="1">in</dependent>
+            <dependent idx="5">gotten</dependent>
           </dep>
-          <dep type="det">
-            <governor idx="4">marine</governor>
-            <dependent idx="2">the</dependent>
+          <dep type="aux">
+            <governor idx="5">gotten</governor>
+            <dependent idx="1">Have</dependent>
           </dep>
-          <dep type="nn">
-            <governor idx="4">marine</governor>
-            <dependent idx="3">newspaper</dependent>
+          <dep type="nsubj">
+            <governor idx="5">gotten</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">gotten</governor>
+            <dependent idx="3">actually</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">gotten</governor>
+            <dependent idx="4">ever</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="7">from</governor>
+            <dependent idx="6">anything</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">gotten</governor>
+            <dependent idx="7">from</dependent>
           </dep>
           <dep type="pobj">
-            <governor idx="1">in</governor>
-            <dependent idx="4">marine</dependent>
+            <governor idx="7">from</governor>
+            <dependent idx="8">Lockerz</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="1">in</dependent>
+            <dependent idx="5">gotten</dependent>
           </dep>
-          <dep type="det">
-            <governor idx="4">marine</governor>
-            <dependent idx="2">the</dependent>
+          <dep type="aux">
+            <governor idx="5">gotten</governor>
+            <dependent idx="1">Have</dependent>
           </dep>
-          <dep type="nn">
-            <governor idx="4">marine</governor>
-            <dependent idx="3">newspaper</dependent>
+          <dep type="nsubj">
+            <governor idx="5">gotten</governor>
+            <dependent idx="2">you</dependent>
           </dep>
-          <dep type="pobj">
-            <governor idx="1">in</governor>
-            <dependent idx="4">marine</dependent>
+          <dep type="advmod">
+            <governor idx="5">gotten</governor>
+            <dependent idx="3">actually</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">gotten</governor>
+            <dependent idx="4">ever</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="5">gotten</governor>
+            <dependent idx="6">anything</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="5">gotten</governor>
+            <dependent idx="8">Lockerz</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-ccprocessed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="1">in</dependent>
+            <dependent idx="5">gotten</dependent>
           </dep>
-          <dep type="det">
-            <governor idx="4">marine</governor>
-            <dependent idx="2">the</dependent>
+          <dep type="aux">
+            <governor idx="5">gotten</governor>
+            <dependent idx="1">Have</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">gotten</governor>
+            <dependent idx="2">you</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">gotten</governor>
+            <dependent idx="3">actually</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="5">gotten</governor>
+            <dependent idx="4">ever</dependent>
+          </dep>
+          <dep type="npadvmod">
+            <governor idx="5">gotten</governor>
+            <dependent idx="6">anything</dependent>
+          </dep>
+          <dep type="prep_from">
+            <governor idx="5">gotten</governor>
+            <dependent idx="8">Lockerz</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>Lockerz</word>
+            <lemma>Lockerz</lemma>
+            <CharacterOffsetBegin>53</CharacterOffsetBegin>
+            <CharacterOffsetEnd>60</CharacterOffsetEnd>
+            <POS>NNP</POS>
+          </token>
+          <token id="2">
+            <word>actually</word>
+            <lemma>actually</lemma>
+            <CharacterOffsetBegin>61</CharacterOffsetBegin>
+            <CharacterOffsetEnd>69</CharacterOffsetEnd>
+            <POS>RB</POS>
+          </token>
+          <token id="3">
+            <word>delivering</word>
+            <lemma>deliver</lemma>
+            <CharacterOffsetBegin>70</CharacterOffsetBegin>
+            <CharacterOffsetEnd>80</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="4">
+            <word>on</word>
+            <lemma>on</lemma>
+            <CharacterOffsetBegin>81</CharacterOffsetBegin>
+            <CharacterOffsetEnd>83</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>their</word>
+            <lemma>they</lemma>
+            <CharacterOffsetBegin>84</CharacterOffsetBegin>
+            <CharacterOffsetEnd>89</CharacterOffsetEnd>
+            <POS>PRP$</POS>
+          </token>
+          <token id="6">
+            <word>prize</word>
+            <lemma>prize</lemma>
+            <CharacterOffsetBegin>90</CharacterOffsetBegin>
+            <CharacterOffsetEnd>95</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="7">
+            <word>offerings</word>
+            <lemma>offering</lemma>
+            <CharacterOffsetBegin>96</CharacterOffsetBegin>
+            <CharacterOffsetEnd>105</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NNP Lockerz)) (VP (ADVP (RB actually)) (S (VP (VBG delivering) (PP (IN on) (NP (PRP$ their) (NN prize) (NNS offerings)))))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">actually</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">actually</governor>
+            <dependent idx="1">Lockerz</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">actually</governor>
+            <dependent idx="3">delivering</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="3">delivering</governor>
+            <dependent idx="4">on</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">offerings</governor>
+            <dependent idx="5">their</dependent>
           </dep>
           <dep type="nn">
-            <governor idx="4">marine</governor>
-            <dependent idx="3">newspaper</dependent>
+            <governor idx="7">offerings</governor>
+            <dependent idx="6">prize</dependent>
           </dep>
           <dep type="pobj">
-            <governor idx="1">in</governor>
-            <dependent idx="4">marine</dependent>
+            <governor idx="4">on</governor>
+            <dependent idx="7">offerings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">actually</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">actually</governor>
+            <dependent idx="1">Lockerz</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">actually</governor>
+            <dependent idx="3">delivering</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">offerings</governor>
+            <dependent idx="5">their</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">offerings</governor>
+            <dependent idx="6">prize</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">delivering</governor>
+            <dependent idx="7">offerings</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="2">actually</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="2">actually</governor>
+            <dependent idx="1">Lockerz</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="2">actually</governor>
+            <dependent idx="3">delivering</dependent>
+          </dep>
+          <dep type="poss">
+            <governor idx="7">offerings</governor>
+            <dependent idx="5">their</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="7">offerings</governor>
+            <dependent idx="6">prize</dependent>
+          </dep>
+          <dep type="prep_on">
+            <governor idx="3">delivering</governor>
+            <dependent idx="7">offerings</dependent>
           </dep>
         </dependencies>
       </sentence>

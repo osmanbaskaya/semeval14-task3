@@ -6,125 +6,279 @@
       <sentence id="1">
         <tokens>
           <token id="1">
-            <word>normal</word>
-            <lemma>normal</lemma>
+            <word>And</word>
+            <lemma>and</lemma>
             <CharacterOffsetBegin>0</CharacterOffsetBegin>
-            <CharacterOffsetEnd>6</CharacterOffsetEnd>
-            <POS>JJ</POS>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>CC</POS>
           </token>
           <token id="2">
-            <word>human</word>
-            <lemma>human</lemma>
-            <CharacterOffsetBegin>7</CharacterOffsetBegin>
-            <CharacterOffsetEnd>12</CharacterOffsetEnd>
-            <POS>JJ</POS>
+            <word>so</word>
+            <lemma>so</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>6</CharacterOffsetEnd>
+            <POS>IN</POS>
           </token>
           <token id="3">
-            <word>brain</word>
-            <lemma>brain</lemma>
-            <CharacterOffsetBegin>13</CharacterOffsetBegin>
-            <CharacterOffsetEnd>18</CharacterOffsetEnd>
-            <POS>NN</POS>
+            <word>we</word>
+            <lemma>we</lemma>
+            <CharacterOffsetBegin>7</CharacterOffsetBegin>
+            <CharacterOffsetEnd>9</CharacterOffsetEnd>
+            <POS>PRP</POS>
           </token>
           <token id="4">
-            <word>CT</word>
-            <lemma>ct</lemma>
-            <CharacterOffsetBegin>19</CharacterOffsetBegin>
-            <CharacterOffsetEnd>21</CharacterOffsetEnd>
-            <POS>NN</POS>
+            <word>must</word>
+            <lemma>must</lemma>
+            <CharacterOffsetBegin>10</CharacterOffsetBegin>
+            <CharacterOffsetEnd>14</CharacterOffsetEnd>
+            <POS>MD</POS>
           </token>
           <token id="5">
-            <word>scan</word>
-            <lemma>scan</lemma>
-            <CharacterOffsetBegin>22</CharacterOffsetBegin>
-            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <word>think</word>
+            <lemma>think</lemma>
+            <CharacterOffsetBegin>15</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
             <POS>VB</POS>
           </token>
           <token id="6">
-            <word>examination</word>
-            <lemma>examination</lemma>
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="7">
+            <word>how</word>
+            <lemma>how</lemma>
             <CharacterOffsetBegin>27</CharacterOffsetBegin>
-            <CharacterOffsetEnd>38</CharacterOffsetEnd>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>WRB</POS>
+          </token>
+          <token id="8">
+            <word>to</word>
+            <lemma>to</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>33</CharacterOffsetEnd>
+            <POS>TO</POS>
+          </token>
+          <token id="9">
+            <word>solve</word>
+            <lemma>solve</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>39</CharacterOffsetEnd>
+            <POS>VB</POS>
+          </token>
+          <token id="10">
+            <word>this</word>
+            <lemma>this</lemma>
+            <CharacterOffsetBegin>40</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="11">
+            <word>problem</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>52</CharacterOffsetEnd>
             <POS>NN</POS>
           </token>
+          <token id="12">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>52</CharacterOffsetBegin>
+            <CharacterOffsetEnd>53</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
         </tokens>
-        <parse>(ROOT (NP (S (NP (JJ normal) (JJ human) (NN brain) (NN CT)) (VP (VB scan) (NP (NN examination)))))) </parse>
+        <parse>(ROOT (FRAG (CC And) (SBAR (IN so) (S (NP (PRP we)) (VP (MD must) (VP (VB think) (PP (IN about) (SBAR (WHADVP (WRB how)) (S (VP (TO to) (VP (VB solve) (NP (DT this) (NN problem))))))))))) (. .))) </parse>
         <dependencies type="basic-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="5">scan</dependent>
+            <dependent idx="5">think</dependent>
           </dep>
-          <dep type="amod">
-            <governor idx="4">CT</governor>
-            <dependent idx="1">normal</dependent>
+          <dep type="cc">
+            <governor idx="5">think</governor>
+            <dependent idx="1">And</dependent>
           </dep>
-          <dep type="amod">
-            <governor idx="4">CT</governor>
-            <dependent idx="2">human</dependent>
-          </dep>
-          <dep type="nn">
-            <governor idx="4">CT</governor>
-            <dependent idx="3">brain</dependent>
+          <dep type="mark">
+            <governor idx="5">think</governor>
+            <dependent idx="2">so</dependent>
           </dep>
           <dep type="nsubj">
-            <governor idx="5">scan</governor>
-            <dependent idx="4">CT</dependent>
+            <governor idx="5">think</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">think</governor>
+            <dependent idx="4">must</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">think</governor>
+            <dependent idx="6">about</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">solve</governor>
+            <dependent idx="7">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">solve</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="pcomp">
+            <governor idx="6">about</governor>
+            <dependent idx="9">solve</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">problem</governor>
+            <dependent idx="10">this</dependent>
           </dep>
           <dep type="dobj">
-            <governor idx="5">scan</governor>
-            <dependent idx="6">examination</dependent>
+            <governor idx="9">solve</governor>
+            <dependent idx="11">problem</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="5">scan</dependent>
+            <dependent idx="5">think</dependent>
           </dep>
-          <dep type="amod">
-            <governor idx="4">CT</governor>
-            <dependent idx="1">normal</dependent>
+          <dep type="cc">
+            <governor idx="5">think</governor>
+            <dependent idx="1">And</dependent>
           </dep>
-          <dep type="amod">
-            <governor idx="4">CT</governor>
-            <dependent idx="2">human</dependent>
-          </dep>
-          <dep type="nn">
-            <governor idx="4">CT</governor>
-            <dependent idx="3">brain</dependent>
+          <dep type="mark">
+            <governor idx="5">think</governor>
+            <dependent idx="2">so</dependent>
           </dep>
           <dep type="nsubj">
-            <governor idx="5">scan</governor>
-            <dependent idx="4">CT</dependent>
+            <governor idx="5">think</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">think</governor>
+            <dependent idx="4">must</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">solve</governor>
+            <dependent idx="7">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">solve</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="prepc_about">
+            <governor idx="5">think</governor>
+            <dependent idx="9">solve</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">problem</governor>
+            <dependent idx="10">this</dependent>
           </dep>
           <dep type="dobj">
-            <governor idx="5">scan</governor>
-            <dependent idx="6">examination</dependent>
+            <governor idx="9">solve</governor>
+            <dependent idx="11">problem</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-ccprocessed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="5">scan</dependent>
+            <dependent idx="5">think</dependent>
           </dep>
-          <dep type="amod">
-            <governor idx="4">CT</governor>
-            <dependent idx="1">normal</dependent>
+          <dep type="cc">
+            <governor idx="5">think</governor>
+            <dependent idx="1">And</dependent>
           </dep>
-          <dep type="amod">
-            <governor idx="4">CT</governor>
-            <dependent idx="2">human</dependent>
-          </dep>
-          <dep type="nn">
-            <governor idx="4">CT</governor>
-            <dependent idx="3">brain</dependent>
+          <dep type="mark">
+            <governor idx="5">think</governor>
+            <dependent idx="2">so</dependent>
           </dep>
           <dep type="nsubj">
-            <governor idx="5">scan</governor>
-            <dependent idx="4">CT</dependent>
+            <governor idx="5">think</governor>
+            <dependent idx="3">we</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="5">think</governor>
+            <dependent idx="4">must</dependent>
+          </dep>
+          <dep type="advmod">
+            <governor idx="9">solve</governor>
+            <dependent idx="7">how</dependent>
+          </dep>
+          <dep type="aux">
+            <governor idx="9">solve</governor>
+            <dependent idx="8">to</dependent>
+          </dep>
+          <dep type="prepc_about">
+            <governor idx="5">think</governor>
+            <dependent idx="9">solve</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="11">problem</governor>
+            <dependent idx="10">this</dependent>
           </dep>
           <dep type="dobj">
-            <governor idx="5">scan</governor>
-            <dependent idx="6">examination</dependent>
+            <governor idx="9">solve</governor>
+            <dependent idx="11">problem</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>worrying</word>
+            <lemma>worry</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>62</CharacterOffsetEnd>
+            <POS>VBG</POS>
+          </token>
+          <token id="2">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>63</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>problems</word>
+            <lemma>problem</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>77</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (VP (VBG worrying) (PP (IN about) (NP (NNS problems)))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">worrying</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">worrying</governor>
+            <dependent idx="2">about</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">about</governor>
+            <dependent idx="3">problems</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">worrying</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="1">worrying</governor>
+            <dependent idx="3">problems</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">worrying</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="1">worrying</governor>
+            <dependent idx="3">problems</dependent>
           </dep>
         </dependencies>
       </sentence>

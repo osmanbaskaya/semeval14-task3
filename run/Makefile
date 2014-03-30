@@ -19,7 +19,7 @@ bin:
 enw.lm.gz:
 	ln -s /scratch/1/myatbaz/upos_new/run/enw_ukvac2/enw.lm.gz
 
-SC_OPTIONS=-s ${SEED} -v -d 25
+SC_OPTIONS=-s ${SEED} -v -d 100
 %.scode.gz: %.pairs.gz
 	zcat $< | scode ${SC_OPTIONS} | gzip > $@
 
@@ -65,7 +65,11 @@ score/s2p-%.sc: ans/%.ans
 score/p2w-%.sc: ans/%.ans
 	${SCORER} -c 0 ${GOLD_P2W} $< 
 
-data/%.tok.tsv data/%.lem.tsv: corenlp-%.train
+#data/%.tok.tsv data/%.lem.tsv: corenlp-%.train
+	#-mkdir data
+	#corenlp-processor.py $<
+
+data/%.tok.tsv data/%.lem.tsv: corenlp-%.test
 	-mkdir data
 	corenlp-processor.py $<
 
@@ -88,11 +92,15 @@ test-%.sub: ../data/data-files/%.test.input.tsv
 
 ### SCODE GLOBAL
 
-tr-p2s.pairs.gz: data/paragraph2sentence.train.lem.tsv 
+%-p2s.pairs.gz: data/paragraph2sentence.%.lem.tsv 
 	sent_pairs.py <(cat $< | tr -cd "[:alpha:] [:space:]" | tr 'A-Z' 'a-z' |\
 	remove-stop.py) | gzip > $@
 
-tr-s2p.pairs.gz: data/sentence2phrase.train.lem.tsv 
+%-s2p.pairs.gz: data/sentence2phrase.%.lem.tsv 
+	sent_pairs.py <(cat $< | tr -cd "[:alpha:] [:space:]" | tr 'A-Z' 'a-z' |\
+	remove-stop.py) | gzip > $@
+
+%-p2w.pairs.gz: data/phrase2word.%.lem.tsv 
 	sent_pairs.py <(cat $< | tr -cd "[:alpha:] [:space:]" | tr 'A-Z' 'a-z' |\
 	remove-stop.py) | gzip > $@
 
@@ -106,10 +114,38 @@ enrichment.gz: corpora.gz
 %.pairs.gz: tr-%.pairs.gz # enrichment.gz
 	zcat $^ | gzip > $@
 
-ans/sc_sent-%-tr.ans: %.scode.gz
+%-sub-p2s.pairs.gz: %-paragraph2sentence.sub.f1.gz %-paragraph2sentence.sub.f2.gz
+	zcat $< | wordsub_task3.py L 100 1 > dummy.tmp
+	zcat $*-paragraph2sentence.sub.f2.gz | wordsub_task3.py R 100 1 >> dummy.tmp
+	cat dummy.tmp | gzip > $@
+	rm dummy.tmp
+
+%-sub-s2p.pairs.gz: %-sentence2phrase.sub.f1.gz %-sentence2phrase.sub.f2.gz
+	zcat $< | wordsub_task3.py L 100 1 > dummy.tmp
+	zcat $*-sentence2phrase.sub.f2.gz | wordsub_task3.py R 100 1 >> dummy.tmp
+	cat dummy.tmp | gzip > $@
+	rm dummy.tmp
+
+test-%-s1.pairs.gz: train-%.pairs.gz test-%.pairs.gz
+	zcat $< | sed -e 's|^L|T|g' -e 's|^R|K|g' | gzip > dummy.pairs.gz
+	zcat test-$*.pairs.gz dummy.pairs.gz | gzip > $@
+	rm dummy.pairs.gz
+
+test-%-s2.pairs.gz: train-sub-%.pairs.gz test-sub-%.pairs.gz
+	zcat $< | sed -e 's|^L|T|g' -e 's|^R|K|g' | gzip > dummy.pairs.gz
+	zcat test-$*.pairs.gz dummy.pairs.gz | gzip > $@
+	rm dummy.pairs.gz
+
+ans/test-%-s1.ans: test-%-s1.scode.gz
 	scode_sent_exp.py <(zcat $< | perl -ne 'print if s/^0://' | grep -P "^[LR]\d+" | cut -f1,3-) > $@
 
-ans/sc_sent-%-tr.ans: %.scode.gz
+ans/test-%-s2.ans: test-%-s2.scode.gz
+	scode_sent_exp.py <(zcat $< | perl -ne 'print if s/^0://' | grep -P "^[LR]\d+" | cut -f1,3-) > $@
+
+ans/train-sc_sent-%.ans: train-%.scode.gz
+	scode_sent_exp.py <(zcat $< | perl -ne 'print if s/^0://' | grep -P "^[LR]\d+" | cut -f1,3-) > $@
+
+ans/sc_sub-%.ans: %.scode.gz
 	scode_sent_exp.py <(zcat $< | perl -ne 'print if s/^0://' | grep -P "^[LR]\d+" | cut -f1,3-) > $@
 
 ### Corpus Generation model experiments
@@ -126,6 +162,9 @@ gen-p2s-prob.gz: rcv1.sub.gz all.stem gen-p2s-input-uniq
 
 clean-%: 
 	-rm -rf ans/sc_sent-$*-tr.ans tr-$*.pairs.gz $*.pairs.gz $*.scode.gz
+
+sub-clean-%:
+	-rm -rf train-sub-$*.scode.gz ans/sc_sub-train-sub-$*.ans
 
 .PRECIOUS:
 	rcv1.scode.gz
