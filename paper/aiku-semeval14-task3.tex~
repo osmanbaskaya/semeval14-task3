@@ -68,7 +68,7 @@ bites & dog \_\_\_ $<$/s$>$ & $w_1$ (0.03), $w_2$ (0.23),  $w_3$ (0.04), ..., $w
 \section{Algorithm}
 \label{algorithm}
 
-In this section, we will explain preprocessing steps of the data and the details of our two participated systems\footnote{The code to replicate our work can be found \emph{input github repo link here}.} for this task. Both systems rely on the co-occurrence statistics. The slight differences between the first and the second system is that the first one uses the words occur in the text (e.g., paragraph, sentence etc.), whereas the second system employs co-occurrence statistics on 100 most likely substitutes of each occurred word in text. 
+In this section, we will explain preprocessing steps of the data and the details of our two participated systems\footnote{The code to replicate our work can be found \emph{input github repo link here}.} for this task. Both systems rely on the co-occurrence statistics. The slight difference between the first and the second system is that the first one uses the words occur in the text (e.g., paragraph, sentence etc.), whereas the second system employs co-occurrence statistics on 100 most likely substitutes of each occurred word in text. 
 
 \subsection{Data Preprocessing}
 
@@ -137,9 +137,9 @@ R2 & popular \\
 \caption{\label{table:results-s2p} Sentence2phrase subtask scores for the test set. \emph{Best} indicates the best score for the subtasks. LCS stands for Normalized Longest Common Substring. Subscripts in AI-KU systems indicate the run number.}
 \end{table}
 
-Two AI-KU systems distinguishes between each other on input of co-occurrence modeling part. 
+Two AI-KU systems can be distinguished between each other on input of co-occurrence modeling part. 
 
-\paragraph{AI-KU$_1$:} This system uses the words that observed in the text. All words are translated into lower-case equivalents. Lemmatization\footnote{Stanford CoreNLP is used for lemmatization.}, stop-word removing\footnote{Python NLTK library is used.} has been done and finally non-alphanumeric characters are excluded. Table \ref{tab:system1_input} shows the input of the AI-KU$_1$ for the following sentence which is an instance from paragraph2sentence test set:
+\paragraph{AI-KU$_1$:} This system uses the words that observed in the text. All words are translated into lower-case equivalents. Lemmatization\footnote{Stanford CoreNLP is used for lemmatization.}, stop-word removing\footnote{Python NLTK library is used.} has been done and non-alphanumeric characters are excluded. Table \ref{tab:system1_input} shows the input of the AI-KU$_1$ for the following sentence which is an instance from paragraph2sentence test set:
 
 \begin{quote}
 How can my blog be more popular?
@@ -203,6 +203,7 @@ Both AI-KU systems outperformed the Normalized Longest Common Substring (LCS) ba
 
 \section*{Acknowledgements}
 
+\newpage
 % include your own bib file like this:
 \bibliographystyle{acl}
 \bibliography{references}
