@@ -8,10 +8,6 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 
-
-
-
-
 %\setlength\titlebox{5cm}
 
 % You can expand the titlebox if you need extra space
@@ -26,16 +22,14 @@
 
 \title{AI-KU: Paper Title}
 
-\author{First Author \\
-  Affiliation / Address line 1 \\
-  Affiliation / Address line 2 \\
-  Affiliation / Address line 3 \\
-  {\tt email@domain} \\\And
-  Second Author \\
-  Affiliation / Address line 1 \\
-  Affiliation / Address line 2 \\
-  Affiliation / Address line 3 \\
-  {\tt email@domain} \\}
+\author{Osman Ba\c{s}kaya \\
+	  Artifical Intelligence Laboratory \\
+	  Ko\c{c} University, Istanbul, Turkey \\
+  {\tt obaskaya@ku.edu.tr} \\\And
+  Deniz Yuret \\
+	  Artifical Intelligence Laboratory \\
+	  Ko\c{c} University, Istanbul, Turkey \\
+  {\tt dyuret@ku.edu.tr} \\}
 
 \date{}
 
@@ -43,45 +37,22 @@
 \maketitle
 \begin{abstract}
 
-In this paper, we describe our two unsupervised systems that based on co-occurrence statistics of words. There is only one difference between the systems is that the input they use. 
-
-In this paper, we describe our two unsupervised systems that based on co-occurrence statistics of words. There is only one difference between the systems is that the input they use. First system uses the words directly (after lemmatization, stopword removing and excluding the non-alphanumeric characters) in text while the second system utilizes the most likely substitutes consulted by a 4-gram language model for each observed word position (i.e., context).
+In this paper, we describes our unsupervised method submitted to Cross-Level Semantic Similarity task in Semeval 2014 that aims to compute semantic similarity between two different sized text fragments. Our method models each text fragment by using the co-occurrence statistics of either occurred words or their substitutes. The co-occurrence step provides dense, low-dimensional embedding for each fragment and semantic similarity between embeddings can then be calculated various similarity metrics. Although our current model avoids the syntactic information, we achieved promising results and outperformed all baselines.
 
 \end{abstract}
 
 \section{Introduction}
 \label{intro}
 
-Semantic similarity is a measure that specifies the similarity of one text's meaning to another's. Semantic similarity plays an important role in many Natural Language Processing (NLP) tasks ranging from textual entailment to summarization, question answering to document categorization. 
+Semantic similarity is a measure that specifies the similarity of one text's meaning to another's. Semantic similarity plays an important role in many Natural Language Processing (NLP) tasks ranging from textual entailment \cite{berant2012entail} to summarization \cite{lin2003summarization}, question answering \cite{surdeanu2011questionans} to text classification \cite{sebastiani2002textclass}, word sense disambiguation \cite{schutze98automatic} to information retrieval \cite{park2005infret}. 
 
-There are three main approaches to compute text similarity. \emph{Refer to VSM paper?}
+There are three main approaches to compute semantic similarity between two text fragments. First approach uses Vector Space Models (see Turney \& Pantel \shortcite{turney10frequency} for an overview) where each text is represented as a bag-of-word vector. The similarity between two text fragments can then be computed with various metrics such as cosine similarity. For these models, sparseness in the input nature is the key problem. Therefore, later works such as LSI \cite{deerwester90indexing} and Topic Models \cite{blei03latent} overcome sparsity problem reducing the dimensionality of the model by introducing latent variables. Second approach blends various lexical and syntactic features and attacks the problem with machine learning models. The third approach is based on word-to-word similarity alignment \cite{pilehvar2013align}, \cite{islam2008semantic}.
 
-In this paper, we describe our two unsupervised systems that based on co-occurrence statistics of words. There is only one difference between the systems is that the input they use. First system uses the words directly (after lemmatization, stopword removing and excluding the non-alphanumeric characters) in text while the second system utilizes the most likely substitutes consulted by a 4-gram language model for each observed word position (i.e., context).
-
-Cross-Level Semantic Similarity (CLSS) task in SemEval 2014 (give a \emph{Reference}) provides an evaluation framework for assessing similarity methods for texts in different volumes (i.e., lexical levels). Unlike previous SemEval and *SEM tasks that have interested in comparing texts with similar volume, this task contains four subtasks (paragraph2sentence, sentence2phrase, phrase2word and word2sense) in order to investigate the performances of the systems on pair of texts with different sizes. A system should report similarity score of a given pair, ranging 4 (the two items have very similar meanings and the most important ideas, concepts, or actions in the larger text are represented in the smaller text) to 0 (the two items do not mean the same thing and are not on the same topic).
-
-The remainder of the paper proceeds as follows. Section \ref{algorithm} explains the preprocessing part, the difference between the systems, co-occurrence modeling, and how we calculate the similarity between two texts after co-occurrence modeling has been done. Section \ref{evaluation} discusses the results of our systems and makes a comparison with other participants. Section \ref{conclusion} concludes the findings and ends with a short future work.
-
-% Semantic measures play an important role to compare such elements according to semantic proxies: texts and knowledge representations, which support their meaning or describe their nature.
-
-% Semantic similarity is the practical, widely used approach to address the natural language understanding issue in many core NLP tasks such as paraphrase identification, Question Answering, Natural Language Generation, and Intelligent Tutoring Systems. %In the semantic similarity approach, the meaning of a target text is inferred by assessing how similar it is to another text, called the benchmark text, whose meaning is known. If the two texts are similar enough, according to some measure of semantic similarity, the meaning of the target text is deemed similar to the meaning of the benchmark text.
-
-% Measuring semantic text similarity has been a re- % search subject in natural language processing, infor- % mation retrieval and artificial intelligence for many % years. Previous efforts have focused on compar- % ing two long texts (e.g., for document classification) % or a short text with a long text (e.g., Web search), % but there are a growing number of tasks requiring % computing the semantic similarity between two sen- % tences or other short text sequences. They include % paraphrase recognition (Dolan et al., 2004), Twitter % tweets search (Sriram et al., 2010), image retrieval % by captions (Coelho et al., 2004), query reformula- % tion (Metzler et al., 2007), automatic machine trans- % lation evaluation (Kauchak and Barzilay, 2006) and % schema matching (Han et al., 2012). % There are three predominant approaches to com- % puting short text similarity. The first uses informa- % tion retrieval’s vector space model (Meadow, 1992) % in which each text is modeled as a “bag of words”
-
-% Comparing textual data to establish the degree of se- mantic similarity is of key importance in many Nat- ural Language Processing (NLP) tasks ranging from document categorization to textual entailment and summarization. The key aspect of having an accu- rate STS framework is the design of features that can adequately represent various aspects of the similar- ity between texts, e.g. using lexical, syntactic and semantic similarity metrics. The majority of approaches to semantic textual similarity treat the input text pairs as feature vec- tors where each feature is a score corresponding to a certain type of similarity.
-
-
-%To this end
-
-% Unlike prior SemEval tasks on textual similarity that have focused on comparing similar-sized texts, this task evaluates the case where larger text must be compared to smaller text.
-%Task participants will be provided with pairs of each comparison type and asked to rate the pair according to the semantic similarity of the smaller item to the larger item
-
-%Joint Learning of Words and Meaning Representations for Open-Text Semantic Parsing: 
 
 \begin{table}
 \begin{center}
 \begin{tabular}{|r|c|}
-\hline \bf ID & \bf Token \\ \hline
+\hline \bf ID & \bf Lemma \\ \hline
 R2 & how \\
 R2 & blog \\
 R2 & popular \\
@@ -91,8 +62,15 @@ R2 & popular \\
 \caption{\label{tab:system1_input} Input example for AI-KU$_1$.}
 \end{table}
 
+Cross-Level Semantic Similarity (CLSS) task in SemEval 2014 (give a \emph{Reference}) provides an evaluation framework for assessing similarity methods for texts in different volumes (i.e., lexical levels). Unlike previous SemEval and *SEM tasks that have interested in comparing texts with similar volume, this task contains four subtasks (paragraph2sentence, sentence2phrase, phrase2word and word2sense) in order to investigate the performances of the systems on pair of texts with different sizes. A system should report similarity score of a given pair, ranging 4 (the two items have very similar meanings and the most important ideas, concepts, or actions in the larger text are represented in the smaller text) to 0 (the two items do not mean the same thing and are not on the same topic).
 
-\begin{table*}
+In this paper, we describe our two unsupervised systems that based on co-occurrence statistics of words. There is only one difference between the systems is that the input they use. First system uses the words directly (after lemmatization, stop-word removal and excluding the non-alphanumeric characters) in text while the second system utilizes the most likely substitutes consulted by a 4-gram language model for each observed word position (i.e., context). 
+
+% 2 subtask'a participate ettigimiz soylenebilir.
+
+The remainder of the paper proceeds as follows. Section \ref{algorithm} explains the preprocessing part, the difference between the systems, co-occurrence modeling, and how we calculate the similarity between two texts after co-occurrence modeling has been done. Section \ref{evaluation} discusses the results of our systems and makes a comparison with other participants. Section \ref{conclusion} concludes the findings and ends with a short future work.
+
+\begin{table*}[t]
   \resizebox{\textwidth}{!}{
   \centering
   \begin{tabular}{r||c||c}
@@ -100,9 +78,9 @@ R2 & popular \\
     % \cmidrule{2-3} \cmidrule{3-3}
                Word & Context & Substitutes \\
                 \hline
-the & $<$s$>$ \_\_\_ dog & $w_1$ (0.01), $w_2$ (0.53),  $w_3$ (0.13), ..., $w_n$ (0.02) \\ 
-dog & the \_\_\_ bites & $w_1$ (0.01), $w_2$ (0.1),  $w_3$ (0.05), ..., $w_n$ (0.01) \\ 
-bites & dog \_\_\_ $<$/s$>$ & $w_1$ (0.03), $w_2$ (0.23),  $w_3$ (0.04), ..., $w_n$ (0.01) \\
+the & $<$s$>$ \_\_\_ dog & the (0.39), a (0.41),  his (0.01), their (0.13), stray (0.13), ..., Alice (0.02) \\ 
+dog & the \_\_\_ bites &  dog (0.01), spider (0.1),  flea (0.05), human (0.13), ..., the (0.01) \\ 
+bites & dog \_\_\_ $<$/s$>$ & barks (0.03), whisperer (0.23),  bites (0.04), $w_4$ (0.13), ..., $w_n$ (0.01) \\
 \bottomrule
   \end{tabular}}
 \caption{Contexts when using a bigram language model}
@@ -115,7 +93,7 @@ In this section, we will explain preprocessing steps of the data and the details
 
 \subsection{Data Preprocessing}
 
-\begin{table}[t]
+\begin{table}
 \begin{center}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{|l|c|c|c|}
@@ -138,7 +116,7 @@ In this section, we will explain preprocessing steps of the data and the details
 \caption{\label{table:results-p2s} Paragraph-2-Sentence subtask scores for the test set. \emph{Best} indicates the best score for the subtasks. LCS stands for Normalized Longest Common Substring. Subscripts in AI-KU systems indicate the run number.}
 \end{table}
 
-\begin{table}[t]
+\begin{table}
 \begin{center}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{|l|c|c|c|}
@@ -163,7 +141,7 @@ In this section, we will explain preprocessing steps of the data and the details
 
 Two AI-KU systems can be distinguished between each other on input of co-occurrence modeling part. 
 
-\paragraph{AI-KU$_1$:} This system uses the words that observed in the text. All words are translated into lower-case equivalents. Lemmatization\footnote{Lemmatization is carried out with Stanford CoreNLP and transforms a word into its canonical or base form.}, stop-word removing has been done and non-alphanumeric characters are excluded. Table \ref{tab:system1_input} shows the input of the AI-KU$_1$ for the following sentence which is an instance from paragraph2sentence test set:
+\paragraph{AI-KU$_1$:} This system uses the words that observed in the text. All words are translated into lower-case equivalents. Lemmatization\footnote{Lemmatization is carried out with Stanford CoreNLP and transforms a word into its canonical or base form.}, stop-word removal has been done and non-alphanumeric characters are excluded. Table \ref{tab:system1_input} shows the input of the AI-KU$_1$ for the following sentence which is an instance from paragraph2sentence test set:
 
 \begin{quote}
 How can my blog be more popular?
@@ -177,7 +155,7 @@ How can my blog be more popular?
 
 \subsection{Co-Occurrence Modeling}
 
-This subsection will explain the unsupervised methods we employed to model co-occurrence statistics: the Co-occurrence data Embedding (CODE) method \cite{globerson-CODE} and its spherical extension (S-CODE) proposed by Maron et al. \shortcite{Maron2010}. Unlike our previous WSI work \cite{baskaya13ai} where we ended up with an embedding for each
+This subsection will explain the unsupervised method we employed to model co-occurrence statistics: the Co-occurrence data Embedding (CODE) method \cite{globerson-CODE} and its spherical extension (S-CODE) proposed by Maron et al. \shortcite{Maron2010}. Unlike our previous WSI work \cite{baskaya13ai} where we ended up with an embedding for each
 word in the co-occurrence modeling step, in this task however, we try to model each text unit such as a paragraph, a sentence or a phrase, thus, after this step, we obtain embeddings for each paragraph, sentence and phrase instance. 
 
 Input data for S-CODE algorithm were instance-id of the text unit and the each word in the text unit for the first system (see Table \ref{tab:system1_input}), the 100 most likely substitutes of each word in text for the second system. In the initial step, S-CODE puts all instance-ids and words/substitutes randomly on n-dimensional sphere. If two different instances have the same word/substitute, then these two instances attract each other, otherwise they will repel. When S-CODE converges, instances have similar words/substitutes will be closely located, instances have no similar words/substitutes will be far from each other. 
@@ -192,18 +170,17 @@ When the S-CODE converges, we have an n-dimensional embedding for each textual l
 the similarity between embeddings. For this task, systems should report only the similarity between two specific cross level instances. Note that we used cosine similarity in order to calculate similarity between two textual unit. \emph{How about the other metrics? Make a test and input the reason why we use cosine similarity}. This similarity is the eventual similarity for two instances; no further processing (e.g., scaling) has been done.
 
 % Bag of words
-% Dimensionlar farkliydi iki subtask icin.
-% Unsupervised oldugumuzu dile getirelim. Baslikta filan da dile getirilebilir.
 % 2 task'e katildik, bunlar p2s s2p. Context enrichment yapildi ukwac ile fakat training'te daha kotu sonuclar elde edildi. 
 % Stanford CoreNLP kullanildi lemmatize edilirken.
 % Iki deney yapildi, biri sentence icindeki kelimeleri vererek yakinlik hesaplamak, digeri once substitute'larini onlari kullanarak iki text'in yakinliginin hesaplanmasi, LM olarak ukwac kullanildi (detaylari gir), 100 subs alindi, alphanumeric olmayan karakterlerden temizlendi (makefile'a bak gen-p2s-input targeti. Sonradan edit galiba bu alakasiz ir sey) lowercase'e gecildi
-% Jaccard index baseline'indan ve diger baseline'lardan bahsedilebilir.
 % Training setteki sonuclar ve test setteki sonuclara ait tablo,
-% Ayri ayri genre scorelari uzerinden tablo. David burada bi genre'de cok iyi yaptigimizi soylemisti.
 % Enrichment yapilmadi, ama test datasinda sonuclar alinirken training datasi da kullanildi.
 % Yer kalmazsa training data'daki skorlari supplementary material kisvesi altinda ver.
 % w1 w2 w3 context tablosunda. Onlari kelimelerle degistirin.
 % text fragments kullanilabilir. Estimating the semantic relatedness of two text fragments – such as words, sentences, or entire documents – is important for many natural language processing or information retrieval applications.
+% Supplementary material should be reported.
+% Section'dan once ne anlatacagini anlatan bir seyler yazildi mi?
+% Ornegı degıstır tablo 1 ıcın.
 
 
 \section{Evaluation Results}
@@ -233,9 +210,9 @@ Although current systems are based on bag-of-word approach and discard the synta
 
 % \ref, \noindent, \shortcite, \cite, \url
 
-\section*{Acknowledgements}
-
-\emph{You may want to thank Tubitak.}
+% \section*{Acknowledgements}
+% 
+% \emph{You may want to thank Tubitak.}
 
 \newpage
 % include your own bib file like this:
