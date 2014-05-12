@@ -43,21 +43,38 @@
 \maketitle
 \begin{abstract}
 
+In this paper, we describe our two unsupervised systems that based on co-occurrence statistics of words. There is only one difference between the systems is that the input they use. 
+
 \end{abstract}
 
 \section{Introduction}
 \label{intro}
 
+Semantic similarity is a measure that specifies the similarity of the meaning of one text to another. Semantic similarity plays an important role in many Natural Language Processing (NLP) tasks ranging from textual entailment to summarization, question answering to document categorization. 
+
+There are three main approaches to compute text similarity. \emph{Refer to VSM paper?}
+
+In this paper, we describe our two unsupervised systems that based on co-occurrence statistics of words. There is only one difference between the systems is that the input they use. First system uses the words directly (after lemmatization, stopword removing and excluding the non-alphanumeric characters) in text while the second system utilizes the most likely substitutes consulted by a 4-gram language model for each observed word position (i.e., context).
+
+The remainder of the paper proceeds as follows. Section \ref{algorithm} presents the preprocessing part, the difference between the systems, co-occurrence modeling, and how we calculate the similarity between two texts after co-occurrence modeling has been done. Section \ref{evaluation} discusses the results of our systems and makes a comparison with other participants. Section \ref{conclusion} concludes the findings and ends with a short future work.
+
+% Semantic measures play an important role to compare such elements according to semantic proxies: texts and knowledge representations, which support their meaning or describe their nature.
+
+% Semantic similarity is the practical, widely used approach to address the natural language understanding issue in many core NLP tasks such as paraphrase identification, Question Answering, Natural Language Generation, and Intelligent Tutoring Systems. %In the semantic similarity approach, the meaning of a target text is inferred by assessing how similar it is to another text, called the benchmark text, whose meaning is known. If the two texts are similar enough, according to some measure of semantic similarity, the meaning of the target text is deemed similar to the meaning of the benchmark text.
+
+% Measuring semantic text similarity has been a re- % search subject in natural language processing, infor- % mation retrieval and artificial intelligence for many % years. Previous efforts have focused on compar- % ing two long texts (e.g., for document classification) % or a short text with a long text (e.g., Web search), % but there are a growing number of tasks requiring % computing the semantic similarity between two sen- % tences or other short text sequences. They include % paraphrase recognition (Dolan et al., 2004), Twitter % tweets search (Sriram et al., 2010), image retrieval % by captions (Coelho et al., 2004), query reformula- % tion (Metzler et al., 2007), automatic machine trans- % lation evaluation (Kauchak and Barzilay, 2006) and % schema matching (Han et al., 2012). % There are three predominant approaches to com- % puting short text similarity. The first uses informa- % tion retrieval’s vector space model (Meadow, 1992) % in which each text is modeled as a “bag of words”
+
+% Comparing textual data to establish the degree of se- mantic similarity is of key importance in many Nat- ural Language Processing (NLP) tasks ranging from document categorization to textual entailment and summarization. The key aspect of having an accu- rate STS framework is the design of features that can adequately represent various aspects of the similar- ity between texts, e.g. using lexical, syntactic and semantic similarity metrics. The majority of approaches to semantic textual similarity treat the input text pairs as feature vec- tors where each feature is a score corresponding to a certain type of similarity.
 
 
-\section{Algorithm}
-\label{algorithm}
+%To this end
 
-In this section, we will explain preprocessing steps of the data and the details of our two participated systems\footnote{The code to replicate our work can be found \emph{input github repo link here}.} for this task. Both systems rely on the co-occurrence statistics. The slight differences between the first and the second system is that the first one uses the words occur in the text (e.g., paragraph, sentence etc.), whereas the second system employs co-occurrence statistics on 100 most likely substitutes of each occurred word in text. 
+% Unlike prior SemEval tasks on textual similarity that have focused on comparing similar-sized texts, this task evaluates the case where larger text must be compared to smaller text.
+%Task participants will be provided with pairs of each comparison type and asked to rate the pair according to the semantic similarity of the smaller item to the larger item
 
-\subsection{Data Preprocessing}
+%Joint Learning of Words and Meaning Representations for Open-Text Semantic Parsing: 
 
-\begin{table}[r]
+\begin{table}
 \begin{center}
 \begin{tabular}{|r|c|}
 \hline \bf ID & \bf Token \\ \hline
@@ -70,16 +87,8 @@ R2 & popular \\
 \caption{\label{tab:system1_input} Input example for AI-KU$_1$.}
 \end{table}
 
-Two AI-KU systems distinguishes between each other on input of co-occurrence modeling part. 
 
-\paragraph{AI-KU$_1$:} This system uses the words that observed in the text. All words are translated into lower-case equivalents. Lemmatization\footnote{Stanford CoreNLP is used for lemmatization.}, stop-word removing\footnote{Python NLTK library is used.} has been done and finally non-alphanumeric characters are excluded. Table \ref{tab:system1_input} shows the input of the AI-KU$_1$ for the following sentence which is an instance from paragraph2sentence test set:
-
-\begin{quote}
-How can my blog be more popular?
-\end{quote}
-
-
-\begin{table*}[t]
+\begin{table*}
   \resizebox{\textwidth}{!}{
   \centering
   \begin{tabular}{r||c||c}
@@ -96,17 +105,13 @@ bites & dog \_\_\_ $<$/s$>$ & $w_1$ (0.03), $w_2$ (0.23),  $w_3$ (0.04), ..., $w
 \label{tab:subs_exp}
 \end{table*}
 
-\paragraph{AI-KU$_2$:} Unlike the first system, this system represents each context of a word by finding the most likely substitutes suggested by the 4-gram language model we built from ukWaC\footnote{Available here: http://wacky.sslmit.unibo.it} \cite{ukWaC}, a 2-billion word web-gathered corpus. This high probability substitutes work successfully on Word Sense Induction (WSI) \emph{cite semeval 2013} and Part-of-Speech Induction \emph{Mali \& Enis work} problems. We used the 100 most likely substitute for each context. No lemmatization, stop word removing and lower-case transformation has been done. Table~\ref{tab:subs_exp} illustrates the context and substitutes of each context using a bigram language model.
+\section{Algorithm}
+\label{algorithm}
+In this section, we will explain preprocessing steps of the data and the details of our two participated systems\footnote{The code to replicate our work can be found \emph{input github repo link here}.} for this task. Both systems rely on the co-occurrence statistics. The slight difference between the first and the second system is that the first one uses the words occur in the text (e.g., paragraph, sentence etc.), whereas the second system employs co-occurrence statistics on 100 most likely substitutes of each occurred word in text. 
 
-\subsection{Co-Occurrence Modeling}
+\subsection{Data Preprocessing}
 
-This subsection will explain the unsupervised methods we employed to model co-occurrence statistics: the Co-occurrence data Embedding (CODE) method \cite{globerson-CODE} and its spherical extension (S-CODE) proposed by Maron et al. \shortcite{Maron2010}. Unlike our previous WSI work \cite{baskaya13ai} where we ended up with an embedding for each
-word in the co-occurrence modeling step, in this task however, we try to model each text unit such as a paragraph, a sentence or a phrase, thus, after this step, we obtain embeddings for each paragraph, sentence and phrase instance. 
-
-Input data for S-CODE algorithm were instance-id of the text unit and the each word in the text unit for the first system, the 100 most likely substitutes of each word in text for the second system. In the initial step, S-CODE puts all instance-ids and words/substitutes randomly on n-dimensional sphere. If two different instances have the same word/substitute, then these two instances attract each other, otherwise they will repel. When S-CODE converges, instances have similar words/substitutes will be closely located, instances have no similar words/substitutes will be far from each other. 
-
-
-\begin{table}
+\begin{table}[t]
 \begin{center}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{|l|c|c|c|}
@@ -129,7 +134,7 @@ Input data for S-CODE algorithm were instance-id of the text unit and the each w
 \caption{\label{table:results-p2s} Paragraph-2-Sentence subtask scores for the test set. \emph{Best} indicates the best score for the subtasks. LCS stands for Normalized Longest Common Substring. Subscripts in AI-KU systems indicate the run number.}
 \end{table}
 
-\begin{table}
+\begin{table}[t]
 \begin{center}
 \resizebox{\columnwidth}{!}{
 \begin{tabular}{|l|c|c|c|}
@@ -152,6 +157,31 @@ Input data for S-CODE algorithm were instance-id of the text unit and the each w
 \caption{\label{table:results-s2p} Sentence2phrase subtask scores for the test set. \emph{Best} indicates the best score for the subtasks. LCS stands for Normalized Longest Common Substring. Subscripts in AI-KU systems indicate the run number.}
 \end{table}
 
+Two AI-KU systems can be distinguished between each other on input of co-occurrence modeling part. 
+
+\paragraph{AI-KU$_1$:} This system uses the words that observed in the text. All words are translated into lower-case equivalents. Lemmatization\footnote{Lemmatization is carried out with Stanford CoreNLP and transforms a word into its canonical or base form.}, stop-word removing has been done and non-alphanumeric characters are excluded. Table \ref{tab:system1_input} shows the input of the AI-KU$_1$ for the following sentence which is an instance from paragraph2sentence test set:
+
+\begin{quote}
+How can my blog be more popular?
+\end{quote}
+
+
+
+\paragraph{AI-KU$_2$:} Unlike the first system, this system represents each context of a word by finding the most likely substitutes suggested by the 4-gram language model we built from ukWaC\footnote{Available here: http://wacky.sslmit.unibo.it} \cite{ukWaC}, a 2-billion word web-gathered corpus. High probability substitutes worked successfully on Word Sense Induction (WSI) \cite{baskaya13ai} and Part-of-Speech Induction \cite{yatbaz2012learning} problems. We used the 100 most likely substitute for each context. No lemmatization, stop word removing and lower-case transformation has been done. Table~\ref{tab:subs_exp} illustrates the context and substitutes of each context using a bigram language model.
+
+
+
+\subsection{Co-Occurrence Modeling}
+
+This subsection will explain the unsupervised methods we employed to model co-occurrence statistics: the Co-occurrence data Embedding (CODE) method \cite{globerson-CODE} and its spherical extension (S-CODE) proposed by Maron et al. \shortcite{Maron2010}. Unlike our previous WSI work \cite{baskaya13ai} where we ended up with an embedding for each
+word in the co-occurrence modeling step, in this task however, we try to model each text unit such as a paragraph, a sentence or a phrase, thus, after this step, we obtain embeddings for each paragraph, sentence and phrase instance. 
+
+Input data for S-CODE algorithm were instance-id of the text unit and the each word in the text unit for the first system (see Table \ref{tab:system1_input}), the 100 most likely substitutes of each word in text for the second system. In the initial step, S-CODE puts all instance-ids and words/substitutes randomly on n-dimensional sphere. If two different instances have the same word/substitute, then these two instances attract each other, otherwise they will repel. When S-CODE converges, instances have similar words/substitutes will be closely located, instances have no similar words/substitutes will be far from each other. 
+
+\paragraph{AI-KU$_1$:} According to the training set performances for various $n$ (i.e., number of dimensions for S-CODE algorithm), we picked 100 for both tasks.
+
+\paragraph{AI-KU$_2$:} Prior performance tests on training set, we picked $n$ equals to 200 and 100 for paragraph2sentence and sentence2phrase subtasks, respectively.
+
 \subsection{Similarity Calculation}
 
 When the S-CODE converges, we have an n-dimensional embedding for each textual level (e.g., paragraph, sentence, phrase) instance. We can use a similarity metric to calculate 
@@ -159,7 +189,6 @@ the similarity between embeddings. For this task, systems should report only the
 
 % Bag of words
 % Dimensionlar farkliydi iki subtask icin.
-% Aklimda kalan birinde substitute digerinde direk surface form'lar kullanildi SCODE icin, ama su an kafam karisti, enrichment mi yaptik subs yerine? SUB sanirim.
 % Unsupervised oldugumuzu dile getirelim. Baslikta filan da dile getirilebilir.
 % 2 task'e katildik, bunlar p2s s2p. Context enrichment yapildi ukwac ile fakat training'te daha kotu sonuclar elde edildi. 
 % Stanford CoreNLP kullanildi lemmatize edilirken.
@@ -168,8 +197,9 @@ the similarity between embeddings. For this task, systems should report only the
 % Training setteki sonuclar ve test setteki sonuclara ait tablo,
 % Ayri ayri genre scorelari uzerinden tablo. David burada bi genre'de cok iyi yaptigimizi soylemisti.
 % Enrichment yapilmadi, ama test datasinda sonuclar alinirken training datasi da kullanildi.
-
-
+% Yer kalmazsa training data'daki skorlari supplementary material kisvesi altinda ver.
+% w1 w2 w3 context tablosunda. Onlari kelimelerle degistirin.
+% text fragments kullanilabilir. Estimating the semantic relatedness of two text fragments – such as words, sentences, or entire documents – is important for many natural language processing or information retrieval applications.
 
 
 \section{Evaluation Results}
@@ -177,17 +207,13 @@ the similarity between embeddings. For this task, systems should report only the
 
 In this task, systems were evaluated with two correlation metrics; Pearson correlation and Spearman's rank correlation.  Pearson correlation tests the degree of similarity between the system's similarity ratings and the gold standard ratings.  Spearman's rho tests the degree of similarity between the rankings of the items according to similarity.
 
-Table \ref{table:results-p2s} and \ref{table:results-s2p} show the scores for Paragraph-2-Sentence and Sentence-2-Phrase subtasks, respectively. These tables contain the best individual scores for the performance metrics. Both AI-KU systems outperformed the Normalized Longest Common Substring (LCS) baseline. Additionally, we calculated the performances of three other baselines; lch \cite{leacock1998combining}, jcn \cite{jiang1997semantic}, and Jaccard Index (JI) baseline. jcn uses information content \cite{resnik1995inforcontent} of the least common subsumer (LCS) of concepts A and B. Information content indicates the specificity of a concept and LCS of a concept A and B is the most specific concept from which A and B inherited. \emph{Paraphrase: jcn measure augments the information content of the LCS with the sum of the information content of concepts A and B themselves and takes the difference of this sum and the information content of the LCS.} On the other hand, \emph{Paraphrase: lch is based on path lengths between a pair of concepts. It finds the shortest path between two concepts, and scales that value by the maximum path length found in the is–a hierarchy in which they occur} (please see Pedersen et al. \shortcite{pedersen2004wordnet} for further details of these measures). These two baselines were calculated as follows. Each word in the shorter textual unit (e.g., sentence is shorter than paragraph) 
+Table \ref{table:results-p2s} and \ref{table:results-s2p} show the scores for Paragraph-2-Sentence and Sentence-2-Phrase subtasks, respectively. These tables contain the best individual scores for the performance metrics, Normalized Longest Common Substring (LCS) baseline which is given by task organizers and three additional baselines: lch \cite{leacock1998combining}, jcn \cite{jiang1997semantic}, and Jaccard Index (JI) baseline. jcn uses information content \cite{resnik1995inforcontent} of the least common subsumer  of concepts A and B. Information content indicates the specificity of a concept and least common subsumer of a concept A and B is the most specific concept from which A and B inherited. \emph{Paraphrase: jcn measure augments the information content of the least common subsumer with the sum of the information content of concepts A and B themselves and takes the difference of this sum and the information content of the least common subsumer.} On the other hand, \emph{Paraphrase: lch is based on 
+path lengths between a pair of concepts. It finds the shortest path between two concepts, and scales that value by the maximum path length found in the is–a hierarchy in which they occur} (please see Pedersen et al. \shortcite{pedersen2004wordnet} for further details of these measures). These two baselines were calculated as follows. First, using the Stanford Part-of-Speech Tagger \cite{toutanova2000enriching} we tagged words in all textual levels. After tagging, we found the synsets of each word matched with its part-of-speech using WordNet 3.0 \cite{fellbaum98electronic}. For each synset of a word in the shorter textual unit (e.g., sentence is shorter than paragraph), we calculated the jcn/lch measure of each synset of all words in the longer textual unit and picked the highest score. When we found the scores for all words, we sum them up and normalized it with the length of the shorter textual unit. This gave us the similarity between one pair in the test set. Finally, Jaccard Index baseline simply 
+calculates the number of words in common (intersection) with two cross textual levels, normalized by the total number of words (union). 
 
+\paragraph{Paragraph2Sentence:} Both systems outperformed all the baselines for both metrics. The best score for this subtask was .837 and our systems achieved .732 and .698 on Pearson and did similar on Spearman metric. These scores are promising since our current unsupervised systems are based on bag-of-word approach; they do not utilize any syntactic information (e.g., \emph{input here with some examples}). Jaccard Index baseline score was .640. \emph{Investigate why wordnet baselines are very low. Input the reason}.
 
-
-
-
-
-First two baselines are used WordNet\footnote{Wordnet 3.0 is used. \emph{give a link or do cite}} hierarchy. 
-
-Jaccard Index baseline simply calculates the number of words in common (intersection) with two cross textual levels, normalized by the total number of words (union). 
-
+\paragraph{Sentence2Phrase:} In this subtask, AI-KU systems outperformed all baselines except that AI-KU$_2$ system did slightly worse than LCS on Spearman metric. Performances of systems and baselines were lower than Paragraph2Sentence subtask, since smaller textual unit (i.e., phrase) make the problem harder.
 
 
 % genre information'inina gore karsilastirma yapilabilir?
@@ -196,16 +222,18 @@ Jaccard Index baseline simply calculates the number of words in common (intersec
 \section{Conclusion}
 \label{conclusion}
 
+In this work, we presented two unsupervised systems that utilize co-occurrence statistics and represent textual units as a dense, low dimensional embeddings. 
+Although current systems are based on bag-of-word approach and discard the syntactic information, they achieved promising results both paragraph2sentence and sentence2phrase subtasks. \emph{Add some sentences to be an explanation for the prior work that didn't perform well.} As a future work, we will extend our systems by adding syntactic information \emph{dependency parsing information? But, then we'll no longer be unsupervised?} into S-CODE.  
+
 % syntactic information'a bakilmadan iyi sonuclar elde edildi, future work olarak SCODE'a syntax'in da handle edilebilecegi feature'lar eklenecek.
 
 % \ref, \noindent, \shortcite, \cite, \url
 
-
-
-\cite{ukWaC}
-
 \section*{Acknowledgements}
 
+\emph{You may want to thank Tubitak.}
+
+\newpage
 % include your own bib file like this:
 \bibliographystyle{acl}
 \bibliography{references}
