@@ -16,4 +16,5 @@ N = len(emb)
 for i in range(1, N/2+1):
     left = emb["L%d" % i][0]
     right = emb["R%d" % i][0]
-    print np.dot(left, right)
+    print np.dot(left, right) # cosine similarity since norm of left and right = 1
+    #np.dot(left, left), np.dot(right, right)
