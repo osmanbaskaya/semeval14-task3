@@ -76,8 +76,6 @@ score/s2p-%.sc: ../data/keys/sentence2phrase.${DATASET_TYPE}.gs.tsv ans/%.ans
 score/p2w-%.sc: ../data/keys/phrase2word.${DATASET_TYPE}.gs.tsv ans/%.ans
 	${SCORER} -c 0 $^ 
 
-<<<<<<< HEAD
-=======
 #data/%.tok.tsv data/%.lem.tsv: corenlp-%.train
 	#-mkdir data
 	#corenlp-processor.py $<
@@ -85,7 +83,6 @@ score/p2w-%.sc: ../data/keys/phrase2word.${DATASET_TYPE}.gs.tsv ans/%.ans
 data/%.tok.tsv data/%.lem.tsv: corenlp-%.test
 	-mkdir data
 	corenlp-processor.py $<
->>>>>>> dd4cc24803e46d9e2a1ee7ac321c1b344a2aa507
 
 export OMP_NUM_THREADS=15
 TRAIN=../data/data-files/paragraph2sentence.train.input.tsv ../data/data-files/sentence2phrase.train.input.tsv ../data/data-files/phrase2word.train.input.tsv
