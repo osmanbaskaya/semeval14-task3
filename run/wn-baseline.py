@@ -40,7 +40,7 @@ sys.stderr.write("Metric: {0}\n".format(metric.func_name))
 
 def score1(closest):
     score = 0
-    dists = [dist for t1, (t2, (dist, s1, s2)) in closest]
+    dists = [dist for t1, (t2, (dist, s1, s2)) in closest if dist is not None]
     if len(closest) != 0:
         score = sum(dists) / float(len(dists))
     return score
