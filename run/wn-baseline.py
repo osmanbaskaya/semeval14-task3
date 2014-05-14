@@ -36,7 +36,7 @@ else:
     sys.stderr.write("No such similarity metric in WN module.\n")
     exit(-1)
 
-sys.stderr.write("Metric: {}\n".format(metric.func_name))
+sys.stderr.write("Metric: {0}\n".format(metric.func_name))
 
 def score1(closest):
     score = 0
@@ -62,11 +62,11 @@ for i, (s1, s2) in enumerate(syns_sents):
                 sim = metric(syn1, syn2, IC)
                 d[syn1.offset][syn2.offset] = (sim, syn1, syn2)
     #FIXME bu hatali olabilir
-    closest = [(t1, max(d[t1].viewitems(), key=lambda t: t[1][0])) for t1 in d]
+    closest = [(t1, max(d[t1].iteritems(), key=lambda t: t[1][0])) for t1 in d]
     score = score1(closest)
     scores.append(score)
 
-print >> sys.stderr, "{} line processed".format(i+1)
+print >> sys.stderr, "{0} line processed".format(i+1)
 #sys.stderr.write("{}/{} (miss/attempt).\n".format(miss, comparison))
 scores = np.array(scores)
 print '\n'.join(scores.astype(str))

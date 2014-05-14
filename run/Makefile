@@ -32,21 +32,30 @@ corenlp-%: ../data/data-files/%.input.tsv
 	cat $< | cut -f1,2 | awk 'BEGIN{i=1}{printf("%s\n", $$0) > "docs/"i++".txt"}'
 	${CORE_NLP} ${CNLP_OPTIONS} -outputDirectory $@ -file docs/ 
 
+# FIXME: separate those targets so that dependency will work.
+# call example: make data/sentence2phrase.lem.tsv DATASET_TYPE=test
+data/%.tok.tsv data/%.lem.tsv: corenlp-%.${DATASET_TYPE}
+	-mkdir data
+	corenlp-processor.py $<
 
 ### BASELINE ###
 ans/ji-baseline-%.ans: ../data/data-files/%.input.tsv
 	cat $< | ji-baseline.py > $@
 
-ans/wn-baseline-%-sentence2phrase.ans: data/sentence2phrase.train.lem.tsv
+# WN-based baselines
+ans/wn-train-%-sentence2phrase.ans: data/sentence2phrase.train.lem.tsv
 	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
  
-ans/wn-baseline-%-paragraph2sentence.ans: data/paragraph2sentence.train.lem.tsv
+ans/wn-train-%-paragraph2sentence.ans: data/paragraph2sentence.train.lem.tsv
 	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
 
-GOLD_P2S=../data/keys/paragraph2sentence.train.gs.tsv
-GOLD_S2P=../data/keys/sentence2phrase.train.gs.tsv
-GOLD_P2W=../data/keys/phrase2word.train.gs.tsv
+ans/wn-test-%-sentence2phrase.ans: data/sentence2phrase.test.lem.tsv
+	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
+ 
+ans/wn-test-%-paragraph2sentence.ans: data/paragraph2sentence.test.lem.tsv
+	cat $< | data-preprocess.py -l | wn-baseline.py $* > $@
 
+### EMBEDDING EXP ###
 ans/x_exp-p2s-tr-%-base.ans: ../data/data-files/paragraph2sentence.train.input.tsv embeddings/%
 	cat $< | x_exp.py embeddings/$* > $@
 
@@ -56,18 +65,17 @@ ans/x_exp-s2p-tr-%-base.ans: ../data/data-files/sentence2phrase.train.input.tsv 
 ans/%-scale.ans: ans/%.ans
 	cat $< | scale.py 0 4 > $@
 
-score/p2s-%.sc: ans/%.ans
-	${SCORER} -c 0 ${GOLD_P2S} $< 
+# call example: make score/p2s-SYSTEMNAME.sc DATASET_TYPE=test
+# call example: make score/p2s-SYSTEMNAME.sc DATASET_TYPE=train
+score/p2s-%.sc: ../data/keys/paragraph2sentence.${DATASET_TYPE}.gs.tsv ans/%.ans
+	${SCORER} -c 0 $^
 
-score/s2p-%.sc: ans/%.ans
-	${SCORER} -c 0 ${GOLD_S2P} $< 
+score/s2p-%.sc: ../data/keys/sentence2phrase.${DATASET_TYPE}.gs.tsv ans/%.ans
+	${SCORER} -c 0 $^
 
-score/p2w-%.sc: ans/%.ans
-	${SCORER} -c 0 ${GOLD_P2W} $< 
+score/p2w-%.sc: ../data/keys/phrase2word.${DATASET_TYPE}.gs.tsv ans/%.ans
+	${SCORER} -c 0 $^ 
 
-data/%.tok.tsv data/%.lem.tsv: corenlp-%.train
-	-mkdir data
-	corenlp-processor.py $<
 
 export OMP_NUM_THREADS=15
 TRAIN=../data/data-files/paragraph2sentence.train.input.tsv ../data/data-files/sentence2phrase.train.input.tsv ../data/data-files/phrase2word.train.input.tsv
