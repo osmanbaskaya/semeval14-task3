@@ -6,106 +6,188 @@
       <sentence id="1">
         <tokens>
           <token id="1">
-            <word>lower</word>
-            <lemma>lower</lemma>
+            <word>He</word>
+            <lemma>he</lemma>
             <CharacterOffsetBegin>0</CharacterOffsetBegin>
-            <CharacterOffsetEnd>5</CharacterOffsetEnd>
-            <POS>JJR</POS>
+            <CharacterOffsetEnd>2</CharacterOffsetEnd>
+            <POS>PRP</POS>
           </token>
           <token id="2">
-            <word>OPEC</word>
-            <lemma>OPEC</lemma>
-            <CharacterOffsetBegin>6</CharacterOffsetBegin>
-            <CharacterOffsetEnd>10</CharacterOffsetEnd>
-            <POS>NNP</POS>
+            <word>is</word>
+            <lemma>be</lemma>
+            <CharacterOffsetBegin>3</CharacterOffsetBegin>
+            <CharacterOffsetEnd>5</CharacterOffsetEnd>
+            <POS>VBZ</POS>
           </token>
           <token id="3">
-            <word>output</word>
-            <lemma>output</lemma>
-            <CharacterOffsetBegin>11</CharacterOffsetBegin>
-            <CharacterOffsetEnd>17</CharacterOffsetEnd>
-            <POS>NN</POS>
+            <word>an</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>6</CharacterOffsetBegin>
+            <CharacterOffsetEnd>8</CharacterOffsetEnd>
+            <POS>DT</POS>
           </token>
           <token id="4">
-            <word>ceiling</word>
-            <lemma>ceiling</lemma>
-            <CharacterOffsetBegin>18</CharacterOffsetBegin>
-            <CharacterOffsetEnd>25</CharacterOffsetEnd>
-            <POS>NN</POS>
+            <word>out-and-out</word>
+            <lemma>out-and-out</lemma>
+            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <CharacterOffsetEnd>20</CharacterOffsetEnd>
+            <POS>JJ</POS>
           </token>
           <token id="5">
-            <word>oil</word>
-            <lemma>oil</lemma>
-            <CharacterOffsetBegin>26</CharacterOffsetBegin>
-            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <word>idiot</word>
+            <lemma>idiot</lemma>
+            <CharacterOffsetBegin>21</CharacterOffsetBegin>
+            <CharacterOffsetEnd>26</CharacterOffsetEnd>
             <POS>NN</POS>
           </token>
+          <token id="6">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>27</CharacterOffsetEnd>
+            <POS>.</POS>
+          </token>
         </tokens>
-        <parse>(ROOT (NP (NP (JJR lower) (NNP OPEC) (NN output)) (NP (NN ceiling) (NN oil)))) </parse>
+        <parse>(ROOT (S (NP (PRP He)) (VP (VBZ is) (NP (DT an) (JJ out-and-out) (NN idiot))) (. .))) </parse>
         <dependencies type="basic-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">output</dependent>
+            <dependent idx="5">idiot</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">idiot</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">idiot</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">idiot</governor>
+            <dependent idx="3">an</dependent>
           </dep>
           <dep type="amod">
-            <governor idx="3">output</governor>
-            <dependent idx="1">lower</dependent>
-          </dep>
-          <dep type="nn">
-            <governor idx="3">output</governor>
-            <dependent idx="2">OPEC</dependent>
-          </dep>
-          <dep type="nn">
-            <governor idx="5">oil</governor>
-            <dependent idx="4">ceiling</dependent>
-          </dep>
-          <dep type="dep">
-            <governor idx="3">output</governor>
-            <dependent idx="5">oil</dependent>
+            <governor idx="5">idiot</governor>
+            <dependent idx="4">out-and-out</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">output</dependent>
+            <dependent idx="5">idiot</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">idiot</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">idiot</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">idiot</governor>
+            <dependent idx="3">an</dependent>
           </dep>
           <dep type="amod">
-            <governor idx="3">output</governor>
-            <dependent idx="1">lower</dependent>
-          </dep>
-          <dep type="nn">
-            <governor idx="3">output</governor>
-            <dependent idx="2">OPEC</dependent>
-          </dep>
-          <dep type="nn">
-            <governor idx="5">oil</governor>
-            <dependent idx="4">ceiling</dependent>
-          </dep>
-          <dep type="dep">
-            <governor idx="3">output</governor>
-            <dependent idx="5">oil</dependent>
+            <governor idx="5">idiot</governor>
+            <dependent idx="4">out-and-out</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-ccprocessed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">output</dependent>
+            <dependent idx="5">idiot</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="5">idiot</governor>
+            <dependent idx="1">He</dependent>
+          </dep>
+          <dep type="cop">
+            <governor idx="5">idiot</governor>
+            <dependent idx="2">is</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">idiot</governor>
+            <dependent idx="3">an</dependent>
           </dep>
           <dep type="amod">
-            <governor idx="3">output</governor>
-            <dependent idx="1">lower</dependent>
+            <governor idx="5">idiot</governor>
+            <dependent idx="4">out-and-out</dependent>
           </dep>
-          <dep type="nn">
-            <governor idx="3">output</governor>
-            <dependent idx="2">OPEC</dependent>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>stupid</word>
+            <lemma>stupid</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="2">
+            <word>,</word>
+            <lemma>,</lemma>
+            <CharacterOffsetBegin>34</CharacterOffsetBegin>
+            <CharacterOffsetEnd>35</CharacterOffsetEnd>
+            <POS>,</POS>
+          </token>
+          <token id="3">
+            <word>annoying</word>
+            <lemma>annoying</lemma>
+            <CharacterOffsetBegin>36</CharacterOffsetBegin>
+            <CharacterOffsetEnd>44</CharacterOffsetEnd>
+            <POS>JJ</POS>
+          </token>
+          <token id="4">
+            <word>habits</word>
+            <lemma>habit</lemma>
+            <CharacterOffsetBegin>45</CharacterOffsetBegin>
+            <CharacterOffsetEnd>51</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (JJ stupid)) (, ,) (NP (JJ annoying) (NNS habits)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">stupid</dependent>
           </dep>
-          <dep type="nn">
-            <governor idx="5">oil</governor>
-            <dependent idx="4">ceiling</dependent>
+          <dep type="amod">
+            <governor idx="4">habits</governor>
+            <dependent idx="3">annoying</dependent>
           </dep>
-          <dep type="dep">
-            <governor idx="3">output</governor>
-            <dependent idx="5">oil</dependent>
+          <dep type="appos">
+            <governor idx="1">stupid</governor>
+            <dependent idx="4">habits</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">stupid</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">habits</governor>
+            <dependent idx="3">annoying</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">stupid</governor>
+            <dependent idx="4">habits</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">stupid</dependent>
+          </dep>
+          <dep type="amod">
+            <governor idx="4">habits</governor>
+            <dependent idx="3">annoying</dependent>
+          </dep>
+          <dep type="appos">
+            <governor idx="1">stupid</governor>
+            <dependent idx="4">habits</dependent>
           </dep>
         </dependencies>
       </sentence>

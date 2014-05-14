@@ -6,68 +6,241 @@
       <sentence id="1">
         <tokens>
           <token id="1">
-            <word>less</word>
-            <lemma>less</lemma>
+            <word>Send</word>
+            <lemma>send</lemma>
             <CharacterOffsetBegin>0</CharacterOffsetBegin>
             <CharacterOffsetEnd>4</CharacterOffsetEnd>
-            <POS>RBR</POS>
+            <POS>VB</POS>
           </token>
           <token id="2">
-            <word>efficiently</word>
-            <lemma>efficiently</lemma>
+            <word>everyone</word>
+            <lemma>everyone</lemma>
             <CharacterOffsetBegin>5</CharacterOffsetBegin>
-            <CharacterOffsetEnd>16</CharacterOffsetEnd>
-            <POS>RB</POS>
+            <CharacterOffsetEnd>13</CharacterOffsetEnd>
+            <POS>NN</POS>
           </token>
           <token id="3">
-            <word>slow</word>
-            <lemma>slow</lemma>
-            <CharacterOffsetBegin>17</CharacterOffsetBegin>
-            <CharacterOffsetEnd>21</CharacterOffsetEnd>
-            <POS>JJ</POS>
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>14</CharacterOffsetBegin>
+            <CharacterOffsetEnd>15</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="4">
+            <word>heads-up</word>
+            <lemma>heads-up</lemma>
+            <CharacterOffsetBegin>16</CharacterOffsetBegin>
+            <CharacterOffsetEnd>24</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="5">
+            <word>about</word>
+            <lemma>about</lemma>
+            <CharacterOffsetBegin>25</CharacterOffsetBegin>
+            <CharacterOffsetEnd>30</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="6">
+            <word>the</word>
+            <lemma>the</lemma>
+            <CharacterOffsetBegin>31</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="7">
+            <word>inspection</word>
+            <lemma>inspection</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>45</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="8">
+            <word>tomorrow</word>
+            <lemma>tomorrow</lemma>
+            <CharacterOffsetBegin>46</CharacterOffsetBegin>
+            <CharacterOffsetEnd>54</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="9">
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>54</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>.</POS>
           </token>
         </tokens>
-        <parse>(ROOT (ADJP (ADVP (RBR less) (RB efficiently)) (JJ slow))) </parse>
+        <parse>(ROOT (S (VP (VB Send) (S (NP (NN everyone)) (NP (NP (DT a) (NN heads-up)) (PP (IN about) (NP (DT the) (NN inspection) (NN tomorrow)))))) (. .))) </parse>
         <dependencies type="basic-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">slow</dependent>
+            <dependent idx="1">Send</dependent>
           </dep>
-          <dep type="advmod">
-            <governor idx="2">efficiently</governor>
-            <dependent idx="1">less</dependent>
+          <dep type="nsubj">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="2">everyone</dependent>
           </dep>
-          <dep type="advmod">
-            <governor idx="3">slow</governor>
-            <dependent idx="2">efficiently</dependent>
+          <dep type="det">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Send</governor>
+            <dependent idx="4">heads-up</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="5">about</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">tomorrow</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tomorrow</governor>
+            <dependent idx="7">inspection</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="5">about</governor>
+            <dependent idx="8">tomorrow</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">slow</dependent>
+            <dependent idx="1">Send</dependent>
           </dep>
-          <dep type="advmod">
-            <governor idx="2">efficiently</governor>
-            <dependent idx="1">less</dependent>
+          <dep type="nsubj">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="2">everyone</dependent>
           </dep>
-          <dep type="advmod">
-            <governor idx="3">slow</governor>
-            <dependent idx="2">efficiently</dependent>
+          <dep type="det">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Send</governor>
+            <dependent idx="4">heads-up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">tomorrow</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tomorrow</governor>
+            <dependent idx="7">inspection</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="8">tomorrow</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-ccprocessed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">slow</dependent>
+            <dependent idx="1">Send</dependent>
           </dep>
-          <dep type="advmod">
-            <governor idx="2">efficiently</governor>
-            <dependent idx="1">less</dependent>
+          <dep type="nsubj">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="2">everyone</dependent>
           </dep>
-          <dep type="advmod">
-            <governor idx="3">slow</governor>
-            <dependent idx="2">efficiently</dependent>
+          <dep type="det">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="3">a</dependent>
+          </dep>
+          <dep type="xcomp">
+            <governor idx="1">Send</governor>
+            <dependent idx="4">heads-up</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="8">tomorrow</governor>
+            <dependent idx="6">the</dependent>
+          </dep>
+          <dep type="nn">
+            <governor idx="8">tomorrow</governor>
+            <dependent idx="7">inspection</dependent>
+          </dep>
+          <dep type="prep_about">
+            <governor idx="4">heads-up</governor>
+            <dependent idx="8">tomorrow</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>notification</word>
+            <lemma>notification</lemma>
+            <CharacterOffsetBegin>56</CharacterOffsetBegin>
+            <CharacterOffsetEnd>68</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>before</word>
+            <lemma>before</lemma>
+            <CharacterOffsetBegin>69</CharacterOffsetBegin>
+            <CharacterOffsetEnd>75</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>inspection</word>
+            <lemma>inspection</lemma>
+            <CharacterOffsetBegin>76</CharacterOffsetBegin>
+            <CharacterOffsetEnd>86</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>occurs</word>
+            <lemma>occur</lemma>
+            <CharacterOffsetBegin>87</CharacterOffsetBegin>
+            <CharacterOffsetEnd>93</CharacterOffsetEnd>
+            <POS>VBZ</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (S (NP (NP (NN notification)) (PP (IN before) (NP (NN inspection)))) (VP (VBZ occurs)))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">occurs</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">occurs</governor>
+            <dependent idx="1">notification</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">notification</governor>
+            <dependent idx="2">before</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">before</governor>
+            <dependent idx="3">inspection</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">occurs</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">occurs</governor>
+            <dependent idx="1">notification</dependent>
+          </dep>
+          <dep type="prep_before">
+            <governor idx="1">notification</governor>
+            <dependent idx="3">inspection</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="4">occurs</dependent>
+          </dep>
+          <dep type="nsubj">
+            <governor idx="4">occurs</governor>
+            <dependent idx="1">notification</dependent>
+          </dep>
+          <dep type="prep_before">
+            <governor idx="1">notification</governor>
+            <dependent idx="3">inspection</dependent>
           </dep>
         </dependencies>
       </sentence>

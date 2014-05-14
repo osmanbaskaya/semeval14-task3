@@ -6,174 +6,252 @@
       <sentence id="1">
         <tokens>
           <token id="1">
-            <word>would</word>
-            <lemma>would</lemma>
+            <word>His</word>
+            <lemma>he</lemma>
             <CharacterOffsetBegin>0</CharacterOffsetBegin>
-            <CharacterOffsetEnd>5</CharacterOffsetEnd>
-            <POS>MD</POS>
+            <CharacterOffsetEnd>3</CharacterOffsetEnd>
+            <POS>PRP$</POS>
           </token>
           <token id="2">
-            <word>n't</word>
-            <lemma>not</lemma>
-            <CharacterOffsetBegin>5</CharacterOffsetBegin>
-            <CharacterOffsetEnd>8</CharacterOffsetEnd>
-            <POS>RB</POS>
+            <word>speech</word>
+            <lemma>speech</lemma>
+            <CharacterOffsetBegin>4</CharacterOffsetBegin>
+            <CharacterOffsetEnd>10</CharacterOffsetEnd>
+            <POS>NN</POS>
           </token>
           <token id="3">
-            <word>touch</word>
-            <lemma>touch</lemma>
-            <CharacterOffsetBegin>9</CharacterOffsetBegin>
+            <word>had</word>
+            <lemma>have</lemma>
+            <CharacterOffsetBegin>11</CharacterOffsetBegin>
             <CharacterOffsetEnd>14</CharacterOffsetEnd>
-            <POS>VB</POS>
+            <POS>VBD</POS>
           </token>
           <token id="4">
-            <word>it</word>
-            <lemma>it</lemma>
+            <word>no</word>
+            <lemma>no</lemma>
             <CharacterOffsetBegin>15</CharacterOffsetBegin>
             <CharacterOffsetEnd>17</CharacterOffsetEnd>
-            <POS>PRP</POS>
-          </token>
-          <token id="5">
-            <word>with</word>
-            <lemma>with</lemma>
-            <CharacterOffsetBegin>18</CharacterOffsetBegin>
-            <CharacterOffsetEnd>22</CharacterOffsetEnd>
-            <POS>IN</POS>
-          </token>
-          <token id="6">
-            <word>a</word>
-            <lemma>a</lemma>
-            <CharacterOffsetBegin>23</CharacterOffsetBegin>
-            <CharacterOffsetEnd>24</CharacterOffsetEnd>
             <POS>DT</POS>
           </token>
+          <token id="5">
+            <word>guts</word>
+            <lemma>gut</lemma>
+            <CharacterOffsetBegin>18</CharacterOffsetBegin>
+            <CharacterOffsetEnd>22</CharacterOffsetEnd>
+            <POS>NNS</POS>
+          </token>
+          <token id="6">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>23</CharacterOffsetBegin>
+            <CharacterOffsetEnd>25</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
           <token id="7">
-            <word>ten-foot</word>
-            <lemma>ten-foot</lemma>
-            <CharacterOffsetBegin>25</CharacterOffsetBegin>
-            <CharacterOffsetEnd>33</CharacterOffsetEnd>
-            <POS>JJ</POS>
+            <word>it</word>
+            <lemma>it</lemma>
+            <CharacterOffsetBegin>26</CharacterOffsetBegin>
+            <CharacterOffsetEnd>28</CharacterOffsetEnd>
+            <POS>PRP</POS>
           </token>
           <token id="8">
-            <word>pole</word>
-            <lemma>pole</lemma>
-            <CharacterOffsetBegin>34</CharacterOffsetBegin>
-            <CharacterOffsetEnd>38</CharacterOffsetEnd>
-            <POS>NN</POS>
-          </token>
-          <token id="9">
-            <word>comment</word>
-            <lemma>comment</lemma>
-            <CharacterOffsetBegin>39</CharacterOffsetBegin>
-            <CharacterOffsetEnd>46</CharacterOffsetEnd>
-            <POS>NN</POS>
+            <word>.</word>
+            <lemma>.</lemma>
+            <CharacterOffsetBegin>28</CharacterOffsetBegin>
+            <CharacterOffsetEnd>29</CharacterOffsetEnd>
+            <POS>.</POS>
           </token>
         </tokens>
-        <parse>(ROOT (SINV (VP (MD would) (RB n't) (VP (VB touch) (NP (PRP it)) (PP (IN with) (NP (DT a) (JJ ten-foot) (NN pole))))) (NP (NN comment)))) </parse>
+        <parse>(ROOT (S (NP (PRP$ His) (NN speech)) (VP (VBD had) (NP (NP (DT no) (NNS guts)) (PP (IN in) (NP (PRP it))))) (. .))) </parse>
         <dependencies type="basic-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">touch</dependent>
+            <dependent idx="3">had</dependent>
           </dep>
-          <dep type="aux">
-            <governor idx="3">touch</governor>
-            <dependent idx="1">would</dependent>
-          </dep>
-          <dep type="neg">
-            <governor idx="3">touch</governor>
-            <dependent idx="2">n't</dependent>
-          </dep>
-          <dep type="dobj">
-            <governor idx="3">touch</governor>
-            <dependent idx="4">it</dependent>
-          </dep>
-          <dep type="prep">
-            <governor idx="3">touch</governor>
-            <dependent idx="5">with</dependent>
-          </dep>
-          <dep type="det">
-            <governor idx="8">pole</governor>
-            <dependent idx="6">a</dependent>
-          </dep>
-          <dep type="amod">
-            <governor idx="8">pole</governor>
-            <dependent idx="7">ten-foot</dependent>
-          </dep>
-          <dep type="pobj">
-            <governor idx="5">with</governor>
-            <dependent idx="8">pole</dependent>
+          <dep type="poss">
+            <governor idx="2">speech</governor>
+            <dependent idx="1">His</dependent>
           </dep>
           <dep type="nsubj">
-            <governor idx="3">touch</governor>
-            <dependent idx="9">comment</dependent>
+            <governor idx="3">had</governor>
+            <dependent idx="2">speech</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">guts</governor>
+            <dependent idx="4">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">had</governor>
+            <dependent idx="5">guts</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="5">guts</governor>
+            <dependent idx="6">in</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="6">in</governor>
+            <dependent idx="7">it</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">touch</dependent>
+            <dependent idx="3">had</dependent>
           </dep>
-          <dep type="aux">
-            <governor idx="3">touch</governor>
-            <dependent idx="1">would</dependent>
-          </dep>
-          <dep type="neg">
-            <governor idx="3">touch</governor>
-            <dependent idx="2">n't</dependent>
-          </dep>
-          <dep type="dobj">
-            <governor idx="3">touch</governor>
-            <dependent idx="4">it</dependent>
-          </dep>
-          <dep type="det">
-            <governor idx="8">pole</governor>
-            <dependent idx="6">a</dependent>
-          </dep>
-          <dep type="amod">
-            <governor idx="8">pole</governor>
-            <dependent idx="7">ten-foot</dependent>
-          </dep>
-          <dep type="prep_with">
-            <governor idx="3">touch</governor>
-            <dependent idx="8">pole</dependent>
+          <dep type="poss">
+            <governor idx="2">speech</governor>
+            <dependent idx="1">His</dependent>
           </dep>
           <dep type="nsubj">
-            <governor idx="3">touch</governor>
-            <dependent idx="9">comment</dependent>
+            <governor idx="3">had</governor>
+            <dependent idx="2">speech</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">guts</governor>
+            <dependent idx="4">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">had</governor>
+            <dependent idx="5">guts</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">guts</governor>
+            <dependent idx="7">it</dependent>
           </dep>
         </dependencies>
         <dependencies type="collapsed-ccprocessed-dependencies">
           <dep type="root">
             <governor idx="0">ROOT</governor>
-            <dependent idx="3">touch</dependent>
+            <dependent idx="3">had</dependent>
           </dep>
-          <dep type="aux">
-            <governor idx="3">touch</governor>
-            <dependent idx="1">would</dependent>
-          </dep>
-          <dep type="neg">
-            <governor idx="3">touch</governor>
-            <dependent idx="2">n't</dependent>
-          </dep>
-          <dep type="dobj">
-            <governor idx="3">touch</governor>
-            <dependent idx="4">it</dependent>
-          </dep>
-          <dep type="det">
-            <governor idx="8">pole</governor>
-            <dependent idx="6">a</dependent>
-          </dep>
-          <dep type="amod">
-            <governor idx="8">pole</governor>
-            <dependent idx="7">ten-foot</dependent>
-          </dep>
-          <dep type="prep_with">
-            <governor idx="3">touch</governor>
-            <dependent idx="8">pole</dependent>
+          <dep type="poss">
+            <governor idx="2">speech</governor>
+            <dependent idx="1">His</dependent>
           </dep>
           <dep type="nsubj">
-            <governor idx="3">touch</governor>
-            <dependent idx="9">comment</dependent>
+            <governor idx="3">had</governor>
+            <dependent idx="2">speech</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="5">guts</governor>
+            <dependent idx="4">no</dependent>
+          </dep>
+          <dep type="dobj">
+            <governor idx="3">had</governor>
+            <dependent idx="5">guts</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="5">guts</governor>
+            <dependent idx="7">it</dependent>
+          </dep>
+        </dependencies>
+      </sentence>
+      <sentence id="2">
+        <tokens>
+          <token id="1">
+            <word>lack</word>
+            <lemma>lack</lemma>
+            <CharacterOffsetBegin>30</CharacterOffsetBegin>
+            <CharacterOffsetEnd>34</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="2">
+            <word>of</word>
+            <lemma>of</lemma>
+            <CharacterOffsetBegin>35</CharacterOffsetBegin>
+            <CharacterOffsetEnd>37</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="3">
+            <word>gusto</word>
+            <lemma>gusto</lemma>
+            <CharacterOffsetBegin>38</CharacterOffsetBegin>
+            <CharacterOffsetEnd>43</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+          <token id="4">
+            <word>in</word>
+            <lemma>in</lemma>
+            <CharacterOffsetBegin>44</CharacterOffsetBegin>
+            <CharacterOffsetEnd>46</CharacterOffsetEnd>
+            <POS>IN</POS>
+          </token>
+          <token id="5">
+            <word>a</word>
+            <lemma>a</lemma>
+            <CharacterOffsetBegin>47</CharacterOffsetBegin>
+            <CharacterOffsetEnd>48</CharacterOffsetEnd>
+            <POS>DT</POS>
+          </token>
+          <token id="6">
+            <word>speech</word>
+            <lemma>speech</lemma>
+            <CharacterOffsetBegin>49</CharacterOffsetBegin>
+            <CharacterOffsetEnd>55</CharacterOffsetEnd>
+            <POS>NN</POS>
+          </token>
+        </tokens>
+        <parse>(ROOT (NP (NP (NN lack)) (PP (IN of) (NP (NN gusto))) (PP (IN in) (NP (DT a) (NN speech))))) </parse>
+        <dependencies type="basic-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lack</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">lack</governor>
+            <dependent idx="2">of</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="2">of</governor>
+            <dependent idx="3">gusto</dependent>
+          </dep>
+          <dep type="prep">
+            <governor idx="1">lack</governor>
+            <dependent idx="4">in</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">speech</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="pobj">
+            <governor idx="4">in</governor>
+            <dependent idx="6">speech</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lack</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">lack</governor>
+            <dependent idx="3">gusto</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">speech</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">lack</governor>
+            <dependent idx="6">speech</dependent>
+          </dep>
+        </dependencies>
+        <dependencies type="collapsed-ccprocessed-dependencies">
+          <dep type="root">
+            <governor idx="0">ROOT</governor>
+            <dependent idx="1">lack</dependent>
+          </dep>
+          <dep type="prep_of">
+            <governor idx="1">lack</governor>
+            <dependent idx="3">gusto</dependent>
+          </dep>
+          <dep type="det">
+            <governor idx="6">speech</governor>
+            <dependent idx="5">a</dependent>
+          </dep>
+          <dep type="prep_in">
+            <governor idx="1">lack</governor>
+            <dependent idx="6">speech</dependent>
           </dep>
         </dependencies>
       </sentence>
