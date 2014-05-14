@@ -26,4 +26,4 @@ swords = set(stopwords.words('english'))
 for line in sys.stdin:
     s1, s2 = line.split('\t')[:2]
     print " ".join([tok for tok in s1.split() if tok not in swords]),
-    print "\t{}".format(' '.join([tok for tok in s2.split() if tok not in swords]))
+    print "\t{0}".format(' '.join([tok for tok in s2.split() if tok not in swords]))
