@@ -103,14 +103,13 @@ bites & dog \_\_\_ . & runs (0.14), bites (0.13),  catches (0.04), barks (0.001)
 Two AI-KU systems can be distinguished between each other on input of co-occurrence modeling part. 
 
 \paragraph{AI-KU$_1$:} This system uses the words that were in the text. All words are transformed into lower-case equivalents. Lemmatization\footnote{Lemmatization is carried out with Stanford CoreNLP and transforms a word into its canonical or base form.} and stop-word removal were performed, and non-alphanumeric characters were excluded. 
-%Table \ref{tab:system1_input} displays the input of the AI-KU$_1$ for the following sentence which is an instance from paragraph2sentence test set:
-Table \ref{tab:system1_input} displays the input of co-occurrence modeling step for only one fragment.
+Table \ref{tab:system1_input} displays the pairs for the following sentence which is an instance from paragraph2sentence test set:
 
 \begin{quote}
 ``Choosing what to buy with a \$35 gift card is a hard decision.''
 \end{quote}
 
-Note that the input that we used to model co-occurrence statistics consists of all such pairs for each fragment in a given subtask.  
+Note that the input that we used to model co-occurrence statistics consists of all such pairs for each fragment in a given subtask. 
 
 \paragraph{AI-KU$_2$:} Unlike the first one, this system represents each context of a word by finding the most likely substitutes suggested by the 4-gram language model we built from ukWaC\footnote{Available here: http://wacky.sslmit.unibo.it} \cite{ukWaC}, a 2-billion word web-gathered corpus. Previously, the utilization of high probability substitutes and their co-occurrence statistics achieved notable performance on Word Sense Induction (WSI) \cite{baskaya13ai} and Part-of-Speech Induction \cite{yatbaz2012learning} problems. We used top 100 substitutes for each context. No lemmatization, stop-word removal and lower-case transformation were performed. Table~\ref{tab:subs_exp} illustrates the context and substitutes of each context using a bigram language model.
 
@@ -119,9 +118,10 @@ Note that the input that we used to model co-occurrence statistics consists of a
 This subsection will explain the unsupervised method we employed to model co-occurrence statistics: the Co-occurrence data Embedding (CODE) method \cite{globerson-CODE} and its spherical extension (S-CODE) proposed by Maron et al. \shortcite{Maron2010}. Unlike in our previously mentioned WSI work, where we ended up with an embedding for each
 word in the co-occurrence modeling step; in this task, we try to model each text unit such as a paragraph, a sentence or a phrase, to obtain embeddings for each instance. 
 
-Input data for S-CODE algorithm consist of instance-id and each word in the text unit for the first system (see Table \ref{tab:system1_input} for only one text fragment); instance-ids and top 100 substitutes of each word in text for the second system. In the initial step, S-CODE puts all instance-ids and words (or substitutes, depending on the system) randomly on an n-dimensional sphere. If two different instances have the same word or substitute, then these two instances attract one another --- otherwise they will repel. When S-CODE converges, instances that have similar words or substitutes will be closely located; or else, they will be distant from each other. 
+Input data for S-CODE algorithm consist of instance-id and each word in the text unit for the first system (Table \ref{tab:system1_input} illustrates the pairs for only one text fragment); instance-ids and top 100 substitutes of each word in text for the second system. In the initial step, S-CODE puts all instance-ids and words (or substitutes, depending on the system) randomly on an n-dimensional sphere. If two different instances have the same word or substitute, then these two instances attract one another --- otherwise they will repel. When S-CODE converges, instances that have similar words or substitutes will be closely located; or else, they will be distant from each other. 
 
 \paragraph{AI-KU$_1$:} According to the training set performances for various $n$ (i.e., number of dimensions for S-CODE algorithm), we picked 100 for both tasks.
+
 
 
 \begin{table}[hl]
@@ -144,18 +144,18 @@ Input data for S-CODE algorithm consist of instance-id and each word in the text
 \caption{\label{table:results-p2s-train} Paragraph-2-Sentence subtask scores for the training data. Subscripts in AI-KU systems specify the run number.}
 \end{table}
 
+
+
 \paragraph{AI-KU$_2$:} Prior performance tests on training set, we picked $n$ to be 200 and 100 for paragraph2sentence and sentence2phrase subtasks, respectively.
 
 
 Since this step is unsupervised, we tried to enrich the data with ukWaC, however, enrichment with ukWaC did not work well on the training data. To this end, proposed scores were obtained using only the training and the test data provided by organizers.
 
+
 \subsection{Similarity Calculation}
 
 When the S-CODE converges, there is an n-dimensional embedding for each textual level (e.g., paragraph, sentence, phrase) instance. We can use a similarity metric to calculate 
 the similarity between these embeddings. For this task, systems should report only the similarity between two specific cross level instances. Note that we used cosine similarity in order to calculate similarity between two textual units. This similarity is the eventual similarity for two instances; no further processing (e.g., scaling) has been done.
-
-In this task, two correlation metrics were used to evaluate the systems; Pearson correlation and Spearman's rank correlation.  Pearson correlation tests the degree of similarity between the system's similarity ratings and the gold standard ratings. Spearman's rank correlation measures the degree of similarity between two rankings; similarity ratings provided by a system and the gold standard
-ratings.
 
 \begin{table}[hr]
 \begin{center}
@@ -178,12 +178,28 @@ ratings.
 \end{table}
 
 
+In this task, two correlation metrics were used to evaluate the systems; Pearson correlation and Spearman's rank correlation.  Pearson correlation tests the degree of similarity between the system's similarity ratings and the gold standard ratings. Spearman's rank correlation measures the degree of similarity between two rankings; similarity ratings provided by a system and the gold standard
+ratings.
+
+
+
+
+
+
+
 
 
 \section{Evaluation Results}
 \label{evaluation}
 
 
+
+
+
+
+
+Table \ref{table:results-p2s-train} and \ref{table:results-s2p-train} show the scores for Paragraph-2-Sentence and Sentence-2-Phrase subtasks on the training data, respectively. These tables contain the best individual scores for the performance metrics, Normalized Longest Common Substring (LCS) baseline, which was given by task organizers, and three additional baselines: lin \cite{lin1998information}, lch \cite{leacock1998combining}, and Jaccard Index (JI) baseline. lin uses the information content \cite{resnik1995inforcontent} of the least common subsumer  of concepts A and B. Information content (IC) indicates the specificity of a concept; the least common subsumer of a concept A and B is the most specific concept from which A and B are inherited. lin similarity\footnote{lin similarity $=  2 * IC(lcs) / (IC(A) + IC(B))$ where $lcs$ indicates the least common subsumer of concepts A and B.} returns the difference between two times of the IC of the least common subsumer of A and B, and the sum of IC of both 
+concepts. On the other hand, lch is a score denoting how similar two concepts are, calculating by using the shortest path that connects the concept and the maximum depth of the taxonomy in which the concepts occur\footnote{The exact formulation is $-log(L/2d)$ where $L$ is the shortest path length and $d$ is the taxonomy depth.} 
 \begin{table}[hl]
 \begin{center}
 \resizebox{\columnwidth}{!}{
@@ -206,12 +222,12 @@ ratings.
 \end{center}
 \caption{\label{table:results-p2s} Paragraph-2-Sentence subtask scores for the test data. \emph{Best} indicates the best correlation score for the subtask. LCS stands for Normalized Longest Common Substring. Subscripts in AI-KU systems specify the run number.}
 \end{table}
-
-
-Table \ref{table:results-p2s-train} and \ref{table:results-s2p-train} show the scores for Paragraph-2-Sentence and Sentence-2-Phrase subtasks on the training data, respectively. These tables contain the best individual scores for the performance metrics, Normalized Longest Common Substring (LCS) baseline, which was given by task organizers, and three additional baselines: lin \cite{lin1998information}, lch \cite{leacock1998combining}, and Jaccard Index (JI) baseline. lin uses the information content \cite{resnik1995inforcontent} of the least common subsumer  of concepts A and B. Information content (IC) indicates the specificity of a concept; the least common subsumer of a concept A and B is the most specific concept from which A and B are inherited. lin similarity\footnote{lin similarity $=  2 * IC(lcs) / (IC(A) + IC(B))$ where $lcs$ indicates the least common subsumer of concepts A and B.} returns the difference between two times of the IC of the least common subsumer of A and B, and the sum of IC of both 
-concepts. On the other hand, lch is a score denoting how similar two concepts are, calculating by using the shortest path that connects the concept and the maximum depth of the taxonomy in which the concepts occur\footnote{The exact formulation is $-log(L/2d)$ where $L$ is the shortest path length and $d$ is the taxonomy depth.} (please see Pedersen et al. \shortcite{pedersen2004wordnet} for further details of these measures). These two baselines were calculated as follows. First, using the Stanford Part-of-Speech Tagger \cite{toutanova2000enriching} we tagged words across all textual levels. After tagging, we found the synsets of each word matched with its part-of-speech using WordNet 3.0 \cite{fellbaum98electronic}. For each synset of a word in the shorter textual unit (e.g., sentence is shorter than paragraph), we calculated the lin/lch measure of each synset of all words in the longer textual unit and picked the highest score. When we found the scores for all words, we calculated 
+(please see Pedersen et al. \shortcite{pedersen2004wordnet} for further details of these measures). These two baselines were calculated as follows. First, using the Stanford Part-of-Speech Tagger \cite{toutanova2000enriching} we tagged words across all textual levels. After tagging, we found the synsets of each word matched with its part-of-speech using WordNet 3.0 \cite{fellbaum98electronic}. For each synset of a word in the shorter textual unit (e.g., sentence is shorter than paragraph), we calculated the lin/lch measure of each synset of all words in the longer textual unit and picked the highest score. When we found the scores for all words, we calculated 
 the mean to find out the similarity between one pair in the test set. Finally, Jaccard Index baseline was used to simply 
 calculate the number of words in common (intersection) with two cross textual levels, normalized by the total number of words (union). Table \ref{table:results-p2s} and \ref{table:results-s2p} demonstrate the AI-KU runs on the test data. Following, we discuss the performance of our systems on the test data.
+
+
+
 
 \paragraph{Paragraph2Sentence:} Both systems outperformed all the baselines for both metrics. The best score for this subtask was .837 and our systems achieved .732 and .698 on Pearson and did similar on Spearman metric. These scores are promising since our current unsupervised systems are based on bag-of-words approach --- they do not utilize any syntactic information.
 
