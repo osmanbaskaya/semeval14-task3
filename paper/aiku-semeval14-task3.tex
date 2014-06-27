@@ -39,7 +39,7 @@
 \maketitle
 \begin{abstract}
 
-In this paper, we describe our unsupervised method submitted to Cross-Level Semantic Similarity task in Semeval 2014 that aims to compute semantic similarity between two different sized text fragments. Our method models each text fragment by using the co-occurrence statistics of either occurred words or their substitutes. The co-occurrence modeling step provides dense, low-dimensional embedding for each fragment which allows us to calculate semantic similarity using various similarity metrics. Although our current model avoids the syntactic information, we achieved promising results and outperformed all baselines.
+In this paper, we describe our unsupervised method submitted to the Cross-Level Semantic Similarity task in Semeval 2014 that computes semantic similarity between two different sized text fragments. Our method models each text fragment by using the co-occurrence statistics of either occurred words or their substitutes. The co-occurrence modeling step provides dense, low-dimensional embedding for each fragment which allows us to calculate semantic similarity using various similarity metrics. Although our current model avoids the syntactic information, we achieved promising results and outperformed all baselines.
 
 \end{abstract}
 
@@ -48,12 +48,12 @@ In this paper, we describe our unsupervised method submitted to Cross-Level Sema
 
 Semantic similarity is a measure that specifies the similarity of one text's meaning to another's. Semantic similarity plays an important role in various Natural Language Processing (NLP) tasks such as textual entailment \cite{berant2012entail}, summarization \cite{lin2003summarization}, question answering \cite{surdeanu2011questionans}, text classification \cite{sebastiani2002textclass}, word sense disambiguation \cite{schutze98automatic} and information retrieval \cite{park2005infret}. 
 
-There are three main approaches to computing semantic similarity between two text fragments. First approach uses Vector Space Models (see Turney \& Pantel \shortcite{turney10frequency} for an overview) where each text is represented as a bag-of-word model. The similarity between two text fragments can then be computed with various metrics such as cosine similarity. For these models, sparseness in the input nature is the key problem. Therefore, later works such as Latent Semantic Indexing  \cite{deerwester90indexing} and Topic Models \cite{blei03latent} overcome sparsity problems via reducing the dimensionality of the model by introducing latent variables. The second approach blends various lexical and syntactic features and attacks the problem through machine learning models. The third approach is based on word-to-word similarity alignment~\cite{pilehvar2013align,islam2008semantic}.
+There are three main approaches to computing the semantic similarity between two text fragments. The first approach uses Vector Space Models (see Turney \& Pantel \shortcite{turney10frequency} for an overview) where each text is represented as a bag-of-word model. The similarity between two text fragments can then be computed with various metrics such as cosine similarity. Sparseness in the input nature is the key problem for these models. Therefore, later works such as Latent Semantic Indexing  \cite{deerwester90indexing} and Topic Models \cite{blei03latent} overcome sparsity problems via reducing the dimensionality of the model by introducing latent variables. The second approach blends various lexical and syntactic features and attacks the problem through machine learning models. The third approach is based on word-to-word similarity alignment~\cite{pilehvar2013align,islam2008semantic}.
 
 
-Cross-Level Semantic Similarity (CLSS) task in SemEval 2014\footnote{\url{http://alt.qcri.org/semeval2014/task3/}} \cite{jurgens14task3} provides an evaluation framework for assessing similarity methods for texts in different volumes (i.e., lexical levels). Unlike previous SemEval and *SEM tasks that were interested in comparing texts with similar volume, this task consists of four subtasks (paragraph2sentence, sentence2phrase, phrase2word and word2sense) that aim to investigate the performance of systems based on pairs of texts of different sizes. A system should report similarity score of a given pair, ranging from 4 (two items have very similar meanings and the most important ideas, concepts, or actions in the larger text are represented in the smaller text) to 0 (two items do not mean the same thing and are not on the same topic).
+The Cross-Level Semantic Similarity (CLSS) task in SemEval 2014\footnote{\url{http://alt.qcri.org/semeval2014/task3/}} \cite{jurgens14task3} provides an evaluation framework to assess similarity methods for texts in different volumes (i.e., lexical levels). Unlike previous SemEval and *SEM tasks that were interested in comparing texts with similar volume, this task consists of four subtasks (paragraph2sentence, sentence2phrase, phrase2word and word2sense) that investigate the performance of systems based on pairs of texts of different sizes. A system should report the similarity score of a given pair, ranging from 4 (two items have very similar meanings and the most important ideas, concepts, or actions in the larger text are represented in the smaller text) to 0 (two items do not mean the same thing and are not on the same topic).
 
-In this paper, we describe our two unsupervised systems that are based on co-occurrence statistics of words. The only difference between the systems is the input they use. First system uses the words directly (after lemmatization, stop-word removal and excluding the non-alphanumeric characters) in text while the second system utilizes the most likely substitutes consulted by a 4-gram language model for each observed word position (i.e., context). 
+In this paper, we describe our two unsupervised systems that are based on co-occurrence statistics of words. The only difference between the systems is the input they use. The first system uses the words directly (after lemmatization, stop-word removal and excluding the non-alphanumeric characters) in text while the second system utilizes the most likely substitutes consulted by a 4-gram language model for each observed word position (i.e., context). Note that we participated two subtasks which are paragraph2sentence and sentence2phrase.
 
 % 2 subtask'a participate ettigimiz soylenebilir.
 
@@ -61,10 +61,9 @@ The remainder of the paper proceeds as follows. Section \ref{algorithm} explains
 
 \section{Algorithm}
 \label{algorithm}
-In this section, we will explain preprocessing steps of the data and the details of our two systems\footnote{The code to replicate our work can be found at \url{http://goo.gl/fOuWUX}.}. Both systems rely on the co-occurrence statistics. The slight difference between the two is that the first one uses the words that occur in the given text fragment (e.g., paragraph, sentence etc.), whereas the latter employs co-occurrence statistics on 100 most likely substitutes for each word within the given text fragment. 
+This section explains preprocessing steps of the data and the details of our two systems\footnote{The code to replicate our work can be found at \url{https://github.com/osmanbaskaya/semeval14-task3}.}. Both systems rely on the co-occurrence statistics. The slight difference between the two is that the first one uses the words that occur in the given text fragment (e.g., paragraph, sentence), whereas the latter employs co-occurrence statistics on 100 substitute samples for each word within the given text fragment. 
 
 \subsection{Data Preprocessing}
-
 
 \begin{table}
 \begin{center}
@@ -99,8 +98,7 @@ bites & dog \_\_\_ . & runs (0.14), bites (0.13),  catches (0.04), barks (0.001)
 \caption{Contexts and substitute distributions when a bigram language model is used. $w$ and $n$ denote an arbitrary word in the vocabulary and the vocabulary size, respectively.}
 \label{tab:subs_exp}
 \end{table*}
-
-Two AI-KU systems can be distinguished between each other on input of co-occurrence modeling part. 
+Two AI-KU systems can be distinguished by their inputs. One uses the raw input words, whereas the other uses words' likely substitutes according to a language model.
 
 \paragraph{AI-KU$_1$:} This system uses the words that were in the text. All words are transformed into lower-case equivalents. Lemmatization\footnote{Lemmatization is carried out with Stanford CoreNLP and transforms a word into its canonical or base form.} and stop-word removal were performed, and non-alphanumeric characters were excluded. 
 Table \ref{tab:system1_input} displays the pairs for the following sentence which is an instance from paragraph2sentence test set:
@@ -111,14 +109,14 @@ Table \ref{tab:system1_input} displays the pairs for the following sentence whic
 
 Note that the input that we used to model co-occurrence statistics consists of all such pairs for each fragment in a given subtask. 
 
-\paragraph{AI-KU$_2$:} Unlike the first one, this system represents each context of a word by finding the most likely substitutes suggested by the 4-gram language model we built from ukWaC\footnote{Available here: http://wacky.sslmit.unibo.it} \cite{ukWaC}, a 2-billion word web-gathered corpus. Previously, the utilization of high probability substitutes and their co-occurrence statistics achieved notable performance on Word Sense Induction (WSI) \cite{baskaya13ai} and Part-of-Speech Induction \cite{yatbaz2012learning} problems. We used top 100 substitutes for each context. No lemmatization, stop-word removal and lower-case transformation were performed. Table~\ref{tab:subs_exp} illustrates the context and substitutes of each context using a bigram language model.
+\paragraph{AI-KU$_2$:} Previously, the utilization of high probability substitutes and their co-occurrence statistics achieved notable performance on Word Sense Induction (WSI) \cite{baskaya13ai} and Part-of-Speech Induction \cite{yatbaz2012learning} problems. AI-KU$_2$ represents each context of a word by finding the most likely 100 substitutes suggested by the 4-gram language model we built from ukWaC\footnote{Available here: http://wacky.sslmit.unibo.it} \cite{ukWaC}, a 2-billion word web-gathered corpus. Since S-CODE algorithm works with discrete input, for each context we sample 100 substitute words with replacement using their probabilities. Table~\ref{tab:subs_exp} illustrates the context and substitutes of each context using a bigram language model. No lemmatization, stop-word removal and lower-case transformation were performed.
 
 \subsection{Co-Occurrence Modeling}
 
-This subsection will explain the unsupervised method we employed to model co-occurrence statistics: the Co-occurrence data Embedding (CODE) method \cite{globerson-CODE} and its spherical extension (S-CODE) proposed by Maron et al. \shortcite{Maron2010}. Unlike in our previously mentioned WSI work, where we ended up with an embedding for each
-word in the co-occurrence modeling step; in this task, we try to model each text unit such as a paragraph, a sentence or a phrase, to obtain embeddings for each instance. 
+This subsection will explain the unsupervised method we employed to model co-occurrence statistics: the Co-occurrence data Embedding (CODE) method \cite{globerson-CODE} and its spherical extension (S-CODE) proposed by Maron et al. \shortcite{Maron2010}. Unlike in our WSI work, where we ended up with an embedding for each
+word in the co-occurrence modeling step in this task, we model each text unit such as a paragraph, a sentence or a phrase, to obtain embeddings for each instance. 
 
-Input data for S-CODE algorithm consist of instance-id and each word in the text unit for the first system (Table \ref{tab:system1_input} illustrates the pairs for only one text fragment); instance-ids and top 100 substitutes of each word in text for the second system. In the initial step, S-CODE puts all instance-ids and words (or substitutes, depending on the system) randomly on an n-dimensional sphere. If two different instances have the same word or substitute, then these two instances attract one another --- otherwise they will repel. When S-CODE converges, instances that have similar words or substitutes will be closely located; or else, they will be distant from each other. 
+Input data for S-CODE algorithm consist of instance-id and each word in the text unit for the first system (Table \ref{tab:system1_input} illustrates the pairs for only one text fragment) instance-ids and 100 substitute samples of each word in text for the second system. In the initial step, S-CODE puts all instance-ids and words (or substitutes, depending on the system) randomly on an n-dimensional sphere. If two different instances have the same word or substitute, then these two instances attract one another --- otherwise they repel each other. When S-CODE converges, instances that have similar words or substitutes will be closely located or else, they will be distant from each other. 
 
 \paragraph{AI-KU$_1$:} According to the training set performances for various $n$ (i.e., number of dimensions for S-CODE algorithm), we picked 100 for both tasks.
 
@@ -146,7 +144,7 @@ Input data for S-CODE algorithm consist of instance-id and each word in the text
 
 
 
-\paragraph{AI-KU$_2$:} Prior performance tests on training set, we picked $n$ to be 200 and 100 for paragraph2sentence and sentence2phrase subtasks, respectively.
+\paragraph{AI-KU$_2$:} We picked $n$ to be 200 and 100 for paragraph2sentence and sentence2phrase subtasks, respectively.
 
 
 Since this step is unsupervised, we tried to enrich the data with ukWaC, however, enrichment with ukWaC did not work well on the training data. To this end, proposed scores were obtained using only the training and the test data provided by organizers.
@@ -154,8 +152,8 @@ Since this step is unsupervised, we tried to enrich the data with ukWaC, however
 
 \subsection{Similarity Calculation}
 
-When the S-CODE converges, there is an n-dimensional embedding for each textual level (e.g., paragraph, sentence, phrase) instance. We can use a similarity metric to calculate 
-the similarity between these embeddings. For this task, systems should report only the similarity between two specific cross level instances. Note that we used cosine similarity in order to calculate similarity between two textual units. This similarity is the eventual similarity for two instances; no further processing (e.g., scaling) has been done.
+When the S-CODE converges, there is an n-dimen-sional embedding for each textual level (e.g., paragraph, sentence, phrase) instance. We can use a similarity metric to calculate 
+the similarity between these embeddings. For this task, systems should report only the similarity between two specific cross level instances. Note that we used cosine similarity to calculate similarity between two textual units. This similarity is the eventual similarity for two instances; no further processing (e.g., scaling) has been done.
 
 \begin{table}[hr]
 \begin{center}
@@ -167,7 +165,7 @@ the similarity between these embeddings. For this task, systems should report on
 \hline
 \multirow{6}{*}{\rotatebox{90}{\small{Sentence-2-Phrase}}}
 & AI-KU$_1$ & 0.607 & 0.568 \\
-& AI-KU$_2$ & 0.263 & 0.236 \\ 
+& AI-KU$_2$ & 0.620 & 0.579 \\ 
 & LCS & 0.500 & 0.582 \\ 
 & lch & 0.484 & 0.491 \\
 & lin & 0.492 & 0.470 \\
@@ -178,28 +176,14 @@ the similarity between these embeddings. For this task, systems should report on
 \end{table}
 
 
-In this task, two correlation metrics were used to evaluate the systems; Pearson correlation and Spearman's rank correlation.  Pearson correlation tests the degree of similarity between the system's similarity ratings and the gold standard ratings. Spearman's rank correlation measures the degree of similarity between two rankings; similarity ratings provided by a system and the gold standard
+In this task, two correlation metrics were used to evaluate the systems: Pearson correlation and Spearman's rank correlation.  Pearson correlation tests the degree of similarity between the system's similarity ratings and the gold standard ratings. Spearman's rank correlation measures the degree of similarity between two rankings; similarity ratings provided by a system and the gold standard
 ratings.
-
-
-
-
-
-
-
 
 
 \section{Evaluation Results}
 \label{evaluation}
-
-
-
-
-
-
-
-Table \ref{table:results-p2s-train} and \ref{table:results-s2p-train} show the scores for Paragraph-2-Sentence and Sentence-2-Phrase subtasks on the training data, respectively. These tables contain the best individual scores for the performance metrics, Normalized Longest Common Substring (LCS) baseline, which was given by task organizers, and three additional baselines: lin \cite{lin1998information}, lch \cite{leacock1998combining}, and Jaccard Index (JI) baseline. lin uses the information content \cite{resnik1995inforcontent} of the least common subsumer  of concepts A and B. Information content (IC) indicates the specificity of a concept; the least common subsumer of a concept A and B is the most specific concept from which A and B are inherited. lin similarity\footnote{lin similarity $=  2 * IC(lcs) / (IC(A) + IC(B))$ where $lcs$ indicates the least common subsumer of concepts A and B.} returns the difference between two times of the IC of the least common subsumer of A and B, and the sum of IC of both 
-concepts. On the other hand, lch is a score denoting how similar two concepts are, calculating by using the shortest path that connects the concept and the maximum depth of the taxonomy in which the concepts occur\footnote{The exact formulation is $-log(L/2d)$ where $L$ is the shortest path length and $d$ is the taxonomy depth.} 
+Tables \ref{table:results-p2s-train} and \ref{table:results-s2p-train} show the scores for Paragraph-2-Sentence and Sentence-2-Phrase subtasks on the training data, respectively. These tables contain the best individual scores for the performance metrics, Normalized Longest Common Substring (LCS) baseline, which was given by task organizers, and three additional baselines: lin \cite{lin1998information}, lch \cite{leacock1998combining}, and the Jaccard Index (JI) baseline. lin uses the information content \cite{resnik1995inforcontent} of the least common subsumer  of concepts A and B. Information content (IC) indicates the specificity of a concept; the least common subsumer of a concept A and B is the most specific concept from which A and B are inherited. lin similarity\footnote{lin similarity $=  2 * IC(lcs) / (IC(A) + IC(B))$ where $lcs$ indicates the least common subsumer of concepts A and B.} returns the difference between two times of the IC of the least common subsumer of A and B, and the sum of IC of both 
+concepts. On the other hand, lch is a score denoting how similar two concepts are, calculated by using the shortest path that connects the concept and the maximum depth of the taxonomy in which the concepts occur\footnote{The exact formulation is $-log(L/2d)$ where $L$ is the shortest path length and $d$ is the taxonomy depth.} 
 \begin{table}[hl]
 \begin{center}
 \resizebox{\columnwidth}{!}{
@@ -224,10 +208,7 @@ concepts. On the other hand, lch is a score denoting how similar two concepts ar
 \end{table}
 (please see Pedersen et al. \shortcite{pedersen2004wordnet} for further details of these measures). These two baselines were calculated as follows. First, using the Stanford Part-of-Speech Tagger \cite{toutanova2000enriching} we tagged words across all textual levels. After tagging, we found the synsets of each word matched with its part-of-speech using WordNet 3.0 \cite{fellbaum98electronic}. For each synset of a word in the shorter textual unit (e.g., sentence is shorter than paragraph), we calculated the lin/lch measure of each synset of all words in the longer textual unit and picked the highest score. When we found the scores for all words, we calculated 
 the mean to find out the similarity between one pair in the test set. Finally, Jaccard Index baseline was used to simply 
-calculate the number of words in common (intersection) with two cross textual levels, normalized by the total number of words (union). Table \ref{table:results-p2s} and \ref{table:results-s2p} demonstrate the AI-KU runs on the test data. Following, we discuss the performance of our systems on the test data.
-
-
-
+calculate the number of words in common (intersection) with two cross textual levels, normalized by the total number of words (union). Table \ref{table:results-p2s} and \ref{table:results-s2p} demonstrate the AI-KU runs on the test data. Next, we present our results pertaining to the test data.
 
 \paragraph{Paragraph2Sentence:} Both systems outperformed all the baselines for both metrics. The best score for this subtask was .837 and our systems achieved .732 and .698 on Pearson and did similar on Spearman metric. These scores are promising since our current unsupervised systems are based on bag-of-words approach --- they do not utilize any syntactic information.
 
