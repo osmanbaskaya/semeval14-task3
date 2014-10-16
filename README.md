@@ -17,6 +17,7 @@ Task3 - Semeval 14
 * test paragraph2sentence system2 `make score/p2s-test-p2s-s2.sc DATASET_TYPE=test`
 * test sentence2phrase system2 `make score/s2p-test-s2p-s2.sc DATASET_TYPE=test`
 * training paragraph2sentence system1 `make score/p2s-train-sc_sent-p2s.sc DATASET_TYPE=train`
-* training paragraph2sentence system1 `make score/p2s-train-sc_sent-p2s.sc DATASET_TYPE=train`
-* training paragraph2sentence system2 `make score/p2s-sc_sub-p2s.sc DATASET_TYPE=train`
-* training sentence2phrase system2 `make score/s2p-sc_sub-s2p.sc DATASET_TYPE=train`
+* training sentence2phrase system1 `make score/s2p-train-sc_sent-s2p.sc DATASET_TYPE=train`
+* training paragraph2sentence system2 `make score/p2s-train-sc_sub-p2s.sc DATASET_TYPE=train`
+* training sentence2phrase system2 `make score/s2p-train-sc_sub-s2p.sc DATASET_TYPE=train`
+ 
