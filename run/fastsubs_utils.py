@@ -22,7 +22,7 @@ def read_sub_vectors(sub_f, wordset=None):
             unnormalized = map(lambda x: 10**(float(x)), line[2:-1:2])
             Z = sum(unnormalized)
             normalized = [e / Z for e in unnormalized]
-            to_return.append((w, zip(line[1:-1:2], normalized)[0]))
+            to_return.append((w, zip(line[1:-1:2], normalized)))
     
     return to_return
 
